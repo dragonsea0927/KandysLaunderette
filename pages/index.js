@@ -41,7 +41,7 @@ export default function Home() {
 				/>
 			</Head>
 
-			{/* <!--===== FOOTER =====--> */}
+			{/* <!--===== NAVIGATION =====--> */}
 			<Navbar />
 
 			{/* <!--===== FOOTER =====--> */}

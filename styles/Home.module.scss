@@ -5,6 +5,29 @@
 /*==================== BASE ====================*/
 
 // <========== NAVIGATION ==========>
+.Navbar {
+	padding: 0.5rem 0;
+	border-bottom: $baseColor_lightGrey2 0.015rem solid;
+
+	.content {
+		.topSection {
+			ul {
+				display: flex;
+				margin: auto 0;
+				grid-column-gap: 1rem;
+				justify-content: right;
+
+				a,
+				h2 {
+					margin: auto 0;
+					color: $baseColor_lightGrey4;
+					font-size: $fontSize_xSmall;
+					font-family: $fontStyle_header;
+				}
+			}
+		}
+	}
+}
 
 // <========== FOOTER ==========>
 .footer {
