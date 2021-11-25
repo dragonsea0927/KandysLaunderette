@@ -181,7 +181,56 @@ export default function Home() {
 			{/* <!--===== SPECIAL OCCASIONS =====--> */}
 			<div className={styles.specialOccasions}>
 				<div className="container">
-					<div className={styles.content}></div>
+					<div className={styles.content}>
+						<div className={styles.title}>
+							<h2>Special Occasions</h2>
+							<h5></h5>
+						</div>
+
+						<div className={styles.innerContent}>
+							<div className={styles.productDisplay}>
+								<a href="#" target="blank">
+									<Image
+										src="/img/286-521s.webp"
+										alt="Product Image"
+										width={400}
+										height={600}
+										layout="responsive"
+										objectFit="contain"
+									/>
+								</a>
+
+								<div className={styles.content}>
+									<h2>Dress & Dinner Suits, Oxford Shirts</h2>
+									<newButton className={styles.shopButton}>
+										<a href="#" target="blank">
+											More Info
+										</a>
+									</newButton>
+								</div>
+							</div>
+							<div className={styles.productDisplay}>
+								<a href="#" target="blank">
+									<Image
+										src="/img/2dadbbf0777ed8a16b24ccde6a6f90dd.jpg"
+										alt="Product Image"
+										width={400}
+										height={600}
+										layout="responsive"
+										objectFit="contain"
+									/>
+								</a>
+								<div className={styles.content}>
+									<h2>Wedding, Bridesmaids & Evening Dresses </h2>
+									<newButton className={styles.shopButton}>
+										<a href="#" target="blank">
+											More Info
+										</a>
+									</newButton>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
