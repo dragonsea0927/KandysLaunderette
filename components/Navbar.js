@@ -20,6 +20,7 @@ const Navbar = () => {
 								<h2>(Flag) Wales</h2>
 							</ul>
 						</div>
+						<div className={styles.mainSection}></div>
 					</div>
 				</div>
 			</div>

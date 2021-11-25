@@ -31,7 +31,9 @@
 
 // <========== FOOTER ==========>
 .footer {
+	margin-top: 5rem;
 	padding: 1rem 0;
+	border-top: $baseColor_lightGrey2 0.015rem solid;
 
 	.content {
 		.topSection {
@@ -40,7 +42,6 @@
 				padding: 1rem 0;
 				grid-template-columns: repeat(3, 1fr);
 				grid-column-gap: 1.5rem;
-				border-top: $baseColor_lightGrey2 0.015rem solid;
 
 				.emailSignUp {
 					display: flex;

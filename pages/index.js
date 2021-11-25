@@ -41,8 +41,10 @@ export default function Home() {
 				/>
 			</Head>
 
-			{/* <!--===== NAVIGATION =====--> */}
-			<Navbar />
+			<div className={styles.backgroundImage}>
+				{/* <!--===== NAVIGATION =====--> */}
+				<Navbar />
+			</div>
 
 			{/* <!--===== FOOTER =====--> */}
 			<Footer />
