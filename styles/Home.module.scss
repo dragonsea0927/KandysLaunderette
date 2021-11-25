@@ -3,6 +3,13 @@
 @import "./colors";
 
 /*==================== BASE ====================*/
+.backgroundImage {
+	height: 30rem;
+	background: url("/img/dress-dry-cleaning.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
 
 // <========== NAVIGATION ==========>
 .Navbar {
@@ -23,6 +30,53 @@
 					color: $baseColor_lightGrey4;
 					font-size: $fontSize_xSmall;
 					font-family: $fontStyle_header;
+				}
+
+				a:hover {
+					color: $baseColor_black;
+				}
+			}
+		}
+
+		.mainSection {
+			display: flex;
+			margin-top: 0.5rem;
+			justify-content: space-between;
+			border-top: $baseColor_lightGrey2 0.015rem solid;
+
+			.title {
+				margin: auto 0;
+
+				h2 {
+					font-weight: 700;
+					text-transform: uppercase;
+					color: $secondary_fadedPink;
+					font-size: $fontSize_normal;
+					font-family: $fontStyle_option1;
+				}
+
+				h2:hover {
+					color: $secondary_pinkRed;
+				}
+			}
+
+			ul {
+				display: flex;
+				padding: 1rem 0;
+				margin: auto 0;
+				justify-content: center;
+				grid-column-gap: 1rem;
+
+				a {
+					padding: 0 10px;
+					margin: auto 0;
+					color: $baseColor_lightGrey4;
+					font-size: $fontSize_xSmall;
+					font-family: $fontStyle_header;
+				}
+
+				a:hover {
+					color: $baseColor_black;
 				}
 			}
 		}

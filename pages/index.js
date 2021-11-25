@@ -41,10 +41,11 @@ export default function Home() {
 				/>
 			</Head>
 
-			<div className={styles.backgroundImage}>
-				{/* <!--===== NAVIGATION =====--> */}
-				<Navbar />
-			</div>
+			{/* <!--===== NAVIGATION =====--> */}
+			<Navbar />
+
+			{/* <!--===== HERO =====--> */}
+			<div className={styles.backgroundImage}></div>
 
 			{/* <!--===== FOOTER =====--> */}
 			<Footer />
