@@ -3,13 +3,6 @@
 @import "./colors";
 
 /*==================== BASE ====================*/
-.backgroundImage {
-	height: 30rem;
-	background: url("/img/dress-dry-cleaning.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
 
 // <========== NAVIGATION ==========>
 .Navbar {
@@ -80,6 +73,18 @@
 				}
 			}
 		}
+	}
+}
+
+// <========== HERO ==========>
+.backgroundImage {
+	height: 30rem;
+	background: url("/img/dress-dry-cleaning.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	.content {
 	}
 }
 

@@ -45,7 +45,133 @@ export default function Home() {
 			<Navbar />
 
 			{/* <!--===== HERO =====--> */}
-			<div className={styles.backgroundImage}></div>
+			<div className={styles.backgroundImage}>
+				<div className={styles.content}>
+					{/* <h2>Specialist In Dry Cleaning & Professional</h2> */}
+				</div>
+			</div>
+
+			{/* <!--===== WHY CHOOSE US =====--> */}
+			<div className={styles.whyChooseUs}>
+				<div className={styles.content}>
+					<h2>Why Choose Us</h2>
+					<h5>Finishing touches for the perfect occasion</h5>
+
+					<div className={styles.gridDisplay}>
+						<div>
+							<Image
+								src="/img/cashmere-care-how-to-store-1.webp"
+								alt="Product Image"
+								width={400}
+								height={400}
+								objectFit="contain"
+							></Image>
+						</div>
+						<div>
+							<h2>
+								<strong>Personalized Experience</strong>
+							</h2>
+							<p>
+								We take utmost care of your clothes, segregating based on the
+								clothing type and giving you instant relief to make your day
+								better.
+							</p>
+						</div>
+						<div>
+							<Image
+								src="/img/cashmere-care-how-to-store-2.webp"
+								alt="Product Image"
+								width={400}
+								height={400}
+								objectFit="contain"
+							></Image>
+						</div>
+						<div>
+							<h2>
+								<strong>Affordable Pricing</strong>
+							</h2>
+							<p>
+								Prices that suits your pocket is one of our USP. An option of
+								choosing between 2 types of pricing is available.
+							</p>
+						</div>
+						<div>
+							<Image
+								src="/img/skubb-storage-case-dark-grey__0954862_pe803520_s5.webp"
+								alt="Product Image"
+								width={400}
+								height={400}
+								objectFit="contain"
+							></Image>
+						</div>
+						<div>
+							<h2>
+								<strong>Convenience</strong>
+							</h2>
+							<p>
+								With just a tap of a button your laundry get done. Giving you
+								leisure time to spend with friends and family.
+							</p>
+						</div>
+						<div>
+							<Image
+								src="/img/stuk-clothes-cover-set-of-3-white-grey__0909410_pe709744_s5.webp"
+								alt="Product Image"
+								width={400}
+								height={400}
+								objectFit="contain"
+							></Image>
+						</div>
+						<div>
+							<h2>
+								<strong>Quality</strong>
+							</h2>
+							<p>
+								We use the best in class laundry products to assure you, that
+								your favorite clothes are always taken care of.
+							</p>
+						</div>
+						<div>
+							<Image
+								src="/img/skubb-storage-case-dark-grey__0940614_pe795076_s5.webp"
+								alt="Product Image"
+								width={400}
+								height={400}
+								objectFit="contain"
+							></Image>
+						</div>
+						<div>
+							<h2>
+								<strong>Express Delivery</strong>
+							</h2>
+							<p>
+								Forgot to wash your favorite clothes for an event, function or a
+								night out. With our super same day service and express free
+								delivery.
+							</p>
+						</div>
+						<div>
+							<Image
+								src="/img/920015s10.webp"
+								alt="Product Image"
+								width={400}
+								height={400}
+								objectFit="contain"
+							></Image>
+						</div>
+						<div>
+							<h2>
+								<strong>Alterations</strong>
+							</h2>
+							<p>
+								Damn it, you ripped your favorite clothes. No problem! we can
+								handle that for you. If you need altering for your clothes we
+								can cover it.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
 			{/* <!--===== FOOTER =====--> */}
 			<Footer />
