@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Image from "next/image";
 import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
@@ -184,48 +185,51 @@ export default function Home() {
 					<div className={styles.content}>
 						<div className={styles.title}>
 							<h2>Special Occasions</h2>
-							<h5></h5>
+							<h5>Remove the stress from your special day</h5>
 						</div>
 
 						<div className={styles.innerContent}>
 							<div className={styles.productDisplay}>
-								<a href="#" target="blank">
-									<Image
-										src="/img/286-521s.webp"
-										alt="Product Image"
-										width={400}
-										height={600}
-										layout="responsive"
-										objectFit="contain"
-									/>
-								</a>
-
+								<Link href="#suit" target="blank">
+									<a>
+										<Image
+											src="/img/2f7f5644b96ce5f477f1522efa614d32.jpg"
+											alt="Product Image"
+											width={300}
+											height={400}
+											layout="responsive"
+											objectFit="cover"
+										/>
+									</a>
+								</Link>
 								<div className={styles.content}>
 									<h2>Dress & Dinner Suits, Oxford Shirts</h2>
 									<newButton className={styles.shopButton}>
-										<a href="#" target="blank">
-											More Info
-										</a>
+										<Link href="#" target="blank">
+											<a>More Info</a>
+										</Link>
 									</newButton>
 								</div>
 							</div>
 							<div className={styles.productDisplay}>
-								<a href="#" target="blank">
-									<Image
-										src="/img/2dadbbf0777ed8a16b24ccde6a6f90dd.jpg"
-										alt="Product Image"
-										width={400}
-										height={600}
-										layout="responsive"
-										objectFit="contain"
-									/>
-								</a>
+								<Link href="#" target="blank">
+									<a>
+										<Image
+											src="/img/2dadbbf0777ed8a16b24ccde6a6f90dd.jpg"
+											alt="Product Image"
+											width={300}
+											height={400}
+											layout="responsive"
+											objectFit="cover"
+										/>
+									</a>
+								</Link>
 								<div className={styles.content}>
 									<h2>Wedding, Bridesmaids & Evening Dresses </h2>
 									<newButton className={styles.shopButton}>
-										<a href="#" target="blank">
-											More Info
-										</a>
+										<Link href="#" target="blank">
+											<a>More Info</a>
+										</Link>
 									</newButton>
 								</div>
 							</div>
