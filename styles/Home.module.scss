@@ -132,13 +132,21 @@
 				}
 
 				p {
-					margin-top: 2rem;
+					margin-top: 1.5rem;
 					color: $baseColor_black;
-					font-size: $fontSize_small;
+					font-size: $fontSize_xSmall;
 					font-family: $fontStyle_header;
 				}
 			}
 		}
+	}
+}
+
+/* ===== SPECIAL OCCASIONS =====*/
+.specialOccasions {
+	padding: 1rem 0;
+
+	.content {
 	}
 }
 
