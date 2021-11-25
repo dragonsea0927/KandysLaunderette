@@ -338,6 +338,30 @@
 
 /* Small - Large mobile screen (portrait 576px) // Change to (max-device-width: 320px) when finished */
 @media screen and (max-width: 576px) {
+	/* ===== WHY CHOOSE US =====*/
+	.whyChooseUs {
+		padding: 0;
+
+		.content {
+			.gridDisplay {
+				display: grid;
+				padding: 1.5rem 0;
+				grid-template-columns: repeat(2, 1fr);
+				grid-column-gap: 1rem;
+
+				.description {
+					h2 {
+						font-size: $fontSize_large;
+					}
+
+					p {
+						font-size: $fontSize_normal;
+					}
+				}
+			}
+		}
+	}
+
 	// <========== FOOTER ==========>
 	.footer {
 		.content {
@@ -362,7 +386,7 @@
 
 						p {
 							color: $baseColor_black;
-							font-size: $fontSize_large;
+							font-size: $fontSize_medium;
 							font-family: $fontStyle_body;
 						}
 					}

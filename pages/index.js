@@ -61,7 +61,6 @@ export default function Home() {
 							<h2>Why Choose Us</h2>
 							<h5>Finishing touches for the perfect occasion</h5>
 						</div>
-
 						<div className={styles.gridDisplay}>
 							<div className={styles.imageDiv}>
 								<Image
@@ -82,7 +81,6 @@ export default function Home() {
 									better.
 								</p>
 							</div>
-
 							<div className={styles.imageDiv}>
 								<Image
 									src="/img/cashmere-care-how-to-store-2.webp"
@@ -119,7 +117,6 @@ export default function Home() {
 									leisure time to spend with friends and family.
 								</p>
 							</div>
-
 							<div className={styles.imageDiv}>
 								<Image
 									src="/img/stuk-clothes-cover-set-of-3-white-grey__0909410_pe709744_s5.webp"
@@ -157,7 +154,6 @@ export default function Home() {
 									delivery.
 								</p>
 							</div>
-
 							<div className={styles.imageDiv}>
 								<Image
 									src="/img/920015s10.webp"
@@ -179,6 +175,13 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+
+			{/* <!--===== SPECIAL OCCASIONS =====--> */}
+			<div className={styles.specialOccasions}>
+				<div className="container">
+					<div className={styles.content}></div>
 				</div>
 			</div>
 
