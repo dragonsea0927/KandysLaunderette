@@ -32,7 +32,9 @@ const Navbar = () => {
 						</div>
 						<div className={styles.mainSection}>
 							<div className={styles.title}>
-								<h2>Kandys</h2>
+								<Link href="/" target="blank">
+									<a>Kandys</a>
+								</Link>
 							</div>
 							<ul>
 								<Link href="#home" target="blank">
@@ -41,7 +43,7 @@ const Navbar = () => {
 								<Link href="#services" target="blank">
 									<a>All Services</a>
 								</Link>
-								<Link href="#launderette" target="blank">
+								<Link href="/LaundryDryCleaning" target="blank">
 									<a>Laundry & Dry Cleaning</a>
 								</Link>
 								<Link href="#alterations" target="blank">
