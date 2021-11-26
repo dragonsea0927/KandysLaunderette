@@ -61,7 +61,7 @@ export default function Home() {
 					<div className={styles.content}>
 						<div className={styles.title}>
 							<h2>Our Services</h2>
-							<h5>Finishing </h5>
+							<h5>From Individual to Business Solutions</h5>
 						</div>
 						<div className={styles.moreOptions}>
 							<newButton>
@@ -134,7 +134,7 @@ export default function Home() {
 								<Link href="#launderette" target="blank">
 									<a>
 										<Image
-											src="/img/00_FCG-Hero_MB.webp"
+											src="/img/trousers-alterations.jpg"
 											alt="Product Image"
 											width={400}
 											height={400}
@@ -305,6 +305,65 @@ export default function Home() {
 				</div>
 			</div>
 
+			{/* <!--===== SPECIAL OCCASIONS =====--> */}
+			<div className={styles.specialOccasions}>
+				<div className="container">
+					<div className={styles.content}>
+						<div className={styles.title}>
+							<h2>Special Occasions</h2>
+							<h5>Remove the stress from your special day</h5>
+						</div>
+
+						<div className={styles.innerContent}>
+							<div className={styles.productDisplay}>
+								<Link href="#suit" target="blank">
+									<a>
+										<Image
+											src="/img/2f7f5644b96ce5f477f1522efa614d32.jpg"
+											alt="Product Image"
+											width={300}
+											height={400}
+											layout="responsive"
+											objectFit="cover"
+										/>
+									</a>
+								</Link>
+								<div className={styles.content}>
+									<h2>Dress & Dinner Suits, Oxford Shirts</h2>
+									<newButton className={styles.shopButton}>
+										<Link href="#" target="blank">
+											<a>More Info</a>
+										</Link>
+									</newButton>
+								</div>
+							</div>
+							<div className={styles.productDisplay}>
+								<Link href="#" target="blank">
+									<a>
+										<Image
+											src="/img/2dadbbf0777ed8a16b24ccde6a6f90dd.jpg"
+											alt="Product Image"
+											width={300}
+											height={400}
+											layout="responsive"
+											objectFit="cover"
+										/>
+									</a>
+								</Link>
+								<div className={styles.content}>
+									<h2>Wedding, Bridesmaids & Evening Dresses </h2>
+									<newButton className={styles.shopButton}>
+										<Link href="#" target="blank">
+											<a>More Info</a>
+										</Link>
+									</newButton>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			{/* <!--===== WHY CHOOSE US =====--> */}
 			<div className={styles.whyChooseUs}>
 				<div className="container">
@@ -312,6 +371,11 @@ export default function Home() {
 						<div className={styles.title}>
 							<h2>Why Choose Us</h2>
 							<h5>Finishing touches for the perfect occasion</h5>
+							<p>
+								Over 2 years ago, Kandys had a vision: to create a company that
+								specialized in Professional Dry Cleaning Solutions, combining
+								the highest quality with affordable prices.
+							</p>
 						</div>
 						<div className={styles.gridDisplay}>
 							<div className={styles.imageDiv}>
@@ -430,60 +494,16 @@ export default function Home() {
 				</div>
 			</div>
 
-			{/* <!--===== SPECIAL OCCASIONS =====--> */}
-			<div className={styles.specialOccasions}>
+			{/* <!--===== Background Image Divider =====--> */}
+			<div className={styles.backgroundImageDivider}></div>
+
+			{/* <!--===== HOTEL & RESTAURANT =====--> */}
+			<div className={styles.hotelAndRestaurant}>
 				<div className="container">
 					<div className={styles.content}>
 						<div className={styles.title}>
-							<h2>Special Occasions</h2>
-							<h5>Remove the stress from your special day</h5>
-						</div>
-
-						<div className={styles.innerContent}>
-							<div className={styles.productDisplay}>
-								<Link href="#suit" target="blank">
-									<a>
-										<Image
-											src="/img/2f7f5644b96ce5f477f1522efa614d32.jpg"
-											alt="Product Image"
-											width={300}
-											height={400}
-											layout="responsive"
-											objectFit="cover"
-										/>
-									</a>
-								</Link>
-								<div className={styles.content}>
-									<h2>Dress & Dinner Suits, Oxford Shirts</h2>
-									<newButton className={styles.shopButton}>
-										<Link href="#" target="blank">
-											<a>More Info</a>
-										</Link>
-									</newButton>
-								</div>
-							</div>
-							<div className={styles.productDisplay}>
-								<Link href="#" target="blank">
-									<a>
-										<Image
-											src="/img/2dadbbf0777ed8a16b24ccde6a6f90dd.jpg"
-											alt="Product Image"
-											width={300}
-											height={400}
-											layout="responsive"
-											objectFit="cover"
-										/>
-									</a>
-								</Link>
-								<div className={styles.content}>
-									<h2>Wedding, Bridesmaids & Evening Dresses </h2>
-									<newButton className={styles.shopButton}>
-										<Link href="#" target="blank">
-											<a>More Info</a>
-										</Link>
-									</newButton>
-								</div>
-							</div>
+							<h2>Hotel & Restaurant Services</h2>
+							<h5></h5>
 						</div>
 					</div>
 				</div>
