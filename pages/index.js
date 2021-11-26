@@ -503,7 +503,88 @@ export default function Home() {
 					<div className={styles.content}>
 						<div className={styles.title}>
 							<h2>Hotel & Restaurant Services</h2>
-							<h5></h5>
+							<h5>
+								Attention To Detail, Affordable Professionalism & Perfect
+								Simplicity
+							</h5>
+						</div>
+						<div className={styles.gridDisplay}>
+							<div className={styles.content}>
+								<Link href="#launderette" target="blank">
+									<a>
+										<Image
+											src="/img/Bath_Linen_Buying_Guide.webp"
+											alt="Product Image"
+											width={400}
+											height={400}
+											objectFit="cover"
+										></Image>
+									</a>
+								</Link>
+
+								<div className={styles.header}>
+									<Link href="#launderette" target="blank">
+										<a>Table & Bath Towels Dry Cleaning</a>
+									</Link>
+								</div>
+							</div>
+							<div className={styles.content}>
+								<Link href="#launderette" target="blank">
+									<a>
+										<Image
+											src="/img/supersoft_duvet_1_8.jpg"
+											alt="Product Image"
+											width={400}
+											height={400}
+											objectFit="cover"
+										></Image>
+									</a>
+								</Link>
+
+								<div className={styles.header}>
+									<Link href="#launderette" target="blank">
+										<a>Duvet & Quilts Cleaning </a>
+									</Link>
+								</div>
+							</div>
+							<div className={styles.content}>
+								<Link href="#launderette" target="blank">
+									<a>
+										<Image
+											src="/img/Size-Chart-LP_Bed-Essentials.webp"
+											alt="Product Image"
+											width={400}
+											height={400}
+											objectFit="cover"
+										></Image>
+									</a>
+								</Link>
+
+								<div className={styles.header}>
+									<Link href="#launderette" target="blank">
+										<a>Bed & Table Linen Dry Cleaning & Alterations</a>
+									</Link>
+								</div>
+							</div>
+							<div className={styles.content}>
+								<Link href="#launderette" target="blank">
+									<a>
+										<Image
+											src="/img/cashmere-care-step4.webp"
+											alt="Product Image"
+											width={400}
+											height={400}
+											objectFit="cover"
+										></Image>
+									</a>
+								</Link>
+
+								<div className={styles.header}>
+									<Link href="#launderette" target="blank">
+										<a>Professional Laundering & Ironing</a>
+									</Link>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
