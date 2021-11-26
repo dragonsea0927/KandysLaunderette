@@ -1,0 +1,88 @@
+// <========== BACKGROUND IMAGE ==========>
+.backgroundImageOne {
+	height: 25rem;
+	align-items: center;
+	background: url("/img/david-barnes-dry-cleaners-laundry-ipswich-road-cardiff.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+// <========== PAGE TITLE ==========>
+.pageTitle {
+	.content {
+		.title {
+			padding: 2.5rem 0;
+			text-align: center;
+
+			h2 {
+				color: $baseColor_black;
+				font-size: $fontSize_large-1;
+				font-family: $fontStyle_option1;
+			}
+
+			h5 {
+				margin-top: 1rem;
+				color: $baseColor_black;
+				font-size: $fontSize_normal;
+				font-family: $fontStyle_header;
+			}
+		}
+	}
+}
+
+// <========== OPTIONS ==========>
+.options {
+	.content {
+		.title {
+			text-align: left;
+			padding: 2rem 0;
+
+			h2 {
+				color: $baseColor_black;
+				font-size: $fontSize_large;
+				font-family: $fontStyle_option1;
+			}
+
+			h5 {
+				margin-top: 1rem;
+				color: $baseColor_black;
+				font-size: $fontSize_normal;
+				font-family: $fontStyle_option1;
+			}
+		}
+
+		.innerContent {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-column-gap: 1rem;
+
+			.productDisplay {
+				.content {
+					bottom: 50px;
+					padding: 0 1rem;
+					position: relative;
+					margin-left: 1.5rem;
+
+					.shopButton {
+						width: fit-content;
+						padding: 0.5rem 2rem;
+						border-radius: 50px;
+						background-color: $backgroundColor_White;
+
+						a {
+							text-decoration: none;
+							color: $baseColor_black;
+							font-size: $fontSize_normal;
+							font-family: $fontStyle_option1;
+						}
+
+						a:hover {
+							color: $baseColor_lightGrey3;
+						}
+					}
+				}
+			}
+		}
+	}
+}

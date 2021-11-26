@@ -1,0 +1,23 @@
+// <========== PAGE TITLE ==========>
+.mainContent {
+	.content {
+		.title {
+			padding: 2.5rem 0;
+
+			h2 {
+				text-align: center;
+				color: $baseColor_black;
+				font-size: $fontSize_large-1;
+				font-family: $fontStyle_option1;
+			}
+
+			p {
+				text-align: left;
+				margin-top: 2rem;
+				color: $baseColor_black;
+				font-size: $fontSize_normal;
+				font-family: $fontStyle_header;
+			}
+		}
+	}
+}

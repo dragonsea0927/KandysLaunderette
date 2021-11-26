@@ -45,9 +45,87 @@ const LaundryDryCleaning = () => {
 			{/* <!--===== NAVIGATION =====--> */}
 			<Navbar />
 
-			<div className={styles.background}>
+			{/* // <========== BACKGROUND IMAGE ==========> */}
+			<div className={styles.backgroundImageOne}></div>
+
+			{/* // <========== PAGE TITLE ==========> */}
+			<div className={styles.pageTitle}>
 				<div className="container">
-					<div className={styles.content}></div>
+					<div className={styles.content}>
+						<div className={styles.title}>
+							<h2>Laundry & Dry Cleaning</h2>
+							<h5>From Individual to Business Solutions</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{/* // <========== OPTIONS ==========> */}
+			<div className={styles.options}>
+				<div className="container">
+					<div className={styles.content}>
+						<div className={styles.title}>
+							<h2>Our Options</h2>
+							<h5>
+								Choose Between our general self-service option. Or our more
+								Tailored Dry Cleaning Service.
+							</h5>
+						</div>
+
+						<div className={styles.innerContent}>
+							<div className={styles.productDisplay}>
+								<Link href="LaundryAndDryCleaning/SelfService" target="blank">
+									<a>
+										<Image
+											src="/img/7e9ab8b42c20dc188d175760dd46e191.jpg"
+											alt="Product Image"
+											width={300}
+											height={200}
+											layout="responsive"
+											objectFit="cover"
+										/>
+									</a>
+								</Link>
+								<div className={styles.content}>
+									<newButton className={styles.shopButton}>
+										<Link
+											href="LaundryAndDryCleaning/SelfService"
+											target="blank"
+										>
+											<a>Self-Service</a>
+										</Link>
+									</newButton>
+								</div>
+							</div>
+							<div className={styles.productDisplay}>
+								<Link
+									href="LaundryAndDryCleaning/TailoredService"
+									target="blank"
+								>
+									<a>
+										<Image
+											src="/img/luxury-service.jpg"
+											alt="Product Image"
+											width={300}
+											height={200}
+											layout="responsive"
+											objectFit="cover"
+										/>
+									</a>
+								</Link>
+								<div className={styles.content}>
+									<newButton className={styles.shopButton}>
+										<Link
+											href="LaundryAndDryCleaning/TailoredService"
+											target="blank"
+										>
+											<a>Tailored Service</a>
+										</Link>
+									</newButton>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
