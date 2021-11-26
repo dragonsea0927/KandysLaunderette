@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "/styles/Home.module.scss";
 
 const Footer = () => {
@@ -152,7 +153,22 @@ const Footer = () => {
 						</div>
 						<div className={styles.bottomSection}>
 							<div className={styles.topSide}>
-								<h2>(Flag) Wales | (Flag) United Kingdom (GBP)</h2>
+								<Image
+									src="/img/Wales Flag.png"
+									alt="Product Image"
+									width={20}
+									height={20}
+									objectFit="contain"
+								></Image>
+								<h2>Wales | </h2>
+								<Image
+									src="/img/United Kingdom Flag.png"
+									alt="Product Image"
+									width={20}
+									height={20}
+									objectFit="contain"
+								></Image>
+								<h2>United Kingdom (GBP)</h2>
 							</div>
 							<div className={styles.bottomSide}>
 								<ul>
