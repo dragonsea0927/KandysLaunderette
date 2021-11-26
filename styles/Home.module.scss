@@ -26,6 +26,16 @@
 				a:hover {
 					color: $baseColor_black;
 				}
+
+				.flag {
+					display: flex;
+					justify-content: center;
+
+					h2 {
+						margin: auto 0;
+						padding: 0 10px;
+					}
+				}
 			}
 		}
 

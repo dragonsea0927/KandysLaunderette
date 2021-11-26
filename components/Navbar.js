@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "/styles/Home.module.scss";
 
 const Navbar = () => {
@@ -17,7 +18,16 @@ const Navbar = () => {
 									<a>Contact Us</a>
 								</Link>
 								<div> | </div>
-								<h2>(Flag) Wales</h2>
+								<div className={styles.flag}>
+									<Image
+										src="/img/Wales Flag.png"
+										alt="Product Image"
+										width={20}
+										height={20}
+										objectFit="contain"
+									></Image>
+									<h2>Wales</h2>
+								</div>
 							</ul>
 						</div>
 						<div className={styles.mainSection}>
