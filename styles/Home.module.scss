@@ -579,6 +579,40 @@
 		}
 	}
 
+	/* ===== HOTEL & RESTAURANT =====*/
+	.hotelAndRestaurant {
+		background-color: $backgroundColor_black;
+
+		.content {
+			.title {
+				text-align: center;
+				padding: 2rem 0;
+
+				h2 {
+					font-size: $fontSize_large-1;
+				}
+
+				h5 {
+					font-size: $fontSize_medium;
+				}
+			}
+
+			.gridDisplay {
+				display: grid;
+				padding: 2rem 0.5rem;
+				grid-template-columns: repeat(2, 1fr);
+				grid-row-gap: 2.5rem;
+
+				.content {
+					.header {
+						a {
+							font-size: $fontSize_medium;
+						}
+					}
+				}
+			}
+		}
+	}
 	// <========== FOOTER ==========>
 	.footer {
 		.content {
