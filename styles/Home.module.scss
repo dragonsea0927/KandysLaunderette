@@ -208,6 +208,19 @@
 	}
 }
 
+/* ===== SPECIAL OCCASIONS =====*/
+.storeLocation {
+	.title {
+		padding: 2rem 0;
+		text-align: center;
+		h2 {
+			color: $baseColor_black;
+			font-size: $fontSize_large-1;
+			font-family: $fontStyle_option1;
+		}
+	}
+}
+
 // <========== FOOTER ==========>
 .footer {
 	margin-top: 5rem;

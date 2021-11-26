@@ -55,6 +55,68 @@ export default function Home() {
 				</div>
 			</div>
 
+			{/* <!--===== MAIN SERVICES =====--> */}
+			<div className={styles.services}>
+				<div className="container">
+					<div className={styles.content}>
+						<div className={styles.title}>
+							<h2>Our Services</h2>
+							<h5>Finishing </h5>
+						</div>
+						<div className={styles.gridDisplay}>
+							<div className={styles.content}>
+								<Image
+									src="/img/03d7c7368b70d2bf7fd661c8759da8b1.jpg"
+									alt="Product Image"
+									width={400}
+									height={400}
+									objectFit="cover"
+								></Image>
+								<div className={styles.header}>
+									<h2>Laundry & Dry Cleaning</h2>
+								</div>
+							</div>
+							<div className={styles.content}>
+								<Image
+									src="/img/209-116s2.webp"
+									alt="Product Image"
+									width={400}
+									height={400}
+									objectFit="cover"
+								></Image>
+								<div className={styles.header}>
+									<h2>Suits & Oxford Shirts</h2>
+								</div>
+							</div>
+							<div className={styles.content}>
+								<Image
+									src="/img/8ee51b5c1c83023731f8c9ca972a9c3e.jpg"
+									alt="Product Image"
+									width={400}
+									height={400}
+									objectFit="cover"
+								></Image>
+								<div className={styles.header}>
+									<h2>Wedding Dresses & Bridal</h2>
+								</div>
+							</div>
+							<div className={styles.content}>
+								<Image
+									src="/img/00_FCG-Hero_MB.webp"
+									alt="Product Image"
+									width={400}
+									height={400}
+									objectFit="cover"
+								></Image>
+								<div className={styles.header}>
+									<h2>Alterations & Repairs</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			{/* <!--===== WHY CHOOSE US =====--> */}
 			<div className={styles.whyChooseUs}>
 				<div className="container">
