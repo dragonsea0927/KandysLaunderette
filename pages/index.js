@@ -50,7 +50,10 @@ export default function Home() {
 			<div className={styles.backgroundImage}>
 				<div className="container">
 					<div className={styles.content}>
-						{/* <h2>Specialist In Dry Cleaning & Professional</h2> */}
+						<div className={styles.title}>
+							<h2>Kandy's Launderette</h2>
+							<h5>Professional Dry Cleaning Specialist</h5>
+						</div>
 					</div>
 				</div>
 			</div>

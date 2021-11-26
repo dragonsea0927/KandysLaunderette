@@ -87,12 +87,34 @@
 // <========== HERO ==========>
 .backgroundImage {
 	height: 30rem;
+	display: flex;
+	align-items: center;
 	background: url("/img/dress-dry-cleaning.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 
 	.content {
+		display: flex;
+		justify-content: center;
+
+		.title {
+			text-align: center;
+			padding: 1.5rem 2rem;
+
+			h2 {
+				color: $baseColor_white;
+				font-size: $fontSize_XL-large;
+				font-family: $fontStyle_option1;
+			}
+
+			h5 {
+				margin-top: 1rem;
+				color: $baseColor_white;
+				font-size: $fontSize_large;
+				font-family: $fontStyle_header;
+			}
+		}
 	}
 }
 
