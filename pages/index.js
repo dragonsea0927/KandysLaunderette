@@ -494,9 +494,6 @@ export default function Home() {
 				</div>
 			</div>
 
-			{/* <!--===== Background Image Divider =====--> */}
-			<div className={styles.backgroundImageDivider}></div>
-
 			{/* <!--===== HOTEL & RESTAURANT =====--> */}
 			<div className={styles.hotelAndRestaurant}>
 				<div className="container">
@@ -543,7 +540,7 @@ export default function Home() {
 
 								<div className={styles.header}>
 									<Link href="#launderette" target="blank">
-										<a>Duvet & Quilts Cleaning </a>
+										<a>Duvet & Quilts Dry Cleaning </a>
 									</Link>
 								</div>
 							</div>
@@ -562,7 +559,7 @@ export default function Home() {
 
 								<div className={styles.header}>
 									<Link href="#launderette" target="blank">
-										<a>Bed & Table Linen Dry Cleaning & Alterations</a>
+										<a>Bed & Table Linen Dry Cleaning</a>
 									</Link>
 								</div>
 							</div>
@@ -589,6 +586,9 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
+
+			{/* <!--===== Background Image Divider =====--> */}
+			<div className={styles.backgroundImageDivider}></div>
 
 			{/* <!--===== OUT STORE LOCATION =====--> */}
 			<div className={styles.storeLocation}>
