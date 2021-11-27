@@ -46,7 +46,7 @@ const Navbar = () => {
 								<Link href="/LaundryDryCleaning" target="blank">
 									<a>Laundry & Dry Cleaning</a>
 								</Link>
-								<Link href="#alterations" target="blank">
+								<Link href="/suitsOxfordShirts" target="blank">
 									<a>Suits & Oxford Shirts</a>
 								</Link>
 								<Link href="#alterations" target="blank">
