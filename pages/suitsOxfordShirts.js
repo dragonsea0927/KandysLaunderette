@@ -46,15 +46,15 @@ const suitsOxfordShirts = () => {
 			<Navbar />
 
 			{/* // <========== BACKGROUND IMAGE ==========> */}
-			<div className={styles.backgroundImageOne}></div>
+			<div className={styles.backgroundImageSuitsOxfordShirts}></div>
 
 			{/* // <========== PAGE TITLE ==========> */}
 			<div className={styles.pageTitle}>
 				<div className="container">
 					<div className={styles.content}>
 						<div className={styles.title}>
-							<h2>Laundry & Dry Cleaning</h2>
-							<h5>From Individual to Business Solutions</h5>
+							<h2>Suits & Oxford Shirts</h2>
+							<h5>Men's Solutions</h5>
 						</div>
 					</div>
 				</div>
