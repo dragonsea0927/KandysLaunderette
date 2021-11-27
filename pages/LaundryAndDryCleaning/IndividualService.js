@@ -287,7 +287,235 @@ const IndividualService = () => {
 										</ul>
 									</div>
 								</div>
-								<div className={styles.servicesDisplay}></div>
+								<div className={styles.servicesDisplay}>
+									<div className={styles.content}>
+										<Link href="#launderette" target="blank">
+											<a>
+												<Image
+													src="/img/8b0c89140159be4416593876eeefd470.jpg"
+													alt="Product Image"
+													width={400}
+													height={400}
+													objectFit="cover"
+												></Image>
+											</a>
+										</Link>
+
+										<div className={styles.header}>
+											<Link href="#launderette" target="blank">
+												<a>Laundry & Dry Cleaning</a>
+											</Link>
+										</div>
+									</div>
+									<div className={styles.content}>
+										<Link href="#launderette" target="blank">
+											<a>
+												<Image
+													src="/img/7e2461b51ed38f933ff6794e44025826.jpg"
+													alt="Product Image"
+													width={400}
+													height={400}
+													objectFit="cover"
+												></Image>
+											</a>
+										</Link>
+
+										<div className={styles.header}>
+											<Link href="#launderette" target="blank">
+												<a>Groom's Suit Cleaning & Alterations</a>
+											</Link>
+										</div>
+									</div>
+									<div className={styles.content}>
+										<Link href="#launderette" target="blank">
+											<a>
+												<Image
+													src="/img/8ee51b5c1c83023731f8c9ca972a9c3e.jpg"
+													alt="Product Image"
+													width={400}
+													height={400}
+													objectFit="cover"
+												></Image>
+											</a>
+										</Link>
+
+										<div className={styles.header}>
+											<Link href="#launderette" target="blank">
+												<a>Bridal Dress Cleaning & Alterations</a>
+											</Link>
+										</div>
+									</div>
+									<div className={styles.content}>
+										<Link href="#launderette" target="blank">
+											<a>
+												<Image
+													src="/img/trousers-alterations.jpg"
+													alt="Product Image"
+													width={400}
+													height={400}
+													objectFit="cover"
+												></Image>
+											</a>
+										</Link>
+
+										<div className={styles.header}>
+											<Link href="#launderette" target="blank">
+												<a>Alterations & Repairs</a>
+											</Link>
+										</div>
+									</div>
+									<div className={styles.content}>
+										<Link href="#launderette" target="blank">
+											<a>
+												<Image
+													src="/img/22679eb6cd65c24b2d14f7910980ec95.jpg"
+													alt="Product Image"
+													width={400}
+													height={400}
+													objectFit="cover"
+												></Image>
+											</a>
+										</Link>
+
+										<div className={styles.header}>
+											<Link href="#launderette" target="blank">
+												<a>Professional Ironing Services</a>
+											</Link>
+										</div>
+									</div>
+									<div className={styles.content}>
+										<Link href="#launderette" target="blank">
+											<a>
+												<Image
+													src="/img/f46c1141fb97af8cc03149945a4f19c4.jpg"
+													alt="Product Image"
+													width={400}
+													height={400}
+													objectFit="cover"
+												></Image>
+											</a>
+										</Link>
+
+										<div className={styles.header}>
+											<Link href="#launderette" target="blank">
+												<a>Self-Services</a>
+											</Link>
+										</div>
+									</div>
+									<div className={styles.content}>
+										<Link href="#launderette" target="blank">
+											<a>
+												<Image
+													src="/img/supersoft_duvet_1_8.jpg"
+													alt="Product Image"
+													width={400}
+													height={400}
+													objectFit="cover"
+												></Image>
+											</a>
+										</Link>
+
+										<div className={styles.header}>
+											<Link href="#launderette" target="blank">
+												<a>Duvet & Quilts Cleaning</a>
+											</Link>
+										</div>
+									</div>
+									<div className={styles.content}>
+										<Link href="#launderette" target="blank">
+											<a>
+												<Image
+													src="/img/cashmere-care-step3.webp"
+													alt="Product Image"
+													width={400}
+													height={400}
+													objectFit="cover"
+												></Image>
+											</a>
+										</Link>
+
+										<div className={styles.header}>
+											<Link href="#launderette" target="blank">
+												<a>Stain Removing</a>
+											</Link>
+										</div>
+									</div>
+									<div className={styles.content}>
+										<Link href="#launderette" target="blank">
+											<a>
+												<Image
+													src="/img/209-116s2.webp"
+													alt="Product Image"
+													width={400}
+													height={400}
+													objectFit="cover"
+												></Image>
+											</a>
+										</Link>
+
+										<div className={styles.header}>
+											<Link href="#launderette" target="blank">
+												<a>Oxford Shirts</a>
+											</Link>
+										</div>
+									</div>
+									<div className={styles.content}>
+										<Link href="#launderette" target="blank">
+											<a>
+												<Image
+													src="/img/ORGANICFC02_15_T.webp"
+													alt="Product Image"
+													width={400}
+													height={400}
+													objectFit="cover"
+												></Image>
+											</a>
+										</Link>
+
+										<div className={styles.header}>
+											<Link href="#launderette" target="blank">
+												<a>Restaurant Laundry & Linen Cleaning</a>
+											</Link>
+										</div>
+									</div>
+									<div className={styles.content}>
+										<Link href="#launderette" target="blank">
+											<a>
+												<Image
+													src="/img/920015s12.webp"
+													alt="Product Image"
+													width={400}
+													height={400}
+													objectFit="cover"
+												></Image>
+											</a>
+										</Link>
+
+										<div className={styles.header}>
+											<Link href="#launderette" target="blank">
+												<a>Jacket & Coat Alterations</a>
+											</Link>
+										</div>
+									</div>
+									<div className={styles.content}>
+										<Link href="#launderette" target="blank">
+											<a>
+												<Image
+													src="/img/pexels-sarah-chai-7282372.jpg"
+													alt="Product Image"
+													width={400}
+													height={400}
+													objectFit="cover"
+												></Image>
+											</a>
+										</Link>
+										<div className={styles.header}>
+											<Link href="#launderette" target="blank">
+												<a>Kids Clothing Alterations</a>
+											</Link>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
