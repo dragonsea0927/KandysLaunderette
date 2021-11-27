@@ -467,7 +467,7 @@ const IndividualService = () => {
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
-														src="/img/Invest_in_Downtime_Image_1.webp"
+														src="/img/Multislider_Rustic_Linen_Napkins.webp"
 														alt="Product Image"
 														width={400}
 														height={400}
