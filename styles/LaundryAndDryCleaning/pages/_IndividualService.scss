@@ -1,0 +1,56 @@
+// <========== PAGE TITLE ==========>
+.mainContent {
+	.content {
+		.title {
+			padding: 1rem 0;
+			margin-top: 2.5rem;
+
+			h2 {
+				text-align: center;
+				color: $baseColor_black;
+				font-size: $fontSize_large-1;
+				font-family: $fontStyle_option1;
+			}
+
+			p {
+				text-align: left;
+				margin-top: 2rem;
+				color: $baseColor_black;
+				font-size: $fontSize_normal;
+				font-family: $fontStyle_header;
+			}
+		}
+
+		.subtitle {
+			padding: 1rem 0;
+
+			h2 {
+				text-align: left;
+				color: $baseColor_black;
+				font-size: $fontSize_normal;
+				font-family: $fontStyle_option1;
+			}
+		}
+
+		.servicesDisplay {
+			display: grid;
+			margin-bottom: 2rem;
+			grid-template-columns: repeat(4, 1fr);
+			grid-column-gap: 1rem;
+			grid-row-gap: 2rem;
+
+			.content {
+				.header {
+					text-align: center;
+					padding: 0.5rem 0;
+
+					a {
+						color: $baseColor_black;
+						font-size: $fontSize_normal;
+						font-family: $fontStyle_option1;
+					}
+				}
+			}
+		}
+	}
+}

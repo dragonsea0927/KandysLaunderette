@@ -2,8 +2,8 @@
 @import "./fonts";
 @import "./colors";
 @import "./LaundryAndDryCleaning/LaundryDryCleaning";
-@import "./LaundryAndDryCleaning/pages/SelfService";
-@import "./LaundryAndDryCleaning/pages/TailoredService";
+@import "./LaundryAndDryCleaning/pages/IndividualService";
+@import "./LaundryAndDryCleaning/pages/businessService";
 
 // <========== NAVIGATION ==========>
 .Navbar {
@@ -315,8 +315,9 @@
 
 	.content {
 		.title {
-			text-align: center;
 			padding: 2rem 0;
+			text-align: center;
+			padding-top: 5rem;
 
 			h2 {
 				color: $baseColor_white;

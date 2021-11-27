@@ -67,14 +67,17 @@ const LaundryDryCleaning = () => {
 						<div className={styles.title}>
 							<h2>Our Options</h2>
 							<h5>
-								Choose Between our general self-service option. Or our more
-								Tailored Dry Cleaning Service.
+								Choose Between our Individual service option. Or our more
+								Business tailored dry cleaning service.
 							</h5>
 						</div>
 
 						<div className={styles.innerContent}>
 							<div className={styles.productDisplay}>
-								<Link href="LaundryAndDryCleaning/SelfService" target="blank">
+								<Link
+									href="LaundryAndDryCleaning/IndividualService"
+									target="blank"
+								>
 									<a>
 										<Image
 											src="/img/7e9ab8b42c20dc188d175760dd46e191.jpg"
@@ -89,17 +92,17 @@ const LaundryDryCleaning = () => {
 								<div className={styles.content}>
 									<newButton className={styles.shopButton}>
 										<Link
-											href="LaundryAndDryCleaning/SelfService"
+											href="LaundryAndDryCleaning/IndividualService"
 											target="blank"
 										>
-											<a>Self-Service</a>
+											<a>Individual Service</a>
 										</Link>
 									</newButton>
 								</div>
 							</div>
 							<div className={styles.productDisplay}>
 								<Link
-									href="LaundryAndDryCleaning/TailoredService"
+									href="LaundryAndDryCleaning/businessService"
 									target="blank"
 								>
 									<a>
@@ -116,10 +119,10 @@ const LaundryDryCleaning = () => {
 								<div className={styles.content}>
 									<newButton className={styles.shopButton}>
 										<Link
-											href="LaundryAndDryCleaning/TailoredService"
+											href="LaundryAndDryCleaning/businessService"
 											target="blank"
 										>
-											<a>Tailored Service</a>
+											<a>Business Service</a>
 										</Link>
 									</newButton>
 								</div>
