@@ -61,236 +61,233 @@ const IndividualService = () => {
 								</p>
 							</div>
 							<div className={styles.subtitle}>
-								<h2>All Services</h2>
+								<h2>All Our Services</h2>
 							</div>
-							<div className={styles.servicesDisplay}>
-								<div className={styles.content}>
-									<Link href="#launderette" target="blank">
-										<a>
-											<Image
-												src="/img/8b0c89140159be4416593876eeefd470.jpg"
-												alt="Product Image"
-												width={400}
-												height={400}
-												objectFit="cover"
-											></Image>
-										</a>
-									</Link>
-
-									<div className={styles.header}>
-										<Link href="#launderette" target="blank">
-											<a>Laundry & Dry Cleaning</a>
-										</Link>
+							<div className={styles.innerContent}>
+								<div className={styles.servicesList}>
+									<div className={styles.List}>
+										<h2>Suits</h2>
+										<ul>
+											<Link href="">
+												<a>2 Piece Suit</a>
+											</Link>
+											<Link href="">
+												<a>2 Piece Dress Suit</a>
+											</Link>
+											<Link href="">
+												<a>2 Piece Dinner Suit</a>
+											</Link>
+											<Link href="">
+												<a>3 Piece Suit</a>
+											</Link>
+										</ul>
+									</div>
+									<div className={styles.List}>
+										<h2>Trousers</h2>
+										<ul>
+											<Link href="">
+												<a>Regular Trousers</a>
+											</Link>
+											<Link href="">
+												<a>Silk Trousers</a>
+											</Link>
+										</ul>
+									</div>
+									<div className={styles.List}>
+										<h2>Skirts</h2>
+										<ul>
+											<Link href="">
+												<a>Regular Skirts</a>
+											</Link>
+											<Link href="">
+												<a>Long Skirts</a>
+											</Link>
+											<Link href="">
+												<a>Part Pleated Skirts</a>
+											</Link>
+											<Link href="">
+												<a>Fully Pleated Skirts</a>
+											</Link>
+										</ul>
+									</div>
+									<div className={styles.List}>
+										<h2>Dresses</h2>
+										<ul>
+											<Link href="">
+												<a>Day Dress</a>
+											</Link>
+											<Link href="">
+												<a>Silk Day Dress</a>
+											</Link>
+											<Link href="">
+												<a>Plain Evening Dress</a>
+											</Link>
+											<Link href="">
+												<a>Silk Evening Dress</a>
+											</Link>
+											<Link href="">
+												<a>Elaborate Evening Dress</a>
+											</Link>
+											<Link href="">
+												<a>Prom Dress</a>
+											</Link>
+											<Link href="">
+												<a>Ball Grown</a>
+											</Link>
+										</ul>
+									</div>
+									<div className={styles.List}>
+										<h2>Coats</h2>
+										<ul>
+											<Link href="">
+												<a>3/4 Length Wool Coat</a>
+											</Link>
+											<Link href="">
+												<a>Full Length Coat</a>
+											</Link>
+											<Link href="">
+												<a>Raincoat / Mack</a>
+											</Link>
+											<Link href="">
+												<a>Puffa Jacket</a>
+											</Link>
+											<Link href="">
+												<a>Fake Fur Fabrics</a>
+											</Link>
+										</ul>
+									</div>
+									<div className={styles.List}>
+										<h2>Tops & Shirts</h2>
+										<ul>
+											<Link href="">
+												<a>Shirts</a>
+											</Link>
+											<Link href="">
+												<a>Lightweight Jumper</a>
+											</Link>
+											<Link href="">
+												<a>Evening Top</a>
+											</Link>
+											<Link href="">
+												<a>Bustier Top</a>
+											</Link>
+											<Link href="">
+												<a>Silk Bustier Top</a>
+											</Link>
+											<Link href="">
+												<a>Silk Shirt </a>
+											</Link>
+										</ul>
+									</div>
+									<div className={styles.List}>
+										<h2>Jackets</h2>
+										<ul>
+											<Link href="">
+												<a>Jackets</a>
+											</Link>
+										</ul>
+									</div>
+									<div className={styles.List}>
+										<h2>Throw-over</h2>
+										<ul>
+											<Link href="">
+												<a>Single</a>
+											</Link>
+											<Link href="">
+												<a>Double</a>
+											</Link>
+										</ul>
+									</div>
+									<div className={styles.List}>
+										<h2>Wedding Items</h2>
+										<ul>
+											<Link href="">
+												<a>Wedding Dress</a>
+											</Link>
+											<Link href="">
+												<a>Boxed</a>
+											</Link>
+											<Link href="">
+												<a>Silk Wedding Dress</a>
+											</Link>
+											<Link href="">
+												<a>Bridesmaids Dresses</a>
+											</Link>
+											<Link href="">
+												<a>Flower Girl Dress</a>
+											</Link>
+										</ul>
+									</div>
+									<div className={styles.List}>
+										<h2>Accessories</h2>
+										<ul>
+											<Link href="">
+												<a>Tie</a>
+											</Link>
+											<Link href="">
+												<a>Scarf</a>
+											</Link>
+											<Link href="">
+												<a>Pashmina</a>
+											</Link>
+											<Link href="">
+												<a>Wrap</a>
+											</Link>
+											<Link href="">
+												<a>Hats</a>
+											</Link>
+											<Link href="">
+												<a>Dressing Gown</a>
+											</Link>
+											<Link href="">
+												<a>Waist Coat</a>
+											</Link>
+											<Link href="">
+												<a>Silk Waist Coat</a>
+											</Link>
+										</ul>
+									</div>
+									<div className={styles.List}>
+										<h2>Duvet Cleaning</h2>
+										<ul>
+											<Link href="">
+												<a>Single</a>
+											</Link>
+											<Link href="">
+												<a>Double</a>
+											</Link>
+											<Link href="">
+												<a>Single Blanket</a>
+											</Link>
+										</ul>
+									</div>
+									<div className={styles.List}>
+										<h2>Sleeping Bag</h2>
+										<ul>
+											<Link href="">
+												<a>Single</a>
+											</Link>
+											<Link href="">
+												<a>Double</a>
+											</Link>
+											<Link href="">
+												<a>Child Size</a>
+											</Link>
+										</ul>
+									</div>
+									<div className={styles.List}>
+										<h2>Full Bags</h2>
+										<ul>
+											<Link href="">
+												<a>Large - Wash, Dry & Fold</a>
+											</Link>
+											<Link href="">
+												<a>XL - Wash, Dry & Fold</a>
+											</Link>
+										</ul>
 									</div>
 								</div>
-								<div className={styles.content}>
-									<Link href="#launderette" target="blank">
-										<a>
-											<Image
-												src="/img/7e2461b51ed38f933ff6794e44025826.jpg"
-												alt="Product Image"
-												width={400}
-												height={400}
-												objectFit="cover"
-											></Image>
-										</a>
-									</Link>
-
-									<div className={styles.header}>
-										<Link href="#launderette" target="blank">
-											<a>Grooms Suit Cleaning & Alterations</a>
-										</Link>
-									</div>
-								</div>
-								<div className={styles.content}>
-									<Link href="#launderette" target="blank">
-										<a>
-											<Image
-												src="/img/8ee51b5c1c83023731f8c9ca972a9c3e.jpg"
-												alt="Product Image"
-												width={400}
-												height={400}
-												objectFit="cover"
-											></Image>
-										</a>
-									</Link>
-
-									<div className={styles.header}>
-										<Link href="#launderette" target="blank">
-											<a>Bridal Dress Cleaning & Alterations</a>
-										</Link>
-									</div>
-								</div>
-								<div className={styles.content}>
-									<Link href="#launderette" target="blank">
-										<a>
-											<Image
-												src="/img/trousers-alterations.jpg"
-												alt="Product Image"
-												width={400}
-												height={400}
-												objectFit="cover"
-											></Image>
-										</a>
-									</Link>
-
-									<div className={styles.header}>
-										<Link href="#launderette" target="blank">
-											<a>Alterations & Repairs</a>
-										</Link>
-									</div>
-								</div>
-								<div className={styles.content}>
-									<Link href="#launderette" target="blank">
-										<a>
-											<Image
-												src="/img/22679eb6cd65c24b2d14f7910980ec95.jpg"
-												alt="Product Image"
-												width={400}
-												height={400}
-												objectFit="cover"
-											></Image>
-										</a>
-									</Link>
-
-									<div className={styles.header}>
-										<Link href="#launderette" target="blank">
-											<a>Professional Ironing Services</a>
-										</Link>
-									</div>
-								</div>
-								<div className={styles.content}>
-									<Link href="#launderette" target="blank">
-										<a>
-											<Image
-												src="/img/f46c1141fb97af8cc03149945a4f19c4.jpg"
-												alt="Product Image"
-												width={400}
-												height={400}
-												objectFit="cover"
-											></Image>
-										</a>
-									</Link>
-
-									<div className={styles.header}>
-										<Link href="#launderette" target="blank">
-											<a>Self-Services</a>
-										</Link>
-									</div>
-								</div>
-								<div className={styles.content}>
-									<Link href="#launderette" target="blank">
-										<a>
-											<Image
-												src="/img/supersoft_duvet_1_8.jpg"
-												alt="Product Image"
-												width={400}
-												height={400}
-												objectFit="cover"
-											></Image>
-										</a>
-									</Link>
-
-									<div className={styles.header}>
-										<Link href="#launderette" target="blank">
-											<a>Duvet & Quilts Cleaning</a>
-										</Link>
-									</div>
-								</div>
-								<div className={styles.content}>
-									<Link href="#launderette" target="blank">
-										<a>
-											<Image
-												src="/img/cashmere-care-step3.webp"
-												alt="Product Image"
-												width={400}
-												height={400}
-												objectFit="cover"
-											></Image>
-										</a>
-									</Link>
-
-									<div className={styles.header}>
-										<Link href="#launderette" target="blank">
-											<a>Stain Removing</a>
-										</Link>
-									</div>
-								</div>
-								<div className={styles.content}>
-									<Link href="#launderette" target="blank">
-										<a>
-											<Image
-												src="/img/209-116s2.webp"
-												alt="Product Image"
-												width={400}
-												height={400}
-												objectFit="cover"
-											></Image>
-										</a>
-									</Link>
-
-									<div className={styles.header}>
-										<Link href="#launderette" target="blank">
-											<a>Oxford Shirts</a>
-										</Link>
-									</div>
-								</div>
-								<div className={styles.content}>
-									<Link href="#launderette" target="blank">
-										<a>
-											<Image
-												src="/img/ORGANICFC02_15_T.webp"
-												alt="Product Image"
-												width={400}
-												height={400}
-												objectFit="cover"
-											></Image>
-										</a>
-									</Link>
-
-									<div className={styles.header}>
-										<Link href="#launderette" target="blank">
-											<a>Restaurant Laundry & Linen Cleaning</a>
-										</Link>
-									</div>
-								</div>
-								<div className={styles.content}>
-									<Link href="#launderette" target="blank">
-										<a>
-											<Image
-												src="/img/920015s12.webp"
-												alt="Product Image"
-												width={400}
-												height={400}
-												objectFit="cover"
-											></Image>
-										</a>
-									</Link>
-
-									<div className={styles.header}>
-										<Link href="#launderette" target="blank">
-											<a>Jacket & Coat Alterations</a>
-										</Link>
-									</div>
-								</div>
-								<div className={styles.content}>
-									<Link href="#launderette" target="blank">
-										<a>
-											<Image
-												src="/img/pexels-sarah-chai-7282372.jpg"
-												alt="Product Image"
-												width={400}
-												height={400}
-												objectFit="cover"
-											></Image>
-										</a>
-									</Link>
-									<div className={styles.header}>
-										<Link href="#launderette" target="blank">
-											<a>Kids Clothing Alterations</a>
-										</Link>
-									</div>
-								</div>
+								<div className={styles.servicesDisplay}></div>
 							</div>
 						</div>
 					</div>
