@@ -1,0 +1,123 @@
+// <========== PAGE TITLE ==========>
+.mainContent {
+	.content {
+		.title {
+			padding: 1rem 0;
+			text-align: center;
+			margin-top: 2.5rem;
+
+			h2 {
+				text-align: center;
+				color: $baseColor_black;
+				font-size: $fontSize_large-1;
+				font-family: $fontStyle_option1;
+			}
+
+			p {
+				text-align: center;
+				margin-top: 2rem;
+				color: $baseColor_black;
+				font-size: $fontSize_normal;
+				font-family: $fontStyle_header;
+			}
+		}
+
+		.subtitle {
+			padding: 1rem 0;
+
+			h2 {
+				text-align: left;
+				color: $baseColor_black;
+				font-size: $fontSize_normal;
+				font-family: $fontStyle_option1;
+			}
+		}
+
+		.innerContent {
+			display: grid;
+			grid-template-columns: 20% 80%;
+
+			.servicesList {
+				.List {
+					h2 {
+						width: fit-content;
+						font-weight: 600;
+						padding: 0.25rem 0;
+						color: $baseColor_black;
+						font-size: $fontSize_medium;
+						font-family: $fontStyle_option1;
+						border-bottom: $baseColor_black 0.15rem solid;
+					}
+
+					ul {
+						display: flex;
+						padding: 0rem;
+						flex-direction: column;
+
+						a {
+							padding: 3px 0;
+							color: $baseColor_black;
+							font-size: $fontSize_small;
+							font-family: $fontStyle_body;
+						}
+
+						a:hover {
+							color: $secondary_fadedPink;
+						}
+					}
+				}
+			}
+
+			.servicesDisplays {
+				.servicesDisplay {
+					display: grid;
+					height: fit-content;
+					margin-bottom: 2rem;
+					grid-template-columns: repeat(4, 1fr);
+					grid-column-gap: 1rem;
+					grid-row-gap: 1rem;
+
+					.content {
+						.header {
+							text-align: center;
+							padding: 0.5rem 0;
+
+							a {
+								color: $baseColor_black;
+								font-size: $fontSize_normal;
+								font-family: $fontStyle_option1;
+							}
+						}
+					}
+				}
+
+				.ImageBSDivider {
+					height: 25rem;
+					margin: 2rem 0;
+					background: url("/img/GL_bedroom.webp");
+					background-size: cover;
+					background-position: center;
+					background-repeat: no-repeat;
+				}
+
+				.ImageBSDividerTwo {
+					height: 25rem;
+					margin: 2rem 0;
+					background: url("/img/00_FCG-Hero.webp");
+					background-size: cover;
+					background-position: center;
+					background-repeat: no-repeat;
+				}
+
+				.ImageBSDividerThree {
+					height: 25rem;
+					margin: 2rem 0;
+					background: url("/img/GUEST READY BATHROOMS HERO.webp");
+					background-size: cover;
+					background-position: center;
+					background-repeat: no-repeat;
+				}
+			}
+		}
+	}
+}
