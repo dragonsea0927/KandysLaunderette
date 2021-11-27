@@ -76,6 +76,15 @@ const businessService = () => {
 												<a>Single Blanket</a>
 											</Link>
 											<Link href="">
+												<a>Bed Sheets</a>
+											</Link>
+											<Link href="">
+												<a>Duvet Cover</a>
+											</Link>
+											<Link href="">
+												<a>Duvet Insert</a>
+											</Link>
+											<Link href="">
 												<a>Bed Linen (Single & Double)</a>
 											</Link>
 											<Link href="">
@@ -92,68 +101,45 @@ const businessService = () => {
 											<Link href="">
 												<a>Female Staff Shirts</a>
 											</Link>
-											<Link href="">
-												<a>Apron Staff Shirts</a>
-											</Link>
-											<Link href="">
-												<a>Women's Waistcoat Staff Shirts</a>
-											</Link>
-											<Link href="">
-												<a>Kitchen Staff Shirts</a>
-											</Link>
 										</ul>
 									</div>
 									<div className={styles.List}>
 										<h2>Trousers</h2>
 										<ul>
 											<Link href="">
-												<a>Regular Trousers</a>
+												<a>Regular Staff Trousers</a>
 											</Link>
 											<Link href="">
-												<a>Silk Trousers</a>
-											</Link>
-										</ul>
-									</div>
-									<div className={styles.List}>
-										<h2>Skirts</h2>
-										<ul>
-											<Link href="">
-												<a>Regular Skirts</a>
-											</Link>
-											<Link href="">
-												<a>Long Skirts</a>
-											</Link>
-											<Link href="">
-												<a>Part Pleated Skirts</a>
-											</Link>
-											<Link href="">
-												<a>Fully Pleated Skirts</a>
+												<a>Silk Staff Trousers</a>
 											</Link>
 										</ul>
 									</div>
 									<div className={styles.List}>
-										<h2>Dresses</h2>
+										<h2>Bar & Restaurant</h2>
 										<ul>
 											<Link href="">
-												<a>Day Dress</a>
+												<a>Waiters Uniforms Set</a>
 											</Link>
 											<Link href="">
-												<a>Silk Day Dress</a>
+												<a>Kitchen Male Staff Shirts</a>
 											</Link>
 											<Link href="">
-												<a>Plain Evening Dress</a>
+												<a>Kitchen Female Staff Shirts</a>
 											</Link>
 											<Link href="">
-												<a>Silk Evening Dress</a>
+												<a>Bar Staff Aprons</a>
 											</Link>
 											<Link href="">
-												<a>Elaborate Evening Dress</a>
+												<a>Short Staff Apron</a>
 											</Link>
 											<Link href="">
-												<a>Prom Dress</a>
+												<a>Long Canvas Apron Clip</a>
 											</Link>
 											<Link href="">
-												<a>Ball Grown</a>
+												<a>Women's Waistcoat Staff Shirts</a>
+											</Link>
+											<Link href="">
+												<a>Kitchen Cloths</a>
 											</Link>
 										</ul>
 									</div>
@@ -165,6 +151,9 @@ const businessService = () => {
 											</Link>
 											<Link href="">
 												<a>Double</a>
+											</Link>
+											<Link href="">
+												<a>Bed Runner / Throw</a>
 											</Link>
 										</ul>
 									</div>
@@ -178,22 +167,16 @@ const businessService = () => {
 												<a>Scarf</a>
 											</Link>
 											<Link href="">
-												<a>Pashmina</a>
+												<a>Money Pouch Waist Apron</a>
 											</Link>
 											<Link href="">
-												<a>Wrap</a>
+												<a>Tabletop Cloths</a>
 											</Link>
 											<Link href="">
 												<a>Hats</a>
 											</Link>
 											<Link href="">
-												<a>Dressing Gown</a>
-											</Link>
-											<Link href="">
 												<a>Waist Coat</a>
-											</Link>
-											<Link href="">
-												<a>Silk Waist Coat</a>
 											</Link>
 										</ul>
 									</div>
@@ -205,7 +188,7 @@ const businessService = () => {
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
-														src="/img/04438fc4fc1a9a09b7c2e06de39eccee.jpg"
+														src="/img/supersoft_duvet_1_8.jpg"
 														alt="Product Image"
 														width={400}
 														height={400}
@@ -215,7 +198,7 @@ const businessService = () => {
 											</Link>
 											<div className={styles.header}>
 												<Link href="#launderette" target="blank">
-													<a>Laundry & Dry Cleaning</a>
+													<a>Duvet Cleaning</a>
 												</Link>
 											</div>
 										</div>
@@ -223,7 +206,7 @@ const businessService = () => {
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
-														src="/img/491-325s2.webp"
+														src="/img/UK_BuyingGuide_Duvet.webp"
 														alt="Product Image"
 														width={400}
 														height={400}
@@ -233,7 +216,7 @@ const businessService = () => {
 											</Link>
 											<div className={styles.header}>
 												<Link href="#launderette" target="blank">
-													<a>Grooms Suit Cleaning & Alterations</a>
+													<a>Bed Linen</a>
 												</Link>
 											</div>
 										</div>
@@ -241,7 +224,7 @@ const businessService = () => {
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
-														src="/img/2dadbbf0777ed8a16b24ccde6a6f90dd.jpg"
+														src="/img/UK_BuyingGuide_Pillows.webp"
 														alt="Product Image"
 														width={400}
 														height={400}
@@ -251,7 +234,7 @@ const businessService = () => {
 											</Link>
 											<div className={styles.header}>
 												<Link href="#launderette" target="blank">
-													<a>Bridal Dress Cleaning & Alterations</a>
+													<a>Bed Single Blanket</a>
 												</Link>
 											</div>
 										</div>
@@ -259,7 +242,7 @@ const businessService = () => {
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
-														src="/img/231-419s.webp"
+														src="/img/Size-Chart-LP_Bed-Linen.webp"
 														alt="Product Image"
 														width={400}
 														height={400}
@@ -269,7 +252,7 @@ const businessService = () => {
 											</Link>
 											<div className={styles.header}>
 												<Link href="#launderette" target="blank">
-													<a>Alterations & Repairs</a>
+													<a>King & Queen Bed</a>
 												</Link>
 											</div>
 										</div>
@@ -280,7 +263,7 @@ const businessService = () => {
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
-														src="/img/572e21864592e57f4a6d121be547b12d.jpg"
+														src="/img/491-325s5.jpg"
 														alt="Product Image"
 														width={400}
 														height={400}
@@ -291,7 +274,7 @@ const businessService = () => {
 
 											<div className={styles.header}>
 												<Link href="#launderette" target="blank">
-													<a>Professional Ironing Services</a>
+													<a>Staff Tops & Shirts</a>
 												</Link>
 											</div>
 										</div>
@@ -299,7 +282,7 @@ const businessService = () => {
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
-														src="/img/f46c1141fb97af8cc03149945a4f19c4.jpg"
+														src="/img/skubb-storage-case-dark-grey__0940614_pe795076_s5.webp"
 														alt="Product Image"
 														width={400}
 														height={400}
@@ -310,7 +293,7 @@ const businessService = () => {
 
 											<div className={styles.header}>
 												<Link href="#launderette" target="blank">
-													<a>Self-Services</a>
+													<a>Money Pouch Waist Apron</a>
 												</Link>
 											</div>
 										</div>
@@ -318,7 +301,7 @@ const businessService = () => {
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
-														src="/img/supersoft_duvet_2_2_2.jpg"
+														src="/img/pants-cleaning.jpg"
 														alt="Product Image"
 														width={400}
 														height={400}
@@ -329,7 +312,7 @@ const businessService = () => {
 
 											<div className={styles.header}>
 												<Link href="#launderette" target="blank">
-													<a>Duvet & Quilts Cleaning</a>
+													<a>Staff Trousers</a>
 												</Link>
 											</div>
 										</div>
@@ -337,7 +320,7 @@ const businessService = () => {
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
-														src="/img/cashmere-care-step2.webp"
+														src="/img/attention-to-detail.webp"
 														alt="Product Image"
 														width={400}
 														height={400}
@@ -348,7 +331,7 @@ const businessService = () => {
 
 											<div className={styles.header}>
 												<Link href="#launderette" target="blank">
-													<a>Stain Removing</a>
+													<a>Waist Coat</a>
 												</Link>
 											</div>
 										</div>
@@ -359,7 +342,7 @@ const businessService = () => {
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
-														src="/img/209-116s4.webp"
+														src="/img/a210e29d04087417d25f542234b19422.jpg"
 														alt="Product Image"
 														width={400}
 														height={400}
@@ -370,7 +353,7 @@ const businessService = () => {
 
 											<div className={styles.header}>
 												<Link href="#launderette" target="blank">
-													<a>Oxford Shirts</a>
+													<a>Waiters Uniforms Set</a>
 												</Link>
 											</div>
 										</div>
@@ -378,7 +361,7 @@ const businessService = () => {
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
-														src="/img/Invest_in_Downtime_Image_1.webp"
+														src="/img/26d4c8388751821fbdea71c0c26f46f0.jpg"
 														alt="Product Image"
 														width={400}
 														height={400}
@@ -389,7 +372,7 @@ const businessService = () => {
 
 											<div className={styles.header}>
 												<Link href="#launderette" target="blank">
-													<a>Restaurant Laundry & Linen Cleaning</a>
+													<a>Kitchen Staff Shirts</a>
 												</Link>
 											</div>
 										</div>
@@ -397,7 +380,7 @@ const businessService = () => {
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
-														src="/img/221-057s.webp"
+														src="/img/PH165543-crop001.webp"
 														alt="Product Image"
 														width={400}
 														height={400}
@@ -408,7 +391,7 @@ const businessService = () => {
 
 											<div className={styles.header}>
 												<Link href="#launderette" target="blank">
-													<a>Jacket & Coat Alterations</a>
+													<a>Bar Staff Aprons</a>
 												</Link>
 											</div>
 										</div>
@@ -416,7 +399,7 @@ const businessService = () => {
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
-														src="/img/stuk-organiser-white__1035115_pe837986_s5.webp"
+														src="/img/Multislider_Barnham_Collection.webp"
 														alt="Product Image"
 														width={400}
 														height={400}
@@ -426,7 +409,7 @@ const businessService = () => {
 											</Link>
 											<div className={styles.header}>
 												<Link href="#launderette" target="blank">
-													<a>Kids Clothing Alterations</a>
+													<a>Kitchen Cloths</a>
 												</Link>
 											</div>
 										</div>
