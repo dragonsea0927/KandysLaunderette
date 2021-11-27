@@ -49,6 +49,13 @@ const businessService = () => {
 				{/* // <========== PAGE TITLE ==========> */}
 				<div className={styles.mainContent}>
 					<div className="container">
+						<div className={styles.previousButton}>
+							<Link href="/LaundryDryCleaning">
+								<a>
+									<i className="bi bi-arrow-left-circle"></i>
+								</a>
+							</Link>
+						</div>
 						<div className={styles.content}>
 							<div className={styles.title}>
 								<h2>Business Tailored Service</h2>

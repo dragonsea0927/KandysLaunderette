@@ -1,5 +1,18 @@
 // <========== PAGE TITLE ==========>
 .mainContent {
+	.previousButton {
+		padding: 0.5rem 0;
+
+		a {
+			color: $baseColor_black;
+			font-size: $fontSize_medium;
+		}
+
+		a:hover {
+			color: $baseColor_lightGrey3;
+		}
+	}
+
 	.content {
 		.title {
 			padding: 1rem 0;
