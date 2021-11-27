@@ -294,7 +294,7 @@ const IndividualService = () => {
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
-														src="/img/8b0c89140159be4416593876eeefd470.jpg"
+														src="/img/04438fc4fc1a9a09b7c2e06de39eccee.jpg"
 														alt="Product Image"
 														width={400}
 														height={400}
@@ -302,7 +302,6 @@ const IndividualService = () => {
 													></Image>
 												</a>
 											</Link>
-
 											<div className={styles.header}>
 												<Link href="#launderette" target="blank">
 													<a>Laundry & Dry Cleaning</a>
@@ -313,7 +312,7 @@ const IndividualService = () => {
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
-														src="/img/7e2461b51ed38f933ff6794e44025826.jpg"
+														src="/img/491-325s2.webp"
 														alt="Product Image"
 														width={400}
 														height={400}
@@ -321,7 +320,6 @@ const IndividualService = () => {
 													></Image>
 												</a>
 											</Link>
-
 											<div className={styles.header}>
 												<Link href="#launderette" target="blank">
 													<a>Grooms Suit Cleaning & Alterations</a>
@@ -332,7 +330,7 @@ const IndividualService = () => {
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
-														src="/img/8ee51b5c1c83023731f8c9ca972a9c3e.jpg"
+														src="/img/2dadbbf0777ed8a16b24ccde6a6f90dd.jpg"
 														alt="Product Image"
 														width={400}
 														height={400}
@@ -340,7 +338,6 @@ const IndividualService = () => {
 													></Image>
 												</a>
 											</Link>
-
 											<div className={styles.header}>
 												<Link href="#launderette" target="blank">
 													<a>Bridal Dress Cleaning & Alterations</a>
@@ -351,7 +348,7 @@ const IndividualService = () => {
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
-														src="/img/trousers-alterations.jpg"
+														src="/img/231-419s.webp"
 														alt="Product Image"
 														width={400}
 														height={400}
@@ -359,7 +356,6 @@ const IndividualService = () => {
 													></Image>
 												</a>
 											</Link>
-
 											<div className={styles.header}>
 												<Link href="#launderette" target="blank">
 													<a>Alterations & Repairs</a>
@@ -373,7 +369,7 @@ const IndividualService = () => {
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
-														src="/img/22679eb6cd65c24b2d14f7910980ec95.jpg"
+														src="/img/572e21864592e57f4a6d121be547b12d.jpg"
 														alt="Product Image"
 														width={400}
 														height={400}
@@ -411,7 +407,7 @@ const IndividualService = () => {
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
-														src="/img/supersoft_duvet_1_8.jpg"
+														src="/img/supersoft_duvet_2_2_2.jpg"
 														alt="Product Image"
 														width={400}
 														height={400}
@@ -430,7 +426,7 @@ const IndividualService = () => {
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
-														src="/img/cashmere-care-step3.webp"
+														src="/img/cashmere-care-step2.webp"
 														alt="Product Image"
 														width={400}
 														height={400}
@@ -452,7 +448,7 @@ const IndividualService = () => {
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
-														src="/img/209-116s2.webp"
+														src="/img/209-116s4.webp"
 														alt="Product Image"
 														width={400}
 														height={400}
@@ -471,7 +467,7 @@ const IndividualService = () => {
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
-														src="/img/ORGANICFC02_15_T.webp"
+														src="/img/Invest_in_Downtime_Image_1.webp"
 														alt="Product Image"
 														width={400}
 														height={400}
@@ -490,7 +486,7 @@ const IndividualService = () => {
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
-														src="/img/920015s12.webp"
+														src="/img/221-057s.webp"
 														alt="Product Image"
 														width={400}
 														height={400}
@@ -509,7 +505,7 @@ const IndividualService = () => {
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
-														src="/img/pexels-sarah-chai-7282372.jpg"
+														src="/img/stuk-organiser-white__1035115_pe837986_s5.webp"
 														alt="Product Image"
 														width={400}
 														height={400}
