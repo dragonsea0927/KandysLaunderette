@@ -95,7 +95,7 @@ const LaundryDryCleaning = () => {
 											href="LaundryAndDryCleaning/IndividualService"
 											target="blank"
 										>
-											<a>Individual Service</a>
+											<a>Individual Services</a>
 										</Link>
 									</newButton>
 								</div>
@@ -122,7 +122,7 @@ const LaundryDryCleaning = () => {
 											href="LaundryAndDryCleaning/businessService"
 											target="blank"
 										>
-											<a>Business Service</a>
+											<a>Business Services</a>
 										</Link>
 									</newButton>
 								</div>
