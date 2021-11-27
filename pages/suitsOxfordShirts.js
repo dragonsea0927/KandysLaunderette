@@ -60,6 +60,40 @@ const suitsOxfordShirts = () => {
 				</div>
 			</div>
 
+			{/* // <========== SUITS & OXFORD DESCRIPTIONS ==========> */}
+			<div className={styles.suitsOxford}>
+				<div className="container">
+					<div className={styles.gridDisplay}>
+						<div className={styles.content}>
+							<Image
+								src="/img/benjamin-rascoe-WdhmRPvMn7A-unsplash.jpg"
+								alt="Product Image"
+								width={400}
+								height={400}
+								objectFit="cover"
+							></Image>
+							<div className={styles.description}>
+								<h2>Suits</h2>
+								<p></p>
+							</div>
+						</div>
+						<div className={styles.content}>
+							<Image
+								src="/img/nimble-made-m2z2wJ1XX6Q-unsplash.jpg"
+								alt="Product Image"
+								width={400}
+								height={400}
+								objectFit="cover"
+							></Image>
+							<div className={styles.description}>
+								<h2>Oxford Shirts</h2>
+								<p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			{/* <!--===== FOOTER =====--> */}
 			<Footer />
 		</>
