@@ -80,10 +80,10 @@ const LaundryDryCleaning = () => {
 								>
 									<a>
 										<Image
-											src="/img/7e9ab8b42c20dc188d175760dd46e191.jpg"
+											src="/img/Size-Chart-LP_Mens.webp"
 											alt="Product Image"
 											width={300}
-											height={200}
+											height={300}
 											layout="responsive"
 											objectFit="cover"
 										/>
@@ -107,10 +107,10 @@ const LaundryDryCleaning = () => {
 								>
 									<a>
 										<Image
-											src="/img/luxury-service.jpg"
+											src="/img/05a848344f865a82cda0eec6cf53e861.jpg"
 											alt="Product Image"
 											width={300}
-											height={200}
+											height={300}
 											layout="responsive"
 											objectFit="cover"
 										/>
