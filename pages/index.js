@@ -319,7 +319,7 @@ export default function Home() {
 
 						<div className={styles.innerContent}>
 							<div className={styles.productDisplay}>
-								<Link href="#suit" target="blank">
+								<Link href="/suitsOxfordShirts" target="blank">
 									<a>
 										<Image
 											src="/img/2f7f5644b96ce5f477f1522efa614d32.jpg"
@@ -334,14 +334,14 @@ export default function Home() {
 								<div className={styles.content}>
 									<h2>Dress & Dinner Suits, Oxford Shirts</h2>
 									<newButton className={styles.shopButton}>
-										<Link href="#" target="blank">
+										<Link href="/suitsOxfordShirts" target="blank">
 											<a>More Info</a>
 										</Link>
 									</newButton>
 								</div>
 							</div>
 							<div className={styles.productDisplay}>
-								<Link href="#" target="blank">
+								<Link href="/WeddingDressesBridal" target="blank">
 									<a>
 										<Image
 											src="/img/2dadbbf0777ed8a16b24ccde6a6f90dd.jpg"
@@ -356,7 +356,7 @@ export default function Home() {
 								<div className={styles.content}>
 									<h2>Wedding, Bridesmaids & Evening Dresses </h2>
 									<newButton className={styles.shopButton}>
-										<Link href="#" target="blank">
+										<Link href="/WeddingDressesBridal" target="blank">
 											<a>More Info</a>
 										</Link>
 									</newButton>
