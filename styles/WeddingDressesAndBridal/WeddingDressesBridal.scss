@@ -57,3 +57,21 @@
 		}
 	}
 }
+
+// <========== WEDDING DRESS PROCESS ==========>
+.weddingDressProcess {
+	.title {
+		h2 {
+			color: $baseColor_black;
+			font-size: $fontSize_large-1;
+			font-family: $fontStyle_option1;
+		}
+
+		h5 {
+			margin-top: 1rem;
+			color: $baseColor_black;
+			font-size: $fontSize_normal;
+			font-family: $fontStyle_header;
+		}
+	}
+}
