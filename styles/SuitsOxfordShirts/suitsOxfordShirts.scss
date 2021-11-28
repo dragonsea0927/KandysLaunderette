@@ -42,8 +42,9 @@
 			text-align: center;
 
 			.description {
-				padding: 0 2rem;
+				padding: 0 2.5rem;
 				margin-top: 2rem;
+
 				h2 {
 					color: $baseColor_black;
 					font-size: $fontSize_large-0;
@@ -52,9 +53,9 @@
 
 				p {
 					text-align: left;
-					margin-top: 1rem;
+					margin-top: 2.5rem;
 					color: $baseColor_black;
-					font-size: $fontSize_normal;
+					font-size: $fontSize_small;
 					font-family: $fontStyle_header;
 				}
 			}

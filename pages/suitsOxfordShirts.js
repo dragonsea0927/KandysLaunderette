@@ -74,7 +74,11 @@ const suitsOxfordShirts = () => {
 							></Image>
 							<div className={styles.description}>
 								<h2>Suits</h2>
-								<p>W</p>
+								<p>
+									We offer suit cleaning & alterations for everyday and special
+									day occasions. We specialize in 2 Piece & 3 Piece suits and in
+									2 Piece Dress & Dinner Suit.
+								</p>
 							</div>
 						</div>
 						<div className={styles.content}>
@@ -87,7 +91,11 @@ const suitsOxfordShirts = () => {
 							></Image>
 							<div className={styles.description}>
 								<h2>Oxford Shirts</h2>
-								<p></p>
+								<p>
+									Business Casual has never been any easier. we offer dry
+									cleaning & alterations solutions for everyday occasions. We
+									specialize in Regular or Silk shirts.
+								</p>
 							</div>
 						</div>
 					</div>
