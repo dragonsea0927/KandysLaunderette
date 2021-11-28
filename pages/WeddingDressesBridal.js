@@ -46,7 +46,7 @@ const WeddingDressesAndBridal = () => {
 			<Navbar />
 
 			{/* // <========== BACKGROUND IMAGE ==========> */}
-			<div className={styles.backgroundImageSuitsOxfordShirts}></div>
+			<div className={styles.backgroundImageWeddingDressesBridal}></div>
 
 			{/* // <========== PAGE TITLE ==========> */}
 			<div className={styles.pageTitle}>
@@ -54,7 +54,7 @@ const WeddingDressesAndBridal = () => {
 					<div className={styles.content}>
 						<div className={styles.title}>
 							<h2>Wedding Dresses & Bridal</h2>
-							<h5>The best Stress free Dry Cleaning Solutions.</h5>
+							<h5>The Best Stress Free Dry Cleaning Solutions.</h5>
 						</div>
 					</div>
 				</div>
