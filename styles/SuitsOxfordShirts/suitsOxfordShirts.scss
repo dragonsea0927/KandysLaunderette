@@ -62,3 +62,54 @@
 		}
 	}
 }
+
+// <========== WEDDING SUITS ==========>
+.weddingSuits {
+	padding: 1rem 0;
+	background-color: $baseColor_lightGrey1;
+
+	.content {
+		.title {
+			padding: 2.5rem 0;
+			text-align: center;
+
+			h2 {
+				color: $baseColor_black;
+				font-size: $fontSize_large-1;
+				font-family: $fontStyle_option1;
+			}
+
+			h5 {
+				margin-top: 1rem;
+				color: $baseColor_black;
+				font-size: $fontSize_normal;
+				font-family: $fontStyle_header;
+			}
+		}
+
+		.gridDisplay {
+			.innerContent {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				grid-column-gap: 1rem;
+
+				.description {
+					margin: auto 0;
+
+					h2 {
+						color: $baseColor_black;
+						font-size: $fontSize_large-1;
+						font-family: $fontStyle_option1;
+					}
+
+					p {
+						margin-top: 1rem;
+						color: $baseColor_black;
+						font-size: $fontSize_normal;
+						font-family: $fontStyle_body;
+					}
+				}
+			}
+		}
+	}
+}

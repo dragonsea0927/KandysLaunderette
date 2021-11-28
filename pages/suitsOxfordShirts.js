@@ -102,6 +102,39 @@ const suitsOxfordShirts = () => {
 				</div>
 			</div>
 
+			{/* <!--===== WEDDING SUITS =====--> */}
+			<div className={styles.weddingSuits}>
+				<div className="container">
+					<div className={styles.content}>
+						<div className={styles.title}>
+							<h2>Wedding Suits</h2>
+							<h5>We make your special day simple.</h5>
+						</div>
+						<div className={styles.gridDisplay}>
+							<div className={styles.innerContent}>
+								<div className={styles.Image}>
+									<Image
+										src="/img/2f7f5644b96ce5f477f1522efa614d32.jpg"
+										alt="Product Image"
+										width={400}
+										height={800}
+										objectFit="cover"
+									></Image>
+								</div>
+								<div className={styles.description}>
+									<h2>Suits</h2>
+									<p>
+										We offer suit cleaning & alterations for everyday and
+										special day occasions. We specialize in wedding suits, 2
+										Piece & 3 Piece suits and in 2 Piece Dress & Dinner Suit.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			{/* <!--===== FOOTER =====--> */}
 			<Footer />
 		</>
