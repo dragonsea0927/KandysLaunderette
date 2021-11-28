@@ -131,6 +131,26 @@ const suitsOxfordShirts = () => {
 								</div>
 							</div>
 						</div>
+						<div className={styles.groomsmenDisplay}>
+							<div className={styles.innerContent}>
+								<div className={styles.description}>
+									<h2>Groomsmen Suits</h2>
+									<p>
+										We also take care of your Groomsmen suits. Either 2 Piece &
+										3 Piece suits, we specialize in all of them.
+									</p>
+								</div>
+								<div className={styles.Image}>
+									<Image
+										src="/img/samantha-gades-bFYoyKivbmg-unsplash.jpg"
+										alt="Product Image"
+										width={800}
+										height={800}
+										objectFit="contain"
+									></Image>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
