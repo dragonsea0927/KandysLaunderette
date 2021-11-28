@@ -55,7 +55,7 @@ const Navbar = () => {
 									<a>Suits & Oxford Shirts</a>
 								</Link>
 								<Link href="/WeddingDressesBridal" target="blank">
-									<a>Wedding Dresses & Bridal</a>
+									<a>Wedding Dresses</a>
 								</Link>
 								<Link href="#selfService" target="blank">
 									<a>Alterations & Repairs</a>

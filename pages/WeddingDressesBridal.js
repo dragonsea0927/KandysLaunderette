@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Link from "next/link";
 import Image from "next/image";
 import Navbar from "/components/Navbar";
+import OurProcess from "/components/ourProcess";
 import ContactInfo from "/components/WeddingDressesAndBridal/ContactInfo";
 import Footer from "/components/Footer";
 import styles from "/styles/Home.module.scss";
@@ -54,7 +54,7 @@ const WeddingDressesAndBridal = () => {
 				<div className="container">
 					<div className={styles.content}>
 						<div className={styles.title}>
-							<h2>Wedding Dresses & Bridal</h2>
+							<h2>Wedding Dresses & Bridesmaid</h2>
 							<h5>The Best Stress Free Dry Cleaning Solutions.</h5>
 						</div>
 					</div>
@@ -67,7 +67,7 @@ const WeddingDressesAndBridal = () => {
 					<div className={styles.gridDisplay}>
 						<div className={styles.Image}>
 							<Image
-								src="/img/nathan-walker-C0j_IxemcLo-unsplash.jpg"
+								src="/img/james-bold-35nWF_04Pgg-unsplash.jpg"
 								alt="Product Image"
 								width={400}
 								height={800}
@@ -91,81 +91,39 @@ const WeddingDressesAndBridal = () => {
 				</div>
 			</div>
 
+			{/* <!--===== OUR PROCESS INFORMATION =====--> */}
+			<OurProcess />
+
 			{/* // <========== WEDDING DRESS PROCESS ==========> */}
-			<div className={styles.weddingDressProcess}>
+			<div className={styles.BridesmaidDress}>
 				<div className="container">
 					<div className={styles.content}>
-						<div className={styles.title}>
-							<h2>Our Process</h2>
-							<h5>From Start to Collection.</h5>
-						</div>
-						<div className={styles.gridDisplay}>
-							<div className={styles.column}>
-								<div className={styles.Image}>
-									<Image
-										src="/img/skubb-storage-case-dark-grey__0940614_pe795076_s5.webp"
-										alt="Product Image"
-										width={400}
-										height={400}
-										objectFit="cover"
-									></Image>
-								</div>
-								<div className={styles.description}>
-									<h2>Arrival</h2>
-									<p>
-										Schedule a drop off day. Call us are we can make the best
-										time for you to arrive. Be confidence knowing your special
-										dress is in good hands. day.
-									</p>
-								</div>
+						<div className={styles.innerContent}>
+							<div className={styles.Image}>
+								<Image
+									src="/img/katelyn-macmillan-5VhSc5jCA2g-unsplash.jpg"
+									alt="Product Image"
+									width={800}
+									height={800}
+									objectFit="contain"
+								></Image>
 							</div>
-							<div className={styles.column}>
-								<div className={styles.Image}>
-									<Image
-										src="/img/template98.jpg"
-										alt="Product Image"
-										width={400}
-										height={400}
-										objectFit="cover"
-									></Image>
-								</div>
-								<div className={styles.description}>
-									<h2>We do what we do best</h2>
-									<p>
-										Schedule a drop off day. Call us are we can make the best
-										time for you to arrive. Be confidence knowing your special
-										dress is in good hands. day.
-									</p>
-								</div>
-							</div>
-							<div className={styles.column}>
-								<div className={styles.Image}>
-									<Image
-										src="/img/cashmere-care-how-to-store-2.webp"
-										alt="Product Image"
-										width={400}
-										height={400}
-										objectFit="cover"
-									></Image>
-								</div>
-								<div className={styles.description}>
-									<h2>Collection</h2>
-									<p>
-										Schedule a drop off day. Call us are we can make the best
-										time for you to arrive. Be confidence knowing your special
-										dress is in good hands. day.
-									</p>
-								</div>
+							<div className={styles.description}>
+								<h2>Bridesmaid Dresses</h2>
+								<p>
+									We offer Bridesmaid wedding dress perpetrations from dry
+									cleaning, Ironing, Delivery ready collection. Premium
+									fragrance, sublime sleepwear and luxurious accessories.
+									<br></br>
+									<br></br>
+									We want to make your special day stress free, sleep well
+									knowing that your wedding dress is taken care of. We want to
+									inspire confidence, relaxation and happiness for your special
+									day.
+								</p>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-
-			{/* // <========== WEDDING DRESS PROCESS ==========> */}
-			<div className={styles.bridalDress}>
-				<div className="container">
-					<div className={styles.content}></div>
 				</div>
 			</div>
 

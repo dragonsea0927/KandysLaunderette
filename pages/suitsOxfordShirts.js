@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Link from "next/link";
 import Image from "next/image";
 import Navbar from "/components/Navbar";
+import OurProcess from "/components/ourProcess";
 import Footer from "/components/Footer";
 import styles from "/styles/Home.module.scss";
 
@@ -154,6 +154,9 @@ const suitsOxfordShirts = () => {
 					</div>
 				</div>
 			</div>
+
+			{/* <!--===== OUR PROCESS INFORMATION =====--> */}
+			<OurProcess />
 
 			{/* <!--===== FOOTER =====--> */}
 			<Footer />
