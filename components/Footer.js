@@ -73,11 +73,14 @@ const Footer = () => {
 									<Link href="#openingTimes" target="blank">
 										<a>Opening Times</a>
 									</Link>
-									<Link href="#email" target="blank">
+									<Link
+										href="mailto:KandysLaunderette@gmail.com"
+										target="blank"
+									>
 										<a>KandysLaunderette@gmail.com</a>
 									</Link>
-									<Link href="#phone" target="blank">
-										<a>01792 461111</a>
+									<Link href="tel:01792 461111" target="blank">
+										<a>Tel: +44 (0) 1792 46 11 11</a>
 									</Link>
 									<Link
 										href="https://www.google.co.uk/maps/place/Kandys+Launderette+%26+Dry+Cleaner/@51.6232257,-3.9442327,17z/data=!3m1!4b1!4m5!3m4!1s0x486ef5d2d58eace1:0x919fb6f2312ca92b!8m2!3d51.6232257!4d-3.942044"
