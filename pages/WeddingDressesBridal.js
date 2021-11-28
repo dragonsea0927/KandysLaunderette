@@ -98,12 +98,11 @@ const WeddingDressesAndBridal = () => {
 							<h2>Our Process</h2>
 							<h5>From Start to Collection.</h5>
 						</div>
-
 						<div className={styles.gridDisplay}>
 							<div className={styles.column}>
 								<div className={styles.Image}>
 									<Image
-										src="/img/cashmere-care-how-to-store-1.webp"
+										src="/img/skubb-storage-case-dark-grey__0940614_pe795076_s5.webp"
 										alt="Product Image"
 										width={400}
 										height={400}
@@ -114,17 +113,15 @@ const WeddingDressesAndBridal = () => {
 									<h2>Arrival</h2>
 									<p>
 										Schedule a drop off day. Call us are we can make the best
-										time for you to arrive.
-										<br></br>
-										Be confidence knowing your special dress is in good hands.
-										day.
+										time for you to arrive. Be confidence knowing your special
+										dress is in good hands. day.
 									</p>
 								</div>
 							</div>
 							<div className={styles.column}>
 								<div className={styles.Image}>
 									<Image
-										src="/img/Invest_in_Downtime_Image_1.webp"
+										src="/img/template98.jpg"
 										alt="Product Image"
 										width={400}
 										height={400}
@@ -135,10 +132,8 @@ const WeddingDressesAndBridal = () => {
 									<h2>We do what we do best</h2>
 									<p>
 										Schedule a drop off day. Call us are we can make the best
-										time for you to arrive.
-										<br></br>
-										Be confidence knowing your special dress is in good hands.
-										day.
+										time for you to arrive. Be confidence knowing your special
+										dress is in good hands. day.
 									</p>
 								</div>
 							</div>
@@ -156,15 +151,20 @@ const WeddingDressesAndBridal = () => {
 									<h2>Collection</h2>
 									<p>
 										Schedule a drop off day. Call us are we can make the best
-										time for you to arrive.
-										<br></br>
-										Be confidence knowing your special dress is in good hands.
-										day.
+										time for you to arrive. Be confidence knowing your special
+										dress is in good hands. day.
 									</p>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+
+			{/* // <========== WEDDING DRESS PROCESS ==========> */}
+			<div className={styles.bridalDress}>
+				<div className="container">
+					<div className={styles.content}></div>
 				</div>
 			</div>
 

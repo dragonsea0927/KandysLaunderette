@@ -91,16 +91,16 @@
 
 					h2 {
 						color: $baseColor_black;
-						font-size: $fontSize_large;
+						font-size: $fontSize_medium;
 						font-family: $fontStyle_option1;
 					}
 
 					p {
-						margin-top: 1rem;
+						margin-top: 2rem;
 						text-align: left;
 						color: $baseColor_black;
-						font-size: $fontSize_normal;
-						font-family: $fontStyle_header;
+						font-size: $fontSize_small;
+						font-family: $fontStyle_body;
 					}
 				}
 			}
