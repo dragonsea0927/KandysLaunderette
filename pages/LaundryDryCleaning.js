@@ -145,8 +145,8 @@ const LaundryDryCleaning = () => {
 							</Link>
 							<Link href="tel:01792 461111" target="blank">
 								<a className={styles.telLinks}>
-									Tel: <span>+44 (0) 1792 46 11 11</span>
-									<span>| 07478 212165</span>
+									Tel: <span>+44 (0) 1792 46 11 11</span> |
+									<span> 07478 212165</span>
 								</a>
 							</Link>
 							<h5>

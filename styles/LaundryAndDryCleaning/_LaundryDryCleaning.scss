@@ -121,7 +121,7 @@
 				font-family: $fontStyle_header;
 
 				span:hover {
-					color: $baseColor_lightGrey4;
+					color: $secondary_fadedPink;
 				}
 			}
 
@@ -149,6 +149,10 @@
 					text-transform: uppercase;
 					font-size: $fontSize_xSmall;
 					font-family: $fontStyle_header;
+				}
+
+				a:hover {
+					color: $baseColor_lightGrey4;
 				}
 			}
 		}
