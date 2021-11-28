@@ -2,12 +2,15 @@
 @import "./fonts";
 @import "./colors";
 
+// Components Scss Styling
+@import "./components/ContactInfo/ContactInfo.scss";
+
 // Pages Scss Styling
-@import "./SuitsOxfordShirts/suitsOxfordShirts";
-@import "./WeddingDressesAndBridal/WeddingDressesBridal";
-@import "./LaundryAndDryCleaning/LaundryDryCleaning";
-@import "./LaundryAndDryCleaning/pages/IndividualService";
-@import "./LaundryAndDryCleaning/pages/businessService";
+@import "./pages/SuitsOxfordShirts/suitsOxfordShirts";
+@import "./pages/WeddingDressesAndBridal/WeddingDressesBridal";
+@import "./pages/LaundryAndDryCleaning/LaundryDryCleaning";
+@import "./pages/LaundryAndDryCleaning/pages/IndividualService";
+@import "./pages/LaundryAndDryCleaning/pages/businessService";
 
 // <========== NAVIGATION ==========>
 .Navbar {
