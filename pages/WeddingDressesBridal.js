@@ -66,7 +66,7 @@ const WeddingDressesAndBridal = () => {
 					<div className={styles.gridDisplay}>
 						<div className={styles.Image}>
 							<Image
-								src="/img/2dadbbf0777ed8a16b24ccde6a6f90dd.jpg"
+								src="/img/nathan-walker-C0j_IxemcLo-unsplash.jpg"
 								alt="Product Image"
 								width={400}
 								height={800}
@@ -90,34 +90,78 @@ const WeddingDressesAndBridal = () => {
 				</div>
 			</div>
 
-			{/* // <========== WEDDING DRESS ==========> */}
+			{/* // <========== WEDDING DRESS PROCESS ==========> */}
 			<div className={styles.weddingDressProcess}>
 				<div className="container">
-					<div className={styles.title}>
-						<h2>Our Process</h2>
-						<h5>From Start to Collection.</h5>
-					</div>
+					<div className={styles.content}>
+						<div className={styles.title}>
+							<h2>Our Process</h2>
+							<h5>From Start to Collection.</h5>
+						</div>
 
-					<div className={styles.gridDisplay}>
-						<div className={styles.column}>
-							<div className={styles.Image}>
-								<Image
-									src="/img/2dadbbf0777ed8a16b24ccde6a6f90dd.jpg"
-									alt="Product Image"
-									width={400}
-									height={400}
-									objectFit="cover"
-								></Image>
+						<div className={styles.gridDisplay}>
+							<div className={styles.column}>
+								<div className={styles.Image}>
+									<Image
+										src="/img/cashmere-care-how-to-store-1.webp"
+										alt="Product Image"
+										width={400}
+										height={400}
+										objectFit="cover"
+									></Image>
+								</div>
+								<div className={styles.description}>
+									<h2>Arrival</h2>
+									<p>
+										Schedule a drop off day. Call us are we can make the best
+										time for you to arrive.
+										<br></br>
+										Be confidence knowing your special dress is in good hands.
+										day.
+									</p>
+								</div>
 							</div>
-							<div className={styles.description}>
-								<h2>Arrival</h2>
-								<p>
-									Schedule a drop off day. Call us are we can make the best time
-									for you to arrive.
-									<br></br>
-									Be confidence knowing your special dress is in good hands.
-									day.
-								</p>
+							<div className={styles.column}>
+								<div className={styles.Image}>
+									<Image
+										src="/img/Invest_in_Downtime_Image_1.webp"
+										alt="Product Image"
+										width={400}
+										height={400}
+										objectFit="cover"
+									></Image>
+								</div>
+								<div className={styles.description}>
+									<h2>We do what we do best</h2>
+									<p>
+										Schedule a drop off day. Call us are we can make the best
+										time for you to arrive.
+										<br></br>
+										Be confidence knowing your special dress is in good hands.
+										day.
+									</p>
+								</div>
+							</div>
+							<div className={styles.column}>
+								<div className={styles.Image}>
+									<Image
+										src="/img/cashmere-care-how-to-store-2.webp"
+										alt="Product Image"
+										width={400}
+										height={400}
+										objectFit="cover"
+									></Image>
+								</div>
+								<div className={styles.description}>
+									<h2>Collection</h2>
+									<p>
+										Schedule a drop off day. Call us are we can make the best
+										time for you to arrive.
+										<br></br>
+										Be confidence knowing your special dress is in good hands.
+										day.
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
