@@ -54,7 +54,7 @@ const suitsOxfordShirts = () => {
 					<div className={styles.content}>
 						<div className={styles.title}>
 							<h2>Suits & Oxford Shirts</h2>
-							<h5>Men's Solutions</h5>
+							<h5>Men's only Dry Cleaning Solutions</h5>
 						</div>
 					</div>
 				</div>
@@ -74,7 +74,7 @@ const suitsOxfordShirts = () => {
 							></Image>
 							<div className={styles.description}>
 								<h2>Suits</h2>
-								<p></p>
+								<p>W</p>
 							</div>
 						</div>
 						<div className={styles.content}>
