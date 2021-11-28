@@ -114,9 +114,9 @@ const suitsOxfordShirts = () => {
 							<div className={styles.innerContent}>
 								<div className={styles.Image}>
 									<Image
-										src="/img/2f7f5644b96ce5f477f1522efa614d32.jpg"
+										src="/img/tengyart-Q5jO8wxYnys-unsplash.jpg"
 										alt="Product Image"
-										width={400}
+										width={600}
 										height={800}
 										objectFit="cover"
 									></Image>
