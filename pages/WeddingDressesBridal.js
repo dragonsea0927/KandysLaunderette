@@ -60,6 +60,36 @@ const WeddingDressesAndBridal = () => {
 				</div>
 			</div>
 
+			{/* // <========== WEDDING DRESS ==========> */}
+			<div className={styles.weddingDress}>
+				<div className="container">
+					<div className={styles.gridDisplay}>
+						<div className={styles.Image}>
+							<Image
+								src="/img/2dadbbf0777ed8a16b24ccde6a6f90dd.jpg"
+								alt="Product Image"
+								width={400}
+								height={800}
+								objectFit="cover"
+							></Image>
+						</div>
+						<div className={styles.description}>
+							<h2>Wedding Dresses</h2>
+							<p>
+								We offer wedding dress perpetrations from dry cleaning, Ironing,
+								Delivery ready collection. Premium fragrance, sublime sleepwear
+								and luxurious accessories.
+								<br></br>
+								<br></br>
+								We want to make your special day stress free, sleep well knowing
+								that your wedding dress is taken care of. We want to inspire
+								confidence, relaxation and happiness for your special day.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			{/* <!--===== FOOTER =====--> */}
 			<Footer />
 		</>
