@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "/components/Navbar";
+import ContactInfo from "/components/WeddingDressesAndBridal/ContactInfo";
 import Footer from "/components/Footer";
 import styles from "/styles/Home.module.scss";
 
@@ -167,6 +168,9 @@ const WeddingDressesAndBridal = () => {
 					<div className={styles.content}></div>
 				</div>
 			</div>
+
+			{/* <!--===== INFORMATION SECTION =====--> */}
+			<ContactInfo />
 
 			{/* <!--===== FOOTER =====--> */}
 			<Footer />

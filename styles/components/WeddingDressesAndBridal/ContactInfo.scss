@@ -1,0 +1,71 @@
+// <========== INFORMATION SECTION ==========>
+.backgroundImageContactInfoWDAB {
+	height: 30rem;
+	display: flex;
+	margin-top: 5rem;
+	align-items: center;
+	background: url("/img/thomas-ae-SRaLWJWN_NE-unsplash.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	.content {
+		display: flex;
+		text-align: center;
+		flex-direction: column;
+		grid-row-gap: 2rem;
+
+		.title {
+			display: flex;
+			flex-direction: column;
+
+			h2 {
+				color: $baseColor_white;
+				font-size: $fontSize_large;
+				font-family: $fontStyle_option1;
+			}
+
+			a {
+				margin-top: 0.5rem;
+				color: $baseColor_white;
+				font-size: $fontSize_normal;
+				font-family: $fontStyle_header;
+
+				span:hover {
+					color: $secondary_fadedPink;
+				}
+			}
+
+			h5 {
+				margin-top: 0.5rem;
+				color: $baseColor_white;
+				font-size: $fontSize_normal;
+				font-family: $fontStyle_header;
+			}
+		}
+
+		.button {
+			margin-top: 1rem;
+
+			newButton {
+				border: none;
+				padding: 1rem 1.25rem;
+				background-color: $backgroundColor_White;
+
+				a {
+					margin-top: 1rem;
+					font-weight: 700;
+					letter-spacing: 0.1rem;
+					color: $baseColor_black;
+					text-transform: uppercase;
+					font-size: $fontSize_xSmall;
+					font-family: $fontStyle_header;
+				}
+
+				a:hover {
+					color: $baseColor_lightGrey4;
+				}
+			}
+		}
+	}
+}

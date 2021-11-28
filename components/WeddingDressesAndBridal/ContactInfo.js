@@ -5,7 +5,7 @@ const ContactInfo = () => {
 	return (
 		<>
 			{/* <!--===== INFORMATION SECTION =====--> */}
-			<div className={styles.backgroundImageLaundryDryCleaning}>
+			<div className={styles.backgroundImageContactInfoWDAB}>
 				<div className="container">
 					<div className={styles.content}>
 						<div className={styles.title}>

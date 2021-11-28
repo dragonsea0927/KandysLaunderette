@@ -3,14 +3,15 @@
 @import "./colors";
 
 // Components Scss Styling
-@import "./components/ContactInfo/ContactInfo.scss";
+@import "./components/ContactInfo/_ContactInfo.scss";
+@import "./components/WeddingDressesAndBridal/ContactInfo.scss";
 
 // Pages Scss Styling
 @import "./pages/SuitsOxfordShirts/suitsOxfordShirts";
-@import "./pages/WeddingDressesAndBridal/WeddingDressesBridal";
-@import "./pages/LaundryAndDryCleaning/LaundryDryCleaning";
-@import "./pages/LaundryAndDryCleaning/pages/IndividualService";
-@import "./pages/LaundryAndDryCleaning/pages/businessService";
+@import "./pages/WeddingDressesAndBridal/_WeddingDressesBridal";
+@import "./pages/LaundryAndDryCleaning/_LaundryDryCleaning";
+@import "./pages/LaundryAndDryCleaning/pages/_IndividualService";
+@import "./pages/LaundryAndDryCleaning/pages/_businessService";
 
 // <========== NAVIGATION ==========>
 .Navbar {
@@ -280,10 +281,11 @@
 			}
 
 			p {
+				width: 800px;
 				margin: 0 auto;
 				margin-top: 2.25rem;
 				color: $baseColor_black;
-				font-size: $fontSize_normal;
+				font-size: $fontSize_small;
 				font-family: $fontStyle_header;
 			}
 		}
