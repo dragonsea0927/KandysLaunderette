@@ -30,6 +30,11 @@ const Navbar = () => {
 								</div>
 							</ul>
 						</div>
+					</div>
+				</div>
+				<div className={styles.borderDivider}></div>
+				<div className="container">
+					<div className={styles.content}>
 						<div className={styles.mainSection}>
 							<div className={styles.title}>
 								<Link href="/" target="blank">
@@ -37,7 +42,7 @@ const Navbar = () => {
 								</Link>
 							</div>
 							<ul>
-								<Link href="#home" target="blank">
+								<Link href="/" target="blank">
 									<a>Home</a>
 								</Link>
 								<Link href="#services" target="blank">

@@ -11,7 +11,6 @@
 // <========== NAVIGATION ==========>
 .Navbar {
 	padding: 0.5rem 0;
-	border-bottom: $baseColor_lightGrey2 0.015rem solid;
 
 	.content {
 		.topSection {
@@ -47,9 +46,7 @@
 
 		.mainSection {
 			display: flex;
-			margin-top: 0.5rem;
 			justify-content: space-between;
-			border-top: $baseColor_lightGrey2 0.015rem solid;
 
 			.title {
 				margin: auto 0;
@@ -69,7 +66,7 @@
 
 			ul {
 				display: flex;
-				padding: 1rem 0;
+				padding: 0.75rem 0;
 				margin: auto 0;
 				justify-content: center;
 				grid-column-gap: 1rem;
@@ -87,6 +84,11 @@
 				}
 			}
 		}
+	}
+
+	.borderDivider {
+		margin: 0.5rem 0;
+		border-bottom: $baseColor_lightGrey2 0.015rem solid;
 	}
 }
 
@@ -725,6 +727,22 @@
 	.mainContent {
 		.previousButton {
 			display: none;
+		}
+	}
+
+	// <========== SUITS & OXFORD PAGE ==========>
+	.suitsOxford {
+		.gridDisplay {
+			padding: 0 1rem;
+			grid-column-gap: 1rem;
+
+			.content {
+				.description {
+					p {
+						font-size: $fontSize_normal;
+					}
+				}
+			}
 		}
 	}
 
