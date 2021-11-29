@@ -666,7 +666,7 @@
 					justify-content: space-between;
 
 					a {
-						color: $baseColor_white;
+						color: $baseColor_lightGrey2;
 						text-decoration: none;
 						font-size: $fontSize_medium;
 					}
@@ -684,7 +684,7 @@
 				padding: 1rem 0;
 				grid-template-columns: repeat(4, 1fr);
 				grid-column-gap: 1.75rem;
-				border-top: $baseColor_lightGrey2 0.015rem solid;
+				border-top: $baseColor_lightGrey4 0.015rem solid;
 
 				.links {
 					display: flex;
@@ -714,7 +714,7 @@
 
 		.bottomSection {
 			margin-top: 2rem;
-			border-top: $baseColor_lightGrey2 0.015rem solid;
+			border-top: $baseColor_lightGrey4 0.015rem solid;
 
 			.topSide {
 				display: flex;
@@ -734,7 +734,7 @@
 			.bottomSide {
 				margin-bottom: 1rem;
 				text-align: center;
-				border-top: $baseColor_lightGrey2 0.015rem solid;
+				border-top: $baseColor_lightGrey4 0.015rem solid;
 
 				ul {
 					display: flex;
@@ -759,7 +759,7 @@
 					text-align: center;
 
 					h5 {
-						color: $baseColor_white;
+						color: $baseColor_lightGrey2;
 						font-size: $fontSize_xSmall;
 						font-family: $fontStyle_header;
 					}
@@ -943,16 +943,18 @@
 	}
 
 	// <========== FOOTER ==========>
-	.footer {
+	.footer,
+	.footerDark {
 		.content {
 			.topSection {
+				margin: 7.5rem 0;
+
 				.content {
 					display: flex;
 					padding: 1.5rem 1rem;
 					flex-direction: column;
 					grid-column-gap: 0rem;
 					grid-row-gap: 2rem;
-					border-top: $baseColor_lightGrey2 0.015rem solid;
 
 					.emailSignUp {
 						text-align: center;
@@ -1061,12 +1063,39 @@
 			}
 		}
 	}
+
+	.footerDark {
+		.content {
+			.topSection {
+				.content {
+					border-top: none;
+
+					.emailSignUp {
+						h2 {
+							color: $baseColor_white;
+						}
+
+						p {
+							color: $baseColor_lightGrey2;
+						}
+					}
+				}
+			}
+
+			.middleSection {
+				.content {
+					border-top: $baseColor_lightGrey4 0.015rem solid;
+				}
+			}
+		}
+	}
 }
 
 /* Tablet screen (portrait 768px - 1023px) // Change to (max-device-width: 768px) when finished */
 @media screen and (min-width: 768px) and (max-width: 992px) {
 	// <========== FOOTER ==========>
-	.footer {
+	.footer,
+	.footerDark {
 		.content {
 			.topSection {
 				.content {
@@ -1174,6 +1203,16 @@
 							font-size: $fontSize_small;
 						}
 					}
+				}
+			}
+		}
+	}
+
+	.footerDark {
+		.content {
+			.topSection {
+				.content {
+					border-top: none;
 				}
 			}
 		}
