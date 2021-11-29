@@ -36,27 +36,39 @@ const FooterDark = () => {
 									</button>
 								</div>
 								<div className={styles.socialLinks}>
-									<Link href="#" target="blank">
+									<Link
+										href="https://business.facebook.com/kandyslaunderetteanddrycleaner/"
+										target="blank"
+									>
 										<a>
 											<i className="bi bi-facebook"></i>
 										</a>
 									</Link>
-									<Link href="#" target="blank">
+									<Link
+										href="https://www.instagram.com/kandyslaunderetteanddrycleaner/?hl=en"
+										target="blank"
+									>
 										<a>
 											<i className="bi bi-instagram"></i>
 										</a>
 									</Link>
-									<Link href="#" target="blank">
+									<Link
+										href="https://todd-owen-mpeli.github.io/Kandy-s-Launderette-Website/src/index.html"
+										target="blank"
+									>
 										<a>
 											<i className="bi bi-twitter"></i>
 										</a>
 									</Link>
-									<Link href="#" target="blank">
+									<Link href="tel:01792 461111" target="blank">
 										<a>
 											<i className="bi bi-whatsapp"></i>
 										</a>
 									</Link>
-									<Link href="#" target="blank">
+									<Link
+										href="https://todd-owen-mpeli.github.io/Kandy-s-Launderette-Website/src/index.html"
+										target="blank"
+									>
 										<a>
 											<i className="bi bi-google"></i>
 										</a>
@@ -96,19 +108,19 @@ const FooterDark = () => {
 									<h2>
 										<strong>Services</strong>
 									</h2>
-									<Link href="#launderette" target="blank">
+									<Link href="/LaundryDryCleaning" target="blank">
 										<a>Laundry & Dry Cleaning</a>
 									</Link>
-									<Link href="#alterations" target="blank">
-										<a>Wedding Dresses & Bridal</a>
+									<Link href="/suitsOxfordShirts" target="blank">
+										<a>Suits & Oxford Shirts</a>
 									</Link>
-									<Link href="#selfService" target="blank">
+									<Link href="/WeddingDressesBridal" target="blank">
+										<a>Wedding Dresses</a>
+									</Link>
+									<Link href="/AlterationsRepairs" target="blank">
 										<a>Alterations & Repairs</a>
 									</Link>
-									<Link href="#professionalIroning" target="blank">
-										<a>Professional Ironing</a>
-									</Link>
-									<Link href="#moreServices" target="blank">
+									<Link href="/moreServices" target="blank">
 										<a>More Services</a>
 									</Link>
 								</div>
@@ -116,7 +128,7 @@ const FooterDark = () => {
 									<h2>
 										<strong>About Us</strong>
 									</h2>
-									<Link href="#ourStory" target="blank">
+									<Link href="/ourStory" target="blank">
 										<a>Our Story</a>
 									</Link>
 									<Link href="#customerReviews" target="blank">

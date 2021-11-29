@@ -45,7 +45,7 @@ const Navbar = () => {
 								<Link href="/" target="blank">
 									<a>Home</a>
 								</Link>
-								<Link href="#services" target="blank">
+								<Link href="/services" target="blank">
 									<a>All Services</a>
 								</Link>
 								<Link href="/LaundryDryCleaning" target="blank">
