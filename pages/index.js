@@ -137,7 +137,7 @@ export default function Home() {
 								<Link href="#launderette" target="blank">
 									<a>
 										<Image
-											src="/img/trousers-alterations.jpg"
+											src="/img/juan-jose-porta-YsoCJDGoiG4-unsplash.jpg"
 											alt="Product Image"
 											width={400}
 											height={400}
