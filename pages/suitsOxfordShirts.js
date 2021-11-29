@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Navbar from "/components/Navbar";
 import OurProcess from "/components/ourProcess";
-import Footer from "/components/Footer";
+import FooterDark from "/components/FooterDark";
 import styles from "/styles/Home.module.scss";
 
 const suitsOxfordShirts = () => {
@@ -217,7 +217,7 @@ const suitsOxfordShirts = () => {
 			</div>
 
 			{/* <!--===== FOOTER =====--> */}
-			<Footer />
+			<FooterDark />
 		</>
 	);
 };
