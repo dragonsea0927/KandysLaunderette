@@ -3,6 +3,7 @@
 @import "./colors";
 
 // Components Styling
+@import "./components/ourProcess";
 @import "./components/ContactInfo/_ContactInfo.scss";
 @import "./components/WeddingDressesAndBridal/ContactInfo.scss";
 
@@ -943,6 +944,50 @@
 		}
 	}
 
+	// <========== WEDDING SUITS ==========>
+	.weddingSuits {
+		.content {
+			padding: 0 0.5rem;
+			.title {
+				h2 {
+					font-size: $fontSize_large-1;
+				}
+
+				h5 {
+					font-size: $fontSize_small;
+				}
+			}
+
+			.gridDisplay {
+				.innerContent {
+					.description {
+						h2 {
+							font-size: $fontSize_large;
+						}
+
+						p {
+							font-size: $fontSize_small;
+						}
+					}
+				}
+			}
+
+			.groomsmenDisplay {
+				.innerContent {
+					.description {
+						h2 {
+							font-size: $fontSize_large;
+						}
+
+						p {
+							font-size: $fontSize_small;
+						}
+					}
+				}
+			}
+		}
+	}
+
 	// <========== FOOTER ==========>
 	.footer,
 	.footerDark {
@@ -1155,7 +1200,9 @@
 
 	// <========== ALTERATIONS & REPAIRS ==========>
 	.alterationsRepairs {
+		border: none;
 		.content {
+			border: none;
 			.title {
 				h2 {
 					font-size: $fontSize_large-1;

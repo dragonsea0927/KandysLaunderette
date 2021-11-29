@@ -5,7 +5,7 @@ const ourProcess = () => {
 	return (
 		<>
 			{/* // <========== OUR PROCESS INFORMATION ==========> */}
-			<div className={styles.weddingDressProcess}>
+			<div className={styles.ourProcess}>
 				<div className="container">
 					<div className={styles.content}>
 						<div className={styles.title}>
