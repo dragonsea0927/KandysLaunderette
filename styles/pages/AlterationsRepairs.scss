@@ -1,0 +1,32 @@
+// <========== BACKGROUND IMAGE ==========>
+.backgroundImageAlterationsRepairs {
+	height: 25rem;
+	align-items: center;
+	background: url("/img/alexander-naglestad-RFhq0SrrgEg-unsplash.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+// <========== PAGE TITLE ==========>
+.pageTitle {
+	.content {
+		.title {
+			padding: 2.5rem 0;
+			text-align: center;
+
+			h2 {
+				color: $baseColor_black;
+				font-size: $fontSize_large-1;
+				font-family: $fontStyle_option1;
+			}
+
+			h5 {
+				margin-top: 1rem;
+				color: $baseColor_black;
+				font-size: $fontSize_normal;
+				font-family: $fontStyle_header;
+			}
+		}
+	}
+}

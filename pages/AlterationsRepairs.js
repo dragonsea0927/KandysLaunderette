@@ -46,7 +46,7 @@ const AlterationsRepairs = () => {
 			<Navbar />
 
 			{/* // <========== BACKGROUND IMAGE ==========> */}
-			<div className={styles.backgroundImageSuitsOxfordShirts}></div>
+			<div className={styles.backgroundImageAlterationsRepairs}></div>
 
 			{/* // <========== PAGE TITLE ==========> */}
 			<div className={styles.pageTitle}>
