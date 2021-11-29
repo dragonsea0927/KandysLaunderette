@@ -158,6 +158,64 @@ const suitsOxfordShirts = () => {
 			{/* <!--===== OUR PROCESS INFORMATION =====--> */}
 			<OurProcess />
 
+			{/* <!--===== ALTERATIONS & REPAIRS =====--> */}
+			<div className={styles.alterationsRepairs}>
+				<div className="container">
+					<div className={styles.content}>
+						<div className={styles.title}>
+							<h2>Suits Alterations & Repairs</h2>
+							<h5>Perfection has never been so easy</h5>
+						</div>
+					</div>
+				</div>
+				<div className={styles.backgroundImage}></div>
+				<div className="container">
+					<div className={styles.content}>
+						<div className={styles.gridDisplay}>
+							<div className={styles.alterationsDisplay}>
+								<div className={styles.Image}>
+									<Image
+										src="/img/simona-sergi-pmFgcciSt4s-unsplash.jpg"
+										alt="Product Image"
+										width={600}
+										height={800}
+										objectFit="cover"
+									></Image>
+								</div>
+								<div className={styles.description}>
+									<h2>Alterations</h2>
+									<p>
+										We offer suit cleaning & alterations for everyday and
+										special day occasions. We specialize in wedding suits, 2
+										Piece & 3 Piece suits and in 2 Piece Dress & Dinner Suit.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div className={styles.repairsDisplay}>
+							<div className={styles.innerContent}>
+								<div className={styles.description}>
+									<h2>Repairs</h2>
+									<p>
+										We also take care of your Groomsmen suits. Either 2 Piece &
+										3 Piece suits, we specialize in all of them.
+									</p>
+								</div>
+								<div className={styles.Image}>
+									<Image
+										src="/img/sandie-clarke-BrohkstBl_w-unsplash.jpg"
+										alt="Product Image"
+										width={800}
+										height={800}
+										objectFit="contain"
+									></Image>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			{/* <!--===== FOOTER =====--> */}
 			<Footer />
 		</>
