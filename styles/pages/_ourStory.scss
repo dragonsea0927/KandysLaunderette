@@ -22,13 +22,13 @@
 					a {
 						font-weight: 700;
 						text-transform: uppercase;
-						color: $baseColor_white;
+						color: $baseColor_black;
 						font-size: $fontSize_normal;
 						font-family: $fontStyle_option1;
 					}
 
 					a:hover {
-						color: $baseColor_black;
+						color: $secondary_fadedPink;
 					}
 				}
 
@@ -42,13 +42,13 @@
 					a {
 						padding: 0 10px;
 						margin: auto 0;
-						color: $baseColor_white;
+						color: $baseColor_black;
 						font-size: $fontSize_xSmall;
 						font-family: $fontStyle_header;
 					}
 
 					a:hover {
-						color: $baseColor_black;
+						color: $baseColor_lightGrey3;
 					}
 				}
 			}
@@ -71,14 +71,14 @@
 					text-align: center;
 
 					h2 {
-						color: $baseColor_white;
+						color: $baseColor_black;
 						font-size: $fontSize_large-1;
 						font-family: $fontStyle_option1;
 					}
 
 					h5 {
 						margin-top: 1rem;
-						color: $baseColor_white;
+						color: $baseColor_black;
 						font-size: $fontSize_normal;
 						font-family: $fontStyle_header;
 					}
