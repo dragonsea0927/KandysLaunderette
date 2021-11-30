@@ -2,10 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "/styles/Home.module.scss";
 
-const Navbar = () => {
+const NavbarPink = () => {
 	return (
 		<>
-			<div className={styles.Navbar}>
+			<div className={styles.NavbarPink}>
 				<div className="container">
 					<div className={styles.content}>
 						<div className={styles.topSection}>
@@ -72,4 +72,4 @@ const Navbar = () => {
 	);
 };
 
-export default Navbar;
+export default NavbarPink;

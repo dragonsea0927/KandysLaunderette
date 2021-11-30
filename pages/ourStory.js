@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import Navbar from "/components/Navbar";
+import NavbarPink from "/components/NavbarPink";
 import Footer from "/components/Footer";
 import styles from "/styles/Home.module.scss";
 
@@ -42,7 +42,7 @@ const ourStory = () => {
 			</Head>
 
 			{/* <!--===== NAVIGATION =====--> */}
-			<Navbar />
+			<NavbarPink />
 
 			{/* // <========== PAGE TITLE ==========> */}
 			<div className={styles.pageTitle}>
