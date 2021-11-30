@@ -60,6 +60,146 @@ const ourStory = () => {
 				</div>
 			</div>
 
+			{/* // <========== ABOUT US DESCRIPTIONS ==========> */}
+			<div className={styles.aboutUs}>
+				<div className="container">
+					<div className={styles.content}>
+						<h2>We may be new to you</h2>
+						<p>
+							But We believe in making the most of life's simple pleasures -
+							it's the little things that matter. Precious moments of
+							uncomplicated happiness are our constant inspiration, and it is
+							with these in mind that we create collections of services that are
+							built to last and become an intimate part of your everyday lives.
+							<br></br>
+							<br></br>I cannot emphasize enough how much thought, care, and
+							attention to detail goes into every service we make at The White
+							Company - I hope you'll cherish your purchases as much as we do.
+							<br></br>
+							<br></br>
+							<span>We're delighted to meet you</span>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			{/* // <========== SUITS & OXFORD DESCRIPTIONS ==========> */}
+			<div className={styles.ourLeader}>
+				<div className="container">
+					<div className={styles.gridDisplay}>
+						<Image
+							src="/img/karsten-winegeart-bwDnRf-r4u8-unsplash.jpg"
+							alt="Product Image"
+							width={400}
+							height={800}
+							objectFit="cover"
+						></Image>
+						<Image
+							src="/img/karsten-winegeart-Q7iB4Yixcfw-unsplash.jpg"
+							alt="Product Image"
+							width={400}
+							height={800}
+							objectFit="cover"
+						></Image>
+					</div>
+					<div className={styles.content}>
+						<div className={styles.description}>
+							<h2>Kandy Chrissie Rucker</h2>
+							<p>
+								Over 2 years ago, Kandy Chrissie Rucker had a vision: to create
+								a company that specialized in Laundry & Dry Cleaning,
+								Alterations & Repairs, amongst many other services combining the
+								highest quality with affordable prices.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{/* <!--===== OUR COLLECTION =====--> */}
+			<div className={styles.ourCollections}>
+				<div className="container">
+					<div className={styles.content}>
+						<div className={styles.title}>
+							<h2>Our Attention to Detail</h2>
+							<h5>Consistency, Efficiency & Perfection.</h5>
+						</div>
+						<div className={styles.gridDisplay}>
+							<div className={styles.innerContent}>
+								<div className={styles.Image}>
+									<Image
+										src="/img/nimble-made-N0ke5zChVBU-unsplash.jpg"
+										alt="Product Image"
+										width={600}
+										height={800}
+										objectFit="cover"
+									></Image>
+								</div>
+								<div className={styles.description}>
+									<h2>Service</h2>
+									<p>
+										Our staff are highly skilled and trained to understand the
+										complexity of clothes and household furnishings. You can be
+										confident that your articles will always receive the
+										greatest care in dry cleaning, wet cleaning and stain
+										removal services.
+										<br></br>
+										<br></br>
+										Equally we pride ourselves on our ability to iron and hand
+										finish your garments to the highest standard, so they will
+										look their best for your future enjoyment.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div className={styles.gridDisplayTwo}>
+							<div className={styles.innerContent}>
+								<div className={styles.description}>
+									<h2>Convenience</h2>
+									<p>
+										We are located in high Street downtown Swansea. However We
+										also operate a collection and delivery service.
+										<br></br>
+										<br></br>
+										We have a variety of vehicles on the road and in telephone
+										contact, enabling a prompt response to your requests.
+									</p>
+								</div>
+								<div className={styles.Image}>
+									<Image
+										src="/img/nimble-made-Jf7JqVazm-4-unsplash.jpg"
+										alt="Product Image"
+										width={800}
+										height={800}
+										objectFit="contain"
+									></Image>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{/* <!--===== OUT STORE LOCATION =====--> */}
+			<div className={styles.storeLocation}>
+				<div className="container">
+					<div className={styles.title}>
+						<h2>Our Location</h2>
+						<h5>We hope to see you soon</h5>
+					</div>
+				</div>
+				<div className={styles.storeMap}>
+					{/* <iframe
+						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9907.997021073143!2d-3.9420236!3d51.6232228!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x919fb6f2312ca92b!2sKandys%20Launderette%20%26%20Dry%20Cleaner!5e0!3m2!1sen!2suk!4v1637884674092!5m2!1sen!2suk"
+						width="600"
+						height="450"
+						style="border:0;"
+						allowfullscreen="true"
+						loading="lazy"
+					></iframe> */}
+				</div>
+			</div>
+
 			{/* <!--===== FOOTER =====--> */}
 			<Footer />
 		</>
