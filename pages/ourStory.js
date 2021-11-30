@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import NavbarPink from "/components/NavbarPink";
+import NavbarTwo from "/components/NavbarTwo";
 import Footer from "/components/Footer";
 import styles from "/styles/Home.module.scss";
 
@@ -41,16 +41,20 @@ const ourStory = () => {
 				/>
 			</Head>
 
-			{/* <!--===== NAVIGATION =====--> */}
-			<NavbarPink />
+			<div className={styles.backgroundTopCover}>
+				{/* <!--===== NAVIGATION =====--> */}
+				<NavbarTwo />
 
-			{/* // <========== PAGE TITLE ==========> */}
-			<div className={styles.pageTitle}>
-				<div className="container">
-					<div className={styles.content}>
-						<div className={styles.title}>
-							<h2>Our Story</h2>
-							<h5>The Best Stress Free Dry Cleaning Solutions.</h5>
+				{/* // <========== PAGE TITLE ==========> */}
+				<div className={styles.ourStory}>
+					<div className={styles.pageTitle}>
+						<div className="container">
+							<div className={styles.content}>
+								<div className={styles.title}>
+									<h2>Our Story</h2>
+									<h5>The Best Stress Free Dry Cleaning Solutions.</h5>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

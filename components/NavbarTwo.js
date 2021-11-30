@@ -2,37 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "/styles/Home.module.scss";
 
-const NavbarPink = () => {
+const NavbarTwo = () => {
 	return (
 		<>
-			<div className={styles.NavbarPink}>
-				<div className="container">
-					<div className={styles.content}>
-						<div className={styles.topSection}>
-							<ul>
-								<Link href="#findStore" target="blank">
-									<a>Find Store</a>
-								</Link>
-								<div> | </div>
-								<Link href="#contactUs" target="blank">
-									<a>Contact Us</a>
-								</Link>
-								<div> | </div>
-								<div className={styles.flag}>
-									<Image
-										src="/img/Wales Flag.png"
-										alt="Product Image"
-										width={20}
-										height={20}
-										objectFit="contain"
-									></Image>
-									<h2>Wales</h2>
-								</div>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div className={styles.borderDivider}></div>
+			<div className={styles.NavbarTwo}>
 				<div className="container">
 					<div className={styles.content}>
 						<div className={styles.mainSection}>
@@ -72,4 +45,4 @@ const NavbarPink = () => {
 	);
 };
 
-export default NavbarPink;
+export default NavbarTwo;
