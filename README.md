@@ -1,5 +1,5 @@
 # Kandy's Launderette online store
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). I created to demonstrate my Server side Rendering knowledge & general web development skills. Specifically, Next.js, HTML, CSS, SCSS, JavaScript /jQuery, Git/ Github. 
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). I created to demonstrate my Server Side Rendering knowledge & general web development skills. Specifically, Next.js, HTML, CSS, SCSS, JavaScript /jQuery, Git/ Github. 
 
 # Cover Screenshot
 
@@ -11,6 +11,17 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 Kandy's Launderette is a small Dry-cleaning store providing a multitude of services, Duvets & Quilts Cleaning, Drying & Washing Machines, Washing Detergent, Professional Ironing and Stain Removing. As a dry-cleaning store all its services are all in-store experience however this store doesn't have an online website for its customers.
 
 Therefore building a online website will provide Kandy's Launderette customers the opportunity to see the lists of services provided.
+
+# My Objective
+To build a Server Side Rendering project website. After going back and forth with the client this is the updated design. The first version of this website which is the minimum viable product website I already built is located below.
+
+
+Live Link: https://todd-owen-mpeli.github.io/Kandy-s-Launderette-Website/src/index.html
+
+
+Github Link: https://github.com/Todd-Owen-Mpeli/Kandy-s-Launderette-Website
+
+The main objecttive is to display the updated list of services provided by Kandy's Launderette. Listing these services will provide customers the opportunity to see the value of the store without having to contact the store.
 
 ## Getting Started
 
