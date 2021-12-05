@@ -33,6 +33,32 @@ The main objecttive is to display the updated list of services provided by Kandy
 
 <img src="/public/img/Laptop%20View%20Screenshot%203.png" width="100%" height="625px">
 
+# Lessons Learned
+My first services centric website, I really enjoyed the process of integrating a google maps API, while also styling the entire website elements.
+
+I Enjoyed learning SASS extension for better CSS styling, file structure and creating specific reusable variables for better optimization. Also using Bootstrap 5 framework for better mobile responsiveness really improved my CSS hard-coding file reduction.
+
+1. JavaScript HTML DOM functions; Specifically toggling displaying or removing the additional in-store services section. 
+2. Git operations specifically init, add, status, commit, remote, push and pull. Additionally creating a remote repository to learn a better development workflow process.
+3. SCSS File Structure, _font.scss, _color.scss_ etc. Creating separate SCSS files for different attributes for better CSS optimization.
+4. Responsive website using Bootstrap 5 class integration for mobile & tablet view-width breakpoints. 
+
+# Personal Improvements
+Although the website is fairly functional and provides the minimum viable product of displaying the list of services, the current iteration of this project requires a list of improvements.
+
+1. More Team-orientated Git operations specifically branch and merge this will initialize a more realistic team development workflow process.
+2. More JavaScript functions for more interactive website, specifically HTML DOM element manipulation, displaying or removing items which are available or sold out.
+
+# Mobile View Screenshot
+
+1. Mobile view side by side of the landing page (Full page).
+2. All images are in 4K resolution, click to enlarge for better viewing.
+
+<img src="/public/img/Mobile%20View%20Screenshot%201.png" width="100%" height="850px">
+
+<img src="/public/img/Mobile%20View%20Screenshot%202.png" width="100%" height="850px">
+
+<img src="/public/img/Mobile%20View%20Screenshot%203.png" width="100%" height="850px">
 
 ## Getting Started
 
