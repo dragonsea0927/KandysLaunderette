@@ -843,6 +843,27 @@
 		}
 	}
 
+	/* ===== OUT STORE LOCATION =====*/
+	.storeLocation {
+		.title {
+			margin-top: 5rem;
+			text-align: center;
+			padding: 2.5rem 0;
+
+			h2 {
+				font-size: $fontSize_large-2;
+			}
+
+			h5 {
+				font-size: $fontSize_large-0;
+				font-family: $fontStyle_body;
+			}
+		}
+
+		.storeMap {
+		}
+	}
+
 	// <========== INFORMATION SECTION ==========>
 	.backgroundImageLaundryDryCleaning,
 	.backgroundImageContactInfoWDAB {
