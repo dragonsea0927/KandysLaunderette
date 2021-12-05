@@ -1003,6 +1003,101 @@
 		}
 	}
 
+	// <========== ALTERATIONS & REPAIR PAGE ==========>
+	.alterationsRepairsSection {
+		// <========== PAGE TITLE ==========>
+		.pageTitle {
+			padding: 0 1rem;
+			margin: 2.5rem 0;
+			.content {
+				.title {
+					padding: 2.5rem 0;
+					text-align: center;
+
+					h2 {
+						font-size: $fontSize_XL-large;
+					}
+
+					h5 {
+						margin-top: 1rem;
+						font-size: $fontSize_large;
+						font-family: $fontStyle_body;
+					}
+				}
+			}
+		}
+
+		// <========== ABOUT US ==========>
+		.aboutUs {
+			margin-top: 0rem;
+			padding: 5rem 1rem;
+			background-color: $baseColor_lightGrey1;
+
+			.content {
+				padding: 2.5rem 1rem;
+				text-align: center;
+
+				h2 {
+					font-size: $fontSize_large-1;
+				}
+
+				p {
+					font-size: $fontSize_medium;
+					font-family: $fontStyle_body;
+				}
+			}
+		}
+
+		// <========== WEDDING SUITS ==========>
+		.suitsBridal {
+			padding: 1rem;
+			background-color: $backgroundColor_White;
+
+			.content {
+				.title {
+					margin: 2rem 0;
+					padding: 2.5rem 0;
+					text-align: center;
+
+					h2 {
+						font-size: $fontSize_large-1;
+					}
+
+					h5 {
+						margin-top: 1rem;
+						font-size: $fontSize_normal;
+					}
+				}
+
+				.gridDisplay {
+					padding: 2.5rem 0;
+
+					.innerContent {
+						display: grid;
+						grid-template-columns: repeat(2, 1fr);
+						grid-column-gap: 2rem;
+
+						.description {
+							margin: auto 0;
+							padding: 0 2.5rem;
+
+							h2 {
+								color: $baseColor_black;
+								font-size: $fontSize_large-1;
+							}
+
+							p {
+								margin-top: 1rem;
+								font-size: $fontSize_medium;
+								font-family: $fontStyle_body;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
 	// <========== FOOTER ==========>
 	.footer,
 	.footerDark {
