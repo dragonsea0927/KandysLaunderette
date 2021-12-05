@@ -23,6 +23,13 @@ Github Link: https://github.com/Todd-Owen-Mpeli/Kandy-s-Launderette-Website
 
 The main objecttive is to display the updated list of services provided by Kandy's Launderette. Listing these services will provide customers the opportunity to see the value of the store without having to contact the store.
 
+# MacBook Viewport (Screenshot)
+
+1. All images are in 4K resolution, click to enlarge for better viewing.
+
+<img src="src/img/Mobile%20View%20Screenshot.png" width="100%" height="900px">
+
+
 ## Getting Started
 
 First, run the development server:
