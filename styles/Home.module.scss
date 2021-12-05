@@ -167,6 +167,10 @@
 					color: $baseColor_black;
 					font-size: $fontSize_normal;
 					font-family: $fontStyle_option1;
+
+					i {
+						margin: 0 5px;
+					}
 				}
 			}
 		}
@@ -1090,12 +1094,33 @@
 	// <========== HOME PAGE ==========>
 	.services {
 		.content {
+			.title {
+				padding: 5rem 0;
+				text-align: center;
+
+				h2 {
+					font-size: $fontSize_large-2;
+				}
+
+				h5 {
+					margin-top: 1rem;
+					font-size: $fontSize_large-0;
+					font-family: $fontStyle_body;
+				}
+			}
+
 			.moreOptions {
+				margin: 1rem 0;
 				padding: 2rem 1rem;
 
 				newButton {
 					a {
-						font-size: $fontSize_medium;
+						font-size: $fontSize_large-0;
+						font-family: $fontStyle_body;
+
+						i {
+							margin: 0 10px;
+						}
 					}
 				}
 			}
@@ -1107,6 +1132,62 @@
 				grid-template-columns: repeat(2, 1fr);
 				grid-column-gap: 1rem;
 				grid-row-gap: 2.5rem;
+
+				.content {
+					.header {
+						margin-top: 2rem;
+
+						a {
+							font-size: $fontSize_large-0;
+							font-family: $fontStyle_option1;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/* ===== SPECIAL OCCASIONS =====*/
+	.specialOccasions {
+		.content {
+			.title {
+				margin: 5rem 0;
+
+				h2 {
+					font-size: $fontSize_large-2;
+				}
+
+				h5 {
+					margin-top: 2.5rem;
+					font-size: $fontSize_large-0;
+					font-family: $fontStyle_body;
+				}
+			}
+
+			.innerContent {
+				display: grid;
+				margin-top: 2.5rem;
+				grid-template-columns: repeat(2, 1fr);
+				grid-column-gap: 1rem;
+
+				.productDisplay {
+					.content {
+						bottom: 200px;
+
+						h2 {
+							margin-bottom: 2rem;
+							font-size: $fontSize_large-0;
+						}
+
+						.shopButton {
+							padding: 1.5rem 2rem;
+
+							a {
+								font-size: $fontSize_large;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -1116,20 +1197,44 @@
 		padding: 0;
 
 		.content {
+			.title {
+				margin: 5rem 0;
+				padding: 2.5rem 0;
+
+				h2 {
+					font-size: $fontSize_large-2;
+				}
+
+				h5 {
+					margin-top: 2.5rem;
+					font-size: $fontSize_large-0;
+					font-family: $fontStyle_body;
+				}
+
+				p {
+					margin-top: 3.5rem;
+					font-size: $fontSize_large-0;
+					font-family: $fontStyle_body;
+				}
+			}
+
 			.gridDisplay {
 				display: grid;
-				padding: 1.5rem 0;
+				margin: 3.5rem 0;
 				grid-template-columns: repeat(2, 1fr);
 				grid-column-gap: 1rem;
 
 				.description {
 					padding-right: 1rem;
+
 					h2 {
-						font-size: $fontSize_large;
+						font-weight: 100;
+						font-size: $fontSize_large-2;
 					}
 
 					p {
-						font-size: $fontSize_normal;
+						font-size: $fontSize_large-0;
+						font-family: $fontStyle_body;
 					}
 				}
 			}
@@ -1138,19 +1243,18 @@
 
 	/* ===== HOTEL & RESTAURANT =====*/
 	.hotelAndRestaurant {
-		background-color: $backgroundColor_black;
-
 		.content {
 			.title {
-				text-align: center;
-				padding: 2rem 0;
+				margin: 5rem 0;
 
 				h2 {
-					font-size: $fontSize_large-1;
+					font-size: $fontSize_large-2;
 				}
 
 				h5 {
-					font-size: $fontSize_medium;
+					margin-top: 2rem;
+					font-size: $fontSize_large-0;
+					font-family: $fontStyle_body;
 				}
 			}
 
@@ -1162,8 +1266,10 @@
 
 				.content {
 					.header {
+						margin: 2.5rem 0;
 						a {
-							font-size: $fontSize_medium;
+							font-size: $fontSize_large-0;
+							font-family: $fontStyle_option1;
 						}
 					}
 				}
