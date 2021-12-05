@@ -66,7 +66,7 @@ const suitsOxfordShirts = () => {
 					<div className={styles.gridDisplay}>
 						<div className={styles.content}>
 							<Image
-								src="/img/benjamin-rascoe-WdhmRPvMn7A-unsplash.jpg"
+								src="/img/alexander-naglestad-MZbZQEx91Ek-unsplash.jpg"
 								alt="Product Image"
 								width={400}
 								height={400}

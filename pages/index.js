@@ -71,7 +71,8 @@ export default function Home() {
 							<newButton>
 								<Link href="">
 									<a>
-										View All Services <i class="bi bi-arrow-right-circle"></i>
+										View All Services{" "}
+										<i className="bi bi-arrow-right-circle"></i>
 									</a>
 								</Link>
 							</newButton>
@@ -100,7 +101,7 @@ export default function Home() {
 								<Link href="#launderette" target="blank">
 									<a>
 										<Image
-											src="/img/7e2461b51ed38f933ff6794e44025826.jpg"
+											src="/img/hardini-lestari-MujZAKea8Lw-unsplash.jpg"
 											alt="Product Image"
 											width={400}
 											height={400}
@@ -108,7 +109,6 @@ export default function Home() {
 										></Image>
 									</a>
 								</Link>
-
 								<div className={styles.header}>
 									<Link href="#launderette" target="blank">
 										<a>Groom's Suit Cleaning & Alterations</a>
