@@ -1279,6 +1279,7 @@
 
 	// <=================================================>
 	// <========== LAUNDRY & DRY CLEANING PAGE ==========>
+	// <========== INDIVIDUAL & BUSINESS PAGES ==========>
 	// <========== PAGE TITLE ==========>
 	.mainContent {
 		.content {
@@ -1290,33 +1291,56 @@
 
 				h2 {
 					font-weight: 600;
-					font-size: $fontSize_large-0;
-					font-family: $fontStyle_header;
+					font-size: $fontSize_large-2;
+					font-family: $fontStyle_option1;
 				}
 
 				p {
 					margin-top: 2rem;
 					text-align: center;
-					font-size: $fontSize_medium;
+					font-size: $fontSize_large-0;
 					font-family: $fontStyle_body;
 				}
 			}
 
 			.subtitle {
+				margin-top: 5rem;
 				padding: 1rem 0;
 
 				h2 {
 					text-align: left;
 					font-weight: 600;
-					color: $baseColor_black;
-					font-size: $fontSize_medium;
+					font-size: $fontSize_large-0;
 					font-family: $fontStyle_option1;
 				}
 			}
 
 			.innerContent {
 				display: grid;
+				margin-top: 2.5rem;
 				grid-template-columns: 30% 70%;
+				grid-column-gap: 1rem;
+
+				.servicesList {
+					.List {
+						h2 {
+							font-size: $fontSize_large;
+							font-family: $fontStyle_option1;
+						}
+
+						ul {
+							display: flex;
+							padding: 0rem;
+							flex-direction: column;
+
+							a {
+								padding: 15px 0;
+								font-size: $fontSize_large;
+								font-family: $fontStyle_body;
+							}
+						}
+					}
+				}
 
 				.servicesDisplays {
 					.servicesDisplay {
@@ -1329,6 +1353,11 @@
 
 						.content {
 							padding: 0;
+							.header {
+								a {
+									font-size: $fontSize_large-0;
+								}
+							}
 						}
 					}
 
@@ -1339,14 +1368,6 @@
 					}
 				}
 			}
-		}
-	}
-
-	// <=================================================>
-	// <========== INDIVIDUAL & BUSINESS PAGES ==========>
-	.mainContent {
-		.previousButton {
-			display: none;
 		}
 	}
 
