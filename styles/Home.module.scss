@@ -781,6 +781,9 @@
 
 /* Small - Large mobile screen (portrait 576px) // Change to (max-device-width: 320px) when finished */
 @media screen and (max-width: 576px) {
+	// <================================================>
+	// <================================================>
+	// <================================================>
 	// <========== COMPONENTS STYLING ==========>
 
 	// <========== PAGE TITLE ==========>
@@ -841,7 +844,8 @@
 	}
 
 	// <========== INFORMATION SECTION ==========>
-	.backgroundImageLaundryDryCleaning {
+	.backgroundImageLaundryDryCleaning,
+	.backgroundImageContactInfoWDAB {
 		.content {
 			display: flex;
 			text-align: center;
