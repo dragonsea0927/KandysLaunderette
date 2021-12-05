@@ -781,6 +781,8 @@
 
 /* Small - Large mobile screen (portrait 576px) // Change to (max-device-width: 320px) when finished */
 @media screen and (max-width: 576px) {
+	// <========== COMPONENTS STYLING ==========>
+
 	// <========== PAGE TITLE ==========>
 	.pageTitle {
 		.content {
@@ -794,377 +796,6 @@
 					margin-top: 2.25rem;
 					font-size: $fontSize_large-0;
 					font-family: $fontStyle_body;
-				}
-			}
-		}
-	}
-
-	// <========== MAIN SERVICES ==========>
-	.services {
-		.content {
-			.moreOptions {
-				padding: 2rem 1rem;
-
-				newButton {
-					a {
-						font-size: $fontSize_medium;
-					}
-				}
-			}
-
-			.gridDisplay {
-				display: grid;
-				padding: 0 0.5rem;
-				margin-bottom: 2rem;
-				grid-template-columns: repeat(2, 1fr);
-				grid-column-gap: 1rem;
-				grid-row-gap: 2.5rem;
-			}
-		}
-	}
-
-	/* ===== WHY CHOOSE US =====*/
-	.whyChooseUs {
-		padding: 0;
-
-		.content {
-			.gridDisplay {
-				display: grid;
-				padding: 1.5rem 0;
-				grid-template-columns: repeat(2, 1fr);
-				grid-column-gap: 1rem;
-
-				.description {
-					padding-right: 1rem;
-					h2 {
-						font-size: $fontSize_large;
-					}
-
-					p {
-						font-size: $fontSize_normal;
-					}
-				}
-			}
-		}
-	}
-
-	/* ===== HOTEL & RESTAURANT =====*/
-	.hotelAndRestaurant {
-		background-color: $backgroundColor_black;
-
-		.content {
-			.title {
-				text-align: center;
-				padding: 2rem 0;
-
-				h2 {
-					font-size: $fontSize_large-1;
-				}
-
-				h5 {
-					font-size: $fontSize_medium;
-				}
-			}
-
-			.gridDisplay {
-				display: grid;
-				padding: 2rem 0.5rem;
-				grid-template-columns: repeat(2, 1fr);
-				grid-row-gap: 2.5rem;
-
-				.content {
-					.header {
-						a {
-							font-size: $fontSize_medium;
-						}
-					}
-				}
-			}
-		}
-	}
-	// <================================================>
-	// <================================================>
-	// <================================================>
-	// <========== LAUNDRY & DRY CLEANING PAGES ==========>
-	// <========== PAGE TITLE ==========>
-	.mainContent {
-		.content {
-			padding: 0 1rem;
-
-			.title {
-				padding: 1rem 0;
-				margin-top: 2.5rem;
-
-				h2 {
-					font-weight: 600;
-					font-size: $fontSize_large-0;
-					font-family: $fontStyle_header;
-				}
-
-				p {
-					margin-top: 2rem;
-					text-align: center;
-					font-size: $fontSize_medium;
-					font-family: $fontStyle_body;
-				}
-			}
-
-			.subtitle {
-				padding: 1rem 0;
-
-				h2 {
-					text-align: left;
-					font-weight: 600;
-					color: $baseColor_black;
-					font-size: $fontSize_medium;
-					font-family: $fontStyle_option1;
-				}
-			}
-
-			.innerContent {
-				display: grid;
-				grid-template-columns: 30% 70%;
-
-				.servicesDisplays {
-					.servicesDisplay {
-						display: grid;
-						height: fit-content;
-						margin-bottom: 2rem;
-						grid-template-columns: repeat(2, 1fr);
-						grid-column-gap: 0.5rem;
-						grid-row-gap: 1.5rem;
-
-						.content {
-							padding: 0;
-						}
-					}
-
-					.ImageDivider,
-					.ImageDividerTwo,
-					.ImageDividerThree {
-						height: 15rem;
-					}
-				}
-			}
-		}
-	}
-
-	// <========== INDIVIDUAL & BUSINESS PAGES ==========>
-	.mainContent {
-		.previousButton {
-			display: none;
-		}
-	}
-	// <================================================>
-	// <================================================>
-	// <================================================>
-	// <========== SUITS & OXFORD PAGE ==========>
-	.suitsOxford {
-		.gridDisplay {
-			padding: 0 1rem;
-			grid-column-gap: 1rem;
-
-			.content {
-				.description {
-					h2 {
-						font-size: $fontSize_large-2;
-					}
-
-					p {
-						margin-top: 2rem;
-						font-size: $fontSize_large-0;
-						font-family: $fontStyle_body;
-					}
-				}
-			}
-		}
-	}
-
-	// <========== WEDDING SUITS ==========>
-	.weddingSuits {
-		.content {
-			padding: 0 1rem;
-
-			.title {
-				h2 {
-					font-size: $fontSize_large-2;
-				}
-
-				h5 {
-					margin-top: 2.25rem;
-					font-size: $fontSize_large-0;
-					font-family: $fontStyle_body;
-				}
-			}
-
-			.gridDisplay {
-				padding: 2.5rem 0;
-				.innerContent {
-					.description {
-						h2 {
-							font-size: $fontSize_large-2;
-						}
-
-						p {
-							font-size: $fontSize_large-0;
-							font-family: $fontStyle_body;
-						}
-					}
-				}
-			}
-
-			.groomsmenDisplay {
-				padding: 2.5rem 0;
-				.innerContent {
-					.description {
-						h2 {
-							font-size: $fontSize_large-2;
-						}
-
-						p {
-							margin-top: 2.5rem;
-							font-size: $fontSize_large-0;
-							font-family: $fontStyle_body;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	// <========== ALTERATIONS & REPAIRS ==========>
-	.alterationsRepairs {
-		padding: 2.5rem 0;
-		background-color: $backgroundColor_black;
-
-		.content {
-			padding: 0 1rem;
-
-			.title {
-				padding: 5rem 0;
-				text-align: center;
-
-				h2 {
-					font-size: $fontSize_large-2;
-				}
-
-				h5 {
-					color: $baseColor_lightGrey2;
-					font-size: $fontSize_large-0;
-					font-family: $fontStyle_body;
-				}
-			}
-
-			.gridDisplay {
-				margin-top: 5rem;
-				padding: 2.5rem 0;
-
-				.alterationsDisplay {
-					display: grid;
-					grid-template-columns: repeat(2, 1fr);
-					grid-column-gap: 2rem;
-
-					.description {
-						margin: auto 0;
-						padding: 0 2.5rem;
-
-						h2 {
-							font-size: $fontSize_large-2;
-						}
-
-						p {
-							color: $baseColor_lightGrey2;
-							font-size: $fontSize_large-0;
-							font-family: $fontStyle_body;
-						}
-					}
-				}
-			}
-
-			.repairsDisplay {
-				margin-top: 5rem;
-				padding: 2.5rem 0;
-
-				.innerContent {
-					display: grid;
-					grid-template-columns: repeat(2, 1fr);
-					grid-column-gap: 1rem;
-
-					.description {
-						h2 {
-							font-size: $fontSize_large-2;
-						}
-
-						p {
-							color: $baseColor_lightGrey2;
-							font-size: $fontSize_large-0;
-							font-family: $fontStyle_body;
-						}
-					}
-				}
-			}
-		}
-	}
-	// <================================================>
-	// <================================================>
-	// <================================================>
-	// <========== WEDDING DRESSES & BRIDESMAID PAGE ==========>
-
-	// <========== WEDDING DRESS ==========>
-	.weddingDress {
-		padding: 0 1rem;
-		.gridDisplay {
-			margin-top: 5rem;
-			grid-template-columns: 1fr;
-
-			.Image {
-				margin: 0 auto;
-			}
-
-			.description {
-				margin-top: 7.5rem;
-				padding: 0 2.5rem;
-
-				h2 {
-					font-size: $fontSize_large-2;
-				}
-
-				p {
-					margin-top: 2rem;
-					font-size: $fontSize_large-0;
-					font-family: $fontStyle_body;
-				}
-			}
-		}
-	}
-
-	// <========== BRIDESMAID DRESS ==========>
-	.BridesmaidDress {
-		background-color: $baseColor_lightGrey1;
-
-		.content {
-			padding: 0 1rem;
-
-			.innerContent {
-				grid-template-columns: 1fr;
-
-				.Image,
-				.description {
-					margin: auto 0;
-				}
-
-				.description {
-					padding: 0 2.5rem;
-
-					h2 {
-						font-size: $fontSize_large-2;
-					}
-
-					p {
-						margin-top: 2rem;
-						font-size: $fontSize_large-0;
-						font-family: $fontStyle_body;
-					}
 				}
 			}
 		}
@@ -1208,94 +839,54 @@
 			}
 		}
 	}
-	// <================================================>
-	// <================================================>
-	// <================================================>
-	// <========== ALTERATIONS & REPAIR PAGE ==========>
-	.alterationsRepairsSection {
-		// <========== PAGE TITLE ==========>
-		.pageTitle {
-			padding: 0 1rem;
-			margin: 2.5rem 0;
-			.content {
-				.title {
-					padding: 2.5rem 0;
-					text-align: center;
 
-					h2 {
-						font-size: $fontSize_XL-large;
-					}
+	// <========== INFORMATION SECTION ==========>
+	.backgroundImageLaundryDryCleaning {
+		.content {
+			display: flex;
+			text-align: center;
+			flex-direction: column;
+			grid-row-gap: 2rem;
 
-					h5 {
-						margin-top: 2.5rem;
-						font-size: $fontSize_large-0;
-						font-family: $fontStyle_body;
-					}
-				}
-			}
-		}
-
-		// <========== ABOUT US ==========>
-		.aboutUs {
-			margin-top: 0rem;
-			padding: 5rem 1rem;
-			background-color: $baseColor_lightGrey1;
-
-			.content {
-				padding: 2.5rem 1rem;
-				text-align: center;
+			.title {
+				display: flex;
+				flex-direction: column;
 
 				h2 {
-					font-size: $fontSize_large-2;
+					font-size: $fontSize_large-1;
 				}
 
-				p {
+				a {
+					font-size: $fontSize_large-0;
+					font-family: $fontStyle_body;
+				}
+
+				h5 {
 					font-size: $fontSize_large-0;
 					font-family: $fontStyle_body;
 				}
 			}
-		}
 
-		// <========== WEDDING SUITS ==========>
-		.suitsBridal {
-			padding: 1rem;
-			background-color: $backgroundColor_White;
+			.button {
+				margin-top: 2.55rem;
 
-			.content {
-				.title {
-					h2 {
-						font-size: $fontSize_large-2;
-					}
+				newButton {
+					padding: 2.75rem;
+					background-color: $backgroundColor_White;
 
-					h5 {
+					a {
 						font-size: $fontSize_large-0;
-						font-family: $fontStyle_body;
+						font-family: $fontStyle_header;
 					}
-				}
 
-				.gridDisplay {
-					padding: 2.5rem 0;
-
-					.innerContent {
-						.description {
-							h2 {
-								font-size: $fontSize_large-1;
-							}
-
-							p {
-								margin-top: 2rem;
-								font-size: $fontSize_large-0;
-								font-family: $fontStyle_body;
-							}
-						}
+					a:hover {
+						color: $baseColor_lightGrey4;
 					}
 				}
 			}
 		}
 	}
-	// <================================================>
-	// <================================================>
-	// <================================================>
+
 	// <========== FOOTER ==========>
 	.footer,
 	.footerDark {
@@ -1460,6 +1051,459 @@
 			.middleSection {
 				.content {
 					border-top: $baseColor_lightGrey4 0.015rem solid;
+				}
+			}
+		}
+	}
+
+	// <================================================>
+	// <================================================>
+	// <================================================>
+
+	// <========== MAIN PAGES STYLING ==========>
+
+	// <========== HOME PAGE ==========>
+	.services {
+		.content {
+			.moreOptions {
+				padding: 2rem 1rem;
+
+				newButton {
+					a {
+						font-size: $fontSize_medium;
+					}
+				}
+			}
+
+			.gridDisplay {
+				display: grid;
+				padding: 0 0.5rem;
+				margin-bottom: 2rem;
+				grid-template-columns: repeat(2, 1fr);
+				grid-column-gap: 1rem;
+				grid-row-gap: 2.5rem;
+			}
+		}
+	}
+
+	/* ===== WHY CHOOSE US =====*/
+	.whyChooseUs {
+		padding: 0;
+
+		.content {
+			.gridDisplay {
+				display: grid;
+				padding: 1.5rem 0;
+				grid-template-columns: repeat(2, 1fr);
+				grid-column-gap: 1rem;
+
+				.description {
+					padding-right: 1rem;
+					h2 {
+						font-size: $fontSize_large;
+					}
+
+					p {
+						font-size: $fontSize_normal;
+					}
+				}
+			}
+		}
+	}
+
+	/* ===== HOTEL & RESTAURANT =====*/
+	.hotelAndRestaurant {
+		background-color: $backgroundColor_black;
+
+		.content {
+			.title {
+				text-align: center;
+				padding: 2rem 0;
+
+				h2 {
+					font-size: $fontSize_large-1;
+				}
+
+				h5 {
+					font-size: $fontSize_medium;
+				}
+			}
+
+			.gridDisplay {
+				display: grid;
+				padding: 2rem 0.5rem;
+				grid-template-columns: repeat(2, 1fr);
+				grid-row-gap: 2.5rem;
+
+				.content {
+					.header {
+						a {
+							font-size: $fontSize_medium;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// <========== LAUNDRY & DRY CLEANING PAGE ==========>
+	// <========== PAGE TITLE ==========>
+	.mainContent {
+		.content {
+			padding: 0 1rem;
+
+			.title {
+				padding: 1rem 0;
+				margin-top: 2.5rem;
+
+				h2 {
+					font-weight: 600;
+					font-size: $fontSize_large-0;
+					font-family: $fontStyle_header;
+				}
+
+				p {
+					margin-top: 2rem;
+					text-align: center;
+					font-size: $fontSize_medium;
+					font-family: $fontStyle_body;
+				}
+			}
+
+			.subtitle {
+				padding: 1rem 0;
+
+				h2 {
+					text-align: left;
+					font-weight: 600;
+					color: $baseColor_black;
+					font-size: $fontSize_medium;
+					font-family: $fontStyle_option1;
+				}
+			}
+
+			.innerContent {
+				display: grid;
+				grid-template-columns: 30% 70%;
+
+				.servicesDisplays {
+					.servicesDisplay {
+						display: grid;
+						height: fit-content;
+						margin-bottom: 2rem;
+						grid-template-columns: repeat(2, 1fr);
+						grid-column-gap: 0.5rem;
+						grid-row-gap: 1.5rem;
+
+						.content {
+							padding: 0;
+						}
+					}
+
+					.ImageDivider,
+					.ImageDividerTwo,
+					.ImageDividerThree {
+						height: 15rem;
+					}
+				}
+			}
+		}
+	}
+
+	// <========== INDIVIDUAL & BUSINESS PAGES ==========>
+	.mainContent {
+		.previousButton {
+			display: none;
+		}
+	}
+	// <========== SUITS & OXFORD PAGE ==========>
+	.suitsOxford {
+		.gridDisplay {
+			padding: 0 1rem;
+			grid-column-gap: 1rem;
+
+			.content {
+				.description {
+					h2 {
+						font-size: $fontSize_large-2;
+					}
+
+					p {
+						margin-top: 2rem;
+						font-size: $fontSize_large-0;
+						font-family: $fontStyle_body;
+					}
+				}
+			}
+		}
+	}
+
+	// <========== WEDDING SUITS ==========>
+	.weddingSuits {
+		.content {
+			padding: 0 1rem;
+
+			.title {
+				h2 {
+					font-size: $fontSize_large-2;
+				}
+
+				h5 {
+					margin-top: 2.25rem;
+					font-size: $fontSize_large-0;
+					font-family: $fontStyle_body;
+				}
+			}
+
+			.gridDisplay {
+				padding: 2.5rem 0;
+				.innerContent {
+					.description {
+						h2 {
+							font-size: $fontSize_large-2;
+						}
+
+						p {
+							font-size: $fontSize_large-0;
+							font-family: $fontStyle_body;
+						}
+					}
+				}
+			}
+
+			.groomsmenDisplay {
+				padding: 2.5rem 0;
+				.innerContent {
+					.description {
+						h2 {
+							font-size: $fontSize_large-2;
+						}
+
+						p {
+							margin-top: 2.5rem;
+							font-size: $fontSize_large-0;
+							font-family: $fontStyle_body;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// <========== ALTERATIONS & REPAIRS ==========>
+	.alterationsRepairs {
+		padding: 2.5rem 0;
+		background-color: $backgroundColor_black;
+
+		.content {
+			padding: 0 1rem;
+
+			.title {
+				padding: 5rem 0;
+				text-align: center;
+
+				h2 {
+					font-size: $fontSize_large-2;
+				}
+
+				h5 {
+					color: $baseColor_lightGrey2;
+					font-size: $fontSize_large-0;
+					font-family: $fontStyle_body;
+				}
+			}
+
+			.gridDisplay {
+				margin-top: 5rem;
+				padding: 2.5rem 0;
+
+				.alterationsDisplay {
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+					grid-column-gap: 2rem;
+
+					.description {
+						margin: auto 0;
+						padding: 0 2.5rem;
+
+						h2 {
+							font-size: $fontSize_large-2;
+						}
+
+						p {
+							color: $baseColor_lightGrey2;
+							font-size: $fontSize_large-0;
+							font-family: $fontStyle_body;
+						}
+					}
+				}
+			}
+
+			.repairsDisplay {
+				margin-top: 5rem;
+				padding: 2.5rem 0;
+
+				.innerContent {
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+					grid-column-gap: 1rem;
+
+					.description {
+						h2 {
+							font-size: $fontSize_large-2;
+						}
+
+						p {
+							color: $baseColor_lightGrey2;
+							font-size: $fontSize_large-0;
+							font-family: $fontStyle_body;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// <========== WEDDING DRESSES & BRIDESMAID PAGE ==========>
+
+	// <========== WEDDING DRESS ==========>
+	.weddingDress {
+		padding: 0 1rem;
+		.gridDisplay {
+			margin-top: 5rem;
+			grid-template-columns: 1fr;
+
+			.Image {
+				margin: 0 auto;
+			}
+
+			.description {
+				margin-top: 7.5rem;
+				padding: 0 2.5rem;
+
+				h2 {
+					font-size: $fontSize_large-2;
+				}
+
+				p {
+					margin-top: 2rem;
+					font-size: $fontSize_large-0;
+					font-family: $fontStyle_body;
+				}
+			}
+		}
+	}
+
+	// <========== BRIDESMAID DRESS ==========>
+	.BridesmaidDress {
+		background-color: $baseColor_lightGrey1;
+
+		.content {
+			padding: 0 1rem;
+
+			.innerContent {
+				grid-template-columns: 1fr;
+
+				.Image,
+				.description {
+					margin: auto 0;
+				}
+
+				.description {
+					padding: 0 2.5rem;
+
+					h2 {
+						font-size: $fontSize_large-2;
+					}
+
+					p {
+						margin-top: 2rem;
+						font-size: $fontSize_large-0;
+						font-family: $fontStyle_body;
+					}
+				}
+			}
+		}
+	}
+
+	// <========== ALTERATIONS & REPAIR PAGE ==========>
+	.alterationsRepairsSection {
+		// <========== PAGE TITLE ==========>
+		.pageTitle {
+			padding: 0 1rem;
+			margin: 2.5rem 0;
+			.content {
+				.title {
+					padding: 2.5rem 0;
+					text-align: center;
+
+					h2 {
+						font-size: $fontSize_XL-large;
+					}
+
+					h5 {
+						margin-top: 2.5rem;
+						font-size: $fontSize_large-0;
+						font-family: $fontStyle_body;
+					}
+				}
+			}
+		}
+
+		// <========== ABOUT US ==========>
+		.aboutUs {
+			margin-top: 0rem;
+			padding: 5rem 1rem;
+			background-color: $baseColor_lightGrey1;
+
+			.content {
+				padding: 2.5rem 1rem;
+				text-align: center;
+
+				h2 {
+					font-size: $fontSize_large-2;
+				}
+
+				p {
+					font-size: $fontSize_large-0;
+					font-family: $fontStyle_body;
+				}
+			}
+		}
+
+		// <========== WEDDING SUITS ==========>
+		.suitsBridal {
+			padding: 1rem;
+			background-color: $backgroundColor_White;
+
+			.content {
+				.title {
+					h2 {
+						font-size: $fontSize_large-2;
+					}
+
+					h5 {
+						font-size: $fontSize_large-0;
+						font-family: $fontStyle_body;
+					}
+				}
+
+				.gridDisplay {
+					padding: 2.5rem 0;
+
+					.innerContent {
+						.description {
+							h2 {
+								font-size: $fontSize_large-1;
+							}
+
+							p {
+								margin-top: 2rem;
+								font-size: $fontSize_large-0;
+								font-family: $fontStyle_body;
+							}
+						}
+					}
 				}
 			}
 		}
