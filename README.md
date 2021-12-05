@@ -27,7 +27,11 @@ The main objecttive is to display the updated list of services provided by Kandy
 
 1. All images are in 4K resolution, click to enlarge for better viewing.
 
-<img src="src/img/Mobile%20View%20Screenshot.png" width="100%" height="900px">
+<img src="/public/img/Laptop%20View%20Screenshot%201.png" width="100%" height="625px">
+
+<img src="/public/img/Laptop%20View%20Screenshot%202.png" width="100%" height="625px">
+
+<img src="/public/img/Laptop%20View%20Screenshot%203.png" width="100%" height="625px">
 
 
 ## Getting Started
