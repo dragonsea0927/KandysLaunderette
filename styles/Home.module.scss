@@ -1000,6 +1000,38 @@
 	.ourProcess {
 		.content {
 			padding: 0 0.5rem;
+
+			.title {
+				h2 {
+					font-size: $fontSize_large-2;
+				}
+
+				h5 {
+					margin-top: 2rem;
+					font-size: $fontSize_large-0;
+					font-family: $fontStyle_body;
+				}
+			}
+
+			.gridDisplay {
+				grid-template-columns: 1fr;
+
+				.column {
+					.description {
+						margin: 2rem 0;
+						padding: 2rem;
+
+						h2 {
+							font-size: $fontSize_large-2;
+						}
+
+						p {
+							font-size: $fontSize_large-0;
+							font-family: $fontStyle_body;
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -1105,38 +1137,40 @@
 						padding: 1rem 0.5rem;
 
 						h2 {
-							color: $baseColor_black;
-							font-size: $fontSize_large-0;
-							font-family: $fontStyle_header;
+							font-weight: 100;
+							font-size: $fontSize_large-2;
+							font-family: $fontStyle_option1;
 						}
 
 						p {
-							color: $baseColor_black;
-							font-size: $fontSize_medium;
+							margin-top: 2.5rem;
+							font-size: $fontSize_large-0;
 							font-family: $fontStyle_body;
 						}
 					}
 
 					.signUp {
-						margin: 0 auto;
+						margin: 5rem auto;
 
 						input {
-							width: 375px;
-							padding: 0.5rem;
-							padding-top: 0.75rem;
-							font-size: $fontSize_medium;
+							width: 575px;
+							padding: 0.75rem;
+							padding-top: 2.5rem;
+							font-size: $fontSize_large-0;
+							font-family: $fontStyle_body;
 						}
 
 						::placeholder,
 						::-ms-input-placeholder {
-							font-size: $fontSize_medium;
+							font-size: $fontSize_large-0;
+							font-family: $fontStyle_body;
 							color: $baseColor_black;
 						}
 
 						button {
 							width: 175px;
-							padding: 1rem;
-							font-size: $fontSize_medium;
+							padding: 1rem 2rem;
+							font-size: $fontSize_large;
 							font-family: $fontStyle_body;
 						}
 					}
@@ -1145,8 +1179,8 @@
 						margin: 0 auto;
 
 						a {
-							padding: 0 25px;
-							font-size: $fontSize_large-1;
+							padding: 0 50px;
+							font-size: $fontSize_large-2;
 						}
 					}
 				}
@@ -1162,15 +1196,20 @@
 					border-top: $baseColor_lightGrey2 0.015rem solid;
 
 					.links {
-						display: flex;
 						margin-top: 1rem;
 						padding: 0 1.5rem;
-						flex-direction: column;
 						grid-row-gap: 1.5rem;
 
-						a,
 						h2 {
-							font-size: $fontSize_medium;
+							font-weight: 100;
+							margin: 2.5rem 0;
+							font-size: $fontSize_large-2;
+							font-family: $fontStyle_option1;
+						}
+
+						a {
+							font-size: $fontSize_large-0;
+							font-family: $fontStyle_body;
 						}
 					}
 				}
@@ -1180,19 +1219,32 @@
 				.topSide {
 					margin: 1rem 0;
 
+					.Image {
+						width: 100%;
+						height: 50px;
+					}
+
 					h2 {
-						font-size: $fontSize_medium;
+						font-size: $fontSize_large-0;
+						font-family: $fontStyle_body;
 					}
 				}
 
 				.bottomSide {
 					margin: 1rem 0;
+					margin-bottom: 5rem;
 
 					ul {
 						margin: 3rem 0;
 
 						a {
-							font-size: $fontSize_medium;
+							font-size: $fontSize_large-0;
+							font-family: $fontStyle_body;
+						}
+
+						.bottomSectionSideDividers {
+							font-size: $fontSize_large-0;
+							font-family: $fontStyle_body;
 						}
 					}
 
@@ -1200,7 +1252,8 @@
 						margin: 2rem auto;
 
 						h5 {
-							font-size: $fontSize_medium;
+							font-size: $fontSize_large-0;
+							font-family: $fontStyle_body;
 						}
 					}
 				}

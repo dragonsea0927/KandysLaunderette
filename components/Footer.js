@@ -157,6 +157,7 @@ const Footer = () => {
 						<div className={styles.bottomSection}>
 							<div className={styles.topSide}>
 								<Image
+									className={styles.Image}
 									src="/img/Wales Flag.png"
 									alt="Product Image"
 									width={20}
@@ -165,6 +166,7 @@ const Footer = () => {
 								></Image>
 								<h2>Wales | </h2>
 								<Image
+									className={styles.Image}
 									src="/img/United Kingdom Flag.png"
 									alt="Product Image"
 									width={20}
@@ -178,11 +180,11 @@ const Footer = () => {
 									<Link href="#" target="blank">
 										<a>Terms & Conditions</a>
 									</Link>
-									<div> | </div>
+									<div className={styles.bottomSectionSideDividers}> | </div>
 									<Link href="#" target="blank">
 										<a>Privacy Policy</a>
 									</Link>
-									<div> | </div>
+									<div className={styles.bottomSectionSideDividers}> | </div>
 									<Link href="#" target="blank">
 										<a>Accessibility</a>
 									</Link>
