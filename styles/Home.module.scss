@@ -781,6 +781,24 @@
 
 /* Small - Large mobile screen (portrait 576px) // Change to (max-device-width: 320px) when finished */
 @media screen and (max-width: 576px) {
+	// <========== PAGE TITLE ==========>
+	.pageTitle {
+		.content {
+			.title {
+				h2 {
+					margin-top: 2.5rem;
+					font-size: $fontSize_large-2;
+				}
+
+				h5 {
+					margin-top: 2.25rem;
+					font-size: $fontSize_large-0;
+					font-family: $fontStyle_body;
+				}
+			}
+		}
+	}
+
 	// <========== MAIN SERVICES ==========>
 	.services {
 		.content {
@@ -944,8 +962,14 @@
 
 			.content {
 				.description {
+					h2 {
+						font-size: $fontSize_large-2;
+					}
+
 					p {
-						font-size: $fontSize_normal;
+						margin-top: 2rem;
+						font-size: $fontSize_large-0;
+						font-family: $fontStyle_body;
 					}
 				}
 			}
@@ -955,46 +979,136 @@
 	// <========== WEDDING SUITS ==========>
 	.weddingSuits {
 		.content {
-			padding: 0 0.5rem;
+			padding: 0 1rem;
+
 			.title {
 				h2 {
-					font-size: $fontSize_large-1;
+					font-size: $fontSize_large-2;
 				}
 
 				h5 {
-					font-size: $fontSize_small;
+					margin-top: 2.25rem;
+					font-size: $fontSize_large-0;
+					font-family: $fontStyle_body;
 				}
 			}
 
 			.gridDisplay {
+				padding: 2.5rem 0;
 				.innerContent {
 					.description {
 						h2 {
-							font-size: $fontSize_large;
+							font-size: $fontSize_large-2;
 						}
 
 						p {
-							font-size: $fontSize_small;
+							font-size: $fontSize_large-0;
+							font-family: $fontStyle_body;
 						}
 					}
 				}
 			}
 
 			.groomsmenDisplay {
+				padding: 2.5rem 0;
 				.innerContent {
 					.description {
 						h2 {
-							font-size: $fontSize_large;
+							font-size: $fontSize_large-2;
 						}
 
 						p {
-							font-size: $fontSize_small;
+							margin-top: 2.5rem;
+							font-size: $fontSize_large-0;
+							font-family: $fontStyle_body;
 						}
 					}
 				}
 			}
 		}
 	}
+
+	// <========== ALTERATIONS & REPAIRS ==========>
+	.alterationsRepairs {
+		padding: 2.5rem 0;
+		background-color: $backgroundColor_black;
+
+		.content {
+			padding: 0 1rem;
+
+			.title {
+				padding: 5rem 0;
+				text-align: center;
+
+				h2 {
+					font-size: $fontSize_large-2;
+				}
+
+				h5 {
+					color: $baseColor_lightGrey2;
+					font-size: $fontSize_large-0;
+					font-family: $fontStyle_body;
+				}
+			}
+
+			.gridDisplay {
+				margin-top: 5rem;
+				.alterationsDisplay {
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+					grid-column-gap: 2rem;
+
+					.description {
+						margin: auto 0;
+						padding: 0 2.5rem;
+
+						h2 {
+							font-size: $fontSize_large-2;
+						}
+
+						p {
+							color: $baseColor_lightGrey2;
+							font-size: $fontSize_large-0;
+							font-family: $fontStyle_body;
+						}
+					}
+				}
+			}
+
+			.repairsDisplay {
+				margin-top: 5rem;
+
+				.innerContent {
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+					grid-column-gap: 1rem;
+
+					.description {
+						h2 {
+							font-size: $fontSize_large-2;
+						}
+
+						p {
+							color: $baseColor_lightGrey2;
+							font-size: $fontSize_large-0;
+							font-family: $fontStyle_body;
+						}
+					}
+				}
+			}
+		}
+
+		.backgroundImage {
+			height: 40rem;
+			display: flex;
+			align-items: center;
+			background: url("/img/richie-roberts-7or-8zEkxPM-unsplash.jpg");
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	}
+	// <========== END OF SUITS & OXFORD PAGE ==========>
 
 	// <========== OUR PROCESS ==========>
 	.ourProcess {
