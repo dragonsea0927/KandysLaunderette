@@ -49,20 +49,20 @@ const AlterationsRepairs = () => {
 			{/* // <========== BACKGROUND IMAGE ==========> */}
 			<div className={styles.backgroundImageAlterationsRepairs}></div>
 
-			{/* // <========== PAGE TITLE ==========> */}
-			<div className={styles.pageTitle}>
-				<div className="container">
-					<div className={styles.content}>
-						<div className={styles.title}>
-							<h2>Alterations & Repairs</h2>
-							<h5>Garments Repairs And Alterations By Experts</h5>
+			{/* // <========== ABOUT US DESCRIPTIONS ==========> */}
+			<div className={styles.alterationsRepairsSection}>
+				{/* // <========== PAGE TITLE ==========> */}
+				<div className={styles.pageTitle}>
+					<div className="container">
+						<div className={styles.content}>
+							<div className={styles.title}>
+								<h2>Alterations & Repairs</h2>
+								<h5>Garments Repairs And Alterations By Experts</h5>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
-			{/* // <========== ABOUT US DESCRIPTIONS ==========> */}
-			<div className={styles.alterationsRepairsSection}>
 				<div className={styles.aboutUs}>
 					<div className="container">
 						<div className={styles.content}>
@@ -87,7 +87,7 @@ const AlterationsRepairs = () => {
 				</div>
 
 				{/* <!--===== WEDDING SUITS =====--> */}
-				<div className={styles.weddingSuits}>
+				<div className={styles.suitsBridal}>
 					<div className="container">
 						<div className={styles.content}>
 							<div className={styles.title}>
@@ -127,7 +127,7 @@ const AlterationsRepairs = () => {
 									</div>
 									<div className={styles.Image}>
 										<Image
-											src="/img/tengyart-Q5jO8wxYnys-unsplash.jpg"
+											src="/img/w920_q60.webp"
 											alt="Product Image"
 											width={600}
 											height={800}

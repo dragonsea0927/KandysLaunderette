@@ -8,34 +8,37 @@
 	background-repeat: no-repeat;
 }
 
-// <========== PAGE TITLE ==========>
-.pageTitle {
-	.content {
-		.title {
-			padding: 2.5rem 0;
-			text-align: center;
+.alterationsRepairsSection {
+	// <========== PAGE TITLE ==========>
+	.pageTitle {
+		background-color: $secondary_fadedPink2;
 
-			h2 {
-				color: $baseColor_black;
-				font-size: $fontSize_large-1;
-				font-family: $fontStyle_option1;
-			}
+		.content {
+			.title {
+				padding: 2.5rem 0;
+				text-align: center;
 
-			h5 {
-				margin-top: 1rem;
-				color: $baseColor_black;
-				font-size: $fontSize_normal;
-				font-family: $fontStyle_header;
+				h2 {
+					color: $baseColor_black;
+					font-size: $fontSize_large-1;
+					font-family: $fontStyle_option1;
+				}
+
+				h5 {
+					margin-top: 1rem;
+					color: $baseColor_black;
+					font-size: $fontSize_normal;
+					font-family: $fontStyle_header;
+				}
 			}
 		}
 	}
-}
 
-.alterationsRepairsSection {
 	// <========== ABOUT US ==========>
 	.aboutUs {
 		margin-top: 0rem;
-		background-color: $baseColor_lightGrey1;
+		padding: 5rem 0;
+		background-color: $secondary_fadedPink2;
 
 		.content {
 			padding: 2.5rem 0;
@@ -63,7 +66,7 @@
 	}
 
 	// <========== WEDDING SUITS ==========>
-	.weddingSuits {
+	.suitsBridal {
 		padding: 1rem 0;
 		background-color: $backgroundColor_White;
 
@@ -88,6 +91,7 @@
 			}
 
 			.gridDisplay {
+				padding: 5rem 0;
 				.innerContent {
 					display: grid;
 					grid-template-columns: repeat(2, 1fr);
