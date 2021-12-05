@@ -46,9 +46,6 @@ const AlterationsRepairs = () => {
 			{/* <!--===== NAVIGATION =====--> */}
 			<Navbar />
 
-			{/* // <========== BACKGROUND IMAGE ==========> */}
-			<div className={styles.backgroundImageAlterationsRepairs}></div>
-
 			{/* // <========== ABOUT US DESCRIPTIONS ==========> */}
 			<div className={styles.alterationsRepairsSection}>
 				{/* // <========== PAGE TITLE ==========> */}
@@ -62,6 +59,9 @@ const AlterationsRepairs = () => {
 						</div>
 					</div>
 				</div>
+
+				{/* // <========== BACKGROUND IMAGE ==========> */}
+				<div className={styles.backgroundImageAlterationsRepairs}></div>
 
 				<div className={styles.aboutUs}>
 					<div className="container">

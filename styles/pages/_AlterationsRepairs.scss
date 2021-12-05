@@ -11,8 +11,7 @@
 .alterationsRepairsSection {
 	// <========== PAGE TITLE ==========>
 	.pageTitle {
-		background-color: $secondary_fadedPink2;
-
+		margin: 2.5rem 0;
 		.content {
 			.title {
 				padding: 2.5rem 0;
@@ -38,7 +37,7 @@
 	.aboutUs {
 		margin-top: 0rem;
 		padding: 5rem 0;
-		background-color: $secondary_fadedPink2;
+		background-color: $baseColor_lightGrey1;
 
 		.content {
 			padding: 2.5rem 0;
@@ -91,7 +90,8 @@
 			}
 
 			.gridDisplay {
-				padding: 5rem 0;
+				padding: 2.5rem 0;
+
 				.innerContent {
 					display: grid;
 					grid-template-columns: repeat(2, 1fr);
