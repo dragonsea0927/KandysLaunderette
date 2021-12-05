@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "/components/Navbar";
+import OurProcess from "/components/ourProcess";
 import Footer from "/components/Footer";
 import styles from "/styles/Home.module.scss";
 
@@ -59,6 +60,89 @@ const AlterationsRepairs = () => {
 					</div>
 				</div>
 			</div>
+
+			{/* // <========== ABOUT US DESCRIPTIONS ==========> */}
+			<div className={styles.alterationsRepairsSection}>
+				<div className={styles.aboutUs}>
+					<div className="container">
+						<div className={styles.content}>
+							<h2>We may be new to you</h2>
+							<p>
+								But We believe in making the most of life's simple pleasures -
+								it's the little things that matter. Precious moments of
+								uncomplicated happiness are our constant inspiration, and it is
+								with these in mind that we create collections of services that
+								are built to last and become an intimate part of your everyday
+								lives.
+								<br></br>
+								<br></br>I cannot emphasize enough how much thought, care, and
+								attention to detail goes into every service we make at The White
+								Company - I hope you'll cherish your purchases as much as we do.
+								<br></br>
+								<br></br>
+								<span>We're delighted to meet you</span>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				{/* <!--===== WEDDING SUITS =====--> */}
+				<div className={styles.weddingSuits}>
+					<div className="container">
+						<div className={styles.content}>
+							<div className={styles.title}>
+								<h2>Wedding Suits & Bridal Dresses</h2>
+								<h5>We make your special day simple.</h5>
+							</div>
+							<div className={styles.gridDisplay}>
+								<div className={styles.innerContent}>
+									<div className={styles.Image}>
+										<Image
+											src="/img/tengyart-Q5jO8wxYnys-unsplash.jpg"
+											alt="Product Image"
+											width={600}
+											height={800}
+											objectFit="cover"
+										></Image>
+									</div>
+									<div className={styles.description}>
+										<h2>Suits</h2>
+										<p>
+											We offer suit cleaning & alterations for everyday and
+											special day occasions. We specialize in wedding suits, 2
+											Piece & 3 Piece suits and in 2 Piece Dress & Dinner Suit.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div className={styles.gridDisplay}>
+								<div className={styles.innerContent}>
+									<div className={styles.description}>
+										<h2>Bridal Dresses</h2>
+										<p>
+											We offer suit cleaning & alterations for everyday and
+											special day occasions. We specialize in wedding suits, 2
+											Piece & 3 Piece suits and in 2 Piece Dress & Dinner Suit.
+										</p>
+									</div>
+									<div className={styles.Image}>
+										<Image
+											src="/img/tengyart-Q5jO8wxYnys-unsplash.jpg"
+											alt="Product Image"
+											width={600}
+											height={800}
+											objectFit="cover"
+										></Image>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{/* <!--===== OUR PROCESS INFORMATION =====--> */}
+			<OurProcess />
 
 			{/* <!--===== FOOTER =====--> */}
 			<Footer />
