@@ -23,6 +23,47 @@ Github Link: https://github.com/Todd-Owen-Mpeli/Kandy-s-Launderette-Website
 
 The main objecttive is to display the updated list of services provided by Kandy's Launderette. Listing these services will provide customers the opportunity to see the value of the store without having to contact the store.
 
+# MacBook Viewport (Screenshot)
+
+1. All images are in 4K resolution, click to enlarge for better viewing.
+
+<img src="/public/img/Laptop%20View%20Screenshot%201.png" width="100%" height="625px">
+
+<img src="/public/img/Laptop%20View%20Screenshot%202.png" width="100%" height="625px">
+
+<img src="/public/img/Laptop%20View%20Screenshot%203.png" width="100%" height="625px">
+
+# Lessons Learned
+My first services centric website, I really enjoyed the process of integrating a google maps API, while also styling the entire website elements.
+
+I Enjoyed learning SASS extension for better CSS styling, file structure and creating specific reusable variables for better optimization. Also using Bootstrap 5 framework for better mobile responsiveness really improved my CSS hard-coding file reduction.
+
+1. JavaScript HTML DOM functions; Specifically toggling displaying or removing the additional in-store services section. 
+2. Git operations specifically init, add, status, commit, remote, push and pull. Additionally creating a remote repository to learn a better development workflow process.
+3. SCSS File Structure, _font.scss, _color.scss_ etc. Creating separate SCSS files for different attributes for better CSS optimization.
+4. Responsive website using Bootstrap 5 class integration for mobile & tablet view-width breakpoints. 
+
+# Personal Improvements
+Although the website is fairly functional and provides the minimum viable product of displaying the list of services, the current iteration of this project requires a list of improvements.
+
+1. More Team-orientated Git operations specifically branch and merge this will initialize a more realistic team development workflow process.
+2. More JavaScript functions for more interactive website, specifically HTML DOM element manipulation, displaying or removing items which are available or sold out.
+
+# Mobile View Screenshot
+
+1. All images are in 4K resolution, click to enlarge for better viewing.
+
+<img src="/public/img/Mobile%20View%20Screenshot%201.png" width="100%" height="850px">
+
+<img src="/public/img/Mobile%20View%20Screenshot%202.png" width="100%" height="850px">
+
+<img src="/public/img/Mobile%20View%20Screenshot%203.png" width="100%" height="850px">
+
+# Potential Future Features
+1. Develop a reserve services feature. (Example on a specific date & time book a slot for a service.)
+2. Develop a service availability feature (available or not available). This will then be updated on the website in real time.
+3. Re-building the entire website with React and Node.js
+
 ## Getting Started
 
 First, run the development server:
@@ -55,3 +96,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+# Full Mobile View Screenshot
+
+1. All images are in 4K resolution, click to enlarge for better viewing.
+
+<img src="/public/img/Mobile%20View%20Screenshot.png" width="100%" height="350px">
+
