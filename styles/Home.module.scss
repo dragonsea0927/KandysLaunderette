@@ -882,7 +882,9 @@
 			}
 		}
 	}
-
+	// <================================================>
+	// <================================================>
+	// <================================================>
 	// <========== LAUNDRY & DRY CLEANING PAGES ==========>
 	// <========== PAGE TITLE ==========>
 	.mainContent {
@@ -953,7 +955,9 @@
 			display: none;
 		}
 	}
-
+	// <================================================>
+	// <================================================>
+	// <================================================>
 	// <========== SUITS & OXFORD PAGE ==========>
 	.suitsOxford {
 		.gridDisplay {
@@ -1053,6 +1057,8 @@
 
 			.gridDisplay {
 				margin-top: 5rem;
+				padding: 2.5rem 0;
+
 				.alterationsDisplay {
 					display: grid;
 					grid-template-columns: repeat(2, 1fr);
@@ -1077,6 +1083,7 @@
 
 			.repairsDisplay {
 				margin-top: 5rem;
+				padding: 2.5rem 0;
 
 				.innerContent {
 					display: grid;
@@ -1097,18 +1104,71 @@
 				}
 			}
 		}
+	}
+	// <================================================>
+	// <================================================>
+	// <================================================>
+	// <========== WEDDING DRESSES & BRIDESMAID PAGE ==========>
 
-		.backgroundImage {
-			height: 40rem;
-			display: flex;
-			align-items: center;
-			background: url("/img/richie-roberts-7or-8zEkxPM-unsplash.jpg");
-			background-size: cover;
-			background-position: center;
-			background-repeat: no-repeat;
+	// <========== WEDDING DRESS ==========>
+	.weddingDress {
+		padding: 0 1rem;
+		.gridDisplay {
+			margin-top: 5rem;
+			grid-template-columns: 1fr;
+
+			.Image {
+				margin: 0 auto;
+			}
+
+			.description {
+				margin-top: 7.5rem;
+				padding: 0 2.5rem;
+
+				h2 {
+					font-size: $fontSize_large-2;
+				}
+
+				p {
+					margin-top: 2rem;
+					font-size: $fontSize_large-0;
+					font-family: $fontStyle_body;
+				}
+			}
 		}
 	}
-	// <========== END OF SUITS & OXFORD PAGE ==========>
+
+	// <========== BRIDESMAID DRESS ==========>
+	.BridesmaidDress {
+		background-color: $baseColor_lightGrey1;
+
+		.content {
+			padding: 0 1rem;
+
+			.innerContent {
+				grid-template-columns: 1fr;
+
+				.Image,
+				.description {
+					margin: auto 0;
+				}
+
+				.description {
+					padding: 0 2.5rem;
+
+					h2 {
+						font-size: $fontSize_large-2;
+					}
+
+					p {
+						margin-top: 2rem;
+						font-size: $fontSize_large-0;
+						font-family: $fontStyle_body;
+					}
+				}
+			}
+		}
+	}
 
 	// <========== OUR PROCESS ==========>
 	.ourProcess {
@@ -1148,7 +1208,9 @@
 			}
 		}
 	}
-
+	// <================================================>
+	// <================================================>
+	// <================================================>
 	// <========== ALTERATIONS & REPAIR PAGE ==========>
 	.alterationsRepairsSection {
 		// <========== PAGE TITLE ==========>
@@ -1231,7 +1293,9 @@
 			}
 		}
 	}
-
+	// <================================================>
+	// <================================================>
+	// <================================================>
 	// <========== FOOTER ==========>
 	.footer,
 	.footerDark {
