@@ -900,11 +900,11 @@
 				margin-top: 2.5rem;
 
 				newButton {
-					padding: 2.75rem;
+					padding: 2.5rem 2.75rem;
 					background-color: $backgroundColor_White;
 
 					a {
-						font-size: $fontSize_large-0;
+						font-size: $fontSize_large;
 						font-family: $fontStyle_header;
 					}
 
@@ -1279,9 +1279,58 @@
 
 	// <=================================================>
 	// <========== LAUNDRY & DRY CLEANING PAGE ==========>
+	// <========== OPTIONS ==========>
+	.options {
+		.content {
+			.title {
+				padding: 2rem;
+				margin: 2rem 0;
+
+				h2 {
+					font-size: $fontSize_large-1;
+				}
+
+				h5 {
+					margin-top: 1rem;
+					font-size: $fontSize_large;
+					font-family: $fontStyle_body;
+				}
+			}
+
+			.innerContent {
+				display: grid;
+				padding: 0 1rem;
+				grid-template-columns: 1fr;
+				grid-column-gap: 1rem;
+
+				.productDisplay {
+					.content {
+						bottom: 100px;
+
+						.shopButton {
+							width: fit-content;
+							padding: 1.5rem 2rem;
+
+							a {
+								font-size: $fontSize_large-0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 	// <========== INDIVIDUAL & BUSINESS PAGES ==========>
 	// <========== PAGE TITLE ==========>
 	.mainContent {
+		.previousButton {
+			padding: 0.5rem 1rem;
+
+			a {
+				font-size: $fontSize_large-1;
+			}
+		}
+
 		.content {
 			padding: 0 1rem;
 
@@ -1523,7 +1572,6 @@
 
 	// <=======================================================>
 	// <========== WEDDING DRESSES & BRIDESMAID PAGE ==========>
-
 	// <========== WEDDING DRESS ==========>
 	.weddingDress {
 		padding: 0 1rem;
