@@ -88,6 +88,35 @@
 	}
 }
 
+// <========== ABOUT US ==========>
+.aboutUs {
+	margin-top: 5rem;
+
+	.content {
+		padding: 2.5rem 0;
+		text-align: center;
+
+		h2 {
+			color: $baseColor_black;
+			font-size: $fontSize_large-1;
+			font-family: $fontStyle_option1;
+		}
+
+		p {
+			width: 800px;
+			margin: 0 auto;
+			margin-top: 2.5rem;
+			color: $baseColor_black;
+			font-size: $fontSize_small;
+			font-family: $fontStyle_header;
+
+			span {
+				font-weight: 700;
+			}
+		}
+	}
+}
+
 // <========== OUR LEADER ==========>
 .ourLeader {
 	.gridDisplay {
@@ -201,35 +230,6 @@
 						font-family: $fontStyle_body;
 					}
 				}
-			}
-		}
-	}
-}
-
-// <========== ABOUT US ==========>
-.aboutUs {
-	margin-top: 5rem;
-
-	.content {
-		padding: 2.5rem 0;
-		text-align: center;
-
-		h2 {
-			color: $baseColor_black;
-			font-size: $fontSize_large-1;
-			font-family: $fontStyle_option1;
-		}
-
-		p {
-			width: 800px;
-			margin: 0 auto;
-			margin-top: 2.5rem;
-			color: $baseColor_black;
-			font-size: $fontSize_small;
-			font-family: $fontStyle_header;
-
-			span {
-				font-weight: 700;
 			}
 		}
 	}

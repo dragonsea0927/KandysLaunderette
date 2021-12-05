@@ -872,7 +872,7 @@
 			}
 
 			.button {
-				margin-top: 2.55rem;
+				margin-top: 2.5rem;
 
 				newButton {
 					padding: 2.75rem;
@@ -1063,9 +1063,9 @@
 	// <================================================>
 	// <================================================>
 	// <================================================>
-
 	// <========== MAIN PAGES STYLING ==========>
 
+	// <===============================>
 	// <========== HOME PAGE ==========>
 	.services {
 		.content {
@@ -1150,6 +1150,7 @@
 		}
 	}
 
+	// <=================================================>
 	// <========== LAUNDRY & DRY CLEANING PAGE ==========>
 	// <========== PAGE TITLE ==========>
 	.mainContent {
@@ -1214,12 +1215,15 @@
 		}
 	}
 
+	// <=================================================>
 	// <========== INDIVIDUAL & BUSINESS PAGES ==========>
 	.mainContent {
 		.previousButton {
 			display: none;
 		}
 	}
+
+	// <=========================================>
 	// <========== SUITS & OXFORD PAGE ==========>
 	.suitsOxford {
 		.gridDisplay {
@@ -1294,6 +1298,7 @@
 		}
 	}
 
+	// <===========================================>
 	// <========== ALTERATIONS & REPAIRS ==========>
 	.alterationsRepairs {
 		padding: 2.5rem 0;
@@ -1368,6 +1373,7 @@
 		}
 	}
 
+	// <=======================================================>
 	// <========== WEDDING DRESSES & BRIDESMAID PAGE ==========>
 
 	// <========== WEDDING DRESS ==========>
@@ -1506,6 +1512,153 @@
 								font-size: $fontSize_large-0;
 								font-family: $fontStyle_body;
 							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// <====================================>
+	// <========== OUR STORY PAGE ==========>
+
+	// <========== BACKGROUND TOP SECTION IMAGE ==========>
+	.backgroundTopCover {
+		// <========== NAVIGATION PINK ==========>
+		.NavbarTwo {
+			.content {
+				.mainSection {
+					padding: 0 2rem;
+					.title {
+						a {
+							font-size: $fontSize_large;
+						}
+					}
+
+					ul {
+						a {
+							font-size: $fontSize_large;
+							font-family: $fontStyle_body;
+						}
+					}
+				}
+			}
+		}
+
+		// <========== OUR STORY ==========>
+		.ourStory {
+			.pageTitle {
+				.content {
+					.title {
+						h2 {
+							font-size: $fontSize_large-2;
+							font-family: $fontStyle_option1;
+						}
+
+						h5 {
+							margin-top: 1rem;
+							font-size: $fontSize_large-0;
+							font-family: $fontStyle_body;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// <========== ABOUT US ==========>
+	.aboutUs {
+		.content {
+			h2 {
+				font-size: $fontSize_large-2;
+			}
+
+			p {
+				font-size: $fontSize_large-0;
+				font-family: $fontStyle_body;
+			}
+		}
+	}
+
+	// <========== OUR LEADER ==========>
+	.ourLeader {
+		.gridDisplay {
+		}
+
+		.content {
+			.description {
+				h2 {
+					font-size: $fontSize_large-1;
+				}
+
+				p {
+					font-size: $fontSize_large-0;
+					font-family: $fontStyle_body;
+				}
+			}
+		}
+	}
+
+	// <========== OUR COLLECTION ==========>
+	.ourCollections {
+		.content {
+			.title {
+				h2 {
+					font-size: $fontSize_large-2;
+				}
+
+				h5 {
+					font-size: $fontSize_large-0;
+					font-family: $fontStyle_body;
+				}
+			}
+
+			.gridDisplay {
+				padding: 0 1rem;
+
+				.innerContent {
+					grid-template-columns: 1fr;
+
+					.Image {
+						margin: 0 auto;
+					}
+
+					.description {
+						margin-top: 5rem;
+						h2 {
+							font-size: $fontSize_large-2;
+						}
+
+						p {
+							margin-top: 2.5rem;
+							font-size: $fontSize_large-0;
+							font-family: $fontStyle_body;
+						}
+					}
+				}
+			}
+
+			.gridDisplayTwo {
+				padding: 0 1rem;
+
+				.innerContent {
+					grid-template-columns: 1fr;
+
+					.Image {
+						margin: 0 auto;
+					}
+
+					.description {
+						margin-top: 5rem;
+
+						h2 {
+							font-size: $fontSize_large-2;
+						}
+
+						p {
+							margin-top: 2.5rem;
+							font-size: $fontSize_large-0;
+							font-family: $fontStyle_body;
 						}
 					}
 				}
