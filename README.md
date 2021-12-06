@@ -34,20 +34,17 @@ The main objecttive is to display the updated list of services provided by Kandy
 <img src="/public/img/Laptop%20View%20Screenshot%203.png" width="100%" height="625px">
 
 # Lessons Learned
-My first services centric website, I really enjoyed the process of integrating a google maps API, while also styling the entire website elements.
+I really enjoyed the process of creating reusable components such as the Navigation and Footer. Integrating each component accross the entire websites, while also styling the entire website elements.
 
-I Enjoyed learning SASS extension for better CSS styling, file structure and creating specific reusable variables for better optimization. Also using Bootstrap 5 framework for better mobile responsiveness really improved my CSS hard-coding file reduction.
-
-1. JavaScript HTML DOM functions; Specifically toggling displaying or removing the additional in-store services section. 
-2. Git operations specifically init, add, status, commit, remote, push and pull. Additionally creating a remote repository to learn a better development workflow process.
-3. SCSS File Structure, _font.scss, _color.scss_ etc. Creating separate SCSS files for different attributes for better CSS optimization.
-4. Responsive website using Bootstrap 5 class integration for mobile & tablet view-width breakpoints. 
+1. I enjoyed utilizing the Next.js React import feature. Importing components, featues and scss styling files into a newly created pages or components.
+2. Utilizing npm install to install bootstrap 5 and Sass for example. Learning how to use the difference between npm and npx. 
+3. I Enjoyed learning SASS extension for better CSS styling, file structure and creating specific reusable variables for better optimization. Also using Bootstrap 5 framework for better mobile responsiveness really improved my CSS hard-coding file reduction.
 
 # Personal Improvements
 Although the website is fairly functional and provides the minimum viable product of displaying the list of services, the current iteration of this project requires a list of improvements.
 
 1. More Team-orientated Git operations specifically branch and merge this will initialize a more realistic team development workflow process.
-2. More JavaScript functions for more interactive website, specifically HTML DOM element manipulation, displaying or removing items which are available or sold out.
+2. More JavaScript functions for to make the website more interactive. Specifically HTML DOM element manipulation, displaying or removing items which are available or sold out.
 
 # Mobile View Screenshot
 
@@ -62,7 +59,7 @@ Although the website is fairly functional and provides the minimum viable produc
 # Potential Future Features
 1. Develop a reserve services feature. (Example on a specific date & time book a slot for a service.)
 2. Develop a service availability feature (available or not available). This will then be updated on the website in real time.
-3. Re-building the entire website with React and Node.js
+3. Create a client database example a email client database.
 
 ## Getting Started
 
