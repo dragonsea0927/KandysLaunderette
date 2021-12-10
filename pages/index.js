@@ -148,7 +148,7 @@ export default function Home() {
 								</Link>
 								<div className={styles.header}>
 									<Link href="#launderette">
-										<a target="blank">Groom's Suit Cleaning & Alterations</a>
+										<a target="blank">Grooms Suit Cleaning & Alterations</a>
 									</Link>
 								</div>
 							</motion.div>
