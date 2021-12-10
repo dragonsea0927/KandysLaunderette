@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import {motion} from "framer-motion";
 import Navbar from "/components/Navbar";
 import OurProcess from "/components/ourProcess";
 import FooterDark from "/components/FooterDark";
@@ -7,7 +8,13 @@ import styles from "/styles/Home.module.scss";
 
 const suitsOxfordShirts = () => {
 	return (
-		<>
+		<motion.div
+			exit={{
+				opacity: 0,
+			}}
+			initial="initial"
+			animate="animate"
+		>
 			{/* <!--===== HEAD =====--> */}
 			<Head>
 				{/* <!-- Website Title --> */}
@@ -218,7 +225,7 @@ const suitsOxfordShirts = () => {
 
 			{/* <!--===== FOOTER =====--> */}
 			<FooterDark />
-		</>
+		</motion.div>
 	);
 };
 

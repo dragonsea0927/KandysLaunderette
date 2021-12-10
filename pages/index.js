@@ -8,7 +8,7 @@ import StoreLocation from "/components/storeLocation";
 import Footer from "/components/Footer";
 import styles from "../styles/Home.module.scss";
 
-// Custom reusable Animation Properties/Objects
+// Custom reusable Animation Properties/variables
 const fadeInUp = {
 	initial: {
 		y: 60,
@@ -41,7 +41,13 @@ const stagger = {
 
 export default function Home() {
 	return (
-		<>
+		<motion.div
+			exit={{
+				opacity: 0,
+			}}
+			initial="initial"
+			animate="animate"
+		>
 			{/* <!--===== HEAD =====--> */}
 			<Head>
 				{/* <!-- Website Title --> */}
@@ -83,10 +89,10 @@ export default function Home() {
 			<div className={styles.backgroundImage}>
 				<div className="container">
 					<div className={styles.content}>
-						<div className={styles.title}>
+						<motion.div variants={fadeInUp} className={styles.title}>
 							<h2>Kandy's Launderette</h2>
 							<h5>Professional Dry Cleaning Specialist</h5>
-						</div>
+						</motion.div>
 					</div>
 				</div>
 			</div>
@@ -95,10 +101,10 @@ export default function Home() {
 			<div className={styles.services}>
 				<div className="container">
 					<div className={styles.content}>
-						<div className={styles.title}>
+						<motion.div variants={fadeInUp} className={styles.title}>
 							<h2>Our Services</h2>
 							<h5>From Individual to Business Solutions</h5>
-						</div>
+						</motion.div>
 						<div className={styles.moreOptions}>
 							<newButton>
 								<Link href="">
@@ -631,6 +637,6 @@ export default function Home() {
 
 			{/* <!--===== FOOTER =====--> */}
 			<Footer />
-		</>
+		</motion.div>
 	);
 }

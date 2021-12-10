@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import {motion} from "framer-motion";
 import NavbarTwo from "/components/NavbarTwo";
 import StoreLocation from "/components/storeLocation";
 import Footer from "/components/Footer";
@@ -7,7 +8,11 @@ import styles from "/styles/Home.module.scss";
 
 const ourStory = () => {
 	return (
-		<>
+		<motion.div exit={{
+				opacity: 0,
+			}}
+			initial="initial"
+			animate="animate">
 			{/* <!--===== HEAD =====--> */}
 			<Head>
 				{/* <!-- Website Title --> */}

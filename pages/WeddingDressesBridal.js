@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import {motion} from "framer-motion";
 import Navbar from "/components/Navbar";
 import OurProcess from "/components/ourProcess";
 import ContactInfo from "/components/WeddingDressesAndBridal/ContactInfo";
@@ -8,7 +9,11 @@ import styles from "/styles/Home.module.scss";
 
 const WeddingDressesAndBridal = () => {
 	return (
-		<>
+		<motion.div exit={{
+				opacity: 0,
+			}}
+			initial="initial"
+			animate="animate">
 			{/* <!--===== HEAD =====--> */}
 			<Head>
 				{/* <!-- Website Title --> */}

@@ -2,13 +2,19 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "/components/Navbar";
+import {motion} from "framer-motion";
 import ContactInfo from "/components/ContactInfo";
 import Footer from "/components/Footer";
 import styles from "/styles/Home.module.scss";
+import { motion } from "framer-motion";
 
 const LaundryDryCleaning = () => {
 	return (
-		<>
+		<motion.div exit={{
+				opacity: 0,
+			}}
+			initial="initial"
+			animate="animate">
 			{/* <!--===== HEAD =====--> */}
 			<Head>
 				{/* <!-- Website Title --> */}
@@ -138,7 +144,7 @@ const LaundryDryCleaning = () => {
 
 			{/* <!--===== FOOTER =====--> */}
 			<Footer />
-		</>
+		</motion>
 	);
 };
 
