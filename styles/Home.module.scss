@@ -908,12 +908,12 @@
 				}
 
 				a {
-					font-size: $fontSize_normal;
+					font-size: $fontSize_small;
 					font-family: $fontStyle_body;
 				}
 
 				h5 {
-					font-size: $fontSize_normal;
+					font-size: $fontSize_small;
 					font-family: $fontStyle_body;
 				}
 			}
@@ -1115,6 +1115,31 @@
 
 	// <===============================>
 	// <========== HOME PAGE ==========>
+
+	// <========== HERO ==========>
+	.backgroundImage {
+		height: 30rem;
+		background: url("/img/03d7c7368b70d2bf7fd661c8759da8b1.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		.content {
+			.title {
+				text-align: center;
+				padding: 0.5rem 1rem;
+
+				h2 {
+					font-size: $fontSize_large;
+				}
+
+				h5 {
+					font-size: $fontSize_normal;
+				}
+			}
+		}
+	}
+
 	.services {
 		.content {
 			.title {
