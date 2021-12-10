@@ -872,15 +872,16 @@
 	/* ===== OUT STORE LOCATION =====*/
 	.storeLocation {
 		.title {
-			margin-top: 5rem;
+			margin-top: 2rem;
 			text-align: center;
-			padding: 2.5rem 0;
+			padding: 0.5rem 0;
 
 			h2 {
-				font-size: $fontSize_normal;
+				font-size: $fontSize_large;
 			}
 
 			h5 {
+				margin-top: 1rem;
 				font-size: $fontSize_normal;
 				font-family: $fontStyle_body;
 			}
@@ -1119,18 +1120,19 @@
 	// <========== HERO ==========>
 	.backgroundImage {
 		height: 30rem;
-		background: url("/img/03d7c7368b70d2bf7fd661c8759da8b1.jpg");
+		background: url("/img/pluring-clothes-cover-set-of-3-transparent-white__0938432_ph158482_s5.webp");
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
 
 		.content {
 			.title {
+				margin-bottom: 2.5rem;
 				text-align: center;
 				padding: 0.5rem 1rem;
 
 				h2 {
-					font-size: $fontSize_large;
+					font-size: $fontSize_large-0;
 				}
 
 				h5 {
@@ -1219,9 +1221,14 @@
 				grid-column-gap: 1rem;
 
 				.productDisplay {
+					img {
+						width: 100%;
+						height: 600px;
+					}
+
 					.content {
-						left: -25px;
-						bottom: 40px;
+						left: -40px;
+						bottom: 35px;
 
 						h2 {
 							display: none;
@@ -1230,8 +1237,10 @@
 						.shopButton {
 							border-radius: 10px;
 							padding: 0.25rem 0.75rem;
+							background-color: transparent;
 
 							a {
+								color: $baseColor_white;
 								font-size: $fontSize_xSmall;
 							}
 						}
@@ -1304,7 +1313,7 @@
 				}
 
 				h5 {
-					margin-top: 2rem;
+					margin-top: 1.25rem;
 					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
 				}
@@ -1314,19 +1323,28 @@
 				display: grid;
 				padding: 2rem 0.5rem;
 				grid-template-columns: repeat(2, 1fr);
-				grid-row-gap: 2.5rem;
+				grid-row-gap: 1.5rem;
 
 				.content {
 					.header {
-						margin: 1.5rem 0;
+						margin: 1.25rem 0;
 						a {
-							font-size: $fontSize_normal;
+							font-size: $fontSize_small;
 							font-family: $fontStyle_option1;
 						}
 					}
 				}
 			}
 		}
+	}
+
+	// <!--===== Background Image Divider =====-->
+	.backgroundImageDivider {
+		height: 27rem;
+		background: url("/img/03d7c7368b70d2bf7fd661c8759da8b1.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
 	}
 
 	// <=================================================>
