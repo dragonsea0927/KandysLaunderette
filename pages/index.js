@@ -542,15 +542,15 @@ export default function Home() {
 			<div className={styles.hotelAndRestaurant}>
 				<div className="container">
 					<div className={styles.content}>
-						<div className={styles.title}>
+						<motion.div variants={fadeInUp} className={styles.title}>
 							<h2>Hotel & Restaurant Services</h2>
 							<h5>
 								Attention To Detail, Affordable Professionalism & Perfect
 								Simplicity
 							</h5>
-						</div>
-						<div className={styles.gridDisplay}>
-							<div className={styles.content}>
+						</motion.div>
+						<motion.div variants={stagger} className={styles.gridDisplay}>
+							<motion.div variants={fadeInUp} className={styles.content}>
 								<Link href="#launderette">
 									<a target="blank">
 										<Image
@@ -568,8 +568,8 @@ export default function Home() {
 										<a target="blank">Table & Bath Towels Dry Cleaning</a>
 									</Link>
 								</div>
-							</div>
-							<div className={styles.content}>
+							</motion.div>
+							<motion.div variants={fadeInUp} className={styles.content}>
 								<Link href="#launderette">
 									<a target="blank">
 										<Image
@@ -587,8 +587,8 @@ export default function Home() {
 										<a target="blank">Duvet & Quilts Dry Cleaning </a>
 									</Link>
 								</div>
-							</div>
-							<div className={styles.content}>
+							</motion.div>
+							<motion.div variants={fadeInUp} className={styles.content}>
 								<Link href="#launderette">
 									<a target="blank">
 										<Image
@@ -606,8 +606,8 @@ export default function Home() {
 										<a target="blank">Bed & Table Linen Dry Cleaning</a>
 									</Link>
 								</div>
-							</div>
-							<div className={styles.content}>
+							</motion.div>
+							<motion.div variants={fadeInUp} className={styles.content}>
 								<Link href="#launderette">
 									<a target="blank">
 										<Image
@@ -625,8 +625,8 @@ export default function Home() {
 										<a target="blank">Professional Laundering & Ironing</a>
 									</Link>
 								</div>
-							</div>
-						</div>
+							</motion.div>
+						</motion.div>
 					</div>
 				</div>
 			</div>
