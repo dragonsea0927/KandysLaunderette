@@ -58,7 +58,7 @@ const businessService = () => {
 					<div className="container">
 						<div className={styles.previousButton}>
 							<Link href="/LaundryDryCleaning">
-								<a>
+								<a target="blank">
 									<i className="bi bi-arrow-left-circle"></i>
 								</a>
 							</Link>
@@ -81,28 +81,28 @@ const businessService = () => {
 										<h2>Duvet Cleaning</h2>
 										<ul>
 											<Link href="">
-												<a>Single</a>
+												<a target="blank">Single</a>
 											</Link>
 											<Link href="">
-												<a>Double</a>
+												<a target="blank">Double</a>
 											</Link>
 											<Link href="">
-												<a>Single Blanket</a>
+												<a target="blank">Single Blanket</a>
 											</Link>
 											<Link href="">
-												<a>Bed Sheets</a>
+												<a target="blank">Bed Sheets</a>
 											</Link>
 											<Link href="">
-												<a>Duvet Cover</a>
+												<a target="blank">Duvet Cover</a>
 											</Link>
 											<Link href="">
-												<a>Duvet Insert</a>
+												<a target="blank">Duvet Insert</a>
 											</Link>
 											<Link href="">
-												<a>Bed Linen (Single & Double)</a>
+												<a target="blank">Bed Linen (Single & Double)</a>
 											</Link>
 											<Link href="">
-												<a>Bed Linen (King & Queen)</a>
+												<a target="blank">Bed Linen (King & Queen)</a>
 											</Link>
 										</ul>
 									</div>
@@ -110,10 +110,10 @@ const businessService = () => {
 										<h2>Tops & Shirts</h2>
 										<ul>
 											<Link href="">
-												<a>Male Staff Shirts</a>
+												<a target="blank">Male Staff Shirts</a>
 											</Link>
 											<Link href="">
-												<a>Female Staff Shirts</a>
+												<a target="blank">Female Staff Shirts</a>
 											</Link>
 										</ul>
 									</div>
@@ -121,10 +121,10 @@ const businessService = () => {
 										<h2>Trousers</h2>
 										<ul>
 											<Link href="">
-												<a>Regular Staff Trousers</a>
+												<a target="blank">Regular Staff Trousers</a>
 											</Link>
 											<Link href="">
-												<a>Silk Staff Trousers</a>
+												<a target="blank">Silk Staff Trousers</a>
 											</Link>
 										</ul>
 									</div>
@@ -132,28 +132,28 @@ const businessService = () => {
 										<h2>Bar & Restaurant</h2>
 										<ul>
 											<Link href="">
-												<a>Waiters Uniforms Set</a>
+												<a target="blank">Waiters Uniforms Set</a>
 											</Link>
 											<Link href="">
-												<a>Kitchen Male Staff Shirts</a>
+												<a target="blank">Kitchen Male Staff Shirts</a>
 											</Link>
 											<Link href="">
-												<a>Kitchen Female Staff Shirts</a>
+												<a target="blank">Kitchen Female Staff Shirts</a>
 											</Link>
 											<Link href="">
-												<a>Bar Staff Aprons</a>
+												<a target="blank">Bar Staff Aprons</a>
 											</Link>
 											<Link href="">
-												<a>Short Staff Apron</a>
+												<a target="blank">Short Staff Apron</a>
 											</Link>
 											<Link href="">
-												<a>Long Canvas Apron Clip</a>
+												<a target="blank">Long Canvas Apron Clip</a>
 											</Link>
 											<Link href="">
-												<a>Womens Waistcoat Staff Shirts</a>
+												<a target="blank">Womens Waistcoat Staff Shirts</a>
 											</Link>
 											<Link href="">
-												<a>Kitchen Cloths</a>
+												<a target="blank">Kitchen Cloths</a>
 											</Link>
 										</ul>
 									</div>
@@ -161,13 +161,13 @@ const businessService = () => {
 										<h2>Throw-over</h2>
 										<ul>
 											<Link href="">
-												<a>Single</a>
+												<a target="blank">Single</a>
 											</Link>
 											<Link href="">
-												<a>Double</a>
+												<a target="blank">Double</a>
 											</Link>
 											<Link href="">
-												<a>Bed Runner / Throw</a>
+												<a target="blank">Bed Runner / Throw</a>
 											</Link>
 										</ul>
 									</div>
@@ -175,22 +175,22 @@ const businessService = () => {
 										<h2>Accessories</h2>
 										<ul>
 											<Link href="">
-												<a>Tie</a>
+												<a target="blank">Tie</a>
 											</Link>
 											<Link href="">
-												<a>Scarf</a>
+												<a target="blank">Scarf</a>
 											</Link>
 											<Link href="">
-												<a>Money Pouch Waist Apron</a>
+												<a target="blank">Money Pouch Waist Apron</a>
 											</Link>
 											<Link href="">
-												<a>Tabletop Cloths</a>
+												<a target="blank">Tabletop Cloths</a>
 											</Link>
 											<Link href="">
-												<a>Hats</a>
+												<a target="blank">Hats</a>
 											</Link>
 											<Link href="">
-												<a>Waist Coat</a>
+												<a target="blank">Waist Coat</a>
 											</Link>
 										</ul>
 									</div>
@@ -199,8 +199,8 @@ const businessService = () => {
 									<div className={styles.ImageBSDivider}></div>
 									<div className={styles.servicesDisplay}>
 										<div className={styles.content}>
-											<Link href="#launderette" target="blank">
-												<a>
+											<Link href="#launderette">
+												<a target="blank">
 													<Image
 														src="/img/supersoft_duvet_1_8.jpg"
 														alt="Product Image"
@@ -211,14 +211,14 @@ const businessService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette" target="blank">
-													<a>Duvet Cleaning</a>
+												<Link href="#launderette">
+													<a target="blank">Duvet Cleaning</a>
 												</Link>
 											</div>
 										</div>
 										<div className={styles.content}>
-											<Link href="#launderette" target="blank">
-												<a>
+											<Link href="#launderette">
+												<a target="blank">
 													<Image
 														src="/img/UK_BuyingGuide_Duvet.webp"
 														alt="Product Image"
@@ -229,14 +229,14 @@ const businessService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette" target="blank">
-													<a>Bed Linen</a>
+												<Link href="#launderette">
+													<a target="blank">Bed Linen</a>
 												</Link>
 											</div>
 										</div>
 										<div className={styles.content}>
-											<Link href="#launderette" target="blank">
-												<a>
+											<Link href="#launderette">
+												<a target="blank">
 													<Image
 														src="/img/UK_BuyingGuide_Pillows.webp"
 														alt="Product Image"
@@ -247,14 +247,14 @@ const businessService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette" target="blank">
-													<a>Bed Single Blanket</a>
+												<Link href="#launderette">
+													<a target="blank">Bed Single Blanket</a>
 												</Link>
 											</div>
 										</div>
 										<div className={styles.content}>
-											<Link href="#launderette" target="blank">
-												<a>
+											<Link href="#launderette">
+												<a target="blank">
 													<Image
 														src="/img/Size-Chart-LP_Bed-Linen.webp"
 														alt="Product Image"
@@ -265,8 +265,8 @@ const businessService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette" target="blank">
-													<a>King & Queen Bed</a>
+												<Link href="#launderette">
+													<a target="blank">King & Queen Bed</a>
 												</Link>
 											</div>
 										</div>
@@ -274,8 +274,8 @@ const businessService = () => {
 									<div className={styles.ImageBSDividerTwo}></div>
 									<div className={styles.servicesDisplay}>
 										<div className={styles.content}>
-											<Link href="#launderette" target="blank">
-												<a>
+											<Link href="#launderette">
+												<a target="blank">
 													<Image
 														src="/img/491-325s5.jpg"
 														alt="Product Image"
@@ -287,14 +287,14 @@ const businessService = () => {
 											</Link>
 
 											<div className={styles.header}>
-												<Link href="#launderette" target="blank">
-													<a>Staff Tops & Shirts</a>
+												<Link href="#launderette">
+													<a target="blank">Staff Tops & Shirts</a>
 												</Link>
 											</div>
 										</div>
 										<div className={styles.content}>
-											<Link href="#launderette" target="blank">
-												<a>
+											<Link href="#launderette">
+												<a target="blank">
 													<Image
 														src="/img/skubb-storage-case-dark-grey__0940614_pe795076_s5.webp"
 														alt="Product Image"
@@ -306,14 +306,14 @@ const businessService = () => {
 											</Link>
 
 											<div className={styles.header}>
-												<Link href="#launderette" target="blank">
-													<a>Money Pouch Waist Apron</a>
+												<Link href="#launderette">
+													<a target="blank">Money Pouch Waist Apron</a>
 												</Link>
 											</div>
 										</div>
 										<div className={styles.content}>
-											<Link href="#launderette" target="blank">
-												<a>
+											<Link href="#launderette">
+												<a target="blank">
 													<Image
 														src="/img/pants-cleaning.jpg"
 														alt="Product Image"
@@ -325,14 +325,14 @@ const businessService = () => {
 											</Link>
 
 											<div className={styles.header}>
-												<Link href="#launderette" target="blank">
-													<a>Staff Trousers</a>
+												<Link href="#launderette">
+													<a target="blank">Staff Trousers</a>
 												</Link>
 											</div>
 										</div>
 										<div className={styles.content}>
-											<Link href="#launderette" target="blank">
-												<a>
+											<Link href="#launderette">
+												<a target="blank">
 													<Image
 														src="/img/attention-to-detail.webp"
 														alt="Product Image"
@@ -344,8 +344,8 @@ const businessService = () => {
 											</Link>
 
 											<div className={styles.header}>
-												<Link href="#launderette" target="blank">
-													<a>Waist Coat</a>
+												<Link href="#launderette">
+													<a target="blank">Waist Coat</a>
 												</Link>
 											</div>
 										</div>
@@ -353,8 +353,8 @@ const businessService = () => {
 									<div className={styles.ImageBSDividerThree}></div>
 									<div className={styles.servicesDisplay}>
 										<div className={styles.content}>
-											<Link href="#launderette" target="blank">
-												<a>
+											<Link href="#launderette">
+												<a target="blank">
 													<Image
 														src="/img/a210e29d04087417d25f542234b19422.jpg"
 														alt="Product Image"
@@ -366,14 +366,14 @@ const businessService = () => {
 											</Link>
 
 											<div className={styles.header}>
-												<Link href="#launderette" target="blank">
-													<a>Waiters Uniforms Set</a>
+												<Link href="#launderette">
+													<a target="blank">Waiters Uniforms Set</a>
 												</Link>
 											</div>
 										</div>
 										<div className={styles.content}>
-											<Link href="#launderette" target="blank">
-												<a>
+											<Link href="#launderette">
+												<a target="blank">
 													<Image
 														src="/img/26d4c8388751821fbdea71c0c26f46f0.jpg"
 														alt="Product Image"
@@ -385,14 +385,14 @@ const businessService = () => {
 											</Link>
 
 											<div className={styles.header}>
-												<Link href="#launderette" target="blank">
-													<a>Kitchen Staff Shirts</a>
+												<Link href="#launderette">
+													<a target="blank">Kitchen Staff Shirts</a>
 												</Link>
 											</div>
 										</div>
 										<div className={styles.content}>
-											<Link href="#launderette" target="blank">
-												<a>
+											<Link href="#launderette">
+												<a target="blank">
 													<Image
 														src="/img/PH165543-crop001.webp"
 														alt="Product Image"
@@ -404,14 +404,14 @@ const businessService = () => {
 											</Link>
 
 											<div className={styles.header}>
-												<Link href="#launderette" target="blank">
-													<a>Bar Staff Aprons</a>
+												<Link href="#launderette">
+													<a target="blank">Bar Staff Aprons</a>
 												</Link>
 											</div>
 										</div>
 										<div className={styles.content}>
-											<Link href="#launderette" target="blank">
-												<a>
+											<Link href="#launderette">
+												<a target="blank">
 													<Image
 														src="/img/Multislider_Barnham_Collection.webp"
 														alt="Product Image"
@@ -422,8 +422,8 @@ const businessService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette" target="blank">
-													<a>Kitchen Cloths</a>
+												<Link href="#launderette">
+													<a target="blank">Kitchen Cloths</a>
 												</Link>
 											</div>
 										</div>
