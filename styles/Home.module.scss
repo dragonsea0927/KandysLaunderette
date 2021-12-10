@@ -936,6 +936,13 @@
 	}
 
 	.backgroundImageLaundryDryCleaning {
+		background: url("/img/426140s3.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.backgroundImageContactInfoWDAB {
 		background: url("/img/karsten-winegeart-ewyfpgYchcc-unsplash.jpg");
 		background-size: cover;
 		background-position: center;
@@ -1525,13 +1532,17 @@
 	// <========== SUITS & OXFORD PAGE ==========>
 	.suitsOxford {
 		.gridDisplay {
-			padding: 0 1rem;
+			padding: 1rem 0;
+			margin-top: 2.5rem;
+			grid-template-columns: repeat(1, 1fr);
 			grid-column-gap: 1rem;
 
 			.content {
 				.description {
+					padding: 0 0.5rem;
+
 					h2 {
-						font-size: $fontSize_normal;
+						font-size: $fontSize_large;
 					}
 
 					p {
@@ -1547,15 +1558,18 @@
 	// <========== WEDDING SUITS ==========>
 	.weddingSuits {
 		.content {
-			padding: 0 1rem;
+			padding: 0rem;
 
 			.title {
+				margin: 2rem 0;
+				padding: 0.5rem 0;
+
 				h2 {
-					font-size: $fontSize_normal;
+					font-size: $fontSize_large;
 				}
 
 				h5 {
-					margin-top: 2.25rem;
+					margin-top: 1.25rem;
 					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
 				}
@@ -1563,13 +1577,22 @@
 
 			.gridDisplay {
 				padding: 2.5rem 0;
+
 				.innerContent {
+					grid-template-columns: repeat(1, 1fr);
+					grid-column-gap: 1rem;
+
 					.description {
+						padding: 0rem;
+
 						h2 {
-							font-size: $fontSize_normal;
+							text-align: center;
+							margin-top: 2.5rem;
+							font-size: $fontSize_large;
 						}
 
 						p {
+							padding: 0 1rem;
 							font-size: $fontSize_normal;
 							font-family: $fontStyle_body;
 						}
@@ -1578,11 +1601,18 @@
 			}
 
 			.groomsmenDisplay {
+				margin-top: 0rem;
 				padding: 2.5rem 0;
+
 				.innerContent {
+					grid-template-columns: repeat(1, 1fr);
+					grid-column-gap: 1rem;
+
 					.description {
+						padding: 0 0.5rem;
 						h2 {
-							font-size: $fontSize_normal;
+							text-align: center;
+							font-size: $fontSize_large;
 						}
 
 						p {
@@ -1603,14 +1633,14 @@
 		background-color: $backgroundColor_black;
 
 		.content {
-			padding: 0 1rem;
+			padding: 0rem;
 
 			.title {
-				padding: 5rem 0;
+				padding: 3rem 0;
 				text-align: center;
 
 				h2 {
-					font-size: $fontSize_normal;
+					font-size: $fontSize_large;
 				}
 
 				h5 {
@@ -1621,23 +1651,26 @@
 			}
 
 			.gridDisplay {
-				margin-top: 5rem;
+				margin-top: 2.5rem;
 				padding: 2.5rem 0;
 
 				.alterationsDisplay {
 					display: grid;
-					grid-template-columns: repeat(2, 1fr);
+					grid-template-columns: repeat(1, 1fr);
 					grid-column-gap: 2rem;
 
 					.description {
 						margin: auto 0;
-						padding: 0 2.5rem;
+						padding: 0 0.5rem;
 
 						h2 {
-							font-size: $fontSize_normal;
+							text-align: center;
+							margin-top: 2.5rem;
+							font-size: $fontSize_large;
 						}
 
 						p {
+							margin-top: 1.5rem;
 							color: $baseColor_lightGrey2;
 							font-size: $fontSize_normal;
 							font-family: $fontStyle_body;
@@ -1647,20 +1680,23 @@
 			}
 
 			.repairsDisplay {
-				margin-top: 5rem;
+				margin-top: 0rem;
 				padding: 2.5rem 0;
 
 				.innerContent {
 					display: grid;
-					grid-template-columns: repeat(2, 1fr);
+					grid-template-columns: repeat(1, 1fr);
 					grid-column-gap: 1rem;
 
 					.description {
 						h2 {
-							font-size: $fontSize_normal;
+							text-align: center;
+							margin-top: 2.5rem;
+							font-size: $fontSize_large;
 						}
 
 						p {
+							margin-top: 1.5rem;
 							color: $baseColor_lightGrey2;
 							font-size: $fontSize_normal;
 							font-family: $fontStyle_body;
