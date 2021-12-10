@@ -27,7 +27,7 @@ const fadeIn = {
 	},
 	animate: {
 		opacity: 1,
-		transition: {duration: 0.5, delay: 1, ease: "easeOut"},
+		transition: {duration: 1, delay: 0.5, ease: "easeOut"},
 	},
 };
 
@@ -354,7 +354,6 @@ export default function Home() {
 							<h2>Special Occasions</h2>
 							<h5>Remove the stress from your special day</h5>
 						</motion.div>
-
 						<div className={styles.innerContent}>
 							<div className={styles.productDisplay}>
 								<Link href="/suitsOxfordShirts">
@@ -373,9 +372,7 @@ export default function Home() {
 									<motion.h2 variants={fadeInUp}>
 										Dress & Dinner Suits, Oxford Shirts
 									</motion.h2>
-									<newButton
-										className={styles.shopButton}
-									>
+									<newButton className={styles.shopButton}>
 										<Link href="/suitsOxfordShirts">
 											<a target="blank">More Info</a>
 										</Link>
@@ -399,9 +396,7 @@ export default function Home() {
 									<motion.h2 variants={fadeInUp}>
 										Wedding, Bridesmaids & Evening Dresses{" "}
 									</motion.h2>
-									<newButton
-										className={styles.shopButton}
-									>
+									<newButton className={styles.shopButton}>
 										<Link href="/WeddingDressesBridal">
 											<a target="blank">More Info</a>
 										</Link>
@@ -417,7 +412,7 @@ export default function Home() {
 			<div className={styles.whyChooseUs}>
 				<div className="container">
 					<div className={styles.content}>
-						<div className={styles.title}>
+						<motion.div variants={fadeInUp} className={styles.title}>
 							<h2>Why Choose Us</h2>
 							<h5>Finishing touches for the perfect occasion</h5>
 							<p>
@@ -425,9 +420,9 @@ export default function Home() {
 								specialized in Professional Dry Cleaning Solutions, combining
 								the highest quality with affordable prices.
 							</p>
-						</div>
-						<div className={styles.gridDisplay}>
-							<div className={styles.imageDiv}>
+						</motion.div>
+						<motion.div variants={stagger} className={styles.gridDisplay}>
+							<motion.div variants={fadeIn} className={styles.imageDiv}>
 								<Image
 									src="/img/cashmere-care-how-to-store-1.webp"
 									alt="Product Image"
@@ -435,8 +430,8 @@ export default function Home() {
 									height={400}
 									objectFit="contain"
 								></Image>
-							</div>
-							<div className={styles.description}>
+							</motion.div>
+							<motion.div variants={fadeInUp} className={styles.description}>
 								<h2>
 									<strong>Personalized Experience</strong>
 								</h2>
@@ -445,8 +440,8 @@ export default function Home() {
 									clothing type and giving you instant relief to make your day
 									better.
 								</p>
-							</div>
-							<div className={styles.imageDiv}>
+							</motion.div>
+							<motion.div variants={fadeIn} className={styles.imageDiv}>
 								<Image
 									src="/img/cashmere-care-how-to-store-2.webp"
 									alt="Product Image"
@@ -454,8 +449,8 @@ export default function Home() {
 									height={400}
 									objectFit="contain"
 								></Image>
-							</div>
-							<div className={styles.description}>
+							</motion.div>
+							<motion.div variants={fadeInUp} className={styles.description}>
 								<h2>
 									<strong>Affordable Pricing</strong>
 								</h2>
@@ -463,8 +458,8 @@ export default function Home() {
 									Prices that suits your pocket is one of our USP. An option of
 									choosing between 2 types of pricing is available.
 								</p>
-							</div>
-							<div className={styles.imageDiv}>
+							</motion.div>
+							<motion.div variants={fadeIn} className={styles.imageDiv}>
 								<Image
 									src="/img/skubb-storage-case-dark-grey__0954862_pe803520_s5.webp"
 									alt="Product Image"
@@ -472,8 +467,8 @@ export default function Home() {
 									height={400}
 									objectFit="contain"
 								></Image>
-							</div>
-							<div className={styles.description}>
+							</motion.div>
+							<motion.div variants={fadeInUp} className={styles.description}>
 								<h2>
 									<strong>Convenience</strong>
 								</h2>
@@ -481,8 +476,8 @@ export default function Home() {
 									With just a tap of a button your laundry get done. Giving you
 									leisure time to spend with friends and family.
 								</p>
-							</div>
-							<div className={styles.imageDiv}>
+							</motion.div>
+							<motion.div variants={fadeIn} className={styles.imageDiv}>
 								<Image
 									src="/img/stuk-clothes-cover-set-of-3-white-grey__0909410_pe709744_s5.webp"
 									alt="Product Image"
@@ -490,8 +485,8 @@ export default function Home() {
 									height={400}
 									objectFit="contain"
 								></Image>
-							</div>
-							<div className={styles.description}>
+							</motion.div>
+							<motion.div variants={fadeInUp} className={styles.description}>
 								<h2>
 									<strong>Quality</strong>
 								</h2>
@@ -499,8 +494,8 @@ export default function Home() {
 									We use the best in class laundry products to assure you, that
 									your favorite clothes are always taken care of.
 								</p>
-							</div>
-							<div className={styles.imageDiv}>
+							</motion.div>
+							<motion.div variants={fadeIn} className={styles.imageDiv}>
 								<Image
 									src="/img/skubb-storage-case-dark-grey__0940614_pe795076_s5.webp"
 									alt="Product Image"
@@ -508,8 +503,8 @@ export default function Home() {
 									height={400}
 									objectFit="contain"
 								></Image>
-							</div>
-							<div className={styles.description}>
+							</motion.div>
+							<motion.div variants={fadeInUp} className={styles.description}>
 								<h2>
 									<strong>Express Delivery</strong>
 								</h2>
@@ -518,8 +513,8 @@ export default function Home() {
 									a night out. With our super same day service and express free
 									delivery.
 								</p>
-							</div>
-							<div className={styles.imageDiv}>
+							</motion.div>
+							<motion.div variants={fadeIn} className={styles.imageDiv}>
 								<Image
 									src="/img/920015s10.webp"
 									alt="Product Image"
@@ -527,8 +522,8 @@ export default function Home() {
 									height={400}
 									objectFit="cover"
 								></Image>
-							</div>
-							<div className={styles.description}>
+							</motion.div>
+							<motion.div variants={fadeInUp} className={styles.description}>
 								<h2>
 									<strong>Alterations</strong>
 								</h2>
@@ -537,8 +532,8 @@ export default function Home() {
 									handle that for you. If you need altering for your clothes we
 									can cover it.
 								</p>
-							</div>
-						</div>
+							</motion.div>
+						</motion.div>
 					</div>
 				</div>
 			</div>
