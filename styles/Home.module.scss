@@ -1710,8 +1710,18 @@
 	// <=======================================================>
 	// <========== WEDDING DRESSES & BRIDESMAID PAGE ==========>
 	// <========== WEDDING DRESS ==========>
+	// <========== BACKGROUND IMAGE ==========>
+	.backgroundImageWeddingDressesBridal {
+		height: 25rem;
+		background: url("/img/nathan-walker-C0j_IxemcLo-unsplash.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
 	.weddingDress {
-		padding: 0 1rem;
+		padding: 0rem;
+
 		.gridDisplay {
 			margin-top: 5rem;
 			grid-template-columns: 1fr;
@@ -1721,15 +1731,17 @@
 			}
 
 			.description {
-				margin-top: 7.5rem;
-				padding: 0 2.5rem;
+				margin-top: 2.5rem;
+				padding: 0 0.5rem;
 
 				h2 {
-					font-size: $fontSize_normal;
+					text-align: center;
+					font-size: $fontSize_large;
 				}
 
 				p {
 					margin-top: 2rem;
+					padding: 0 0.5rem;
 					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
 				}
@@ -1742,7 +1754,7 @@
 		background-color: $baseColor_lightGrey1;
 
 		.content {
-			padding: 0 1rem;
+			padding: 0rem;
 
 			.innerContent {
 				grid-template-columns: 1fr;
@@ -1753,10 +1765,11 @@
 				}
 
 				.description {
-					padding: 0 2.5rem;
+					padding: 0 0.5rem;
 
 					h2 {
-						font-size: $fontSize_normal;
+						text-align: center;
+						font-size: $fontSize_large;
 					}
 
 					p {
