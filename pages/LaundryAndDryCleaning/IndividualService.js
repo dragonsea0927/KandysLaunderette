@@ -8,11 +8,13 @@ import styles from "/styles/Home.module.scss";
 
 const IndividualService = () => {
 	return (
-		<motion.div exit={{
+		<motion.div
+			exit={{
 				opacity: 0,
 			}}
 			initial="initial"
-			animate="animate">
+			animate="animate"
+		>
 			<div>
 				{/* <!--===== HEAD =====--> */}
 				<Head>
@@ -541,7 +543,7 @@ const IndividualService = () => {
 				{/* <!--===== FOOTER =====--> */}
 				<Footer />
 			</div>
-		</>
+		</motion.div>
 	);
 };
 

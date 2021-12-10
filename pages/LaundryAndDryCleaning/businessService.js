@@ -435,7 +435,7 @@ const businessService = () => {
 				{/* <!--===== FOOTER =====--> */}
 				<Footer />
 			</div>
-		</>
+		</motion.div>
 	);
 };
 
