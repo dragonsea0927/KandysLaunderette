@@ -6,6 +6,37 @@ import OurProcess from "/components/ourProcess";
 import FooterDark from "/components/FooterDark";
 import styles from "/styles/Home.module.scss";
 
+// Custom reusable Animation Properties/variables
+const fadeInUp = {
+	initial: {
+		y: 60,
+		opacity: 0,
+	},
+	animate: {
+		y: 0,
+		opacity: 1,
+		transition: {duration: 0.5, ease: "easeOut"},
+	},
+};
+
+const fadeIn = {
+	initial: {
+		opacity: 0,
+	},
+	animate: {
+		opacity: 1,
+		transition: {duration: 1, delay: 0.5, ease: "easeOut"},
+	},
+};
+
+const stagger = {
+	animate: {
+		transition: {
+			staggerChildren: 0.1,
+		},
+	},
+};
+
 const suitsOxfordShirts = () => {
 	return (
 		<motion.div
@@ -59,10 +90,10 @@ const suitsOxfordShirts = () => {
 			<div className={styles.pageTitle}>
 				<div className="container">
 					<div className={styles.content}>
-						<div className={styles.title}>
+						<motion.div variants={fadeInUp} className={styles.title}>
 							<h2>Suits & Oxford Shirts</h2>
 							<h5>Men's only Dry Cleaning Solutions</h5>
-						</div>
+						</motion.div>
 					</div>
 				</div>
 			</div>
