@@ -90,10 +90,10 @@ const AlterationsRepairs = () => {
 				<div className={styles.pageTitle}>
 					<div className="container">
 						<div className={styles.content}>
-							<div className={styles.title}>
+							<motion.div variants={fadeInUp} className={styles.title}>
 								<h2>Alterations & Repairs</h2>
 								<h5>Garments Repairs And Alterations By Experts</h5>
-							</div>
+							</motion.div>
 						</div>
 					</div>
 				</div>
