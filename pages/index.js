@@ -115,8 +115,8 @@ export default function Home() {
 								</Link>
 							</newButton>
 						</div>
-						<div className={styles.gridDisplay}>
-							<div className={styles.content}>
+						<motion.div variants={stagger} className={styles.gridDisplay}>
+							<motion.div variants={fadeInUp} className={styles.content}>
 								<Link href="#launderette">
 									<a target="blank">
 										<Image
@@ -128,14 +128,13 @@ export default function Home() {
 										></Image>
 									</a>
 								</Link>
-
 								<div className={styles.header}>
 									<Link href="#launderette">
 										<a target="blank">Laundry & Dry Cleaning</a>
 									</Link>
 								</div>
-							</div>
-							<div className={styles.content}>
+							</motion.div>
+							<motion.div variants={fadeInUp} className={styles.content}>
 								<Link href="#launderette">
 									<a target="blank">
 										<Image
@@ -152,8 +151,8 @@ export default function Home() {
 										<a target="blank">Groom's Suit Cleaning & Alterations</a>
 									</Link>
 								</div>
-							</div>
-							<div className={styles.content}>
+							</motion.div>
+							<motion.div variants={fadeInUp} className={styles.content}>
 								<Link href="#launderette">
 									<a target="blank">
 										<Image
@@ -171,8 +170,8 @@ export default function Home() {
 										<a target="blank">Bridal Dress Cleaning & Alterations</a>
 									</Link>
 								</div>
-							</div>
-							<div className={styles.content}>
+							</motion.div>
+							<motion.div variants={fadeInUp} className={styles.content}>
 								<Link href="#launderette">
 									<a target="blank">
 										<Image
@@ -190,8 +189,8 @@ export default function Home() {
 										<a target="blank">Alterations & Repairs</a>
 									</Link>
 								</div>
-							</div>
-							<div className={styles.content}>
+							</motion.div>
+							<motion.div variants={fadeInUp} className={styles.content}>
 								<Link href="#launderette">
 									<a target="blank">
 										<Image
@@ -209,8 +208,8 @@ export default function Home() {
 										<a target="blank">Professional Ironing Services</a>
 									</Link>
 								</div>
-							</div>
-							<div className={styles.content}>
+							</motion.div>
+							<motion.div variants={fadeInUp} className={styles.content}>
 								<Link href="#launderette">
 									<a target="blank">
 										<Image
@@ -228,8 +227,8 @@ export default function Home() {
 										<a target="blank">Self-Services</a>
 									</Link>
 								</div>
-							</div>
-							<div className={styles.content}>
+							</motion.div>
+							<motion.div variants={fadeInUp} className={styles.content}>
 								<Link href="#launderette">
 									<a target="blank">
 										<Image
@@ -247,8 +246,8 @@ export default function Home() {
 										<a target="blank">Duvet & Quilts Cleaning</a>
 									</Link>
 								</div>
-							</div>
-							<div className={styles.content}>
+							</motion.div>
+							<motion.div variants={fadeInUp} className={styles.content}>
 								<Link href="#launderette">
 									<a target="blank">
 										<Image
@@ -266,8 +265,8 @@ export default function Home() {
 										<a target="blank">Stain Removing</a>
 									</Link>
 								</div>
-							</div>
-							<div className={styles.content}>
+							</motion.div>
+							<motion.div variants={fadeInUp} className={styles.content}>
 								<Link href="#launderette">
 									<a target="blank">
 										<Image
@@ -285,8 +284,8 @@ export default function Home() {
 										<a target="blank">Oxford Shirts</a>
 									</Link>
 								</div>
-							</div>
-							<div className={styles.content}>
+							</motion.div>
+							<motion.div variants={fadeInUp} className={styles.content}>
 								<Link href="#launderette">
 									<a target="blank">
 										<Image
@@ -304,8 +303,8 @@ export default function Home() {
 										<a target="blank">Restaurant Laundry & Linen Cleaning</a>
 									</Link>
 								</div>
-							</div>
-							<div className={styles.content}>
+							</motion.div>
+							<motion.div variants={fadeInUp} className={styles.content}>
 								<Link href="#launderette">
 									<a target="blank">
 										<Image
@@ -323,8 +322,8 @@ export default function Home() {
 										<a target="blank">Jacket & Coat Alterations</a>
 									</Link>
 								</div>
-							</div>
-							<div className={styles.content}>
+							</motion.div>
+							<motion.div variants={fadeInUp} className={styles.content}>
 								<Link href="#launderette">
 									<a target="blank">
 										<Image
@@ -341,8 +340,8 @@ export default function Home() {
 										<a target="blank">Kids Clothing Alterations</a>
 									</Link>
 								</div>
-							</div>
-						</div>
+							</motion.div>
+						</motion.div>
 					</div>
 				</div>
 			</div>
