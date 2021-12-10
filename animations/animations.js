@@ -1,4 +1,5 @@
-fadeInUp = {
+// Custom reusable Animation Properties/variables
+export const fadeInUp = {
 	initial: {
 		y: 60,
 		opacity: 0,
