@@ -6,6 +6,37 @@ import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
 import styles from "/styles/Home.module.scss";
 
+// Custom reusable Animation Properties/variables
+const fadeInUp = {
+	initial: {
+		y: 60,
+		opacity: 0,
+	},
+	animate: {
+		y: 0,
+		opacity: 1,
+		transition: {duration: 0.5, ease: "easeOut"},
+	},
+};
+
+const fadeIn = {
+	initial: {
+		opacity: 0,
+	},
+	animate: {
+		opacity: 1,
+		transition: {duration: 1, delay: 0.5, ease: "easeOut"},
+	},
+};
+
+const stagger = {
+	animate: {
+		transition: {
+			staggerChildren: 0.1,
+		},
+	},
+};
+
 const businessService = () => {
 	return (
 		<motion.div
@@ -64,17 +95,17 @@ const businessService = () => {
 							</Link>
 						</div>
 						<div className={styles.content}>
-							<div className={styles.title}>
+							<motion.div className={styles.title}>
 								<h2>Business Tailored Service</h2>
 								<p>
 									Our services provides our business partners professional
 									solution to their various requirements. Prior booking is
 									required. <br></br>
 								</p>
-							</div>
-							<div className={styles.subtitle}>
+							</motion.div>
+							<motion.div className={styles.subtitle}>
 								<h2>All Our Services</h2>
-							</div>
+							</motion.div>
 							<div className={styles.innerContent}>
 								<div className={styles.servicesList}>
 									<div className={styles.List}>
