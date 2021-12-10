@@ -7,13 +7,46 @@ import ContactInfo from "/components/WeddingDressesAndBridal/ContactInfo";
 import Footer from "/components/Footer";
 import styles from "/styles/Home.module.scss";
 
+// Custom reusable Animation Properties/variables
+const fadeInUp = {
+	initial: {
+		y: 60,
+		opacity: 0,
+	},
+	animate: {
+		y: 0,
+		opacity: 1,
+		transition: {duration: 0.5, ease: "easeOut"},
+	},
+};
+
+const fadeIn = {
+	initial: {
+		opacity: 0,
+	},
+	animate: {
+		opacity: 1,
+		transition: {duration: 1, delay: 0.5, ease: "easeOut"},
+	},
+};
+
+const stagger = {
+	animate: {
+		transition: {
+			staggerChildren: 0.1,
+		},
+	},
+};
+
 const WeddingDressesAndBridal = () => {
 	return (
-		<motion.div exit={{
+		<motion.div
+			exit={{
 				opacity: 0,
 			}}
 			initial="initial"
-			animate="animate">
+			animate="animate"
+		>
 			{/* <!--===== HEAD =====--> */}
 			<Head>
 				{/* <!-- Website Title --> */}
@@ -70,7 +103,7 @@ const WeddingDressesAndBridal = () => {
 			<div className={styles.weddingDress}>
 				<div className="container">
 					<div className={styles.gridDisplay}>
-						<div className={styles.Image}>
+						<motion.div variants={fadeIn} className={styles.Image}>
 							<Image
 								src="/img/james-bold-35nWF_04Pgg-unsplash.jpg"
 								alt="Product Image"
@@ -78,10 +111,10 @@ const WeddingDressesAndBridal = () => {
 								height={800}
 								objectFit="cover"
 							></Image>
-						</div>
-						<div className={styles.description}>
-							<h2>Wedding Dresses</h2>
-							<p>
+						</motion.div>
+						<motion.div variants={stagger} className={styles.description}>
+							<motion.h2 variants={fadeInUp}>Wedding Dresses</motion.h2>
+							<motion.p variants={fadeIn}>
 								We offer wedding dress perpetrations from dry cleaning, Ironing,
 								Delivery ready collection. Premium fragrance, sublime sleepwear
 								and luxurious accessories.
@@ -90,8 +123,8 @@ const WeddingDressesAndBridal = () => {
 								We want to make your special day stress free, sleep well knowing
 								that your wedding dress is taken care of. We want to inspire
 								confidence, relaxation and happiness for your special day.
-							</p>
-						</div>
+							</motion.p>
+						</motion.div>
 					</div>
 				</div>
 			</div>
@@ -137,7 +170,7 @@ const WeddingDressesAndBridal = () => {
 
 			{/* <!--===== FOOTER =====--> */}
 			<Footer />
-		</>
+		</motion.div>
 	);
 };
 
