@@ -65,6 +65,22 @@ Although the website is fairly functional and provides the minimum viable produc
 2. Develop a service availability feature (available or not available). This will then be updated on the website in real time.
 3. Create a client database example a email client database.
 
+# Deployment
+
+Deployed with vercel here: 
+
+a). https://kandys-launderette.vercel.app/
+
+b). https://kandys-launderette-todd-owen-mpeli.vercel.app/
+
+c). https://kandys-launderette-git-main-todd-owen-mpeli.vercel.app/
+
+## Full Mobile View Screenshot
+
+1. All images are in 4K resolution, click to enlarge for better viewing.
+
+<img src="/public/img/Mobile%20View%20Screenshot.png" width="100%" height="350px">
+
 ## Getting Started
 
 First, run the development server:
@@ -97,9 +113,3 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-# Full Mobile View Screenshot
-
-1. All images are in 4K resolution, click to enlarge for better viewing.
-
-<img src="/public/img/Mobile%20View%20Screenshot.png" width="100%" height="350px">
