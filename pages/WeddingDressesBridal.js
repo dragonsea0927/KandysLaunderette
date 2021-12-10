@@ -137,7 +137,7 @@ const WeddingDressesAndBridal = () => {
 				<div className="container">
 					<div className={styles.content}>
 						<div className={styles.innerContent}>
-							<div className={styles.Image}>
+							<motion.div variants={fadeIn} className={styles.Image}>
 								<Image
 									src="/img/katelyn-macmillan-5VhSc5jCA2g-unsplash.jpg"
 									alt="Product Image"
@@ -145,10 +145,10 @@ const WeddingDressesAndBridal = () => {
 									height={800}
 									objectFit="contain"
 								></Image>
-							</div>
-							<div className={styles.description}>
-								<h2>Bridesmaid Dresses</h2>
-								<p>
+							</motion.div>
+							<motion.div variants={stagger} className={styles.description}>
+								<motion.h2 variants={fadeInUp}>Bridesmaid Dresses</motion.h2>
+								<motion.p variants={fadeIn}>
 									We offer Bridesmaid wedding dress perpetrations from dry
 									cleaning, Ironing, Delivery ready collection. Premium
 									fragrance, sublime sleepwear and luxurious accessories.
@@ -158,8 +158,8 @@ const WeddingDressesAndBridal = () => {
 									knowing that your wedding dress is taken care of. We want to
 									inspire confidence, relaxation and happiness for your special
 									day.
-								</p>
-							</div>
+								</motion.p>
+							</motion.div>
 						</div>
 					</div>
 				</div>
