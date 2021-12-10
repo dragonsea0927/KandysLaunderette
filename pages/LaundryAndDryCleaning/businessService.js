@@ -150,7 +150,7 @@ const businessService = () => {
 												<a>Long Canvas Apron Clip</a>
 											</Link>
 											<Link href="">
-												<a>Women❜s Waistcoat Staff Shirts</a>
+												<a>Womens Waistcoat Staff Shirts</a>
 											</Link>
 											<Link href="">
 												<a>Kitchen Cloths</a>

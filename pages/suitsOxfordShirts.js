@@ -92,7 +92,7 @@ const suitsOxfordShirts = () => {
 					<div className={styles.content}>
 						<motion.div variants={fadeInUp} className={styles.title}>
 							<h2>Suits & Oxford Shirts</h2>
-							<h5>Men❜s only Dry Cleaning Solutions</h5>
+							<h5>Mens only Dry Cleaning Solutions</h5>
 						</motion.div>
 					</div>
 				</div>

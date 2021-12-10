@@ -102,7 +102,7 @@ export default function Home() {
 				<div className="container">
 					<div className={styles.content}>
 						<motion.div variants={fadeInUp} className={styles.title}>
-							<h2>Our Service❜s</h2>
+							<h2>Our Services</h2>
 							<h5>From Individual to Business Solutions</h5>
 						</motion.div>
 						<div className={styles.moreOptions}>
