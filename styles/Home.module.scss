@@ -837,11 +837,11 @@
 
 			.title {
 				h2 {
-					font-size: $fontSize_normal;
+					font-size: $fontSize_large;
 				}
 
 				h5 {
-					margin-top: 2rem;
+					margin-top: 1rem;
 					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
 				}
@@ -853,10 +853,10 @@
 				.column {
 					.description {
 						margin: 2rem 0;
-						padding: 2rem;
+						padding: 1rem 0.5rem;
 
 						h2 {
-							font-size: $fontSize_normal;
+							font-size: $fontSize_large;
 						}
 
 						p {
