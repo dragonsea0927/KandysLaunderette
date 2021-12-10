@@ -110,14 +110,14 @@ const suitsOxfordShirts = () => {
 								height={400}
 								objectFit="cover"
 							></Image>
-							<div className={styles.description}>
-								<h2>Suits</h2>
-								<p>
+							<motion.div variants={stagger} className={styles.description}>
+								<motion.h2 variants={fadeInUp}>Suits</motion.h2>
+								<motion.p variants={fadeIn}>
 									We offer suit cleaning & alterations for everyday and special
 									day occasions. We specialize in 2 Piece & 3 Piece suits and in
 									2 Piece Dress & Dinner Suit.
-								</p>
-							</div>
+								</motion.p>
+							</motion.div>
 						</div>
 						<div className={styles.content}>
 							<Image
@@ -127,14 +127,14 @@ const suitsOxfordShirts = () => {
 								height={400}
 								objectFit="cover"
 							></Image>
-							<div className={styles.description}>
-								<h2>Oxford Shirts</h2>
-								<p>
+							<motion.div variants={stagger} className={styles.description}>
+								<motion.h2 variants={fadeInUp}>Oxford Shirts</motion.h2>
+								<motion.p variants={fadeIn}>
 									Business Casual has never been any easier. we offer dry
 									cleaning & alterations solutions for everyday occasions. We
 									specialize in Regular or Silk shirts.
-								</p>
-							</div>
+								</motion.p>
+							</motion.div>
 						</div>
 					</div>
 				</div>
