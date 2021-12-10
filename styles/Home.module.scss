@@ -898,7 +898,7 @@
 			display: flex;
 			text-align: center;
 			flex-direction: column;
-			grid-row-gap: 2rem;
+			grid-row-gap: 1rem;
 
 			.title {
 				display: flex;
@@ -920,23 +920,26 @@
 			}
 
 			.button {
-				margin-top: 2.5rem;
+				margin-top: 1.25rem;
 
 				newButton {
-					padding: 2.5rem 2.75rem;
+					padding: 1rem;
 					background-color: $backgroundColor_White;
 
 					a {
-						font-size: $fontSize_normal;
+						font-size: $fontSize_xSmall;
 						font-family: $fontStyle_header;
-					}
-
-					a:hover {
-						color: $baseColor_lightGrey4;
 					}
 				}
 			}
 		}
+	}
+
+	.backgroundImageLaundryDryCleaning {
+		background: url("/img/karsten-winegeart-ewyfpgYchcc-unsplash.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
 	}
 
 	// <========== FOOTER ==========>
@@ -1359,7 +1362,7 @@
 	.pageTitle {
 		.content {
 			.title {
-				padding: 1.5rem 0;
+				padding: 2.5rem 0;
 
 				h2 {
 					font-size: $fontSize_large;
