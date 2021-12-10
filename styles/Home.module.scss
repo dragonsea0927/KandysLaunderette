@@ -963,7 +963,7 @@
 						}
 
 						p {
-							margin-top: 1.5rem;
+							margin-top: 1rem;
 							font-size: $fontSize_medium;
 							font-family: $fontStyle_body;
 						}
@@ -990,12 +990,13 @@
 						button {
 							width: fit-content;
 							padding: 0.5rem 1rem;
-							font-size: $fontSize_normal;
+							font-size: $fontSize_small;
 							font-family: $fontStyle_body;
 						}
 					}
 
 					.socialLinks {
+						padding: 0;
 						margin: 0 auto;
 
 						a {
@@ -1028,7 +1029,7 @@
 						}
 
 						a {
-							font-size: $fontSize_normal;
+							font-size: $fontSize_small;
 							font-family: $fontStyle_body;
 						}
 					}
@@ -1117,11 +1118,11 @@
 	.services {
 		.content {
 			.title {
-				padding: 5rem 0;
+				padding: 1rem 0;
 				text-align: center;
 
 				h2 {
-					font-size: $fontSize_normal;
+					font-size: $fontSize_large;
 				}
 
 				h5 {
@@ -1133,11 +1134,11 @@
 
 			.moreOptions {
 				margin: 1rem 0;
-				padding: 2rem 1rem;
+				padding: 1rem 1rem;
 
 				newButton {
 					a {
-						font-size: $fontSize_normal;
+						font-size: $fontSize_small;
 						font-family: $fontStyle_body;
 
 						i {
@@ -1149,18 +1150,18 @@
 
 			.gridDisplay {
 				display: grid;
-				padding: 0 0.5rem;
+				padding: 0 0.25rem;
 				margin-bottom: 2rem;
 				grid-template-columns: repeat(2, 1fr);
-				grid-column-gap: 1rem;
-				grid-row-gap: 2.5rem;
+				grid-column-gap: 0.5rem;
+				grid-row-gap: 1.25rem;
 
 				.content {
 					.header {
-						margin-top: 2rem;
+						margin-top: 1rem;
 
 						a {
-							font-size: $fontSize_normal;
+							font-size: $fontSize_small;
 							font-family: $fontStyle_option1;
 						}
 					}
@@ -1173,14 +1174,14 @@
 	.specialOccasions {
 		.content {
 			.title {
-				margin: 5rem 0;
+				margin: 1rem 0;
 
 				h2 {
-					font-size: $fontSize_normal;
+					font-size: $fontSize_large;
 				}
 
 				h5 {
-					margin-top: 2.5rem;
+					margin-top: 1rem;
 					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
 				}
@@ -1188,24 +1189,26 @@
 
 			.innerContent {
 				display: grid;
-				margin-top: 2.5rem;
+				margin-top: 0.5rem;
 				grid-template-columns: repeat(2, 1fr);
 				grid-column-gap: 1rem;
 
 				.productDisplay {
 					.content {
-						bottom: 200px;
+						left: -20px;
+						bottom: 125px;
 
 						h2 {
 							margin-bottom: 2rem;
-							font-size: $fontSize_normal;
+							font-size: $fontSize_small;
 						}
 
 						.shopButton {
-							padding: 1.5rem 2rem;
+							border-radius: 10px;
+							padding: 0.25rem 0.75rem;
 
 							a {
-								font-size: $fontSize_normal;
+								font-size: $fontSize_xSmall;
 							}
 						}
 					}
@@ -1220,21 +1223,23 @@
 
 		.content {
 			.title {
-				margin: 5rem 0;
-				padding: 2.5rem 0;
+				margin: 1rem 0;
+				padding: 1rem 0;
 
 				h2 {
-					font-size: $fontSize_normal;
+					font-size: $fontSize_large;
 				}
 
 				h5 {
-					margin-top: 2.5rem;
+					margin-top: 1.5rem;
 					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
 				}
 
 				p {
-					margin-top: 3.5rem;
+					padding: 0.5rem;
+					width: fit-content;
+					margin-top: 0.75rem;
 					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
 				}
@@ -1242,20 +1247,21 @@
 
 			.gridDisplay {
 				display: grid;
-				margin: 3.5rem 0;
+				margin: 1.5rem 0;
+				padding: 1rem 0;
 				grid-template-columns: repeat(2, 1fr);
-				grid-column-gap: 1rem;
+				grid-column-gap: 0.5rem;
 
 				.description {
-					padding-right: 1rem;
+					padding-right: 0rem;
 
 					h2 {
-						font-weight: 100;
+						font-weight: 500;
 						font-size: $fontSize_normal;
 					}
 
 					p {
-						font-size: $fontSize_normal;
+						font-size: $fontSize_small;
 						font-family: $fontStyle_body;
 					}
 				}
@@ -1309,12 +1315,12 @@
 				margin: 2rem 0;
 
 				h2 {
-					font-size: $fontSize_large-1;
+					font-size: $fontSize_large;
 				}
 
 				h5 {
 					margin-top: 1rem;
-					font-size: $fontSize_large;
+					font-size: $fontSize_medium;
 					font-family: $fontStyle_body;
 				}
 			}
@@ -1334,7 +1340,7 @@
 							padding: 1.5rem 2rem;
 
 							a {
-								font-size: $fontSize_normal;
+								font-size: $fontSize_small;
 							}
 						}
 					}
