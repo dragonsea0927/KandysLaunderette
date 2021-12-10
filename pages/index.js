@@ -90,7 +90,7 @@ export default function Home() {
 				<div className="container">
 					<div className={styles.content}>
 						<motion.div variants={fadeInUp} className={styles.title}>
-							<h2>Kandy's Launderette</h2>
+							<h2>Kandys Launderette</h2>
 							<h5>Professional Dry Cleaning Specialist</h5>
 						</motion.div>
 					</div>
@@ -107,9 +107,9 @@ export default function Home() {
 						</motion.div>
 						<div className={styles.moreOptions}>
 							<newButton>
-								<Link href="">
+								<Link href="#">
 									<a target="blank">
-										View All Services{" "}
+										View All Services
 										<i className="bi bi-arrow-right-circle"></i>
 									</a>
 								</Link>
@@ -562,7 +562,6 @@ export default function Home() {
 										></Image>
 									</a>
 								</Link>
-
 								<div className={styles.header}>
 									<Link href="#launderette">
 										<a target="blank">Table & Bath Towels Dry Cleaning</a>
@@ -581,7 +580,6 @@ export default function Home() {
 										></Image>
 									</a>
 								</Link>
-
 								<div className={styles.header}>
 									<Link href="#launderette">
 										<a target="blank">Duvet & Quilts Dry Cleaning </a>
@@ -600,7 +598,6 @@ export default function Home() {
 										></Image>
 									</a>
 								</Link>
-
 								<div className={styles.header}>
 									<Link href="#launderette">
 										<a target="blank">Bed & Table Linen Dry Cleaning</a>
@@ -619,7 +616,6 @@ export default function Home() {
 										></Image>
 									</a>
 								</Link>
-
 								<div className={styles.header}>
 									<Link href="#launderette">
 										<a target="blank">Professional Laundering & Ironing</a>
