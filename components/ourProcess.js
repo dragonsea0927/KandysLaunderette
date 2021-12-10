@@ -25,6 +25,16 @@ const fadeIn = {
 	},
 };
 
+const fadeIn2 = {
+	initial: {
+		opacity: 0,
+	},
+	animate: {
+		opacity: 1,
+		transition: {duration: 1, delay: 0.85, ease: "easeOut"},
+	},
+};
+
 const stagger = {
 	animate: {
 		transition: {
@@ -40,13 +50,13 @@ const ourProcess = () => {
 			<div className={styles.ourProcess}>
 				<div className="container">
 					<div className={styles.content}>
-						<div className={styles.title}>
+						<motion.div variants={fadeInUp} className={styles.title}>
 							<h2>Our Process</h2>
 							<h5>From Start to Collection.</h5>
-						</div>
+						</motion.div>
 						<div className={styles.gridDisplay}>
 							<div className={styles.column}>
-								<div className={styles.Image}>
+								<motion.div variants={fadeIn} className={styles.Image}>
 									<Image
 										src="/img/skubb-storage-case-dark-grey__0940614_pe795076_s5.webp"
 										alt="Product Image"
@@ -54,18 +64,18 @@ const ourProcess = () => {
 										height={400}
 										objectFit="cover"
 									></Image>
-								</div>
-								<div className={styles.description}>
-									<h2>Arrival</h2>
-									<p>
+								</motion.div>
+								<motion.div variants={stagger} className={styles.description}>
+									<motion.h2 variants={fadeInUp}>Arrival</motion.h2>
+									<motion.p variants={fadeIn2}>
 										Schedule a drop off day. Call us are we can make the best
 										time for you to arrive. Be confidence knowing your special
 										dress is in good hands. day.
-									</p>
-								</div>
+									</motion.p>
+								</motion.div>
 							</div>
 							<div className={styles.column}>
-								<div className={styles.Image}>
+								<motion.div variants={fadeIn} className={styles.Image}>
 									<Image
 										src="/img/template98.jpg"
 										alt="Product Image"
@@ -73,18 +83,20 @@ const ourProcess = () => {
 										height={400}
 										objectFit="cover"
 									></Image>
-								</div>
-								<div className={styles.description}>
-									<h2>We do what we do best</h2>
-									<p>
+								</motion.div>
+								<motion.div variants={stagger} className={styles.description}>
+									<motion.h2 variants={fadeInUp}>
+										We do what we do best
+									</motion.h2>
+									<motion.p variants={fadeIn2}>
 										Schedule a drop off day. Call us are we can make the best
 										time for you to arrive. Be confidence knowing your special
 										dress is in good hands. day.
-									</p>
-								</div>
+									</motion.p>
+								</motion.div>
 							</div>
 							<div className={styles.column}>
-								<div className={styles.Image}>
+								<motion.div variants={fadeIn} className={styles.Image}>
 									<Image
 										src="/img/cashmere-care-how-to-store-2.webp"
 										alt="Product Image"
@@ -92,15 +104,15 @@ const ourProcess = () => {
 										height={400}
 										objectFit="cover"
 									></Image>
-								</div>
-								<div className={styles.description}>
-									<h2>Collection</h2>
-									<p>
+								</motion.div>
+								<motion.div variants={stagger} className={styles.description}>
+									<motion.h2 variants={fadeInUp}>Collection</motion.h2>
+									<motion.p variants={fadeIn2}>
 										Schedule a drop off day. Call us are we can make the best
 										time for you to arrive. Be confidence knowing your special
 										dress is in good hands. day.
-									</p>
-								</div>
+									</motion.p>
+								</motion.div>
 							</div>
 						</div>
 					</div>
