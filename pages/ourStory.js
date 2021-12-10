@@ -90,141 +90,145 @@ const ourStory = () => {
 				/>
 			</Head>
 
-			<div className={styles.backgroundTopCover}>
-				{/* <!--===== NAVIGATION =====--> */}
-				<NavbarTwo />
+			<div className={styles.ourStoryPage}>
+				<div className={styles.backgroundTopCover}>
+					{/* <!--===== NAVIGATION =====--> */}
+					<NavbarTwo />
 
-				{/* // <========== PAGE TITLE ==========> */}
-				<div className={styles.ourStory}>
-					<div className={styles.pageTitle}>
-						<div className="container">
-							<div className={styles.content}>
-								<motion.div variants={fadeInUp} className={styles.title}>
-									<h2>Our Story</h2>
-									<h5>The Best Stress Free Dry Cleaning Solutions.</h5>
-								</motion.div>
+					{/* // <========== PAGE TITLE ==========> */}
+					<div className={styles.ourStory}>
+						<div className={styles.pageTitle}>
+							<div className="container">
+								<div className={styles.content}>
+									<motion.div variants={fadeInUp} className={styles.title}>
+										<h2>Our Story</h2>
+										<h5>The Best Stress Free Dry Cleaning Solutions.</h5>
+									</motion.div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
-			{/* // <========== ABOUT US DESCRIPTIONS ==========> */}
-			<div className={styles.aboutUs}>
-				<div className="container">
-					<motion.div variants={stagger} className={styles.content}>
-						<motion.h2 variants={fadeInUp}>We may be new to you</motion.h2>
-						<motion.p variants={fadeIn}>
-							But We believe in making the most of lifes simple pleasures - its
-							the little things that matter. Precious moments of uncomplicated
-							happiness are our constant inspiration, and it is with these in
-							mind that we create collections of services that are built to last
-							and become an intimate part of your everyday lives.
-							<br></br>
-							<br></br>I cannot emphasize enough how much thought, care, and
-							attention to detail goes into every service we make at The White
-							Company - I hope you will cherish your purchases as much as we do.
-							<br></br>
-							<br></br>
-							<motion.span variants={fadeIn2}>
-								Were delighted to meet you
-							</motion.span>
-						</motion.p>
-					</motion.div>
-				</div>
-			</div>
-
-			{/* // <========== SUITS & OXFORD DESCRIPTIONS ==========> */}
-			<div className={styles.ourLeader}>
-				<div className="container">
-					<motion.div variants={fadeIn} className={styles.gridDisplay}>
-						<Image
-							src="/img/karsten-winegeart-bwDnRf-r4u8-unsplash.jpg"
-							alt="Product Image"
-							width={400}
-							height={800}
-							objectFit="cover"
-						></Image>
-						<Image
-							src="/img/karsten-winegeart-Q7iB4Yixcfw-unsplash.jpg"
-							alt="Product Image"
-							width={400}
-							height={800}
-							objectFit="cover"
-						></Image>
-					</motion.div>
-					<div className={styles.content}>
-						<motion.div variants={stagger} className={styles.description}>
-							<motion.h2 variants={fadeInUp}>Kandy Chrissie Rucker</motion.h2>
+				{/* // <========== ABOUT US DESCRIPTIONS ==========> */}
+				<div className={styles.aboutUs}>
+					<div className="container">
+						<motion.div variants={stagger} className={styles.content}>
+							<motion.h2 variants={fadeInUp}>We may be new to you</motion.h2>
 							<motion.p variants={fadeIn}>
-								Over 2 years ago, Kandy Chrissie Rucker had a vision: to create
-								a company that specialized in Laundry & Dry Cleaning,
-								Alterations & Repairs, amongst many other services combining the
-								highest quality with affordable prices.
+								But We believe in making the most of lifes simple pleasures -
+								its the little things that matter. Precious moments of
+								uncomplicated happiness are our constant inspiration, and it is
+								with these in mind that we create collections of services that
+								are built to last and become an intimate part of your everyday
+								lives.
+								<br></br>
+								<br></br>I cannot emphasize enough how much thought, care, and
+								attention to detail goes into every service we make at The White
+								Company - I hope you will cherish your purchases as much as we
+								do.
+								<br></br>
+								<br></br>
+								<motion.span variants={fadeIn2}>
+									Were delighted to meet you
+								</motion.span>
 							</motion.p>
 						</motion.div>
 					</div>
 				</div>
-			</div>
 
-			{/* <!--===== OUR COLLECTION =====--> */}
-			<div className={styles.ourCollections}>
-				<div className="container">
-					<div className={styles.content}>
-						<motion.div variants={fadeInUp} className={styles.title}>
-							<h2>Our Attention to Detail</h2>
-							<h5>Consistency, Efficiency & Perfection.</h5>
+				{/* // <========== SUITS & OXFORD DESCRIPTIONS ==========> */}
+				<div className={styles.ourLeader}>
+					<div className="container">
+						<motion.div variants={fadeIn} className={styles.gridDisplay}>
+							<Image
+								src="/img/karsten-winegeart-bwDnRf-r4u8-unsplash.jpg"
+								alt="Product Image"
+								width={400}
+								height={800}
+								objectFit="cover"
+							></Image>
+							<Image
+								src="/img/karsten-winegeart-Q7iB4Yixcfw-unsplash.jpg"
+								alt="Product Image"
+								width={400}
+								height={800}
+								objectFit="cover"
+							></Image>
 						</motion.div>
-						<div className={styles.gridDisplay}>
-							<div className={styles.innerContent}>
-								<motion.div variants={fadeIn} className={styles.Image}>
-									<Image
-										src="/img/nimble-made-N0ke5zChVBU-unsplash.jpg"
-										alt="Product Image"
-										width={600}
-										height={800}
-										objectFit="cover"
-									></Image>
-								</motion.div>
-								<motion.div variants={stagger} className={styles.description}>
-									<motion.h2 variants={fadeInUp}>Service</motion.h2>
-									<motion.p variants={fadeIn}>
-										Our staff are highly skilled and trained to understand the
-										complexity of clothes and household furnishings. You can be
-										confident that your articles will always receive the
-										greatest care in dry cleaning, wet cleaning and stain
-										removal services.
-										<br></br>
-										<br></br>
-										Equally we pride ourselves on our ability to iron and hand
-										finish your garments to the highest standard, so they will
-										look their best for your future enjoyment.
-									</motion.p>
-								</motion.div>
-							</div>
+						<div className={styles.content}>
+							<motion.div variants={stagger} className={styles.description}>
+								<motion.h2 variants={fadeInUp}>Kandy Chrissie Rucker</motion.h2>
+								<motion.p variants={fadeIn}>
+									Over 2 years ago, Kandy Chrissie Rucker had a vision: to
+									create a company that specialized in Laundry & Dry Cleaning,
+									Alterations & Repairs, amongst many other services combining
+									the highest quality with affordable prices.
+								</motion.p>
+							</motion.div>
 						</div>
-						<div className={styles.gridDisplayTwo}>
-							<div className={styles.innerContent}>
-								<motion.div variants={stagger} className={styles.description}>
-									<motion.h2 variants={fadeInUp}>Convenience</motion.h2>
-									<motion.p variants={fadeIn}>
-										We are located in high Street downtown Swansea. However We
-										also operate a collection and delivery service.
-										<br></br>
-										<br></br>
-										We have a variety of vehicles on the road and in telephone
-										contact, enabling a prompt response to your requests.
-									</motion.p>
-								</motion.div>
-								<motion.div variants={fadeIn} className={styles.Image}>
-									<Image
-										src="/img/nimble-made-Jf7JqVazm-4-unsplash.jpg"
-										alt="Product Image"
-										width={800}
-										height={800}
-										objectFit="contain"
-									></Image>
-								</motion.div>
+					</div>
+				</div>
+
+				{/* <!--===== OUR COLLECTION =====--> */}
+				<div className={styles.ourCollections}>
+					<div className="container">
+						<div className={styles.content}>
+							<motion.div variants={fadeInUp} className={styles.title}>
+								<h2>Our Attention to Detail</h2>
+								<h5>Consistency, Efficiency & Perfection.</h5>
+							</motion.div>
+							<div className={styles.gridDisplay}>
+								<div className={styles.innerContent}>
+									<motion.div variants={fadeIn} className={styles.Image}>
+										<Image
+											src="/img/nimble-made-N0ke5zChVBU-unsplash.jpg"
+											alt="Product Image"
+											width={600}
+											height={800}
+											objectFit="cover"
+										></Image>
+									</motion.div>
+									<motion.div variants={stagger} className={styles.description}>
+										<motion.h2 variants={fadeInUp}>Service</motion.h2>
+										<motion.p variants={fadeIn}>
+											Our staff are highly skilled and trained to understand the
+											complexity of clothes and household furnishings. You can
+											be confident that your articles will always receive the
+											greatest care in dry cleaning, wet cleaning and stain
+											removal services.
+											<br></br>
+											<br></br>
+											Equally we pride ourselves on our ability to iron and hand
+											finish your garments to the highest standard, so they will
+											look their best for your future enjoyment.
+										</motion.p>
+									</motion.div>
+								</div>
+							</div>
+							<div className={styles.gridDisplayTwo}>
+								<div className={styles.innerContent}>
+									<motion.div variants={stagger} className={styles.description}>
+										<motion.h2 variants={fadeInUp}>Convenience</motion.h2>
+										<motion.p variants={fadeIn}>
+											We are located in high Street downtown Swansea. However We
+											also operate a collection and delivery service.
+											<br></br>
+											<br></br>
+											We have a variety of vehicles on the road and in telephone
+											contact, enabling a prompt response to your requests.
+										</motion.p>
+									</motion.div>
+									<motion.div variants={fadeIn} className={styles.Image}>
+										<Image
+											src="/img/nimble-made-Jf7JqVazm-4-unsplash.jpg"
+											alt="Product Image"
+											width={800}
+											height={800}
+											objectFit="contain"
+										></Image>
+									</motion.div>
+								</div>
 							</div>
 						</div>
 					</div>
