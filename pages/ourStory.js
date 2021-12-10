@@ -112,9 +112,9 @@ const ourStory = () => {
 			{/* // <========== ABOUT US DESCRIPTIONS ==========> */}
 			<div className={styles.aboutUs}>
 				<div className="container">
-					<div className={styles.content}>
-						<h2>We may be new to you</h2>
-						<p>
+					<motion.div variants={stagger} className={styles.content}>
+						<motion.h2 variants={fadeInUp}>We may be new to you</motion.h2>
+						<motion.p variants={fadeIn}>
 							But We believe in making the most of life's simple pleasures -
 							it's the little things that matter. Precious moments of
 							uncomplicated happiness are our constant inspiration, and it is
@@ -126,9 +126,11 @@ const ourStory = () => {
 							Company - I hope you'll cherish your purchases as much as we do.
 							<br></br>
 							<br></br>
-							<span>We're delighted to meet you</span>
-						</p>
-					</div>
+							<motion.span variants={fadeIn2}>
+								We're delighted to meet you
+							</motion.span>
+						</motion.p>
+					</motion.div>
 				</div>
 			</div>
 
