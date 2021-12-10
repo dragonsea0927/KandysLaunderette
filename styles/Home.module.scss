@@ -943,7 +943,7 @@
 	.footerDark {
 		.content {
 			.topSection {
-				margin: 7.5rem 0;
+				margin: 1.5rem 0;
 
 				.content {
 					display: flex;
@@ -958,24 +958,24 @@
 
 						h2 {
 							font-weight: 100;
-							font-size: $fontSize_normal;
+							font-size: $fontSize_large;
 							font-family: $fontStyle_option1;
 						}
 
 						p {
-							margin-top: 2.5rem;
-							font-size: $fontSize_normal;
+							margin-top: 1.5rem;
+							font-size: $fontSize_medium;
 							font-family: $fontStyle_body;
 						}
 					}
 
 					.signUp {
-						margin: 5rem auto;
+						margin: 1rem auto;
 
 						input {
 							width: fit-content;
 							padding: 0.75rem;
-							padding-top: 2.5rem;
+							padding-top: 1rem;
 							font-size: $fontSize_normal;
 							font-family: $fontStyle_body;
 						}
@@ -988,8 +988,8 @@
 						}
 
 						button {
-							width: 175px;
-							padding: 1rem 2rem;
+							width: fit-content;
+							padding: 0.5rem 1rem;
 							font-size: $fontSize_normal;
 							font-family: $fontStyle_body;
 						}
@@ -999,8 +999,8 @@
 						margin: 0 auto;
 
 						a {
-							padding: 0 20px;
-							font-size: $fontSize_normal;
+							padding: 0 25px;
+							font-size: $fontSize_large;
 						}
 					}
 				}
@@ -1012,12 +1012,12 @@
 					padding: 1rem 0;
 					grid-template-columns: 1fr;
 					grid-column-gap: 1.75rem;
-					grid-row-gap: 2rem;
+					grid-row-gap: 1rem;
 					border-top: $baseColor_lightGrey2 0.015rem solid;
 
 					.links {
 						margin-top: 1rem;
-						padding: 0 1.5rem;
+						padding: 0 0.5rem;
 						grid-row-gap: 0.75rem;
 
 						h2 {
@@ -1037,7 +1037,7 @@
 
 			.bottomSection {
 				.topSide {
-					margin: 1rem 0;
+					margin: 0.5rem 0;
 
 					.Image {
 						width: 100%;
@@ -1045,34 +1045,34 @@
 					}
 
 					h2 {
-						font-size: $fontSize_normal;
+						font-size: $fontSize_small;
 						font-family: $fontStyle_body;
 					}
 				}
 
 				.bottomSide {
 					margin: 1rem 0;
-					margin-bottom: 5rem;
+					margin-bottom: 2.5rem;
 
 					ul {
-						margin: 3rem 0;
+						margin: 1rem 0;
 
 						a {
-							font-size: $fontSize_normal;
+							font-size: $fontSize_xSmall;
 							font-family: $fontStyle_body;
 						}
 
 						.bottomSectionSideDividers {
-							font-size: $fontSize_normal;
+							font-size: $fontSize_xSmall;
 							font-family: $fontStyle_body;
 						}
 					}
 
 					.copyright {
-						margin: 2rem auto;
+						margin: 1rem auto;
 
 						h5 {
-							font-size: $fontSize_normal;
+							font-size: $fontSize_xSmall;
 							font-family: $fontStyle_body;
 						}
 					}
@@ -1334,7 +1334,7 @@
 							padding: 1.5rem 2rem;
 
 							a {
-								font-size: $fontSize_large-0;
+								font-size: $fontSize_normal;
 							}
 						}
 					}
