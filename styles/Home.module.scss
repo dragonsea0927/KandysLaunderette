@@ -1783,22 +1783,33 @@
 	}
 
 	// <========== ALTERATIONS & REPAIR PAGE ==========>
+	// <========== BACKGROUND IMAGE ==========>
+	.backgroundImageAlterationsRepairs {
+		height: 25rem;
+		align-items: center;
+		background: url("/img/rombo-fcLOmr-gRkY-unsplash.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
 	.alterationsRepairsSection {
 		// <========== PAGE TITLE ==========>
 		.pageTitle {
 			padding: 0 1rem;
-			margin: 2.5rem 0;
+			margin: 2rem 0;
+
 			.content {
 				.title {
-					padding: 2.5rem 0;
+					padding: 1.5rem 0;
 					text-align: center;
 
 					h2 {
-						font-size: $fontSize_normal;
+						font-size: $fontSize_large;
 					}
 
 					h5 {
-						margin-top: 2.5rem;
+						margin-top: 1.25rem;
 						font-size: $fontSize_normal;
 						font-family: $fontStyle_body;
 					}
@@ -1809,18 +1820,21 @@
 		// <========== ABOUT US ==========>
 		.aboutUs {
 			margin-top: 0rem;
-			padding: 5rem 1rem;
+			padding: 2rem 0rem;
 			background-color: $baseColor_lightGrey1;
 
 			.content {
-				padding: 2.5rem 1rem;
+				padding: 1.5rem 0rem;
 				text-align: center;
 
 				h2 {
-					font-size: $fontSize_normal;
+					font-size: $fontSize_large;
 				}
 
 				p {
+					text-align: left;
+					padding: 0 0.5rem;
+					width: fit-content;
 					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
 				}
@@ -1829,13 +1843,16 @@
 
 		// <========== WEDDING SUITS ==========>
 		.suitsBridal {
-			padding: 1rem;
+			padding: 1rem 0;
 			background-color: $backgroundColor_White;
 
 			.content {
 				.title {
+					margin: 2rem 0;
+					padding: 1.5rem 0;
+
 					h2 {
-						font-size: $fontSize_normal;
+						font-size: $fontSize_large;
 					}
 
 					h5 {
@@ -1845,16 +1862,51 @@
 				}
 
 				.gridDisplay {
-					padding: 2.5rem 0;
+					padding: 1rem 0;
 
 					.innerContent {
+						grid-template-columns: repeat(1, 1fr);
+
 						.description {
+							margin: auto 0;
+							padding: 2rem 0.5rem;
+
 							h2 {
-								font-size: $fontSize_normal;
+								text-align: center;
+								font-size: $fontSize_large;
 							}
 
 							p {
+								padding: 0 0.5rem;
 								margin-top: 2rem;
+								font-size: $fontSize_normal;
+								font-family: $fontStyle_body;
+							}
+						}
+					}
+				}
+
+				.groomsmenDisplay {
+					margin-top: 0rem;
+
+					.innerContent {
+						display: grid;
+						grid-template-columns: repeat(2, 1fr);
+						grid-column-gap: 1rem;
+
+						.description {
+							margin: auto 0;
+							padding: 0 2.5rem;
+
+							h2 {
+								color: $baseColor_black;
+								font-size: $fontSize_large;
+								font-family: $fontStyle_option1;
+							}
+
+							p {
+								margin-top: 1rem;
+								color: $baseColor_black;
 								font-size: $fontSize_normal;
 								font-family: $fontStyle_body;
 							}
