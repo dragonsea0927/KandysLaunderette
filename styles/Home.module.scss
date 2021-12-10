@@ -790,18 +790,40 @@
 	// <================================================>
 	// <========== COMPONENTS STYLING ==========>
 
+	// <========== NAVIGATION (NAVBAR) ==========>
+	.Navbar {
+		.content {
+			.topSection {
+				ul {
+					display: none;
+				}
+			}
+
+			.mainSection {
+				ul {
+					display: none;
+				}
+			}
+		}
+
+		.borderDivider {
+			margin: 0.5rem 0;
+			border-bottom: $baseColor_lightGrey2 0.015rem solid;
+		}
+	}
+
 	// <========== PAGE TITLE ==========>
 	.pageTitle {
 		.content {
 			.title {
 				h2 {
 					margin-top: 2.5rem;
-					font-size: $fontSize_large-2;
+					font-size: $fontSize_normal;
 				}
 
 				h5 {
 					margin-top: 2.25rem;
-					font-size: $fontSize_large-0;
+					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
 				}
 			}
@@ -815,12 +837,12 @@
 
 			.title {
 				h2 {
-					font-size: $fontSize_large-2;
+					font-size: $fontSize_normal;
 				}
 
 				h5 {
 					margin-top: 2rem;
-					font-size: $fontSize_large-0;
+					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
 				}
 			}
@@ -834,11 +856,11 @@
 						padding: 2rem;
 
 						h2 {
-							font-size: $fontSize_large-2;
+							font-size: $fontSize_normal;
 						}
 
 						p {
-							font-size: $fontSize_large-0;
+							font-size: $fontSize_normal;
 							font-family: $fontStyle_body;
 						}
 					}
@@ -855,11 +877,11 @@
 			padding: 2.5rem 0;
 
 			h2 {
-				font-size: $fontSize_large-2;
+				font-size: $fontSize_normal;
 			}
 
 			h5 {
-				font-size: $fontSize_large-0;
+				font-size: $fontSize_normal;
 				font-family: $fontStyle_body;
 			}
 		}
@@ -882,16 +904,16 @@
 				flex-direction: column;
 
 				h2 {
-					font-size: $fontSize_large-1;
+					font-size: $fontSize_normal;
 				}
 
 				a {
-					font-size: $fontSize_large-0;
+					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
 				}
 
 				h5 {
-					font-size: $fontSize_large-0;
+					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
 				}
 			}
@@ -904,7 +926,7 @@
 					background-color: $backgroundColor_White;
 
 					a {
-						font-size: $fontSize_large;
+						font-size: $fontSize_normal;
 						font-family: $fontStyle_header;
 					}
 
@@ -936,13 +958,13 @@
 
 						h2 {
 							font-weight: 100;
-							font-size: $fontSize_large-2;
+							font-size: $fontSize_normal;
 							font-family: $fontStyle_option1;
 						}
 
 						p {
 							margin-top: 2.5rem;
-							font-size: $fontSize_large-0;
+							font-size: $fontSize_normal;
 							font-family: $fontStyle_body;
 						}
 					}
@@ -951,16 +973,16 @@
 						margin: 5rem auto;
 
 						input {
-							width: 575px;
+							width: fit-content;
 							padding: 0.75rem;
 							padding-top: 2.5rem;
-							font-size: $fontSize_large-0;
+							font-size: $fontSize_normal;
 							font-family: $fontStyle_body;
 						}
 
 						::placeholder,
 						::-ms-input-placeholder {
-							font-size: $fontSize_large-0;
+							font-size: $fontSize_normal;
 							font-family: $fontStyle_body;
 							color: $baseColor_black;
 						}
@@ -968,7 +990,7 @@
 						button {
 							width: 175px;
 							padding: 1rem 2rem;
-							font-size: $fontSize_large;
+							font-size: $fontSize_normal;
 							font-family: $fontStyle_body;
 						}
 					}
@@ -977,8 +999,8 @@
 						margin: 0 auto;
 
 						a {
-							padding: 0 50px;
-							font-size: $fontSize_large-2;
+							padding: 0 20px;
+							font-size: $fontSize_normal;
 						}
 					}
 				}
@@ -996,17 +1018,17 @@
 					.links {
 						margin-top: 1rem;
 						padding: 0 1.5rem;
-						grid-row-gap: 1.5rem;
+						grid-row-gap: 0.75rem;
 
 						h2 {
 							font-weight: 100;
-							margin: 2.5rem 0;
-							font-size: $fontSize_large-2;
+							margin: 1rem 0;
+							font-size: $fontSize_normal;
 							font-family: $fontStyle_option1;
 						}
 
 						a {
-							font-size: $fontSize_large-0;
+							font-size: $fontSize_normal;
 							font-family: $fontStyle_body;
 						}
 					}
@@ -1023,7 +1045,7 @@
 					}
 
 					h2 {
-						font-size: $fontSize_large-0;
+						font-size: $fontSize_normal;
 						font-family: $fontStyle_body;
 					}
 				}
@@ -1036,12 +1058,12 @@
 						margin: 3rem 0;
 
 						a {
-							font-size: $fontSize_large-0;
+							font-size: $fontSize_normal;
 							font-family: $fontStyle_body;
 						}
 
 						.bottomSectionSideDividers {
-							font-size: $fontSize_large-0;
+							font-size: $fontSize_normal;
 							font-family: $fontStyle_body;
 						}
 					}
@@ -1050,7 +1072,7 @@
 						margin: 2rem auto;
 
 						h5 {
-							font-size: $fontSize_large-0;
+							font-size: $fontSize_normal;
 							font-family: $fontStyle_body;
 						}
 					}
@@ -1099,12 +1121,12 @@
 				text-align: center;
 
 				h2 {
-					font-size: $fontSize_large-2;
+					font-size: $fontSize_normal;
 				}
 
 				h5 {
 					margin-top: 1rem;
-					font-size: $fontSize_large-0;
+					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
 				}
 			}
@@ -1115,7 +1137,7 @@
 
 				newButton {
 					a {
-						font-size: $fontSize_large-0;
+						font-size: $fontSize_normal;
 						font-family: $fontStyle_body;
 
 						i {
@@ -1138,7 +1160,7 @@
 						margin-top: 2rem;
 
 						a {
-							font-size: $fontSize_large-0;
+							font-size: $fontSize_normal;
 							font-family: $fontStyle_option1;
 						}
 					}
@@ -1154,12 +1176,12 @@
 				margin: 5rem 0;
 
 				h2 {
-					font-size: $fontSize_large-2;
+					font-size: $fontSize_normal;
 				}
 
 				h5 {
 					margin-top: 2.5rem;
-					font-size: $fontSize_large-0;
+					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
 				}
 			}
@@ -1176,14 +1198,14 @@
 
 						h2 {
 							margin-bottom: 2rem;
-							font-size: $fontSize_large-0;
+							font-size: $fontSize_normal;
 						}
 
 						.shopButton {
 							padding: 1.5rem 2rem;
 
 							a {
-								font-size: $fontSize_large;
+								font-size: $fontSize_normal;
 							}
 						}
 					}
@@ -1202,18 +1224,18 @@
 				padding: 2.5rem 0;
 
 				h2 {
-					font-size: $fontSize_large-2;
+					font-size: $fontSize_normal;
 				}
 
 				h5 {
 					margin-top: 2.5rem;
-					font-size: $fontSize_large-0;
+					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
 				}
 
 				p {
 					margin-top: 3.5rem;
-					font-size: $fontSize_large-0;
+					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
 				}
 			}
@@ -1229,11 +1251,11 @@
 
 					h2 {
 						font-weight: 100;
-						font-size: $fontSize_large-2;
+						font-size: $fontSize_normal;
 					}
 
 					p {
-						font-size: $fontSize_large-0;
+						font-size: $fontSize_normal;
 						font-family: $fontStyle_body;
 					}
 				}
@@ -1248,12 +1270,12 @@
 				margin: 5rem 0;
 
 				h2 {
-					font-size: $fontSize_large-2;
+					font-size: $fontSize_normal;
 				}
 
 				h5 {
 					margin-top: 2rem;
-					font-size: $fontSize_large-0;
+					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
 				}
 			}
@@ -1268,7 +1290,7 @@
 					.header {
 						margin: 2.5rem 0;
 						a {
-							font-size: $fontSize_large-0;
+							font-size: $fontSize_normal;
 							font-family: $fontStyle_option1;
 						}
 					}
@@ -1320,6 +1342,7 @@
 			}
 		}
 	}
+
 	// <========== INDIVIDUAL & BUSINESS PAGES ==========>
 	// <========== PAGE TITLE ==========>
 	.mainContent {
@@ -1327,7 +1350,7 @@
 			padding: 0.5rem 1rem;
 
 			a {
-				font-size: $fontSize_large-1;
+				font-size: $fontSize_normal;
 			}
 		}
 
@@ -1340,14 +1363,14 @@
 
 				h2 {
 					font-weight: 600;
-					font-size: $fontSize_large-2;
+					font-size: $fontSize_normal;
 					font-family: $fontStyle_option1;
 				}
 
 				p {
 					margin-top: 2rem;
 					text-align: center;
-					font-size: $fontSize_large-0;
+					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
 				}
 			}
@@ -1359,7 +1382,7 @@
 				h2 {
 					text-align: left;
 					font-weight: 600;
-					font-size: $fontSize_large-0;
+					font-size: $fontSize_normal;
 					font-family: $fontStyle_option1;
 				}
 			}
@@ -1373,7 +1396,7 @@
 				.servicesList {
 					.List {
 						h2 {
-							font-size: $fontSize_large;
+							font-size: $fontSize_normal;
 							font-family: $fontStyle_option1;
 						}
 
@@ -1384,7 +1407,7 @@
 
 							a {
 								padding: 15px 0;
-								font-size: $fontSize_large;
+								font-size: $fontSize_normal;
 								font-family: $fontStyle_body;
 							}
 						}
@@ -1404,7 +1427,7 @@
 							padding: 0;
 							.header {
 								a {
-									font-size: $fontSize_large-0;
+									font-size: $fontSize_normal;
 								}
 							}
 						}
@@ -1430,12 +1453,12 @@
 			.content {
 				.description {
 					h2 {
-						font-size: $fontSize_large-2;
+						font-size: $fontSize_normal;
 					}
 
 					p {
 						margin-top: 2rem;
-						font-size: $fontSize_large-0;
+						font-size: $fontSize_normal;
 						font-family: $fontStyle_body;
 					}
 				}
@@ -1450,12 +1473,12 @@
 
 			.title {
 				h2 {
-					font-size: $fontSize_large-2;
+					font-size: $fontSize_normal;
 				}
 
 				h5 {
 					margin-top: 2.25rem;
-					font-size: $fontSize_large-0;
+					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
 				}
 			}
@@ -1465,11 +1488,11 @@
 				.innerContent {
 					.description {
 						h2 {
-							font-size: $fontSize_large-2;
+							font-size: $fontSize_normal;
 						}
 
 						p {
-							font-size: $fontSize_large-0;
+							font-size: $fontSize_normal;
 							font-family: $fontStyle_body;
 						}
 					}
@@ -1481,12 +1504,12 @@
 				.innerContent {
 					.description {
 						h2 {
-							font-size: $fontSize_large-2;
+							font-size: $fontSize_normal;
 						}
 
 						p {
 							margin-top: 2.5rem;
-							font-size: $fontSize_large-0;
+							font-size: $fontSize_normal;
 							font-family: $fontStyle_body;
 						}
 					}
@@ -1509,12 +1532,12 @@
 				text-align: center;
 
 				h2 {
-					font-size: $fontSize_large-2;
+					font-size: $fontSize_normal;
 				}
 
 				h5 {
 					color: $baseColor_lightGrey2;
-					font-size: $fontSize_large-0;
+					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
 				}
 			}
@@ -1533,12 +1556,12 @@
 						padding: 0 2.5rem;
 
 						h2 {
-							font-size: $fontSize_large-2;
+							font-size: $fontSize_normal;
 						}
 
 						p {
 							color: $baseColor_lightGrey2;
-							font-size: $fontSize_large-0;
+							font-size: $fontSize_normal;
 							font-family: $fontStyle_body;
 						}
 					}
@@ -1556,12 +1579,12 @@
 
 					.description {
 						h2 {
-							font-size: $fontSize_large-2;
+							font-size: $fontSize_normal;
 						}
 
 						p {
 							color: $baseColor_lightGrey2;
-							font-size: $fontSize_large-0;
+							font-size: $fontSize_normal;
 							font-family: $fontStyle_body;
 						}
 					}
@@ -1588,12 +1611,12 @@
 				padding: 0 2.5rem;
 
 				h2 {
-					font-size: $fontSize_large-2;
+					font-size: $fontSize_normal;
 				}
 
 				p {
 					margin-top: 2rem;
-					font-size: $fontSize_large-0;
+					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
 				}
 			}
@@ -1619,12 +1642,12 @@
 					padding: 0 2.5rem;
 
 					h2 {
-						font-size: $fontSize_large-2;
+						font-size: $fontSize_normal;
 					}
 
 					p {
 						margin-top: 2rem;
-						font-size: $fontSize_large-0;
+						font-size: $fontSize_normal;
 						font-family: $fontStyle_body;
 					}
 				}
@@ -1644,12 +1667,12 @@
 					text-align: center;
 
 					h2 {
-						font-size: $fontSize_XL-large;
+						font-size: $fontSize_normal;
 					}
 
 					h5 {
 						margin-top: 2.5rem;
-						font-size: $fontSize_large-0;
+						font-size: $fontSize_normal;
 						font-family: $fontStyle_body;
 					}
 				}
@@ -1667,11 +1690,11 @@
 				text-align: center;
 
 				h2 {
-					font-size: $fontSize_large-2;
+					font-size: $fontSize_normal;
 				}
 
 				p {
-					font-size: $fontSize_large-0;
+					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
 				}
 			}
@@ -1685,11 +1708,11 @@
 			.content {
 				.title {
 					h2 {
-						font-size: $fontSize_large-2;
+						font-size: $fontSize_normal;
 					}
 
 					h5 {
-						font-size: $fontSize_large-0;
+						font-size: $fontSize_normal;
 						font-family: $fontStyle_body;
 					}
 				}
@@ -1700,12 +1723,12 @@
 					.innerContent {
 						.description {
 							h2 {
-								font-size: $fontSize_large-1;
+								font-size: $fontSize_normal;
 							}
 
 							p {
 								margin-top: 2rem;
-								font-size: $fontSize_large-0;
+								font-size: $fontSize_normal;
 								font-family: $fontStyle_body;
 							}
 						}
@@ -1727,13 +1750,13 @@
 					padding: 0 2rem;
 					.title {
 						a {
-							font-size: $fontSize_large;
+							font-size: $fontSize_normal;
 						}
 					}
 
 					ul {
 						a {
-							font-size: $fontSize_large;
+							font-size: $fontSize_normal;
 							font-family: $fontStyle_body;
 						}
 					}
@@ -1747,13 +1770,13 @@
 				.content {
 					.title {
 						h2 {
-							font-size: $fontSize_large-2;
+							font-size: $fontSize_normal;
 							font-family: $fontStyle_option1;
 						}
 
 						h5 {
 							margin-top: 1rem;
-							font-size: $fontSize_large-0;
+							font-size: $fontSize_normal;
 							font-family: $fontStyle_body;
 						}
 					}
@@ -1766,11 +1789,11 @@
 	.aboutUs {
 		.content {
 			h2 {
-				font-size: $fontSize_large-2;
+				font-size: $fontSize_normal;
 			}
 
 			p {
-				font-size: $fontSize_large-0;
+				font-size: $fontSize_normal;
 				font-family: $fontStyle_body;
 			}
 		}
@@ -1784,11 +1807,11 @@
 		.content {
 			.description {
 				h2 {
-					font-size: $fontSize_large-1;
+					font-size: $fontSize_normal;
 				}
 
 				p {
-					font-size: $fontSize_large-0;
+					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
 				}
 			}
@@ -1800,11 +1823,11 @@
 		.content {
 			.title {
 				h2 {
-					font-size: $fontSize_large-2;
+					font-size: $fontSize_normal;
 				}
 
 				h5 {
-					font-size: $fontSize_large-0;
+					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
 				}
 			}
@@ -1822,12 +1845,12 @@
 					.description {
 						margin-top: 5rem;
 						h2 {
-							font-size: $fontSize_large-2;
+							font-size: $fontSize_normal;
 						}
 
 						p {
 							margin-top: 2.5rem;
-							font-size: $fontSize_large-0;
+							font-size: $fontSize_normal;
 							font-family: $fontStyle_body;
 						}
 					}
@@ -1848,12 +1871,12 @@
 						margin-top: 5rem;
 
 						h2 {
-							font-size: $fontSize_large-2;
+							font-size: $fontSize_normal;
 						}
 
 						p {
 							margin-top: 2.5rem;
-							font-size: $fontSize_large-0;
+							font-size: $fontSize_normal;
 							font-family: $fontStyle_body;
 						}
 					}
