@@ -103,13 +103,13 @@ const LaundryDryCleaning = () => {
 			<div className={styles.options}>
 				<div className="container">
 					<div className={styles.content}>
-						<div className={styles.title}>
-							<h2>Our Options</h2>
-							<h5>
+						<motion.div variants={stagger} className={styles.title}>
+							<motion.h2 variants={fadeIn}>Our Options</motion.h2>
+							<motion.h5 variants={fadeIn}>
 								Choose Between our Individual service option. Or our more
 								Business tailored dry cleaning service.
-							</h5>
-						</div>
+							</motion.h5>
+						</motion.div>
 
 						<div className={styles.innerContent}>
 							<div className={styles.productDisplay}>
@@ -128,7 +128,7 @@ const LaundryDryCleaning = () => {
 										/>
 									</a>
 								</Link>
-								<div className={styles.content}>
+								<motion.div variants={fadeInUp} className={styles.content}>
 									<newButton className={styles.shopButton}>
 										<Link
 											href="LaundryAndDryCleaning/IndividualService"
@@ -137,7 +137,7 @@ const LaundryDryCleaning = () => {
 											<a>Individual Services</a>
 										</Link>
 									</newButton>
-								</div>
+								</motion.div>
 							</div>
 							<div className={styles.productDisplay}>
 								<Link
@@ -155,7 +155,7 @@ const LaundryDryCleaning = () => {
 										/>
 									</a>
 								</Link>
-								<div className={styles.content}>
+								<motion.div variants={fadeInUp} className={styles.content}>
 									<newButton className={styles.shopButton}>
 										<Link
 											href="LaundryAndDryCleaning/businessService"
@@ -164,7 +164,7 @@ const LaundryDryCleaning = () => {
 											<a>Business Services</a>
 										</Link>
 									</newButton>
-								</div>
+								</motion.div>
 							</div>
 						</div>
 					</div>
