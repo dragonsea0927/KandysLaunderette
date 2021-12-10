@@ -171,13 +171,13 @@ const ourStory = () => {
 			<div className={styles.ourCollections}>
 				<div className="container">
 					<div className={styles.content}>
-						<div className={styles.title}>
+						<motion.div variants={fadeInUp} className={styles.title}>
 							<h2>Our Attention to Detail</h2>
 							<h5>Consistency, Efficiency & Perfection.</h5>
-						</div>
+						</motion.div>
 						<div className={styles.gridDisplay}>
 							<div className={styles.innerContent}>
-								<div className={styles.Image}>
+								<motion.div variants={fadeIn} className={styles.Image}>
 									<Image
 										src="/img/nimble-made-N0ke5zChVBU-unsplash.jpg"
 										alt="Product Image"
@@ -185,10 +185,10 @@ const ourStory = () => {
 										height={800}
 										objectFit="cover"
 									></Image>
-								</div>
-								<div className={styles.description}>
-									<h2>Service</h2>
-									<p>
+								</motion.div>
+								<motion.div variants={stagger} className={styles.description}>
+									<motion.h2 variants={fadeInUp}>Service</motion.h2>
+									<motion.p variants={fadeIn}>
 										Our staff are highly skilled and trained to understand the
 										complexity of clothes and household furnishings. You can be
 										confident that your articles will always receive the
@@ -199,24 +199,24 @@ const ourStory = () => {
 										Equally we pride ourselves on our ability to iron and hand
 										finish your garments to the highest standard, so they will
 										look their best for your future enjoyment.
-									</p>
-								</div>
+									</motion.p>
+								</motion.div>
 							</div>
 						</div>
 						<div className={styles.gridDisplayTwo}>
 							<div className={styles.innerContent}>
-								<div className={styles.description}>
-									<h2>Convenience</h2>
-									<p>
+								<motion.div variants={stagger} className={styles.description}>
+									<motion.h2 variants={fadeInUp}>Convenience</motion.h2>
+									<motion.p variants={fadeIn}>
 										We are located in high Street downtown Swansea. However We
 										also operate a collection and delivery service.
 										<br></br>
 										<br></br>
 										We have a variety of vehicles on the road and in telephone
 										contact, enabling a prompt response to your requests.
-									</p>
-								</div>
-								<div className={styles.Image}>
+									</motion.p>
+								</motion.div>
+								<motion.div variants={fadeIn} className={styles.Image}>
 									<Image
 										src="/img/nimble-made-Jf7JqVazm-4-unsplash.jpg"
 										alt="Product Image"
@@ -224,7 +224,7 @@ const ourStory = () => {
 										height={800}
 										objectFit="contain"
 									></Image>
-								</div>
+								</motion.div>
 							</div>
 						</div>
 					</div>
