@@ -137,7 +137,7 @@ const ourStory = () => {
 			{/* // <========== SUITS & OXFORD DESCRIPTIONS ==========> */}
 			<div className={styles.ourLeader}>
 				<div className="container">
-					<div className={styles.gridDisplay}>
+					<motion.div variants={fadeIn} className={styles.gridDisplay}>
 						<Image
 							src="/img/karsten-winegeart-bwDnRf-r4u8-unsplash.jpg"
 							alt="Product Image"
@@ -152,17 +152,17 @@ const ourStory = () => {
 							height={800}
 							objectFit="cover"
 						></Image>
-					</div>
+					</motion.div>
 					<div className={styles.content}>
-						<div className={styles.description}>
-							<h2>Kandy Chrissie Rucker</h2>
-							<p>
+						<motion.div variants={stagger} className={styles.description}>
+							<motion.h2 variants={fadeInUp}>Kandy Chrissie Rucker</motion.h2>
+							<motion.p variants={fadeIn}>
 								Over 2 years ago, Kandy Chrissie Rucker had a vision: to create
 								a company that specialized in Laundry & Dry Cleaning,
 								Alterations & Repairs, amongst many other services combining the
 								highest quality with affordable prices.
-							</p>
-						</div>
+							</motion.p>
+						</motion.div>
 					</div>
 				</div>
 			</div>
