@@ -350,10 +350,10 @@ export default function Home() {
 			<div className={styles.specialOccasions}>
 				<div className="container">
 					<div className={styles.content}>
-						<div className={styles.title}>
+						<motion.div variants={fadeInUp} className={styles.title}>
 							<h2>Special Occasions</h2>
 							<h5>Remove the stress from your special day</h5>
-						</div>
+						</motion.div>
 
 						<div className={styles.innerContent}>
 							<div className={styles.productDisplay}>
@@ -369,14 +369,18 @@ export default function Home() {
 										/>
 									</a>
 								</Link>
-								<div className={styles.content}>
-									<h2>Dress & Dinner Suits, Oxford Shirts</h2>
-									<newButton className={styles.shopButton}>
+								<motion.div variants={stagger} className={styles.content}>
+									<motion.h2 variants={fadeInUp}>
+										Dress & Dinner Suits, Oxford Shirts
+									</motion.h2>
+									<newButton
+										className={styles.shopButton}
+									>
 										<Link href="/suitsOxfordShirts">
 											<a target="blank">More Info</a>
 										</Link>
 									</newButton>
-								</div>
+								</motion.div>
 							</div>
 							<div className={styles.productDisplay}>
 								<Link href="/WeddingDressesBridal">
@@ -391,14 +395,18 @@ export default function Home() {
 										/>
 									</a>
 								</Link>
-								<div className={styles.content}>
-									<h2>Wedding, Bridesmaids & Evening Dresses </h2>
-									<newButton className={styles.shopButton}>
+								<motion.div variants={stagger} className={styles.content}>
+									<motion.h2 variants={fadeInUp}>
+										Wedding, Bridesmaids & Evening Dresses{" "}
+									</motion.h2>
+									<newButton
+										className={styles.shopButton}
+									>
 										<Link href="/WeddingDressesBridal">
 											<a target="blank">More Info</a>
 										</Link>
 									</newButton>
-								</div>
+								</motion.div>
 							</div>
 						</div>
 					</div>
