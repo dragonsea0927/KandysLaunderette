@@ -144,10 +144,10 @@ const suitsOxfordShirts = () => {
 			<div className={styles.weddingSuits}>
 				<div className="container">
 					<div className={styles.content}>
-						<div className={styles.title}>
+						<motion.div variants={fadeInUp} className={styles.title}>
 							<h2>Wedding Suits</h2>
 							<h5>We make your special day simple.</h5>
-						</div>
+						</motion.div>
 						<div className={styles.gridDisplay}>
 							<div className={styles.innerContent}>
 								<div className={styles.Image}>
@@ -159,25 +159,25 @@ const suitsOxfordShirts = () => {
 										objectFit="cover"
 									></Image>
 								</div>
-								<div className={styles.description}>
-									<h2>Suits</h2>
-									<p>
+								<motion.div variants={stagger} className={styles.description}>
+									<motion.h2 variants={fadeInUp}>Suits</motion.h2>
+									<motion.p variants={fadeIn}>
 										We offer suit cleaning & alterations for everyday and
 										special day occasions. We specialize in wedding suits, 2
 										Piece & 3 Piece suits and in 2 Piece Dress & Dinner Suit.
-									</p>
-								</div>
+									</motion.p>
+								</motion.div>
 							</div>
 						</div>
 						<div className={styles.groomsmenDisplay}>
 							<div className={styles.innerContent}>
-								<div className={styles.description}>
-									<h2>Groomsmen Suits</h2>
-									<p>
+								<motion.div variants={stagger} className={styles.description}>
+									<motion.h2 variants={fadeInUp}>Groomsmen Suits</motion.h2>
+									<motion.p variants={fadeIn}>
 										We also take care of your Groomsmen suits. Either 2 Piece &
 										3 Piece suits, we specialize in all of them.
-									</p>
-								</div>
+									</motion.p>
+								</motion.div>
 								<div className={styles.Image}>
 									<Image
 										src="/img/samantha-gades-bFYoyKivbmg-unsplash.jpg"
