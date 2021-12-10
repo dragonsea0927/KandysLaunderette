@@ -1,5 +1,6 @@
 # Kandy's Launderette online store
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). I created to demonstrate my Server Side Rendering knowledge & general web development skills. Specifically, Next.js, HTML, CSS, SCSS, JavaScript /jQuery, Git/ Github. 
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). I created to demonstrate my Server Side Rendering knowledge & general web development skills. Specifically, Next.js, HTML, CSS, SCSS, JavaScript /jQuery, Git/ Github.
 
 # Cover Screenshot
 
@@ -8,20 +9,20 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 <img src="/public/img/kandy's%20projects%20cover%20image%201.png" width="100%" height="700px">
 
 # Project Context
+
 Kandy's Launderette is a small Dry-cleaning store providing a multitude of services, Duvets & Quilts Cleaning, Drying & Washing Machines, Washing Detergent, Professional Ironing and Stain Removing. As a dry-cleaning store all its services are all in-store experience however this store doesn't have an online website for its customers.
 
 Therefore building a online website will provide Kandy's Launderette customers the opportunity to see the lists of services provided.
 
 # My Objective
-To build a Server Side Rendering project website. After going back and forth with the client this is the updated design. The first version of this website which is the minimum viable product website I already built is located below.
 
+To build a Server Side Rendering project website. After going back and forth with the client this is the updated design. The first version of this website which is the minimum viable product website I already built is located below.
 
 Live Link: https://todd-owen-mpeli.github.io/Kandy-s-Launderette-Website/src/index.html
 
-
 Github Link: https://github.com/Todd-Owen-Mpeli/Kandy-s-Launderette-Website
 
-The main objecttive is to display the updated list of services provided by Kandy's Launderette. Listing these services will provide customers the opportunity to see the value of the store without having to contact the store.
+The main objective is to display the updated list of services provided by Kandy's Launderette. Listing these services will provide customers the opportunity to see the value of the store without having to contact the store.
 
 # MacBook Viewport (Screenshot)
 
@@ -34,13 +35,15 @@ The main objecttive is to display the updated list of services provided by Kandy
 <img src="/public/img/Laptop%20View%20Screenshot%203.png" width="100%" height="625px">
 
 # Lessons Learned
-I really enjoyed the process of creating reusable components such as the Navigation and Footer. Integrating each component accross the entire websites, while also styling the entire website elements.
 
-1. I enjoyed utilizing the Next.js React import feature. Importing components, featues and scss styling files into a newly created pages or components.
-2. Utilizing npm install to install bootstrap 5 and Sass for example. Learning how to use the difference between npm and npx. 
+I really enjoyed the process of creating reusable components such as the Navigation and Footer. Integrating each component across the entire websites, while also styling the entire website elements.
+
+1. I enjoyed utilizing the Next.js React import feature. Importing components, features and scss styling files into a newly created pages or components.
+2. Utilizing npm install to install bootstrap 5 and Sass for example. Learning how to use the difference between npm and npx.
 3. I Enjoyed learning SASS extension for better CSS styling, file structure and creating specific reusable variables for better optimization. Also using Bootstrap 5 framework for better mobile responsiveness really improved my CSS hard-coding file reduction.
 
 # Personal Improvements
+
 Although the website is fairly functional and provides the minimum viable product of displaying the list of services, the current iteration of this project requires a list of improvements.
 
 1. More Team-orientated Git operations specifically branch and merge this will initialize a more realistic team development workflow process.
@@ -57,6 +60,7 @@ Although the website is fairly functional and provides the minimum viable produc
 <img src="/public/img/Mobile%20View%20Screenshot%203.png" width="100%" height="850px">
 
 # Potential Future Features
+
 1. Develop a reserve services feature. (Example on a specific date & time book a slot for a service.)
 2. Develop a service availability feature (available or not available). This will then be updated on the website in real time.
 3. Create a client database example a email client database.
@@ -94,10 +98,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-
 # Full Mobile View Screenshot
 
 1. All images are in 4K resolution, click to enlarge for better viewing.
 
 <img src="/public/img/Mobile%20View%20Screenshot.png" width="100%" height="350px">
-
