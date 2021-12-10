@@ -115,8 +115,8 @@ const AlterationsRepairs = () => {
 						<motion.div variants={stagger} className={styles.content}>
 							<motion.h2 variants={fadeInUp}>We may be new to you</motion.h2>
 							<motion.p variants={fadeIn}>
-								But We believe in making the most of life's simple pleasures -
-								it's the little things that matter. Precious moments of
+								But We believe in making the most of life❜s simple pleasures -
+								it❜s the little things that matter. Precious moments of
 								uncomplicated happiness are our constant inspiration, and it is
 								with these in mind that we create collections of services that
 								are built to last and become an intimate part of your everyday
@@ -124,11 +124,11 @@ const AlterationsRepairs = () => {
 								<br></br>
 								<br></br>I cannot emphasize enough how much thought, care, and
 								attention to detail goes into every service we make at The White
-								Company - I hope you'll cherish your purchases as much as we do.
+								Company - I hope you❜ll cherish your purchases as much as we do.
 								<br></br>
 								<br></br>
 								<motion.span variants={fadeIn2}>
-									We're delighted to meet you
+									We❜re delighted to meet you
 								</motion.span>
 							</motion.p>
 						</motion.div>

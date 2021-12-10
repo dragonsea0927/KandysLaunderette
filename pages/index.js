@@ -102,7 +102,7 @@ export default function Home() {
 				<div className="container">
 					<div className={styles.content}>
 						<motion.div variants={fadeInUp} className={styles.title}>
-							<h2>Our Services</h2>
+							<h2>Our Service❜s</h2>
 							<h5>From Individual to Business Solutions</h5>
 						</motion.div>
 						<div className={styles.moreOptions}>
@@ -394,7 +394,7 @@ export default function Home() {
 								</Link>
 								<motion.div variants={stagger} className={styles.content}>
 									<motion.h2 variants={fadeInUp}>
-										Wedding, Bridesmaids & Evening Dresses{" "}
+										Wedding, Bridesmaids & Evening Dresses
 									</motion.h2>
 									<newButton className={styles.shopButton}>
 										<Link href="/WeddingDressesBridal">

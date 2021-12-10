@@ -8,11 +8,13 @@ import styles from "/styles/Home.module.scss";
 
 const businessService = () => {
 	return (
-		<motion.div exit={{
+		<motion.div
+			exit={{
 				opacity: 0,
 			}}
 			initial="initial"
-			animate="animate">
+			animate="animate"
+		>
 			<div>
 				{/* <!--===== HEAD =====--> */}
 				<Head>
@@ -148,7 +150,7 @@ const businessService = () => {
 												<a>Long Canvas Apron Clip</a>
 											</Link>
 											<Link href="">
-												<a>Women's Waistcoat Staff Shirts</a>
+												<a>Women❜s Waistcoat Staff Shirts</a>
 											</Link>
 											<Link href="">
 												<a>Kitchen Cloths</a>
