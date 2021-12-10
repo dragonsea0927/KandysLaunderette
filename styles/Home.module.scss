@@ -964,7 +964,7 @@
 
 						p {
 							margin-top: 1rem;
-							font-size: $fontSize_medium;
+							font-size: $fontSize_normal;
 							font-family: $fontStyle_body;
 						}
 					}
@@ -1195,12 +1195,11 @@
 
 				.productDisplay {
 					.content {
-						left: -20px;
-						bottom: 125px;
+						left: -25px;
+						bottom: 40px;
 
 						h2 {
-							margin-bottom: 2rem;
-							font-size: $fontSize_small;
+							display: none;
 						}
 
 						.shopButton {
@@ -1224,7 +1223,7 @@
 		.content {
 			.title {
 				margin: 1rem 0;
-				padding: 1rem 0;
+				padding: 2rem 0;
 
 				h2 {
 					font-size: $fontSize_large;
@@ -1256,7 +1255,7 @@
 					padding-right: 0rem;
 
 					h2 {
-						font-weight: 500;
+						font-weight: 100;
 						font-size: $fontSize_normal;
 					}
 
@@ -1273,10 +1272,10 @@
 	.hotelAndRestaurant {
 		.content {
 			.title {
-				margin: 5rem 0;
+				margin: 2rem 0;
 
 				h2 {
-					font-size: $fontSize_normal;
+					font-size: $fontSize_large;
 				}
 
 				h5 {
@@ -1294,7 +1293,7 @@
 
 				.content {
 					.header {
-						margin: 2.5rem 0;
+						margin: 1.5rem 0;
 						a {
 							font-size: $fontSize_normal;
 							font-family: $fontStyle_option1;
@@ -1320,7 +1319,7 @@
 
 				h5 {
 					margin-top: 1rem;
-					font-size: $fontSize_medium;
+					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
 				}
 			}
