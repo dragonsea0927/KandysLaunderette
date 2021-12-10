@@ -108,7 +108,7 @@ export default function Home() {
 						<div className={styles.moreOptions}>
 							<newButton>
 								<Link href="">
-									<a>
+									<a target="blank">
 										View All Services{" "}
 										<i className="bi bi-arrow-right-circle"></i>
 									</a>
@@ -117,8 +117,8 @@ export default function Home() {
 						</div>
 						<div className={styles.gridDisplay}>
 							<div className={styles.content}>
-								<Link href="#launderette" target="blank">
-									<a>
+								<Link href="#launderette">
+									<a target="blank">
 										<Image
 											src="/img/8b0c89140159be4416593876eeefd470.jpg"
 											alt="Product Image"
@@ -130,14 +130,14 @@ export default function Home() {
 								</Link>
 
 								<div className={styles.header}>
-									<Link href="#launderette" target="blank">
-										<a>Laundry & Dry Cleaning</a>
+									<Link href="#launderette">
+										<a target="blank">Laundry & Dry Cleaning</a>
 									</Link>
 								</div>
 							</div>
 							<div className={styles.content}>
-								<Link href="#launderette" target="blank">
-									<a>
+								<Link href="#launderette">
+									<a target="blank">
 										<Image
 											src="/img/hardini-lestari-MujZAKea8Lw-unsplash.jpg"
 											alt="Product Image"
@@ -148,14 +148,14 @@ export default function Home() {
 									</a>
 								</Link>
 								<div className={styles.header}>
-									<Link href="#launderette" target="blank">
-										<a>Groom's Suit Cleaning & Alterations</a>
+									<Link href="#launderette">
+										<a target="blank">Groom's Suit Cleaning & Alterations</a>
 									</Link>
 								</div>
 							</div>
 							<div className={styles.content}>
-								<Link href="#launderette" target="blank">
-									<a>
+								<Link href="#launderette">
+									<a target="blank">
 										<Image
 											src="/img/8ee51b5c1c83023731f8c9ca972a9c3e.jpg"
 											alt="Product Image"
@@ -167,14 +167,14 @@ export default function Home() {
 								</Link>
 
 								<div className={styles.header}>
-									<Link href="#launderette" target="blank">
-										<a>Bridal Dress Cleaning & Alterations</a>
+									<Link href="#launderette">
+										<a target="blank">Bridal Dress Cleaning & Alterations</a>
 									</Link>
 								</div>
 							</div>
 							<div className={styles.content}>
-								<Link href="#launderette" target="blank">
-									<a>
+								<Link href="#launderette">
+									<a target="blank">
 										<Image
 											src="/img/juan-jose-porta-YsoCJDGoiG4-unsplash.jpg"
 											alt="Product Image"
@@ -186,14 +186,14 @@ export default function Home() {
 								</Link>
 
 								<div className={styles.header}>
-									<Link href="#launderette" target="blank">
-										<a>Alterations & Repairs</a>
+									<Link href="#launderette">
+										<a target="blank">Alterations & Repairs</a>
 									</Link>
 								</div>
 							</div>
 							<div className={styles.content}>
-								<Link href="#launderette" target="blank">
-									<a>
+								<Link href="#launderette">
+									<a target="blank">
 										<Image
 											src="/img/22679eb6cd65c24b2d14f7910980ec95.jpg"
 											alt="Product Image"
@@ -205,14 +205,14 @@ export default function Home() {
 								</Link>
 
 								<div className={styles.header}>
-									<Link href="#launderette" target="blank">
-										<a>Professional Ironing Services</a>
+									<Link href="#launderette">
+										<a target="blank">Professional Ironing Services</a>
 									</Link>
 								</div>
 							</div>
 							<div className={styles.content}>
-								<Link href="#launderette" target="blank">
-									<a>
+								<Link href="#launderette">
+									<a target="blank">
 										<Image
 											src="/img/f46c1141fb97af8cc03149945a4f19c4.jpg"
 											alt="Product Image"
@@ -224,14 +224,14 @@ export default function Home() {
 								</Link>
 
 								<div className={styles.header}>
-									<Link href="#launderette" target="blank">
-										<a>Self-Services</a>
+									<Link href="#launderette">
+										<a target="blank">Self-Services</a>
 									</Link>
 								</div>
 							</div>
 							<div className={styles.content}>
-								<Link href="#launderette" target="blank">
-									<a>
+								<Link href="#launderette">
+									<a target="blank">
 										<Image
 											src="/img/supersoft_duvet_1_8.jpg"
 											alt="Product Image"
@@ -243,14 +243,14 @@ export default function Home() {
 								</Link>
 
 								<div className={styles.header}>
-									<Link href="#launderette" target="blank">
-										<a>Duvet & Quilts Cleaning</a>
+									<Link href="#launderette">
+										<a target="blank">Duvet & Quilts Cleaning</a>
 									</Link>
 								</div>
 							</div>
 							<div className={styles.content}>
-								<Link href="#launderette" target="blank">
-									<a>
+								<Link href="#launderette">
+									<a target="blank">
 										<Image
 											src="/img/cashmere-care-step3.webp"
 											alt="Product Image"
@@ -262,14 +262,14 @@ export default function Home() {
 								</Link>
 
 								<div className={styles.header}>
-									<Link href="#launderette" target="blank">
-										<a>Stain Removing</a>
+									<Link href="#launderette">
+										<a target="blank">Stain Removing</a>
 									</Link>
 								</div>
 							</div>
 							<div className={styles.content}>
-								<Link href="#launderette" target="blank">
-									<a>
+								<Link href="#launderette">
+									<a target="blank">
 										<Image
 											src="/img/209-116s2.webp"
 											alt="Product Image"
@@ -281,14 +281,14 @@ export default function Home() {
 								</Link>
 
 								<div className={styles.header}>
-									<Link href="#launderette" target="blank">
-										<a>Oxford Shirts</a>
+									<Link href="#launderette">
+										<a target="blank">Oxford Shirts</a>
 									</Link>
 								</div>
 							</div>
 							<div className={styles.content}>
-								<Link href="#launderette" target="blank">
-									<a>
+								<Link href="#launderette">
+									<a target="blank">
 										<Image
 											src="/img/ORGANICFC02_15_T.webp"
 											alt="Product Image"
@@ -300,14 +300,14 @@ export default function Home() {
 								</Link>
 
 								<div className={styles.header}>
-									<Link href="#launderette" target="blank">
-										<a>Restaurant Laundry & Linen Cleaning</a>
+									<Link href="#launderette">
+										<a target="blank">Restaurant Laundry & Linen Cleaning</a>
 									</Link>
 								</div>
 							</div>
 							<div className={styles.content}>
-								<Link href="#launderette" target="blank">
-									<a>
+								<Link href="#launderette">
+									<a target="blank">
 										<Image
 											src="/img/920015s12.webp"
 											alt="Product Image"
@@ -319,14 +319,14 @@ export default function Home() {
 								</Link>
 
 								<div className={styles.header}>
-									<Link href="#launderette" target="blank">
-										<a>Jacket & Coat Alterations</a>
+									<Link href="#launderette">
+										<a target="blank">Jacket & Coat Alterations</a>
 									</Link>
 								</div>
 							</div>
 							<div className={styles.content}>
-								<Link href="#launderette" target="blank">
-									<a>
+								<Link href="#launderette">
+									<a target="blank">
 										<Image
 											src="/img/pexels-sarah-chai-7282372.jpg"
 											alt="Product Image"
@@ -337,8 +337,8 @@ export default function Home() {
 									</a>
 								</Link>
 								<div className={styles.header}>
-									<Link href="#launderette" target="blank">
-										<a>Kids Clothing Alterations</a>
+									<Link href="#launderette">
+										<a target="blank">Kids Clothing Alterations</a>
 									</Link>
 								</div>
 							</div>
@@ -358,8 +358,8 @@ export default function Home() {
 
 						<div className={styles.innerContent}>
 							<div className={styles.productDisplay}>
-								<Link href="/suitsOxfordShirts" target="blank">
-									<a>
+								<Link href="/suitsOxfordShirts">
+									<a target="blank">
 										<Image
 											src="/img/2f7f5644b96ce5f477f1522efa614d32.jpg"
 											alt="Product Image"
@@ -373,15 +373,15 @@ export default function Home() {
 								<div className={styles.content}>
 									<h2>Dress & Dinner Suits, Oxford Shirts</h2>
 									<newButton className={styles.shopButton}>
-										<Link href="/suitsOxfordShirts" target="blank">
-											<a>More Info</a>
+										<Link href="/suitsOxfordShirts">
+											<a target="blank">More Info</a>
 										</Link>
 									</newButton>
 								</div>
 							</div>
 							<div className={styles.productDisplay}>
-								<Link href="/WeddingDressesBridal" target="blank">
-									<a>
+								<Link href="/WeddingDressesBridal">
+									<a target="blank">
 										<Image
 											src="/img/2dadbbf0777ed8a16b24ccde6a6f90dd.jpg"
 											alt="Product Image"
@@ -395,8 +395,8 @@ export default function Home() {
 								<div className={styles.content}>
 									<h2>Wedding, Bridesmaids & Evening Dresses </h2>
 									<newButton className={styles.shopButton}>
-										<Link href="/WeddingDressesBridal" target="blank">
-											<a>More Info</a>
+										<Link href="/WeddingDressesBridal">
+											<a target="blank">More Info</a>
 										</Link>
 									</newButton>
 								</div>
@@ -549,8 +549,8 @@ export default function Home() {
 						</div>
 						<div className={styles.gridDisplay}>
 							<div className={styles.content}>
-								<Link href="#launderette" target="blank">
-									<a>
+								<Link href="#launderette">
+									<a target="blank">
 										<Image
 											src="/img/Bath_Linen_Buying_Guide.webp"
 											alt="Product Image"
@@ -562,14 +562,14 @@ export default function Home() {
 								</Link>
 
 								<div className={styles.header}>
-									<Link href="#launderette" target="blank">
-										<a>Table & Bath Towels Dry Cleaning</a>
+									<Link href="#launderette">
+										<a target="blank">Table & Bath Towels Dry Cleaning</a>
 									</Link>
 								</div>
 							</div>
 							<div className={styles.content}>
-								<Link href="#launderette" target="blank">
-									<a>
+								<Link href="#launderette">
+									<a target="blank">
 										<Image
 											src="/img/supersoft_duvet_1_8.jpg"
 											alt="Product Image"
@@ -581,14 +581,14 @@ export default function Home() {
 								</Link>
 
 								<div className={styles.header}>
-									<Link href="#launderette" target="blank">
-										<a>Duvet & Quilts Dry Cleaning </a>
+									<Link href="#launderette">
+										<a target="blank">Duvet & Quilts Dry Cleaning </a>
 									</Link>
 								</div>
 							</div>
 							<div className={styles.content}>
-								<Link href="#launderette" target="blank">
-									<a>
+								<Link href="#launderette">
+									<a target="blank">
 										<Image
 											src="/img/Size-Chart-LP_Bed-Essentials.webp"
 											alt="Product Image"
@@ -600,14 +600,14 @@ export default function Home() {
 								</Link>
 
 								<div className={styles.header}>
-									<Link href="#launderette" target="blank">
-										<a>Bed & Table Linen Dry Cleaning</a>
+									<Link href="#launderette">
+										<a target="blank">Bed & Table Linen Dry Cleaning</a>
 									</Link>
 								</div>
 							</div>
 							<div className={styles.content}>
-								<Link href="#launderette" target="blank">
-									<a>
+								<Link href="#launderette">
+									<a target="blank">
 										<Image
 											src="/img/cashmere-care-step4.webp"
 											alt="Product Image"
@@ -619,8 +619,8 @@ export default function Home() {
 								</Link>
 
 								<div className={styles.header}>
-									<Link href="#launderette" target="blank">
-										<a>Professional Laundering & Ironing</a>
+									<Link href="#launderette">
+										<a target="blank">Professional Laundering & Ironing</a>
 									</Link>
 								</div>
 							</div>
