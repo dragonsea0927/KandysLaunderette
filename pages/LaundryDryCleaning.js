@@ -6,15 +6,47 @@ import {motion} from "framer-motion";
 import ContactInfo from "/components/ContactInfo";
 import Footer from "/components/Footer";
 import styles from "/styles/Home.module.scss";
-import { motion } from "framer-motion";
+
+// Custom reusable Animation Properties/variables
+const fadeInUp = {
+	initial: {
+		y: 60,
+		opacity: 0,
+	},
+	animate: {
+		y: 0,
+		opacity: 1,
+		transition: {duration: 0.5, ease: "easeOut"},
+	},
+};
+
+const fadeIn = {
+	initial: {
+		opacity: 0,
+	},
+	animate: {
+		opacity: 1,
+		transition: {duration: 1, delay: 0.5, ease: "easeOut"},
+	},
+};
+
+const stagger = {
+	animate: {
+		transition: {
+			staggerChildren: 0.1,
+		},
+	},
+};
 
 const LaundryDryCleaning = () => {
 	return (
-		<motion.div exit={{
+		<motion.div
+			exit={{
 				opacity: 0,
 			}}
 			initial="initial"
-			animate="animate">
+			animate="animate"
+		>
 			{/* <!--===== HEAD =====--> */}
 			<Head>
 				{/* <!-- Website Title --> */}
@@ -59,10 +91,10 @@ const LaundryDryCleaning = () => {
 			<div className={styles.pageTitle}>
 				<div className="container">
 					<div className={styles.content}>
-						<div className={styles.title}>
+						<motion.div variants={fadeInUp} className={styles.title}>
 							<h2>Laundry & Dry Cleaning</h2>
 							<h5>From Individual to Business Solutions</h5>
-						</div>
+						</motion.div>
 					</div>
 				</div>
 			</div>
@@ -144,7 +176,7 @@ const LaundryDryCleaning = () => {
 
 			{/* <!--===== FOOTER =====--> */}
 			<Footer />
-		</motion>
+		</motion.div>
 	);
 };
 
