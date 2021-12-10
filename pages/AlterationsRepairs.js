@@ -140,13 +140,13 @@ const AlterationsRepairs = () => {
 				<div className={styles.suitsBridal}>
 					<div className="container">
 						<div className={styles.content}>
-							<div className={styles.title}>
+							<motion.div variants={fadeInUp} className={styles.title}>
 								<h2>Wedding Suits & Bridal Dresses</h2>
 								<h5>We make your special day simple.</h5>
-							</div>
+							</motion.div>
 							<div className={styles.gridDisplay}>
 								<div className={styles.innerContent}>
-									<div className={styles.Image}>
+									<motion.div variants={fadeIn} className={styles.Image}>
 										<Image
 											src="/img/tengyart-Q5jO8wxYnys-unsplash.jpg"
 											alt="Product Image"
@@ -154,28 +154,28 @@ const AlterationsRepairs = () => {
 											height={800}
 											objectFit="cover"
 										></Image>
-									</div>
-									<div className={styles.description}>
-										<h2>Suits</h2>
-										<p>
+									</motion.div>
+									<motion.div variants={stagger} className={styles.description}>
+										<motion.h2 variants={fadeInUp}>Suits</motion.h2>
+										<motion.p variants={fadeIn}>
 											We offer suit cleaning & alterations for everyday and
 											special day occasions. We specialize in wedding suits, 2
 											Piece & 3 Piece suits and in 2 Piece Dress & Dinner Suit.
-										</p>
-									</div>
+										</motion.p>
+									</motion.div>
 								</div>
 							</div>
 							<div className={styles.gridDisplay}>
 								<div className={styles.innerContent}>
-									<div className={styles.description}>
-										<h2>Bridal Dresses</h2>
-										<p>
+									<motion.div variants={stagger} className={styles.description}>
+										<motion.h2 variants={fadeInUp}>Bridal Dresses</motion.h2>
+										<motion.p variants={fadeIn}>
 											We offer suit cleaning & alterations for everyday and
 											special day occasions. We specialize in wedding suits, 2
 											Piece & 3 Piece suits and in 2 Piece Dress & Dinner Suit.
-										</p>
-									</div>
-									<div className={styles.Image}>
+										</motion.p>
+									</motion.div>
+									<motion.div variants={fadeIn} className={styles.Image}>
 										<Image
 											src="/img/w920_q60.webp"
 											alt="Product Image"
@@ -183,7 +183,7 @@ const AlterationsRepairs = () => {
 											height={800}
 											objectFit="cover"
 										></Image>
-									</div>
+									</motion.div>
 								</div>
 							</div>
 						</div>
