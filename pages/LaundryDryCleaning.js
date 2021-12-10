@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import Navbar from "/components/Navbar";
 import {motion} from "framer-motion";
+import Navbar from "/components/Navbar";
 import ContactInfo from "/components/ContactInfo";
 import Footer from "/components/Footer";
 import styles from "/styles/Home.module.scss";
@@ -110,7 +110,6 @@ const LaundryDryCleaning = () => {
 								Business tailored dry cleaning service.
 							</motion.h5>
 						</motion.div>
-
 						<div className={styles.innerContent}>
 							<div className={styles.productDisplay}>
 								<Link
