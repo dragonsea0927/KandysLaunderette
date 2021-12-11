@@ -558,7 +558,7 @@ export default function Home() {
 								</Link>
 								<div className={styles.header}>
 									<Link href="#launderette">
-										<a target="blank">Table & Bath Towels Dry Cleaning</a>
+										<a target="blank">{mainServicesDB[12].serviceName}</a>
 									</Link>
 								</div>
 							</motion.div>
@@ -576,7 +576,7 @@ export default function Home() {
 								</Link>
 								<div className={styles.header}>
 									<Link href="#launderette">
-										<a target="blank">Duvet & Quilts Dry Cleaning </a>
+										<a target="blank">{mainServicesDB[13].serviceName}</a>
 									</Link>
 								</div>
 							</motion.div>
@@ -594,7 +594,7 @@ export default function Home() {
 								</Link>
 								<div className={styles.header}>
 									<Link href="#launderette">
-										<a target="blank">Bed & Table Linen Dry Cleaning</a>
+										<a target="blank">{mainServicesDB[14].serviceName}</a>
 									</Link>
 								</div>
 							</motion.div>
@@ -612,7 +612,7 @@ export default function Home() {
 								</Link>
 								<div className={styles.header}>
 									<Link href="#launderette">
-										<a target="blank">Professional Laundering & Ironing</a>
+										<a target="blank">{mainServicesDB[15].serviceName}</a>
 									</Link>
 								</div>
 							</motion.div>
