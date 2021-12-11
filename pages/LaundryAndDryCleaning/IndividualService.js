@@ -95,247 +95,286 @@ const IndividualService = () => {
 							</Link>
 						</div>
 						<div className={styles.content}>
-							<div className={styles.title}>
+							<motion.div variants={fadeInUp} className={styles.title}>
 								<h2>Individual Self-Service</h2>
-								<p>
+								<motion.p variants={fadeIn}>
 									Our Individual Self-Services allows any of our customers to
 									arrive at our store are select the various options we provide.
 									No prior booking required. <br></br>
 									Most our customer book in advance when they need their items
 									completed by and when they plan to arrive.
-								</p>
-							</div>
-							<div className={styles.subtitle}>
+								</motion.p>
+							</motion.div>
+							<motion.div variants={fadeIn} className={styles.subtitle}>
 								<h2>All Our Services</h2>
-							</div>
+							</motion.div>
 							<div className={styles.innerContent}>
 								<div className={styles.servicesList}>
-									<div className={styles.List}>
+									<motion.div variants={stagger} className={styles.List}>
 										<h2>Suits</h2>
 										<ul>
-											<Link href="">
-												<a>2 Piece Suit</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>2 Piece Suit</motion.a>
 											</Link>
-											<Link href="">
-												<a>2 Piece Dress Suit</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													2 Piece Dress Suit
+												</motion.a>
 											</Link>
-											<Link href="">
-												<a>2 Piece Dinner Suit</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													2 Piece Dinner Suit
+												</motion.a>
 											</Link>
-											<Link href="">
-												<a>3 Piece Suit</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>3 Piece Suit</motion.a>
 											</Link>
 										</ul>
-									</div>
-									<div className={styles.List}>
+									</motion.div>
+									<motion.div variants={stagger} className={styles.List}>
 										<h2>Trousers</h2>
 										<ul>
-											<Link href="">
-												<a>Regular Trousers</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													Regular Trousers
+												</motion.a>
 											</Link>
-											<Link href="">
-												<a>Silk Trousers</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Silk Trousers</motion.a>
 											</Link>
 										</ul>
-									</div>
-									<div className={styles.List}>
+									</motion.div>
+									<motion.div variants={stagger} className={styles.List}>
 										<h2>Skirts</h2>
 										<ul>
-											<Link href="">
-												<a>Regular Skirts</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Regular Skirts</motion.a>
 											</Link>
-											<Link href="">
-												<a>Long Skirts</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Long Skirts</motion.a>
 											</Link>
-											<Link href="">
-												<a>Part Pleated Skirts</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													Part Pleated Skirts
+												</motion.a>
 											</Link>
-											<Link href="">
-												<a>Fully Pleated Skirts</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													Fully Pleated Skirts
+												</motion.a>
 											</Link>
 										</ul>
-									</div>
-									<div className={styles.List}>
+									</motion.div>
+									<motion.div variants={stagger} className={styles.List}>
 										<h2>Dresses</h2>
 										<ul>
-											<Link href="">
-												<a>Day Dress</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Day Dress</motion.a>
 											</Link>
-											<Link href="">
-												<a>Silk Day Dress</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Silk Day Dress</motion.a>
 											</Link>
-											<Link href="">
-												<a>Plain Evening Dress</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													Plain Evening Dress
+												</motion.a>
 											</Link>
-											<Link href="">
-												<a>Silk Evening Dress</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													Silk Evening Dress
+												</motion.a>
 											</Link>
-											<Link href="">
-												<a>Elaborate Evening Dress</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													Elaborate Evening Dress
+												</motion.a>
 											</Link>
-											<Link href="">
-												<a>Prom Dress</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Prom Dress</motion.a>
 											</Link>
-											<Link href="">
-												<a>Ball Grown</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Ball Grown</motion.a>
 											</Link>
 										</ul>
-									</div>
-									<div className={styles.List}>
+									</motion.div>
+									<motion.div variants={stagger} className={styles.List}>
 										<h2>Coats</h2>
 										<ul>
-											<Link href="">
-												<a>3/4 Length Wool Coat</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													3/4 Length Wool Coat
+												</motion.a>
 											</Link>
-											<Link href="">
-												<a>Full Length Coat</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													Full Length Coat
+												</motion.a>
 											</Link>
-											<Link href="">
-												<a>Raincoat / Mack</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Raincoat / Mack</motion.a>
 											</Link>
-											<Link href="">
-												<a>Puffa Jacket</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Puffa Jacket</motion.a>
 											</Link>
-											<Link href="">
-												<a>Fake Fur Fabrics</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													Fake Fur Fabrics
+												</motion.a>
 											</Link>
 										</ul>
-									</div>
-									<div className={styles.List}>
+									</motion.div>
+									<motion.div variants={stagger} className={styles.List}>
 										<h2>Tops & Shirts</h2>
 										<ul>
-											<Link href="">
-												<a>Shirts</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Shirts</motion.a>
 											</Link>
-											<Link href="">
-												<a>Lightweight Jumper</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													Lightweight Jumper
+												</motion.a>
 											</Link>
-											<Link href="">
-												<a>Evening Top</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Evening Top</motion.a>
 											</Link>
-											<Link href="">
-												<a>Bustier Top</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Bustier Top</motion.a>
 											</Link>
-											<Link href="">
-												<a>Silk Bustier Top</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													Silk Bustier Top
+												</motion.a>
 											</Link>
-											<Link href="">
-												<a>Silk Shirt </a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Silk Shirt </motion.a>
 											</Link>
 										</ul>
-									</div>
-									<div className={styles.List}>
+									</motion.div>
+									<motion.div variants={stagger} className={styles.List}>
 										<h2>Jackets</h2>
 										<ul>
-											<Link href="">
-												<a>Jackets</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Jackets</motion.a>
 											</Link>
 										</ul>
-									</div>
-									<div className={styles.List}>
+									</motion.div>
+									<motion.div variants={stagger} className={styles.List}>
 										<h2>Throw-over</h2>
 										<ul>
-											<Link href="">
-												<a>Single</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Single</motion.a>
 											</Link>
-											<Link href="">
-												<a>Double</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Double</motion.a>
 											</Link>
 										</ul>
-									</div>
-									<div className={styles.List}>
+									</motion.div>
+									<motion.div variants={stagger} className={styles.List}>
 										<h2>Wedding Items</h2>
 										<ul>
-											<Link href="">
-												<a>Wedding Dress</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Wedding Dress</motion.a>
 											</Link>
-											<Link href="">
-												<a>Boxed</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Boxed</motion.a>
 											</Link>
-											<Link href="">
-												<a>Silk Wedding Dress</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													Silk Wedding Dress
+												</motion.a>
 											</Link>
-											<Link href="">
-												<a>Bridesmaids Dresses</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													Bridesmaids Dresses
+												</motion.a>
 											</Link>
-											<Link href="">
-												<a>Flower Girl Dress</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													Flower Girl Dress
+												</motion.a>
 											</Link>
 										</ul>
-									</div>
-									<div className={styles.List}>
+									</motion.div>
+									<motion.div variants={stagger} className={styles.List}>
 										<h2>Accessories</h2>
 										<ul>
-											<Link href="">
-												<a>Tie</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Tie</motion.a>
 											</Link>
-											<Link href="">
-												<a>Scarf</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Scarf</motion.a>
 											</Link>
-											<Link href="">
-												<a>Pashmina</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Pashmina</motion.a>
 											</Link>
-											<Link href="">
-												<a>Wrap</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Wrap</motion.a>
 											</Link>
-											<Link href="">
-												<a>Hats</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Hats</motion.a>
 											</Link>
-											<Link href="">
-												<a>Dressing Gown</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Dressing Gown</motion.a>
 											</Link>
-											<Link href="">
-												<a>Waist Coat</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Waist Coat</motion.a>
 											</Link>
-											<Link href="">
-												<a>Silk Waist Coat</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Silk Waist Coat</motion.a>
 											</Link>
 										</ul>
-									</div>
-									<div className={styles.List}>
+									</motion.div>
+									<motion.div variants={stagger} className={styles.List}>
 										<h2>Duvet Cleaning</h2>
 										<ul>
-											<Link href="">
-												<a>Single</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Single</motion.a>
 											</Link>
-											<Link href="">
-												<a>Double</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Double</motion.a>
 											</Link>
-											<Link href="">
-												<a>Single Blanket</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Single Blanket</motion.a>
 											</Link>
 										</ul>
-									</div>
-									<div className={styles.List}>
+									</motion.div>
+									<motion.div variants={stagger} className={styles.List}>
 										<h2>Sleeping Bag</h2>
 										<ul>
-											<Link href="">
-												<a>Single</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Single</motion.a>
 											</Link>
-											<Link href="">
-												<a>Double</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Double</motion.a>
 											</Link>
-											<Link href="">
-												<a>Child Size</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>Child Size</motion.a>
 											</Link>
 										</ul>
-									</div>
-									<div className={styles.List}>
+									</motion.div>
+									<motion.div variants={stagger} className={styles.List}>
 										<h2>Full Bags</h2>
 										<ul>
-											<Link href="">
-												<a>Large - Wash, Dry & Fold</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													Large - Wash, Dry & Fold
+												</motion.a>
 											</Link>
-											<Link href="">
-												<a>XL - Wash, Dry & Fold</a>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													XL - Wash, Dry & Fold
+												</motion.a>
 											</Link>
 										</ul>
-									</div>
+									</motion.div>
 								</div>
 								<div className={styles.servicesDisplays}>
 									<div className={styles.ImageDivider}></div>
-									<div className={styles.servicesDisplay}>
-										<div className={styles.content}>
+									<motion.div
+										variants={stagger}
+										className={styles.servicesDisplay}
+									>
+										<motion.div variants={fadeInUp} className={styles.content}>
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
@@ -352,8 +391,8 @@ const IndividualService = () => {
 													<a>Laundry & Dry Cleaning</a>
 												</Link>
 											</div>
-										</div>
-										<div className={styles.content}>
+										</motion.div>
+										<motion.div variants={fadeInUp} className={styles.content}>
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
@@ -370,8 +409,8 @@ const IndividualService = () => {
 													<a>Grooms Suit Cleaning & Alterations</a>
 												</Link>
 											</div>
-										</div>
-										<div className={styles.content}>
+										</motion.div>
+										<motion.div variants={fadeInUp} className={styles.content}>
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
@@ -388,8 +427,8 @@ const IndividualService = () => {
 													<a>Bridal Dress Cleaning & Alterations</a>
 												</Link>
 											</div>
-										</div>
-										<div className={styles.content}>
+										</motion.div>
+										<motion.div variants={fadeInUp} className={styles.content}>
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
@@ -406,11 +445,14 @@ const IndividualService = () => {
 													<a>Alterations & Repairs</a>
 												</Link>
 											</div>
-										</div>
-									</div>
+										</motion.div>
+									</motion.div>
 									<div className={styles.ImageDividerTwo}></div>
-									<div className={styles.servicesDisplay}>
-										<div className={styles.content}>
+									<motion.div
+										variants={stagger}
+										className={styles.servicesDisplay}
+									>
+										<motion.div variants={fadeInUp} className={styles.content}>
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
@@ -428,8 +470,8 @@ const IndividualService = () => {
 													<a>Professional Ironing Services</a>
 												</Link>
 											</div>
-										</div>
-										<div className={styles.content}>
+										</motion.div>
+										<motion.div variants={fadeInUp} className={styles.content}>
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
@@ -447,8 +489,8 @@ const IndividualService = () => {
 													<a>Self-Services</a>
 												</Link>
 											</div>
-										</div>
-										<div className={styles.content}>
+										</motion.div>
+										<motion.div variants={fadeInUp} className={styles.content}>
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
@@ -466,8 +508,8 @@ const IndividualService = () => {
 													<a>Duvet & Quilts Cleaning</a>
 												</Link>
 											</div>
-										</div>
-										<div className={styles.content}>
+										</motion.div>
+										<motion.div variants={fadeInUp} className={styles.content}>
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
@@ -485,11 +527,14 @@ const IndividualService = () => {
 													<a>Stain Removing</a>
 												</Link>
 											</div>
-										</div>
-									</div>
+										</motion.div>
+									</motion.div>
 									<div className={styles.ImageDividerThree}></div>
-									<div className={styles.servicesDisplay}>
-										<div className={styles.content}>
+									<motion.div
+										variants={stagger}
+										className={styles.servicesDisplay}
+									>
+										<motion.div variants={fadeInUp} className={styles.content}>
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
@@ -507,8 +552,8 @@ const IndividualService = () => {
 													<a>Oxford Shirts</a>
 												</Link>
 											</div>
-										</div>
-										<div className={styles.content}>
+										</motion.div>
+										<motion.div variants={fadeInUp} className={styles.content}>
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
@@ -526,8 +571,8 @@ const IndividualService = () => {
 													<a>Restaurant Laundry & Linen Cleaning</a>
 												</Link>
 											</div>
-										</div>
-										<div className={styles.content}>
+										</motion.div>
+										<motion.div variants={fadeInUp} className={styles.content}>
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
@@ -545,8 +590,8 @@ const IndividualService = () => {
 													<a>Jacket & Coat Alterations</a>
 												</Link>
 											</div>
-										</div>
-										<div className={styles.content}>
+										</motion.div>
+										<motion.div variants={fadeInUp} className={styles.content}>
 											<Link href="#launderette" target="blank">
 												<a>
 													<Image
@@ -563,8 +608,8 @@ const IndividualService = () => {
 													<a>Kids Clothing Alterations</a>
 												</Link>
 											</div>
-										</div>
-									</div>
+										</motion.div>
+									</motion.div>
 								</div>
 							</div>
 						</div>
