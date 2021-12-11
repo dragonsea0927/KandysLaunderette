@@ -1,74 +1,176 @@
 [
 	{
 		"id": "0",
-		"serviceName": "Laundry & Dry Cleaning",
-		"serviceCategory": "Men & Womens",
-		"pricing": "9.95"
+		"serviceName": "Single",
+		"serviceCategory": "Hotels",
+		"pricing": "12.50"
 	},
 	{
 		"id": "1",
-		"serviceName": "Grooms Suit Cleaning & Alterations",
-		"serviceCategory": "Mens",
-		"pricing": "19.95"
+		"serviceName": "Double",
+		"serviceCategory": "Hotels",
+		"pricing": "16.50"
 	},
 	{
 		"id": "2",
-		"serviceName": "Bridal Dress Cleaning & Alterations",
-		"serviceCategory": "Womens",
-		"pricing": "189.95"
+		"serviceName": "Single Blanket",
+		"serviceCategory": "Hotels",
+		"pricing": "8.50"
 	},
 	{
 		"id": "3",
-		"serviceName": "Alterations & Repairs",
-		"serviceCategory": "Men & Womens",
+		"serviceName": "Bed Sheets",
+		"serviceCategory": "Hotels",
 		"pricing": "15.95"
 	},
 	{
 		"id": "4",
-		"serviceName": "Professional Ironing Services",
-		"serviceCategory": "Men & Womens",
-		"pricing": "2.95"
-	},
-	{
-		"id": "5",
-		"serviceName": "Self-Services",
-		"serviceCategory": "Men & Womens",
-		"pricing": "2.95"
-	},
-	{
-		"id": "6",
-		"serviceName": "Duvet & Quilts Cleaning",
-		"serviceCategory": "Men & Womens",
+		"serviceName": "Duvet Cover",
+		"serviceCategory": "Hotels",
 		"pricing": "14.95"
 	},
 	{
+		"id": "5",
+		"serviceName": "Duvet Insert",
+		"serviceCategory": "Hotels",
+		"pricing": "16.95"
+	},
+	{
+		"id": "6",
+		"serviceName": "Bed Linen (Single & Double)",
+		"serviceCategory": "Hotels",
+		"pricing": "10.95"
+	},
+	{
 		"id": "7",
-		"serviceName": "Stain Removing",
-		"serviceCategory": "Womens",
-		"pricing": "9.95"
+		"serviceName": "Bed Linen (King & Queen)",
+		"serviceCategory": "Hotels",
+		"pricing": "14.95"
 	},
 	{
 		"id": "8",
-		"serviceName": "Oxford Shirts",
-		"serviceCategory": "Men & Womens",
+		"serviceName": "Male Staff Shirts",
+		"serviceCategory": "Hotels & Restaurants",
 		"pricing": "2.95"
 	},
 	{
 		"id": "9",
-		"serviceName": "Restaurant Laundry & Linen Cleaning",
-		"serviceCategory": "Men & Womens",
-		"pricing": "19.95"
+		"serviceName": "Female Staff Shirts",
+		"serviceCategory": "Hotels & Restaurants",
+		"pricing": "2.95"
 	},
 	{
 		"id": "10",
-		"serviceName": "Jacket & Coat Alterations",
-		"serviceCategory": "Men & Womens",
-		"pricing": "9.95"
+		"serviceName": "Regular Staff Trousers",
+		"serviceCategory": "Hotels & Restaurants",
+		"pricing": "2.95"
 	},
 	{
 		"id": "11",
-		"serviceName": "Kids Clothing Alterations",
-		"serviceCategory": "Men & Womens",
+		"serviceName": "Silk Staff Trousers",
+		"serviceCategory": "Hotels & Restaurants",
+		"pricing": "2.95"
+	},
+	{
+		"id": "12",
+		"serviceName": "Waiters Uniforms Set",
+		"serviceCategory": "Restaurants",
 		"pricing": "4.95"
+	},
+	{
+		"id": "13",
+		"serviceName": "Kitchen Male Staff Shirts",
+		"serviceCategory": "Restaurants",
+		"pricing": "2.95"
+	},
+	{
+		"id": "14",
+		"serviceName": "Kitchen Female Staff Shirts",
+		"serviceCategory": "Restaurants",
+		"pricing": "2.95"
+	},
+	{
+		"id": "15",
+		"serviceName": "Bar Staff Aprons",
+		"serviceCategory": "Restaurants",
+		"pricing": "8.50"
+	},
+	{
+		"id": "16",
+		"serviceName": "Short Staff Apron",
+		"serviceCategory": "Restaurants",
+		"pricing": "8.50"
+	},
+	{
+		"id": "17",
+		"serviceName": "Long Canvas Apron Clip",
+		"serviceCategory": "Restaurants",
+		"pricing": "19.95"
+	},
+	{
+		"id": "18",
+		"serviceName": "Womens Waistcoat Staff Shirts",
+		"serviceCategory": "Restaurants",
+		"pricing": "9.95"
+	},
+	{
+		"id": "19",
+		"serviceName": "Kitchen Cloths",
+		"serviceCategory": "Restaurants",
+		"pricing": "4.95"
+	},
+	{
+		"id": "20",
+		"serviceName": "Single",
+		"serviceCategory": "Hotels & Restaurants",
+		"pricing": "12.50"
+	},
+	{
+		"id": "21",
+		"serviceName": "Double",
+		"serviceCategory": "Hotels & Restaurants",
+		"pricing": "14.50"
+	},
+	{
+		"id": "22",
+		"serviceName": "Bed Runner / Throw",
+		"serviceCategory": "Hotels & Restaurants",
+		"pricing": "64.95"
+	},
+	{
+		"id": "23",
+		"serviceName": "Tie",
+		"serviceCategory": "Hotels & Restaurants",
+		"pricing": "2.95"
+	},
+	{
+		"id": "24",
+		"serviceName": "Scarf",
+		"serviceCategory": "Hotels & Restaurants",
+		"pricing": "3.95"
+	},
+	{
+		"id": "25",
+		"serviceName": "Money Pouch Waist Apron",
+		"serviceCategory": "Hotels & Restaurants",
+		"pricing": "6.95"
+	},
+	{
+		"id": "26",
+		"serviceName": "Tabletop Cloths",
+		"serviceCategory": "Hotels & Restaurants",
+		"pricing": "5.95"
+	},
+	{
+		"id": "27",
+		"serviceName": "Hats",
+		"serviceCategory": "Hotels & Restaurants",
+		"pricing": "3.95"
+	},
+	{
+		"id": "28",
+		"serviceName": "Waist Coat",
+		"serviceCategory": "Hotels & Restaurants",
+		"pricing": "6.95"
 	}
 ]
