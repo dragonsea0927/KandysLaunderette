@@ -1,9 +1,24 @@
+// Imports
+@import "./colors";
+
 html,
 body {
 	padding: 0;
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body::-webkit-scrollbar {
+	width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+	background: $backgroundColor_black;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: $secondary_pink;
 }
 
 a {
