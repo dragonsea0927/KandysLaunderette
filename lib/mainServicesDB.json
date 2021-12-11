@@ -70,5 +70,29 @@
 		"serviceName": "Kids Clothing Alterations",
 		"serviceCategory": "Mens & Womens",
 		"pricing": "4.95"
+	},
+	{
+		"id": "12",
+		"serviceName": "Table & Bath Towels Dry Cleaning",
+		"serviceCategory": "Business",
+		"pricing": "from 49.95"
+	},
+	{
+		"id": "13",
+		"serviceName": "Duvet & Quilts Dry Cleaning",
+		"serviceCategory": "Business",
+		"pricing": "from 89.95"
+	},
+	{
+		"id": "14",
+		"serviceName": "Bed & Table Linen Dry Cleaning",
+		"serviceCategory": "Business",
+		"pricing": "from 69.95"
+	},
+	{
+		"id": "15",
+		"serviceName": "Professional Laundering & Ironing",
+		"serviceCategory": "Business",
+		"pricing": "from 89.95"
 	}
 ]
