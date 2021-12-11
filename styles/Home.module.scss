@@ -1441,20 +1441,19 @@
 		}
 
 		.content {
-			padding: 0 1rem;
+			padding: 0 0.25rem;
 
 			.title {
 				padding: 1rem 0;
 				margin-top: 2.5rem;
 
 				h2 {
-					font-weight: 600;
-					font-size: $fontSize_normal;
-					font-family: $fontStyle_option1;
+					font-size: $fontSize_large;
 				}
 
 				p {
 					margin-top: 2rem;
+					padding: 0 0.25rem;
 					text-align: center;
 					font-size: $fontSize_normal;
 					font-family: $fontStyle_body;
@@ -1462,12 +1461,12 @@
 			}
 
 			.subtitle {
-				margin-top: 5rem;
+				margin-top: 2rem;
 				padding: 1rem 0;
 
 				h2 {
 					text-align: left;
-					font-weight: 600;
+					font-weight: 500;
 					font-size: $fontSize_normal;
 					font-family: $fontStyle_option1;
 				}
@@ -1475,7 +1474,7 @@
 
 			.innerContent {
 				display: grid;
-				margin-top: 2.5rem;
+				margin-top: 1rem;
 				grid-template-columns: 30% 70%;
 				grid-column-gap: 1rem;
 
