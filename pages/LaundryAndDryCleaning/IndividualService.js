@@ -5,6 +5,8 @@ import {motion} from "framer-motion";
 import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
 import styles from "/styles/Home.module.scss";
+import mainServicesDB from "/lib/mainServicesDB.json";
+import IndividualServicesListDB from "/lib/IndividualServicesListDB.json";
 
 // Custom reusable Animation Properties/variables
 const fadeInUp = {
@@ -89,7 +91,7 @@ const IndividualService = () => {
 					<div className="container">
 						<div className={styles.previousButton}>
 							<Link href="/LaundryDryCleaning">
-								<a>
+								<a target="blank">
 									<i className="bi bi-arrow-left-circle"></i>
 								</a>
 							</Link>
@@ -114,20 +116,24 @@ const IndividualService = () => {
 										<h2>Suits</h2>
 										<ul>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>2 Piece Suit</motion.a>
-											</Link>
-											<Link href="/">
 												<motion.a variants={fadeInUp}>
-													2 Piece Dress Suit
+													{IndividualServicesListDB[0].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="/">
 												<motion.a variants={fadeInUp}>
-													2 Piece Dinner Suit
+													{IndividualServicesListDB[1].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>3 Piece Suit</motion.a>
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[2].serviceName}
+												</motion.a>
+											</Link>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[3].serviceName}
+												</motion.a>
 											</Link>
 										</ul>
 									</motion.div>
@@ -136,11 +142,13 @@ const IndividualService = () => {
 										<ul>
 											<Link href="/">
 												<motion.a variants={fadeInUp}>
-													Regular Trousers
+													{IndividualServicesListDB[4].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Silk Trousers</motion.a>
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[5].serviceName}
+												</motion.a>
 											</Link>
 										</ul>
 									</motion.div>
@@ -148,19 +156,23 @@ const IndividualService = () => {
 										<h2>Skirts</h2>
 										<ul>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Regular Skirts</motion.a>
-											</Link>
-											<Link href="/">
-												<motion.a variants={fadeInUp}>Long Skirts</motion.a>
-											</Link>
-											<Link href="/">
 												<motion.a variants={fadeInUp}>
-													Part Pleated Skirts
+													{IndividualServicesListDB[6].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="/">
 												<motion.a variants={fadeInUp}>
-													Fully Pleated Skirts
+													{IndividualServicesListDB[7].serviceName}
+												</motion.a>
+											</Link>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[8].serviceName}
+												</motion.a>
+											</Link>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[9].serviceName}
 												</motion.a>
 											</Link>
 										</ul>
@@ -169,31 +181,39 @@ const IndividualService = () => {
 										<h2>Dresses</h2>
 										<ul>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Day Dress</motion.a>
-											</Link>
-											<Link href="/">
-												<motion.a variants={fadeInUp}>Silk Day Dress</motion.a>
-											</Link>
-											<Link href="/">
 												<motion.a variants={fadeInUp}>
-													Plain Evening Dress
+													{IndividualServicesListDB[10].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="/">
 												<motion.a variants={fadeInUp}>
-													Silk Evening Dress
+													{IndividualServicesListDB[11].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="/">
 												<motion.a variants={fadeInUp}>
-													Elaborate Evening Dress
+													{IndividualServicesListDB[12].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Prom Dress</motion.a>
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[13].serviceName}
+												</motion.a>
 											</Link>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Ball Grown</motion.a>
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[14].serviceName}
+												</motion.a>
+											</Link>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[15].serviceName}
+												</motion.a>
+											</Link>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[16].serviceName}
+												</motion.a>
 											</Link>
 										</ul>
 									</motion.div>
@@ -202,23 +222,27 @@ const IndividualService = () => {
 										<ul>
 											<Link href="/">
 												<motion.a variants={fadeInUp}>
-													3/4 Length Wool Coat
+													{IndividualServicesListDB[17].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="/">
 												<motion.a variants={fadeInUp}>
-													Full Length Coat
+													{IndividualServicesListDB[18].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Raincoat / Mack</motion.a>
-											</Link>
-											<Link href="/">
-												<motion.a variants={fadeInUp}>Puffa Jacket</motion.a>
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[19].serviceName}
+												</motion.a>
 											</Link>
 											<Link href="/">
 												<motion.a variants={fadeInUp}>
-													Fake Fur Fabrics
+													{IndividualServicesListDB[20].serviceName}
+												</motion.a>
+											</Link>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[21].serviceName}
 												</motion.a>
 											</Link>
 										</ul>
@@ -227,26 +251,34 @@ const IndividualService = () => {
 										<h2>Tops & Shirts</h2>
 										<ul>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Shirts</motion.a>
-											</Link>
-											<Link href="/">
 												<motion.a variants={fadeInUp}>
-													Lightweight Jumper
+													{IndividualServicesListDB[22].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Evening Top</motion.a>
-											</Link>
-											<Link href="/">
-												<motion.a variants={fadeInUp}>Bustier Top</motion.a>
-											</Link>
-											<Link href="/">
 												<motion.a variants={fadeInUp}>
-													Silk Bustier Top
+													{IndividualServicesListDB[23].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Silk Shirt</motion.a>
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[24].serviceName}
+												</motion.a>
+											</Link>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[25].serviceName}
+												</motion.a>
+											</Link>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[26].serviceName}
+												</motion.a>
+											</Link>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[27].serviceName}
+												</motion.a>
 											</Link>
 										</ul>
 									</motion.div>
@@ -254,7 +286,9 @@ const IndividualService = () => {
 										<h2>Jackets</h2>
 										<ul>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Jackets</motion.a>
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[28].serviceName}
+												</motion.a>
 											</Link>
 										</ul>
 									</motion.div>
@@ -262,10 +296,14 @@ const IndividualService = () => {
 										<h2>Throw-over</h2>
 										<ul>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Single</motion.a>
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[29].serviceName}
+												</motion.a>
 											</Link>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Double</motion.a>
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[30].serviceName}
+												</motion.a>
 											</Link>
 										</ul>
 									</motion.div>
@@ -273,24 +311,28 @@ const IndividualService = () => {
 										<h2>Wedding Items</h2>
 										<ul>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Wedding Dress</motion.a>
-											</Link>
-											<Link href="/">
-												<motion.a variants={fadeInUp}>Boxed</motion.a>
-											</Link>
-											<Link href="/">
 												<motion.a variants={fadeInUp}>
-													Silk Wedding Dress
+													{IndividualServicesListDB[31].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="/">
 												<motion.a variants={fadeInUp}>
-													Bridesmaids Dresses
+													{IndividualServicesListDB[32].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="/">
 												<motion.a variants={fadeInUp}>
-													Flower Girl Dress
+													{IndividualServicesListDB[33].serviceName}
+												</motion.a>
+											</Link>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[34].serviceName}
+												</motion.a>
+											</Link>
+											<Link href="/">
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[35].serviceName}
 												</motion.a>
 											</Link>
 										</ul>
@@ -299,28 +341,44 @@ const IndividualService = () => {
 										<h2>Accessories</h2>
 										<ul>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Tie</motion.a>
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[36].serviceName}
+												</motion.a>
 											</Link>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Scarf</motion.a>
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[37].serviceName}
+												</motion.a>
 											</Link>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Pashmina</motion.a>
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[38].serviceName}
+												</motion.a>
 											</Link>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Wrap</motion.a>
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[39].serviceName}
+												</motion.a>
 											</Link>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Hats</motion.a>
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[40].serviceName}
+												</motion.a>
 											</Link>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Dressing Gown</motion.a>
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[41].serviceName}
+												</motion.a>
 											</Link>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Waist Coat</motion.a>
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[42].serviceName}
+												</motion.a>
 											</Link>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Silk Waist Coat</motion.a>
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[43].serviceName}
+												</motion.a>
 											</Link>
 										</ul>
 									</motion.div>
@@ -328,13 +386,19 @@ const IndividualService = () => {
 										<h2>Duvet Cleaning</h2>
 										<ul>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Single</motion.a>
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[44].serviceName}
+												</motion.a>
 											</Link>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Double</motion.a>
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[45].serviceName}
+												</motion.a>
 											</Link>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Single Blanket</motion.a>
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[46].serviceName}
+												</motion.a>
 											</Link>
 										</ul>
 									</motion.div>
@@ -342,13 +406,19 @@ const IndividualService = () => {
 										<h2>Sleeping Bag</h2>
 										<ul>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Single</motion.a>
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[47].serviceName}
+												</motion.a>
 											</Link>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Double</motion.a>
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[48].serviceName}
+												</motion.a>
 											</Link>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Child Size</motion.a>
+												<motion.a variants={fadeInUp}>
+													{IndividualServicesListDB[49].serviceName}
+												</motion.a>
 											</Link>
 										</ul>
 									</motion.div>
@@ -357,12 +427,12 @@ const IndividualService = () => {
 										<ul>
 											<Link href="/">
 												<motion.a variants={fadeInUp}>
-													Large - Wash, Dry & Fold
+													{IndividualServicesListDB[49].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="/">
 												<motion.a variants={fadeInUp}>
-													XL - Wash, Dry & Fold
+													{IndividualServicesListDB[50].serviceName}
 												</motion.a>
 											</Link>
 										</ul>
@@ -375,8 +445,8 @@ const IndividualService = () => {
 										className={styles.servicesDisplay}
 									>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette" target="blank">
-												<a>
+											<Link href="#launderette">
+												<a target="blank">
 													<Image
 														src="/img/04438fc4fc1a9a09b7c2e06de39eccee.jpg"
 														alt="Product Image"
@@ -387,14 +457,14 @@ const IndividualService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette" target="blank">
-													<a>Laundry & Dry Cleaning</a>
+												<Link href="#launderette">
+													<a target="blank">{mainServicesDB[0].serviceName}</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette" target="blank">
-												<a>
+											<Link href="#launderette">
+												<a target="blank">
 													<Image
 														src="/img/benjamin-rascoe-WdhmRPvMn7A-unsplash.jpg"
 														alt="Product Image"
@@ -405,14 +475,14 @@ const IndividualService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette" target="blank">
-													<a>Grooms Suit Cleaning & Alterations</a>
+												<Link href="#launderette">
+													<a target="blank">{mainServicesDB[1].serviceName}</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette" target="blank">
-												<a>
+											<Link href="#launderette">
+												<a target="blank">
 													<Image
 														src="/img/2dadbbf0777ed8a16b24ccde6a6f90dd.jpg"
 														alt="Product Image"
@@ -423,14 +493,14 @@ const IndividualService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette" target="blank">
-													<a>Bridal Dress Cleaning & Alterations</a>
+												<Link href="#launderette">
+													<a target="blank">{mainServicesDB[2].serviceName}</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette" target="blank">
-												<a>
+											<Link href="#launderette">
+												<a target="blank">
 													<Image
 														src="/img/231-419s.webp"
 														alt="Product Image"
@@ -441,8 +511,8 @@ const IndividualService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette" target="blank">
-													<a>Alterations & Repairs</a>
+												<Link href="#launderette">
+													<a target="blank">{mainServicesDB[3].serviceName}</a>
 												</Link>
 											</div>
 										</motion.div>
@@ -453,8 +523,8 @@ const IndividualService = () => {
 										className={styles.servicesDisplay}
 									>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette" target="blank">
-												<a>
+											<Link href="#launderette">
+												<a target="blank">
 													<Image
 														src="/img/572e21864592e57f4a6d121be547b12d.jpg"
 														alt="Product Image"
@@ -464,16 +534,15 @@ const IndividualService = () => {
 													></Image>
 												</a>
 											</Link>
-
 											<div className={styles.header}>
-												<Link href="#launderette" target="blank">
-													<a>Professional Ironing Services</a>
+												<Link href="#launderette">
+													<a target="blank">{mainServicesDB[4].serviceName}</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette" target="blank">
-												<a>
+											<Link href="#launderette">
+												<a target="blank">
 													<Image
 														src="/img/f46c1141fb97af8cc03149945a4f19c4.jpg"
 														alt="Product Image"
@@ -483,16 +552,15 @@ const IndividualService = () => {
 													></Image>
 												</a>
 											</Link>
-
 											<div className={styles.header}>
-												<Link href="#launderette" target="blank">
-													<a>Self-Services</a>
+												<Link href="#launderette">
+													<a target="blank">{mainServicesDB[5].serviceName}</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette" target="blank">
-												<a>
+											<Link href="#launderette">
+												<a target="blank">
 													<Image
 														src="/img/supersoft_duvet_2_2_2.jpg"
 														alt="Product Image"
@@ -502,16 +570,15 @@ const IndividualService = () => {
 													></Image>
 												</a>
 											</Link>
-
 											<div className={styles.header}>
-												<Link href="#launderette" target="blank">
-													<a>Duvet & Quilts Cleaning</a>
+												<Link href="#launderette">
+													<a target="blank">{mainServicesDB[6].serviceName}</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette" target="blank">
-												<a>
+											<Link href="#launderette">
+												<a target="blank">
 													<Image
 														src="/img/cashmere-care-step2.webp"
 														alt="Product Image"
@@ -521,10 +588,9 @@ const IndividualService = () => {
 													></Image>
 												</a>
 											</Link>
-
 											<div className={styles.header}>
-												<Link href="#launderette" target="blank">
-													<a>Stain Removing</a>
+												<Link href="#launderette">
+													<a target="blank">{mainServicesDB[7].serviceName}</a>
 												</Link>
 											</div>
 										</motion.div>
@@ -535,8 +601,8 @@ const IndividualService = () => {
 										className={styles.servicesDisplay}
 									>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette" target="blank">
-												<a>
+											<Link href="#launderette">
+												<a target="blank">
 													<Image
 														src="/img/209-116s4.webp"
 														alt="Product Image"
@@ -546,16 +612,15 @@ const IndividualService = () => {
 													></Image>
 												</a>
 											</Link>
-
 											<div className={styles.header}>
-												<Link href="#launderette" target="blank">
-													<a>Oxford Shirts</a>
+												<Link href="#launderette">
+													<a target="blank">{mainServicesDB[8].serviceName}</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette" target="blank">
-												<a>
+											<Link href="#launderette">
+												<a target="blank">
 													<Image
 														src="/img/Multislider_Rustic_Linen_Napkins.webp"
 														alt="Product Image"
@@ -565,16 +630,15 @@ const IndividualService = () => {
 													></Image>
 												</a>
 											</Link>
-
 											<div className={styles.header}>
-												<Link href="#launderette" target="blank">
-													<a>Restaurant Laundry & Linen Cleaning</a>
+												<Link href="#launderette">
+													<a target="blank">{mainServicesDB[9].serviceName}</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette" target="blank">
-												<a>
+											<Link href="#launderette">
+												<a target="blank">
 													<Image
 														src="/img/221-057s.webp"
 														alt="Product Image"
@@ -584,16 +648,15 @@ const IndividualService = () => {
 													></Image>
 												</a>
 											</Link>
-
 											<div className={styles.header}>
-												<Link href="#launderette" target="blank">
-													<a>Jacket & Coat Alterations</a>
+												<Link href="#launderette">
+													<a target="blank">{mainServicesDB[10].serviceName}</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette" target="blank">
-												<a>
+											<Link href="#launderette">
+												<a target="blank">
 													<Image
 														src="/img/stuk-organiser-white__1035115_pe837986_s5.webp"
 														alt="Product Image"
@@ -604,8 +667,8 @@ const IndividualService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette" target="blank">
-													<a>Kids Clothing Alterations</a>
+												<Link href="#launderette">
+													<a target="blank">{mainServicesDB[11].serviceName}</a>
 												</Link>
 											</div>
 										</motion.div>

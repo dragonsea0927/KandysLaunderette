@@ -2,7 +2,7 @@
 	{
 		"id": "0",
 		"serviceName": "Laundry & Dry Cleaning",
-		"serviceCategory": "Men & Womens",
+		"serviceCategory": "Mens & Womens",
 		"pricing": "9.95"
 	},
 	{
@@ -20,55 +20,55 @@
 	{
 		"id": "3",
 		"serviceName": "Alterations & Repairs",
-		"serviceCategory": "Men & Womens",
+		"serviceCategory": "Mens & Womens",
 		"pricing": "15.95"
 	},
 	{
 		"id": "4",
 		"serviceName": "Professional Ironing Services",
-		"serviceCategory": "Men & Womens",
+		"serviceCategory": "Mens & Womens",
 		"pricing": "2.95"
 	},
 	{
 		"id": "5",
 		"serviceName": "Self-Services",
-		"serviceCategory": "Men & Womens",
+		"serviceCategory": "Mens & Womens",
 		"pricing": "2.95"
 	},
 	{
 		"id": "6",
 		"serviceName": "Duvet & Quilts Cleaning",
-		"serviceCategory": "Men & Womens",
+		"serviceCategory": "Mens & Womens",
 		"pricing": "14.95"
 	},
 	{
 		"id": "7",
 		"serviceName": "Stain Removing",
-		"serviceCategory": "Womens",
+		"serviceCategory": "Mens & Womens",
 		"pricing": "9.95"
 	},
 	{
 		"id": "8",
 		"serviceName": "Oxford Shirts",
-		"serviceCategory": "Men & Womens",
+		"serviceCategory": "Mens",
 		"pricing": "2.95"
 	},
 	{
 		"id": "9",
 		"serviceName": "Restaurant Laundry & Linen Cleaning",
-		"serviceCategory": "Men & Womens",
+		"serviceCategory": "Business",
 		"pricing": "19.95"
 	},
 	{
 		"id": "10",
 		"serviceName": "Jacket & Coat Alterations",
-		"serviceCategory": "Men & Womens",
+		"serviceCategory": "Mens & Womens",
 		"pricing": "9.95"
 	},
 	{
 		"id": "11",
 		"serviceName": "Kids Clothing Alterations",
-		"serviceCategory": "Men & Womens",
+		"serviceCategory": "Mens & Womens",
 		"pricing": "4.95"
 	}
 ]
