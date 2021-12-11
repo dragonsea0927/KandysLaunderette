@@ -1,6 +1,6 @@
 # Kandy's Launderette online store
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). I created to demonstrate my Server Side Rendering knowledge & general web development skills. Specifically, Next.js, HTML, CSS, SCSS, JavaScript /jQuery, Git/ Github.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). I created this project as an updated Server-Side Rendering project based on the previous Client-Side Rendering project, seen on my gihub as Kandy's Launderette website. This projects is constructed solely with Next.js - featuring, Bootstrap 5, JSON, and a Framer-motion animation API. It also demonstrated my general web development skills, specifically, HTML5, CSS3, SCSS, JavaScript /jQuery, Bootstrap 5, Git/ Github.
 
 # Cover Screenshot
 
