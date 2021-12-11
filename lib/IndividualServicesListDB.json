@@ -1,0 +1,320 @@
+[
+	{
+		"id": "0",
+		"serviceName": "2 Piece Suit",
+		"serviceCategory": "Mens",
+		"pricing": "12.50"
+	},
+	{
+		"id": "1",
+		"serviceName": "2 Piece Dress Suit",
+		"serviceCategory": "Mens",
+		"pricing": "12.95"
+	},
+	{
+		"id": "2",
+		"serviceName": "2 Piece Dinner Suit",
+		"serviceCategory": "Mens",
+		"pricing": "13.50"
+	},
+	{
+		"id": "3",
+		"serviceName": "3 Piece Suit",
+		"serviceCategory": "Mens",
+		"pricing": "13.95"
+	},
+	{
+		"id": "4",
+		"serviceName": "Regular Trousers",
+		"serviceCategory": "Men",
+		"pricing": "6.95"
+	},
+	{
+		"id": "5",
+		"serviceName": "Silk Trousers",
+		"serviceCategory": "Mens",
+		"pricing": "6.95"
+	},
+	{
+		"id": "6",
+		"serviceName": "Regular Skirts",
+		"serviceCategory": "Womens",
+		"pricing": "6.95"
+	},
+	{
+		"id": "7",
+		"serviceName": "Long Skirts",
+		"serviceCategory": "Womens",
+		"pricing": "6.95"
+	},
+	{
+		"id": "8",
+		"serviceName": "Part Pleated Skirts",
+		"serviceCategory": "Womens",
+		"pricing": "7.50"
+	},
+	{
+		"id": "9",
+		"serviceName": "Fully Pleated Skirts",
+		"serviceCategory": "Womens",
+		"pricing": "7.50"
+	},
+	{
+		"id": "10",
+		"serviceName": "Day Dress",
+		"serviceCategory": "Womens",
+		"pricing": "10.95"
+	},
+	{
+		"id": "11",
+		"serviceName": "Silk Day Dress",
+		"serviceCategory": "Womens",
+		"pricing": "10.95"
+	},
+	{
+		"id": "12",
+		"serviceName": "Plain Evening Dress",
+		"serviceCategory": "Womens",
+		"pricing": "10.95"
+	},
+	{
+		"id": "13",
+		"serviceName": "Silk Evening Dress",
+		"serviceCategory": "Womens",
+		"pricing": "11.95"
+	},
+	{
+		"id": "14",
+		"serviceName": "Elaborate Evening Dress",
+		"serviceCategory": "Womens",
+		"pricing": "16.50"
+	},
+	{
+		"id": "15",
+		"serviceName": "Prom Dress",
+		"serviceCategory": "Womens",
+		"pricing": "19.95"
+	},
+	{
+		"id": "16",
+		"serviceName": "Ball Grown",
+		"serviceCategory": "Womens",
+		"pricing": "19.95"
+	},
+	{
+		"id": "17",
+		"serviceName": "3/4 Length Wool Coat",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "9.95"
+	},
+	{
+		"id": "18",
+		"serviceName": "Full Length Coat",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "9.95"
+	},
+	{
+		"id": "19",
+		"serviceName": "Raincoat / Mack",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "9.95"
+	},
+	{
+		"id": "20",
+		"serviceName": "Puffa Jacket",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "14.95"
+	},
+	{
+		"id": "21",
+		"serviceName": "Fake Fur Fabrics",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "from 11.95"
+	},
+	{
+		"id": "22",
+		"serviceName": "Shirts",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "2.95"
+	},
+	{
+		"id": "23",
+		"serviceName": "Lightweight Jumper",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "4.50"
+	},
+	{
+		"id": "24",
+		"serviceName": "Evening Top",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "4.95"
+	},
+	{
+		"id": "24",
+		"serviceName": "Silk Evening Top",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "5.95"
+	},
+	{
+		"id": "25",
+		"serviceName": "Bustier Top",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "5.95"
+	},
+	{
+		"id": "25",
+		"serviceName": "Silk Bustier Top",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "6.95"
+	},
+	{
+		"id": "26",
+		"serviceName": "Silk Shirt",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "4.95"
+	},
+	{
+		"id": "27",
+		"serviceName": "Jackets",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "7.95"
+	},
+	{
+		"id": "28",
+		"serviceName": "Single",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "12.50"
+	},
+	{
+		"id": "29",
+		"serviceName": "Double",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "14.50"
+	},
+	{
+		"id": "30",
+		"serviceName": "Wedding Dress",
+		"serviceCategory": "Womens",
+		"pricing": "64.95"
+	},
+	{
+		"id": "31",
+		"serviceName": "Wedding Boxed",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "99.99"
+	},
+	{
+		"id": "32",
+		"serviceName": "Silk Wedding Dress",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "from 89.95"
+	},
+	{
+		"id": "33",
+		"serviceName": "Bridesmaids Dresses",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "from 19.95"
+	},
+	{
+		"id": "34",
+		"serviceName": "Flower Girl Dress",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "14.95"
+	},
+	{
+		"id": "35",
+		"serviceName": "Tie",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "2.95"
+	},
+	{
+		"id": "36",
+		"serviceName": "Scarf",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "3.95"
+	},
+	{
+		"id": "37",
+		"serviceName": "Pashmina",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "6.95"
+	},
+	{
+		"id": "38",
+		"serviceName": "Wrap",
+		"serviceCategory": "Womens",
+		"pricing": "5.95"
+	},
+	{
+		"id": "39",
+		"serviceName": "Hats",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "3.95"
+	},
+	{
+		"id": "40",
+		"serviceName": "Dressing Gown",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "6.95"
+	},
+	{
+		"id": "41",
+		"serviceName": "Waist Coat",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "3.95"
+	},
+	{
+		"id": "42",
+		"serviceName": "Silk Waist Coat",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "5.95"
+	},
+	{
+		"id": "43",
+		"serviceName": "Single",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "12.50"
+	},
+	{
+		"id": "44",
+		"serviceName": "Double",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "16.50"
+	},
+	{
+		"id": "45",
+		"serviceName": "Single Blanket",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "8.50"
+	},
+	{
+		"id": "46",
+		"serviceName": "Single",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "11.50"
+	},
+	{
+		"id": "47",
+		"serviceName": "Double",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "13.50"
+	},
+	{
+		"id": "48",
+		"serviceName": "Child Size",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "9.95"
+	},
+	{
+		"id": "49",
+		"serviceName": "Large - Wash, Dry & Fold",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "9.95"
+	},
+	{
+		"id": "50",
+		"serviceName": "XL - Wash, Dry & Fold",
+		"serviceCategory": "Mens & Womens",
+		"pricing": "14.95"
+	}
+]

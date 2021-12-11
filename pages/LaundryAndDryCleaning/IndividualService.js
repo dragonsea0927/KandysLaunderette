@@ -246,7 +246,7 @@ const IndividualService = () => {
 												</motion.a>
 											</Link>
 											<Link href="/">
-												<motion.a variants={fadeInUp}>Silk Shirt </motion.a>
+												<motion.a variants={fadeInUp}>Silk Shirt</motion.a>
 											</Link>
 										</ul>
 									</motion.div>
