@@ -5,7 +5,6 @@ import {motion} from "framer-motion";
 import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
 import styles from "/styles/Home.module.scss";
-import mainServicesDB from "/lib/BusinessServicesListDB.json";
 import BusinessServicesListDB from "/lib/IndividualServicesListDB.json";
 
 // Custom reusable Animation Properties/variables
