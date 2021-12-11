@@ -7,6 +7,7 @@ import Navbar from "/components/Navbar";
 import StoreLocation from "/components/storeLocation";
 import Footer from "/components/Footer";
 import styles from "../styles/Home.module.scss";
+import mainServicesDB from "/lib/mainServicesDB.json";
 
 // Custom reusable Animation Properties/variables
 const fadeInUp = {
@@ -130,7 +131,7 @@ export default function Home() {
 								</Link>
 								<div className={styles.header}>
 									<Link href="#launderette">
-										<a target="blank">Laundry & Dry Cleaning</a>
+										<a target="blank">{mainServicesDB[0].serviceName}</a>
 									</Link>
 								</div>
 							</motion.div>
@@ -148,7 +149,7 @@ export default function Home() {
 								</Link>
 								<div className={styles.header}>
 									<Link href="#launderette">
-										<a target="blank">Grooms Suit Cleaning & Alterations</a>
+										<a target="blank">{mainServicesDB[1].serviceName}</a>
 									</Link>
 								</div>
 							</motion.div>
@@ -167,7 +168,7 @@ export default function Home() {
 
 								<div className={styles.header}>
 									<Link href="#launderette">
-										<a target="blank">Bridal Dress Cleaning & Alterations</a>
+										<a target="blank">{mainServicesDB[2].serviceName}</a>
 									</Link>
 								</div>
 							</motion.div>
@@ -183,10 +184,9 @@ export default function Home() {
 										></Image>
 									</a>
 								</Link>
-
 								<div className={styles.header}>
 									<Link href="#launderette">
-										<a target="blank">Alterations & Repairs</a>
+										<a target="blank">{mainServicesDB[3].serviceName}</a>
 									</Link>
 								</div>
 							</motion.div>
@@ -202,10 +202,9 @@ export default function Home() {
 										></Image>
 									</a>
 								</Link>
-
 								<div className={styles.header}>
 									<Link href="#launderette">
-										<a target="blank">Professional Ironing Services</a>
+										<a target="blank">{mainServicesDB[4].serviceName}</a>
 									</Link>
 								</div>
 							</motion.div>
@@ -221,10 +220,9 @@ export default function Home() {
 										></Image>
 									</a>
 								</Link>
-
 								<div className={styles.header}>
 									<Link href="#launderette">
-										<a target="blank">Self-Services</a>
+										<a target="blank">{mainServicesDB[5].serviceName}</a>
 									</Link>
 								</div>
 							</motion.div>
@@ -240,10 +238,9 @@ export default function Home() {
 										></Image>
 									</a>
 								</Link>
-
 								<div className={styles.header}>
 									<Link href="#launderette">
-										<a target="blank">Duvet & Quilts Cleaning</a>
+										<a target="blank">{mainServicesDB[6].serviceName}</a>
 									</Link>
 								</div>
 							</motion.div>
@@ -262,7 +259,7 @@ export default function Home() {
 
 								<div className={styles.header}>
 									<Link href="#launderette">
-										<a target="blank">Stain Removing</a>
+										<a target="blank">{mainServicesDB[7].serviceName}</a>
 									</Link>
 								</div>
 							</motion.div>
@@ -278,10 +275,9 @@ export default function Home() {
 										></Image>
 									</a>
 								</Link>
-
 								<div className={styles.header}>
 									<Link href="#launderette">
-										<a target="blank">Oxford Shirts</a>
+										<a target="blank">{mainServicesDB[8].serviceName}</a>
 									</Link>
 								</div>
 							</motion.div>
@@ -297,10 +293,9 @@ export default function Home() {
 										></Image>
 									</a>
 								</Link>
-
 								<div className={styles.header}>
 									<Link href="#launderette">
-										<a target="blank">Restaurant Laundry & Linen Cleaning</a>
+										<a target="blank">{mainServicesDB[9].serviceName}</a>
 									</Link>
 								</div>
 							</motion.div>
@@ -316,10 +311,9 @@ export default function Home() {
 										></Image>
 									</a>
 								</Link>
-
 								<div className={styles.header}>
 									<Link href="#launderette">
-										<a target="blank">Jacket & Coat Alterations</a>
+										<a target="blank">{mainServicesDB[10].serviceName}</a>
 									</Link>
 								</div>
 							</motion.div>
@@ -337,7 +331,7 @@ export default function Home() {
 								</Link>
 								<div className={styles.header}>
 									<Link href="#launderette">
-										<a target="blank">Kids Clothing Alterations</a>
+										<a target="blank">{mainServicesDB[11].serviceName}</a>
 									</Link>
 								</div>
 							</motion.div>
