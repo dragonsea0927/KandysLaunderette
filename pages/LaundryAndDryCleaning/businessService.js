@@ -5,6 +5,8 @@ import {motion} from "framer-motion";
 import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
 import styles from "/styles/Home.module.scss";
+import mainServicesDB from "/lib/BusinessServicesListDB.json";
+import BusinessServicesListDB from "/lib/IndividualServicesListDB.json";
 
 // Custom reusable Animation Properties/variables
 const fadeInUp = {
@@ -113,42 +115,42 @@ const businessService = () => {
 										<ul>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Single
+													{BusinessServicesListDB[0].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Double
+													{BusinessServicesListDB[1].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Single Blanket
+													{BusinessServicesListDB[2].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Bed Sheets
+													{BusinessServicesListDB[3].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Duvet Cover
+													{BusinessServicesListDB[4].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Duvet Insert
+													{BusinessServicesListDB[5].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Bed Linen (Single & Double)
+													{BusinessServicesListDB[6].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Bed Linen (King & Queen)
+													{BusinessServicesListDB[7].serviceName}
 												</motion.a>
 											</Link>
 										</ul>
@@ -158,12 +160,12 @@ const businessService = () => {
 										<ul>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Male Staff Shirts
+													{BusinessServicesListDB[8].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Female Staff Shirts
+													{BusinessServicesListDB[9].serviceName}
 												</motion.a>
 											</Link>
 										</ul>
@@ -173,12 +175,12 @@ const businessService = () => {
 										<ul>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Regular Staff Trousers
+													{BusinessServicesListDB[10].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Silk Staff Trousers
+													{BusinessServicesListDB[11].serviceName}
 												</motion.a>
 											</Link>
 										</ul>
@@ -188,42 +190,42 @@ const businessService = () => {
 										<ul>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Waiters Uniforms Set
+													{BusinessServicesListDB[12].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Kitchen Male Staff Shirts
+													{BusinessServicesListDB[13].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Kitchen Female Staff Shirts
+													{BusinessServicesListDB[14].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Bar Staff Aprons
+													{BusinessServicesListDB[15].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Short Staff Apron
+													{BusinessServicesListDB[16].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Long Canvas Apron Clip
+													{BusinessServicesListDB[17].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Womens Waistcoat Staff Shirts
+													{BusinessServicesListDB[18].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Kitchen Cloths
+													{BusinessServicesListDB[19].serviceName}
 												</motion.a>
 											</Link>
 										</ul>
@@ -233,17 +235,17 @@ const businessService = () => {
 										<ul>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Single
+													{BusinessServicesListDB[20].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Double
+													{BusinessServicesListDB[21].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Bed Runner / Throw
+													{BusinessServicesListDB[22].serviceName}
 												</motion.a>
 											</Link>
 										</ul>
@@ -253,32 +255,32 @@ const businessService = () => {
 										<ul>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Tie
+													{BusinessServicesListDB[23].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Scarf
+													{BusinessServicesListDB[24].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Money Pouch Waist Apron
+													{BusinessServicesListDB[25].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Tabletop Cloths
+													{BusinessServicesListDB[26].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Hats
+													{BusinessServicesListDB[27].serviceName}
 												</motion.a>
 											</Link>
 											<Link href="">
 												<motion.a variants={fadeInUp} target="blank">
-													Waist Coat
+													{BusinessServicesListDB[28].serviceName}
 												</motion.a>
 											</Link>
 										</ul>
