@@ -95,141 +95,202 @@ const businessService = () => {
 							</Link>
 						</div>
 						<div className={styles.content}>
-							<motion.div className={styles.title}>
+							<motion.div variants={fadeInUp} className={styles.title}>
 								<h2>Business Tailored Service</h2>
-								<p>
+								<motion.p variants={fadeIn}>
 									Our services provides our business partners professional
 									solution to their various requirements. Prior booking is
 									required. <br></br>
-								</p>
+								</motion.p>
 							</motion.div>
-							<motion.div className={styles.subtitle}>
+							<motion.div variants={fadeIn} className={styles.subtitle}>
 								<h2>All Our Services</h2>
 							</motion.div>
 							<div className={styles.innerContent}>
 								<div className={styles.servicesList}>
-									<div className={styles.List}>
+									<motion.div variants={stagger} className={styles.List}>
 										<h2>Duvet Cleaning</h2>
 										<ul>
 											<Link href="">
-												<a target="blank">Single</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Single
+												</motion.a>
 											</Link>
 											<Link href="">
-												<a target="blank">Double</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Double
+												</motion.a>
 											</Link>
 											<Link href="">
-												<a target="blank">Single Blanket</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Single Blanket
+												</motion.a>
 											</Link>
 											<Link href="">
-												<a target="blank">Bed Sheets</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Bed Sheets
+												</motion.a>
 											</Link>
 											<Link href="">
-												<a target="blank">Duvet Cover</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Duvet Cover
+												</motion.a>
 											</Link>
 											<Link href="">
-												<a target="blank">Duvet Insert</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Duvet Insert
+												</motion.a>
 											</Link>
 											<Link href="">
-												<a target="blank">Bed Linen (Single & Double)</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Bed Linen (Single & Double)
+												</motion.a>
 											</Link>
 											<Link href="">
-												<a target="blank">Bed Linen (King & Queen)</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Bed Linen (King & Queen)
+												</motion.a>
 											</Link>
 										</ul>
-									</div>
-									<div className={styles.List}>
+									</motion.div>
+									<motion.div variants={stagger} className={styles.List}>
 										<h2>Tops & Shirts</h2>
 										<ul>
 											<Link href="">
-												<a target="blank">Male Staff Shirts</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Male Staff Shirts
+												</motion.a>
 											</Link>
 											<Link href="">
-												<a target="blank">Female Staff Shirts</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Female Staff Shirts
+												</motion.a>
 											</Link>
 										</ul>
-									</div>
-									<div className={styles.List}>
+									</motion.div>
+									<motion.div variants={stagger} className={styles.List}>
 										<h2>Trousers</h2>
 										<ul>
 											<Link href="">
-												<a target="blank">Regular Staff Trousers</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Regular Staff Trousers
+												</motion.a>
 											</Link>
 											<Link href="">
-												<a target="blank">Silk Staff Trousers</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Silk Staff Trousers
+												</motion.a>
 											</Link>
 										</ul>
-									</div>
-									<div className={styles.List}>
+									</motion.div>
+									<motion.div variants={stagger} className={styles.List}>
 										<h2>Bar & Restaurant</h2>
 										<ul>
 											<Link href="">
-												<a target="blank">Waiters Uniforms Set</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Waiters Uniforms Set
+												</motion.a>
 											</Link>
 											<Link href="">
-												<a target="blank">Kitchen Male Staff Shirts</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Kitchen Male Staff Shirts
+												</motion.a>
 											</Link>
 											<Link href="">
-												<a target="blank">Kitchen Female Staff Shirts</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Kitchen Female Staff Shirts
+												</motion.a>
 											</Link>
 											<Link href="">
-												<a target="blank">Bar Staff Aprons</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Bar Staff Aprons
+												</motion.a>
 											</Link>
 											<Link href="">
-												<a target="blank">Short Staff Apron</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Short Staff Apron
+												</motion.a>
 											</Link>
 											<Link href="">
-												<a target="blank">Long Canvas Apron Clip</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Long Canvas Apron Clip
+												</motion.a>
 											</Link>
 											<Link href="">
-												<a target="blank">Womens Waistcoat Staff Shirts</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Womens Waistcoat Staff Shirts
+												</motion.a>
 											</Link>
 											<Link href="">
-												<a target="blank">Kitchen Cloths</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Kitchen Cloths
+												</motion.a>
 											</Link>
 										</ul>
-									</div>
-									<div className={styles.List}>
+									</motion.div>
+									<motion.div variants={stagger} className={styles.List}>
 										<h2>Throw-over</h2>
 										<ul>
 											<Link href="">
-												<a target="blank">Single</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Single
+												</motion.a>
 											</Link>
 											<Link href="">
-												<a target="blank">Double</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Double
+												</motion.a>
 											</Link>
 											<Link href="">
-												<a target="blank">Bed Runner / Throw</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Bed Runner / Throw
+												</motion.a>
 											</Link>
 										</ul>
-									</div>
-									<div className={styles.List}>
+									</motion.div>
+									<motion.div variants={stagger} className={styles.List}>
 										<h2>Accessories</h2>
 										<ul>
 											<Link href="">
-												<a target="blank">Tie</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Tie
+												</motion.a>
 											</Link>
 											<Link href="">
-												<a target="blank">Scarf</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Scarf
+												</motion.a>
 											</Link>
 											<Link href="">
-												<a target="blank">Money Pouch Waist Apron</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Money Pouch Waist Apron
+												</motion.a>
 											</Link>
 											<Link href="">
-												<a target="blank">Tabletop Cloths</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Tabletop Cloths
+												</motion.a>
 											</Link>
 											<Link href="">
-												<a target="blank">Hats</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Hats
+												</motion.a>
 											</Link>
 											<Link href="">
-												<a target="blank">Waist Coat</a>
+												<motion.a variants={fadeInUp} target="blank">
+													Waist Coat
+												</motion.a>
 											</Link>
 										</ul>
-									</div>
+									</motion.div>
 								</div>
 								<div className={styles.servicesDisplays}>
 									<div className={styles.ImageBSDivider}></div>
-									<div className={styles.servicesDisplay}>
-										<div className={styles.content}>
+									<motion.div
+										variants={stagger}
+										className={styles.servicesDisplay}
+									>
+										<motion.div variants={fadeInUp} className={styles.content}>
 											<Link href="#launderette">
 												<a target="blank">
 													<Image
@@ -246,8 +307,8 @@ const businessService = () => {
 													<a target="blank">Duvet Cleaning</a>
 												</Link>
 											</div>
-										</div>
-										<div className={styles.content}>
+										</motion.div>
+										<motion.div variants={fadeInUp} className={styles.content}>
 											<Link href="#launderette">
 												<a target="blank">
 													<Image
@@ -264,8 +325,8 @@ const businessService = () => {
 													<a target="blank">Bed Linen</a>
 												</Link>
 											</div>
-										</div>
-										<div className={styles.content}>
+										</motion.div>
+										<motion.div variants={fadeInUp} className={styles.content}>
 											<Link href="#launderette">
 												<a target="blank">
 													<Image
@@ -282,8 +343,8 @@ const businessService = () => {
 													<a target="blank">Bed Single Blanket</a>
 												</Link>
 											</div>
-										</div>
-										<div className={styles.content}>
+										</motion.div>
+										<motion.div variants={fadeInUp} className={styles.content}>
 											<Link href="#launderette">
 												<a target="blank">
 													<Image
@@ -300,11 +361,14 @@ const businessService = () => {
 													<a target="blank">King & Queen Bed</a>
 												</Link>
 											</div>
-										</div>
-									</div>
+										</motion.div>
+									</motion.div>
 									<div className={styles.ImageBSDividerTwo}></div>
-									<div className={styles.servicesDisplay}>
-										<div className={styles.content}>
+									<motion.div
+										variants={stagger}
+										className={styles.servicesDisplay}
+									>
+										<motion.div variants={fadeInUp} className={styles.content}>
 											<Link href="#launderette">
 												<a target="blank">
 													<Image
@@ -322,8 +386,8 @@ const businessService = () => {
 													<a target="blank">Staff Tops & Shirts</a>
 												</Link>
 											</div>
-										</div>
-										<div className={styles.content}>
+										</motion.div>
+										<motion.div variants={fadeInUp} className={styles.content}>
 											<Link href="#launderette">
 												<a target="blank">
 													<Image
@@ -341,8 +405,8 @@ const businessService = () => {
 													<a target="blank">Money Pouch Waist Apron</a>
 												</Link>
 											</div>
-										</div>
-										<div className={styles.content}>
+										</motion.div>
+										<motion.div variants={fadeInUp} className={styles.content}>
 											<Link href="#launderette">
 												<a target="blank">
 													<Image
@@ -360,8 +424,8 @@ const businessService = () => {
 													<a target="blank">Staff Trousers</a>
 												</Link>
 											</div>
-										</div>
-										<div className={styles.content}>
+										</motion.div>
+										<motion.div variants={fadeInUp} className={styles.content}>
 											<Link href="#launderette">
 												<a target="blank">
 													<Image
@@ -379,11 +443,14 @@ const businessService = () => {
 													<a target="blank">Waist Coat</a>
 												</Link>
 											</div>
-										</div>
-									</div>
+										</motion.div>
+									</motion.div>
 									<div className={styles.ImageBSDividerThree}></div>
-									<div className={styles.servicesDisplay}>
-										<div className={styles.content}>
+									<motion.div
+										variants={stagger}
+										className={styles.servicesDisplay}
+									>
+										<motion.div variants={fadeInUp} className={styles.content}>
 											<Link href="#launderette">
 												<a target="blank">
 													<Image
@@ -401,8 +468,8 @@ const businessService = () => {
 													<a target="blank">Waiters Uniforms Set</a>
 												</Link>
 											</div>
-										</div>
-										<div className={styles.content}>
+										</motion.div>
+										<motion.div variants={fadeInUp} className={styles.content}>
 											<Link href="#launderette">
 												<a target="blank">
 													<Image
@@ -420,8 +487,8 @@ const businessService = () => {
 													<a target="blank">Kitchen Staff Shirts</a>
 												</Link>
 											</div>
-										</div>
-										<div className={styles.content}>
+										</motion.div>
+										<motion.div variants={fadeInUp} className={styles.content}>
 											<Link href="#launderette">
 												<a target="blank">
 													<Image
@@ -439,8 +506,8 @@ const businessService = () => {
 													<a target="blank">Bar Staff Aprons</a>
 												</Link>
 											</div>
-										</div>
-										<div className={styles.content}>
+										</motion.div>
+										<motion.div variants={fadeInUp} className={styles.content}>
 											<Link href="#launderette">
 												<a target="blank">
 													<Image
@@ -457,8 +524,8 @@ const businessService = () => {
 													<a target="blank">Kitchen Cloths</a>
 												</Link>
 											</div>
-										</div>
-									</div>
+										</motion.div>
+									</motion.div>
 								</div>
 							</div>
 						</div>
