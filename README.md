@@ -1,4 +1,4 @@
-# Kandy's Launderette online store
+# Kandy's Launderette
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). I created this project as an updated Server-Side Rendering project based on the previous Client-Side Rendering project, seen on my gihub as Kandy's Launderette website.
 
