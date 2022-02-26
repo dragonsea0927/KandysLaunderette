@@ -193,11 +193,8 @@ const Footer = () => {
 									<h5>&copy; 2021 Kandys Launderette. All Rights Reserved</h5>
 									<h5>High St, Swansea SA1 1NW</h5>
 									<div>
-										<Link
-											href="https://todd-owen-mpeli.github.io/Web-Developer-Portfolio-Final-//src/index.html"
-											target="blank"
-										>
-											<a>
+										<Link href="https://todd-owen-mpeli.github.io/Web-Developer-Portfolio-Final-//src/index.html">
+											<a target="blank">
 												Website by <span>ToddBlue Studio</span>
 											</a>
 										</Link>
