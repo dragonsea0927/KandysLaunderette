@@ -4,6 +4,7 @@
 
 // Components Styling
 @import "./components/ourProcess";
+@import "./components/contactBanner";
 @import "./components/ContactInfo/_ContactInfo.scss";
 @import "./components/WeddingDressesAndBridal/ContactInfo.scss";
 
@@ -98,69 +99,6 @@
 	.borderDivider {
 		margin: 0.5rem 0;
 		border-bottom: $baseColor_lightGrey2 0.015rem solid;
-	}
-}
-
-// <========== CONTACT US BANNER ==========>
-.contactBanner {
-	background: url("/img/david-barnes-dry-cleaners-laundry-ipswich-road-cardiff.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-
-	h2,
-	p,
-	a {
-		text-align: left;
-		color: $baseColor_white;
-	}
-
-	h2 {
-		font-size: $fontSize_large-0;
-		font-family: $fontStyle_option1;
-	}
-
-	a,
-	p {
-		margin: 0.5rem 0;
-		font-size: $fontSize_small;
-		font-family: $fontStyle_body;
-	}
-
-	.content {
-		display: flex;
-		padding: 5rem 2rem;
-		align-items: center;
-		justify-content: space-between;
-		grid-column-gap: 5rem;
-
-		.text {
-			display: flex;
-			padding: 0 2rem;
-			flex-direction: column;
-			grid-row-gap: 1rem;
-		}
-
-		.contactBannerButton {
-			a {
-				button {
-					width: 15rem;
-					border: none;
-					outline: none;
-					padding: 1rem 2rem;
-					letter-spacing: 0.1rem;
-					background: transparent;
-					color: $baseColor_white;
-					font-size: $fontSize_normal;
-					background-color: $secondary_fadedPink2;
-
-					&:hover {
-						transition: all 0.5s;
-						background-color: $secondary_fadedPink;
-					}
-				}
-			}
-		}
 	}
 }
 
@@ -725,7 +663,7 @@
 
 					h5,
 					a {
-						color: $baseColor_black;
+						color: $baseColor_lightGrey4;
 						font-size: $fontSize_xSmall;
 						font-family: $fontStyle_header;
 					}
@@ -952,8 +890,502 @@
 	}
 }
 
-/* Small - Large mobile screen (portrait 576px) // Change to (max-device-width: 320px) when finished */
-@media screen and (max-width: 576px) {
+/* Screen (1024px) */
+@media screen and (max-width: 1024px) {
+	// <========== SUITS & OXFORD PAGE ==========>
+	.suitsOxford {
+		.gridDisplay {
+			padding: 0 1rem;
+			grid-column-gap: 1rem;
+
+			.content {
+				.description {
+					p {
+						font-size: $fontSize_small;
+					}
+				}
+			}
+		}
+	}
+
+	// <========== WEDDING SUITS ==========>
+	.weddingSuits {
+		.content {
+			.title {
+				h2 {
+					font-size: $fontSize_large-1;
+				}
+
+				h5 {
+					font-size: $fontSize_small;
+				}
+			}
+
+			.gridDisplay {
+				.innerContent {
+					.description {
+						h2 {
+							font-size: $fontSize_large;
+						}
+
+						p {
+							font-size: $fontSize_small;
+						}
+					}
+				}
+			}
+
+			.groomsmenDisplay {
+				.innerContent {
+					.description {
+						h2 {
+							font-size: $fontSize_large;
+						}
+
+						p {
+							font-size: $fontSize_small;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// <========== ALTERATIONS & REPAIRS ==========>
+	.alterationsRepairs {
+		border: none;
+		.content {
+			border: none;
+			.title {
+				h2 {
+					font-size: $fontSize_large-1;
+				}
+
+				h5 {
+					font-size: $fontSize_small;
+				}
+			}
+
+			.gridDisplay {
+				.alterationsDisplay {
+					.description {
+						h2 {
+							font-size: $fontSize_large;
+						}
+
+						p {
+							font-size: $fontSize_small;
+						}
+					}
+				}
+			}
+
+			.repairsDisplay {
+				.innerContent {
+					.description {
+						h2 {
+							font-size: $fontSize_large;
+						}
+
+						p {
+							font-size: $fontSize_small;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// <========== FOOTER ==========>
+	.footer,
+	.footerDark {
+		.content {
+			.topSection {
+				.content {
+					display: flex;
+					padding: 1.5rem 1rem;
+					flex-direction: column;
+					grid-column-gap: 0rem;
+					grid-row-gap: 2rem;
+					border-top: $baseColor_lightGrey2 0.015rem solid;
+
+					.emailSignUp {
+						text-align: center;
+						padding: 1rem 0.5rem;
+
+						h2 {
+							font-size: $fontSize_medium;
+						}
+
+						p {
+							font-size: $fontSize_normal;
+						}
+					}
+
+					.signUp {
+						margin: 0 auto;
+
+						input {
+							width: 375px;
+							padding: 0.5rem;
+							padding-top: 0.75rem;
+							font-size: $fontSize_normal;
+						}
+
+						::placeholder,
+						::-ms-input-placeholder {
+							font-size: $fontSize_normal;
+						}
+
+						button {
+							width: 150px;
+							padding: 1rem;
+							font-size: $fontSize_small;
+						}
+					}
+
+					.socialLinks {
+						margin: 0 auto;
+
+						a {
+							padding: 0 25px;
+							font-size: $fontSize_large;
+						}
+					}
+				}
+			}
+
+			.middleSection {
+				.content {
+					display: grid;
+					padding: 1rem 0;
+					grid-template-columns: repeat(2, 1fr);
+					grid-column-gap: 1.75rem;
+					grid-row-gap: 4rem;
+					border-top: $baseColor_lightGrey2 0.015rem solid;
+
+					.links {
+						display: flex;
+						margin-top: 1rem;
+						padding: 0 1.5rem;
+						flex-direction: column;
+						grid-row-gap: 1.5rem;
+
+						a,
+						h2 {
+							font-size: $fontSize_small;
+						}
+					}
+				}
+			}
+
+			.bottomSection {
+				.topSide {
+					margin: 1rem 0;
+
+					h2 {
+						font-size: $fontSize_small;
+					}
+				}
+
+				.bottomSide {
+					margin: 1rem 0;
+
+					ul {
+						margin: 1rem 0;
+
+						a {
+							font-size: $fontSize_small;
+						}
+					}
+
+					.copyright {
+						margin: 1rem auto;
+
+						h5 {
+							font-size: $fontSize_small;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.footerDark {
+		.content {
+			.topSection {
+				margin: 2.5rem 0;
+
+				.content {
+					border-top: none;
+				}
+			}
+			.middleSection {
+				.content {
+					border-top: $baseColor_lightGrey4 0.015rem solid;
+				}
+			}
+		}
+	}
+}
+
+/* Screen (768px) */
+@media screen and (max-width: 768px) {
+	// <================================================>
+	// <================================================>
+	// <================================================>
+	// <========== COMPONENTS STYLING ==========>
+
+	// <========== CONTACT US BANNER ==========>
+	.contactBanner {
+		.content {
+			display: flex;
+			padding: 5rem 1rem;
+			grid-row-gap: 2.5rem;
+			flex-direction: column;
+			grid-column-gap: 0rem;
+		}
+	}
+
+	// <========== SUITS & OXFORD PAGE ==========>
+	.suitsOxford {
+		.gridDisplay {
+			padding: 0 1rem;
+			grid-column-gap: 1rem;
+
+			.content {
+				.description {
+					p {
+						font-size: $fontSize_small;
+					}
+				}
+			}
+		}
+	}
+
+	// <========== WEDDING SUITS ==========>
+	.weddingSuits {
+		.content {
+			.title {
+				h2 {
+					font-size: $fontSize_large-1;
+				}
+
+				h5 {
+					font-size: $fontSize_small;
+				}
+			}
+
+			.gridDisplay {
+				.innerContent {
+					.description {
+						h2 {
+							font-size: $fontSize_large;
+						}
+
+						p {
+							font-size: $fontSize_small;
+						}
+					}
+				}
+			}
+
+			.groomsmenDisplay {
+				.innerContent {
+					.description {
+						h2 {
+							font-size: $fontSize_large;
+						}
+
+						p {
+							font-size: $fontSize_small;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// <========== ALTERATIONS & REPAIRS ==========>
+	.alterationsRepairs {
+		border: none;
+		.content {
+			border: none;
+			.title {
+				h2 {
+					font-size: $fontSize_large-1;
+				}
+
+				h5 {
+					font-size: $fontSize_small;
+				}
+			}
+
+			.gridDisplay {
+				.alterationsDisplay {
+					.description {
+						h2 {
+							font-size: $fontSize_large;
+						}
+
+						p {
+							font-size: $fontSize_small;
+						}
+					}
+				}
+			}
+
+			.repairsDisplay {
+				.innerContent {
+					.description {
+						h2 {
+							font-size: $fontSize_large;
+						}
+
+						p {
+							font-size: $fontSize_small;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// <========== FOOTER ==========>
+	.footer,
+	.footerDark {
+		.content {
+			.topSection {
+				.content {
+					display: flex;
+					padding: 1.5rem 1rem;
+					flex-direction: column;
+					grid-column-gap: 0rem;
+					grid-row-gap: 2rem;
+					border-top: $baseColor_lightGrey2 0.015rem solid;
+
+					.emailSignUp {
+						text-align: center;
+						padding: 1rem 0.5rem;
+
+						h2 {
+							font-size: $fontSize_medium;
+						}
+
+						p {
+							font-size: $fontSize_normal;
+						}
+					}
+
+					.signUp {
+						margin: 0 auto;
+
+						input {
+							width: 375px;
+							padding: 0.5rem;
+							padding-top: 0.75rem;
+							font-size: $fontSize_normal;
+						}
+
+						::placeholder,
+						::-ms-input-placeholder {
+							font-size: $fontSize_normal;
+						}
+
+						button {
+							width: 150px;
+							padding: 1rem;
+							font-size: $fontSize_small;
+						}
+					}
+
+					.socialLinks {
+						margin: 0 auto;
+
+						a {
+							padding: 0 25px;
+							font-size: $fontSize_large;
+						}
+					}
+				}
+			}
+
+			.middleSection {
+				.content {
+					display: grid;
+					padding: 1rem 0;
+					grid-template-columns: repeat(2, 1fr);
+					grid-column-gap: 1.75rem;
+					grid-row-gap: 4rem;
+					border-top: $baseColor_lightGrey2 0.015rem solid;
+
+					.links {
+						display: flex;
+						margin-top: 1rem;
+						padding: 0 1.5rem;
+						flex-direction: column;
+						grid-row-gap: 1.5rem;
+
+						a,
+						h2 {
+							font-size: $fontSize_small;
+						}
+					}
+				}
+			}
+
+			.bottomSection {
+				.topSide {
+					margin: 1rem 0;
+
+					h2 {
+						font-size: $fontSize_small;
+					}
+				}
+
+				.bottomSide {
+					margin: 1rem 0;
+
+					ul {
+						margin: 1rem 0;
+
+						a {
+							font-size: $fontSize_small;
+						}
+					}
+
+					.copyright {
+						margin: 1rem auto;
+
+						h5 {
+							font-size: $fontSize_small;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.footerDark {
+		.content {
+			.topSection {
+				margin: 2.5rem 0;
+
+				.content {
+					border-top: none;
+				}
+			}
+			.middleSection {
+				.content {
+					border-top: $baseColor_lightGrey4 0.015rem solid;
+				}
+			}
+		}
+	}
+}
+
+/* Screen (640px) */
+@media screen and (max-width: 640px) {
 	// <================================================>
 	// <================================================>
 	// <================================================>
@@ -1122,13 +1554,15 @@
 	// <========== FOOTER ==========>
 	.footer,
 	.footerDark {
+		padding: 0 1rem;
+
 		.content {
 			.topSection {
 				margin: 1.5rem 0;
 
 				.content {
 					display: flex;
-					padding: 1.5rem 1rem;
+					padding: 1.5rem 0rem;
 					flex-direction: column;
 					grid-column-gap: 0rem;
 					grid-row-gap: 2rem;
@@ -1252,8 +1686,10 @@
 
 					.copyright {
 						margin: 1rem auto;
+						margin-bottom: 0;
 
-						h5 {
+						h5,
+						a {
 							font-size: $fontSize_xSmall;
 							font-family: $fontStyle_body;
 						}
@@ -1322,7 +1758,28 @@
 		}
 	}
 
+	// <========== MAIN SERVICES ==========>
+	.introSection {
+		padding: 2.5rem 1rem;
+		padding-bottom: 4rem;
+
+		.content {
+			display: flex;
+			flex-direction: column;
+
+			.description {
+				padding: 2.5rem 0rem;
+				p {
+					width: fit-content;
+				}
+			}
+		}
+	}
+
+	// <========== MAIN SERVICES ==========>
 	.services {
+		padding: 0 1rem;
+
 		.content {
 			.title {
 				padding: 1rem 0;
@@ -1380,6 +1837,8 @@
 
 	/* ===== SPECIAL OCCASIONS =====*/
 	.specialOccasions {
+		padding: 0 1rem;
+
 		.content {
 			.title {
 				margin: 1rem 0;
@@ -1428,7 +1887,7 @@
 
 	/* ===== WHY CHOOSE US =====*/
 	.whyChooseUs {
-		padding: 0;
+		padding: 0 1rem;
 
 		.content {
 			.title {
@@ -1480,6 +1939,8 @@
 
 	/* ===== HOTEL & RESTAURANT =====*/
 	.hotelAndRestaurant {
+		padding: 0 1rem;
+
 		.content {
 			.title {
 				margin: 2rem 0;
@@ -1798,7 +2259,8 @@
 	// <===========================================>
 	// <========== ALTERATIONS & REPAIRS ==========>
 	.alterationsRepairs {
-		padding: 2.5rem 0;
+		margin: 0rem;
+		padding: 2.5rem 1rem;
 		background-color: $backgroundColor_black;
 
 		.content {
@@ -2381,190 +2843,40 @@
 	}
 }
 
-/* Tablet screen (portrait 768px - 1023px) // Change to (max-device-width: 768px) when finished */
-@media screen and (min-width: 768px) and (max-width: 992px) {
-	// <========== SUITS & OXFORD PAGE ==========>
-	.suitsOxford {
-		.gridDisplay {
-			padding: 0 1rem;
-			grid-column-gap: 1rem;
+/* Screen (430px) */
+@media screen and (max-width: 430px) {
+}
 
-			.content {
-				.description {
-					p {
-						font-size: $fontSize_small;
-					}
-				}
-			}
-		}
-	}
-
-	// <========== WEDDING SUITS ==========>
-	.weddingSuits {
-		.content {
-			.title {
-				h2 {
-					font-size: $fontSize_large-1;
-				}
-
-				h5 {
-					font-size: $fontSize_small;
-				}
-			}
-
-			.gridDisplay {
-				.innerContent {
-					.description {
-						h2 {
-							font-size: $fontSize_large;
-						}
-
-						p {
-							font-size: $fontSize_small;
-						}
-					}
-				}
-			}
-
-			.groomsmenDisplay {
-				.innerContent {
-					.description {
-						h2 {
-							font-size: $fontSize_large;
-						}
-
-						p {
-							font-size: $fontSize_small;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	// <========== ALTERATIONS & REPAIRS ==========>
-	.alterationsRepairs {
-		border: none;
-		.content {
-			border: none;
-			.title {
-				h2 {
-					font-size: $fontSize_large-1;
-				}
-
-				h5 {
-					font-size: $fontSize_small;
-				}
-			}
-
-			.gridDisplay {
-				.alterationsDisplay {
-					.description {
-						h2 {
-							font-size: $fontSize_large;
-						}
-
-						p {
-							font-size: $fontSize_small;
-						}
-					}
-				}
-			}
-
-			.repairsDisplay {
-				.innerContent {
-					.description {
-						h2 {
-							font-size: $fontSize_large;
-						}
-
-						p {
-							font-size: $fontSize_small;
-						}
-					}
-				}
-			}
-		}
-	}
-
+/* Screen (375px) */
+@media screen and (max-width: 375px) {
 	// <========== FOOTER ==========>
 	.footer,
 	.footerDark {
 		.content {
 			.topSection {
 				.content {
-					display: flex;
-					padding: 1.5rem 1rem;
-					flex-direction: column;
-					grid-column-gap: 0rem;
-					grid-row-gap: 2rem;
-					border-top: $baseColor_lightGrey2 0.015rem solid;
-
-					.emailSignUp {
-						text-align: center;
-						padding: 1rem 0.5rem;
-
-						h2 {
-							font-size: $fontSize_medium;
-						}
-
-						p {
-							font-size: $fontSize_normal;
-						}
-					}
-
-					.signUp {
-						margin: 0 auto;
-
-						input {
-							width: 375px;
-							padding: 0.5rem;
-							padding-top: 0.75rem;
-							font-size: $fontSize_normal;
-						}
-
-						::placeholder,
-						::-ms-input-placeholder {
-							font-size: $fontSize_normal;
-						}
-
-						button {
-							width: 150px;
-							padding: 1rem;
-							font-size: $fontSize_small;
-						}
-					}
-
 					.socialLinks {
-						margin: 0 auto;
-
 						a {
-							padding: 0 25px;
-							font-size: $fontSize_large;
+							padding: 0 20px;
 						}
 					}
 				}
 			}
+		}
+	}
+}
 
-			.middleSection {
+/* Screen (320px) */
+@media screen and (max-width: 320px) {
+	// <========== FOOTER ==========>
+	.footer,
+	.footerDark {
+		.content {
+			.topSection {
 				.content {
-					display: grid;
-					padding: 1rem 0;
-					grid-template-columns: repeat(2, 1fr);
-					grid-column-gap: 1.75rem;
-					grid-row-gap: 4rem;
-					border-top: $baseColor_lightGrey2 0.015rem solid;
-
-					.links {
-						display: flex;
-						margin-top: 1rem;
-						padding: 0 1.5rem;
-						flex-direction: column;
-						grid-row-gap: 1.5rem;
-
-						a,
-						h2 {
-							font-size: $fontSize_small;
+					.socialLinks {
+						a {
+							padding: 0 15px;
 						}
 					}
 				}
@@ -2572,48 +2884,13 @@
 
 			.bottomSection {
 				.topSide {
-					margin: 1rem 0;
+					display: flex;
+					padding: 1rem 0.25rem;
+					justify-content: center;
 
 					h2 {
-						font-size: $fontSize_small;
+						padding: 0 5px;
 					}
-				}
-
-				.bottomSide {
-					margin: 1rem 0;
-
-					ul {
-						margin: 1rem 0;
-
-						a {
-							font-size: $fontSize_small;
-						}
-					}
-
-					.copyright {
-						margin: 1rem auto;
-
-						h5 {
-							font-size: $fontSize_small;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	.footerDark {
-		.content {
-			.topSection {
-				margin: 2.5rem 0;
-
-				.content {
-					border-top: none;
-				}
-			}
-			.middleSection {
-				.content {
-					border-top: $baseColor_lightGrey4 0.015rem solid;
 				}
 			}
 		}
