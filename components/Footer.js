@@ -190,8 +190,8 @@ const Footer = () => {
 									</Link>
 								</ul>
 								<div className={styles.copyright}>
-									<h5>&copy; 2021 Kandys Launderette. All Rights Reserved</h5>
-									<h5>High St, Swansea SA1 1NW</h5>
+									<h5>&copy; 2022 Kandys Launderette. All Rights Reserved</h5>
+									<h5>High St, Swansea</h5>
 									<div>
 										<Link href="https://todd-owen-mpeli.github.io/Web-Developer-Portfolio-Final-//src/index.html">
 											<a target="blank">
