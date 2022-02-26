@@ -1,10 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import {motion} from "framer-motion";
-import NavbarTwo from "/components/NavbarTwo";
-import StoreLocation from "/components/storeLocation";
 import Footer from "/components/Footer";
+import NavbarTwo from "/components/NavbarTwo";
 import styles from "/styles/Home.module.scss";
+import ContactBanner from "../components/ContactBanner";
+import StoreLocation from "/components/storeLocation";
 
 // Custom reusable Animation Properties/variables
 const fadeInUp = {
@@ -150,7 +151,12 @@ const ourStory = () => {
 						</div>
 					</div>
 				</div>
+			</div>
 
+			{/* <!--===== CONTACT US BANNER =====--> */}
+			<ContactBanner />
+
+			<div className={styles.ourStoryPage}>
 				{/* <!--===== OUR COLLECTION =====--> */}
 				<div className={styles.ourCollections}>
 					<div className="container">

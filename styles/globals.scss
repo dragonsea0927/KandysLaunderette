@@ -10,7 +10,8 @@ body {
 }
 
 body::-webkit-scrollbar {
-	width: 0.25rem;
+	width: 0.5rem;
+	height: 0.5rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -18,7 +19,12 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-	background: $secondary_pink;
+	background: $secondary_fadedPink2;
+
+	&:hover {
+		transition: all 0.5s;
+		background-color: $secondary_fadedPink;
+	}
 }
 
 a {
