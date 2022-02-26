@@ -82,9 +82,6 @@ const businessService = () => {
 					/>
 				</Head>
 
-				{/* <!--===== NAVIGATION =====--> */}
-				<Navbar />
-
 				{/* // <========== PAGE TITLE ==========> */}
 				<div className={styles.mainContent}>
 					<div className="container">
@@ -532,9 +529,6 @@ const businessService = () => {
 						</div>
 					</div>
 				</div>
-
-				{/* <!--===== FOOTER =====--> */}
-				<Footer />
 			</div>
 		</motion.div>
 	);

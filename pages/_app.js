@@ -1,11 +1,23 @@
 import "../styles/globals.scss";
-import {AnimatePresence} from "framer-motion";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function MyApp({Component, pageProps}) {
+	// Removes Global Navbar & Adds Custom Header and Footer Page layout Function
+	if (Component.getLayout) {
+		return Component.getLayout(<Component {...pageProps} />);
+	}
+
 	return (
-		<AnimatePresence exitBeforeEnter>
+		<>
+			{/* <!--===== NAVIGATION =====--> */}
+			<Navbar />
+
 			<Component {...pageProps} />
-		</AnimatePresence>
+
+			{/* <!--===== FOOTER =====--> */}
+			<Footer />
+		</>
 	);
 }
 

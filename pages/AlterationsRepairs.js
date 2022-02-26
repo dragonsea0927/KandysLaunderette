@@ -90,9 +90,6 @@ const AlterationsRepairs = () => {
 				/>
 			</Head>
 
-			{/* <!--===== NAVIGATION =====--> */}
-			<Navbar />
-
 			{/* // <========== ABOUT US DESCRIPTIONS ==========> */}
 			<div className={styles.alterationsRepairsSection}>
 				{/* // <========== PAGE TITLE ==========> */}
@@ -192,9 +189,6 @@ const AlterationsRepairs = () => {
 
 			{/* <!--===== OUR PROCESS INFORMATION =====--> */}
 			<OurProcess />
-
-			{/* <!--===== FOOTER =====--> */}
-			<Footer />
 		</motion.div>
 	);
 };

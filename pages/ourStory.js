@@ -237,9 +237,6 @@ const ourStory = () => {
 
 			{/* <!--===== OUT STORE LOCATION =====--> */}
 			<StoreLocation />
-
-			{/* <!--===== FOOTER =====--> */}
-			<Footer />
 		</motion.div>
 	);
 };

@@ -2,9 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import {motion} from "framer-motion";
-import Navbar from "/components/Navbar";
 import ContactInfo from "/components/ContactInfo";
-import Footer from "/components/Footer";
 import styles from "/styles/Home.module.scss";
 
 // Custom reusable Animation Properties/variables
@@ -80,9 +78,6 @@ const LaundryDryCleaning = () => {
 					href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
 				/>
 			</Head>
-
-			{/* <!--===== NAVIGATION =====--> */}
-			<Navbar />
 
 			{/* // <========== BACKGROUND IMAGE ==========> */}
 			<div className={styles.backgroundImageOne}></div>
@@ -172,9 +167,6 @@ const LaundryDryCleaning = () => {
 
 			{/* <!--===== INFORMATION SECTION =====--> */}
 			<ContactInfo />
-
-			{/* <!--===== FOOTER =====--> */}
-			<Footer />
 		</motion.div>
 	);
 };

@@ -83,9 +83,6 @@ const IndividualService = () => {
 					/>
 				</Head>
 
-				{/* <!--===== NAVIGATION =====--> */}
-				<Navbar />
-
 				{/* // <========== PAGE TITLE ==========> */}
 				<div className={styles.mainContent}>
 					<div className="container">
@@ -678,9 +675,6 @@ const IndividualService = () => {
 						</div>
 					</div>
 				</div>
-
-				{/* <!--===== FOOTER =====--> */}
-				<Footer />
 			</div>
 		</motion.div>
 	);

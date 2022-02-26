@@ -80,9 +80,6 @@ const suitsOxfordShirts = () => {
 				/>
 			</Head>
 
-			{/* <!--===== NAVIGATION =====--> */}
-			<Navbar />
-
 			{/* // <========== BACKGROUND IMAGE ==========> */}
 			<div className={styles.backgroundImageSuitsOxfordShirts}></div>
 
@@ -253,11 +250,24 @@ const suitsOxfordShirts = () => {
 					</div>
 				</div>
 			</div>
-
-			{/* <!--===== FOOTER =====--> */}
-			<FooterDark />
 		</motion.div>
 	);
 };
 
 export default suitsOxfordShirts;
+
+// Removes Global Navbar & Adds Custom Header and Footer Page layout Function
+suitsOxfordShirts.getLayout = function PageLayout(page) {
+	return (
+		<>
+			{/* <!--===== NAVIGATION =====--> */}
+			<Navbar />
+
+			{/* <!--===== ONE TIME CUSTOM PAGE CONTENT =====--> */}
+			{page}
+
+			{/* <!--===== FOOTER =====--> */}
+			<FooterDark />
+		</>
+	);
+};

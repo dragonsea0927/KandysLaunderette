@@ -83,9 +83,6 @@ export default function Home() {
 				/>
 			</Head>
 
-			{/* <!--===== NAVIGATION =====--> */}
-			<Navbar />
-
 			{/* <!--===== HERO =====--> */}
 			<div className={styles.backgroundImage}>
 				<div className="container">
@@ -626,9 +623,6 @@ export default function Home() {
 
 			{/* <!--===== OUT STORE LOCATION =====--> */}
 			<StoreLocation />
-
-			{/* <!--===== FOOTER =====--> */}
-			<Footer />
 		</motion.div>
 	);
 }

@@ -81,9 +81,6 @@ const WeddingDressesAndBridal = () => {
 				/>
 			</Head>
 
-			{/* <!--===== NAVIGATION =====--> */}
-			<Navbar />
-
 			{/* // <========== BACKGROUND IMAGE ==========> */}
 			<div className={styles.backgroundImageWeddingDressesBridal}></div>
 
@@ -167,9 +164,6 @@ const WeddingDressesAndBridal = () => {
 
 			{/* <!--===== INFORMATION SECTION =====--> */}
 			<ContactInfo />
-
-			{/* <!--===== FOOTER =====--> */}
-			<Footer />
 		</motion.div>
 	);
 };
