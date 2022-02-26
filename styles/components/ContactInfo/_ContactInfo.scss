@@ -49,22 +49,22 @@
 		.button {
 			margin-top: 1rem;
 
-			newButton {
-				border: none;
-				padding: 1rem 1.25rem;
-				background-color: $backgroundColor_White;
+			a {
+				margin-top: 1rem;
+				font-weight: 700;
+				letter-spacing: 0.1rem;
+				color: $baseColor_black;
+				text-transform: uppercase;
+				font-size: $fontSize_xSmall;
+				font-family: $fontStyle_header;
 
-				a {
-					margin-top: 1rem;
-					font-weight: 700;
-					letter-spacing: 0.1rem;
-					color: $baseColor_black;
-					text-transform: uppercase;
-					font-size: $fontSize_xSmall;
-					font-family: $fontStyle_header;
+				newButton {
+					border: none;
+					padding: 1rem 1.25rem;
+					background-color: $backgroundColor_White;
 				}
 
-				a:hover {
+				&:hover {
 					color: $baseColor_lightGrey4;
 				}
 			}

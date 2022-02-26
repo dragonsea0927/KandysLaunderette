@@ -50,11 +50,11 @@ const ContactInfo = () => {
 							</h5>
 						</motion.div>
 						<motion.div variants={fadeIn} className={styles.button}>
-							<newButton>
-								<Link href="#email" target="blank">
-									<a>Terms & Conditions</a>
-								</Link>
-							</newButton>
+							<Link href="mailto:KandysLaunderette@gmail.com" target="blank">
+								<a>
+									<newButton>Get In Touch</newButton>
+								</a>
+							</Link>
 						</motion.div>
 					</div>
 				</div>

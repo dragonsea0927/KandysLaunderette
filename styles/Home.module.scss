@@ -19,6 +19,7 @@
 // <========== NAVIGATION ==========>
 .Navbar {
 	padding: 0.5rem 0;
+	border-bottom: $secondary_fadedPink 0.2rem solid;
 
 	.content {
 		.topSection {
@@ -722,10 +723,24 @@
 					margin: 0 auto;
 					text-align: center;
 
-					h5 {
+					h5,
+					a {
 						color: $baseColor_black;
 						font-size: $fontSize_xSmall;
 						font-family: $fontStyle_header;
+					}
+
+					a {
+						margin: auto 0;
+
+						span {
+							color: $secondary_fadedPink;
+
+							&:hover {
+								transition: all 1s;
+								text-decoration: underline;
+							}
+						}
 					}
 				}
 			}
@@ -912,10 +927,24 @@
 					margin: 0 auto;
 					text-align: center;
 
-					h5 {
+					h5,
+					a {
 						color: $baseColor_lightGrey2;
 						font-size: $fontSize_xSmall;
 						font-family: $fontStyle_header;
+					}
+
+					a {
+						margin: auto 0;
+
+						span {
+							color: $secondary_fadedPink;
+
+							&:hover {
+								transition: all 1s;
+								text-decoration: underline;
+							}
+						}
 					}
 				}
 			}

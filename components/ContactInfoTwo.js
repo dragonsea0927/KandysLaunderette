@@ -57,11 +57,11 @@ const ContactInfoTwo = () => {
 							</h5>
 						</motion.div>
 						<motion.div variants={fadeIn} className={styles.button}>
-							<newButton>
-								<Link href="#email" target="blank">
-									<a>Get In Touch</a>
-								</Link>
-							</newButton>
+							<Link href="mailto:KandysLaunderette@gmail.com" target="blank">
+								<a>
+									<newButton>Get In Touch</newButton>
+								</a>
+							</Link>
 						</motion.div>
 					</motion.div>
 				</div>
