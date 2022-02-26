@@ -91,25 +91,6 @@ const ourStory = () => {
 			</Head>
 
 			<div className={styles.ourStoryPage}>
-				<div className={styles.backgroundTopCover}>
-					{/* <!--===== NAVIGATION =====--> */}
-					<NavbarTwo />
-
-					{/* // <========== PAGE TITLE ==========> */}
-					<div className={styles.ourStory}>
-						<div className={styles.pageTitle}>
-							<div className="container">
-								<div className={styles.content}>
-									<motion.div variants={fadeInUp} className={styles.title}>
-										<h2>Our Story</h2>
-										<h5>The Best Stress Free Dry Cleaning Solutions.</h5>
-									</motion.div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
 				{/* // <========== ABOUT US DESCRIPTIONS ==========> */}
 				<div className={styles.aboutUs}>
 					<div className="container">
@@ -242,3 +223,23 @@ const ourStory = () => {
 };
 
 export default ourStory;
+
+// Removes Global Navbar & Adds Custom Header and Footer Page layout Function
+ourStory.getLayout = function PageLayout(page) {
+	return (
+		<>
+			<div className={styles.ourStoryPage}>
+				<div className={styles.backgroundTopCover}>
+					{/* <!--===== NAVIGATION =====--> */}
+					<NavbarTwo />
+				</div>
+			</div>
+
+			{/* <!--===== ONE TIME CUSTOM PAGE CONTENT =====--> */}
+			{page}
+
+			{/* <!--===== FOOTER =====--> */}
+			<Footer />
+		</>
+	);
+};
