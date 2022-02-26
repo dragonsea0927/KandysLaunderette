@@ -100,7 +100,7 @@
 	}
 }
 
-// <========== CONTACT US  ==========>
+// <========== CONTACT US BANNER ==========>
 .contactBanner {
 	background: url("/img/david-barnes-dry-cleaners-laundry-ipswich-road-cardiff.jpg");
 	background-size: cover;
@@ -192,6 +192,83 @@
 				color: $baseColor_white;
 				font-size: $fontSize_large;
 				font-family: $fontStyle_header;
+			}
+		}
+	}
+}
+
+// <========== MAIN SERVICES ==========>
+.introSection {
+	padding: 5rem 0;
+
+	.content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.description {
+			padding: 2.5rem;
+			text-align: left;
+
+			h2,
+			h5,
+			p {
+				color: $baseColor_black;
+			}
+
+			h2 {
+				margin-bottom: 1rem;
+				font-size: $fontSize_large-0;
+				font-family: $fontStyle_option1;
+			}
+
+			h5 {
+				font-weight: 600;
+				margin-top: 1rem;
+				text-transform: uppercase;
+				font-size: $fontSize_xSmall;
+				color: $secondary_fadedPink;
+				font-family: $fontStyle_header;
+			}
+
+			p {
+				width: 40rem;
+				margin: 0 auto;
+				padding: 0.5rem 0;
+				font-size: $fontSize_normal;
+				font-family: $fontStyle_body;
+			}
+
+			.contactBannerButton {
+				margin-top: 1.5rem;
+
+				a {
+					button {
+						border: none;
+						outline: none;
+						padding: 0.25rem 0;
+						letter-spacing: 0.1rem;
+						background: transparent;
+						text-transform: uppercase;
+						font-size: $fontSize_small;
+						color: $secondary_fadedPink;
+						border-bottom: $secondary_fadedPink 0.1rem solid;
+
+						&:hover {
+							transition: all 0.2s;
+							border-bottom: $AdditionalColor_Purple1 0.1rem solid;
+						}
+					}
+				}
+			}
+		}
+
+		.image {
+			img {
+				width: 100%;
+				height: 400px;
+				border-radius: 50%;
+				object-fit: contain;
 			}
 		}
 	}

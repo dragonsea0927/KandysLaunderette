@@ -2,10 +2,9 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import {motion} from "framer-motion";
-import Navbar from "/components/Navbar";
-import Footer from "/components/Footer";
 import styles from "/styles/Home.module.scss";
 import BusinessServicesListDB from "/lib/IndividualServicesListDB.json";
+import ContactBanner from "/components/ContactBanner";
 
 // Custom reusable Animation Properties/variables
 const fadeInUp = {
@@ -529,6 +528,9 @@ const businessService = () => {
 						</div>
 					</div>
 				</div>
+
+				{/* <!--===== CONTACT US BANNER =====--> */}
+				<ContactBanner />
 			</div>
 		</motion.div>
 	);

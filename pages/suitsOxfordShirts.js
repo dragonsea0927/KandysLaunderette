@@ -5,6 +5,7 @@ import Navbar from "/components/Navbar";
 import OurProcess from "/components/ourProcess";
 import FooterDark from "/components/FooterDark";
 import styles from "/styles/Home.module.scss";
+import ContactBanner from "../components/ContactBanner";
 
 // Custom reusable Animation Properties/variables
 const fadeInUp = {
@@ -189,6 +190,9 @@ const suitsOxfordShirts = () => {
 					</div>
 				</div>
 			</div>
+
+			{/* <!--===== CONTACT US BANNER =====--> */}
+			<ContactBanner />
 
 			{/* <!--===== OUR PROCESS INFORMATION =====--> */}
 			<OurProcess />

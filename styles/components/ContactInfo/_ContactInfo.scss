@@ -1,5 +1,6 @@
 // <========== INFORMATION SECTION ==========>
-.backgroundImageLaundryDryCleaning {
+.contactInfo,
+.ContactInfoTwo {
 	display: flex;
 	padding: 5rem 0;
 	margin-top: 5rem;
@@ -69,4 +70,14 @@
 			}
 		}
 	}
+}
+
+// <========== INFORMATION SECTION OPTION 2 ==========>
+.ContactInfoTwo {
+	padding: 10rem 0;
+	margin-top: 0rem;
+	background: url("/img/trousers-alterations.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }

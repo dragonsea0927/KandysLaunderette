@@ -3,11 +3,11 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import {motion} from "framer-motion";
-import Navbar from "/components/Navbar";
-import StoreLocation from "/components/storeLocation";
-import Footer from "/components/Footer";
 import styles from "../styles/Home.module.scss";
+import ContactInfoTwo from "/components/ContactInfoTwo";
 import mainServicesDB from "/lib/mainServicesDB.json";
+import StoreLocation from "/components/storeLocation";
+import ContactBanner from "../components/ContactBanner";
 
 // Custom reusable Animation Properties/variables
 const fadeInUp = {
@@ -90,6 +90,52 @@ export default function Home() {
 						<motion.div variants={fadeInUp} className={styles.title}>
 							<h2>Kandys Launderette</h2>
 							<h5>Professional Dry Cleaning Specialist</h5>
+						</motion.div>
+					</div>
+				</div>
+			</div>
+
+			{/* <!--===== MAIN SERVICES =====--> */}
+			<div className={styles.introSection}>
+				<div className="container">
+					<div className={styles.content}>
+						<motion.div variants={fadeInUp} className={styles.description}>
+							<h5>About Kandys Launderette</h5>
+							<h2>Get to know us a little</h2>
+							<p>
+								Over 2 years ago, Kandys had a vision: to create a company that
+								specialized in Professional Dry Cleaning Solutions, combining
+								the highest quality with affordable prices.
+							</p>
+							<p>
+								We are a family run business centrally based in Northampton,
+								Northamptonshire, offering marquee hire and event management
+								services in Northamptonshire, Leicestershire, Buckinghamshire,
+								Bedfordshire, Cambridgeshire, Hertfordshire, Oxfordshire,
+								Rutland, Warwickshire, London, the home counties, Birmingham and
+								the whole midlands area.
+							</p>
+							<motion.div
+								variants={fadeInUp}
+								className={styles.contactBannerButton}
+							>
+								<Link href="/">
+									<a>
+										<button>
+											<strong>Our Story</strong>
+										</button>
+									</a>
+								</Link>
+							</motion.div>
+						</motion.div>
+						<motion.div variants={fadeInUp} className={styles.image}>
+							<Image
+								src="/img/karsten-winegeart-Q7iB4Yixcfw-unsplash.jpg"
+								alt="Product Image"
+								width={400}
+								height={400}
+								objectFit="cover"
+							></Image>
 						</motion.div>
 					</div>
 				</div>
@@ -399,6 +445,9 @@ export default function Home() {
 				</div>
 			</div>
 
+			{/* <!--===== CONTACT US BANNER =====--> */}
+			<ContactBanner />
+
 			{/* <!--===== WHY CHOOSE US =====--> */}
 			<div className={styles.whyChooseUs}>
 				<div className="container">
@@ -619,7 +668,10 @@ export default function Home() {
 			</div>
 
 			{/* <!--===== Background Image Divider =====--> */}
-			<div className={styles.backgroundImageDivider}></div>
+			{/* <div className={styles.backgroundImageDivider}></div> */}
+
+			{/* <!--===== INFORMATION SECTION =====--> */}
+			<ContactInfoTwo />
 
 			{/* <!--===== OUT STORE LOCATION =====--> */}
 			<StoreLocation />

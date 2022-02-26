@@ -32,11 +32,11 @@ const stagger = {
 		},
 	},
 };
-const ContactInfo = () => {
+const ContactInfoTwo = () => {
 	return (
 		<>
 			{/* <!--===== INFORMATION SECTION =====--> */}
-			<div className={styles.contactInfo}>
+			<div className={styles.ContactInfoTwo}>
 				<div className="container">
 					<motion.div variants={stagger} className={styles.content}>
 						<motion.div variants={fadeInUp} className={styles.title}>
@@ -59,7 +59,7 @@ const ContactInfo = () => {
 						<motion.div variants={fadeIn} className={styles.button}>
 							<newButton>
 								<Link href="#email" target="blank">
-									<a>Terms & Conditions</a>
+									<a>Get In Touch</a>
 								</Link>
 							</newButton>
 						</motion.div>
@@ -70,4 +70,4 @@ const ContactInfo = () => {
 	);
 };
 
-export default ContactInfo;
+export default ContactInfoTwo;

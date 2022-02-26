@@ -1,10 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import {motion} from "framer-motion";
-import Navbar from "/components/Navbar";
 import OurProcess from "/components/ourProcess";
-import Footer from "/components/Footer";
 import styles from "/styles/Home.module.scss";
+import ContactBanner from "../components/ContactBanner";
 
 // Custom reusable Animation Properties/variables
 const fadeInUp = {
@@ -186,6 +185,9 @@ const AlterationsRepairs = () => {
 					</div>
 				</div>
 			</div>
+
+			{/* <!--===== CONTACT US BANNER =====--> */}
+			<ContactBanner />
 
 			{/* <!--===== OUR PROCESS INFORMATION =====--> */}
 			<OurProcess />

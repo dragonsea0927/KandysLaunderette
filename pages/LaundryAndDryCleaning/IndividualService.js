@@ -2,10 +2,9 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import {motion} from "framer-motion";
-import Navbar from "/components/Navbar";
-import Footer from "/components/Footer";
 import styles from "/styles/Home.module.scss";
 import mainServicesDB from "/lib/mainServicesDB.json";
+import ContactBanner from "/components/ContactBanner";
 import IndividualServicesListDB from "/lib/IndividualServicesListDB.json";
 
 // Custom reusable Animation Properties/variables
@@ -675,6 +674,9 @@ const IndividualService = () => {
 						</div>
 					</div>
 				</div>
+
+				{/* <!--===== CONTACT US BANNER =====--> */}
+				<ContactBanner />
 			</div>
 		</motion.div>
 	);
