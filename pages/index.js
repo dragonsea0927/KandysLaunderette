@@ -116,7 +116,7 @@ export default function Home() {
 								the whole midlands area.
 							</p>
 							<motion.div
-								variants={fadeInUp}
+								variants={fadeIn}
 								className={styles.contactBannerButton}
 							>
 								<Link href="/">
@@ -128,7 +128,7 @@ export default function Home() {
 								</Link>
 							</motion.div>
 						</motion.div>
-						<motion.div variants={fadeInUp} className={styles.image}>
+						<motion.div variants={fadeIn} className={styles.image}>
 							<Image
 								src="/img/karsten-winegeart-Q7iB4Yixcfw-unsplash.jpg"
 								alt="Product Image"
