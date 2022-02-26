@@ -41,17 +41,20 @@
 		.contactBannerButton {
 			a {
 				button {
-					width: 15rem;
+					width: 12.5rem;
 					border: none;
 					outline: none;
-					padding: 1rem 2rem;
+					padding: 1rem 0;
 					letter-spacing: 0.1rem;
-					background: transparent;
 					color: $baseColor_white;
-					font-size: $fontSize_normal;
-					background-color: $secondary_fadedPink2;
+					background: transparent;
+					text-transform: uppercase;
+					font-size: $fontSize_small;
+					border: $secondary_fadedPink 0.1rem solid;
 
 					&:hover {
+						border: none;
+						padding: 1rem;
 						transition: all 0.5s;
 						background-color: $secondary_fadedPink;
 					}
