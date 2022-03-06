@@ -5,6 +5,7 @@
 // Components Styling
 @import "./components/ourProcess";
 @import "./components/contactBanner";
+@import "./components/ContactInfoMap";
 @import "./components/ContactInfo/_ContactInfo.scss";
 @import "./components/WeddingDressesAndBridal/ContactInfo.scss";
 
@@ -473,6 +474,15 @@
 .backgroundImageDivider {
 	height: 25rem;
 	background: url("/img/david-barnes-dry-cleaners-laundry-ipswich-road-cardiff.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+// <!--===== Contact US Background Image Divider =====-->
+.backgroundImageContactUs {
+	height: 25rem;
+	background: url("/img/00_FCG-Hero.webp");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;

@@ -14,7 +14,7 @@ const Navbar = () => {
 									<a>Find Store</a>
 								</Link>
 								<div> | </div>
-								<Link href="#contactUs" target="blank">
+								<Link href="/contactUs" target="blank">
 									<a>Contact Us</a>
 								</Link>
 								<div> | </div>

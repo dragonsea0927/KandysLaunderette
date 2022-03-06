@@ -1,0 +1,70 @@
+.contactInfoMap {
+	background-color: $baseColor_lightGrey1;
+
+	.content {
+		display: flex;
+		justify-content: space-between;
+
+		.leftSide {
+			display: flex;
+			padding-left: 5rem;
+			padding: 6rem 1rem;
+			flex-direction: column;
+
+			h2,
+			p,
+			a {
+				color: $baseColor_black;
+			}
+
+			h2 {
+				font-weight: 600;
+				color: $secondary_fadedPink;
+				font-size: $fontSize_medium;
+				font-family: $fontStyle_option1;
+			}
+
+			a,
+			p {
+				font-size: $fontSize_small;
+				font-family: $fontStyle_header;
+			}
+
+			a {
+				&:hover {
+					transition: all 0.2s;
+					color: $secondary_fadedPink;
+				}
+			}
+
+			p {
+				span {
+					margin-left: 0.5rem;
+
+					a {
+						&:hover {
+							transition: all 0.5s;
+							text-decoration: underline;
+							color: $secondary_fadedPink;
+						}
+					}
+				}
+			}
+
+			.item {
+				margin-bottom: 1.5rem;
+			}
+
+			.item:last-child {
+				margin: 0;
+			}
+		}
+
+		.storeMap {
+			border: $secondary_fadedPink 0.15rem solid;
+
+			iframe {
+			}
+		}
+	}
+}
