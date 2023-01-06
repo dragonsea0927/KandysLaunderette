@@ -1,28 +1,18 @@
 import {motion} from "framer-motion";
-import styles from "/styles/Home.module.scss";
+import {fadeInUp} from "../animations/animations";
+import styles from "../styles/components/StoreLocation.module.scss";
 
-// Custom reusable Animation Properties/variables
-const fadeInUp = {
-	initial: {
-		y: 60,
-		opacity: 0,
-	},
-	animate: {
-		y: 0,
-		opacity: 1,
-		transition: {duration: 0.5, ease: "easeOut"},
-	},
-};
-
-const storeLocation = () => {
+const StoreLocation = (props) => {
 	return (
 		<>
 			{/* <!--===== OUT STORE LOCATION =====--> */}
 			<div className={styles.storeLocation}>
-				<div className="container">
+				<div className="container mx-auto">
 					<motion.div variants={fadeInUp} className={styles.title}>
-						<h2>Our Location</h2>
-						<h5>We hope to see you soon</h5>
+						<h2 className="text-black text-xl">{props?.title}</h2>
+						<h5 className="mt-4 text-black font-[500] text-base">
+							{props?.paragraph}
+						</h5>
 					</motion.div>
 				</div>
 				<div className={styles.storeMap}>
@@ -40,4 +30,4 @@ const storeLocation = () => {
 	);
 };
 
-export default storeLocation;
+export default StoreLocation;

@@ -37,7 +37,7 @@ const ContactInfo = () => {
 		<>
 			{/* <!--===== INFORMATION SECTION =====--> */}
 			<div className={styles.contactInfo}>
-				<div className="container">
+				<div className="container mx-auto">
 					<motion.div variants={stagger} className={styles.content}>
 						<motion.div variants={fadeInUp} className={styles.title}>
 							<h2>Contact our specialist Team to discuss your request.</h2>
@@ -59,7 +59,7 @@ const ContactInfo = () => {
 						<motion.div variants={fadeIn} className={styles.button}>
 							<Link href="mailto:KandysLaunderette@gmail.com" target="blank">
 								<a>
-									<newButton>Get In Touch</newButton>
+									<button>Get In Touch</button>
 								</a>
 							</Link>
 						</motion.div>

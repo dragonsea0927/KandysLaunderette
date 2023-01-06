@@ -1,0 +1,33 @@
+// Imports
+@import "../fonts";
+@import "../colors";
+
+.titleParagraphGridContent {
+	padding: 5rem 0;
+	overflow: hidden;
+
+	.content {
+		display: flex;
+		padding: 0 2rem;
+		flex-direction: column;
+
+		.titleSection {
+			padding: 2rem;
+			text-align: center;
+
+			h2 {
+				color: $baseColor_black;
+				font-size: $fontSize_large-1;
+				font-family: $fontStyle_option1;
+			}
+
+			h5 {
+				margin-top: 1rem;
+				font-weight: 500;
+				color: $baseColor_black;
+				font-size: $fontSize_normal;
+				font-family: $fontStyle_header;
+			}
+		}
+	}
+}

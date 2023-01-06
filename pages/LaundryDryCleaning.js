@@ -58,7 +58,7 @@ const LaundryDryCleaning = () => {
 					href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
 					integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
 					crossOrigin="anonymous"
-					referrerpolicy="no-referrer"
+					referrerPolicy="no-referrer"
 				/>
 				{/* <!-- Bootstrap CSS --> */}
 				<link
@@ -84,7 +84,7 @@ const LaundryDryCleaning = () => {
 
 			{/* // <========== PAGE TITLE ==========> */}
 			<div className={styles.pageTitle}>
-				<div className="container">
+				<div className="container mx-auto">
 					<div className={styles.content}>
 						<motion.div variants={fadeInUp} className={styles.title}>
 							<h2>Laundry & Dry Cleaning</h2>
@@ -96,7 +96,7 @@ const LaundryDryCleaning = () => {
 
 			{/* // <========== OPTIONS ==========> */}
 			<div className={styles.options}>
-				<div className="container">
+				<div className="container mx-auto">
 					<div className={styles.content}>
 						<motion.div variants={stagger} className={styles.title}>
 							<motion.h2 variants={fadeIn}>Our Options</motion.h2>
@@ -123,14 +123,14 @@ const LaundryDryCleaning = () => {
 									</a>
 								</Link>
 								<motion.div variants={fadeInUp} className={styles.content}>
-									<newButton className={styles.shopButton}>
+									<button className={styles.shopButton}>
 										<Link
 											href="LaundryAndDryCleaning/IndividualService"
 											target="blank"
 										>
 											<a>Individual Services</a>
 										</Link>
-									</newButton>
+									</button>
 								</motion.div>
 							</div>
 							<div className={styles.productDisplay}>
@@ -150,14 +150,14 @@ const LaundryDryCleaning = () => {
 									</a>
 								</Link>
 								<motion.div variants={fadeInUp} className={styles.content}>
-									<newButton className={styles.shopButton}>
+									<button className={styles.shopButton}>
 										<Link
 											href="LaundryAndDryCleaning/businessService"
 											target="blank"
 										>
 											<a>Business Services</a>
 										</Link>
-									</newButton>
+									</button>
 								</motion.div>
 							</div>
 						</div>

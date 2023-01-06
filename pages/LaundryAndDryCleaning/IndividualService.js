@@ -61,7 +61,7 @@ const IndividualService = () => {
 						href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
 						integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
 						crossOrigin="anonymous"
-						referrerpolicy="no-referrer"
+						referrerPolicy="no-referrer"
 					/>
 					{/* <!-- Bootstrap CSS --> */}
 					<link
@@ -84,7 +84,7 @@ const IndividualService = () => {
 
 				{/* // <========== PAGE TITLE ==========> */}
 				<div className={styles.mainContent}>
-					<div className="container">
+					<div className="container mx-auto">
 						<div className={styles.previousButton}>
 							<Link href="/LaundryDryCleaning">
 								<a target="blank">
@@ -441,7 +441,7 @@ const IndividualService = () => {
 										className={styles.servicesDisplay}
 									>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette">
+											<Link href="/">
 												<a target="blank">
 													<Image
 														src="/img/04438fc4fc1a9a09b7c2e06de39eccee.jpg"
@@ -453,13 +453,13 @@ const IndividualService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette">
+												<Link href="/">
 													<a target="blank">{mainServicesDB[0].serviceName}</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette">
+											<Link href="/">
 												<a target="blank">
 													<Image
 														src="/img/benjamin-rascoe-WdhmRPvMn7A-unsplash.jpg"
@@ -471,13 +471,13 @@ const IndividualService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette">
+												<Link href="/">
 													<a target="blank">{mainServicesDB[1].serviceName}</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette">
+											<Link href="/">
 												<a target="blank">
 													<Image
 														src="/img/2dadbbf0777ed8a16b24ccde6a6f90dd.jpg"
@@ -489,13 +489,13 @@ const IndividualService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette">
+												<Link href="/">
 													<a target="blank">{mainServicesDB[2].serviceName}</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette">
+											<Link href="/">
 												<a target="blank">
 													<Image
 														src="/img/231-419s.webp"
@@ -507,7 +507,7 @@ const IndividualService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette">
+												<Link href="/">
 													<a target="blank">{mainServicesDB[3].serviceName}</a>
 												</Link>
 											</div>
@@ -519,7 +519,7 @@ const IndividualService = () => {
 										className={styles.servicesDisplay}
 									>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette">
+											<Link href="/">
 												<a target="blank">
 													<Image
 														src="/img/572e21864592e57f4a6d121be547b12d.jpg"
@@ -531,13 +531,13 @@ const IndividualService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette">
+												<Link href="/">
 													<a target="blank">{mainServicesDB[4].serviceName}</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette">
+											<Link href="/">
 												<a target="blank">
 													<Image
 														src="/img/f46c1141fb97af8cc03149945a4f19c4.jpg"
@@ -549,13 +549,13 @@ const IndividualService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette">
+												<Link href="/">
 													<a target="blank">{mainServicesDB[5].serviceName}</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette">
+											<Link href="/">
 												<a target="blank">
 													<Image
 														src="/img/supersoft_duvet_2_2_2.jpg"
@@ -567,13 +567,13 @@ const IndividualService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette">
+												<Link href="/">
 													<a target="blank">{mainServicesDB[6].serviceName}</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette">
+											<Link href="/">
 												<a target="blank">
 													<Image
 														src="/img/cashmere-care-step2.webp"
@@ -585,7 +585,7 @@ const IndividualService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette">
+												<Link href="/">
 													<a target="blank">{mainServicesDB[7].serviceName}</a>
 												</Link>
 											</div>
@@ -597,7 +597,7 @@ const IndividualService = () => {
 										className={styles.servicesDisplay}
 									>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette">
+											<Link href="/">
 												<a target="blank">
 													<Image
 														src="/img/209-116s4.webp"
@@ -609,13 +609,13 @@ const IndividualService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette">
+												<Link href="/">
 													<a target="blank">{mainServicesDB[8].serviceName}</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette">
+											<Link href="/">
 												<a target="blank">
 													<Image
 														src="/img/Multislider_Rustic_Linen_Napkins.webp"
@@ -627,13 +627,13 @@ const IndividualService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette">
+												<Link href="/">
 													<a target="blank">{mainServicesDB[9].serviceName}</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette">
+											<Link href="/">
 												<a target="blank">
 													<Image
 														src="/img/221-057s.webp"
@@ -645,13 +645,13 @@ const IndividualService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette">
+												<Link href="/">
 													<a target="blank">{mainServicesDB[10].serviceName}</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette">
+											<Link href="/">
 												<a target="blank">
 													<Image
 														src="/img/stuk-organiser-white__1035115_pe837986_s5.webp"
@@ -663,7 +663,7 @@ const IndividualService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette">
+												<Link href="/">
 													<a target="blank">{mainServicesDB[11].serviceName}</a>
 												</Link>
 											</div>

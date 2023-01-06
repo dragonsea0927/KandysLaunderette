@@ -7,7 +7,7 @@ const FooterDark = () => {
 		<div>
 			{/* <!--===== FOOTER =====--> */}
 			<footer className={styles.footerDark}>
-				<div className="container">
+				<div className="container mx-auto">
 					<div className={styles.content}>
 						<div className={styles.topSection}>
 							<div className={styles.content}>
@@ -187,15 +187,15 @@ const FooterDark = () => {
 							</div>
 							<div className={styles.bottomSide}>
 								<ul>
-									<Link href="#" target="blank">
+									<Link href="/" target="blank">
 										<a>Terms & Conditions</a>
 									</Link>
 									<div> | </div>
-									<Link href="#" target="blank">
+									<Link href="/" target="blank">
 										<a>Privacy Policy</a>
 									</Link>
 									<div> | </div>
-									<Link href="#" target="blank">
+									<Link href="/" target="blank">
 										<a>Accessibility</a>
 									</Link>
 								</ul>

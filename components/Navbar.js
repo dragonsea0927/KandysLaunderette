@@ -6,7 +6,7 @@ const Navbar = () => {
 	return (
 		<>
 			<div className={styles.Navbar}>
-				<div className="container">
+				<div className="container mx-auto">
 					<div className={styles.content}>
 						<div className={styles.topSection}>
 							<ul>
@@ -33,7 +33,7 @@ const Navbar = () => {
 					</div>
 				</div>
 				<div className={styles.borderDivider}></div>
-				<div className="container">
+				<div className="container mx-auto">
 					<div className={styles.content}>
 						<div className={styles.mainSection}>
 							<div className={styles.title}>

@@ -19,7 +19,7 @@ const NavbarTwo = () => {
 	return (
 		<>
 			<div className={styles.NavbarTwo}>
-				<div className="container">
+				<div className="container mx-auto">
 					<div className={styles.content}>
 						<div className={styles.mainSection}>
 							<div className={styles.title}>
@@ -36,7 +36,7 @@ const NavbarTwo = () => {
 						{/* // <========== PAGE TITLE ==========> */}
 						<div className={styles.ourStory}>
 							<div className={styles.pageTitle}>
-								<div className="container">
+								<div className="container mx-auto">
 									<div className={styles.content}>
 										<motion.div variants={fadeInUp} className={styles.title}>
 											<h2>Our Story</h2>

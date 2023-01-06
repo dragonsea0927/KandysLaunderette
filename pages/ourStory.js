@@ -70,7 +70,7 @@ const ourStory = () => {
 					href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
 					integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
 					crossOrigin="anonymous"
-					referrerpolicy="no-referrer"
+					referrerPolicy="no-referrer"
 				/>
 				{/* <!-- Bootstrap CSS --> */}
 				<link
@@ -94,7 +94,7 @@ const ourStory = () => {
 			<div className={styles.ourStoryPage}>
 				{/* // <========== ABOUT US DESCRIPTIONS ==========> */}
 				<div className={styles.aboutUs}>
-					<div className="container">
+					<div className="container mx-auto">
 						<motion.div variants={stagger} className={styles.content}>
 							<motion.h2 variants={fadeInUp}>We may be new to you</motion.h2>
 							<motion.p variants={fadeIn}>
@@ -121,7 +121,7 @@ const ourStory = () => {
 
 				{/* // <========== SUITS & OXFORD DESCRIPTIONS ==========> */}
 				<div className={styles.ourLeader}>
-					<div className="container">
+					<div className="container mx-auto">
 						<motion.div variants={fadeIn} className={styles.gridDisplay}>
 							<Image
 								src="/img/karsten-winegeart-bwDnRf-r4u8-unsplash.jpg"
@@ -159,7 +159,7 @@ const ourStory = () => {
 			<div className={styles.ourStoryPage}>
 				{/* <!--===== OUR COLLECTION =====--> */}
 				<div className={styles.ourCollections}>
-					<div className="container">
+					<div className="container mx-auto">
 						<div className={styles.content}>
 							<motion.div variants={fadeInUp} className={styles.title}>
 								<h2>Our Attention to Detail</h2>

@@ -60,7 +60,7 @@ const businessService = () => {
 						href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
 						integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
 						crossOrigin="anonymous"
-						referrerpolicy="no-referrer"
+						referrerPolicy="no-referrer"
 					/>
 					{/* <!-- Bootstrap CSS --> */}
 					<link
@@ -83,7 +83,7 @@ const businessService = () => {
 
 				{/* // <========== PAGE TITLE ==========> */}
 				<div className={styles.mainContent}>
-					<div className="container">
+					<div className="container mx-auto">
 						<div className={styles.previousButton}>
 							<Link href="/LaundryDryCleaning">
 								<a target="blank">
@@ -288,7 +288,7 @@ const businessService = () => {
 										className={styles.servicesDisplay}
 									>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette">
+											<Link href="/">
 												<a target="blank">
 													<Image
 														src="/img/supersoft_duvet_1_8.jpg"
@@ -300,13 +300,13 @@ const businessService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette">
+												<Link href="/">
 													<a target="blank">Duvet Cleaning</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette">
+											<Link href="/">
 												<a target="blank">
 													<Image
 														src="/img/UK_BuyingGuide_Duvet.webp"
@@ -318,13 +318,13 @@ const businessService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette">
+												<Link href="/">
 													<a target="blank">Bed Linen</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette">
+											<Link href="/">
 												<a target="blank">
 													<Image
 														src="/img/UK_BuyingGuide_Pillows.webp"
@@ -336,13 +336,13 @@ const businessService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette">
+												<Link href="/">
 													<a target="blank">Bed Single Blanket</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette">
+											<Link href="/">
 												<a target="blank">
 													<Image
 														src="/img/Size-Chart-LP_Bed-Linen.webp"
@@ -354,7 +354,7 @@ const businessService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette">
+												<Link href="/">
 													<a target="blank">King & Queen Bed</a>
 												</Link>
 											</div>
@@ -366,7 +366,7 @@ const businessService = () => {
 										className={styles.servicesDisplay}
 									>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette">
+											<Link href="/">
 												<a target="blank">
 													<Image
 														src="/img/491-325s5.jpg"
@@ -379,13 +379,13 @@ const businessService = () => {
 											</Link>
 
 											<div className={styles.header}>
-												<Link href="#launderette">
+												<Link href="/">
 													<a target="blank">Staff Tops & Shirts</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette">
+											<Link href="/">
 												<a target="blank">
 													<Image
 														src="/img/skubb-storage-case-dark-grey__0940614_pe795076_s5.webp"
@@ -398,13 +398,13 @@ const businessService = () => {
 											</Link>
 
 											<div className={styles.header}>
-												<Link href="#launderette">
+												<Link href="/">
 													<a target="blank">Money Pouch Waist Apron</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette">
+											<Link href="/">
 												<a target="blank">
 													<Image
 														src="/img/pants-cleaning.jpg"
@@ -417,13 +417,13 @@ const businessService = () => {
 											</Link>
 
 											<div className={styles.header}>
-												<Link href="#launderette">
+												<Link href="/">
 													<a target="blank">Staff Trousers</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette">
+											<Link href="/">
 												<a target="blank">
 													<Image
 														src="/img/attention-to-detail.webp"
@@ -436,7 +436,7 @@ const businessService = () => {
 											</Link>
 
 											<div className={styles.header}>
-												<Link href="#launderette">
+												<Link href="/">
 													<a target="blank">Waist Coat</a>
 												</Link>
 											</div>
@@ -448,7 +448,7 @@ const businessService = () => {
 										className={styles.servicesDisplay}
 									>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette">
+											<Link href="/">
 												<a target="blank">
 													<Image
 														src="/img/a210e29d04087417d25f542234b19422.jpg"
@@ -461,13 +461,13 @@ const businessService = () => {
 											</Link>
 
 											<div className={styles.header}>
-												<Link href="#launderette">
+												<Link href="/">
 													<a target="blank">Waiters Uniforms Set</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette">
+											<Link href="/">
 												<a target="blank">
 													<Image
 														src="/img/26d4c8388751821fbdea71c0c26f46f0.jpg"
@@ -480,13 +480,13 @@ const businessService = () => {
 											</Link>
 
 											<div className={styles.header}>
-												<Link href="#launderette">
+												<Link href="/">
 													<a target="blank">Kitchen Staff Shirts</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette">
+											<Link href="/">
 												<a target="blank">
 													<Image
 														src="/img/PH165543-crop001.webp"
@@ -499,13 +499,13 @@ const businessService = () => {
 											</Link>
 
 											<div className={styles.header}>
-												<Link href="#launderette">
+												<Link href="/">
 													<a target="blank">Bar Staff Aprons</a>
 												</Link>
 											</div>
 										</motion.div>
 										<motion.div variants={fadeInUp} className={styles.content}>
-											<Link href="#launderette">
+											<Link href="/">
 												<a target="blank">
 													<Image
 														src="/img/Multislider_Barnham_Collection.webp"
@@ -517,7 +517,7 @@ const businessService = () => {
 												</a>
 											</Link>
 											<div className={styles.header}>
-												<Link href="#launderette">
+												<Link href="/">
 													<a target="blank">Kitchen Cloths</a>
 												</Link>
 											</div>

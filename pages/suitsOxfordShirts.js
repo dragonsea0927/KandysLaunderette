@@ -60,7 +60,7 @@ const suitsOxfordShirts = () => {
 					href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
 					integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
 					crossOrigin="anonymous"
-					referrerpolicy="no-referrer"
+					referrerPolicy="no-referrer"
 				/>
 				{/* <!-- Bootstrap CSS --> */}
 				<link
@@ -86,7 +86,7 @@ const suitsOxfordShirts = () => {
 
 			{/* // <========== PAGE TITLE ==========> */}
 			<div className={styles.pageTitle}>
-				<div className="container">
+				<div className="container mx-auto">
 					<div className={styles.content}>
 						<motion.div variants={fadeInUp} className={styles.title}>
 							<h2>Suits & Oxford Shirts</h2>
@@ -98,7 +98,7 @@ const suitsOxfordShirts = () => {
 
 			{/* // <========== SUITS & OXFORD DESCRIPTIONS ==========> */}
 			<div className={styles.suitsOxford}>
-				<div className="container">
+				<div className="container mx-auto">
 					<div className={styles.gridDisplay}>
 						<div className={styles.content}>
 							<Image
@@ -140,7 +140,7 @@ const suitsOxfordShirts = () => {
 
 			{/* <!--===== WEDDING SUITS =====--> */}
 			<div className={styles.weddingSuits}>
-				<div className="container">
+				<div className="container mx-auto">
 					<div className={styles.content}>
 						<motion.div variants={fadeInUp} className={styles.title}>
 							<h2>Wedding Suits</h2>
@@ -199,7 +199,7 @@ const suitsOxfordShirts = () => {
 
 			{/* <!--===== ALTERATIONS & REPAIRS =====--> */}
 			<div className={styles.alterationsRepairs}>
-				<div className="container">
+				<div className="container mx-auto">
 					<div className={styles.content}>
 						<motion.div variants={fadeInUp} className={styles.title}>
 							<h2>Suits Alterations & Repairs</h2>
@@ -208,7 +208,7 @@ const suitsOxfordShirts = () => {
 					</div>
 				</div>
 				<div className={styles.backgroundImage}></div>
-				<div className="container">
+				<div className="container mx-auto">
 					<div className={styles.content}>
 						<div className={styles.gridDisplay}>
 							<div className={styles.alterationsDisplay}>

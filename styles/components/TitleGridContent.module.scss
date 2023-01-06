@@ -1,0 +1,43 @@
+// Imports
+@import "../fonts";
+@import "../colors";
+
+.titleGridContent {
+	padding: 1rem 0;
+	overflow: hidden;
+
+	.content {
+		display: flex;
+		padding: 0 2rem;
+		flex-direction: column;
+
+		.title {
+			padding: 2.5rem 0;
+			text-align: center;
+
+			h2 {
+				color: $baseColor_black;
+				font-size: $fontSize_large-1;
+				font-family: $fontStyle_option1;
+			}
+
+			h5 {
+				margin-top: 1rem;
+				font-weight: 500;
+				color: $baseColor_black;
+				font-size: $fontSize_normal;
+				font-family: $fontStyle_header;
+			}
+		}
+
+		.moreOptions {
+			button {
+				a {
+					color: $baseColor_black;
+					font-size: $fontSize_normal;
+					font-family: $fontStyle_option1;
+				}
+			}
+		}
+	}
+}

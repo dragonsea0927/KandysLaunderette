@@ -68,7 +68,7 @@ const contactUs = () => {
 					href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
 					integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
 					crossOrigin="anonymous"
-					referrerpolicy="no-referrer"
+					referrerPolicy="no-referrer"
 				/>
 				{/* <!-- Bootstrap CSS --> */}
 				<link
@@ -94,7 +94,7 @@ const contactUs = () => {
 
 			{/* // <========== PAGE TITLE ==========> */}
 			<div className={styles.pageTitle}>
-				<div className="container">
+				<div className="container mx-auto">
 					<div className={styles.content}>
 						<motion.div variants={fadeInUp} className={styles.title}>
 							<h2>Contact Us</h2>

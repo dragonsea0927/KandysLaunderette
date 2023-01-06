@@ -1,0 +1,21 @@
+// Imports
+@import "../fonts";
+@import "../colors";
+
+.contactInfoTwo {
+	.button {
+		a {
+			font-weight: 500;
+			padding: 1rem 2.5rem;
+			color: $baseColor_white;
+			font-size: $fontSize_normal;
+			font-family: $fontStyle_header;
+			background-color: $secondary_fadedPink2;
+
+			&:hover {
+				transition: all 0.5s ease-in-out;
+				background-color: $secondary_fadedPink;
+			}
+		}
+	}
+}

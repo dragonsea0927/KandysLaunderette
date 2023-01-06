@@ -1,0 +1,34 @@
+// Imports
+@import "../fonts";
+@import "../colors";
+
+.TitleGridContentTwo {
+	overflow: hidden;
+	background-color: $backgroundColor_black;
+
+	.content {
+		display: flex;
+		padding: 0 2rem;
+		flex-direction: column;
+
+		.title {
+			padding: 2rem 0;
+			text-align: center;
+			padding-top: 5rem;
+
+			h2 {
+				color: $baseColor_white;
+				font-size: $fontSize_large-1;
+				font-family: $fontStyle_option1;
+			}
+
+			h5 {
+				margin-top: 1rem;
+				font-weight: 500;
+				color: $baseColor_white;
+				font-size: $fontSize_normal;
+				font-family: $fontStyle_header;
+			}
+		}
+	}
+}

@@ -215,79 +215,6 @@
 	}
 }
 
-// <========== MAIN SERVICES ==========>
-.services {
-	padding: 1rem 0;
-
-	.content {
-		.title {
-			padding: 2.5rem 0;
-			text-align: center;
-
-			h2 {
-				color: $baseColor_black;
-				font-size: $fontSize_large-1;
-				font-family: $fontStyle_option1;
-			}
-
-			h5 {
-				margin-top: 1rem;
-				color: $baseColor_black;
-				font-size: $fontSize_normal;
-				font-family: $fontStyle_header;
-			}
-		}
-
-		.moreOptions {
-			display: flex;
-			padding: 1rem 0;
-			justify-content: right;
-
-			newButton {
-				a {
-					color: $baseColor_black;
-					font-size: $fontSize_normal;
-					font-family: $fontStyle_option1;
-
-					i {
-						margin: 0 5px;
-					}
-				}
-			}
-		}
-
-		.gridDisplay {
-			display: grid;
-			margin-bottom: 2rem;
-			grid-template-columns: repeat(4, 1fr);
-			grid-column-gap: 1rem;
-			grid-row-gap: 2rem;
-
-			.content {
-				a {
-					img {
-						&:hover {
-							transition: all 1s;
-							transform: scale(1.02);
-						}
-					}
-				}
-
-				.header {
-					text-align: center;
-					padding: 0.5rem 0;
-
-					a {
-						color: $baseColor_black;
-						font-size: $fontSize_normal;
-						font-family: $fontStyle_option1;
-					}
-				}
-			}
-		}
-	}
-}
-
 /* ===== SPECIAL OCCASIONS =====*/
 .specialOccasions {
 	padding: 1rem 0;
@@ -354,69 +281,6 @@
 	}
 }
 
-/* ===== WHY CHOOSE US =====*/
-.whyChooseUs {
-	padding: 1rem 0;
-
-	.content {
-		text-align: center;
-
-		.title {
-			padding: 2.5rem 0;
-
-			h2 {
-				color: $baseColor_black;
-				font-size: $fontSize_large-1;
-				font-family: $fontStyle_option1;
-			}
-
-			h5 {
-				margin-top: 1rem;
-				color: $baseColor_black;
-				font-size: $fontSize_normal;
-				font-family: $fontStyle_header;
-			}
-
-			p {
-				padding: 1rem;
-				margin: 0 auto;
-				margin-top: 2.25rem;
-				color: $baseColor_black;
-				font-size: $fontSize_small;
-				font-family: $fontStyle_header;
-			}
-		}
-
-		.gridDisplay {
-			display: grid;
-			padding: 2rem 0;
-			grid-template-columns: repeat(4, 1fr);
-			grid-column-gap: 1rem;
-
-			.imageDiv {
-				padding: 1rem;
-			}
-
-			.description {
-				margin: auto 0;
-
-				h2 {
-					color: $baseColor_black;
-					font-size: $fontSize_normal;
-					font-family: $fontStyle_option1;
-				}
-
-				p {
-					margin-top: 1.5rem;
-					color: $baseColor_black;
-					font-size: $fontSize_xSmall;
-					font-family: $fontStyle_header;
-				}
-			}
-		}
-	}
-}
-
 /* ===== HOTEL & RESTAURANT =====*/
 .hotelAndRestaurant {
 	background-color: $backgroundColor_black;
@@ -474,15 +338,6 @@
 .backgroundImageDivider {
 	height: 25rem;
 	background: url("/img/david-barnes-dry-cleaners-laundry-ipswich-road-cardiff.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-// <!--===== Contact US Background Image Divider =====-->
-.backgroundImageContactUs {
-	height: 25rem;
-	background: url("/img/00_FCG-Hero.webp");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1584,7 +1439,7 @@
 			.button {
 				margin-top: 1.25rem;
 
-				newButton {
+				button {
 					padding: 1rem;
 					background-color: $backgroundColor_White;
 
@@ -1861,7 +1716,7 @@
 				margin: 1rem 0;
 				padding: 1rem 0rem;
 
-				newButton {
+				button {
 					a {
 						font-size: $fontSize_small;
 						font-family: $fontStyle_body;

@@ -7,7 +7,7 @@ const Footer = () => {
 		<div>
 			{/* <!--===== FOOTER =====--> */}
 			<footer className={styles.footer}>
-				<div className="container">
+				<div className="container mx-auto">
 					<div className={styles.content}>
 						<div className={styles.topSection}>
 							<div className={styles.content}>
@@ -36,27 +36,27 @@ const Footer = () => {
 									</button>
 								</div>
 								<div className={styles.socialLinks}>
-									<Link href="#" target="blank">
+									<Link href="/" target="blank">
 										<a>
 											<i className="bi bi-facebook"></i>
 										</a>
 									</Link>
-									<Link href="#" target="blank">
+									<Link href="/" target="blank">
 										<a>
 											<i className="bi bi-instagram"></i>
 										</a>
 									</Link>
-									<Link href="#" target="blank">
+									<Link href="/" target="blank">
 										<a>
 											<i className="bi bi-twitter"></i>
 										</a>
 									</Link>
-									<Link href="#" target="blank">
+									<Link href="/" target="blank">
 										<a>
 											<i className="bi bi-whatsapp"></i>
 										</a>
 									</Link>
-									<Link href="#" target="blank">
+									<Link href="/" target="blank">
 										<a>
 											<i className="bi bi-google"></i>
 										</a>
@@ -177,15 +177,15 @@ const Footer = () => {
 							</div>
 							<div className={styles.bottomSide}>
 								<ul>
-									<Link href="#" target="blank">
+									<Link href="/" target="blank">
 										<a>Terms & Conditions</a>
 									</Link>
 									<div className={styles.bottomSectionSideDividers}> | </div>
-									<Link href="#" target="blank">
+									<Link href="/" target="blank">
 										<a>Privacy Policy</a>
 									</Link>
 									<div className={styles.bottomSectionSideDividers}> | </div>
-									<Link href="#" target="blank">
+									<Link href="/" target="blank">
 										<a>Accessibility</a>
 									</Link>
 								</ul>
