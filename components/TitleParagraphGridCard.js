@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import {motion} from "framer-motion";
+import DOMPurify from "isomorphic-dompurify";
 import {fadeIn, fadeInUp} from "../animations/animations";
 import styles from "../styles/components/TitleParagraphGridContent.module.scss";
 
@@ -60,19 +61,15 @@ const TitleParagraphGridCard = (props) => {
 					>
 						{props?.title}
 					</h2>
-					<p
+					<div
+						className={isParagraphContent(props?.paragraph)}
 						style={{
 							padding: "1rem",
 							margin: "0 auto",
 							fontSize: "0.8rem",
 						}}
-					>
-						{props?.paragraph}
-					</p>
-					{/* <div
-						className={isParagraphContent(props?.paragraph)}
 						dangerouslySetInnerHTML={createParagraphMarkup()}
-					/> */}
+					/>
 				</motion.div>
 			</div>
 		</>

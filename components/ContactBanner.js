@@ -1,5 +1,6 @@
 import Link from "next/link";
 import {motion} from "framer-motion";
+import DOMPurify from "isomorphic-dompurify";
 import {fadeIn} from "../animations/animations";
 import styles from "../styles/components/ContactBanner.module.scss";
 
@@ -10,10 +11,10 @@ const ContactBanner = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full w-[45rem] mt-4 text-left text-white font-[500] text-base";
+				"hidden w-full xl:w-[45rem] mt-4 text-left text-white font-[500] text-base";
 		} else {
 			contentStyling =
-				"block w-full w-[45rem] mt-4 text-left text-white font-[500] text-base";
+				"block w-full xl:w-[45rem] mt-4 text-left text-white font-[500] text-base";
 		}
 		return contentStyling;
 	}
@@ -36,54 +37,27 @@ const ContactBanner = (props) => {
 				}}
 			>
 				<div className="container mx-auto">
-					<div
-						className={styles.content}
-						style={{
-							gap: "5rem",
-							display: "flex",
-							padding: "5rem 2rem",
-							alignItems: "center",
-							justifyContent: "space-between",
-						}}
-					>
-						<div className="flex flex-col">
-							<h2
-								className="text-white text-center text-2xl"
-								style={{
-									color: "#ffffff",
-									fontSize: "1.75rem",
-									textAlign: "center",
-								}}
-							>
+					<div className="flex flex-col lg:flex-row py-8 gap-10 px-8 justify-between items-center">
+						<div className="flex flex-col gap-4 justify-between items-center">
+							<h2 className="text-left text-white text-2xl md:text-4xl">
 								{props?.title}
 							</h2>
-							<p
-								className="w-full w-[45rem] mt-4 text-left text-white font-[500] text-base"
-								style={{
-									width: "45rem",
-									fontSize: "1rem",
-									textAlign: "left",
-								}}
-							>
-								{props?.paragraph}
-							</p>
-							{/* <div
+							<div
 								className={isParagraphContent(props?.paragraph)}
 								dangerouslySetInnerHTML={createParagraphMarkup()}
-							/> */}
+							/>
 						</div>
-						<motion.div
+						<motion.button
 							variants={fadeIn}
-							className={styles.contactBannerButton}
+							className="text-center text-base text-white outline-none tracking-[0.1rem] py-4 px-8 uppercase border-2 border-pink border-solid hover:ease-in-out hover:duration-[0.5s] hover:bg-fadedPink"
 						>
 							<Link
-								className="border-2 border-pink border-solid outline-none p-4 tracking-[0.1rem] text-center text-tiny text-white bg-transparent uppercase"
 								href={`${props?.buttonLink?.url}`}
 								target={`${props?.buttonLink?.target}`}
 							>
 								{props?.buttonLink?.title}
 							</Link>
-						</motion.div>
+						</motion.button>
 					</div>
 				</div>
 			</div>

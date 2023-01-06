@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 // Imports
 @import "./colors";
 
@@ -11,12 +15,12 @@ body {
 }
 
 body::-webkit-scrollbar {
-	width: 0.5rem;
-	height: 0.5rem;
+	width: 0.75rem;
+	height: 0.75rem;
 }
 
 body::-webkit-scrollbar-track {
-	background: $backgroundColor_black;
+	background: $baseColor_black;
 }
 
 body::-webkit-scrollbar-thumb {

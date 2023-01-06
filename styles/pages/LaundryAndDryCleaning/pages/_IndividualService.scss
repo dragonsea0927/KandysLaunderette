@@ -9,7 +9,7 @@
 		}
 
 		a:hover {
-			color: $baseColor_lightGrey3;
+			color: $baseColor_lightGrey;
 		}
 	}
 
@@ -19,9 +19,8 @@
 			margin-top: 2.5rem;
 
 			h2 {
-				text-align: center;
 				color: $baseColor_black;
-				font-size: $fontSize_large-1;
+				font-size: $fontSize_4XL;
 				font-family: $fontStyle_option1;
 			}
 
@@ -91,7 +90,6 @@
 
 					.content {
 						.header {
-							text-align: center;
 							padding: 0.5rem 0;
 
 							a {

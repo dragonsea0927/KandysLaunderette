@@ -33,13 +33,10 @@ module.exports = {
 			lightGrey: "#fafafa",
 
 			// Main colors
-			blue: "#053972",
-			darkblue: "#042c56",
-			yellow: "#FDA730",
-			darkYellow: "#e69601",
-			orange: "#f56a00",
-			green: "#5ea975",
-			marron: "#cd5972",
+			pink: "#ee87f7",
+			fadedPink: "#ff8fb4",
+			fadedPinkTwo: "#fcbfd4",
+			fadedPinkThree: "#f2739d",
 		},
 	},
 	plugins: [],

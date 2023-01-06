@@ -13,11 +13,10 @@
 	.content {
 		.title {
 			padding: 2.5rem 0;
-			text-align: center;
 
 			h2 {
 				color: $baseColor_black;
-				font-size: $fontSize_large-1;
+				font-size: $fontSize_4XL;
 				font-family: $fontStyle_option1;
 			}
 
@@ -39,8 +38,6 @@
 		grid-template-columns: repeat(2, 1fr);
 
 		.content {
-			text-align: center;
-
 			.description {
 				padding: 0 2.5rem;
 				margin-top: 2rem;
@@ -48,7 +45,7 @@
 
 				h2 {
 					color: $baseColor_black;
-					font-size: $fontSize_large-0;
+					font-size: $fontSize_2XL;
 					font-family: $fontStyle_option1;
 				}
 
@@ -67,17 +64,16 @@
 // <========== WEDDING SUITS ==========>
 .weddingSuits {
 	padding: 1rem 0;
-	background-color: $baseColor_lightGrey1;
+	background-color: $baseColor_lightGrey;
 
 	.content {
 		.title {
 			margin: 2rem 0;
 			padding: 2.5rem 0;
-			text-align: center;
 
 			h2 {
 				color: $baseColor_black;
-				font-size: $fontSize_large-1;
+				font-size: $fontSize_4XL;
 				font-family: $fontStyle_option1;
 			}
 
@@ -101,7 +97,7 @@
 
 					h2 {
 						color: $baseColor_black;
-						font-size: $fontSize_large-1;
+						font-size: $fontSize_4XL;
 						font-family: $fontStyle_option1;
 					}
 
@@ -129,7 +125,7 @@
 
 					h2 {
 						color: $baseColor_black;
-						font-size: $fontSize_large-1;
+						font-size: $fontSize_4XL;
 						font-family: $fontStyle_option1;
 					}
 
@@ -148,16 +144,15 @@
 // <========== ALTERATIONS & REPAIRS ==========>
 .alterationsRepairs {
 	padding: 2.5rem 0;
-	background-color: $backgroundColor_black;
+	background-color: $baseColor_black;
 
 	.content {
 		.title {
 			padding: 5rem 0;
-			text-align: center;
 
 			h2 {
 				color: $baseColor_white;
-				font-size: $fontSize_large-1;
+				font-size: $fontSize_4XL;
 				font-family: $fontStyle_option1;
 			}
 
@@ -183,7 +178,7 @@
 
 					h2 {
 						color: $baseColor_white;
-						font-size: $fontSize_large-1;
+						font-size: $fontSize_4XL;
 						font-family: $fontStyle_option1;
 					}
 
@@ -210,7 +205,7 @@
 
 					h2 {
 						color: $baseColor_white;
-						font-size: $fontSize_large-1;
+						font-size: $fontSize_4XL;
 						font-family: $fontStyle_option1;
 					}
 

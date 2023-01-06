@@ -13,11 +13,10 @@
 	.content {
 		.title {
 			padding: 2.5rem 0;
-			text-align: center;
 
 			h2 {
 				color: $baseColor_black;
-				font-size: $fontSize_large-1;
+				font-size: $fontSize_4XL;
 				font-family: $fontStyle_option1;
 			}
 
@@ -68,7 +67,7 @@
 						width: fit-content;
 						padding: 0.5rem 2rem;
 						border-radius: 50px;
-						background-color: $backgroundColor_White;
+						background-color: $baseColor_white;
 
 						a {
 							text-decoration: none;
@@ -78,7 +77,7 @@
 						}
 
 						a:hover {
-							color: $baseColor_lightGrey3;
+							color: $baseColor_lightGrey;
 						}
 					}
 				}

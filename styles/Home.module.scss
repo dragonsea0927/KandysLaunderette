@@ -34,7 +34,7 @@
 				a,
 				h2 {
 					margin: auto 0;
-					color: $baseColor_lightGrey4;
+					color: $baseColor_lightGrey;
 					font-size: $fontSize_xSmall;
 					font-family: $fontStyle_header;
 				}
@@ -71,7 +71,7 @@
 				}
 
 				a:hover {
-					color: $secondary_pinkRed;
+					color: $secondary_fadedPink;
 				}
 			}
 
@@ -85,7 +85,7 @@
 				a {
 					padding: 0 10px;
 					margin: auto 0;
-					color: $baseColor_lightGrey4;
+					color: $baseColor_lightGrey;
 					font-size: $fontSize_xSmall;
 					font-family: $fontStyle_header;
 				}
@@ -99,7 +99,7 @@
 
 	.borderDivider {
 		margin: 0.5rem 0;
-		border-bottom: $baseColor_lightGrey2 0.015rem solid;
+		border-bottom: $baseColor_lightGrey 0.015rem solid;
 	}
 }
 
@@ -118,12 +118,11 @@
 		justify-content: center;
 
 		.title {
-			text-align: center;
 			padding: 1.5rem 2rem;
 
 			h2 {
 				color: $baseColor_white;
-				font-size: $fontSize_XL-large;
+				font-size: $fontSize_6XL;
 				font-family: $fontStyle_option1;
 			}
 
@@ -158,7 +157,7 @@
 
 			h2 {
 				margin-bottom: 1rem;
-				font-size: $fontSize_large-0;
+				font-size: $fontSize_2XL;
 				font-family: $fontStyle_option1;
 			}
 
@@ -218,16 +217,15 @@
 /* ===== SPECIAL OCCASIONS =====*/
 .specialOccasions {
 	padding: 1rem 0;
-	background-color: $baseColor_lightGrey1;
+	background-color: $baseColor_lightGrey;
 
 	.content {
 		.title {
-			text-align: center;
 			padding: 2.5rem 0;
 
 			h2 {
 				color: $baseColor_black;
-				font-size: $fontSize_large-1;
+				font-size: $fontSize_4XL;
 				font-family: $fontStyle_option1;
 			}
 
@@ -262,7 +260,7 @@
 						width: fit-content;
 						padding: 0.5rem 2rem;
 						border-radius: 50px;
-						background-color: $backgroundColor_White;
+						background-color: $baseColor_white;
 
 						a {
 							text-decoration: none;
@@ -272,7 +270,7 @@
 						}
 
 						a:hover {
-							color: $baseColor_lightGrey3;
+							color: $baseColor_lightGrey;
 						}
 					}
 				}
@@ -283,17 +281,17 @@
 
 /* ===== HOTEL & RESTAURANT =====*/
 .hotelAndRestaurant {
-	background-color: $backgroundColor_black;
+	background-color: $baseColor_black;
 
 	.content {
 		.title {
 			padding: 2rem 0;
-			text-align: center;
+
 			padding-top: 5rem;
 
 			h2 {
 				color: $baseColor_white;
-				font-size: $fontSize_large-1;
+				font-size: $fontSize_4XL;
 				font-family: $fontStyle_option1;
 			}
 
@@ -346,12 +344,11 @@
 /* ===== OUT STORE LOCATION =====*/
 .storeLocation {
 	.title {
-		text-align: center;
 		padding: 2.5rem 0;
 
 		h2 {
 			color: $baseColor_black;
-			font-size: $fontSize_large-1;
+			font-size: $fontSize_4XL;
 			font-family: $fontStyle_option1;
 		}
 
@@ -371,7 +368,7 @@
 .footer {
 	margin-top: 5rem;
 	padding: 1rem 0;
-	border-top: $baseColor_lightGrey2 0.015rem solid;
+	border-top: $baseColor_lightGrey 0.015rem solid;
 
 	.content {
 		.topSection {
@@ -434,14 +431,14 @@
 						color: $baseColor_white;
 						font-size: $fontSize_xSmall;
 						font-family: $fontStyle_body;
-						background-color: $backgroundColor_black;
+						background-color: $baseColor_black;
 						border: $baseColor_black 0.015rem solid;
 					}
 
 					button:hover {
 						transition: all 0.2s ease-in-out;
 						color: $baseColor_black;
-						background-color: $backgroundColor_White;
+						background-color: $baseColor_white;
 					}
 				}
 
@@ -471,7 +468,7 @@
 				padding: 1rem 0;
 				grid-template-columns: repeat(4, 1fr);
 				grid-column-gap: 1.75rem;
-				border-top: $baseColor_lightGrey2 0.015rem solid;
+				border-top: $baseColor_lightGrey 0.015rem solid;
 
 				.links {
 					display: flex;
@@ -487,7 +484,7 @@
 					}
 
 					a {
-						color: $baseColor_lightGrey4;
+						color: $baseColor_lightGrey;
 						font-size: $fontSize_xSmall;
 						font-family: $fontStyle_header;
 					}
@@ -501,7 +498,7 @@
 
 		.bottomSection {
 			margin-top: 2rem;
-			border-top: $baseColor_lightGrey2 0.015rem solid;
+			border-top: $baseColor_lightGrey 0.015rem solid;
 
 			.topSide {
 				display: flex;
@@ -511,7 +508,7 @@
 				h2 {
 					padding: 0 10px;
 					margin: auto 0;
-					text-align: center;
+
 					color: $baseColor_black;
 					font-size: $fontSize_xSmall;
 					font-family: $fontStyle_header;
@@ -520,8 +517,8 @@
 
 			.bottomSide {
 				margin-bottom: 1rem;
-				text-align: center;
-				border-top: $baseColor_lightGrey2 0.015rem solid;
+
+				border-top: $baseColor_lightGrey 0.015rem solid;
 
 				ul {
 					display: flex;
@@ -531,7 +528,7 @@
 
 					a {
 						margin: auto 0;
-						color: $baseColor_lightGrey4;
+						color: $baseColor_lightGrey;
 						font-size: $fontSize_xSmall;
 						font-family: $fontStyle_header;
 					}
@@ -543,11 +540,10 @@
 
 				.copyright {
 					margin: 0 auto;
-					text-align: center;
 
 					h5,
 					a {
-						color: $baseColor_lightGrey4;
+						color: $baseColor_lightGrey;
 						font-size: $fontSize_xSmall;
 						font-family: $fontStyle_header;
 					}
@@ -574,7 +570,7 @@
 .footerDark {
 	padding: 1rem 0;
 	padding-top: 5rem;
-	background-color: $backgroundColor_black;
+	background-color: $baseColor_black;
 
 	.content {
 		.topSection {
@@ -598,7 +594,7 @@
 
 					p {
 						margin-top: 1rem;
-						color: $baseColor_lightGrey2;
+						color: $baseColor_lightGrey;
 						font-size: $fontSize_xSmall;
 						font-family: $fontStyle_body;
 					}
@@ -638,14 +634,14 @@
 						color: $baseColor_black;
 						font-size: $fontSize_xSmall;
 						font-family: $fontStyle_body;
-						background-color: $backgroundColor_White;
+						background-color: $baseColor_white;
 						border: $baseColor_white 0.015rem solid;
 					}
 
 					button:hover {
 						transition: all 0.2s ease-in-out;
 						color: $baseColor_white;
-						background-color: $backgroundColor_black;
+						background-color: $baseColor_black;
 					}
 				}
 
@@ -657,7 +653,7 @@
 					justify-content: space-between;
 
 					a {
-						color: $baseColor_lightGrey2;
+						color: $baseColor_lightGrey;
 						text-decoration: none;
 						font-size: $fontSize_medium;
 					}
@@ -675,7 +671,7 @@
 				padding: 1rem 0;
 				grid-template-columns: repeat(4, 1fr);
 				grid-column-gap: 1.75rem;
-				border-top: $baseColor_lightGrey4 0.015rem solid;
+				border-top: $baseColor_lightGrey 0.015rem solid;
 
 				.links {
 					display: flex;
@@ -691,13 +687,13 @@
 					}
 
 					a {
-						color: $baseColor_lightGrey2;
+						color: $baseColor_lightGrey;
 						font-size: $fontSize_xSmall;
 						font-family: $fontStyle_header;
 					}
 
 					a:hover {
-						color: $baseColor_lightGrey4;
+						color: $baseColor_lightGrey;
 					}
 				}
 			}
@@ -705,7 +701,7 @@
 
 		.bottomSection {
 			margin-top: 2rem;
-			border-top: $baseColor_lightGrey4 0.015rem solid;
+			border-top: $baseColor_lightGrey 0.015rem solid;
 
 			.topSide {
 				display: flex;
@@ -715,7 +711,7 @@
 				h2 {
 					padding: 0 10px;
 					margin: auto 0;
-					text-align: center;
+
 					color: $baseColor_white;
 					font-size: $fontSize_xSmall;
 					font-family: $fontStyle_header;
@@ -724,8 +720,8 @@
 
 			.bottomSide {
 				margin-bottom: 1rem;
-				text-align: center;
-				border-top: $baseColor_lightGrey4 0.015rem solid;
+
+				border-top: $baseColor_lightGrey 0.015rem solid;
 
 				ul {
 					display: flex;
@@ -735,23 +731,22 @@
 
 					a {
 						margin: auto 0;
-						color: $baseColor_lightGrey2;
+						color: $baseColor_lightGrey;
 						font-size: $fontSize_xSmall;
 						font-family: $fontStyle_header;
 					}
 
 					a:hover {
-						color: $baseColor_lightGrey4;
+						color: $baseColor_lightGrey;
 					}
 				}
 
 				.copyright {
 					margin: 0 auto;
-					text-align: center;
 
 					h5,
 					a {
-						color: $baseColor_lightGrey2;
+						color: $baseColor_lightGrey;
 						font-size: $fontSize_xSmall;
 						font-family: $fontStyle_header;
 					}
@@ -767,2045 +762,6 @@
 								text-decoration: underline;
 							}
 						}
-					}
-				}
-			}
-		}
-	}
-}
-
-/* Screen (1024px) */
-@media screen and (max-width: 1024px) {
-	// <========== SUITS & OXFORD PAGE ==========>
-	.suitsOxford {
-		.gridDisplay {
-			padding: 0 1rem;
-			grid-column-gap: 1rem;
-
-			.content {
-				.description {
-					p {
-						font-size: $fontSize_small;
-					}
-				}
-			}
-		}
-	}
-
-	// <========== WEDDING SUITS ==========>
-	.weddingSuits {
-		.content {
-			.title {
-				h2 {
-					font-size: $fontSize_large-1;
-				}
-
-				h5 {
-					font-size: $fontSize_small;
-				}
-			}
-
-			.gridDisplay {
-				.innerContent {
-					.description {
-						h2 {
-							font-size: $fontSize_large;
-						}
-
-						p {
-							font-size: $fontSize_small;
-						}
-					}
-				}
-			}
-
-			.groomsmenDisplay {
-				.innerContent {
-					.description {
-						h2 {
-							font-size: $fontSize_large;
-						}
-
-						p {
-							font-size: $fontSize_small;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	// <========== ALTERATIONS & REPAIRS ==========>
-	.alterationsRepairs {
-		border: none;
-		.content {
-			border: none;
-			.title {
-				h2 {
-					font-size: $fontSize_large-1;
-				}
-
-				h5 {
-					font-size: $fontSize_small;
-				}
-			}
-
-			.gridDisplay {
-				.alterationsDisplay {
-					.description {
-						h2 {
-							font-size: $fontSize_large;
-						}
-
-						p {
-							font-size: $fontSize_small;
-						}
-					}
-				}
-			}
-
-			.repairsDisplay {
-				.innerContent {
-					.description {
-						h2 {
-							font-size: $fontSize_large;
-						}
-
-						p {
-							font-size: $fontSize_small;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	// <========== FOOTER ==========>
-	.footer,
-	.footerDark {
-		.content {
-			.topSection {
-				.content {
-					display: flex;
-					padding: 1.5rem 1rem;
-					flex-direction: column;
-					grid-column-gap: 0rem;
-					grid-row-gap: 2rem;
-					border-top: $baseColor_lightGrey2 0.015rem solid;
-
-					.emailSignUp {
-						text-align: center;
-						padding: 1rem 0.5rem;
-
-						h2 {
-							font-size: $fontSize_medium;
-						}
-
-						p {
-							font-size: $fontSize_normal;
-						}
-					}
-
-					.signUp {
-						margin: 0 auto;
-
-						input {
-							width: 375px;
-							padding: 0.5rem;
-							padding-top: 0.75rem;
-							font-size: $fontSize_normal;
-						}
-
-						::placeholder,
-						::-ms-input-placeholder {
-							font-size: $fontSize_normal;
-						}
-
-						button {
-							width: 150px;
-							padding: 1rem;
-							font-size: $fontSize_small;
-						}
-					}
-
-					.socialLinks {
-						margin: 0 auto;
-
-						a {
-							padding: 0 25px;
-							font-size: $fontSize_large;
-						}
-					}
-				}
-			}
-
-			.middleSection {
-				.content {
-					display: grid;
-					padding: 1rem 0;
-					grid-template-columns: repeat(2, 1fr);
-					grid-column-gap: 1.75rem;
-					grid-row-gap: 4rem;
-					border-top: $baseColor_lightGrey2 0.015rem solid;
-
-					.links {
-						display: flex;
-						margin-top: 1rem;
-						padding: 0 1.5rem;
-						flex-direction: column;
-						grid-row-gap: 1.5rem;
-
-						a,
-						h2 {
-							font-size: $fontSize_small;
-						}
-					}
-				}
-			}
-
-			.bottomSection {
-				.topSide {
-					margin: 1rem 0;
-
-					h2 {
-						font-size: $fontSize_small;
-					}
-				}
-
-				.bottomSide {
-					margin: 1rem 0;
-
-					ul {
-						margin: 1rem 0;
-
-						a {
-							font-size: $fontSize_small;
-						}
-					}
-
-					.copyright {
-						margin: 1rem auto;
-
-						h5 {
-							font-size: $fontSize_small;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	.footerDark {
-		.content {
-			.topSection {
-				margin: 2.5rem 0;
-
-				.content {
-					border-top: none;
-				}
-			}
-
-			.middleSection {
-				.content {
-					border-top: $baseColor_lightGrey4 0.015rem solid;
-				}
-			}
-		}
-	}
-}
-
-/* Screen (768px) */
-@media screen and (max-width: 768px) {
-	// <================================================>
-	// <================================================>
-	// <================================================>
-	// <========== COMPONENTS STYLING ==========>
-
-	// <========== NAVIGATION (NAVBAR) ==========>
-	.Navbar {
-		border-bottom: none;
-	}
-
-	// <========== CONTACT US BANNER ==========>
-	.contactBanner {
-		.content {
-			display: flex;
-			padding: 5rem 1rem;
-			grid-row-gap: 2.5rem;
-			flex-direction: column;
-			grid-column-gap: 0rem;
-		}
-	}
-
-	// <========== SUITS & OXFORD PAGE ==========>
-	.suitsOxford {
-		.gridDisplay {
-			padding: 0 1rem;
-			grid-column-gap: 1rem;
-
-			.content {
-				.description {
-					p {
-						font-size: $fontSize_small;
-					}
-				}
-			}
-		}
-	}
-
-	// <========== WEDDING SUITS ==========>
-	.weddingSuits {
-		.content {
-			.title {
-				h2 {
-					font-size: $fontSize_large-1;
-				}
-
-				h5 {
-					font-size: $fontSize_small;
-				}
-			}
-
-			.gridDisplay {
-				.innerContent {
-					.description {
-						h2 {
-							font-size: $fontSize_large;
-						}
-
-						p {
-							font-size: $fontSize_small;
-						}
-					}
-				}
-			}
-
-			.groomsmenDisplay {
-				.innerContent {
-					.description {
-						h2 {
-							font-size: $fontSize_large;
-						}
-
-						p {
-							font-size: $fontSize_small;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	// <========== ALTERATIONS & REPAIRS ==========>
-	.alterationsRepairs {
-		border: none;
-		.content {
-			border: none;
-			.title {
-				h2 {
-					font-size: $fontSize_large-1;
-				}
-
-				h5 {
-					font-size: $fontSize_small;
-				}
-			}
-
-			.gridDisplay {
-				.alterationsDisplay {
-					.description {
-						h2 {
-							font-size: $fontSize_large;
-						}
-
-						p {
-							font-size: $fontSize_small;
-						}
-					}
-				}
-			}
-
-			.repairsDisplay {
-				.innerContent {
-					.description {
-						h2 {
-							font-size: $fontSize_large;
-						}
-
-						p {
-							font-size: $fontSize_small;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	// <========== FOOTER ==========>
-	.footer,
-	.footerDark {
-		.content {
-			.topSection {
-				.content {
-					display: flex;
-					padding: 1.5rem 1rem;
-					flex-direction: column;
-					grid-column-gap: 0rem;
-					grid-row-gap: 2rem;
-					border-top: $baseColor_lightGrey2 0.015rem solid;
-
-					.emailSignUp {
-						text-align: center;
-						padding: 1rem 0.5rem;
-
-						h2 {
-							font-size: $fontSize_medium;
-						}
-
-						p {
-							font-size: $fontSize_normal;
-						}
-					}
-
-					.signUp {
-						margin: 0 auto;
-
-						input {
-							width: 375px;
-							padding: 0.5rem;
-							padding-top: 0.75rem;
-							font-size: $fontSize_normal;
-						}
-
-						::placeholder,
-						::-ms-input-placeholder {
-							font-size: $fontSize_normal;
-						}
-
-						button {
-							width: 150px;
-							padding: 1rem;
-							font-size: $fontSize_small;
-						}
-					}
-
-					.socialLinks {
-						margin: 0 auto;
-
-						a {
-							padding: 0 25px;
-							font-size: $fontSize_large;
-						}
-					}
-				}
-			}
-
-			.middleSection {
-				.content {
-					display: grid;
-					padding: 1rem 0;
-					grid-template-columns: repeat(2, 1fr);
-					grid-column-gap: 1.75rem;
-					grid-row-gap: 4rem;
-					border-top: $baseColor_lightGrey2 0.015rem solid;
-
-					.links {
-						display: flex;
-						margin-top: 1rem;
-						padding: 0 1.5rem;
-						flex-direction: column;
-						grid-row-gap: 1.5rem;
-
-						a,
-						h2 {
-							font-size: $fontSize_small;
-						}
-					}
-				}
-			}
-
-			.bottomSection {
-				.topSide {
-					margin: 1rem 0;
-
-					h2 {
-						font-size: $fontSize_small;
-					}
-				}
-
-				.bottomSide {
-					margin: 1rem 0;
-
-					ul {
-						margin: 1rem 0;
-
-						a {
-							font-size: $fontSize_small;
-						}
-					}
-
-					.copyright {
-						margin: 1rem auto;
-
-						h5 {
-							font-size: $fontSize_small;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	.footerDark {
-		.content {
-			.topSection {
-				margin: 2.5rem 0;
-
-				.content {
-					border-top: none;
-				}
-			}
-			.middleSection {
-				.content {
-					border-top: $baseColor_lightGrey4 0.015rem solid;
-				}
-			}
-		}
-	}
-}
-
-/* Screen (640px) */
-@media screen and (max-width: 640px) {
-	// <================================================>
-	// <================================================>
-	// <================================================>
-	// <========== COMPONENTS STYLING ==========>
-
-	// <========== NAVIGATION (NAVBAR) ==========>
-	.Navbar {
-		.content {
-			.topSection {
-				ul {
-					display: none;
-				}
-			}
-
-			.mainSection {
-				margin: 0.5rem 0;
-				ul {
-					display: none;
-				}
-			}
-		}
-
-		.borderDivider {
-			display: none;
-		}
-	}
-
-	// <========== PAGE TITLE ==========>
-	.pageTitle {
-		.content {
-			.title {
-				h2 {
-					margin-top: 2.5rem;
-					font-size: $fontSize_normal;
-				}
-
-				h5 {
-					margin-top: 2.25rem;
-					font-size: $fontSize_normal;
-					font-family: $fontStyle_body;
-				}
-			}
-		}
-	}
-
-	// <========== OUR PROCESS ==========>
-	.ourProcess {
-		padding: 0;
-		.content {
-			padding: 0 0.5rem;
-
-			.title {
-				h2 {
-					font-size: $fontSize_large;
-				}
-
-				h5 {
-					margin-top: 1rem;
-					font-size: $fontSize_normal;
-					font-family: $fontStyle_body;
-				}
-			}
-
-			.gridDisplay {
-				grid-template-columns: 1fr;
-
-				.column {
-					.description {
-						margin: 2rem 0;
-						padding: 1rem 0.5rem;
-
-						h2 {
-							font-size: $fontSize_large;
-						}
-
-						p {
-							font-size: $fontSize_normal;
-							font-family: $fontStyle_body;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	// <========== INFORMATION SECTION ==========>
-	.contactInfo,
-	.ContactInfoTwo {
-		.content {
-			.title {
-				display: flex;
-				flex-direction: column;
-
-				h2 {
-					font-size: $fontSize_medium;
-				}
-
-				a {
-					margin-top: 0.5rem;
-					font-size: $fontSize_small;
-				}
-
-				h5 {
-					margin-top: 0.5rem;
-					font-size: $fontSize_small;
-				}
-			}
-		}
-	}
-
-	/* ===== OUT STORE LOCATION =====*/
-	.storeLocation {
-		.title {
-			margin-top: 2rem;
-			text-align: center;
-			padding: 0.5rem 0;
-
-			h2 {
-				font-size: $fontSize_large;
-			}
-
-			h5 {
-				margin-top: 1rem;
-				font-size: $fontSize_normal;
-				font-family: $fontStyle_body;
-			}
-		}
-
-		.storeMap {
-		}
-	}
-
-	// <========== INFORMATION SECTION ==========>
-	.backgroundImageLaundryDryCleaning,
-	.backgroundImageContactInfoWDAB {
-		.content {
-			display: flex;
-			text-align: center;
-			flex-direction: column;
-			grid-row-gap: 1rem;
-
-			.title {
-				display: flex;
-				flex-direction: column;
-
-				h2 {
-					font-size: $fontSize_normal;
-				}
-
-				a {
-					font-size: $fontSize_small;
-					font-family: $fontStyle_body;
-				}
-
-				h5 {
-					font-size: $fontSize_small;
-					font-family: $fontStyle_body;
-				}
-			}
-
-			.button {
-				margin-top: 1.25rem;
-
-				button {
-					padding: 1rem;
-					background-color: $backgroundColor_White;
-
-					a {
-						font-size: $fontSize_xSmall;
-						font-family: $fontStyle_header;
-					}
-				}
-			}
-		}
-	}
-
-	.backgroundImageLaundryDryCleaning {
-		background: url("/img/426140s3.jpg");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-	}
-
-	.backgroundImageContactInfoWDAB {
-		background: url("/img/karsten-winegeart-ewyfpgYchcc-unsplash.jpg");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-	}
-
-	// <========== FOOTER ==========>
-	.footer,
-	.footerDark {
-		padding: 0 1rem;
-
-		.content {
-			.topSection {
-				margin: 1.5rem 0;
-
-				.content {
-					display: flex;
-					padding: 1.5rem 0rem;
-					flex-direction: column;
-					grid-column-gap: 0rem;
-					grid-row-gap: 2rem;
-
-					.emailSignUp {
-						text-align: center;
-						padding: 1rem 0.5rem;
-
-						h2 {
-							font-weight: 100;
-							font-size: $fontSize_large;
-							font-family: $fontStyle_option1;
-						}
-
-						p {
-							margin-top: 1rem;
-							font-size: $fontSize_normal;
-							font-family: $fontStyle_body;
-						}
-					}
-
-					.signUp {
-						margin: 1rem auto;
-
-						input {
-							width: fit-content;
-							padding: 0.75rem;
-							padding-top: 1rem;
-							font-size: $fontSize_normal;
-							font-family: $fontStyle_body;
-						}
-
-						::placeholder,
-						::-ms-input-placeholder {
-							font-size: $fontSize_normal;
-							font-family: $fontStyle_body;
-							color: $baseColor_black;
-						}
-
-						button {
-							width: fit-content;
-							padding: 0.5rem 1rem;
-							font-size: $fontSize_small;
-							font-family: $fontStyle_body;
-						}
-					}
-
-					.socialLinks {
-						padding: 0;
-						margin: 0 auto;
-
-						a {
-							padding: 0 25px;
-							font-size: $fontSize_large;
-						}
-					}
-				}
-			}
-
-			.middleSection {
-				.content {
-					display: grid;
-					padding: 1rem 0;
-					grid-template-columns: 1fr;
-					grid-column-gap: 1.75rem;
-					grid-row-gap: 1rem;
-					border-top: $baseColor_lightGrey2 0.015rem solid;
-
-					.links {
-						margin-top: 1rem;
-						padding: 0 0.5rem;
-						grid-row-gap: 0.75rem;
-
-						h2 {
-							font-weight: 100;
-							margin: 1rem 0;
-							font-size: $fontSize_normal;
-							font-family: $fontStyle_option1;
-						}
-
-						a {
-							font-size: $fontSize_small;
-							font-family: $fontStyle_body;
-						}
-					}
-				}
-			}
-
-			.bottomSection {
-				.topSide {
-					margin: 0.5rem 0;
-
-					.Image {
-						width: 100%;
-						height: 50px;
-					}
-
-					h2 {
-						font-size: $fontSize_small;
-						font-family: $fontStyle_body;
-					}
-				}
-
-				.bottomSide {
-					margin: 0;
-					padding: 1rem;
-					padding-bottom: 2rem;
-
-					ul {
-						margin: 1rem 0;
-
-						a {
-							font-size: $fontSize_xSmall;
-							font-family: $fontStyle_body;
-						}
-
-						.bottomSectionSideDividers {
-							font-size: $fontSize_xSmall;
-							font-family: $fontStyle_body;
-						}
-					}
-
-					.copyright {
-						margin: 1rem auto;
-						margin-bottom: 0;
-
-						h5,
-						a {
-							font-size: $fontSize_xSmall;
-							font-family: $fontStyle_body;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	.footerDark {
-		.content {
-			.topSection {
-				margin: 0;
-
-				.content {
-					border-top: none;
-
-					.emailSignUp {
-						h2 {
-							color: $baseColor_white;
-						}
-
-						p {
-							color: $baseColor_lightGrey2;
-						}
-					}
-				}
-			}
-
-			.middleSection {
-				.content {
-					border-top: $baseColor_lightGrey4 0.015rem solid;
-				}
-			}
-		}
-	}
-
-	// <================================================>
-	// <================================================>
-	// <================================================>
-	// <========== MAIN PAGES STYLING ==========>
-
-	// <===============================>
-	// <========== HOME PAGE ==========>
-
-	// <========== HERO ==========>
-	.backgroundImage {
-		height: 30rem;
-		background: url("/img/pluring-clothes-cover-set-of-3-transparent-white__0938432_ph158482_s5.webp");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-
-		.content {
-			.title {
-				margin-bottom: 2.5rem;
-				text-align: center;
-				padding: 0.5rem 1rem;
-
-				h2 {
-					font-size: $fontSize_large-0;
-				}
-
-				h5 {
-					font-size: $fontSize_normal;
-				}
-			}
-		}
-	}
-
-	// <========== MAIN SERVICES ==========>
-	.introSection {
-		padding: 2.5rem 1rem;
-		padding-bottom: 4rem;
-
-		.content {
-			display: flex;
-			flex-direction: column;
-
-			.description {
-				padding: 2.5rem 0rem;
-				p {
-					width: fit-content;
-				}
-			}
-		}
-	}
-
-	// <========== MAIN SERVICES ==========>
-	.services {
-		.content {
-			.title {
-				padding: 1rem 0;
-				text-align: center;
-
-				h2 {
-					font-size: $fontSize_large;
-				}
-
-				h5 {
-					margin-top: 1rem;
-					font-size: $fontSize_normal;
-					font-family: $fontStyle_body;
-				}
-			}
-
-			.moreOptions {
-				margin: 1rem 0;
-				padding: 1rem 0rem;
-
-				button {
-					a {
-						font-size: $fontSize_small;
-						font-family: $fontStyle_body;
-
-						i {
-							margin: 0 10px;
-						}
-					}
-				}
-			}
-
-			.gridDisplay {
-				display: grid;
-				padding: 0rem;
-				margin-bottom: 2rem;
-				grid-template-columns: repeat(2, 1fr);
-				grid-row-gap: 1.75rem;
-				grid-column-gap: 0.5rem;
-
-				.content {
-					.header {
-						padding: 0;
-						margin-top: 1rem;
-
-						a {
-							font-size: $fontSize_small;
-							font-family: $fontStyle_option1;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	/* ===== SPECIAL OCCASIONS =====*/
-	.specialOccasions {
-		padding: 0;
-
-		.content {
-			.title {
-				margin: 1rem 0;
-
-				h2 {
-					font-size: $fontSize_large;
-				}
-
-				h5 {
-					margin-top: 1rem;
-					font-size: $fontSize_normal;
-					font-family: $fontStyle_body;
-				}
-			}
-
-			.innerContent {
-				display: grid;
-				margin-top: 0.5rem;
-				grid-template-columns: repeat(2, 1fr);
-				grid-column-gap: 1rem;
-
-				.productDisplay {
-					.content {
-						left: -40px;
-						bottom: 35px;
-
-						h2 {
-							display: none;
-						}
-
-						.shopButton {
-							border-radius: 10px;
-							padding: 0.25rem 0.75rem;
-							background-color: transparent;
-
-							a {
-								color: $baseColor_white;
-								font-size: $fontSize_xSmall;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
-	/* ===== WHY CHOOSE US =====*/
-	.whyChooseUs {
-		padding: 0;
-
-		.content {
-			.title {
-				margin: 1rem 0;
-				padding: 2rem 0;
-
-				h2 {
-					font-size: $fontSize_large;
-				}
-
-				h5 {
-					margin-top: 1.5rem;
-					font-size: $fontSize_normal;
-					font-family: $fontStyle_body;
-				}
-
-				p {
-					padding: 0.5rem;
-					width: fit-content;
-					margin-top: 0.75rem;
-					font-size: $fontSize_normal;
-					font-family: $fontStyle_body;
-				}
-			}
-
-			.gridDisplay {
-				display: flex;
-				margin: 1.5rem 0;
-				padding: 1rem 0;
-				flex-direction: column;
-				grid-column-gap: 0.5rem;
-
-				.description {
-					padding-right: 0rem;
-
-					h2 {
-						font-weight: 100;
-						font-size: $fontSize_normal;
-					}
-
-					p {
-						font-size: $fontSize_small;
-						font-family: $fontStyle_body;
-					}
-				}
-			}
-		}
-	}
-
-	/* ===== HOTEL & RESTAURANT =====*/
-	.hotelAndRestaurant {
-		padding: 0;
-
-		.content {
-			.title {
-				margin: 2rem 0;
-
-				h2 {
-					font-size: $fontSize_large;
-				}
-
-				h5 {
-					margin-top: 1.25rem;
-					font-size: $fontSize_normal;
-					font-family: $fontStyle_body;
-				}
-			}
-
-			.gridDisplay {
-				display: grid;
-				padding: 2rem 0.5rem;
-				grid-template-columns: repeat(2, 1fr);
-				grid-row-gap: 1.5rem;
-
-				.content {
-					.header {
-						margin: 1.25rem 0;
-						a {
-							font-size: $fontSize_small;
-							font-family: $fontStyle_option1;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	// <!--===== Background Image Divider =====-->
-	.backgroundImageDivider {
-		height: 27rem;
-		background: url("/img/nimble-made-m2z2wJ1XX6Q-unsplash.jpg");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-	}
-
-	// <=================================================>
-	// <========== LAUNDRY & DRY CLEANING PAGE ==========>
-	// <========== BACKGROUND IMAGE ==========>
-	.backgroundImageOne {
-		height: 25rem;
-		align-items: center;
-		background: url("/img/nimble-made-N0ke5zChVBU-unsplash.jpg");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-	}
-
-	// <========== PAGE TITLE ==========>
-	.pageTitle {
-		.content {
-			.title {
-				padding: 2.5rem 0;
-
-				h2 {
-					font-size: $fontSize_large;
-				}
-
-				h5 {
-					margin-top: 0.85rem;
-					font-size: $fontSize_normal;
-				}
-			}
-		}
-	}
-
-	// <========== OPTIONS ==========>
-	.options {
-		.content {
-			.title {
-				padding: 1rem 0;
-				margin: 1rem 0;
-
-				h2 {
-					font-size: $fontSize_medium;
-				}
-
-				h5 {
-					margin-top: 1rem;
-					font-size: $fontSize_small;
-					font-family: $fontStyle_body;
-				}
-			}
-
-			.innerContent {
-				display: grid;
-				padding: 0rem;
-				grid-template-columns: 1fr;
-				grid-column-gap: 1rem;
-				grid-row-gap: 0rem;
-
-				.productDisplay {
-					.content {
-						left: -55px;
-						bottom: 40px;
-
-						.shopButton {
-							width: fit-content;
-							background-color: transparent;
-
-							a {
-								color: $baseColor_white;
-								font-size: $fontSize_small;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
-	// <========== INDIVIDUAL & BUSINESS PAGES ==========>
-	// <========== PAGE TITLE ==========>
-	.mainContent {
-		.previousButton {
-			padding: 0.5rem 1rem;
-
-			a {
-				font-size: $fontSize_normal;
-			}
-		}
-
-		.content {
-			padding: 0 0.25rem;
-
-			.title {
-				padding: 1rem 0;
-				margin-top: 2.5rem;
-
-				h2 {
-					font-size: $fontSize_large;
-				}
-
-				p {
-					margin-top: 2rem;
-					padding: 0 0.25rem;
-					text-align: center;
-					font-size: $fontSize_normal;
-					font-family: $fontStyle_body;
-				}
-			}
-
-			.subtitle {
-				margin-top: 2rem;
-				padding: 1rem 0;
-
-				h2 {
-					text-align: left;
-					font-weight: 500;
-					font-size: $fontSize_normal;
-					font-family: $fontStyle_option1;
-				}
-			}
-
-			.innerContent {
-				display: grid;
-				margin-top: 1rem;
-				grid-template-columns: 30% 70%;
-				grid-column-gap: 1rem;
-
-				.servicesList {
-					.List {
-						h2 {
-							font-size: $fontSize_normal;
-							font-family: $fontStyle_option1;
-						}
-
-						ul {
-							display: flex;
-							padding: 0rem;
-							flex-direction: column;
-
-							a {
-								padding: 10px 0;
-								font-size: $fontSize_normal;
-								font-family: $fontStyle_body;
-							}
-						}
-					}
-				}
-
-				.servicesDisplays {
-					.servicesDisplay {
-						display: grid;
-						height: fit-content;
-						margin-bottom: 2rem;
-						grid-template-columns: repeat(2, 1fr);
-						grid-column-gap: 0.5rem;
-						grid-row-gap: 1.5rem;
-
-						.content {
-							padding: 0;
-							.header {
-								a {
-									font-size: $fontSize_normal;
-								}
-							}
-						}
-					}
-
-					.ImageDivider,
-					.ImageDividerTwo,
-					.ImageDividerThree {
-						height: 15rem;
-					}
-				}
-			}
-		}
-	}
-
-	// <=========================================>
-	// <========== SUITS & OXFORD PAGE ==========>
-	.suitsOxford {
-		.gridDisplay {
-			padding: 1rem 0;
-			margin-top: 2.5rem;
-			grid-template-columns: repeat(1, 1fr);
-			grid-column-gap: 1rem;
-
-			.content {
-				.description {
-					padding: 0 0.5rem;
-
-					h2 {
-						font-size: $fontSize_large;
-					}
-
-					p {
-						margin-top: 2rem;
-						font-size: $fontSize_normal;
-						font-family: $fontStyle_body;
-					}
-				}
-			}
-		}
-	}
-
-	// <========== WEDDING SUITS ==========>
-	.weddingSuits {
-		.content {
-			padding: 0rem;
-
-			.title {
-				margin: 2rem 0;
-				padding: 0.5rem 0;
-
-				h2 {
-					font-size: $fontSize_large;
-				}
-
-				h5 {
-					margin-top: 1.25rem;
-					font-size: $fontSize_normal;
-					font-family: $fontStyle_body;
-				}
-			}
-
-			.gridDisplay {
-				padding: 2.5rem 0;
-
-				.innerContent {
-					grid-template-columns: repeat(1, 1fr);
-					grid-column-gap: 1rem;
-
-					.description {
-						padding: 0rem;
-
-						h2 {
-							text-align: center;
-							margin-top: 2.5rem;
-							font-size: $fontSize_large;
-						}
-
-						p {
-							padding: 0 1rem;
-							font-size: $fontSize_normal;
-							font-family: $fontStyle_body;
-						}
-					}
-				}
-			}
-
-			.groomsmenDisplay {
-				margin-top: 0rem;
-				padding: 2.5rem 0;
-
-				.innerContent {
-					grid-template-columns: repeat(1, 1fr);
-					grid-column-gap: 1rem;
-
-					.description {
-						padding: 0 0.5rem;
-						h2 {
-							text-align: center;
-							font-size: $fontSize_large;
-						}
-
-						p {
-							margin-top: 2.5rem;
-							font-size: $fontSize_normal;
-							font-family: $fontStyle_body;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	// <===========================================>
-	// <========== ALTERATIONS & REPAIRS ==========>
-	.alterationsRepairs {
-		margin: 0rem;
-		padding: 2.5rem 1rem;
-		background-color: $backgroundColor_black;
-
-		.content {
-			padding: 0rem;
-
-			.title {
-				padding: 3rem 0;
-				text-align: center;
-
-				h2 {
-					font-size: $fontSize_large;
-				}
-
-				h5 {
-					color: $baseColor_lightGrey2;
-					font-size: $fontSize_normal;
-					font-family: $fontStyle_body;
-				}
-			}
-
-			.gridDisplay {
-				margin-top: 2.5rem;
-				padding: 2.5rem 0;
-
-				.alterationsDisplay {
-					display: grid;
-					grid-template-columns: repeat(1, 1fr);
-					grid-column-gap: 2rem;
-
-					.description {
-						margin: auto 0;
-						padding: 0 0.5rem;
-
-						h2 {
-							text-align: center;
-							margin-top: 2.5rem;
-							font-size: $fontSize_large;
-						}
-
-						p {
-							margin-top: 1.5rem;
-							color: $baseColor_lightGrey2;
-							font-size: $fontSize_normal;
-							font-family: $fontStyle_body;
-						}
-					}
-				}
-			}
-
-			.repairsDisplay {
-				margin-top: 0rem;
-				padding: 2.5rem 0;
-
-				.innerContent {
-					display: grid;
-					grid-template-columns: repeat(1, 1fr);
-					grid-column-gap: 1rem;
-
-					.description {
-						h2 {
-							text-align: center;
-							margin-top: 2.5rem;
-							font-size: $fontSize_large;
-						}
-
-						p {
-							margin-top: 1.5rem;
-							color: $baseColor_lightGrey2;
-							font-size: $fontSize_normal;
-							font-family: $fontStyle_body;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	// <=======================================================>
-	// <========== WEDDING DRESSES & BRIDESMAID PAGE ==========>
-	// <========== WEDDING DRESS ==========>
-	// <========== BACKGROUND IMAGE ==========>
-	.backgroundImageWeddingDressesBridal {
-		height: 25rem;
-		background: url("/img/nathan-walker-C0j_IxemcLo-unsplash.jpg");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-	}
-
-	.weddingDress {
-		padding: 0rem;
-
-		.gridDisplay {
-			margin-top: 5rem;
-			grid-template-columns: 1fr;
-
-			.Image {
-				margin: 0 auto;
-			}
-
-			.description {
-				margin-top: 2.5rem;
-				padding: 0 0.5rem;
-
-				h2 {
-					text-align: center;
-					font-size: $fontSize_large;
-				}
-
-				p {
-					margin-top: 2rem;
-					padding: 0 0.5rem;
-					font-size: $fontSize_normal;
-					font-family: $fontStyle_body;
-				}
-			}
-		}
-	}
-
-	// <========== BRIDESMAID DRESS ==========>
-	.BridesmaidDress {
-		background-color: $baseColor_lightGrey1;
-
-		.content {
-			padding: 0rem;
-
-			.innerContent {
-				grid-template-columns: 1fr;
-
-				.Image,
-				.description {
-					margin: auto 0;
-				}
-
-				.description {
-					padding: 0 0.5rem;
-
-					h2 {
-						text-align: center;
-						font-size: $fontSize_large;
-					}
-
-					p {
-						margin-top: 2rem;
-						font-size: $fontSize_normal;
-						font-family: $fontStyle_body;
-					}
-				}
-			}
-		}
-	}
-
-	// <========== ALTERATIONS & REPAIR PAGE ==========>
-	// <========== BACKGROUND IMAGE ==========>
-	.backgroundImageAlterationsRepairs {
-		height: 25rem;
-		align-items: center;
-		background: url("/img/rombo-fcLOmr-gRkY-unsplash.jpg");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-	}
-
-	.alterationsRepairsSection {
-		// <========== PAGE TITLE ==========>
-		.pageTitle {
-			padding: 0 1rem;
-			margin: 2rem 0;
-
-			.content {
-				.title {
-					padding: 1.5rem 0;
-					text-align: center;
-
-					h2 {
-						font-size: $fontSize_large;
-					}
-
-					h5 {
-						margin-top: 1.25rem;
-						font-size: $fontSize_normal;
-						font-family: $fontStyle_body;
-					}
-				}
-			}
-		}
-
-		// <========== ABOUT US ==========>
-		.aboutUs {
-			margin-top: 0rem;
-			padding: 2rem 0rem;
-			background-color: $baseColor_lightGrey1;
-
-			.content {
-				padding: 1.5rem 0rem;
-				text-align: center;
-
-				h2 {
-					font-size: $fontSize_large;
-				}
-
-				p {
-					text-align: left;
-					padding: 0 0.5rem;
-					width: fit-content;
-					font-size: $fontSize_normal;
-					font-family: $fontStyle_body;
-				}
-			}
-		}
-
-		// <========== WEDDING SUITS ==========>
-		.suitsBridal {
-			padding: 1rem 0;
-			background-color: $backgroundColor_White;
-
-			.content {
-				.title {
-					margin: 2rem 0;
-					padding: 1.5rem 0;
-
-					h2 {
-						font-size: $fontSize_large;
-					}
-
-					h5 {
-						font-size: $fontSize_normal;
-						font-family: $fontStyle_body;
-					}
-				}
-
-				.gridDisplay {
-					padding: 1rem 0;
-
-					.innerContent {
-						grid-template-columns: repeat(1, 1fr);
-
-						.description {
-							margin: auto 0;
-							padding: 2rem 0.5rem;
-
-							h2 {
-								text-align: center;
-								font-size: $fontSize_large;
-							}
-
-							p {
-								padding: 0 0.5rem;
-								margin-top: 2rem;
-								font-size: $fontSize_normal;
-								font-family: $fontStyle_body;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
-	// <====================================>
-	// <========== OUR STORY PAGE ==========>
-	.ourStoryPage {
-		// <========== BACKGROUND TOP SECTION IMAGE ==========>
-		.backgroundTopCover {
-			height: 30rem;
-			background: url("/img/PH172191.webp");
-			background-size: cover;
-			background-position: center;
-			background-repeat: no-repeat;
-
-			// <========== NAVIGATION PINK ==========>
-			.NavbarTwo {
-				padding: 1.5rem 0;
-
-				.content {
-					.mainSection {
-						.title {
-							a {
-								font-size: $fontSize_small;
-							}
-						}
-
-						ul {
-							a {
-								font-size: $fontSize_small;
-							}
-						}
-					}
-				}
-			}
-
-			// <========== OUR STORY ==========>
-			.ourStory {
-				.pageTitle {
-					padding: 2.5rem 0;
-
-					.content {
-						.title {
-							h2 {
-								font-size: $fontSize_large-1;
-							}
-
-							h5 {
-								margin-top: 1rem;
-								font-size: $fontSize_normal;
-							}
-						}
-					}
-				}
-			}
-		}
-
-		// <========== ABOUT US ==========>
-		.aboutUs {
-			margin-top: 2rem;
-
-			.content {
-				padding: 2.5rem 0;
-				text-align: center;
-
-				h2 {
-					font-size: $fontSize_large;
-				}
-
-				p {
-					text-align: left;
-					padding: 0 0.5rem;
-					width: fit-content;
-					font-size: $fontSize_normal;
-				}
-			}
-		}
-
-		// <========== OUR LEADER ==========>
-		.ourLeader {
-			.gridDisplay {
-				display: grid;
-				margin: 0 auto;
-				padding: 1rem 0.5rem;
-				margin-top: 2rem;
-				grid-template-columns: repeat(2, 1fr);
-				grid-column-gap: 0.5rem;
-			}
-
-			.content {
-				margin-top: 2rem;
-				text-align: center;
-
-				.description {
-					padding: 0 0.5rem;
-					margin-top: 2rem;
-					margin-bottom: 5rem;
-
-					h2 {
-						font-size: $fontSize_large;
-					}
-
-					p {
-						text-align: left;
-						margin-top: 2.5rem;
-						font-size: $fontSize_normal;
-					}
-				}
-			}
-		}
-
-		// <========== OUR COLLECTION ==========>
-		.ourCollections {
-			padding: 1rem 0;
-			background-color: $baseColor_lightGrey1;
-
-			.content {
-				.title {
-					margin: 2rem 0;
-					padding: 2.5rem 0;
-					text-align: center;
-
-					h2 {
-						font-size: $fontSize_large;
-					}
-
-					h5 {
-						margin-top: 1.5rem;
-						font-size: $fontSize_normal;
-					}
-				}
-
-				.gridDisplay {
-					padding: 0;
-
-					.innerContent {
-						grid-template-columns: repeat(1, 1fr);
-						grid-column-gap: 1rem;
-
-						.description {
-							margin: 2.5rem 0;
-							padding: 0 0.5rem;
-
-							h2 {
-								font-size: $fontSize_large;
-							}
-
-							p {
-								margin-top: 1.25rem;
-								font-size: $fontSize_normal;
-							}
-						}
-					}
-				}
-
-				.gridDisplayTwo {
-					padding: 0;
-					margin-top: 0rem;
-
-					.innerContent {
-						display: grid;
-						grid-template-columns: repeat(1, 1fr);
-						grid-column-gap: 1rem;
-
-						.description {
-							margin: auto 0;
-							padding: 0 0.5rem;
-
-							h2 {
-								font-size: $fontSize_large;
-							}
-
-							p {
-								margin-top: 1rem;
-								font-size: $fontSize_normal;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-	// <========== BACKGROUND TOP SECTION IMAGE ==========>
-	.backgroundTopCover {
-		// <========== NAVIGATION PINK ==========>
-		.NavbarTwo {
-			.content {
-				.mainSection {
-					padding: 0 2rem;
-					.title {
-						a {
-							font-size: $fontSize_normal;
-						}
-					}
-
-					ul {
-						a {
-							font-size: $fontSize_normal;
-							font-family: $fontStyle_body;
-						}
-					}
-				}
-			}
-		}
-
-		// <========== OUR STORY ==========>
-		.ourStory {
-			.pageTitle {
-				.content {
-					.title {
-						h2 {
-							font-size: $fontSize_normal;
-							font-family: $fontStyle_option1;
-						}
-
-						h5 {
-							margin-top: 1rem;
-							font-size: $fontSize_normal;
-							font-family: $fontStyle_body;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	// <========== ABOUT US ==========>
-	.aboutUs {
-		.content {
-			h2 {
-				font-size: $fontSize_normal;
-			}
-
-			p {
-				font-size: $fontSize_normal;
-				font-family: $fontStyle_body;
-			}
-		}
-	}
-
-	// <========== OUR LEADER ==========>
-	.ourLeader {
-		.gridDisplay {
-		}
-
-		.content {
-			.description {
-				h2 {
-					font-size: $fontSize_normal;
-				}
-
-				p {
-					font-size: $fontSize_normal;
-					font-family: $fontStyle_body;
-				}
-			}
-		}
-	}
-
-	// <========== OUR COLLECTION ==========>
-	.ourCollections {
-		.content {
-			.title {
-				h2 {
-					font-size: $fontSize_normal;
-				}
-
-				h5 {
-					font-size: $fontSize_normal;
-					font-family: $fontStyle_body;
-				}
-			}
-
-			.gridDisplay {
-				padding: 0 1rem;
-
-				.innerContent {
-					grid-template-columns: 1fr;
-
-					.Image {
-						margin: 0 auto;
-					}
-
-					.description {
-						margin-top: 5rem;
-						h2 {
-							font-size: $fontSize_normal;
-						}
-
-						p {
-							margin-top: 2.5rem;
-							font-size: $fontSize_normal;
-							font-family: $fontStyle_body;
-						}
-					}
-				}
-			}
-
-			.gridDisplayTwo {
-				padding: 0 1rem;
-
-				.innerContent {
-					grid-template-columns: 1fr;
-
-					.Image {
-						margin: 0 auto;
-					}
-
-					.description {
-						margin-top: 5rem;
-
-						h2 {
-							font-size: $fontSize_normal;
-						}
-
-						p {
-							margin-top: 2.5rem;
-							font-size: $fontSize_normal;
-							font-family: $fontStyle_body;
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-/* Screen (430px) */
-@media screen and (max-width: 430px) {
-}
-
-/* Screen (375px) */
-@media screen and (max-width: 375px) {
-	// <========== FOOTER ==========>
-	.footer,
-	.footerDark {
-		.content {
-			.topSection {
-				.content {
-					.socialLinks {
-						a {
-							padding: 0 20px;
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-/* Screen (320px) */
-@media screen and (max-width: 320px) {
-	// <========== FOOTER ==========>
-	.footer,
-	.footerDark {
-		.content {
-			.topSection {
-				.content {
-					.socialLinks {
-						a {
-							padding: 0 15px;
-						}
-					}
-				}
-			}
-
-			.bottomSection {
-				.topSide {
-					display: flex;
-					padding: 1rem 0.25rem;
-					justify-content: center;
-
-					h2 {
-						padding: 0 5px;
 					}
 				}
 			}

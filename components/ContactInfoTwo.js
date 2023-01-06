@@ -11,8 +11,7 @@ const ContactInfoTwo = (props) => {
 			<div
 				className={styles.contactInfoTwo}
 				style={{
-					height: "50vh",
-					padding: "2rem 5rem",
+					padding: "7.5rem 5rem",
 					backgroundSize: "cover",
 					backgroundPosition: "center",
 					backgroundRepeat: "no-repeat",
@@ -57,7 +56,7 @@ const ContactInfoTwo = (props) => {
 								<Link
 									href={`mailto:${props?.themesOptions?.email}`}
 									target="blank"
-									className="flex flex-row justify-center items-center gap-2 text-white text-base text-center"
+									className="flex flex-row justify-center items-center gap-2 text-white text-base text-center hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]"
 								>
 									{props?.themesOptions?.email}
 								</Link>

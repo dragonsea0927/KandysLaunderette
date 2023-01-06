@@ -1,65 +1,65 @@
 // <========== CONTACT US BANNER ==========>
-.contactBanner {
-	background: url("/img/david-barnes-dry-cleaners-laundry-ipswich-road-cardiff.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+// .contactBanner {
+// 	background: url("/img/david-barnes-dry-cleaners-laundry-ipswich-road-cardiff.jpg");
+// 	background-size: cover;
+// 	background-position: center;
+// 	background-repeat: no-repeat;
 
-	h2,
-	p,
-	a {
-		text-align: left;
-		color: $baseColor_white;
-	}
+// 	h2,
+// 	p,
+// 	a {
+// 		text-align: left;
+// 		color: $baseColor_white;
+// 	}
 
-	h2 {
-		font-size: $fontSize_large-0;
-		font-family: $fontStyle_option1;
-	}
+// 	h2 {
+// 		font-size: $fontSize_2XL;
+// 		font-family: $fontStyle_option1;
+// 	}
 
-	a,
-	p {
-		margin: 0.5rem 0;
-		font-size: $fontSize_small;
-		font-family: $fontStyle_body;
-	}
+// 	a,
+// 	p {
+// 		margin: 0.5rem 0;
+// 		font-size: $fontSize_small;
+// 		font-family: $fontStyle_body;
+// 	}
 
-	.content {
-		display: flex;
-		padding: 5rem 2rem;
-		align-items: center;
-		justify-content: space-between;
-		grid-column-gap: 5rem;
+// 	.content {
+// 		display: flex;
+// 		padding: 5rem 2rem;
+// 		align-items: center;
+// 		justify-content: space-between;
+// 		grid-column-gap: 5rem;
 
-		.text {
-			display: flex;
-			padding: 0 2rem;
-			flex-direction: column;
-			grid-row-gap: 1rem;
-		}
+// 		.text {
+// 			display: flex;
+// 			padding: 0 2rem;
+// 			flex-direction: column;
+// 			grid-row-gap: 1rem;
+// 		}
 
-		.contactBannerButton {
-			a {
-				button {
-					width: 12.5rem;
-					border: none;
-					outline: none;
-					padding: 1rem 0;
-					letter-spacing: 0.1rem;
-					color: $baseColor_white;
-					background: transparent;
-					text-transform: uppercase;
-					font-size: $fontSize_small;
-					border: $secondary_fadedPink 0.1rem solid;
+// 		.contactBannerButton {
+// 			a {
+// 				button {
+// 					width: 12.5rem;
+// 					border: none;
+// 					outline: none;
+// 					padding: 1rem 0;
+// 					letter-spacing: 0.1rem;
+// 					color: $baseColor_white;
+// 					background: transparent;
+// 					text-transform: uppercase;
+// 					font-size: $fontSize_small;
+// 					border: $secondary_fadedPink 0.1rem solid;
 
-					&:hover {
-						border: none;
-						padding: 1rem;
-						transition: all 0.5s;
-						background-color: $secondary_fadedPink;
-					}
-				}
-			}
-		}
-	}
-}
+// 					&:hover {
+// 						border: none;
+// 						padding: 1rem;
+// 						transition: all 0.5s;
+// 						background-color: $secondary_fadedPink;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }

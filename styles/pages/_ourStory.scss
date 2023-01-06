@@ -57,7 +57,7 @@
 
 		.borderDivider {
 			margin: 0.5rem 0;
-			border-bottom: $baseColor_lightGrey2 0.015rem solid;
+			border-bottom: $baseColor_lightGrey 0.015rem solid;
 		}
 	}
 
@@ -69,11 +69,10 @@
 			.content {
 				.title {
 					padding: 2.5rem 0;
-					text-align: center;
 
 					h2 {
 						color: $baseColor_white;
-						font-size: $fontSize_large-1;
+						font-size: $fontSize_4XL;
 						font-family: $fontStyle_option1;
 					}
 
@@ -95,11 +94,10 @@
 
 	.content {
 		padding: 2.5rem 0;
-		text-align: center;
 
 		h2 {
 			color: $baseColor_black;
-			font-size: $fontSize_large-1;
+			font-size: $fontSize_4XL;
 			font-family: $fontStyle_option1;
 		}
 
@@ -131,7 +129,6 @@
 
 	.content {
 		margin-top: 5rem;
-		text-align: center;
 
 		.description {
 			padding: 0 2.5rem;
@@ -140,7 +137,7 @@
 
 			h2 {
 				color: $baseColor_black;
-				font-size: $fontSize_large-0;
+				font-size: $fontSize_2XL;
 				font-family: $fontStyle_option1;
 			}
 
@@ -158,17 +155,16 @@
 // <========== OUR COLLECTION ==========>
 .ourCollections {
 	padding: 1rem 0;
-	background-color: $baseColor_lightGrey1;
+	background-color: $baseColor_lightGrey;
 
 	.content {
 		.title {
 			margin: 2rem 0;
 			padding: 2.5rem 0;
-			text-align: center;
 
 			h2 {
 				color: $baseColor_black;
-				font-size: $fontSize_large-1;
+				font-size: $fontSize_4XL;
 				font-family: $fontStyle_option1;
 			}
 
@@ -192,7 +188,7 @@
 
 					h2 {
 						color: $baseColor_black;
-						font-size: $fontSize_large-1;
+						font-size: $fontSize_4XL;
 						font-family: $fontStyle_option1;
 					}
 
@@ -220,7 +216,7 @@
 
 					h2 {
 						color: $baseColor_black;
-						font-size: $fontSize_large-1;
+						font-size: $fontSize_4XL;
 						font-family: $fontStyle_option1;
 					}
 

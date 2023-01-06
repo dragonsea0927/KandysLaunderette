@@ -1,4 +1,5 @@
 import {motion} from "framer-motion";
+import DOMPurify from "isomorphic-dompurify";
 import SingleCardTwo from "/components/SingleCardTwo";
 import {fadeInUp, stagger} from "../animations/animations";
 import styles from "../styles/components/TitleGridContentTwo.module.scss";
@@ -28,13 +29,10 @@ const TitleGridContentTwo = (props) => {
 				<div className={styles.content}>
 					<motion.div variants={fadeInUp} className={styles.title}>
 						<h2 className="text-white text-xl">{props?.title}</h2>
-						<h5 className="mt-4 text-white font-[500] text-base">
-							{props?.paragraph}
-						</h5>
-						{/* <div
-								className={isParagraphContent(props?.paragraph)}
-								dangerouslySetInnerHTML={createParagraphMarkup()}
-							/> */}
+						<div
+							className={isParagraphContent(props?.paragraph)}
+							dangerouslySetInnerHTML={createParagraphMarkup()}
+						/>
 					</motion.div>
 					<motion.div
 						variants={stagger}

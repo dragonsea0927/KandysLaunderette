@@ -61,165 +61,168 @@ export default function Home({homePageContent, themesOptionsContent}) {
 					href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
 				/>
 			</Head>
-			{/* <!--===== HERO =====--> */}
-			<div className={styles.backgroundImage}>
-				<div className="container mx-auto">
-					<div className={styles.content}>
-						<motion.div variants={fadeInUp} className={styles.title}>
-							<h2>Kandys Launderette</h2>
-							<h5>Professional Dry Cleaning Specialist</h5>
-						</motion.div>
-					</div>
-				</div>
-			</div>
-			{/* <!--===== MAIN SERVICES =====--> */}
-			<div className={styles.introSection}>
-				<div className="container mx-auto">
-					<div className={styles.content}>
-						<motion.div variants={fadeInUp} className={styles.description}>
-							<h5>About Kandys Launderette</h5>
-							<h2>Get to know us a little</h2>
-							<p>
-								Over 2 years ago, Kandys had a vision: to create a company that
-								specialized in Professional Dry Cleaning Solutions, combining
-								the highest quality with affordable prices.
-							</p>
-							<p>
-								We are a family run business centrally based in Northampton,
-								Northamptonshire, offering marquee hire and event management
-								services in Northamptonshire, Leicestershire, Buckinghamshire,
-								Bedfordshire, Cambridgeshire, Hertfordshire, Oxfordshire,
-								Rutland, Warwickshire, London, the home counties, Birmingham and
-								the whole midlands area.
-							</p>
-							<motion.div
-								variants={fadeIn}
-								className={styles.contactBannerButton}
-							>
-								<Link href="/">
-									<a>
-										<button>
-											<strong>Our Story</strong>
-										</button>
-									</a>
-								</Link>
+
+			<main>
+				{/* <!--===== HERO =====--> */}
+				<div className={styles.backgroundImage}>
+					<div className="container mx-auto">
+						<div className={styles.content}>
+							<motion.div variants={fadeInUp} className={styles.title}>
+								<h2>Kandys Launderette</h2>
+								<h5>Professional Dry Cleaning Specialist</h5>
 							</motion.div>
-						</motion.div>
-						<motion.div variants={fadeIn} className={styles.image}>
-							<Image
-								src="/img/karsten-winegeart-Q7iB4Yixcfw-unsplash.jpg"
-								alt="Product Image"
-								width={400}
-								height={400}
-								objectFit="cover"
-							></Image>
-						</motion.div>
+						</div>
 					</div>
 				</div>
-			</div>
-			{/* <!--===== MAIN SERVICES =====--> */}
-			<TitleGridContent
-				title={homePageContent?.ourServices?.title}
-				paragraph={homePageContent?.ourServices?.paragraph}
-				gridContent={homePageContent?.ourServices?.grid}
-			/>
-			{/* <!--===== SPECIAL OCCASIONS =====--> */}
-			<div className={styles.specialOccasions}>
-				<div className="container mx-auto">
-					<div className={styles.content}>
-						<motion.div variants={fadeInUp} className={styles.title}>
-							<h2>Special Occasions</h2>
-							<h5>Remove the stress from your special day</h5>
-						</motion.div>
-						<div className={styles.innerContent}>
-							<div className={styles.productDisplay}>
-								<Link href="/suitsOxfordShirts">
-									<a target="blank">
-										<Image
-											src="/img/2f7f5644b96ce5f477f1522efa614d32.jpg"
-											alt="Product Image"
-											width={300}
-											height={400}
-											layout="responsive"
-											objectFit="cover"
-										/>
-									</a>
-								</Link>
-								<motion.div variants={stagger} className={styles.content}>
-									<motion.h2 variants={fadeInUp}>
-										Dress & Dinner Suits, Oxford Shirts
-									</motion.h2>
-									<button className={styles.shopButton}>
-										<Link href="/suitsOxfordShirts">
-											<a target="blank">More Info</a>
-										</Link>
-									</button>
+				{/* <!--===== MAIN SERVICES =====--> */}
+				<div className={styles.introSection}>
+					<div className="container mx-auto">
+						<div className={styles.content}>
+							<motion.div variants={fadeInUp} className={styles.description}>
+								<h5>About Kandys Launderette</h5>
+								<h2>Get to know us a little</h2>
+								<p>
+									Over 2 years ago, Kandys had a vision: to create a company
+									that specialized in Professional Dry Cleaning Solutions,
+									combining the highest quality with affordable prices.
+								</p>
+								<p>
+									We are a family run business centrally based in Northampton,
+									Northamptonshire, offering marquee hire and event management
+									services in Northamptonshire, Leicestershire, Buckinghamshire,
+									Bedfordshire, Cambridgeshire, Hertfordshire, Oxfordshire,
+									Rutland, Warwickshire, London, the home counties, Birmingham
+									and the whole midlands area.
+								</p>
+								<motion.div
+									variants={fadeIn}
+									className={styles.contactBannerButton}
+								>
+									<Link href="/">
+										<a>
+											<button>
+												<strong>Our Story</strong>
+											</button>
+										</a>
+									</Link>
 								</motion.div>
-							</div>
-							<div className={styles.productDisplay}>
-								<Link href="/WeddingDressesBridal">
-									<a target="blank">
-										<Image
-											src="/img/2dadbbf0777ed8a16b24ccde6a6f90dd.jpg"
-											alt="Product Image"
-											width={300}
-											height={400}
-											layout="responsive"
-											objectFit="cover"
-										/>
-									</a>
-								</Link>
-								<motion.div variants={stagger} className={styles.content}>
-									<motion.h2 variants={fadeInUp}>
-										Wedding, Bridesmaids & Evening Dresses
-									</motion.h2>
-									<button className={styles.shopButton}>
-										<Link href="/WeddingDressesBridal">
-											<a target="blank">More Info</a>
-										</Link>
-									</button>
-								</motion.div>
+							</motion.div>
+							<motion.div variants={fadeIn} className={styles.image}>
+								<Image
+									src="/img/karsten-winegeart-Q7iB4Yixcfw-unsplash.jpg"
+									alt="Product Image"
+									width={400}
+									height={400}
+									objectFit="cover"
+								></Image>
+							</motion.div>
+						</div>
+					</div>
+				</div>
+				{/* <!--===== MAIN SERVICES =====--> */}
+				<TitleGridContent
+					title={homePageContent?.ourServices?.title}
+					paragraph={homePageContent?.ourServices?.paragraph}
+					gridContent={homePageContent?.ourServices?.gridContent}
+				/>
+				{/* <!--===== SPECIAL OCCASIONS =====--> */}
+				<div className={styles.specialOccasions}>
+					<div className="container mx-auto">
+						<div className={styles.content}>
+							<motion.div variants={fadeInUp} className={styles.title}>
+								<h2>Special Occasions</h2>
+								<h5>Remove the stress from your special day</h5>
+							</motion.div>
+							<div className={styles.innerContent}>
+								<div className={styles.productDisplay}>
+									<Link href="/suitsOxfordShirts">
+										<a target="blank">
+											<Image
+												src="/img/2f7f5644b96ce5f477f1522efa614d32.jpg"
+												alt="Product Image"
+												width={300}
+												height={400}
+												layout="responsive"
+												objectFit="cover"
+											/>
+										</a>
+									</Link>
+									<motion.div variants={stagger} className={styles.content}>
+										<motion.h2 variants={fadeInUp}>
+											Dress & Dinner Suits, Oxford Shirts
+										</motion.h2>
+										<button className={styles.shopButton}>
+											<Link href="/suitsOxfordShirts">
+												<a target="blank">More Info</a>
+											</Link>
+										</button>
+									</motion.div>
+								</div>
+								<div className={styles.productDisplay}>
+									<Link href="/WeddingDressesBridal">
+										<a target="blank">
+											<Image
+												src="/img/2dadbbf0777ed8a16b24ccde6a6f90dd.jpg"
+												alt="Product Image"
+												width={300}
+												height={400}
+												layout="responsive"
+												objectFit="cover"
+											/>
+										</a>
+									</Link>
+									<motion.div variants={stagger} className={styles.content}>
+										<motion.h2 variants={fadeInUp}>
+											Wedding, Bridesmaids & Evening Dresses
+										</motion.h2>
+										<button className={styles.shopButton}>
+											<Link href="/WeddingDressesBridal">
+												<a target="blank">More Info</a>
+											</Link>
+										</button>
+									</motion.div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
-			{/* <!--===== CONTACT US BANNER =====--> */}
-			<ContactBanner
-				title={homePageContent?.contactBanner?.title}
-				paragraph={homePageContent?.contactBanner?.paragraph}
-				buttonLink={homePageContent?.contactBanner?.buttonLink}
-				backgroundImage={homePageContent?.contactBanner?.image?.sourceUrl}
-			/>
+				{/* <!--===== CONTACT US BANNER =====--> */}
+				<ContactBanner
+					title={homePageContent?.contactBanner?.title}
+					paragraph={homePageContent?.contactBanner?.paragraph}
+					buttonLink={homePageContent?.contactBanner?.buttonLink}
+					backgroundImage={homePageContent?.contactBanner?.image?.sourceUrl}
+				/>
 
-			{/* <!--===== WHY CHOOSE US =====--> */}
-			<TitleParagraphGridContent
-				title={homePageContent?.whyChooseUs?.title}
-				paragraph={homePageContent?.whyChooseUs?.paragraph}
-				gridContent={homePageContent?.whyChooseUs?.grid}
-			/>
+				{/* <!--===== WHY CHOOSE US =====--> */}
+				<TitleParagraphGridContent
+					title={homePageContent?.whyChooseUs?.title}
+					paragraph={homePageContent?.whyChooseUs?.paragraph}
+					gridContent={homePageContent?.whyChooseUs?.gridContent}
+				/>
 
-			{/* <!--===== HOTEL & RESTAURANT =====--> */}
-			<TitleGridContentTwo
-				title={homePageContent?.hotelRestaurantServices?.title}
-				paragraph={homePageContent?.hotelRestaurantServices?.paragraph}
-				gridContent={homePageContent?.hotelRestaurantServices?.gridContent}
-			/>
+				{/* <!--===== HOTEL & RESTAURANT =====--> */}
+				<TitleGridContentTwo
+					title={homePageContent?.hotelRestaurantServices?.title}
+					paragraph={homePageContent?.hotelRestaurantServices?.paragraph}
+					gridContent={homePageContent?.hotelRestaurantServices?.gridContent}
+				/>
 
-			{/* <!--===== INFORMATION SECTION =====--> */}
-			<ContactInfoTwo
-				themesOptions={themesOptionsContent?.themesOptions}
-				title={homePageContent?.contactBannerTwo?.title}
-				backgroundImage={homePageContent?.contactBannerTwo?.image?.sourceUrl}
-				buttonLink={homePageContent?.contactBannerTwo?.buttonLink}
-			/>
+				{/* <!--===== INFORMATION SECTION =====--> */}
+				<ContactInfoTwo
+					themesOptions={themesOptionsContent?.themesOptions}
+					title={homePageContent?.contactBannerTwo?.title}
+					backgroundImage={homePageContent?.contactBannerTwo?.image?.sourceUrl}
+					buttonLink={homePageContent?.contactBannerTwo?.buttonLink}
+				/>
 
-			{/* <!--===== OUT STORE LOCATION =====--> */}
-			<StoreLocation
-				title={homePageContent?.ourLocation?.title}
-				paragraph={homePageContent?.ourLocation?.paragraph}
-			/>
+				{/* <!--===== OUT STORE LOCATION =====--> */}
+				<StoreLocation
+					title={homePageContent?.ourLocation?.title}
+					paragraph={homePageContent?.ourLocation?.paragraph}
+				/>
+			</main>
 		</motion.div>
 	);
 }
@@ -227,33 +230,10 @@ export default function Home({homePageContent, themesOptionsContent}) {
 export async function getStaticProps() {
 	const getHomePageContent = gql`
 		{
-			mainContent: pages(where: {id: 8, status: PUBLISH}) {
+			mainContent: pages(where: {id: 168, status: PUBLISH}) {
 				edges {
 					node {
 						homePage {
-							contactBanner {
-								title
-								paragraph
-								buttonLink {
-									url
-									title
-									target
-								}
-								image {
-									sourceUrl
-								}
-							}
-							contactBannerTwo {
-								title
-								buttonLink {
-									url
-									title
-									target
-								}
-								image {
-									sourceUrl
-								}
-							}
 							heroSection {
 								title
 								subtitle
@@ -261,33 +241,28 @@ export async function getStaticProps() {
 									sourceUrl
 								}
 							}
-							hotelRestaurantServices {
+							textImage {
 								title
 								paragraph
-								gridContent {
+								displayImageOption
+								displayButtonOption
+								buttonLink {
+									url
 									title
-									link {
-										url
-										title
-										target
-									}
-									image {
-										sourceUrl
-										mediaDetails {
-											width
-											height
-										}
+									target
+								}
+								image {
+									sourceUrl
+									mediaDetails {
+										width
+										height
 									}
 								}
-							}
-							ourLocation {
-								title
-								paragraph
 							}
 							ourServices {
 								title
 								paragraph
-								grid {
+								gridContent {
 									title
 									link {
 										url
@@ -335,11 +310,9 @@ export async function getStaticProps() {
 									}
 								}
 							}
-							textImage {
+							contactBanner {
 								title
 								paragraph
-								displayImageOption
-								displayButtonOption
 								buttonLink {
 									url
 									title
@@ -347,16 +320,12 @@ export async function getStaticProps() {
 								}
 								image {
 									sourceUrl
-									mediaDetails {
-										width
-										height
-									}
 								}
 							}
 							whyChooseUs {
 								title
 								paragraph
-								grid {
+								gridContent {
 									title
 									paragraph
 									image {
@@ -367,6 +336,40 @@ export async function getStaticProps() {
 										}
 									}
 								}
+							}
+							hotelRestaurantServices {
+								title
+								paragraph
+								gridContent {
+									title
+									link {
+										url
+										title
+										target
+									}
+									image {
+										sourceUrl
+										mediaDetails {
+											width
+											height
+										}
+									}
+								}
+							}
+							contactBannerTwo {
+								title
+								buttonLink {
+									url
+									title
+									target
+								}
+								image {
+									sourceUrl
+								}
+							}
+							ourLocation {
+								title
+								paragraph
 							}
 						}
 					}

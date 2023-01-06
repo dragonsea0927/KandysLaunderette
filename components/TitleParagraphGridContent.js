@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import {motion} from "framer-motion";
-import TitleParagraphGridCard from "/components/TitleParagraphGridCard";
+import DOMPurify from "isomorphic-dompurify";
 import {fadeInUp, stagger} from "../animations/animations";
+import TitleParagraphGridCard from "/components/TitleParagraphGridCard";
 import styles from "../styles/components/TitleParagraphGridContent.module.scss";
 
 const TitleParagraphGridContent = (props) => {
@@ -11,10 +12,10 @@ const TitleParagraphGridContent = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full w-[45rem] my-8 mx-auto text-white font-[500] text-base";
+				"hidden w-full w-[35rem] my-12 mx-auto text-black font-[500] text-base";
 		} else {
 			contentStyling =
-				"block w-full w-[45rem] my-8 mx-auto text-white font-[500] text-base";
+				"block w-full w-[35rem] my-12 mx-auto text-black font-[500] text-base";
 		}
 		return contentStyling;
 	}
@@ -31,19 +32,10 @@ const TitleParagraphGridContent = (props) => {
 					<div className={styles.content}>
 						<motion.div variants={fadeInUp} className={styles.titleSection}>
 							<h2 className="text-black text-xl">{props?.title}</h2>
-							<h5
-								className="mt-4 text-lg text-black font-[500] text-base"
-								style={{
-									width: "45rem",
-									margin: "2rem auto",
-								}}
-							>
-								{props?.paragraph}
-							</h5>
-							{/* <div
+							<div
 								className={isParagraphContent(props?.paragraph)}
 								dangerouslySetInnerHTML={createParagraphMarkup()}
-							/> */}
+							/>
 						</motion.div>
 						<motion.div
 							variants={stagger}

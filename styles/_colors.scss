@@ -1,67 +1,10 @@
 // Colours Variables
 $baseColor_white: #fff;
 $baseColor_black: #111;
-$baseColor_lightGrey: #d5d5d5;
-$baseColor_lightGrey1: #f8f8f8;
-$baseColor_lightGrey2: #d3d3d3;
-$baseColor_lightGrey3: #b3b3b3;
-$baseColor_lightGrey4: #686868;
+$baseColor_lightGrey: #c1c1c1;
 $baseColor_lightBlack: #292929;
 
-// Background Colours
-$backgroundColor_White: #fff;
-$backgroundColor_black: #111;
-$backgroundColor_lightBlack: #292929;
-
 // Main Colours
-$secondary_pink: #ee87f7;
-$secondary_yellow: #fbcf40;
-$secondary_orange: #fbb040;
-$secondary_pinkRed: #ff0099;
-$secondary_pinkPurple: #cc00ff;
 $secondary_fadedPink: #ff8fb4;
 $secondary_fadedPink2: #fcbfd4;
 $secondary_fadedPink3: #f2739d;
-
-// Additional Colours
-$AdditionalColor_Purple1: #7a42fc;
-$AdditionalColor_darkPurple: #692bfa;
-$AdditionalColor-darkPurple2: #5d18ff;
-$AdditionalColor-lightGrey: #8d8d8d;
-$AdditionalColor-darkOrange: #ff9900;
-$AdditionalColor-whiteDouble: rgba(242, 242, 242, 0.802);
-
-// Background image Variable
-$backgroundGradient: linear-gradient(
-	-45deg,
-	#f81ca0,
-	#ee5eb5,
-	#ee5eb5,
-	#ea96ff,
-	#f360b8,
-	#ee5eb5,
-	#f81ca0,
-	#ff9900
-);
-
-/* Featured Projects background colour change */
-@keyframes GradientKeyframes {
-	0% {
-		background-position: 0 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0 50%;
-	}
-}
-
-// Background Gradient Variable
-$backgroundGradient2: linear-gradient(
-	-55deg,
-	#fbcf40,
-	#f857b8,
-	#ee5eb5,
-	#fbcf40
-);

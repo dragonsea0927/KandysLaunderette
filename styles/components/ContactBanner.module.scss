@@ -4,57 +4,10 @@
 
 // <========== CONTACT US BANNER ==========>
 .contactBanner {
-	h2,
-	p,
-	a {
-		text-align: left;
-		color: $baseColor_white;
-	}
-
-	h2 {
-		font-size: $fontSize_large-0;
-		font-family: $fontStyle_option1;
-	}
-
+	padding: 5rem 2rem;
 	a,
 	p {
-		margin: 0.5rem 0;
-		font-size: $fontSize_small;
+		color: $baseColor_white;
 		font-family: $fontStyle_body;
-	}
-
-	.content {
-		display: flex;
-		padding: 5rem 2rem;
-		align-items: center;
-		justify-content: space-between;
-		grid-column-gap: 5rem;
-
-		.text {
-			display: flex;
-			padding: 0 2rem;
-			flex-direction: column;
-			grid-row-gap: 1rem;
-		}
-
-		.contactBannerButton {
-			a {
-				outline: none;
-				width: 12.5rem;
-				padding: 1rem 2rem;
-				letter-spacing: 0.1rem;
-				color: $baseColor_white;
-				background: transparent;
-				text-transform: uppercase;
-				font-size: $fontSize_small;
-				border: $secondary_fadedPink 0.1rem solid;
-
-				&:hover {
-					border: none;
-					transition: all 0.5s;
-					background-color: $secondary_fadedPink;
-				}
-			}
-		}
 	}
 }

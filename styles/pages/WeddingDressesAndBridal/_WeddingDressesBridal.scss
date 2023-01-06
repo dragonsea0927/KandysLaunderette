@@ -13,11 +13,10 @@
 	.content {
 		.title {
 			padding: 2.5rem 0;
-			text-align: center;
 
 			h2 {
 				color: $baseColor_black;
-				font-size: $fontSize_large-1;
+				font-size: $fontSize_4XL;
 				font-family: $fontStyle_option1;
 			}
 
@@ -45,7 +44,7 @@
 
 			h2 {
 				color: $baseColor_black;
-				font-size: $fontSize_large-1;
+				font-size: $fontSize_4XL;
 				font-family: $fontStyle_option1;
 			}
 
@@ -61,7 +60,7 @@
 
 // <========== BRIDESMAID DRESS ==========>
 .BridesmaidDress {
-	background-color: $baseColor_lightGrey1;
+	background-color: $baseColor_lightGrey;
 
 	.content {
 		.innerContent {
@@ -80,7 +79,7 @@
 
 				h2 {
 					color: $baseColor_black;
-					font-size: $fontSize_large-1;
+					font-size: $fontSize_4XL;
 					font-family: $fontStyle_option1;
 				}
 

@@ -4,7 +4,7 @@
 
 .TitleGridContentTwo {
 	overflow: hidden;
-	background-color: $backgroundColor_black;
+	background-color: $baseColor_black;
 
 	.content {
 		display: flex;
@@ -13,12 +13,12 @@
 
 		.title {
 			padding: 2rem 0;
-			text-align: center;
+
 			padding-top: 5rem;
 
 			h2 {
 				color: $baseColor_white;
-				font-size: $fontSize_large-1;
+				font-size: $fontSize_4XL;
 				font-family: $fontStyle_option1;
 			}
 

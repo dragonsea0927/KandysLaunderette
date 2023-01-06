@@ -3,18 +3,16 @@
 	.content {
 		.title {
 			padding: 1rem 0;
-			text-align: center;
+
 			margin-top: 2.5rem;
 
 			h2 {
-				text-align: center;
 				color: $baseColor_black;
-				font-size: $fontSize_large-1;
+				font-size: $fontSize_4XL;
 				font-family: $fontStyle_option1;
 			}
 
 			p {
-				text-align: center;
 				margin-top: 2rem;
 				color: $baseColor_black;
 				font-size: $fontSize_normal;
@@ -79,7 +77,6 @@
 
 					.content {
 						.header {
-							text-align: center;
 							padding: 0.5rem 0;
 
 							a {
