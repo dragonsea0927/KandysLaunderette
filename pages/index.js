@@ -17,6 +17,7 @@ import ContactBanner from "../components/ContactBanner";
 import TitleGridContent from "/components/TitleGridContent";
 import TitleGridContentTwo from "/components/TitleGridContentTwo";
 import TitleParagraphGridContent from "/components/TitleParagraphGridContent";
+import SpecialOccasions from "../components/SpecialOccasions";
 
 export default function Home({homePageContent, themesOptionsContent}) {
 	console.log(homePageContent?.ourLocation);
@@ -126,66 +127,11 @@ export default function Home({homePageContent, themesOptionsContent}) {
 					gridContent={homePageContent?.ourServices?.gridContent}
 				/>
 				{/* <!--===== SPECIAL OCCASIONS =====--> */}
-				<div className={styles.specialOccasions}>
-					<div className="container mx-auto">
-						<div className={styles.content}>
-							<motion.div variants={fadeInUp} className={styles.title}>
-								<h2>Special Occasions</h2>
-								<h5>Remove the stress from your special day</h5>
-							</motion.div>
-							<div className={styles.innerContent}>
-								<div className={styles.productDisplay}>
-									<Link href="/suitsOxfordShirts">
-										<a target="blank">
-											<Image
-												src="/img/2f7f5644b96ce5f477f1522efa614d32.jpg"
-												alt="Product Image"
-												width={300}
-												height={400}
-												layout="responsive"
-												objectFit="cover"
-											/>
-										</a>
-									</Link>
-									<motion.div variants={stagger} className={styles.content}>
-										<motion.h2 variants={fadeInUp}>
-											Dress & Dinner Suits, Oxford Shirts
-										</motion.h2>
-										<button className={styles.shopButton}>
-											<Link href="/suitsOxfordShirts">
-												<a target="blank">More Info</a>
-											</Link>
-										</button>
-									</motion.div>
-								</div>
-								<div className={styles.productDisplay}>
-									<Link href="/WeddingDressesBridal">
-										<a target="blank">
-											<Image
-												src="/img/2dadbbf0777ed8a16b24ccde6a6f90dd.jpg"
-												alt="Product Image"
-												width={300}
-												height={400}
-												layout="responsive"
-												objectFit="cover"
-											/>
-										</a>
-									</Link>
-									<motion.div variants={stagger} className={styles.content}>
-										<motion.h2 variants={fadeInUp}>
-											Wedding, Bridesmaids & Evening Dresses
-										</motion.h2>
-										<button className={styles.shopButton}>
-											<Link href="/WeddingDressesBridal">
-												<a target="blank">More Info</a>
-											</Link>
-										</button>
-									</motion.div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				<SpecialOccasions
+					title={homePageContent?.specialOccasions?.title}
+					paragraph={homePageContent?.specialOccasions?.paragraph}
+					content={homePageContent?.specialOccasions?.content}
+				/>
 
 				{/* <!--===== CONTACT US BANNER =====--> */}
 				<ContactBanner
