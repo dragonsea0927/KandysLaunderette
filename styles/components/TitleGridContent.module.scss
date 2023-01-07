@@ -4,39 +4,34 @@
 
 .titleGridContent {
 	padding: 1rem 0;
-	overflow: hidden;
 
-	.content {
-		display: flex;
-		padding: 0 2rem;
-		flex-direction: column;
+	h2 {
+		font-family: $fontStyle_option1;
+	}
 
-		.title {
-			padding: 2.5rem 0;
+	h5 {
+		font-family: $fontStyle_header;
+	}
 
-			h2 {
-				color: $baseColor_black;
-				font-size: $fontSize_4XL;
-				font-family: $fontStyle_option1;
-			}
+	a,
+	p {
+		font-family: $fontStyle_body;
+	}
+}
 
-			h5 {
-				margin-top: 1rem;
-				font-weight: 500;
-				color: $baseColor_black;
-				font-size: $fontSize_normal;
-				font-family: $fontStyle_header;
-			}
-		}
+.TitleGridContentTwo {
+	background-color: $baseColor_black;
 
-		.moreOptions {
-			button {
-				a {
-					color: $baseColor_black;
-					font-size: $fontSize_normal;
-					font-family: $fontStyle_option1;
-				}
-			}
-		}
+	h2 {
+		font-family: $fontStyle_option1;
+	}
+
+	h5 {
+		font-family: $fontStyle_header;
+	}
+
+	a {
+		color: $baseColor_white;
+		font-family: $fontStyle_body;
 	}
 }

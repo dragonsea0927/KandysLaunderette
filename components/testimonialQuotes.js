@@ -5,7 +5,7 @@ const testimonialQuotes = () => {
 	return (
 		<>
 			<section className={styles.testimonialQuotes}>
-				<div className="container mx-auto flex flex-col">
+				<div className="container mx-auto p-0 flex flex-col">
 					<div className="content">
 						<div className="topSection">
 							<h5>Customer Testimonial</h5>

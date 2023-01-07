@@ -28,10 +28,12 @@ const TitleParagraphGridContent = (props) => {
 	return (
 		<sections>
 			<div className={styles.titleParagraphGridContent}>
-				<div className="container mx-auto">
+				<div className="container mx-auto p-0">
 					<div className={styles.content}>
 						<motion.div variants={fadeInUp} className={styles.titleSection}>
-							<h2 className="text-black text-xl">{props?.title}</h2>
+							<h2 className="text-black text-center text-4xl md:text-5xl">
+								{props?.title}
+							</h2>
 							<div
 								className={isParagraphContent(props?.paragraph)}
 								dangerouslySetInnerHTML={createParagraphMarkup()}

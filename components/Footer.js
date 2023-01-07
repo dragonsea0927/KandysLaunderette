@@ -7,7 +7,7 @@ const Footer = () => {
 		<div>
 			{/* <!--===== FOOTER =====--> */}
 			<footer className={styles.footer}>
-				<div className="container mx-auto">
+				<div className="container mx-auto p-0">
 					<div className={styles.content}>
 						<div className={styles.topSection}>
 							<div className={styles.content}>

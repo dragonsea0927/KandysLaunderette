@@ -84,7 +84,7 @@ const IndividualService = () => {
 
 				{/* // <========== PAGE TITLE ==========> */}
 				<div className={styles.mainContent}>
-					<div className="container mx-auto">
+					<div className="container mx-auto p-0">
 						<div className={styles.previousButton}>
 							<Link href="/LaundryDryCleaning">
 								<a target="blank">

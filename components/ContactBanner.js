@@ -36,7 +36,7 @@ const ContactBanner = (props) => {
 					backgroundImage: `url(${props.backgroundImage}`,
 				}}
 			>
-				<div className="container mx-auto">
+				<div className="container mx-auto p-0">
 					<div className="flex flex-col lg:flex-row py-8 gap-10 px-8 justify-between items-center">
 						<div className="flex flex-col gap-4 justify-between items-center">
 							<h2 className="text-left text-white text-2xl md:text-4xl">

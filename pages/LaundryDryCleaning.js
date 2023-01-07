@@ -84,7 +84,7 @@ const LaundryDryCleaning = () => {
 
 			{/* // <========== PAGE TITLE ==========> */}
 			<div className={styles.pageTitle}>
-				<div className="container mx-auto">
+				<div className="container mx-auto p-0">
 					<div className={styles.content}>
 						<motion.div variants={fadeInUp} className={styles.title}>
 							<h2>Laundry & Dry Cleaning</h2>
@@ -96,7 +96,7 @@ const LaundryDryCleaning = () => {
 
 			{/* // <========== OPTIONS ==========> */}
 			<div className={styles.options}>
-				<div className="container mx-auto">
+				<div className="container mx-auto p-0">
 					<div className={styles.content}>
 						<motion.div variants={stagger} className={styles.title}>
 							<motion.h2 variants={fadeIn}>Our Options</motion.h2>

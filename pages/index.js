@@ -20,7 +20,6 @@ import TitleParagraphGridContent from "/components/TitleParagraphGridContent";
 import SpecialOccasions from "../components/SpecialOccasions";
 
 export default function Home({homePageContent, themesOptionsContent}) {
-	console.log(homePageContent?.ourLocation);
 	return (
 		<motion.div
 			exit={{
@@ -66,7 +65,7 @@ export default function Home({homePageContent, themesOptionsContent}) {
 			<main>
 				{/* <!--===== HERO =====--> */}
 				<div className={styles.backgroundImage}>
-					<div className="container mx-auto">
+					<div className="container mx-auto p-0">
 						<div className={styles.content}>
 							<motion.div variants={fadeInUp} className={styles.title}>
 								<h2>Kandys Launderette</h2>
@@ -75,9 +74,10 @@ export default function Home({homePageContent, themesOptionsContent}) {
 						</div>
 					</div>
 				</div>
+
 				{/* <!--===== MAIN SERVICES =====--> */}
 				<div className={styles.introSection}>
-					<div className="container mx-auto">
+					<div className="container mx-auto p-0">
 						<div className={styles.content}>
 							<motion.div variants={fadeInUp} className={styles.description}>
 								<h5>About Kandys Launderette</h5>
@@ -120,12 +120,14 @@ export default function Home({homePageContent, themesOptionsContent}) {
 						</div>
 					</div>
 				</div>
+
 				{/* <!--===== MAIN SERVICES =====--> */}
 				<TitleGridContent
 					title={homePageContent?.ourServices?.title}
 					paragraph={homePageContent?.ourServices?.paragraph}
 					gridContent={homePageContent?.ourServices?.gridContent}
 				/>
+
 				{/* <!--===== SPECIAL OCCASIONS =====--> */}
 				<SpecialOccasions
 					title={homePageContent?.specialOccasions?.title}

@@ -94,7 +94,7 @@ const contactUs = () => {
 
 			{/* // <========== PAGE TITLE ==========> */}
 			<div className={styles.pageTitle}>
-				<div className="container mx-auto">
+				<div className="container mx-auto p-0">
 					<div className={styles.content}>
 						<motion.div variants={fadeInUp} className={styles.title}>
 							<h2>Contact Us</h2>

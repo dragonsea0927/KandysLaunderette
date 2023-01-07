@@ -94,7 +94,7 @@ const ourStory = () => {
 			<div className={styles.ourStoryPage}>
 				{/* // <========== ABOUT US DESCRIPTIONS ==========> */}
 				<div className={styles.aboutUs}>
-					<div className="container mx-auto">
+					<div className="container mx-auto p-0">
 						<motion.div variants={stagger} className={styles.content}>
 							<motion.h2 variants={fadeInUp}>We may be new to you</motion.h2>
 							<motion.p variants={fadeIn}>
@@ -121,7 +121,7 @@ const ourStory = () => {
 
 				{/* // <========== SUITS & OXFORD DESCRIPTIONS ==========> */}
 				<div className={styles.ourLeader}>
-					<div className="container mx-auto">
+					<div className="container mx-auto p-0">
 						<motion.div variants={fadeIn} className={styles.gridDisplay}>
 							<Image
 								src="/img/karsten-winegeart-bwDnRf-r4u8-unsplash.jpg"
@@ -159,7 +159,7 @@ const ourStory = () => {
 			<div className={styles.ourStoryPage}>
 				{/* <!--===== OUR COLLECTION =====--> */}
 				<div className={styles.ourCollections}>
-					<div className="container mx-auto">
+					<div className="container mx-auto p-0">
 						<div className={styles.content}>
 							<motion.div variants={fadeInUp} className={styles.title}>
 								<h2>Our Attention to Detail</h2>

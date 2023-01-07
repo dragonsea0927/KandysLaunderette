@@ -14,29 +14,14 @@ const SingleCard = (props) => {
 				target={`${props?.buttonLink?.target}`}
 			>
 				<img
-					className="w-full h-[386px] object-cover object-center"
-					style={{
-						width: "100%",
-						height: "386px",
-						objectFit: "cover",
-						objectPosition: "center",
-					}}
-					objectFit="cover"
+					className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] object-cover object-center"
 					src={`${props?.image}`}
 					alt={props?.image?.altText}
 					width={props?.mediaDetails?.width}
 					height={props?.mediaDetails?.height}
 				/>
 			</Link>
-			<div
-				className="my-4 text-black text-center text-medium"
-				style={{
-					margin: "1rem 0rem",
-					fontSize: "1.15rem",
-					textAlign: "center",
-					padding: "0.25rem 0",
-				}}
-			>
+			<div className="my-4 text-black text-center text-medium">
 				<Link href={`${props?.url}`} target={`${props?.target}`}>
 					{props?.title}
 				</Link>

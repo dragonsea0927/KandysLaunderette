@@ -18,7 +18,7 @@ const ContactInfoTwo = (props) => {
 					backgroundImage: `url(${props.backgroundImage}`,
 				}}
 			>
-				<div className="container mx-auto">
+				<div className="container mx-auto p-0">
 					<motion.div
 						variants={stagger}
 						className="flex flex-col md:flex-row py-4 gap-12 md:gap-16 lg:gap-28 justify-between items-center"

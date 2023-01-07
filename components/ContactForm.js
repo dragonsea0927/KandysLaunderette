@@ -47,7 +47,7 @@ const ContactForm = () => {
 	return (
 		<>
 			<section className={styles.contactForm}>
-				<div className="container mx-auto">
+				<div className="container mx-auto p-0">
 					<div className={styles.content}>
 						<div className={styles.leftSide}>
 							<h2>Get in touch with us</h2>

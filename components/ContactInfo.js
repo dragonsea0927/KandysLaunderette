@@ -8,7 +8,7 @@ const ContactInfo = () => {
 		<>
 			{/* <!--===== INFORMATION SECTION =====--> */}
 			<div className={styles.contactInfo}>
-				<div className="container mx-auto">
+				<div className="container mx-auto p-0">
 					<motion.div variants={stagger} className={styles.content}>
 						<motion.div variants={fadeInUp} className={styles.title}>
 							<h2>Contact our specialist Team to discuss your request.</h2>
