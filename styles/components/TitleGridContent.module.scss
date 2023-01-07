@@ -2,7 +2,8 @@
 @import "../fonts";
 @import "../colors";
 
-.titleGridContent {
+.titleGridContent,
+.TitleGridContentTwo {
 	padding: 1rem 0;
 
 	h2 {
@@ -17,21 +18,27 @@
 	p {
 		font-family: $fontStyle_body;
 	}
+
+	a {
+		&:hover {
+			transition: all 0.5s ease-in-out;
+			color: $secondary_fadedPink;
+		}
+	}
+}
+
+.titleGridContent {
+	background-color: $baseColor_white;
+
+	a {
+		color: $baseColor_black;
+	}
 }
 
 .TitleGridContentTwo {
 	background-color: $baseColor_black;
 
-	h2 {
-		font-family: $fontStyle_option1;
-	}
-
-	h5 {
-		font-family: $fontStyle_header;
-	}
-
 	a {
 		color: $baseColor_white;
-		font-family: $fontStyle_body;
 	}
 }

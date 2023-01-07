@@ -48,6 +48,7 @@ const TitleGridContentTwo = (props) => {
 								Key={keys?.id}
 								link={keys?.link}
 								title={keys?.title}
+								buttonLink={keys?.link}
 								image={keys?.image?.sourceUrl}
 								mediaDetails={keys?.image?.mediaDetails}
 							/>
