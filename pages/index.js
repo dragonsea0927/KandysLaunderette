@@ -12,7 +12,7 @@ import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 
 // Components
 import StoreLocation from "/components/storeLocation";
-import ContactInfoTwo from "/components/ContactInfoTwo";
+import ContactBannerTwo from "/components/ContactBannerTwo";
 import ContactBanner from "../components/ContactBanner";
 import TitleGridContent from "/components/TitleGridContent";
 import TitleGridContentTwo from "/components/TitleGridContentTwo";
@@ -162,7 +162,7 @@ export default function Home({homePageContent, themesOptionsContent}) {
 				/>
 
 				{/* <!--===== INFORMATION SECTION =====--> */}
-				<ContactInfoTwo
+				<ContactBannerTwo
 					themesOptions={themesOptionsContent?.themesOptions}
 					title={homePageContent?.contactBannerTwo?.title}
 					backgroundImage={homePageContent?.contactBannerTwo?.image?.sourceUrl}

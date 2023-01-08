@@ -2,12 +2,12 @@
 import Link from "next/link";
 import {motion} from "framer-motion";
 import {fadeInUp, fadeIn, stagger} from "../animations/animations";
-import styles from "../styles/components/ContactInfoTwo.module.scss";
+import styles from "../styles/components/contactBanner.module.scss";
 
-const ContactInfoTwo = (props) => {
+const ContactBannerTwo = (props) => {
 	return (
 		<section
-			className={styles.contactInfoTwo}
+			className={styles.contactBannerTwo}
 			style={{
 				padding: "7.5rem 5rem",
 				backgroundSize: "cover",
@@ -134,4 +134,4 @@ const ContactInfoTwo = (props) => {
 	);
 };
 
-export default ContactInfoTwo;
+export default ContactBannerTwo;
