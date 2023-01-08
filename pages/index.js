@@ -163,10 +163,11 @@ export default function Home({homePageContent, themesOptionsContent}) {
 
 				{/* <!--===== INFORMATION SECTION =====--> */}
 				<ContactBannerTwo
-					themesOptions={themesOptionsContent?.themesOptions}
 					title={homePageContent?.contactBannerTwo?.title}
-					backgroundImage={homePageContent?.contactBannerTwo?.image?.sourceUrl}
+					themesOptions={themesOptionsContent?.themesOptions}
+					paragraph={homePageContent?.contactBannerTwo?.paragraph}
 					buttonLink={homePageContent?.contactBannerTwo?.buttonLink}
+					backgroundImage={homePageContent?.contactBannerTwo?.image?.sourceUrl}
 				/>
 
 				<section className="container mx-auto p-0">
@@ -312,6 +313,7 @@ export async function getStaticProps() {
 							}
 							contactBannerTwo {
 								title
+								paragraph
 								buttonLink {
 									url
 									title

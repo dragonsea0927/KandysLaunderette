@@ -38,9 +38,7 @@ const ContactBanner = (props) => {
 			<div>
 				<div className="flex flex-col lg:flex-row py-8 gap-10 px-8 justify-between items-center">
 					<div className="flex flex-col gap-4 justify-between items-center">
-						<h2 className="text-left text-white text-2xl md:text-4xl">
-							{props?.title}
-						</h2>
+						<h2 className="text-left text-white text-4xl">{props?.title}</h2>
 						<div
 							className={isParagraphContent(props?.paragraph)}
 							dangerouslySetInnerHTML={createParagraphMarkup()}
@@ -48,7 +46,7 @@ const ContactBanner = (props) => {
 					</div>
 					<motion.button
 						variants={fadeIn}
-						className="text-center text-base text-white outline-none tracking-[0.1rem] py-4 px-8 uppercase border-2 border-pink border-solid hover:ease-in-out hover:duration-[0.5s] hover:bg-fadedPink"
+						className="py-6 px-20 font-[500] uppercase border-[1px] border-solid border-fadedPink text-white text-medium hover:bg-fadedPink hover:ease-in-out hover:duration-[0.5s]"
 					>
 						<Link
 							href={`${props?.buttonLink?.url}`}

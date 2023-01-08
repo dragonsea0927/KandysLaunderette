@@ -53,9 +53,9 @@ const SpecialOccasions = (props) => {
 				<div className="flex flex-col justify-between items-center lg:grid lg:grid-cols-2 gap-4">
 					<div>
 						<Link href={`${props?.content?.buttonLink?.url}`}>
-							<a target={`${props?.content?.buttonLink?.target}`}>
+							<a>
 								<img
-									className="w-full h-[1000px] object-cover"
+									className="w-[1000px] h-[1000px] object-cover object-center"
 									src={props?.content?.image?.sourceUrl}
 									alt={`${props?.content?.title} Image`}
 									width={props?.content?.image?.mediaDetails?.width}
@@ -87,9 +87,9 @@ const SpecialOccasions = (props) => {
 					</div>
 					<div>
 						<Link href={`${props?.content?.buttonLinkTwo?.url}`}>
-							<a target={`${props?.content?.buttonLinkTwo?.target}`}>
+							<a>
 								<img
-									className="w-full h-[1000px] object-cover"
+									className="w-[1000px] h-[1000px] object-cover object-center"
 									src={props?.content?.imageTwo?.sourceUrl}
 									alt={`${props?.content?.titleTwo} Image`}
 									width={props?.content?.imageTwo?.mediaDetails?.width}
