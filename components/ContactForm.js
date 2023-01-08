@@ -26,7 +26,7 @@ const fadeIn = {
 	},
 };
 
-const fadeIn2 = {
+const fadeInTwo = {
 	initial: {
 		opacity: 0,
 	},

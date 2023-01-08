@@ -28,7 +28,7 @@ const fadeIn = {
 	},
 };
 
-const fadeIn2 = {
+const fadeInTwo = {
 	initial: {
 		opacity: 0,
 	},
@@ -123,7 +123,7 @@ const AlterationsRepairs = () => {
 								Company - I hope you❜ll cherish your purchases as much as we do.
 								<br></br>
 								<br></br>
-								<motion.span variants={fadeIn2}>
+								<motion.span variants={fadeInTwo}>
 									We❜re delighted to meet you
 								</motion.span>
 							</motion.p>

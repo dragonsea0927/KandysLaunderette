@@ -25,7 +25,7 @@ const fadeIn = {
 	},
 };
 
-const fadeIn2 = {
+const fadeInTwo = {
 	initial: {
 		opacity: 0,
 	},
@@ -67,7 +67,7 @@ const ourProcess = () => {
 								</motion.div>
 								<motion.div variants={stagger} className={styles.description}>
 									<motion.h2 variants={fadeInUp}>Arrival</motion.h2>
-									<motion.p variants={fadeIn2}>
+									<motion.p variants={fadeInTwo}>
 										Schedule a drop off day. Call us are we can make the best
 										time for you to arrive. Be confidence knowing your special
 										dress is in good hands. day.
@@ -88,7 +88,7 @@ const ourProcess = () => {
 									<motion.h2 variants={fadeInUp}>
 										We do what we do best
 									</motion.h2>
-									<motion.p variants={fadeIn2}>
+									<motion.p variants={fadeInTwo}>
 										Schedule a drop off day. Call us are we can make the best
 										time for you to arrive. Be confidence knowing your special
 										dress is in good hands. day.
@@ -107,7 +107,7 @@ const ourProcess = () => {
 								</motion.div>
 								<motion.div variants={stagger} className={styles.description}>
 									<motion.h2 variants={fadeInUp}>Collection</motion.h2>
-									<motion.p variants={fadeIn2}>
+									<motion.p variants={fadeInTwo}>
 										Schedule a drop off day. Call us are we can make the best
 										time for you to arrive. Be confidence knowing your special
 										dress is in good hands. day.
