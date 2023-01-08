@@ -2,9 +2,12 @@
 @import "../fonts";
 @import "../colors";
 
-.storeLocation {
-	h2,
-	p {
+.heroSection {
+	h2 {
 		font-family: $fontStyle_option1;
+	}
+
+	h5 {
+		font-family: $fontStyle_header;
 	}
 }

@@ -5,38 +5,8 @@ import {motion} from "framer-motion";
 import styles from "/styles/Home.module.scss";
 import mainServicesDB from "/lib/mainServicesDB.json";
 import ContactBanner from "/components/ContactBanner";
+import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 import IndividualServicesListDB from "/lib/IndividualServicesListDB.json";
-
-// Custom reusable Animation Properties/variables
-const fadeInUp = {
-	initial: {
-		y: 60,
-		opacity: 0,
-	},
-	animate: {
-		y: 0,
-		opacity: 1,
-		transition: {duration: 0.5, ease: "easeOut"},
-	},
-};
-
-const fadeIn = {
-	initial: {
-		opacity: 0,
-	},
-	animate: {
-		opacity: 1,
-		transition: {duration: 1, delay: 0.5, ease: "easeOut"},
-	},
-};
-
-const stagger = {
-	animate: {
-		transition: {
-			staggerChildren: 0.1,
-		},
-	},
-};
 
 const IndividualService = () => {
 	return (

@@ -18,6 +18,8 @@ import TitleGridContent from "/components/TitleGridContent";
 import TitleGridContentTwo from "/components/TitleGridContentTwo";
 import TitleParagraphGridContent from "/components/TitleParagraphGridContent";
 import SpecialOccasions from "../components/SpecialOccasions";
+import TextImage from "../components/TextImage";
+import HeroSection from "../components/HeroSection";
 
 export default function Home({homePageContent, themesOptionsContent}) {
 	return (
@@ -64,71 +66,29 @@ export default function Home({homePageContent, themesOptionsContent}) {
 
 			<main>
 				{/* <!--===== HERO =====--> */}
-				<section className={styles.backgroundImage}>
-					<div className="container mx-auto p-0">
-						<div className={styles.content}>
-							<motion.div variants={fadeInUp} className={styles.title}>
-								<h2>Kandys Launderette</h2>
-								<h5>Professional Dry Cleaning Specialist</h5>
-							</motion.div>
-						</div>
-					</div>
-				</section>
+				<HeroSection
+					title={homePageContent?.heroSection?.title}
+					subtitle={homePageContent?.heroSection?.subtitle}
+					backgroundImage={
+						homePageContent?.heroSection?.backgroundImage?.sourceUrl
+					}
+				/>
 
-				<section className="container mx-auto p-0">
-					{/* <!--===== MAIN SERVICES =====--> */}
-					<div className={styles.introSection}>
-						<div>
-							<div className={styles.content}>
-								<motion.div variants={fadeInUp} className={styles.description}>
-									<h5>About Kandys Launderette</h5>
-									<h2>Get to know us a little</h2>
-									<p>
-										Over 2 years ago, Kandys had a vision: to create a company
-										that specialized in Professional Dry Cleaning Solutions,
-										combining the highest quality with affordable prices.
-									</p>
-									<p>
-										We are a family run business centrally based in Northampton,
-										Northamptonshire, offering marquee hire and event management
-										services in Northamptonshire, Leicestershire,
-										Buckinghamshire, Bedfordshire, Cambridgeshire,
-										Hertfordshire, Oxfordshire, Rutland, Warwickshire, London,
-										the home counties, Birmingham and the whole midlands area.
-									</p>
-									<motion.div
-										variants={fadeIn}
-										className={styles.contactBannerButton}
-									>
-										<Link href="/">
-											<a>
-												<button>
-													<strong>Our Story</strong>
-												</button>
-											</a>
-										</Link>
-									</motion.div>
-								</motion.div>
-								<motion.div variants={fadeIn} className={styles.image}>
-									<Image
-										src="/img/karsten-winegeart-Q7iB4Yixcfw-unsplash.jpg"
-										alt="Product Image"
-										width={400}
-										height={400}
-										objectFit="cover"
-									></Image>
-								</motion.div>
-							</div>
-						</div>
-					</div>
+				{/* <!--===== INTRO SECTION =====--> */}
+				<TextImage
+					title={homePageContent?.textImage?.title}
+					subtitle={homePageContent?.textImage?.subtitle}
+					paragraph={homePageContent?.textImage?.paragraph}
+					buttonLink={homePageContent?.textImage?.buttonLink}
+					image={homePageContent?.textImage?.image}
+				/>
 
-					{/* <!--===== MAIN SERVICES =====--> */}
-					<TitleGridContent
-						title={homePageContent?.ourServices?.title}
-						paragraph={homePageContent?.ourServices?.paragraph}
-						gridContent={homePageContent?.ourServices?.gridContent}
-					/>
-				</section>
+				{/* <!--===== MAIN SERVICES =====--> */}
+				<TitleGridContent
+					title={homePageContent?.ourServices?.title}
+					paragraph={homePageContent?.ourServices?.paragraph}
+					gridContent={homePageContent?.ourServices?.gridContent}
+				/>
 
 				{/* <!--===== SPECIAL OCCASIONS =====--> */}
 				<SpecialOccasions
@@ -145,14 +105,12 @@ export default function Home({homePageContent, themesOptionsContent}) {
 					backgroundImage={homePageContent?.contactBanner?.image?.sourceUrl}
 				/>
 
-				<section>
-					{/* <!--===== WHY CHOOSE US =====--> */}
-					<TitleParagraphGridContent
-						title={homePageContent?.whyChooseUs?.title}
-						paragraph={homePageContent?.whyChooseUs?.paragraph}
-						gridContent={homePageContent?.whyChooseUs?.gridContent}
-					/>
-				</section>
+				{/* <!--===== WHY CHOOSE US =====--> */}
+				<TitleParagraphGridContent
+					title={homePageContent?.whyChooseUs?.title}
+					paragraph={homePageContent?.whyChooseUs?.paragraph}
+					gridContent={homePageContent?.whyChooseUs?.gridContent}
+				/>
 
 				{/* <!--===== HOTEL & RESTAURANT =====--> */}
 				<TitleGridContentTwo
@@ -170,13 +128,11 @@ export default function Home({homePageContent, themesOptionsContent}) {
 					backgroundImage={homePageContent?.contactBannerTwo?.image?.sourceUrl}
 				/>
 
-				<section className="container mx-auto p-0">
-					{/* <!--===== OUT STORE LOCATION =====--> */}
-					<StoreLocation
-						title={homePageContent?.ourLocation?.title}
-						paragraph={homePageContent?.ourLocation?.paragraph}
-					/>
-				</section>
+				{/* <!--===== OUT STORE LOCATION =====--> */}
+				<StoreLocation
+					title={homePageContent?.ourLocation?.title}
+					paragraph={homePageContent?.ourLocation?.paragraph}
+				/>
 			</main>
 		</motion.div>
 	);
@@ -198,6 +154,7 @@ export async function getStaticProps() {
 							}
 							textImage {
 								title
+								subtitle
 								paragraph
 								displayImageOption
 								displayButtonOption
@@ -208,10 +165,7 @@ export async function getStaticProps() {
 								}
 								image {
 									sourceUrl
-									mediaDetails {
-										width
-										height
-									}
+									altText
 								}
 							}
 							ourServices {
@@ -226,10 +180,7 @@ export async function getStaticProps() {
 									}
 									image {
 										sourceUrl
-										mediaDetails {
-											width
-											height
-										}
+										altText
 									}
 								}
 							}
@@ -251,17 +202,10 @@ export async function getStaticProps() {
 									}
 									imageTwo {
 										sourceUrl
-										mediaDetails {
-											width
-											height
-										}
 									}
 									image {
 										sourceUrl
-										mediaDetails {
-											width
-											height
-										}
+										altText
 									}
 								}
 							}
@@ -285,10 +229,7 @@ export async function getStaticProps() {
 									paragraph
 									image {
 										sourceUrl
-										mediaDetails {
-											width
-											height
-										}
+										altText
 									}
 								}
 							}
@@ -304,10 +245,7 @@ export async function getStaticProps() {
 									}
 									image {
 										sourceUrl
-										mediaDetails {
-											width
-											height
-										}
+										altText
 									}
 								}
 							}

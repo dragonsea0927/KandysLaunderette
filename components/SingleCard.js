@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable @next/next/link-passhref */
 import Link from "next/link";
+import Image from "next/image";
 import {motion} from "framer-motion";
 import {fadeInUp} from "../animations/animations";
 import styles from "../styles/components/SingleCard.module.scss";
@@ -13,12 +14,13 @@ const SingleCard = (props) => {
 				target={`${props?.buttonLink?.target}`}
 			>
 				<a>
-					<img
-						className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] object-cover object-center"
-						src={`${props?.image}`}
+					<Image
+						width={400}
+						height={400}
+						objectFit="cover"
 						alt={props?.image?.altText}
-						width={props?.mediaDetails?.width}
-						height={props?.mediaDetails?.height}
+						src={`${props?.image?.sourceUrl}`}
+						className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] object-cover object-center"
 					/>
 				</a>
 			</Link>
@@ -32,3 +34,5 @@ const SingleCard = (props) => {
 };
 
 export default SingleCard;
+
+// kandyslaunderette.local;

@@ -48,10 +48,9 @@ const TitleParagraphGridContent = (props) => {
 								<TitleParagraphGridCard
 									Key={keys?.id}
 									link={keys?.link}
+									image={keys?.image}
 									title={keys?.title}
 									paragraph={keys?.paragraph}
-									image={keys?.image?.sourceUrl}
-									mediaDetails={keys?.image?.mediaDetails}
 								/>
 							))}
 						</motion.div>

@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
+import Image from "next/image";
 import {motion} from "framer-motion";
 import DOMPurify from "isomorphic-dompurify";
 import {fadeInUp, stagger} from "../animations/animations";
@@ -54,12 +55,12 @@ const SpecialOccasions = (props) => {
 					<div>
 						<Link href={`${props?.content?.buttonLink?.url}`}>
 							<a>
-								<img
+								<Image
+									width={1000}
+									height={1500}
 									className="w-[1000px] h-[1000px] object-cover object-center"
 									src={props?.content?.image?.sourceUrl}
 									alt={`${props?.content?.title} Image`}
-									width={props?.content?.image?.mediaDetails?.width}
-									height={props?.content?.image?.mediaDetails?.height}
 								/>
 							</a>
 						</Link>
@@ -88,12 +89,12 @@ const SpecialOccasions = (props) => {
 					<div>
 						<Link href={`${props?.content?.buttonLinkTwo?.url}`}>
 							<a>
-								<img
+								<Image
+									width={1000}
+									height={1500}
 									className="w-[1000px] h-[1000px] object-cover object-center"
 									src={props?.content?.imageTwo?.sourceUrl}
 									alt={`${props?.content?.titleTwo} Image`}
-									width={props?.content?.imageTwo?.mediaDetails?.width}
-									height={props?.content?.imageTwo?.mediaDetails?.height}
 								/>
 							</a>
 						</Link>

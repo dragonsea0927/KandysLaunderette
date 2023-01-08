@@ -1,0 +1,20 @@
+// Imports
+@import "../fonts";
+@import "../colors";
+
+.introSection {
+	padding: 5rem 0;
+	background: $secondary_fadedPink3;
+
+	h2 {
+		font-family: $fontStyle_option1;
+	}
+
+	h5 {
+		font-family: $fontStyle_header;
+	}
+
+	p {
+		font-family: $fontStyle_body;
+	}
+}

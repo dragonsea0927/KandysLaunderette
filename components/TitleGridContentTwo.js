@@ -47,10 +47,9 @@ const TitleGridContentTwo = (props) => {
 							<SingleCard
 								Key={keys?.id}
 								link={keys?.link}
+								image={keys?.image}
 								title={keys?.title}
 								buttonLink={keys?.link}
-								image={keys?.image?.sourceUrl}
-								mediaDetails={keys?.image?.mediaDetails}
 							/>
 						))}
 					</motion.div>

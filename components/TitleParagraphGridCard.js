@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import {motion} from "framer-motion";
+import Image from "next/image";
 import DOMPurify from "isomorphic-dompurify";
 import {fadeIn, fadeInUp} from "../animations/animations";
-import styles from "../styles/components/TitleParagraphGridContent.module.scss";
 
 const TitleParagraphGridCard = (props) => {
 	/* Check if paragraph content is null
@@ -27,12 +27,12 @@ const TitleParagraphGridCard = (props) => {
 	return (
 		<div className="flex flex-row gap-4 justify-between items-center">
 			<motion.div variants={fadeIn} className="w-1/2">
-				<img
-					className="w-[300px] h-[300px] object-cover object-center"
-					src={`${props?.image}`}
+				<Image
+					width={300}
+					height={300}
 					alt={props?.image?.altText}
-					width={props?.mediaDetails?.width}
-					height={props?.mediaDetails?.height}
+					src={`${props?.image?.sourceUrl}`}
+					className="w-[300px] h-[300px] object-cover object-center"
 				/>
 			</motion.div>
 			<motion.div variants={fadeInUp} className="w-1/2">
