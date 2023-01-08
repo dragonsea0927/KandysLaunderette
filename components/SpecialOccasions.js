@@ -41,138 +41,87 @@ const SpecialOccasions = (props) => {
 	return (
 		<section className={styles.specialOccasions}>
 			<div className="container mx-auto p-0">
-				<div>
-					<motion.div variants={fadeInUp} className="py-28">
-						<h2 className="text-black text-center text-4xl md:text-5xl">
-							{props?.title}
-						</h2>
-						<div
-							className={isParagraphContent(props?.paragraph)}
-							dangerouslySetInnerHTML={createParagraphMarkup()}
-						/>
-					</motion.div>
-					<div className="flex flex-col justify-between items-center lg:grid lg:grid-cols-2 gap-4">
-						<div>
-							<Link href={`${props?.content?.buttonLink?.url}`}>
-								<a target={`${props?.content?.buttonLink?.target}`}>
-									<img
-										className="w-full h-[1000px] object-cover"
-										src={props?.content?.image?.sourceUrl}
-										alt={`${props?.content?.title} Image`}
-										width={props?.content?.image?.mediaDetails?.width}
-										height={props?.content?.image?.mediaDetails?.height}
-									/>
-								</a>
-							</Link>
-							<motion.div
-								variants={stagger}
-								className="relative px-4 ml-5 bottom-[140px]"
+				<motion.div variants={fadeInUp} className="py-28">
+					<h2 className="text-black text-center text-4xl md:text-5xl">
+						{props?.title}
+					</h2>
+					<div
+						className={isParagraphContent(props?.paragraph)}
+						dangerouslySetInnerHTML={createParagraphMarkup()}
+					/>
+				</motion.div>
+				<div className="flex flex-col justify-between items-center lg:grid lg:grid-cols-2 gap-4">
+					<div>
+						<Link href={`${props?.content?.buttonLink?.url}`}>
+							<a target={`${props?.content?.buttonLink?.target}`}>
+								<img
+									className="w-full h-[1000px] object-cover"
+									src={props?.content?.image?.sourceUrl}
+									alt={`${props?.content?.title} Image`}
+									width={props?.content?.image?.mediaDetails?.width}
+									height={props?.content?.image?.mediaDetails?.height}
+								/>
+							</a>
+						</Link>
+						<motion.div
+							variants={stagger}
+							className="relative px-4 ml-5 bottom-[140px]"
+						>
+							<motion.h2
+								variants={fadeInUp}
+								className="text-white text-left text-lg py-4"
 							>
-								<motion.h2
-									variants={fadeInUp}
-									className="text-white text-left text-lg py-4"
+								{props?.content?.title}
+							</motion.h2>
+							<button className={isButtonLink(props?.content?.buttonLink?.url)}>
+								<Link
+									href={`${props?.content?.buttonLink?.url}`}
+									target={`${props?.content?.buttonLink?.target}`}
 								>
-									{props?.content?.title}
-								</motion.h2>
-								<button
-									className={isButtonLink(props?.content?.buttonLink?.url)}
-								>
-									<Link
-										href={`${props?.content?.buttonLink?.url}`}
-										className="text-black"
-										target={`${props?.content?.buttonLink?.target}`}
-									>
+									<a className="font-[700] text-medium hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s] ">
 										{props?.content?.buttonLink?.title}
-									</Link>
-								</button>
-							</motion.div>
-						</div>
-						<div>
-							<Link href={`${props?.content?.buttonLinkTwo?.url}`}>
-								<a target={`${props?.content?.buttonLinkTwo?.target}`}>
-									<img
-										className="w-full h-[1000px] object-cover"
-										src={props?.content?.imageTwo?.sourceUrl}
-										alt={`${props?.content?.titleTwo} Image`}
-										width={props?.content?.imageTwo?.mediaDetails?.width}
-										height={props?.content?.imageTwo?.mediaDetails?.height}
-									/>
-								</a>
-							</Link>
-							<motion.div
-								variants={stagger}
-								className="relative px-4 ml-5 bottom-[140px]"
-							>
-								<motion.h2
-									variants={fadeInUp}
-									className="text-white text-left text-lg py-4"
-								>
-									{props?.content?.titleTwo}
-								</motion.h2>
-								<button
-									className={isButtonLink(props?.content?.buttonLinkTwo?.url)}
-								>
-									<Link
-										href={`${props?.content?.buttonLinkTwo?.url}`}
-										className="text-black"
-										target={`${props?.content?.buttonLinkTwo?.target}`}
-									>
-										{props?.content?.buttonLinkTwo?.title}
-									</Link>
-								</button>
-							</motion.div>
-						</div>
+									</a>
+								</Link>
+							</button>
+						</motion.div>
 					</div>
-					{/* <div className={styles.innerContent}>
-						<div className={styles.productDisplay}>
-							<Link href="/suitsOxfordShirts">
-								<a target="blank">
-									<img
-										src="/img/2f7f5644b96ce5f477f1522efa614d32.jpg"
-										alt="Product Image"
-										width={300}
-										height={400}
-										layout="responsive"
-										objectFit="cover"
-									/>
-								</a>
-							</Link>
-							<motion.div variants={stagger} className={styles.content}>
-								<motion.h2 variants={fadeInUp}>
-									Dress & Dinner Suits, Oxford Shirts
-								</motion.h2>
-								<button className={styles.shopButton}>
-									<Link href="/suitsOxfordShirts">
-										<a target="blank">More Info</a>
-									</Link>
-								</button>
-							</motion.div>
-						</div>
-						<div className={styles.productDisplay}>
-							<Link href="/WeddingDressesBridal">
-								<a target="blank">
-									<img
-										src="/img/2dadbbf0777ed8a16b24ccde6a6f90dd.jpg"
-										alt="Product Image"
-										width={300}
-										height={400}
-										layout="responsive"
-										objectFit="cover"
-									/>
-								</a>
-							</Link>
-							<motion.div variants={stagger} className={styles.content}>
-								<motion.h2 variants={fadeInUp}>
-									Wedding, Bridesmaids & Evening Dresses
-								</motion.h2>
-								<button className={styles.shopButton}>
-									<Link href="/WeddingDressesBridal">
-										<a target="blank">More Info</a>
-									</Link>
-								</button>
-							</motion.div>
-						</div>
-					</div> */}
+					<div>
+						<Link href={`${props?.content?.buttonLinkTwo?.url}`}>
+							<a target={`${props?.content?.buttonLinkTwo?.target}`}>
+								<img
+									className="w-full h-[1000px] object-cover"
+									src={props?.content?.imageTwo?.sourceUrl}
+									alt={`${props?.content?.titleTwo} Image`}
+									width={props?.content?.imageTwo?.mediaDetails?.width}
+									height={props?.content?.imageTwo?.mediaDetails?.height}
+								/>
+							</a>
+						</Link>
+						<motion.div
+							variants={stagger}
+							className="relative px-4 ml-5 bottom-[140px]"
+						>
+							<motion.h2
+								variants={fadeInUp}
+								className="text-white text-left text-lg py-4"
+							>
+								{props?.content?.titleTwo}
+							</motion.h2>
+							<button
+								className={isButtonLink(props?.content?.buttonLinkTwo?.url)}
+							>
+								<Link
+									href={`${props?.content?.buttonLinkTwo?.url}`}
+									className="text-black"
+									target={`${props?.content?.buttonLinkTwo?.target}`}
+								>
+									<a className="font-[700] text-medium hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s] ">
+										{props?.content?.buttonLinkTwo?.title}
+									</a>
+								</Link>
+							</button>
+						</motion.div>
+					</div>
 				</div>
 			</div>
 		</section>

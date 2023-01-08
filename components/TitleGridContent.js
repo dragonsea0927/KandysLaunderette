@@ -28,7 +28,7 @@ const TitleGridContent = (props) => {
 
 	return (
 		<section className={styles.titleGridContent}>
-			<div className="container mx-auto p-0">
+			<div>
 				<div className="flex flex-col px-0 md:px-8">
 					<motion.div variants={fadeInUp} className="py-28">
 						<h2 className="text-black text-center text-4xl md:text-5xl">

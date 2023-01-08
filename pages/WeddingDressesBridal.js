@@ -86,7 +86,7 @@ const WeddingDressesAndBridal = () => {
 
 			{/* // <========== PAGE TITLE ==========> */}
 			<div className={styles.pageTitle}>
-				<div className="container mx-auto p-0">
+				<div>
 					<div className={styles.content}>
 						<motion.div variants={fadeInUp} className={styles.title}>
 							<h2>Wedding Dresses & Bridesmaid</h2>
@@ -98,7 +98,7 @@ const WeddingDressesAndBridal = () => {
 
 			{/* // <========== WEDDING DRESS ==========> */}
 			<div className={styles.weddingDress}>
-				<div className="container mx-auto p-0">
+				<div>
 					<div className={styles.gridDisplay}>
 						<motion.div variants={fadeIn} className={styles.Image}>
 							<Image
@@ -131,7 +131,7 @@ const WeddingDressesAndBridal = () => {
 
 			{/* // <========== WEDDING DRESS PROCESS ==========> */}
 			<div className={styles.BridesmaidDress}>
-				<div className="container mx-auto p-0">
+				<div>
 					<div className={styles.content}>
 						<div className={styles.innerContent}>
 							<motion.div variants={fadeIn} className={styles.Image}>

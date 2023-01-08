@@ -1,5 +1,6 @@
 // Imports
 @import "../fonts";
+@import "../colors";
 
 /* ===== SPECIAL OCCASIONS =====*/
 .specialOccasions {
@@ -12,5 +13,9 @@
 
 	p {
 		font-family: $fontStyle_header;
+	}
+
+	a {
+		font-family: $fontStyle_body;
 	}
 }

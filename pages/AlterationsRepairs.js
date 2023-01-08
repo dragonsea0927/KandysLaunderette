@@ -93,7 +93,7 @@ const AlterationsRepairs = () => {
 			<div className={styles.alterationsRepairsSection}>
 				{/* // <========== PAGE TITLE ==========> */}
 				<div className={styles.pageTitle}>
-					<div className="container mx-auto p-0">
+					<div>
 						<div className={styles.content}>
 							<motion.div variants={fadeInUp} className={styles.title}>
 								<h2>Alterations & Repairs</h2>
@@ -107,7 +107,7 @@ const AlterationsRepairs = () => {
 				<div className={styles.backgroundImageAlterationsRepairs}></div>
 
 				<div className={styles.aboutUs}>
-					<div className="container mx-auto p-0">
+					<div>
 						<motion.div variants={stagger} className={styles.content}>
 							<motion.h2 variants={fadeInUp}>We may be new to you</motion.h2>
 							<motion.p variants={fadeIn}>
@@ -133,7 +133,7 @@ const AlterationsRepairs = () => {
 
 				{/* <!--===== WEDDING SUITS =====--> */}
 				<div className={styles.suitsBridal}>
-					<div className="container mx-auto p-0">
+					<div>
 						<div className={styles.content}>
 							<motion.div variants={fadeInUp} className={styles.title}>
 								<h2>Wedding Suits & Bridal Dresses</h2>

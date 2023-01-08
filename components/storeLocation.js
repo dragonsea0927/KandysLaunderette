@@ -7,7 +7,7 @@ const StoreLocation = (props) => {
 		<>
 			{/* <!--===== OUT STORE LOCATION =====--> */}
 			<div className={styles.storeLocation}>
-				<div className="container mx-auto p-0">
+				<div>
 					<motion.div variants={fadeInUp} className={styles.title}>
 						<h2 className="text-black text-xl">{props?.title}</h2>
 						<h5 className="mt-4 text-black font-[500] text-base">

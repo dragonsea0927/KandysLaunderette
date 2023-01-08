@@ -48,7 +48,7 @@ const ContactInfoMap = () => {
 	return (
 		<>
 			<section className={styles.contactInfoMap}>
-				<div className="container mx-auto p-0">
+				<div>
 					<div className={styles.content}>
 						<div className={styles.leftSide}>
 							<div className={styles.item}>

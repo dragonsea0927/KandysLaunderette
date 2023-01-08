@@ -48,7 +48,7 @@ const ourProcess = () => {
 		<>
 			{/* // <========== OUR PROCESS INFORMATION ==========> */}
 			<div className={styles.ourProcess}>
-				<div className="container mx-auto p-0">
+				<div>
 					<div className={styles.content}>
 						<motion.div variants={fadeInUp} className={styles.title}>
 							<h2>Our Process</h2>

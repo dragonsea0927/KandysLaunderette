@@ -12,10 +12,10 @@ const TitleParagraphGridContent = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full w-[35rem] my-12 mx-auto text-black font-[500] text-base";
+				"hidden w-full lg:w-[45rem] my-12 py-8 mx-auto text-black text-center font-[500] text-base";
 		} else {
 			contentStyling =
-				"block w-full w-[35rem] my-12 mx-auto text-black font-[500] text-base";
+				"block w-full lg:w-[45rem] my-12 py-8 mx-auto text-black text-center font-[500] text-base";
 		}
 		return contentStyling;
 	}
@@ -26,11 +26,11 @@ const TitleParagraphGridContent = (props) => {
 		};
 	}
 	return (
-		<sections>
+		<section>
 			<div className={styles.titleParagraphGridContent}>
-				<div className="container mx-auto p-0">
-					<div className={styles.content}>
-						<motion.div variants={fadeInUp} className={styles.titleSection}>
+				<div>
+					<div className="px-8 flex flex-col">
+						<motion.div variants={fadeInUp} className="p-8">
 							<h2 className="text-black text-center text-4xl md:text-5xl">
 								{props?.title}
 							</h2>
@@ -41,15 +41,7 @@ const TitleParagraphGridContent = (props) => {
 						</motion.div>
 						<motion.div
 							variants={stagger}
-							className="grid grid-col-2 py-22 gap-5 justify-between items-center"
-							style={{
-								gap: "1.5rem",
-								display: "grid",
-								padding: "4.5rem 0",
-								alignItems: "center",
-								justifyContent: "space-between",
-								gridTemplateColumns: "repeat(2, 1fr)",
-							}}
+							className="py-22 mx-auto mb-8 grid grid-cols-1 lg:grid-cols-2 gap-4 justify-center items-start"
 						>
 							{/* Array Loop */}
 							{props.gridContent.map((keys) => (
@@ -66,7 +58,7 @@ const TitleParagraphGridContent = (props) => {
 					</div>
 				</div>
 			</div>
-		</sections>
+		</section>
 	);
 };
 

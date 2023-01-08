@@ -30,7 +30,7 @@ const ContactInfo = () => {
 		<>
 			{/* <!--===== INFORMATION SECTION =====--> */}
 			<div className={styles.backgroundImageContactInfoWDAB}>
-				<div className="container mx-auto p-0">
+				<div>
 					<div className={styles.content}>
 						<motion.div variants={fadeInUp} className={styles.title}>
 							<h2>Contact our specialist Team to discuss your request.</h2>
