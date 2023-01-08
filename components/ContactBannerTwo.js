@@ -2,34 +2,22 @@
 import Link from "next/link";
 import {motion} from "framer-motion";
 import {fadeInUp, fadeIn, stagger} from "../animations/animations";
-import styles from "../styles/components/contactBanner.module.scss";
+import styles from "../styles/components/ContactBanner.module.scss";
 
 const ContactBannerTwo = (props) => {
 	return (
 		<section
 			className={styles.contactBannerTwo}
 			style={{
-				padding: "7.5rem 5rem",
-				backgroundSize: "cover",
-				backgroundPosition: "center",
-				backgroundRepeat: "no-repeat",
 				backgroundImage: `url(${props.backgroundImage}`,
 			}}
 		>
 			<div className="container mx-auto p-0">
 				<motion.div
 					variants={stagger}
-					className="flex flex-col md:flex-row py-4 gap-12 md:gap-16 lg:gap-28 justify-between items-center"
-					style={{
-						gap: "10rem",
-						display: "flex",
-						padding: "1rem 0",
-						flexDirection: "row",
-						alignItems: "center",
-						justifyContent: "space-between",
-					}}
+					className="flex flex-col lg:flex-row py-8 gap-y-28 lg:gap-10 px-8 justify-between items-center"
 				>
-					<motion.div variants={fadeInUp} className="">
+					<motion.div variants={fadeInUp}>
 						<h2
 							className="text-white text-center text-2xl"
 							style={{
@@ -117,17 +105,16 @@ const ContactBannerTwo = (props) => {
 							5pm)
 						</h5>
 					</motion.div>
-					<motion.div variants={fadeIn} className={styles.button}>
+					<motion.button variants={fadeIn}>
 						<Link
 							href={`${props?.buttonLink?.url}`}
 							target={`${props?.buttonLink?.target}`}
-							style={{
-								padding: "2rem 5rem",
-							}}
 						>
-							{props?.buttonLink?.title}
+							<a className="py-6 px-20 font-[500] uppercase border-[1px] border-solid border-fadedPink text-white text-base  hover:bg-fadedPink hover:ease-in-out hover:duration-[0.5s]">
+								{props?.buttonLink?.title}
+							</a>
 						</Link>
-					</motion.div>
+					</motion.button>
 				</motion.div>
 			</div>
 		</section>
