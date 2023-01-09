@@ -27,7 +27,7 @@ const ourProcess = (props) => {
 	return (
 		<section className={styles.ourProcess}>
 			<div className="container mx-auto p-0">
-				<div className="mt-20">
+				<div className="py-20">
 					<motion.div variants={fadeInUp}>
 						<h2 className="text-black text-center text-4xl py-6 md:text-5xl">
 							{props?.title}
