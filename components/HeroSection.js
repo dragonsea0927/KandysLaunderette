@@ -39,7 +39,7 @@ const HeroSection = (props) => {
 				<div className="flex flex-col justify-center items-center">
 					<motion.div variants={fadeInUp} className="py-5 px-8">
 						<h2 className="text-white text-center text-4xl md:text-6xl">
-							Kandys Launderette {props?.title}
+							{props?.title}
 						</h2>
 						<div
 							className={isSubtitleContent(props?.subtitle)}

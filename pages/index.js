@@ -92,7 +92,6 @@ export default function Home({homePageContent, themesOptionsContent}) {
 				<ContactBannerTwo
 					title={homePageContent?.contactBannerTwo?.title}
 					themesOptions={themesOptionsContent?.themesOptions}
-					paragraph={homePageContent?.contactBannerTwo?.paragraph}
 					buttonLink={homePageContent?.contactBannerTwo?.buttonLink}
 					backgroundImage={homePageContent?.contactBannerTwo?.image?.sourceUrl}
 				/>
@@ -220,7 +219,6 @@ export async function getStaticProps() {
 							}
 							contactBannerTwo {
 								title
-								paragraph
 								buttonLink {
 									url
 									title

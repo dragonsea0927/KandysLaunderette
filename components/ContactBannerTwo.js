@@ -19,7 +19,7 @@ const ContactBannerTwo = (props) => {
 
 	function createParagraphMarkup() {
 		return {
-			__html: DOMPurify.sanitize(`${props?.paragraph}`),
+			__html: DOMPurify.sanitize(`${props?.themesOptions?.openingHours}`),
 		};
 	}
 
@@ -67,7 +67,7 @@ const ContactBannerTwo = (props) => {
 							</span>
 						</div>
 						<div
-							className={isParagraphContent(props?.paragraph)}
+							className={isParagraphContent(props?.themesOptions?.openingHours)}
 							dangerouslySetInnerHTML={createParagraphMarkup()}
 						/>
 					</motion.div>
