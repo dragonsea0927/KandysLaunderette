@@ -28,3 +28,20 @@
 		}
 	}
 }
+
+// <========== CONTACT US BANNER THREE ==========>
+.contactBannerThree {
+	padding: 5rem;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	a {
+		font-family: $fontStyle_body;
+
+		&:hover {
+			transition: all 0.5s ease-in-out;
+			color: $secondary_fadedPink;
+		}
+	}
+}

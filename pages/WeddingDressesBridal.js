@@ -6,7 +6,7 @@ import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 
 // Components
 import OurProcess from "/components/ourProcess";
-import ContactInfo from "/components/WeddingDressesAndBridal/ContactInfo";
+import ContactBannerThree from "/components/WeddingDressesAndBridal/ContactBannerThree";
 
 const WeddingDressesAndBridal = (pageTitle) => {
 	return (
@@ -107,7 +107,7 @@ const WeddingDressesAndBridal = (pageTitle) => {
 			</div>
 
 			{/* <!--===== INFORMATION SECTION =====--> */}
-			<ContactInfo />
+			<ContactBannerThree />
 		</motion.div>
 	);
 };

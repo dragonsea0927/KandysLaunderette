@@ -10,7 +10,7 @@ import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 
 // Components
 import HeroSection from "../components/HeroSection";
-import ContactInfo from "/components/ContactInfo";
+import ContactBannerThree from "/components/ContactBannerThree";
 
 const LaundryDryCleaning = ({
 	pageTitle,
@@ -115,7 +115,14 @@ const LaundryDryCleaning = ({
 				</div>
 
 				{/* <!--===== INFORMATION SECTION =====--> */}
-				<ContactInfo />
+				<ContactBannerThree
+					title={laundryDryCleaningPageContent?.contactBanner?.title}
+					themesOptions={themesOptionsContent?.themesOptions}
+					buttonLink={laundryDryCleaningPageContent?.contactBanner?.buttonLink}
+					backgroundImage={
+						laundryDryCleaningPageContent?.contactBanner?.image?.sourceUrl
+					}
+				/>
 			</main>
 		</motion.div>
 	);

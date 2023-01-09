@@ -1,10 +1,9 @@
-/* eslint-disable @next/next/link-passhref */
 import Link from "next/link";
 import {motion} from "framer-motion";
 import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 import styles from "../styles/components/ContactBanner.module.scss";
 
-const ContactBannerTwo = (props) => {
+const ContactBannerThree = (props) => {
 	/* Check if paragraph content is null
 	 And Displays content if it null */
 	function isParagraphContent(isParagraphContent) {
@@ -22,10 +21,9 @@ const ContactBannerTwo = (props) => {
 			__html: DOMPurify.sanitize(`${props?.themesOptions?.openingHours}`),
 		};
 	}
-
 	return (
 		<section
-			className={styles.contactBannerTwo}
+			className={styles.contactBannerThree}
 			style={{
 				backgroundImage: `url(${props.backgroundImage}`,
 			}}
@@ -33,7 +31,7 @@ const ContactBannerTwo = (props) => {
 			<div className="container mx-auto p-0">
 				<motion.div
 					variants={stagger}
-					className="flex flex-col lg:flex-row py-8 gap-y-28 lg:gap-10 px-8 justify-between items-center"
+					className="flex flex-col py-8 gap-y-24  px-8 justify-between items-center"
 				>
 					<motion.div variants={fadeInUp}>
 						<h2 className="pb-10 text-white text-center text-4xl">
@@ -73,7 +71,7 @@ const ContactBannerTwo = (props) => {
 					</motion.div>
 					<motion.button
 						variants={fadeIn}
-						className="py-6 px-20 font-[700] uppercase border-[1px] border-solid border-fadedPink text-white text-medium hover:bg-fadedPink hover:ease-in-out hover:duration-[0.5s]"
+						className="py-6 px-20 font-[700] uppercase bg-white text-black text-medium hover:text-white  hover:bg-fadedPink hover:ease-in-out hover:duration-[0.5s]"
 					>
 						<Link
 							href={`${props?.buttonLink?.url}`}
@@ -88,4 +86,4 @@ const ContactBannerTwo = (props) => {
 	);
 };
 
-export default ContactBannerTwo;
+export default ContactBannerThree;
