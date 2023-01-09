@@ -42,7 +42,7 @@ const StoreLocation = (props) => {
 					width="100%"
 					height="650"
 					loading="lazy"
-					allowfullscreen="true"
+					allowFullScreen="true"
 				></iframe>
 			</div>
 		</section>

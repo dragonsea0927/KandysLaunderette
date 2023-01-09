@@ -4,9 +4,9 @@ import Image from "next/image";
 import {motion} from "framer-motion";
 import DOMPurify from "isomorphic-dompurify";
 import {fadeInUp, stagger} from "../animations/animations";
-import styles from "../styles/components/SpecialOccasions.module.scss";
+import styles from "../styles/components/TwoOptions.module.scss";
 
-const SpecialOccasions = (props) => {
+const TwoOptions = (props) => {
 	/* Check if paragraph content is null
 	 And Displays content if it null */
 	function isParagraphContent(isParagraphContent) {
@@ -30,7 +30,7 @@ const SpecialOccasions = (props) => {
 	function isButtonLink(isButtonLink) {
 		let contentStyling;
 		const tailwindStyling =
-			"w-[fit-content] rounded-[50px] bg-white py-2 px-8 hover:bg-fadedPink hover:ease-in-out hover:duration-[0.5s]";
+			"w-[fit-content] rounded-[50px] bg-white py-2 px-8 hover:bg-fadedPink hover:text-white hover:ease-in-out hover:duration-[0.5s]";
 		if (isButtonLink === null) {
 			contentStyling = `hidden ${tailwindStyling}`;
 		} else {
@@ -40,7 +40,7 @@ const SpecialOccasions = (props) => {
 	}
 
 	return (
-		<section className={styles.specialOccasions}>
+		<section className={styles.twoOptions}>
 			<div className="container mx-auto p-0">
 				<motion.div variants={fadeInUp} className="py-28">
 					<h2 className="text-black text-center text-4xl md:text-5xl">
@@ -57,7 +57,7 @@ const SpecialOccasions = (props) => {
 							<a>
 								<Image
 									width={1000}
-									height={1500}
+									height={1000}
 									className="w-[1000px] h-[1000px] object-cover object-center"
 									src={props?.content?.image?.sourceUrl}
 									alt={`${props?.content?.title} Image`}
@@ -79,7 +79,7 @@ const SpecialOccasions = (props) => {
 									href={`${props?.content?.buttonLink?.url}`}
 									target={`${props?.content?.buttonLink?.target}`}
 								>
-									<a className="font-[700] text-medium hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s] ">
+									<a className="font-[700] text-medium hover:text-white hover:ease-in-out hover:duration-[0.5s]">
 										{props?.content?.buttonLink?.title}
 									</a>
 								</Link>
@@ -91,7 +91,7 @@ const SpecialOccasions = (props) => {
 							<a>
 								<Image
 									width={1000}
-									height={1500}
+									height={1000}
 									className="w-[1000px] h-[1000px] object-cover object-center"
 									src={props?.content?.imageTwo?.sourceUrl}
 									alt={`${props?.content?.titleTwo} Image`}
@@ -113,10 +113,9 @@ const SpecialOccasions = (props) => {
 							>
 								<Link
 									href={`${props?.content?.buttonLinkTwo?.url}`}
-									className="text-black"
 									target={`${props?.content?.buttonLinkTwo?.target}`}
 								>
-									<a className="font-[700] text-medium hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s] ">
+									<a className="font-[700] text-medium hover:text-white hover:ease-in-out hover:duration-[0.5s]">
 										{props?.content?.buttonLinkTwo?.title}
 									</a>
 								</Link>
@@ -129,4 +128,4 @@ const SpecialOccasions = (props) => {
 	);
 };
 
-export default SpecialOccasions;
+export default TwoOptions;

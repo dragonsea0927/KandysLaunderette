@@ -1,14 +1,11 @@
 import Head from "next/head";
-import Link from "next/link";
-import Image from "next/image";
 import {gql} from "@apollo/client";
 import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
-import styles from "/styles/Home.module.scss";
 import {getThemesOptionsContent} from "../lib/themesOptions";
-import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 
 // Components
+import TwoOptions from "../components/TwoOptions";
 import HeroSection from "../components/HeroSection";
 import ContactBannerThree from "/components/ContactBannerThree";
 
@@ -44,77 +41,13 @@ const LaundryDryCleaning = ({
 					}
 				/>
 				{/* // <========== OPTIONS ==========> */}
-				<div className={styles.options}>
-					<div>
-						<div className={styles.content}>
-							<motion.div variants={stagger} className={styles.title}>
-								<motion.h2 variants={fadeIn}>Our Options</motion.h2>
-								<motion.h5 variants={fadeIn}>
-									Choose Between our Individual service option. Or our more
-									Business tailored dry cleaning service.
-								</motion.h5>
-							</motion.div>
-							<div className={styles.innerContent}>
-								<div className={styles.productDisplay}>
-									<Link
-										href="LaundryAndDryCleaning/IndividualService"
-										target="blank"
-									>
-										<a>
-											<Image
-												src="/img/Size-Chart-LP_Mens.webp"
-												alt="Product Image"
-												width={300}
-												height={300}
-												layout="responsive"
-												objectFit="cover"
-											/>
-										</a>
-									</Link>
-									<motion.div variants={fadeInUp} className={styles.content}>
-										<button className={styles.shopButton}>
-											<Link
-												href="LaundryAndDryCleaning/IndividualService"
-												target="blank"
-											>
-												<a>Individual Services</a>
-											</Link>
-										</button>
-									</motion.div>
-								</div>
-								<div className={styles.productDisplay}>
-									<Link
-										href="LaundryAndDryCleaning/businessService"
-										target="blank"
-									>
-										<a>
-											<Image
-												src="/img/05a848344f865a82cda0eec6cf53e861.jpg"
-												alt="Product Image"
-												width={300}
-												height={300}
-												layout="responsive"
-												objectFit="cover"
-											/>
-										</a>
-									</Link>
-									<motion.div variants={fadeInUp} className={styles.content}>
-										<button className={styles.shopButton}>
-											<Link
-												href="LaundryAndDryCleaning/businessService"
-												target="blank"
-											>
-												<a>Business Services</a>
-											</Link>
-										</button>
-									</motion.div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				<TwoOptions
+					title={laundryDryCleaningPageContent?.ourOptions?.title}
+					paragraph={laundryDryCleaningPageContent?.ourOptions?.paragraph}
+					content={laundryDryCleaningPageContent?.ourOptions?.content}
+				/>
 
-				{/* <!--===== INFORMATION SECTION =====--> */}
+				{/* <!--===== CONTACT BANNER THREE =====--> */}
 				<ContactBannerThree
 					title={laundryDryCleaningPageContent?.contactBanner?.title}
 					themesOptions={themesOptionsContent?.themesOptions}

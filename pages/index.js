@@ -7,12 +7,12 @@ import {getThemesOptionsContent} from "../lib/themesOptions";
 
 // Components
 import TextImage from "../components/TextImage";
+import TwoOptions from "../components/TwoOptions";
 import HeroSection from "../components/HeroSection";
 import StoreLocation from "/components/storeLocation";
 import ContactBanner from "../components/ContactBanner";
 import ContactBannerTwo from "/components/ContactBannerTwo";
 import TitleGridContent from "/components/TitleGridContent";
-import SpecialOccasions from "../components/SpecialOccasions";
 import TitleGridContentTwo from "/components/TitleGridContentTwo";
 import TitleParagraphGridContent from "/components/TitleParagraphGridContent";
 
@@ -60,7 +60,7 @@ export default function Home({homePageContent, themesOptionsContent}) {
 				/>
 
 				{/* <!--===== SPECIAL OCCASIONS =====--> */}
-				<SpecialOccasions
+				<TwoOptions
 					title={homePageContent?.specialOccasions?.title}
 					paragraph={homePageContent?.specialOccasions?.paragraph}
 					content={homePageContent?.specialOccasions?.content}

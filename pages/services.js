@@ -2,9 +2,12 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import {motion} from "framer-motion";
+import {getThemesOptionsContent} from "../lib/themesOptions";
 import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 
-const services = (pageTitle) => {
+// Components
+
+const services = ({pageTitle, servicesPageContent, themesOptionsContent}) => {
 	return (
 		<motion.div
 			exit={{

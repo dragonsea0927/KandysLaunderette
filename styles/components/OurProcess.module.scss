@@ -1,0 +1,31 @@
+// Imports
+@import "../fonts";
+@import "../colors";
+
+// <========== OUR PROCESS ==========>
+.ourProcess {
+	margin-top: 5rem;
+
+	h2 {
+		font-family: $fontStyle_option1;
+	}
+
+	h5 {
+		font-family: $fontStyle_header;
+	}
+}
+
+.singleCard {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+
+	h2 {
+		font-family: $fontStyle_option1;
+	}
+
+	p {
+		font-family: $fontStyle_header;
+	}
+}

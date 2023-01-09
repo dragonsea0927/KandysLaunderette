@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import {motion} from "framer-motion";
 import styles from "/styles/Home.module.scss";
+import {getThemesOptionsContent} from "../lib/themesOptions";
 import {fadeInUp, fadeIn, fadeInTwo, stagger} from "../animations/animations";
 
 // Components
@@ -10,7 +11,7 @@ import NavbarTwo from "/components/NavbarTwo";
 import StoreLocation from "/components/storeLocation";
 import ContactBanner from "../components/ContactBanner";
 
-const ourStory = (props) => {
+const ourStory = ({pageTitle, ourStoryPageContent, themesOptionsContent}) => {
 	return (
 		<motion.div
 			exit={{

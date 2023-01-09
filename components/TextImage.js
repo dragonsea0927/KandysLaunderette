@@ -27,7 +27,7 @@ const TextImage = (props) => {
 	}
 
 	return (
-		<section className={styles.introSection}>
+		<section className={styles.textImage}>
 			<div className="container mx-auto p-0">
 				<div className="flex flex-col md:flex-row p-4 gap-4 justify-between items-center">
 					<motion.div variants={fadeInUp} className="w-full md:w-1/2">

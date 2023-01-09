@@ -2,7 +2,23 @@
 @import "../fonts";
 @import "../colors";
 
-.introSection {
+.textImage {
+	padding: 5rem 0;
+
+	h2 {
+		font-family: $fontStyle_option1;
+	}
+
+	h5 {
+		font-family: $fontStyle_header;
+	}
+
+	p {
+		font-family: $fontStyle_body;
+	}
+}
+
+.textImageTwo {
 	padding: 5rem 0;
 
 	h2 {
