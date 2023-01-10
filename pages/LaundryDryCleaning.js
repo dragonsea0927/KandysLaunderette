@@ -6,7 +6,7 @@ import {getThemesOptionsContent} from "../lib/themesOptions";
 
 // Components
 import TwoOptions from "../components/TwoOptions";
-import HeroSection from "../components/HeroSection";
+import HeroSectionTwo from "../components/HeroSectionTwo";
 import ContactBannerThree from "/components/ContactBannerThree";
 
 const LaundryDryCleaning = ({
@@ -32,7 +32,7 @@ const LaundryDryCleaning = ({
 
 			<main>
 				{/* <!--===== HERO =====--> */}
-				<HeroSection
+				<HeroSectionTwo
 					title={laundryDryCleaningPageContent?.heroSection?.title}
 					subtitle={laundryDryCleaningPageContent?.heroSection?.subtitle}
 					backgroundImage={

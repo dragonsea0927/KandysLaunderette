@@ -12,9 +12,9 @@ const TwoOptions = (props) => {
 	function isParagraphContent(isParagraphContent) {
 		let contentStyling;
 		if (isParagraphContent === null) {
-			contentStyling = "hidden mt-4 py-8 text-black text-center text-base";
+			contentStyling = "hidden mt-4 py-8 text-black text-center text-medium";
 		} else {
-			contentStyling = "block mt-4 py-8 text-black text-center text-base";
+			contentStyling = "block mt-4 py-8 text-black text-center text-medium";
 		}
 		return contentStyling;
 	}

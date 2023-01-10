@@ -12,10 +12,10 @@ const TitleGridContent = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden mt-4 py-8 text-black text-center font-[500] text-base";
+				"hidden mt-4 py-8 text-white text-center font-[500] text-medium";
 		} else {
 			contentStyling =
-				"block mt-4 py-8 text-black text-center font-[500] text-base";
+				"block mt-4 py-8 text-white text-center font-[500] text-medium";
 		}
 		return contentStyling;
 	}
@@ -27,11 +27,20 @@ const TitleGridContent = (props) => {
 	}
 
 	return (
-		<section className={styles.titleGridContent}>
+		<section
+			className={styles.titleGridContent}
+			style={{
+				backgroundImage: `linear-gradient(
+							0deg,
+							rgba(149, 14, 59, 0.85),
+							rgba(221, 69, 119, 0.50)
+						),url(${props.backgroundImage})`,
+			}}
+		>
 			<div className="container mx-auto p-0">
 				<div className="flex flex-col px-0 md:px-8">
 					<motion.div variants={fadeInUp} className="py-28">
-						<h2 className="text-black text-center text-4xl md:text-5xl">
+						<h2 className="text-white text-center text-4xl md:text-5xl">
 							{props?.title}
 						</h2>
 						<div
@@ -43,7 +52,7 @@ const TitleGridContent = (props) => {
 						<Link
 							href="/services"
 							target=""
-							className="border-none no-underline bg-transparent text-black text-2xl"
+							className="border-none no-underline bg-transparent text-white text-2xl"
 						>
 							View All Services
 						</Link>

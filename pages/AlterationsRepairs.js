@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
+import {gql} from "@apollo/client";
+import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
 import styles from "/styles/Home.module.scss";
 import {fadeInUp, fadeIn, fadeInTwo, stagger} from "../animations/animations";

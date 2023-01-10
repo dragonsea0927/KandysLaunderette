@@ -3,7 +3,7 @@ import DOMPurify from "isomorphic-dompurify";
 import {fadeInUp} from "../animations/animations";
 import styles from "../styles/components/HeroSection.module.scss";
 
-const HeroSection = (props) => {
+const HeroSectionTwo = (props) => {
 	/* Check if Subtitle content is null
 	 And Displays content if it null */
 	function isSubtitleContent(isSubtitleContent) {
@@ -22,7 +22,6 @@ const HeroSection = (props) => {
 			__html: DOMPurify.sanitize(`${props?.subtitle}`),
 		};
 	}
-
 	return (
 		<section
 			className={styles.heroSectionTwo}
@@ -47,4 +46,4 @@ const HeroSection = (props) => {
 	);
 };
 
-export default HeroSection;
+export default HeroSectionTwo;

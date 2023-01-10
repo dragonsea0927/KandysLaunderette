@@ -33,7 +33,8 @@ module.exports = {
 			lightGrey: "#fafafa",
 
 			// Main colors
-			pink: "#ee87f7",
+			pink: "#dd4577",
+			darkPink: "#950e3b",
 			fadedPink: "#ff8fb4",
 			fadedPinkTwo: "#fcbfd4",
 			fadedPinkThree: "#f2739d",

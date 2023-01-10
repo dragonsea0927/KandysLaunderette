@@ -42,7 +42,7 @@ const ContactBannerThree = (props) => {
 							<Link
 								href={`mailto:${props?.themesOptions?.email}`}
 								target="blank"
-								className="flex flex-row justify-center items-center gap-2 text-white text-base text-center hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]"
+								className="flex flex-row justify-center items-center gap-2 text-white text-medium text-center hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]"
 							>
 								{props?.themesOptions?.email}
 							</Link>

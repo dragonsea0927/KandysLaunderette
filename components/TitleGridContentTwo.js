@@ -11,10 +11,10 @@ const TitleGridContentTwo = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden mt-4 py-8 text-white text-center font-[500] text-base";
+				"hidden mt-4 py-8 text-white text-center font-[500] text-medium";
 		} else {
 			contentStyling =
-				"block mt-4 py-8 text-white text-center font-[500] text-base";
+				"block mt-4 py-8 text-white text-center font-[500] text-medium";
 		}
 		return contentStyling;
 	}
@@ -26,7 +26,7 @@ const TitleGridContentTwo = (props) => {
 	}
 
 	return (
-		<section className={styles.TitleGridContentTwo}>
+		<section className={styles.titleGridContentTwo}>
 			<div className="container mx-auto p-0">
 				<div className="flex flex-col px-0 md:px-8">
 					<motion.div variants={fadeInUp} className="py-28">

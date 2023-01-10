@@ -27,7 +27,11 @@ const ContactBannerTwo = (props) => {
 		<section
 			className={styles.contactBannerTwo}
 			style={{
-				backgroundImage: `url(${props.backgroundImage}`,
+				backgroundImage: `linear-gradient(
+							0deg,
+							rgba(221, 69, 119, 0.45),
+							rgba(221, 69, 119, 0.45)
+						),url(${props.backgroundImage}`,
 			}}
 		>
 			<div className="container mx-auto p-0">
@@ -44,7 +48,7 @@ const ContactBannerTwo = (props) => {
 							<Link
 								href={`mailto:${props?.themesOptions?.email}`}
 								target="blank"
-								className="flex flex-row justify-center items-center gap-2 text-white text-base text-center hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]"
+								className="flex flex-row justify-center items-center gap-2 text-white text-medium text-center hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]"
 							>
 								{props?.themesOptions?.email}
 							</Link>

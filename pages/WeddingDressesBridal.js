@@ -9,8 +9,8 @@ import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 
 // Components
 import OurProcess from "/components/OurProcess";
-import HeroSection from "../components/HeroSection";
 import TextImageTwo from "../components/TextImageTwo";
+import HeroSectionTwo from "../components/HeroSectionTwo";
 import ContactBannerThree from "/components/ContactBannerThree";
 
 const WeddingDressesAndBridal = ({
@@ -35,7 +35,7 @@ const WeddingDressesAndBridal = ({
 			</Head>
 			<main>
 				{/* <!--===== HERO =====--> */}
-				<HeroSection
+				<HeroSectionTwo
 					title={weddingDressesAndBridalPageContent?.heroSection?.title}
 					subtitle={weddingDressesAndBridalPageContent?.heroSection?.subtitle}
 					backgroundImage={

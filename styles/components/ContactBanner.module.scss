@@ -2,6 +2,34 @@
 @import "../fonts";
 @import "../colors";
 
+.contactBannerTwo,
+.contactBannerThree {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	h2,
+	p,
+	a,
+	span {
+		font-family: $fontStyle_header;
+	}
+
+	a {
+		&:hover {
+			@apply hover:text-fadedPinkTwo hover:ease-in-out hover:duration-[0.5s];
+		}
+	}
+
+	button {
+		a {
+			&:hover {
+				@apply hover:text-white;
+			}
+		}
+	}
+}
+
 // <========== CONTACT US BANNER ==========>
 .contactBanner {
 	padding: 5rem 2rem;
@@ -15,27 +43,9 @@
 // <========== CONTACT US BANNER TWO ==========>
 .contactBannerTwo {
 	padding: 7.5rem 5rem;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-
-	h2,
-	p,
-	a {
-		font-family: $fontStyle_header;
-	}
 }
 
 // <========== CONTACT US BANNER THREE ==========>
 .contactBannerThree {
 	padding: 5rem;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-
-	h2,
-	p,
-	a {
-		font-family: $fontStyle_header;
-	}
 }

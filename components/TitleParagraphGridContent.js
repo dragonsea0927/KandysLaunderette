@@ -12,10 +12,10 @@ const TitleParagraphGridContent = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full lg:w-[45rem] my-12 py-8 mx-auto text-black text-center font-[500] text-base";
+				"hidden w-full lg:w-[45rem] my-12 py-8 mx-auto text-black text-center font-[500] text-medium";
 		} else {
 			contentStyling =
-				"block w-full lg:w-[45rem] my-12 py-8 mx-auto text-black text-center font-[500] text-base";
+				"block w-full lg:w-[45rem] my-12 py-8 mx-auto text-black text-center font-[500] text-medium";
 		}
 		return contentStyling;
 	}

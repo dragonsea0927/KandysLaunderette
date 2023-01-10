@@ -11,9 +11,9 @@ import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 import Navbar from "/components/Navbar";
 import OurProcess from "/components/ourProcess";
 import FooterDark from "/components/FooterDark";
-import HeroSection from "../components/HeroSection";
 import TextImageTwo from "../components/TextImageTwo";
 import ContactBanner from "../components/ContactBanner";
+import HeroSectionTwo from "../components/HeroSectionTwo";
 
 const SuitsOxfordShirts = ({
 	pageTitle,
@@ -37,7 +37,7 @@ const SuitsOxfordShirts = ({
 			</Head>
 			<main>
 				{/* <!--===== HERO =====--> */}
-				<HeroSection
+				<HeroSectionTwo
 					title={suitsOxfordShirtsPageContent?.heroSection?.title}
 					subtitle={suitsOxfordShirtsPageContent?.heroSection?.subtitle}
 					backgroundImage={
@@ -47,7 +47,6 @@ const SuitsOxfordShirts = ({
 				/>
 
 				{/* // <========== SUITS & OXFORD DESCRIPTIONS ==========> */}
-
 				<TextImageTwo
 					title={suitsOxfordShirtsPageContent?.textImage?.title}
 					paragraph={suitsOxfordShirtsPageContent?.textImage?.paragraph}

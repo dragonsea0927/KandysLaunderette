@@ -8,7 +8,7 @@ import {getThemesOptionsContent} from "../lib/themesOptions";
 // Components
 import TextImage from "../components/TextImage";
 import TwoOptions from "../components/TwoOptions";
-import HeroSection from "../components/HeroSection";
+import HeroSectionTwo from "../components/HeroSectionTwo";
 import StoreLocation from "/components/storeLocation";
 import ContactBanner from "../components/ContactBanner";
 import ContactBannerTwo from "/components/ContactBannerTwo";
@@ -35,7 +35,7 @@ export default function Home({homePageContent, themesOptionsContent}) {
 
 			<main>
 				{/* <!--===== HERO =====--> */}
-				<HeroSection
+				<HeroSectionTwo
 					title={homePageContent?.heroSection?.title}
 					subtitle={homePageContent?.heroSection?.subtitle}
 					backgroundImage={
@@ -57,6 +57,9 @@ export default function Home({homePageContent, themesOptionsContent}) {
 					title={homePageContent?.ourServices?.title}
 					paragraph={homePageContent?.ourServices?.paragraph}
 					gridContent={homePageContent?.ourServices?.gridContent}
+					backgroundImage={
+						homePageContent?.ourServices?.backgroundImage?.sourceUrl
+					}
 				/>
 
 				{/* <!--===== SPECIAL OCCASIONS =====--> */}
@@ -139,6 +142,9 @@ export async function getStaticProps() {
 							ourServices {
 								title
 								paragraph
+								backgroundImage {
+									sourceUrl
+								}
 								gridContent {
 									title
 									link {

@@ -2,7 +2,14 @@
 @import "../fonts";
 @import "../colors";
 
-.heroSection {
+.heroSectionTwo {
+	height: 90vh;
+	display: flex;
+	align-items: center;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
 	h2 {
 		font-family: $fontStyle_option1;
 	}

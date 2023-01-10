@@ -28,15 +28,26 @@
 }
 
 .titleGridContent {
-	background-color: $baseColor_white;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 
 	a {
-		color: $baseColor_black;
+		color: $baseColor_white;
 	}
 }
 
-.TitleGridContentTwo {
-	background-color: $baseColor_black;
+.titleGridContentTwo {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: $secondary_darkPink;
+	background-image: linear-gradient(
+			0deg,
+			rgba(149, 14, 59, 0.85),
+			rgba(221, 69, 119, 0.5)
+		),
+		url("/svg/w.svg");
 
 	a {
 		color: $baseColor_white;

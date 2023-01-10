@@ -12,10 +12,10 @@ const TextImage = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full xl:w-[45rem] text-left text-black font-[500] text-base";
+				"hidden w-full xl:w-[45rem] text-left text-black font-[500] text-medium";
 		} else {
 			contentStyling =
-				"block w-full xl:w-[45rem] text-left text-black font-[500] text-base";
+				"block w-full xl:w-[45rem] text-left text-black font-[500] text-medium";
 		}
 		return contentStyling;
 	}

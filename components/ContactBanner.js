@@ -11,10 +11,10 @@ const ContactBanner = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full xl:w-[45rem] mt-4 text-left text-white font-[500] text-base";
+				"hidden w-full xl:w-[45rem] mt-4 text-left text-white font-[500] text-medium";
 		} else {
 			contentStyling =
-				"block w-full xl:w-[45rem] mt-4 text-left text-white font-[500] text-base";
+				"block w-full xl:w-[45rem] mt-4 text-left text-white font-[500] text-medium";
 		}
 		return contentStyling;
 	}
@@ -29,10 +29,11 @@ const ContactBanner = (props) => {
 		<section
 			className={styles.contactBanner}
 			style={{
-				backgroundSize: "cover",
-				backgroundPosition: "center",
-				backgroundRepeat: "no-repeat",
-				backgroundImage: `url(${props.backgroundImage}`,
+				backgroundImage: `linear-gradient(
+							0deg,
+							rgba(221, 69, 119, 0.65),
+							rgba(221, 69, 119, 0.15)
+						),url(${props.backgroundImage}`,
 			}}
 		>
 			<div className="container mx-auto p-0">

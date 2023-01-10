@@ -11,10 +11,10 @@ const TitleParagraphGridCard = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden p-4 mx-auto text-black text-center font-[400] text-sm";
+				"hidden p-4 mx-auto text-black text-center font-[400] text-base";
 		} else {
 			contentStyling =
-				"block p-4 mx-auto text-black text-center font-[400] text-sm";
+				"block p-4 mx-auto text-black text-center font-[400] text-base";
 		}
 		return contentStyling;
 	}
