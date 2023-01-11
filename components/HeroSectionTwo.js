@@ -29,8 +29,8 @@ const HeroSectionTwo = (props) => {
 			style={{
 				backgroundImage: `linear-gradient(
 							0deg,
-							rgba(149, 14, 59, 0.30),
-							rgba(221, 69, 119, 0.30)
+							rgba(0, 0, 0, 0.30),
+							rgba(0, 0, 0, 0.30)
 						),url(${props.backgroundImage})`,
 			}}
 		>
