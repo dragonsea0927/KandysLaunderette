@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Link from "next/link";
-import Image from "next/image";
+import {gql} from "@apollo/client";
+import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
 import {getThemesOptionsContent} from "../lib/themesOptions";
 import {fadeInUp, fadeIn, stagger} from "../animations/animations";
@@ -43,8 +43,7 @@ export async function getStaticProps() {
 			mainContent: pages(where: {id: 479, status: PUBLISH}) {
 				edges {
 					node {
-						ServicesPage {
-						}
+						ServicesPage
 					}
 				}
 			}

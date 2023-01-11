@@ -1,0 +1,19 @@
+// Imports
+@import "../fonts";
+@import "../colors";
+
+// <========== NAVIGATION ==========>
+.Navbar {
+	padding: 0.5rem 0;
+	border-bottom: $secondary_Pink 0.25rem solid;
+
+	h2 {
+		font-family: $fontStyle_header;
+	}
+
+	a {
+		font-family: $fontStyle_option1;
+	}
+}
+
+//

@@ -27,7 +27,11 @@ const HeroSection = (props) => {
 		<section
 			className={styles.heroSectionTwo}
 			style={{
-				backgroundImage: `url(${props.backgroundImage}`,
+				backgroundImage: `linear-gradient(
+							0deg,
+							rgba(149, 14, 59, 0.85),
+							rgba(221, 69, 119, 0.50)
+						),url(${props.backgroundImage})`,
 			}}
 		>
 			<div className="container mx-auto p-0">

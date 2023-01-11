@@ -2,12 +2,16 @@
 @import "../fonts";
 @import "../colors";
 
+.contactBanner,
 .contactBannerTwo,
 .contactBannerThree {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+}
 
+.contactBannerTwo,
+.contactBannerThree {
 	h2,
 	p,
 	a,

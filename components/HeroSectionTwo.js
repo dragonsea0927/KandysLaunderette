@@ -10,9 +10,10 @@ const HeroSectionTwo = (props) => {
 		let contentStyling;
 		if (isSubtitleContent === null) {
 			contentStyling =
-				"hidden mt-4 text-white text-center text-2xl md:text-3xl";
+				"hidden mt-4 text-white text-center font-[500] tracking-[0.15rem] text-2xl  md:text-4xl";
 		} else {
-			contentStyling = "block mt-4 text-white text-center text-2xl md:text-3xl";
+			contentStyling =
+				"block mt-4 text-white text-center font-[500] tracking-[0.15rem] text-2xl md:text-4xl";
 		}
 		return contentStyling;
 	}
@@ -26,13 +27,17 @@ const HeroSectionTwo = (props) => {
 		<section
 			className={styles.heroSectionTwo}
 			style={{
-				backgroundImage: `url(${props.backgroundImage}`,
+				backgroundImage: `linear-gradient(
+							0deg,
+							rgba(149, 14, 59, 0.30),
+							rgba(221, 69, 119, 0.30)
+						),url(${props.backgroundImage})`,
 			}}
 		>
 			<div className="container mx-auto p-0">
 				<div className="flex flex-col justify-center items-center">
 					<motion.div variants={fadeInUp} className="py-5 px-8">
-						<h2 className="text-white text-center text-4xl md:text-6xl">
+						<h2 className="text-white text-center text-4xl font-[900] md:text-7xl">
 							{props?.title}
 						</h2>
 						<div
