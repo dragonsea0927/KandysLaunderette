@@ -12,9 +12,9 @@ const TwoOptions = (props) => {
 	function isParagraphContent(isParagraphContent) {
 		let contentStyling;
 		if (isParagraphContent === null) {
-			contentStyling = "hidden mt-4 py-8 text-black text-center text-medium";
+			contentStyling = "hidden mt-4 py-8 text-black text-center text-base";
 		} else {
-			contentStyling = "block mt-4 py-8 text-black text-center text-medium";
+			contentStyling = "block mt-4 py-8 text-black text-center text-base";
 		}
 		return contentStyling;
 	}
@@ -70,7 +70,7 @@ const TwoOptions = (props) => {
 						>
 							<motion.h2
 								variants={fadeInUp}
-								className="text-white text-left text-lg py-4"
+								className="text-white text-left text-base py-4"
 							>
 								{props?.content?.title}
 							</motion.h2>
@@ -79,7 +79,7 @@ const TwoOptions = (props) => {
 									href={`${props?.content?.buttonLink?.url}`}
 									target={`${props?.content?.buttonLink?.target}`}
 								>
-									<a className="font-[700] text-medium hover:text-white hover:ease-in-out hover:duration-[0.5s]">
+									<a className="font-[700] text-tiny hover:text-white hover:ease-in-out hover:duration-[0.5s]">
 										{props?.content?.buttonLink?.title}
 									</a>
 								</Link>
@@ -104,7 +104,7 @@ const TwoOptions = (props) => {
 						>
 							<motion.h2
 								variants={fadeInUp}
-								className="text-white text-left text-lg py-4"
+								className="text-white text-left text-base py-4"
 							>
 								{props?.content?.titleTwo}
 							</motion.h2>
@@ -115,7 +115,7 @@ const TwoOptions = (props) => {
 									href={`${props?.content?.buttonLinkTwo?.url}`}
 									target={`${props?.content?.buttonLinkTwo?.target}`}
 								>
-									<a className="font-[700] text-medium hover:text-white hover:ease-in-out hover:duration-[0.5s]">
+									<a className="font-[700] text-tiny hover:text-white hover:ease-in-out hover:duration-[0.5s]">
 										{props?.content?.buttonLinkTwo?.title}
 									</a>
 								</Link>

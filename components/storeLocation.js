@@ -10,10 +10,10 @@ const StoreLocation = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full lg:w-[45rem] py-8 mx-auto text-black text-center font-[500] text-medium";
+				"hidden w-full lg:w-[45rem] py-8 mx-auto text-black text-center font-[500] text-base";
 		} else {
 			contentStyling =
-				"block w-full lg:w-[45rem] py-8 mx-auto text-black text-center font-[500] text-medium";
+				"block w-full lg:w-[45rem] py-8 mx-auto text-black text-center font-[500] text-base";
 		}
 		return contentStyling;
 	}
@@ -42,7 +42,7 @@ const StoreLocation = (props) => {
 					width="100%"
 					height="650"
 					loading="lazy"
-					allowFullScreen="true"
+					allowFullScreen={true}
 				/>
 			</div>
 		</section>

@@ -6,11 +6,12 @@
 	padding: 5rem 0;
 	overflow: hidden;
 
-	h2 {
+	h2,
+	h5 {
 		font-family: $fontStyle_option1;
 	}
 
-	h5 {
-		font-family: $fontStyle_header;
+	p {
+		font-family: $fontStyle_body;
 	}
 }

@@ -12,10 +12,10 @@ const TitleGridContent = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden mt-4 py-8 text-white text-center font-[500] text-medium";
+				"hidden w-full lg:w-[50rem] mx-auto mt-4 py-8 text-white text-center text-base font-[500]";
 		} else {
 			contentStyling =
-				"block mt-4 py-8 text-white text-center font-[500] text-medium";
+				"block w-full lg:w-[50rem] mx-auto mt-4 py-8 text-white text-center text-base font-[500]";
 		}
 		return contentStyling;
 	}

@@ -8,6 +8,12 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+
+	button {
+		a {
+			font-size: $fontSize_tiny;
+		}
+	}
 }
 
 .contactBannerTwo,

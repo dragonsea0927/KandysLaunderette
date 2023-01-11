@@ -10,9 +10,9 @@ const ContactBannerTwo = (props) => {
 	function isParagraphContent(isParagraphContent) {
 		let contentStyling;
 		if (isParagraphContent === null) {
-			contentStyling = "hidden text-white text-center text-lg leading-8";
+			contentStyling = "hidden text-white text-center text-base leading-8";
 		} else {
-			contentStyling = "block text-white text-center text-lg leading-8";
+			contentStyling = "block text-white text-center text-base leading-8";
 		}
 		return contentStyling;
 	}
@@ -40,22 +40,22 @@ const ContactBannerTwo = (props) => {
 					className="flex flex-col lg:flex-row py-8 gap-y-28 lg:gap-10 px-8 justify-between items-center"
 				>
 					<motion.div variants={fadeInUp}>
-						<h2 className="pb-10 text-white text-center text-4xl">
+						<h2 className="pb-10 text-white text-center text-2xl">
 							{props?.title}
 						</h2>
-						<span className="gap-2 flex flex-row text-lg text-white items-center justify-center">
+						<span className="gap-2 flex flex-row text-base text-white items-center justify-center">
 							Email:
 							<Link
 								href={`mailto:${props?.themesOptions?.email}`}
 								target="blank"
-								className="flex flex-row justify-center items-center gap-2 text-white text-medium text-center hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]"
+								className="flex flex-row justify-center items-center gap-2 text-white text-base text-center hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]"
 							>
 								{props?.themesOptions?.email}
 							</Link>
 						</span>
 
 						<div className="flex flex-row justify-center items-center text-white gap-2 py-4">
-							<span className="text-white text-center text-lg">
+							<span className="text-white text-center text-base text-lg">
 								Tel:
 								<Link
 									href={`tel:${props?.themesOptions?.phoneNumberOptionTwo}`}
@@ -77,7 +77,7 @@ const ContactBannerTwo = (props) => {
 					</motion.div>
 					<motion.button
 						variants={fadeIn}
-						className="py-6 px-20 font-[700] uppercase border-[1px] border-solid border-fadedPink text-white text-medium hover:bg-fadedPink hover:ease-in-out hover:duration-[0.5s]"
+						className="py-6 px-20 font-[700] uppercase border-[1px] border-solid border-fadedPink text-white text-tiny hover:bg-fadedPink hover:ease-in-out hover:duration-[0.5s]"
 					>
 						<Link
 							href={`${props?.buttonLink?.url}`}

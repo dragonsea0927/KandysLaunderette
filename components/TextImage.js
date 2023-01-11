@@ -12,10 +12,10 @@ const TextImage = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full xl:w-[45rem] text-left text-black font-[500] text-medium";
+				"hidden w-full xl:w-[45rem] text-left text-black font-[500] text-base";
 		} else {
 			contentStyling =
-				"block w-full xl:w-[45rem] text-left text-black font-[500] text-medium";
+				"block w-full xl:w-[45rem] text-left text-black font-[500] text-base";
 		}
 		return contentStyling;
 	}
@@ -31,10 +31,10 @@ const TextImage = (props) => {
 			<div className="container mx-auto p-0">
 				<div className="flex flex-col md:flex-row p-4 gap-4 justify-between items-center">
 					<motion.div variants={fadeInUp} className="w-full md:w-1/2">
-						<h5 className="text-fadedPink text-left text-xl">
+						<h5 className="text-fadedPink text-left text-batiny">
 							{props?.subtitle}
 						</h5>
-						<h2 className="text-black text-left text-4xl py-6 md:text-5xl">
+						<h2 className="text-black text-left text-2xl py-6 md:text-3xl">
 							{props?.title}
 						</h2>
 						<div
@@ -49,7 +49,7 @@ const TextImage = (props) => {
 								href={`${props?.buttonLink?.url}`}
 								target={`${props?.buttonLink?.target}`}
 							>
-								<a className="text-fadedPink hover:text-white text-lg py-2 px-4 pl-0">
+								<a className="text-fadedPink hover:text-white text-base py-2 px-4 ">
 									{props?.buttonLink?.title}
 								</a>
 							</Link>

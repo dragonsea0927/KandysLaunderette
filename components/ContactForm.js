@@ -94,7 +94,7 @@ const ContactForm = () => {
                                 width="600"
                                 height="450"
                                 style="border:0;"
-                                allowFullScreen="true"
+                                allowFullScreen={true}
                                 loading="lazy"
                             ></iframe> */}
 						</div>
