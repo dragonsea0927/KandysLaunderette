@@ -17,7 +17,6 @@ import TitleGridContentTwo from "/components/TitleGridContentTwo";
 import TitleParagraphGridContent from "/components/TitleParagraphGridContent";
 
 export default function Home({homePageContent, themesOptionsContent}) {
-	console.log(homePageContent?.ourServices?.paragraph);
 	return (
 		<motion.div
 			exit={{
