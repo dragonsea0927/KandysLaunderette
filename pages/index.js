@@ -4,8 +4,11 @@ import {gql} from "@apollo/client";
 import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
 import {getThemesOptionsContent} from "../lib/themesOptions";
+// import {getMainMenuLinksContent} from "../lib/MenuLinks";
 
 // Components
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import TextImage from "../components/TextImage";
 import TwoOptions from "../components/TwoOptions";
 import HeroSectionTwo from "../components/HeroSectionTwo";
@@ -15,8 +18,11 @@ import ContactBannerTwo from "/components/ContactBannerTwo";
 import TitleGridContent from "/components/TitleGridContent";
 import TitleGridContentTwo from "/components/TitleGridContentTwo";
 import TitleParagraphGridContent from "/components/TitleParagraphGridContent";
+import HeroSection from "../components/HeroSection";
 
 export default function Home({homePageContent, themesOptionsContent}) {
+	// console.log(mainMenuLinks);
+
 	return (
 		<motion.div
 			exit={{
@@ -33,15 +39,28 @@ export default function Home({homePageContent, themesOptionsContent}) {
 				<link rel="icon" href="img/Logo.png" />
 			</Head>
 
+			{/* <!--===== NAVIGATION =====--> */}
+			{/* <Navbar menuLinks={mainMenuLinks.mainMenuLinks} /> */}
+
 			<main>
 				{/* <!--===== HERO =====--> */}
-				<HeroSectionTwo
+				<HeroSection
+					title={`Laundry & dry cleaning with 24h delivery in Swansea`}
+					subtitle={`Ranked #1 by customers`}
+					paragraph={`in categories Dry cleaner, Laundry service and Launderette`}
+					backgroundImage={
+						homePageContent?.ourServices?.backgroundImage?.sourceUrl
+					}
+				/>
+
+				{/* <!--===== HERO =====--> */}
+				{/* <HeroSectionTwo
 					title={homePageContent?.heroSection?.title}
 					subtitle={homePageContent?.heroSection?.subtitle}
 					backgroundImage={
 						homePageContent?.heroSection?.backgroundImage?.sourceUrl
 					}
-				/>
+				/> */}
 
 				{/* <!--===== INTRO SECTION =====--> */}
 				<TextImage
@@ -105,6 +124,9 @@ export default function Home({homePageContent, themesOptionsContent}) {
 					paragraph={homePageContent?.ourLocation?.paragraph}
 				/>
 			</main>
+
+			{/* <!--===== FOOTER =====--> */}
+			<Footer />
 		</motion.div>
 	);
 }
@@ -250,11 +272,13 @@ export async function getStaticProps() {
 	});
 
 	const themesOptionsContent = await getThemesOptionsContent();
+	// const mainMenuLinks = await getMainMenuLinksContent();
 
 	return {
 		props: {
 			homePageContent: response?.data?.mainContent?.edges[0]?.node?.homePage,
 			themesOptionsContent,
+			// mainMenuLinks,
 		},
 		revalidate: 1,
 	};

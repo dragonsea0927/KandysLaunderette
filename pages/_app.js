@@ -1,6 +1,8 @@
 import "../styles/globals.scss";
+import {client} from "../lib/apollo";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import {ApolloProvider} from "@apollo/client/react";
 
 function MyApp({Component, pageProps}) {
 	// Removes Global Navbar & Adds Custom Header and Footer Page layout Function
@@ -9,15 +11,12 @@ function MyApp({Component, pageProps}) {
 	}
 
 	return (
-		<>
-			{/* <!--===== NAVIGATION =====--> */}
-			<Navbar />
-
+		<ApolloProvider client={client}>
 			<Component {...pageProps} />
 
 			{/* <!--===== FOOTER =====--> */}
 			<Footer />
-		</>
+		</ApolloProvider>
 	);
 }
 

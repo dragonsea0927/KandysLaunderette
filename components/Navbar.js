@@ -1,8 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
+import NavbarMenuLinks from "./NavbarMenuLinks";
 import styles from "../styles/components/Navbar.module.scss";
 
-const Navbar = () => {
+const Navbar = (props) => {
 	return (
 		<>
 			<div className={styles.Navbar}>
@@ -45,6 +46,16 @@ const Navbar = () => {
 							</Link>
 						</div>
 						<ul className="my-auto py-3 flex justify-center gap-4 text-sm text-black">
+							{/* Menu Array from Wordpress */}
+							{/* {props.menuLinks.map((keys) => (
+								<NavbarMenuLinks
+									key={keys?.id}
+									linkUrl={keys?.node?.url}
+									linkName={keys?.node?.label}
+								/>
+							))} */}
+						</ul>
+						{/* <ul className="my-auto py-3 flex justify-center gap-4 text-sm text-black">
 							<Link href="/">
 								<a className="my-auto px-2 text-sm tracking-[0.05rem] text-black font-[500] hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
 									Home
@@ -80,7 +91,7 @@ const Navbar = () => {
 									Our Story
 								</a>
 							</Link>
-						</ul>
+						</ul> */}
 					</div>
 				</div>
 			</div>
