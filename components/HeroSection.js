@@ -77,51 +77,35 @@ const HeroSection = (props) => {
 						</ul>
 					</div>
 				</div>
+				<div className="py-20 px-0">
+					<motion.h1
+						variants={fadeIn}
+						className="text-white text-center mx-auto text-7xl w-full lg:w-[50rem] font-[900]"
+					>
+						{props?.title}
+					</motion.h1>
+				</div>
 				<div className="flex flex-col">
-					<div className="container mx-auto">
-						<div className="py-20 px-0 flex flex-col lg:flex-row gap-4 justify-between items-center">
-							<div className="w-full lg:w-1/2">
-								<motion.h1
-									variants={fadeIn}
-									className="text-white text-left text-[4.5rem] w-full xl:w-[35rem] font-[900]"
-								>
-									{props?.title}
-								</motion.h1>
-							</div>
-							<motion.div
-								variants={fadeInUp}
-								className="w-full lg:w-1/2 flex justify-center"
-							>
-								<Image
-									src={props.backgroundImage}
-									className="object-contain rounded-full"
-									alt="Icon"
-									width={475}
-									height={475}
-								/>
-							</motion.div>
-						</div>
-					</div>
-					<div className="bg-darkPink p-6">
+					<div className="bg-fadedPinkThree p-4">
 						<div className="container mx-auto">
 							<div className="flex justify-between items-center">
 								<div className="flex flex-col justify-center">
 									<h2 className="text-white text-left text-4xl font-[900]">
 										{props?.subtitle}
 									</h2>
-									<p
+									<div
 										className={isParagraphContent(props?.paragraph)}
 										dangerouslySetInnerHTML={createParagraphMarkup()}
 									/>
 								</div>
-								<motion.div variants={fadeInUp} className="w-auto p-3">
+								<motion.div variants={fadeInUp} className="w-auto p-0">
 									<span className="mx-auto flex w-[8.5rem] h-[8.5rem] items-center justify-center bg-pink rounded-full text-white text-2xl">
 										<Image
-											src={props.backgroundImage}
-											className="object-contain rounded-full"
+											src="/img/icons/washing-machine.png"
+											className="object-contain"
 											alt="Icon"
-											width={85}
-											height={85}
+											width={100}
+											height={100}
 										/>
 									</span>
 								</motion.div>

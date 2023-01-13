@@ -21,7 +21,7 @@ import TitleParagraphGridContent from "/components/TitleParagraphGridContent";
 import HeroSection from "../components/HeroSection";
 
 export default function Home({homePageContent, themesOptionsContent}) {
-	// console.log(mainMenuLinks);
+	// console.log(homePageContent?.heroSection?.paragraph);
 
 	return (
 		<motion.div
@@ -45,22 +45,14 @@ export default function Home({homePageContent, themesOptionsContent}) {
 			<main>
 				{/* <!--===== HERO =====--> */}
 				<HeroSection
-					title={`Laundry & dry cleaning with 24h delivery in Swansea`}
-					subtitle={`Ranked #1 by customers`}
-					paragraph={`in categories Dry cleaner, Laundry service and Launderette`}
-					backgroundImage={
-						homePageContent?.ourServices?.backgroundImage?.sourceUrl
-					}
-				/>
-
-				{/* <!--===== HERO =====--> */}
-				{/* <HeroSectionTwo
 					title={homePageContent?.heroSection?.title}
 					subtitle={homePageContent?.heroSection?.subtitle}
+					paragraph={homePageContent?.heroSection?.paragraph}
+					Image={homePageContent?.heroSection?.image?.sourceUrl}
 					backgroundImage={
 						homePageContent?.heroSection?.backgroundImage?.sourceUrl
 					}
-				/> */}
+				/>
 
 				{/* <!--===== INTRO SECTION =====--> */}
 				<TextImage
@@ -141,6 +133,7 @@ export async function getStaticProps() {
 							heroSection {
 								title
 								subtitle
+								paragraph
 								backgroundImage {
 									sourceUrl
 								}
