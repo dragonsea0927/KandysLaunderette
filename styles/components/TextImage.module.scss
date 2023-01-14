@@ -21,11 +21,20 @@
 }
 
 .textImageJumbo {
+	padding: 2.5rem 0;
+
 	h2 {
 		font-family: $fontStyle_header;
 	}
 
 	a {
 		font-family: $fontStyle_body;
+	}
+}
+
+.textImageCard {
+	img {
+		width: 100%;
+		height: 250px !important;
 	}
 }

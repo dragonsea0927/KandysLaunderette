@@ -12,10 +12,10 @@ const TextImageCard = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full xl:w-[45rem] text-left text-pureBlack font-[500] text-base";
+				"hidden w-full xl:w-[45rem] text-left text-base text-pureBlack font-[500] ";
 		} else {
 			contentStyling =
-				"block w-full xl:w-[45rem] text-left text-pureBlack font-[500] text-base";
+				"block w-full xl:w-[45rem] text-left text-base text-pureBlack font-[500] ";
 		}
 		return contentStyling;
 	}
@@ -48,28 +48,30 @@ const TextImageCard = (props) => {
 		rightImageDisplay = "none ";
 		leftImageDisplay = "block";
 	}
+
 	return (
-		<>
-			<div className="flex flex-col md:flex-row py-10 px-4 gap-4 justify-center items-center my-8 border-b-solid border-b-grey border-b-[1px]">
+		<div className={styles.textImageCard}>
+			<div className="flex flex-col md:flex-row py-10 px-4 gap-16 justify-center items-center my-8 border-b-solid border-b-grey border-b-[1px]">
 				<motion.div
 					variants={fadeIn}
-					className="mt-10 md:mt-0 w-full md:w-1/2"
+					className="mt-10 px-0 xl:px-20 md:mt-0 w-full md:w-1/2"
 					style={{display: leftImageDisplay}}
 				>
 					<Image
-						width={500}
-						height={500}
+						width="40px"
+						height="35px"
 						objectFit="cover"
+						layout="responsive"
 						alt={`${props?.subtitle} Image`}
 						src={`${props?.image?.sourceUrl}`}
-						className="w-full h-[500px] object-cover object-center"
+						className="w-full h-[250px] object-cover object-center"
 					/>
 				</motion.div>
 				<motion.div variants={fadeInUp} className="w-full md:w-1/2">
 					<h5 className="text-grey text-left text-tiny uppercase">
 						{props?.subtitle}
 					</h5>
-					<h2 className="text-black text-left font-[500] text-2xl py-4 md:text-3xl">
+					<h2 className="text-black text-left font-[600] text-2xl py-4 md:text-4xl">
 						{props?.title}
 					</h2>
 					<div
@@ -92,20 +94,21 @@ const TextImageCard = (props) => {
 				</motion.div>
 				<motion.div
 					variants={fadeIn}
-					className="mt-10 md:mt-0 w-full md:w-1/2"
+					className="mt-10 px-0 xl:px-20 md:mt-0 w-full md:w-1/2"
 					style={{display: rightImageDisplay}}
 				>
 					<Image
-						width={500}
-						height={500}
+						width="40px"
+						height="35px"
 						objectFit="cover"
+						layout="responsive"
 						alt={`${props?.subtitle} Image`}
 						src={`${props?.image?.sourceUrl}`}
-						className="w-full h-[500px] object-cover object-center"
+						className="w-full h-[250px] object-cover object-center"
 					/>
 				</motion.div>
 			</div>
-		</>
+		</div>
 	);
 };
 
