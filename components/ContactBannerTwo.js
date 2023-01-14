@@ -55,7 +55,7 @@ const ContactBannerTwo = (props) => {
 						</span>
 
 						<div className="flex flex-row justify-center items-center text-white gap-2 py-4">
-							<span className="text-white text-center text-base text-lg">
+							<span className="text-white text-center text-base text-base">
 								Tel:
 								<Link
 									href={`tel:${props?.themesOptions?.phoneNumberOptionTwo}`}
@@ -64,7 +64,7 @@ const ContactBannerTwo = (props) => {
 								</Link>
 							</span>
 							|
-							<span className="text-white text-center text-lg">
+							<span className="text-white text-center text-base">
 								<Link href={`tel:${props?.themesOptions?.phoneNumber}`}>
 									{props?.themesOptions?.phoneNumber}
 								</Link>
@@ -77,7 +77,7 @@ const ContactBannerTwo = (props) => {
 					</motion.div>
 					<motion.button
 						variants={fadeIn}
-						className="py-6 px-20 font-[700] uppercase border-[1px] border-solid border-fadedPink text-white text-tiny hover:bg-fadedPink hover:ease-in-out hover:duration-[0.5s]"
+						className="py-6 px-20 font-[700] uppercase border-[1px] rounded-lg bg-pink border-solid border-pink text-white text-tiny hover:border-yellow hover:bg-yellow hover:ease-in-out hover:duration-[0.5s]"
 					>
 						<Link
 							href={`${props?.buttonLink?.url}`}

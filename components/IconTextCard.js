@@ -7,14 +7,14 @@ const IconTextCard = (props) => {
 		<div className="flex flex-row justify-start items-center gap-4">
 			<Image
 				src={props?.icon}
-				className="w-full h-[50px] object-contain"
+				className="w-full h-[4px] object-contain"
 				alt="Icon"
-				width={35}
-				height={35}
+				width={40}
+				height={40}
 			/>
 			<motion.p
 				variants={fadeIn}
-				className="text-blue text-left text-base font-[600]"
+				className="text-blue text-left text-lg font-[600]"
 			>
 				{props?.text}
 			</motion.p>

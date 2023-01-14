@@ -43,7 +43,7 @@ const TwoOptions = (props) => {
 		<section className={styles.twoOptions}>
 			<div className="container mx-auto p-0">
 				<motion.div variants={fadeInUp} className="py-28">
-					<h2 className="text-black text-center font-[500] text-4xl md:text-5xl">
+					<h2 className="text-black text-center font-[600] text-3xl lg:text-5xl">
 						{props?.title}
 					</h2>
 					<div

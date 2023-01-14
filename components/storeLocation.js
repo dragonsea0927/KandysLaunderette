@@ -10,10 +10,10 @@ const StoreLocation = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full lg:w-[45rem] py-8 mx-auto text-black text-center font-[500] text-base";
+				"hidden w-full lg:w-[45rem] py-8 mx-auto text-black text-center font-[400] text-base";
 		} else {
 			contentStyling =
-				"block w-full lg:w-[45rem] py-8 mx-auto text-black text-center font-[500] text-base";
+				"block w-full lg:w-[45rem] py-8 mx-auto text-black text-center font-[400] text-base";
 		}
 		return contentStyling;
 	}
@@ -27,7 +27,7 @@ const StoreLocation = (props) => {
 		<section className={styles.storeLocation}>
 			<div className="container mx-auto p-0">
 				<motion.div variants={fadeInUp} className="flex flex-col py-28">
-					<h2 className="text-black text-center text-4xl md:text-5xl">
+					<h2 className="text-black text-center font-[600] text-3xl lg:text-5xl">
 						{props?.title}
 					</h2>
 					<div

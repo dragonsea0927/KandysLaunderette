@@ -32,7 +32,7 @@ const TitleParagraphGridContent = (props) => {
 				<div>
 					<div className="px-8 flex flex-col">
 						<motion.div variants={fadeInUp} className="p-8">
-							<h2 className="text-black text-center text-4xl md:text-5xl">
+							<h2 className="text-black text-center font-[600] text-3xl lg:text-5xl">
 								{props?.title}
 							</h2>
 							<div

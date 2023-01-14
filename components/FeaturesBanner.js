@@ -10,7 +10,7 @@ const FeaturesBanner = (props) => {
 			<div className="container px-0 mx-auto">
 				<div className="flex flex-col px-0 md:px-8">
 					<motion.div variants={fadeInUp} className="py-8">
-						<h2 className="w-full lg:w-[45rem] mx-auto leading-[3rem] text-black text-center font-[600] text-4xl md:text-5xl">
+						<h2 className="w-full lg:w-[45rem] mx-auto leading-[3rem] text-black text-center font-[600] text-3xl lg:text-5xl">
 							{props?.title}
 						</h2>
 					</motion.div>

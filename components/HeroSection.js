@@ -79,7 +79,7 @@ const HeroSection = (props) => {
 							<div className="flex justify-center items-center gap-4">
 								<Link href="/howItWorks">
 									<a className="my-auto px-2 text-base tracking-[0.05rem] text-white hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
-										How it works
+										Log in
 									</a>
 								</Link>
 								<motion.button
