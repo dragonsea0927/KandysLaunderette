@@ -11,10 +11,10 @@ const ContactBanner = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full xl:w-[45rem] mt-4 text-center lg:text-left text-white font-[500] text-base";
+				"hidden w-full xl:w-[45rem] mt-4 text-center lg:text-left text-white font-[400] text-base";
 		} else {
 			contentStyling =
-				"block w-full xl:w-[45rem] mt-4 text-center lg:text-left text-white font-[500] text-base";
+				"block w-full xl:w-[45rem] mt-4 text-center lg:text-left text-white font-[400] text-base";
 		}
 		return contentStyling;
 	}
@@ -49,7 +49,7 @@ const ContactBanner = (props) => {
 					</div>
 					<motion.button
 						variants={fadeIn}
-						className="py-6 px-20 font-[700] uppercase border-[1px] rounded-lg bg-pink border-solid border-pink text-white text-tiny hover:border-yellow hover:bg-yellow hover:ease-in-out hover:duration-[0.5s]"
+						className="py-4 px-6 lg:py-6 lg:px-20 font-[700] uppercase border-[1px] rounded-lg bg-pink border-solid border-pink text-white text-tiny hover:border-yellow hover:bg-yellow hover:ease-in-out hover:duration-[0.5s]"
 					>
 						<Link
 							href={`${props?.buttonLink?.url}`}

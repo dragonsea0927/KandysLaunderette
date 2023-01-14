@@ -9,13 +9,13 @@ const FeaturesBanner = (props) => {
 		<section className={styles.featuresBanner}>
 			<div className="container px-0 mx-auto">
 				<div className="flex flex-col px-0 md:px-8">
-					<motion.div variants={fadeInUp} className="py-8">
-						<h2 className="w-full lg:w-[45rem] mx-auto leading-[3rem] text-black text-center font-[600] text-3xl lg:text-5xl">
+					<motion.div variants={fadeInUp} className="py-8 px-4">
+						<h2 className="w-full lg:w-[45rem] mx-auto leading-[2.5rem] sm:leading-[3rem] text-black text-center font-[600] text-3xl lg:text-5xl">
 							{props?.title}
 						</h2>
 					</motion.div>
-					<div className="flex flex-col lg:flex-row justify-between items-center">
-						<div className="w-full lg:w-1/3 py-8 px-6 sm:p-8 sm:px-0">
+					<div className="flex flex-col sm:flex-row justify-between items-center">
+						<div className="w-full lg:w-1/3 p-4 sm:py-8 sm:px-0">
 							<div className={styles.iconsWrap}>
 								<div className="flex flex-col lg:flex-row items-center m-0 sm:m-3">
 									<div className="w-auto p-3">
@@ -39,7 +39,7 @@ const FeaturesBanner = (props) => {
 								</div>
 							</div>
 						</div>
-						<div className="w-full lg:w-1/3 py-8 px-6 sm:p-8 sm:px-0">
+						<div className="w-full lg:w-1/3 p-4 sm:py-8 sm:px-0">
 							<div className={styles.iconsWrap}>
 								<div className="flex flex-col lg:flex-row items-center m-0 sm:m-3">
 									<div className="w-auto p-3">
@@ -63,7 +63,7 @@ const FeaturesBanner = (props) => {
 								</div>
 							</div>
 						</div>
-						<div className=" w-full lg:w-1/3 py-8 px-6 sm:p-8 sm:px-0">
+						<div className=" w-full lg:w-1/3 p-4 sm:py-8 sm:px-0">
 							<div className={styles.iconsWrap}>
 								<div className="flex flex-col lg:flex-row items-center m-0 sm:m-3">
 									<div className="w-auto p-3">

@@ -40,7 +40,7 @@ const ContactBannerTwo = (props) => {
 					className="flex flex-col lg:flex-row py-8 gap-y-28 lg:gap-10 px-8 justify-between items-center"
 				>
 					<motion.div variants={fadeInUp}>
-						<h2 className="pb-10 text-white text-center text-2xl">
+						<h2 className="pb-10 text-white text-center leading-[2rem] text-2xl">
 							{props?.title}
 						</h2>
 						<span className="gap-2 flex flex-row text-base text-white items-center justify-center">
@@ -77,7 +77,7 @@ const ContactBannerTwo = (props) => {
 					</motion.div>
 					<motion.button
 						variants={fadeIn}
-						className="py-6 px-20 font-[700] uppercase border-[1px] rounded-lg bg-pink border-solid border-pink text-white text-tiny hover:border-yellow hover:bg-yellow hover:ease-in-out hover:duration-[0.5s]"
+						className="py-4 px-6 lg:py-6 lg:px-20 font-[700] uppercase border-[1px] rounded-lg bg-pink border-solid border-pink text-white text-tiny hover:border-yellow hover:bg-yellow hover:ease-in-out hover:duration-[0.5s]"
 					>
 						<Link
 							href={`${props?.buttonLink?.url}`}

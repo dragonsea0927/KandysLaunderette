@@ -9,9 +9,9 @@ const SingleCardTwo = (props) => {
 	function isParagraphContent(isParagraphContent) {
 		let contentStyling;
 		if (isParagraphContent === null) {
-			contentStyling = "hidden mt-8 text-left text-black text-tiny";
+			contentStyling = "hidden mt-8 text-left text-black text-base";
 		} else {
-			contentStyling = "block mt-8 text-left text-black text-tiny";
+			contentStyling = "block mt-8 text-left text-black text-base";
 		}
 		return contentStyling;
 	}

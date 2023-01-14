@@ -39,7 +39,7 @@ const ImageTextBulletPoints = (props) => {
 						</div>
 						<motion.button
 							variants={fadeIn}
-							className="mt-5 w-[fit-content] py-2 px-6 flex flex-col justify-left bg-white rounded-lg text-blue hover:text-white hover:bg-pink hover:ease-in-out hover:duration-[0.5s]"
+							className="mt-5 w-[fit-content] py-2 px-6 flex flex-col justify-center lg:justify-left mx-auto lg:mx-0 bg-white rounded-lg text-blue hover:text-white hover:bg-pink hover:ease-in-out hover:duration-[0.5s]"
 						>
 							<Link
 								href={`${props?.buttonLink?.url}`}

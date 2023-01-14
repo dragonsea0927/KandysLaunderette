@@ -2,6 +2,13 @@
 @import "../fonts";
 @import "../colors";
 
+.singleCard,
+.singleCardTwo {
+	a {
+		font-family: $fontStyle_main;
+	}
+}
+
 .singleCardTwo {
 	display: flex;
 	align-items: center;
@@ -10,7 +17,6 @@
 
 	a {
 		color: $baseColor_black;
-		font-family: $fontStyle_secondary;
 	}
 
 	img {

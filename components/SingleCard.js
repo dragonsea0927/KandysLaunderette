@@ -25,7 +25,7 @@ const SingleCard = (props) => {
 					/>
 				</a>
 			</Link>
-			<div className="my-4 text-black text-center text-base">
+			<div className="my-4 text-black text-center text-base font-[400]">
 				<Link href={`${props?.buttonLink?.url}`} target={`${props?.target}`}>
 					{props?.title}
 				</Link>

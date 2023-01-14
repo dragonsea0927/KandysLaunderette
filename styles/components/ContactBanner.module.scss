@@ -9,18 +9,15 @@
 	background-position: center;
 	background-repeat: no-repeat;
 
-	h2 {
-		font-family: $fontStyle_main;
-	}
-
+	h2,
+	p,
 	a {
-		font-family: $fontStyle_secondary;
+		font-family: $fontStyle_main;
 	}
 
 	button {
 		a {
 			font-size: $fontSize_tiny;
-			font-family: $fontStyle_main;
 		}
 	}
 }
@@ -52,10 +49,6 @@
 // <========== CONTACT US BANNER ==========>
 .contactBanner {
 	padding: 5rem 2rem;
-
-	p {
-		font-family: $fontStyle_secondary;
-	}
 }
 
 // <========== CONTACT US BANNER TWO ==========>
