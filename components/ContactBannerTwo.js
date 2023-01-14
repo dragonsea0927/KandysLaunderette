@@ -72,7 +72,7 @@ const ContactBannerTwo = (props) => {
 						</div>
 						<div
 							className={isParagraphContent(props?.themesOptions?.openingHours)}
-							dangerouslySetInnerHTML={createParagraphMarkup()}
+							dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 						/>
 					</motion.div>
 					<motion.button

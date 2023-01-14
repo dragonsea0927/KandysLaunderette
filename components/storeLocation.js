@@ -18,9 +18,9 @@ const StoreLocation = (props) => {
 		return contentStyling;
 	}
 
-	function createParagraphMarkup() {
+	function createParagraphMarkup(paragraphContent) {
 		return {
-			__html: DOMPurify.sanitize(`${props?.paragraph}`),
+			__html: DOMPurify.sanitize(paragraphContent),
 		};
 	}
 	return (
@@ -32,7 +32,7 @@ const StoreLocation = (props) => {
 					</h2>
 					<div
 						className={isParagraphContent(props?.paragraph)}
-						dangerouslySetInnerHTML={createParagraphMarkup()}
+						dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 					/>
 				</motion.div>
 			</div>

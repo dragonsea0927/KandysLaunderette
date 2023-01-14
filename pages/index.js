@@ -20,9 +20,10 @@ import TitleGridContent from "/components/TitleGridContent";
 import TitleGridContentTwo from "/components/TitleGridContentTwo";
 import TitleParagraphGridContent from "/components/TitleParagraphGridContent";
 import TextImageJumbo from "../components/TextImageJumbo";
+import ImageTextBulletPoints from "../components/ImageTextBulletPoints";
 
 export default function Home({homePageContent, themesOptionsContent}) {
-	console.log(homePageContent?.textImageJumbo?.gridContent);
+	// console.log(homePageContent?.imageTextBulletPoints?.bulletPoints);
 
 	return (
 		<motion.div
@@ -66,17 +67,9 @@ export default function Home({homePageContent, themesOptionsContent}) {
 					iconThree={homePageContent?.featuresBanner?.iconThree?.sourceUrl}
 				/>
 
+				{/* <!--===== INTRO SECTION =====--> */}
 				<TextImageJumbo
 					gridContent={homePageContent?.textImageJumbo?.gridContent}
-				/>
-
-				{/* <!--===== INTRO SECTION =====--> */}
-				<TextImage
-					title={homePageContent?.textImage?.title}
-					subtitle={homePageContent?.textImage?.subtitle}
-					paragraph={homePageContent?.textImage?.paragraph}
-					buttonLink={homePageContent?.textImage?.buttonLink}
-					image={homePageContent?.textImage?.image}
 				/>
 
 				{/* <!--===== MAIN SERVICES =====--> */}
@@ -94,6 +87,14 @@ export default function Home({homePageContent, themesOptionsContent}) {
 					title={homePageContent?.specialOccasions?.title}
 					paragraph={homePageContent?.specialOccasions?.paragraph}
 					content={homePageContent?.specialOccasions?.content}
+				/>
+
+				{/* <!--===== REINVENTING THE FUTURE =====--> */}
+				<ImageTextBulletPoints
+					title={homePageContent?.imageTextBulletPoints?.title}
+					buttonLink={homePageContent?.imageTextBulletPoints?.buttonLink}
+					Image={homePageContent?.imageTextBulletPoints?.image?.sourceUrl}
+					bulletPoints={homePageContent?.imageTextBulletPoints?.bulletPoints}
 				/>
 
 				{/* <!--===== CONTACT US BANNER =====--> */}
@@ -191,22 +192,6 @@ export async function getStaticProps() {
 									}
 								}
 							}
-							textImage {
-								title
-								subtitle
-								paragraph
-								displayImageOption
-								displayButtonOption
-								buttonLink {
-									url
-									title
-									target
-								}
-								image {
-									sourceUrl
-									altText
-								}
-							}
 							ourServices {
 								title
 								paragraph
@@ -248,6 +233,23 @@ export async function getStaticProps() {
 									image {
 										sourceUrl
 										altText
+									}
+								}
+							}
+							imageTextBulletPoints {
+								title
+								buttonLink {
+									url
+									title
+									target
+								}
+								image {
+									sourceUrl
+								}
+								bulletPoints {
+									text
+									icon {
+										sourceUrl
 									}
 								}
 							}

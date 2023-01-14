@@ -9,9 +9,18 @@
 	background-position: center;
 	background-repeat: no-repeat;
 
+	h2 {
+		font-family: $fontStyle_main;
+	}
+
+	a {
+		font-family: $fontStyle_secondary;
+	}
+
 	button {
 		a {
 			font-size: $fontSize_tiny;
+			font-family: $fontStyle_main;
 		}
 	}
 }
@@ -22,7 +31,7 @@
 	p,
 	a,
 	span {
-		font-family: $fontStyle_header;
+		font-family: $fontStyle_main;
 	}
 
 	a {
@@ -44,9 +53,8 @@
 .contactBanner {
 	padding: 5rem 2rem;
 
-	a,
 	p {
-		font-family: $fontStyle_body;
+		font-family: $fontStyle_secondary;
 	}
 }
 

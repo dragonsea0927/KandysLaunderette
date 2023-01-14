@@ -19,7 +19,7 @@ const FeaturesBanner = (props) => {
 							<div className={styles.iconsWrap}>
 								<div className="flex flex-col lg:flex-row items-center m-0 sm:m-3">
 									<div className="w-auto p-3">
-										<span className="mx-auto flex w-[7rem] h-[7rem] items-center justify-center bg-flatLightBlue rounded-full text-white text-2xl">
+										<span className="mx-auto flex w-[7rem] h-[7rem] items-center justify-center rounded-full text-white text-2xl">
 											<Image
 												alt=""
 												width="175px"
@@ -42,7 +42,7 @@ const FeaturesBanner = (props) => {
 							<div className={styles.iconsWrap}>
 								<div className="flex flex-col lg:flex-row items-center m-0 sm:m-3">
 									<div className="w-auto p-3">
-										<span className="mx-auto flex w-[7rem] h-[7rem] items-center justify-center bg-blue rounded-full text-white text-2xl">
+										<span className="mx-auto flex w-[7rem] h-[7rem] items-center justify-center rounded-full text-white text-2xl">
 											<Image
 												alt=""
 												width="175px"
@@ -65,7 +65,7 @@ const FeaturesBanner = (props) => {
 							<div className={styles.iconsWrap}>
 								<div className="flex flex-col lg:flex-row items-center m-0 sm:m-3">
 									<div className="w-auto p-3">
-										<span className="mx-auto flex w-[7rem] h-[7rem] items-center justify-center bg-darkBlue rounded-full text-white text-2xl">
+										<span className="mx-auto flex w-[7rem] h-[7rem] items-center justify-center rounded-full text-white text-2xl">
 											<Image
 												alt=""
 												width="175px"

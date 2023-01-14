@@ -19,9 +19,9 @@ const ourProcess = (props) => {
 		return contentStyling;
 	}
 
-	function createParagraphMarkup() {
+	function createParagraphMarkup(paragraphContent) {
 		return {
-			__html: DOMPurify.sanitize(`${props?.paragraph}`),
+			__html: DOMPurify.sanitize(paragraphContent),
 		};
 	}
 	return (
@@ -35,7 +35,7 @@ const ourProcess = (props) => {
 						<motion.div
 							variants={fadeIn}
 							className={isParagraphContent(props?.paragraph)}
-							dangerouslySetInnerHTML={createParagraphMarkup()}
+							dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 						/>
 					</motion.div>
 					<div className="mt-20 grid grid-cols-1 lg:grid-cols-3 gap-4">

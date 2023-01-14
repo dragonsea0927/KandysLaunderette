@@ -8,15 +8,15 @@
 	padding: 5rem 0;
 
 	h2 {
-		font-family: $fontStyle_option1;
+		font-family: $fontStyle_main;
 	}
 
 	h5 {
-		font-family: $fontStyle_header;
+		font-family: $fontStyle_main;
 	}
 
 	p {
-		font-family: $fontStyle_body;
+		font-family: $fontStyle_secondary;
 	}
 }
 
@@ -24,11 +24,11 @@
 	padding: 2.5rem 0;
 
 	h2 {
-		font-family: $fontStyle_header;
+		font-family: $fontStyle_main;
 	}
 
 	a {
-		font-family: $fontStyle_body;
+		font-family: $fontStyle_secondary;
 	}
 }
 

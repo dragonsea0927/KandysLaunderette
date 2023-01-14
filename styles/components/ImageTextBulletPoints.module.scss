@@ -2,8 +2,12 @@
 @import "../fonts";
 @import "../colors";
 
-.storeLocation {
+.imageTextBulletPoints {
+	padding: 3.5rem 0;
+	background-color: $yellow;
+
 	h2,
+	a,
 	p {
 		font-family: $fontStyle_main;
 	}

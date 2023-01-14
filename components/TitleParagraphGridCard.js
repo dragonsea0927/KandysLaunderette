@@ -11,37 +11,38 @@ const TitleParagraphGridCard = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden p-4 mx-auto text-black text-center font-[400] text-base";
+				"hidden p-4 w-full lg:w-[30rem] mx-auto text-black text-center font-[400] text-base";
 		} else {
 			contentStyling =
-				"block p-4 mx-auto text-black text-center font-[400] text-base";
+				"block p-4 w-full lg:w-[30rem] mx-auto text-black text-center font-[400] text-base";
 		}
 		return contentStyling;
 	}
 
-	function createParagraphMarkup() {
+	function createParagraphMarkup(paragraphContent) {
 		return {
-			__html: DOMPurify.sanitize(`${props?.paragraph}`),
+			__html: DOMPurify.sanitize(paragraphContent),
 		};
 	}
 	return (
-		<div className="flex flex-row gap-4 justify-between items-center">
-			<motion.div variants={fadeIn} className="w-1/2">
+		<div className="flex flex-row gap-10 justify-center items-center">
+			<motion.div variants={fadeIn}>
 				<Image
-					width={300}
-					height={300}
+					width={350}
+					height={350}
+					objectFit="cover"
 					alt={props?.image?.altText}
 					src={`${props?.image?.sourceUrl}`}
-					className="w-[300px] h-[300px] object-cover object-center"
+					className="w-[350px] h-[300px] object-cover object-center"
 				/>
 			</motion.div>
-			<motion.div variants={fadeInUp} className="w-1/2">
-				<h2 className="text-[1.05rem] text-center font-[700]">
+			<motion.div variants={fadeInUp}>
+				<h2 className="text-fadedPink text-[1.05rem] text-center font-[700]">
 					{props?.title}
 				</h2>
 				<div
 					className={isParagraphContent(props?.paragraph)}
-					dangerouslySetInnerHTML={createParagraphMarkup()}
+					dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 				/>
 			</motion.div>
 		</div>

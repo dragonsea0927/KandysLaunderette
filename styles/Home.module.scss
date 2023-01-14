@@ -37,14 +37,14 @@
 					h2 {
 						color: $baseColor_black;
 						font-size: $fontSize_normal;
-						font-family: $fontStyle_header;
+						font-family: $fontStyle_main;
 					}
 
 					p {
 						margin-top: 1rem;
 						color: $baseColor_black;
 						font-size: $fontSize_xSmall;
-						font-family: $fontStyle_body;
+						font-family: $fontStyle_secondary;
 					}
 				}
 
@@ -59,7 +59,7 @@
 						padding-top: 0.75rem;
 						color: $baseColor_black;
 						font-size: $fontSize_small;
-						font-family: $fontStyle_body;
+						font-family: $fontStyle_secondary;
 						border: $baseColor_black 0.015rem solid;
 					}
 
@@ -81,7 +81,7 @@
 						text-transform: uppercase;
 						color: $baseColor_white;
 						font-size: $fontSize_xSmall;
-						font-family: $fontStyle_body;
+						font-family: $fontStyle_secondary;
 						background-color: $baseColor_black;
 						border: $baseColor_black 0.015rem solid;
 					}
@@ -131,13 +131,13 @@
 						text-transform: uppercase;
 						color: $baseColor_black;
 						font-size: $fontSize_xSmall;
-						font-family: $fontStyle_header;
+						font-family: $fontStyle_main;
 					}
 
 					a {
 						color: $baseColor_lightGrey;
 						font-size: $fontSize_xSmall;
-						font-family: $fontStyle_header;
+						font-family: $fontStyle_main;
 					}
 
 					a:hover {
@@ -162,7 +162,7 @@
 
 					color: $baseColor_black;
 					font-size: $fontSize_xSmall;
-					font-family: $fontStyle_header;
+					font-family: $fontStyle_main;
 				}
 			}
 
@@ -181,7 +181,7 @@
 						margin: auto 0;
 						color: $baseColor_lightGrey;
 						font-size: $fontSize_xSmall;
-						font-family: $fontStyle_header;
+						font-family: $fontStyle_main;
 					}
 
 					a:hover {
@@ -196,7 +196,7 @@
 					a {
 						color: $baseColor_lightGrey;
 						font-size: $fontSize_xSmall;
-						font-family: $fontStyle_header;
+						font-family: $fontStyle_main;
 					}
 
 					a {
@@ -240,14 +240,14 @@
 					h2 {
 						color: $baseColor_white;
 						font-size: $fontSize_normal;
-						font-family: $fontStyle_header;
+						font-family: $fontStyle_main;
 					}
 
 					p {
 						margin-top: 1rem;
 						color: $baseColor_lightGrey;
 						font-size: $fontSize_xSmall;
-						font-family: $fontStyle_body;
+						font-family: $fontStyle_secondary;
 					}
 				}
 
@@ -262,7 +262,7 @@
 						padding-top: 0.75rem;
 						color: $baseColor_white;
 						font-size: $fontSize_small;
-						font-family: $fontStyle_body;
+						font-family: $fontStyle_secondary;
 						border: $baseColor_black 0.015rem solid;
 					}
 
@@ -284,7 +284,7 @@
 						text-transform: uppercase;
 						color: $baseColor_black;
 						font-size: $fontSize_xSmall;
-						font-family: $fontStyle_body;
+						font-family: $fontStyle_secondary;
 						background-color: $baseColor_white;
 						border: $baseColor_white 0.015rem solid;
 					}
@@ -334,13 +334,13 @@
 						text-transform: uppercase;
 						color: $baseColor_white;
 						font-size: $fontSize_xSmall;
-						font-family: $fontStyle_header;
+						font-family: $fontStyle_main;
 					}
 
 					a {
 						color: $baseColor_lightGrey;
 						font-size: $fontSize_xSmall;
-						font-family: $fontStyle_header;
+						font-family: $fontStyle_main;
 					}
 
 					a:hover {
@@ -365,7 +365,7 @@
 
 					color: $baseColor_white;
 					font-size: $fontSize_xSmall;
-					font-family: $fontStyle_header;
+					font-family: $fontStyle_main;
 				}
 			}
 
@@ -384,7 +384,7 @@
 						margin: auto 0;
 						color: $baseColor_lightGrey;
 						font-size: $fontSize_xSmall;
-						font-family: $fontStyle_header;
+						font-family: $fontStyle_main;
 					}
 
 					a:hover {
@@ -399,7 +399,7 @@
 					a {
 						color: $baseColor_lightGrey;
 						font-size: $fontSize_xSmall;
-						font-family: $fontStyle_header;
+						font-family: $fontStyle_main;
 					}
 
 					a {

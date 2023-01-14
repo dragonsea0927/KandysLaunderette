@@ -7,15 +7,9 @@
 	padding: 1rem 0;
 	background-color: #f8f8f8;
 
-	h2 {
-		font-family: $fontStyle_option1;
-	}
-
-	p {
-		font-family: $fontStyle_header;
-	}
-
+	h2,
+	p,
 	a {
-		font-family: $fontStyle_body;
+		font-family: $fontStyle_main;
 	}
 }

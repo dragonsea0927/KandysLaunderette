@@ -19,9 +19,9 @@ const TwoOptions = (props) => {
 		return contentStyling;
 	}
 
-	function createParagraphMarkup() {
+	function createParagraphMarkup(paragraphContent) {
 		return {
-			__html: DOMPurify.sanitize(`${props?.paragraph}`),
+			__html: DOMPurify.sanitize(paragraphContent),
 		};
 	}
 
@@ -43,12 +43,12 @@ const TwoOptions = (props) => {
 		<section className={styles.twoOptions}>
 			<div className="container mx-auto p-0">
 				<motion.div variants={fadeInUp} className="py-28">
-					<h2 className="text-black text-center text-4xl md:text-5xl">
+					<h2 className="text-black text-center font-[500] text-4xl md:text-5xl">
 						{props?.title}
 					</h2>
 					<div
 						className={isParagraphContent(props?.paragraph)}
-						dangerouslySetInnerHTML={createParagraphMarkup()}
+						dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 					/>
 				</motion.div>
 				<div className="flex flex-col justify-between items-center lg:grid lg:grid-cols-2 gap-4">
@@ -79,7 +79,7 @@ const TwoOptions = (props) => {
 									href={`${props?.content?.buttonLink?.url}`}
 									target={`${props?.content?.buttonLink?.target}`}
 								>
-									<a className="font-[700] text-tiny hover:text-white hover:ease-in-out hover:duration-[0.5s]">
+									<a className="font-[400] text-tiny hover:text-white hover:ease-in-out hover:duration-[0.5s]">
 										{props?.content?.buttonLink?.title}
 									</a>
 								</Link>
@@ -115,7 +115,7 @@ const TwoOptions = (props) => {
 									href={`${props?.content?.buttonLinkTwo?.url}`}
 									target={`${props?.content?.buttonLinkTwo?.target}`}
 								>
-									<a className="font-[700] text-tiny hover:text-white hover:ease-in-out hover:duration-[0.5s]">
+									<a className="font-[400] text-tiny hover:text-white hover:ease-in-out hover:duration-[0.5s]">
 										{props?.content?.buttonLinkTwo?.title}
 									</a>
 								</Link>

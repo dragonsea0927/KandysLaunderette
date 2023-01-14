@@ -21,7 +21,7 @@
 			h2 {
 				color: $baseColor_black;
 				font-size: $fontSize_4XL;
-				font-family: $fontStyle_option1;
+				font-family: $fontStyle_main;
 			}
 
 			p {
@@ -29,7 +29,7 @@
 				margin-top: 2rem;
 				color: $baseColor_black;
 				font-size: $fontSize_normal;
-				font-family: $fontStyle_header;
+				font-family: $fontStyle_main;
 			}
 		}
 
@@ -40,7 +40,7 @@
 				text-align: left;
 				color: $baseColor_black;
 				font-size: $fontSize_normal;
-				font-family: $fontStyle_option1;
+				font-family: $fontStyle_main;
 			}
 		}
 
@@ -56,7 +56,7 @@
 						padding: 0.25rem 0;
 						color: $baseColor_black;
 						font-size: $fontSize_medium;
-						font-family: $fontStyle_option1;
+						font-family: $fontStyle_main;
 						border-bottom: $baseColor_black 0.15rem solid;
 					}
 
@@ -69,7 +69,7 @@
 							padding: 3px 0;
 							color: $baseColor_black;
 							font-size: $fontSize_small;
-							font-family: $fontStyle_body;
+							font-family: $fontStyle_secondary;
 						}
 
 						a:hover {
@@ -95,7 +95,7 @@
 							a {
 								color: $baseColor_black;
 								font-size: $fontSize_normal;
-								font-family: $fontStyle_option1;
+								font-family: $fontStyle_main;
 							}
 						}
 					}

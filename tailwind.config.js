@@ -34,6 +34,7 @@ module.exports = {
 
 			// Main colors
 			pink: "#dd4577",
+			blue: "#2563eb",
 			yellow: "#ffc915",
 			darkPink: "#950e3b",
 			fadedPink: "#ff8fb4",

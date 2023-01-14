@@ -16,9 +16,9 @@ const SingleCardTwo = (props) => {
 		return contentStyling;
 	}
 
-	function createParagraphMarkup() {
+	function createParagraphMarkup(paragraphContent) {
 		return {
-			__html: DOMPurify.sanitize(`${props?.paragraph}`),
+			__html: DOMPurify.sanitize(paragraphContent),
 		};
 	}
 
@@ -44,7 +44,7 @@ const SingleCardTwo = (props) => {
 				<motion.div
 					variants={fadeInTwo}
 					className={isParagraphContent(props?.paragraph)}
-					dangerouslySetInnerHTML={createParagraphMarkup()}
+					dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 				/>
 			</motion.div>
 		</div>

@@ -20,9 +20,9 @@ const HeroSection = (props) => {
 		return contentStyling;
 	}
 
-	function createParagraphMarkup() {
+	function createParagraphMarkup(paragraphContent) {
 		return {
-			__html: DOMPurify.sanitize(`${props?.paragraph}`),
+			__html: DOMPurify.sanitize(paragraphContent),
 		};
 	}
 
@@ -41,15 +41,15 @@ const HeroSection = (props) => {
 				<div className="flex flex-row justify-center gap-4">
 					<div className="container mx-auto">
 						<div className="flex flex-row justify-between items-center">
-							<div className="flex flex-row justify-start items-center gap-10">
+							<div className="flex flex-row justify-start items-center gap-10 py-4">
 								<Link href="/">
 									<a>
 										<Image
-											src="/svg/Rating Stars.svg"
+											src="/img/icons/skirt.png"
 											className="w-full h-[200px] object-contain"
 											alt="Icon"
-											width={200}
-											height="50"
+											width={75}
+											height={75}
 										/>
 									</a>
 								</Link>
@@ -84,10 +84,10 @@ const HeroSection = (props) => {
 								</Link>
 								<motion.button
 									variants={fadeIn}
-									className="rounded-lg py-3 px-8 text-white bg-pink hover:text-pink hover:bg-yellow hover:ease-in-out hover:duration-[0.5s]"
+									className="rounded-lg py-3 px-8 text-white bg-pink hover:text-blue hover:bg-yellow hover:ease-in-out hover:duration-[0.5s]"
 								>
 									<Link href="/">
-										<a className="text-right text-base font-[600] hover:text-pink hover:ease-in-out hover:duration-[0.5s]">
+										<a className="text-right text-base font-[600] hover:text-blue hover:ease-in-out hover:duration-[0.5s]">
 											Book Now
 										</a>
 									</Link>
@@ -114,7 +114,9 @@ const HeroSection = (props) => {
 									</h2>
 									<div
 										className={isParagraphContent(props?.paragraph)}
-										dangerouslySetInnerHTML={createParagraphMarkup()}
+										dangerouslySetInnerHTML={createParagraphMarkup(
+											props?.paragraph
+										)}
 									/>
 								</div>
 								<motion.div
@@ -133,7 +135,7 @@ const HeroSection = (props) => {
 											href={`${props?.buttonLink?.url}`}
 											target={`${props?.buttonLink?.target}`}
 										>
-											<a className="text-yellow text-right text-base font-[500] hover:text-fadedYellow hover:ease-in-out hover:duration-[0.5s]">
+											<a className="text-white text-right text-base font-[500] hover:text-fadedYellow hover:ease-in-out hover:duration-[0.5s]">
 												{props?.buttonLink?.title}
 											</a>
 										</Link>

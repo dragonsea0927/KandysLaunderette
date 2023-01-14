@@ -19,9 +19,9 @@ const ContactBanner = (props) => {
 		return contentStyling;
 	}
 
-	function createParagraphMarkup() {
+	function createParagraphMarkup(paragraphContent) {
 		return {
-			__html: DOMPurify.sanitize(`${props?.paragraph}`),
+			__html: DOMPurify.sanitize(paragraphContent),
 		};
 	}
 
@@ -39,15 +39,17 @@ const ContactBanner = (props) => {
 			<div className="container mx-auto p-0">
 				<div className="flex flex-col lg:flex-row py-8 gap-10 px-8 justify-between items-center">
 					<div className="flex flex-col gap-4 justify-between items-center">
-						<h2 className="text-left text-white text-4xl">{props?.title}</h2>
+						<h2 className="text-left text-white text-4xl font-[600]">
+							{props?.title}
+						</h2>
 						<div
 							className={isParagraphContent(props?.paragraph)}
-							dangerouslySetInnerHTML={createParagraphMarkup()}
+							dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 						/>
 					</div>
 					<motion.button
 						variants={fadeIn}
-						className="py-6 px-20 font-[700] uppercase border-[1px] border-solid border-fadedPink text-white text-tiny hover:bg-fadedPink hover:ease-in-out hover:duration-[0.5s]"
+						className="py-6 px-20 font-[700] uppercase border-[1px] rounded-lg bg-pink border-solid border-pink text-white text-tiny hover:border-blue hover:bg-blue hover:ease-in-out hover:duration-[0.5s]"
 					>
 						<Link
 							href={`${props?.buttonLink?.url}`}

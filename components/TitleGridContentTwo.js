@@ -19,9 +19,9 @@ const TitleGridContentTwo = (props) => {
 		return contentStyling;
 	}
 
-	function createParagraphMarkup() {
+	function createParagraphMarkup(paragraphContent) {
 		return {
-			__html: DOMPurify.sanitize(`${props?.paragraph}`),
+			__html: DOMPurify.sanitize(paragraphContent),
 		};
 	}
 
@@ -35,7 +35,7 @@ const TitleGridContentTwo = (props) => {
 						</h2>
 						<div
 							className={isParagraphContent(props?.paragraph)}
-							dangerouslySetInnerHTML={createParagraphMarkup()}
+							dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 						/>
 					</motion.div>
 					<motion.div

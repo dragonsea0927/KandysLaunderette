@@ -19,9 +19,9 @@ const TextImageTwo = (props) => {
 		return contentStyling;
 	}
 
-	function createParagraphMarkup() {
+	function createParagraphMarkup(paragraphContent) {
 		return {
-			__html: DOMPurify.sanitize(`${props?.paragraph}`),
+			__html: DOMPurify.sanitize(paragraphContent),
 		};
 	}
 
@@ -64,7 +64,7 @@ const TextImageTwo = (props) => {
 						<motion.div
 							variants={fadeIn}
 							className={isParagraphContent(props?.paragraph)}
-							dangerouslySetInnerHTML={createParagraphMarkup()}
+							dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 						/>
 					</motion.div>
 					<motion.div
