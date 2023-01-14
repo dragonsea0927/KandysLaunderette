@@ -61,6 +61,7 @@ const TextImageCard = (props) => {
 						width="40px"
 						height="35px"
 						objectFit="cover"
+						objectPosition="center"
 						layout="responsive"
 						alt={`${props?.subtitle} Image`}
 						src={`${props?.image?.sourceUrl}`}
@@ -101,6 +102,7 @@ const TextImageCard = (props) => {
 						width="40px"
 						height="35px"
 						objectFit="cover"
+						objectPosition="center"
 						layout="responsive"
 						alt={`${props?.subtitle} Image`}
 						src={`${props?.image?.sourceUrl}`}

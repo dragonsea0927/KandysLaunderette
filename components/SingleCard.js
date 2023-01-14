@@ -18,6 +18,7 @@ const SingleCard = (props) => {
 						width={400}
 						height={400}
 						objectFit="cover"
+						objectPosition="center"
 						alt={props?.image?.altText}
 						src={`${props?.image?.sourceUrl}`}
 						className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] object-cover object-center"

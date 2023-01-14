@@ -246,6 +246,7 @@ const businessService = ({
 														width={400}
 														height={400}
 														objectFit="cover"
+														objectPosition="center"
 													></Image>
 												</a>
 											</Link>
@@ -264,6 +265,7 @@ const businessService = ({
 														width={400}
 														height={400}
 														objectFit="cover"
+														objectPosition="center"
 													></Image>
 												</a>
 											</Link>
@@ -282,6 +284,7 @@ const businessService = ({
 														width={400}
 														height={400}
 														objectFit="cover"
+														objectPosition="center"
 													></Image>
 												</a>
 											</Link>
@@ -300,6 +303,7 @@ const businessService = ({
 														width={400}
 														height={400}
 														objectFit="cover"
+														objectPosition="center"
 													></Image>
 												</a>
 											</Link>
@@ -324,6 +328,7 @@ const businessService = ({
 														width={400}
 														height={400}
 														objectFit="cover"
+														objectPosition="center"
 													></Image>
 												</a>
 											</Link>
@@ -343,6 +348,7 @@ const businessService = ({
 														width={400}
 														height={400}
 														objectFit="cover"
+														objectPosition="center"
 													></Image>
 												</a>
 											</Link>
@@ -362,6 +368,7 @@ const businessService = ({
 														width={400}
 														height={400}
 														objectFit="cover"
+														objectPosition="center"
 													></Image>
 												</a>
 											</Link>
@@ -381,6 +388,7 @@ const businessService = ({
 														width={400}
 														height={400}
 														objectFit="cover"
+														objectPosition="center"
 													></Image>
 												</a>
 											</Link>
@@ -406,6 +414,7 @@ const businessService = ({
 														width={400}
 														height={400}
 														objectFit="cover"
+														objectPosition="center"
 													></Image>
 												</a>
 											</Link>
@@ -425,6 +434,7 @@ const businessService = ({
 														width={400}
 														height={400}
 														objectFit="cover"
+														objectPosition="center"
 													></Image>
 												</a>
 											</Link>
@@ -444,6 +454,7 @@ const businessService = ({
 														width={400}
 														height={400}
 														objectFit="cover"
+														objectPosition="center"
 													></Image>
 												</a>
 											</Link>
@@ -463,6 +474,7 @@ const businessService = ({
 														width={400}
 														height={400}
 														objectFit="cover"
+														objectPosition="center"
 													></Image>
 												</a>
 											</Link>

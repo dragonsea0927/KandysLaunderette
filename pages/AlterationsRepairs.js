@@ -92,6 +92,7 @@ const AlterationsRepairs = ({
 												width={600}
 												height={800}
 												objectFit="cover"
+												objectPosition="center"
 											></Image>
 										</motion.div>
 										<motion.div
@@ -129,6 +130,7 @@ const AlterationsRepairs = ({
 												width={600}
 												height={800}
 												objectFit="cover"
+												objectPosition="center"
 											></Image>
 										</motion.div>
 									</div>

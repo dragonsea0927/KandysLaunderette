@@ -11,10 +11,10 @@ const ContactBanner = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full xl:w-[45rem] mt-4 text-left text-white font-[500] text-base";
+				"hidden w-full xl:w-[45rem] mt-4 text-center lg:text-left text-white font-[500] text-base";
 		} else {
 			contentStyling =
-				"block w-full xl:w-[45rem] mt-4 text-left text-white font-[500] text-base";
+				"block w-full xl:w-[45rem] mt-4 text-center lg:text-left text-white font-[500] text-base";
 		}
 		return contentStyling;
 	}
@@ -39,7 +39,7 @@ const ContactBanner = (props) => {
 			<div className="container mx-auto p-0">
 				<div className="flex flex-col lg:flex-row py-8 gap-10 px-8 justify-between items-center">
 					<div className="flex flex-col gap-4 justify-between items-center">
-						<h2 className="text-left text-white text-4xl font-[600]">
+						<h2 className="text-center lg:text-left text-white text-4xl font-[600]">
 							{props?.title}
 						</h2>
 						<div

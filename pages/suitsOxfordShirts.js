@@ -107,6 +107,7 @@ const SuitsOxfordShirts = ({
 											width={600}
 											height={800}
 											objectFit="cover"
+											objectPosition="center"
 										></Image>
 									</div>
 									<motion.div variants={stagger} className={styles.description}>

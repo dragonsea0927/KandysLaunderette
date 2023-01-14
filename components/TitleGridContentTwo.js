@@ -11,10 +11,10 @@ const TitleGridContentTwo = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden mt-4 py-8 text-white text-center font-[500] text-base";
+				"hidden w-full lg:w-[50rem] mx-auto mt-4 py-8 px-4 text-white text-center text-base font-[500]";
 		} else {
 			contentStyling =
-				"block mt-4 py-8 text-white text-center font-[500] text-base";
+				"block w-full lg:w-[50rem] mx-auto mt-4 py-8 px-4 text-white text-center text-base font-[500]";
 		}
 		return contentStyling;
 	}
@@ -40,7 +40,7 @@ const TitleGridContentTwo = (props) => {
 					</motion.div>
 					<motion.div
 						variants={stagger}
-						className="mx-auto mb-8 grid grid-cols-2 lg:grid-cols-4 gap-4 justify-center items-start"
+						className="mx-auto mb-8 grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4 px-2  gap-4 justify-center items-start"
 					>
 						{/* Array Loop */}
 						{props.gridContent.map((keys) => (

@@ -63,6 +63,7 @@ const TextImage = (props) => {
 							width={650}
 							height={650}
 							objectFit="cover"
+							objectPosition="center"
 							alt={`${props?.image?.altText} Image`}
 							src={`${props?.image?.sourceUrl}`}
 							className="w-full h-[650px] rounded-full object-cover object-center"

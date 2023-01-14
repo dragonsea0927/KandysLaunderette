@@ -68,14 +68,14 @@ const ourStory = ({pageTitle, ourStoryPageContent, themesOptionsContent}) => {
 									alt="Product Image"
 									width={400}
 									height={800}
-									objectFit="cover"
+									objectFit="cover" objectPosition="center"
 								></Image>
 								<Image
 									src="/img/karsten-winegeart-Q7iB4Yixcfw-unsplash.jpg"
 									alt="Product Image"
 									width={400}
 									height={800}
-									objectFit="cover"
+									objectFit="cover" objectPosition="center"
 								></Image>
 							</motion.div>
 							<div className={styles.content}>
@@ -119,7 +119,7 @@ const ourStory = ({pageTitle, ourStoryPageContent, themesOptionsContent}) => {
 												alt="Product Image"
 												width={600}
 												height={800}
-												objectFit="cover"
+												objectFit="cover" objectPosition="center"
 											></Image>
 										</motion.div>
 										<motion.div

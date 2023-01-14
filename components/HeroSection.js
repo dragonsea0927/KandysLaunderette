@@ -12,10 +12,10 @@ const HeroSection = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden mt-4 text-white text-left text-base w-full w-[50rem]";
+				"hidden mt-4 text-white text-left text-base w-full lg:w-[50rem]";
 		} else {
 			contentStyling =
-				"block mt-4 text-white text-left text-base w-full w-[50rem]";
+				"block mt-4 text-white text-left text-base w-full lg:w-[50rem]";
 		}
 		return contentStyling;
 	}
@@ -37,11 +37,11 @@ const HeroSection = (props) => {
 						),url(${props.backgroundImage})`,
 			}}
 		>
-			<div className="h-[100vh] flex flex-col justify-between">
+			<div className="min-h-[100vh] flex flex-col justify-between">
 				<div className="flex flex-row justify-center gap-4">
 					<div className="container mx-auto">
 						<div className="flex flex-row justify-between items-center">
-							<div className="flex flex-row justify-start items-center gap-10 py-4">
+							<div className="flex flex-row justify-start items-center gap-10 p-4">
 								<Link href="/">
 									<a>
 										<Image
@@ -53,7 +53,7 @@ const HeroSection = (props) => {
 										/>
 									</a>
 								</Link>
-								<ul className="flex flex-row gap-6 py-8">
+								<ul className="hidden lg:flex flex-row gap-6 py-8">
 									<Link href="/howItWorks">
 										<a className="my-auto px-2 text-base tracking-[0.05rem] text-white hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
 											How it works
@@ -76,7 +76,7 @@ const HeroSection = (props) => {
 									</Link>
 								</ul>
 							</div>
-							<div className="flex justify-center items-center gap-4">
+							<div className="hidden md:flex justify-center items-center gap-4 p-4">
 								<Link href="/howItWorks">
 									<a className="my-auto px-2 text-base tracking-[0.05rem] text-white hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
 										Log in
@@ -96,10 +96,10 @@ const HeroSection = (props) => {
 						</div>
 					</div>
 				</div>
-				<div className="py-20 px-0">
+				<div className="pt-0 pb-20 md:py-20 px-0">
 					<motion.h1
 						variants={fadeIn}
-						className="text-white leading-[4.25rem] text-center mx-auto text-7xl w-full lg:w-[50rem] font-[500]"
+						className="text-white leading-[2rem] sm:leading-[4rem] text-center mx-auto text-4xl sm:text-6xl p-4 lg:p-0 w-full lg:w-[45rem] font-[500]"
 					>
 						{props?.title}
 					</motion.h1>
@@ -107,9 +107,9 @@ const HeroSection = (props) => {
 				<div className="flex flex-col">
 					<div className="bg-pink p-6">
 						<div className="container mx-auto">
-							<div className="flex justify-between items-center">
+							<div className="flex flex-col lg:flex-row justify-between items-center">
 								<div className="flex flex-col justify-center">
-									<h2 className="text-yellow text-left text-3xl font-[500]">
+									<h2 className="text-white text-center lg:text-left text-xl sm:text-3xl font-[500]">
 										{props?.subtitle}
 									</h2>
 									<div
@@ -121,7 +121,7 @@ const HeroSection = (props) => {
 								</div>
 								<motion.div
 									variants={fadeInUp}
-									className="flex flex-col justify-center items-end gap-2 p-4"
+									className="flex flex-col justify-center items-center lg:items-end gap-2 p-4"
 								>
 									<Image
 										src="/svg/Rating Stars.svg"
@@ -135,7 +135,7 @@ const HeroSection = (props) => {
 											href={`${props?.buttonLink?.url}`}
 											target={`${props?.buttonLink?.target}`}
 										>
-											<a className="text-white text-right text-base font-[500] hover:text-fadedYellow hover:ease-in-out hover:duration-[0.5s]">
+											<a className="text-white text-center lg:text-right text-base font-[500] hover:text-fadedYellow hover:ease-in-out hover:duration-[0.5s]">
 												{props?.buttonLink?.title}
 											</a>
 										</Link>

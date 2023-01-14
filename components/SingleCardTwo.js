@@ -23,12 +23,13 @@ const SingleCardTwo = (props) => {
 	}
 
 	return (
-		<div className={styles.singleCard}>
+		<div className={styles.singleCardTwo}>
 			<motion.div variants={fadeIn}>
 				<Image
 					width={500}
 					height={500}
 					objectFit="cover"
+					objectPosition="center"
 					src={`${props?.image}`}
 					alt={`${props?.image?.altText} Image`}
 					className="w-full h-[500px] object-cover object-center"

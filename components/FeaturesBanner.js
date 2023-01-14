@@ -25,6 +25,7 @@ const FeaturesBanner = (props) => {
 												width="175px"
 												height="175px"
 												objectFit="cover"
+												objectPosition="center"
 												src={props.iconOne}
 												className="object-contain"
 											/>
@@ -48,6 +49,7 @@ const FeaturesBanner = (props) => {
 												width="175px"
 												height="175px"
 												objectFit="cover"
+												objectPosition="center"
 												src={props.iconTwo}
 												className="object-contain"
 											/>
@@ -71,6 +73,7 @@ const FeaturesBanner = (props) => {
 												width="175px"
 												height="175px"
 												objectFit="cover"
+												objectPosition="center"
 												src={props.iconThree}
 												className="object-contain"
 											/>

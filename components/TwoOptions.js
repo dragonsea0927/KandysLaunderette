@@ -12,9 +12,9 @@ const TwoOptions = (props) => {
 	function isParagraphContent(isParagraphContent) {
 		let contentStyling;
 		if (isParagraphContent === null) {
-			contentStyling = "hidden mt-4 py-8 text-black text-center text-base";
+			contentStyling = "hidden mt-4 py-8 px-4 text-black text-center text-base";
 		} else {
-			contentStyling = "block mt-4 py-8 text-black text-center text-base";
+			contentStyling = "block mt-4 py-8 px-4  text-black text-center text-base";
 		}
 		return contentStyling;
 	}
@@ -58,6 +58,8 @@ const TwoOptions = (props) => {
 								<Image
 									width={1000}
 									height={1000}
+									objectFit="cover"
+									objectPosition="center"
 									className="w-[1000px] h-[1000px] object-cover object-center"
 									src={props?.content?.image?.sourceUrl}
 									alt={`${props?.content?.title} Image`}
@@ -92,6 +94,8 @@ const TwoOptions = (props) => {
 								<Image
 									width={1000}
 									height={1000}
+									objectFit="cover"
+									objectPosition="center"
 									className="w-[1000px] h-[1000px] object-cover object-center"
 									src={props?.content?.imageTwo?.sourceUrl}
 									alt={`${props?.content?.titleTwo} Image`}

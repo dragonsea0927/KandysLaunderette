@@ -135,7 +135,7 @@ export default function Home({homePageContent, themesOptionsContent}) {
 			</main>
 
 			{/* <!--===== FOOTER =====--> */}
-			<Footer />
+			{/* <Footer /> */}
 		</motion.div>
 	);
 }

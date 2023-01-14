@@ -11,10 +11,10 @@ const TitleParagraphGridCard = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden p-4 w-full lg:w-[30rem] mx-auto text-black text-center font-[400] text-base";
+				"hidden py-4 px-0 sm:p-4 w-full lg:w-[30rem] mx-auto text-black text-center font-[400] text-base";
 		} else {
 			contentStyling =
-				"block p-4 w-full lg:w-[30rem] mx-auto text-black text-center font-[400] text-base";
+				"block py-4 px-0 sm:p-4 w-full lg:w-[30rem] mx-auto text-black text-center font-[400] text-base";
 		}
 		return contentStyling;
 	}
@@ -25,15 +25,16 @@ const TitleParagraphGridCard = (props) => {
 		};
 	}
 	return (
-		<div className="flex flex-row gap-10 justify-center items-center">
+		<div className="flex flex-col sm:flex-row py-4 gap-y-8 gap-x-0 sm:gap-10 justify-center items-center">
 			<motion.div variants={fadeIn}>
 				<Image
 					width={350}
 					height={350}
 					objectFit="cover"
+					objectPosition="center"
 					alt={props?.image?.altText}
 					src={`${props?.image?.sourceUrl}`}
-					className="w-[350px] h-[300px] object-cover object-center"
+					className="w-[350px] h-[350px] object-cover object-center"
 				/>
 			</motion.div>
 			<motion.div variants={fadeInUp}>

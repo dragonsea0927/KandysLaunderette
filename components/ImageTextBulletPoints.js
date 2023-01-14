@@ -11,18 +11,19 @@ const ImageTextBulletPoints = (props) => {
 		<section className={styles.imageTextBulletPoints}>
 			<div className="container mx-auto p-0">
 				<div className="flex flex-col-reverse lg:flex-row gap-20 justify-center items-center">
-					<motion.div variants={fadeIn}>
+					<motion.div variants={fadeIn} className="px-4 lg:px-0">
 						<Image
 							width={550}
 							height={550}
 							objectFit="cover"
+							objectPosition="center"
 							alt={`${props?.title} Image`}
 							src={`${props?.Image}`}
 							className="w-full h-[550px] object-cover object-center"
 						/>
 					</motion.div>
-					<motion.div variants={fadeInUp}>
-						<h2 className="text-blue text-center lg:text-left font-[600] text-3xl lg:text-5xl py-8  leading-10 w-full md:w-[35rem] mx-auto lg:mx-0">
+					<motion.div variants={fadeInUp} className="px-4 lg:px-0">
+						<h2 className="text-blue text-center lg:text-left font-[600] text-3xl lg:text-5xl py-8 leading-10 w-full md:w-[35rem] mx-auto lg:mx-0">
 							{props?.title}
 						</h2>
 						<div className="flex flex-col py-8 gap-4">
