@@ -1,0 +1,37 @@
+// Imports
+@import "../fonts";
+@import "../colors";
+
+.featuresBanner {
+	overflow: hidden;
+	padding: 4rem 0;
+	background: $baseColor_white;
+
+	h2,
+	h3,
+	p {
+		font-family: $fontStyle_header;
+	}
+}
+
+/* Large mobile screen (portrait 640px) */
+@media screen and (max-width: 640px) {
+	.featuresBanner {
+		padding: 1.5rem 0;
+	}
+}
+
+/* Small mobile screen (portrait 375px) */
+@media screen and (max-width: 375px) {
+	.featuresBanner {
+		padding: 1rem;
+
+		.iconsWrap {
+			div {
+				display: flex;
+				text-align: center;
+				flex-direction: column;
+			}
+		}
+	}
+}

@@ -8,12 +8,17 @@
 	background-position: center;
 	background-repeat: no-repeat;
 }
+
 .heroSection {
 	h1,
 	h2 {
 		font-family: $fontStyle_header;
 	}
-	a,
+
+	a {
+		font-family: $fontStyle_header;
+	}
+
 	p {
 		font-family: $fontStyle_body;
 	}

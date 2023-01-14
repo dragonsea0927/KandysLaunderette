@@ -11,17 +11,18 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import TextImage from "../components/TextImage";
 import TwoOptions from "../components/TwoOptions";
-import HeroSectionTwo from "../components/HeroSectionTwo";
+import HeroSection from "../components/HeroSection";
 import StoreLocation from "/components/storeLocation";
 import ContactBanner from "../components/ContactBanner";
+import FeaturesBanner from "../components/FeaturesBanner";
 import ContactBannerTwo from "/components/ContactBannerTwo";
 import TitleGridContent from "/components/TitleGridContent";
 import TitleGridContentTwo from "/components/TitleGridContentTwo";
 import TitleParagraphGridContent from "/components/TitleParagraphGridContent";
-import HeroSection from "../components/HeroSection";
+import TextImageJumbo from "../components/TextImageJumbo";
 
 export default function Home({homePageContent, themesOptionsContent}) {
-	// console.log(homePageContent?.heroSection?.paragraph);
+	console.log(homePageContent?.textImageJumbo?.gridContent);
 
 	return (
 		<motion.div
@@ -48,10 +49,25 @@ export default function Home({homePageContent, themesOptionsContent}) {
 					title={homePageContent?.heroSection?.title}
 					subtitle={homePageContent?.heroSection?.subtitle}
 					paragraph={homePageContent?.heroSection?.paragraph}
-					Image={homePageContent?.heroSection?.image?.sourceUrl}
+					buttonLink={homePageContent?.heroSection?.buttonLink}
 					backgroundImage={
 						homePageContent?.heroSection?.backgroundImage?.sourceUrl
 					}
+				/>
+
+				{/* <!--===== INTRO SECTION =====--> */}
+				<FeaturesBanner
+					title={homePageContent?.featuresBanner?.title}
+					textOne={homePageContent?.featuresBanner?.textOne}
+					textTwo={homePageContent?.featuresBanner?.textTwo}
+					textThree={homePageContent?.featuresBanner?.textThree}
+					iconOne={homePageContent?.featuresBanner?.iconOne?.sourceUrl}
+					iconTwo={homePageContent?.featuresBanner?.iconTwo?.sourceUrl}
+					iconThree={homePageContent?.featuresBanner?.iconThree?.sourceUrl}
+				/>
+
+				<TextImageJumbo
+					gridContent={homePageContent?.textImageJumbo?.gridContent}
 				/>
 
 				{/* <!--===== INTRO SECTION =====--> */}
@@ -134,8 +150,45 @@ export async function getStaticProps() {
 								title
 								subtitle
 								paragraph
+								buttonLink {
+									url
+									title
+									target
+								}
 								backgroundImage {
 									sourceUrl
+								}
+							}
+							featuresBanner {
+								title
+								textOne
+								textTwo
+								textThree
+								iconOne {
+									sourceUrl
+								}
+								iconTwo {
+									sourceUrl
+								}
+								iconThree {
+									sourceUrl
+								}
+							}
+							textImageJumbo {
+								gridContent {
+									title
+									subtitle
+									paragraph
+									displayImageOption
+									displayButtonOption
+									buttonLink {
+										url
+										title
+										target
+									}
+									image {
+										sourceUrl
+									}
 								}
 							}
 							textImage {

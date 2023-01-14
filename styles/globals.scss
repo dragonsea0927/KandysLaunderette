@@ -24,11 +24,11 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-	background: $secondary_fadedPink2;
+	background: $fadedPink2;
 
 	&:hover {
 		transition: all 0.5s;
-		background-color: $secondary_fadedPink;
+		background-color: $fadedPink;
 	}
 }
 

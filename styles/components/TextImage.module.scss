@@ -2,7 +2,9 @@
 @import "../fonts";
 @import "../colors";
 
-.textImage {
+.textImage,
+.textImageTwo,
+.textImageJumbo {
 	padding: 5rem 0;
 
 	h2 {
@@ -18,18 +20,12 @@
 	}
 }
 
-.textImageTwo {
-	padding: 5rem 0;
-
+.textImageJumbo {
 	h2 {
-		font-family: $fontStyle_option1;
-	}
-
-	h5 {
 		font-family: $fontStyle_header;
 	}
 
-	p {
+	a {
 		font-family: $fontStyle_body;
 	}
 }

@@ -203,7 +203,7 @@ const FooterDark = () => {
 									<h5>&copy; 2022 Kandys Launderette. All Rights Reserved</h5>
 									<h5>High St, Swansea</h5>
 									<div>
-										<Link href="https://todd-owen-mpeli.github.io/Web-Developer-Portfolio-Final-//src/index.html">
+										<Link href="https://todd-owen-mpeli.github.io/Web-Developer-Portfolio-Final-/src/index.html">
 											<a target="blank">
 												Website by <span>ToddBlue Studio</span>
 											</a>

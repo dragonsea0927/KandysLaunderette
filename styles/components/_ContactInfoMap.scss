@@ -19,7 +19,7 @@
 
 			h2 {
 				font-weight: 600;
-				color: $secondary_fadedPink;
+				color: $fadedPink;
 				font-size: $fontSize_medium;
 				font-family: $fontStyle_option1;
 			}
@@ -33,7 +33,7 @@
 			a {
 				&:hover {
 					transition: all 0.2s;
-					color: $secondary_fadedPink;
+					color: $fadedPink;
 				}
 			}
 
@@ -45,7 +45,7 @@
 						&:hover {
 							transition: all 0.5s;
 							text-decoration: underline;
-							color: $secondary_fadedPink;
+							color: $fadedPink;
 						}
 					}
 				}
@@ -61,7 +61,7 @@
 		}
 
 		.storeMap {
-			border: $secondary_fadedPink 0.15rem solid;
+			border: $fadedPink 0.15rem solid;
 
 			iframe {
 			}

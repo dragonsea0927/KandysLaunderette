@@ -31,7 +31,7 @@ const TextImage = (props) => {
 			<div className="container mx-auto p-0">
 				<div className="flex flex-col md:flex-row p-4 gap-4 justify-between items-center">
 					<motion.div variants={fadeInUp} className="w-full md:w-1/2">
-						<h5 className="text-fadedPink text-left text-batiny">
+						<h5 className="text-fadedPink text-left text-tiny">
 							{props?.subtitle}
 						</h5>
 						<h2 className="text-black text-left text-2xl py-6 md:text-3xl">

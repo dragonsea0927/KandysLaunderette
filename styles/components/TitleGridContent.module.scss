@@ -22,7 +22,7 @@
 	a {
 		&:hover {
 			transition: all 0.5s ease-in-out;
-			color: $secondary_fadedPink;
+			color: $fadedPink;
 		}
 	}
 }
@@ -41,7 +41,7 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-color: $secondary_darkPink;
+	background-color: $darkPink;
 	background-image: linear-gradient(
 			0deg,
 			rgba(149, 14, 59, 0.85),

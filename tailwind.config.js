@@ -28,14 +28,16 @@ module.exports = {
 			// Base colors Variables
 			white: "#fff",
 			black: "#111",
-			pureBlack: "#000",
 			grey: "#b3b3b3",
+			pureBlack: "#000",
 			lightGrey: "#fafafa",
 
 			// Main colors
 			pink: "#dd4577",
+			yellow: "#ffc915",
 			darkPink: "#950e3b",
 			fadedPink: "#ff8fb4",
+			fadedYellow: "#f3d162",
 			fadedPinkTwo: "#fcbfd4",
 			fadedPinkThree: "#f2739d",
 		},
