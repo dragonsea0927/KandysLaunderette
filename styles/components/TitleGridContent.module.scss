@@ -16,13 +16,13 @@
 
 	a,
 	p {
-		font-family: $fontStyle_secondary;
+		font-family: $fontStyle_main;
 	}
 
 	a {
 		&:hover {
 			transition: all 0.5s ease-in-out;
-			color: $fadedPink;
+			color: $yellow;
 		}
 	}
 }

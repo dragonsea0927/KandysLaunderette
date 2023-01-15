@@ -3,6 +3,7 @@ import Image from "next/image";
 import {motion} from "framer-motion";
 import {fadeInUp} from "../animations/animations";
 import styles from "../styles/components/FeaturesBanner.module.scss";
+import FeaturesBannerCard from "./FeaturesBannerCard";
 
 const FeaturesBanner = (props) => {
 	return (
@@ -15,78 +16,14 @@ const FeaturesBanner = (props) => {
 						</h2>
 					</motion.div>
 					<div className="flex flex-col sm:flex-row justify-between items-center">
-						<div className="w-full lg:w-1/3 p-4 sm:py-8 sm:px-0">
-							<div className={styles.iconsWrap}>
-								<div className="flex flex-col lg:flex-row items-center m-0 sm:m-3">
-									<div className="w-auto p-3">
-										<span className="mx-auto flex w-[7rem] h-[7rem] items-center justify-center rounded-full text-white text-2xl">
-											<Image
-												alt=""
-												width="175px"
-												height="175px"
-												objectFit="cover"
-												objectPosition="center"
-												src={props.iconOne}
-												className="object-contain"
-											/>
-										</span>
-									</div>
-									<div className="flex-1 p-3">
-										<h3 className="text-base text-center font-[600] lg:text-left">
-											{props.textOne}
-										</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className="w-full lg:w-1/3 p-4 sm:py-8 sm:px-0">
-							<div className={styles.iconsWrap}>
-								<div className="flex flex-col lg:flex-row items-center m-0 sm:m-3">
-									<div className="w-auto p-3">
-										<span className="mx-auto flex w-[7rem] h-[7rem] items-center justify-center rounded-full text-white text-2xl">
-											<Image
-												alt=""
-												width="175px"
-												height="175px"
-												objectFit="cover"
-												objectPosition="center"
-												src={props.iconTwo}
-												className="object-contain"
-											/>
-										</span>
-									</div>
-									<div className="flex-1 p-3">
-										<h3 className="text-base text-center font-[600] lg:text-left">
-											{props.textTwo}
-										</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className=" w-full lg:w-1/3 p-4 sm:py-8 sm:px-0">
-							<div className={styles.iconsWrap}>
-								<div className="flex flex-col lg:flex-row items-center m-0 sm:m-3">
-									<div className="w-auto p-3">
-										<span className="mx-auto flex w-[7rem] h-[7rem] items-center justify-center rounded-full text-white text-2xl">
-											<Image
-												alt=""
-												width="175px"
-												height="175px"
-												objectFit="cover"
-												objectPosition="center"
-												src={props.iconThree}
-												className="object-contain"
-											/>
-										</span>
-									</div>
-									<div className="flex-1 p-3">
-										<h3 className="text-base text-center font-[600] lg:text-left">
-											{props.textThree}
-										</h3>
-									</div>
-								</div>
-							</div>
-						</div>
+						{/* Array Loop */}
+						{props.content.map((keys) => (
+							<FeaturesBannerCard
+								Key={keys?.id}
+								title={keys?.title}
+								icon={keys?.icon?.sourceUrl}
+							/>
+						))}
 					</div>
 				</div>
 			</div>

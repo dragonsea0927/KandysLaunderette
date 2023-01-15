@@ -7,7 +7,6 @@
 @import "./components/WeddingDressesAndBridal/ContactInfo.scss";
 
 // Pages Styling
-@import "./pages/ourStory";
 @import "./pages/_AlterationsRepairs.scss";
 @import "./pages/SuitsOxfordShirts/_suitsOxfordShirts";
 @import "./pages/WeddingDressesAndBridal/_WeddingDressesBridal";
@@ -44,7 +43,7 @@
 						margin-top: 1rem;
 						color: $baseColor_black;
 						font-size: $fontSize_xSmall;
-						font-family: $fontStyle_secondary;
+						font-family: $fontStyle_main;
 					}
 				}
 
@@ -59,7 +58,7 @@
 						padding-top: 0.75rem;
 						color: $baseColor_black;
 						font-size: $fontSize_small;
-						font-family: $fontStyle_secondary;
+						font-family: $fontStyle_main;
 						border: $baseColor_black 0.015rem solid;
 					}
 
@@ -81,7 +80,7 @@
 						text-transform: uppercase;
 						color: $baseColor_white;
 						font-size: $fontSize_xSmall;
-						font-family: $fontStyle_secondary;
+						font-family: $fontStyle_main;
 						background-color: $baseColor_black;
 						border: $baseColor_black 0.015rem solid;
 					}
@@ -247,7 +246,7 @@
 						margin-top: 1rem;
 						color: $baseColor_lightGrey;
 						font-size: $fontSize_xSmall;
-						font-family: $fontStyle_secondary;
+						font-family: $fontStyle_main;
 					}
 				}
 
@@ -262,7 +261,7 @@
 						padding-top: 0.75rem;
 						color: $baseColor_white;
 						font-size: $fontSize_small;
-						font-family: $fontStyle_secondary;
+						font-family: $fontStyle_main;
 						border: $baseColor_black 0.015rem solid;
 					}
 
@@ -284,7 +283,7 @@
 						text-transform: uppercase;
 						color: $baseColor_black;
 						font-size: $fontSize_xSmall;
-						font-family: $fontStyle_secondary;
+						font-family: $fontStyle_main;
 						background-color: $baseColor_white;
 						border: $baseColor_white 0.015rem solid;
 					}

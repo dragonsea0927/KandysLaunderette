@@ -86,7 +86,7 @@ const Navbar = (props) => {
 									Alterations & Repairs
 								</a>
 							</Link>
-							<Link href="/ourStory">
+							<Link href="/aboutUs">
 								<a className="my-auto px-2 text-sm tracking-[0.05rem] text-black font-[500] hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
 									Our Story
 								</a>

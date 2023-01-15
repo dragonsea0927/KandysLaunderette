@@ -111,7 +111,7 @@ const Footer = (props) => {
 							<h2>
 								<strong>About Us</strong>
 							</h2>
-							<Link href="/ourStory" target="blank">
+							<Link href="/aboutUs" target="blank">
 								<a>Our Story</a>
 							</Link>
 							<Link href="#customerReviews" target="blank">

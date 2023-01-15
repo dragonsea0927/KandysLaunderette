@@ -31,8 +31,8 @@ const SingleCardTwo = (props) => {
 					objectFit="cover"
 					objectPosition="center"
 					src={`${props?.image}`}
-					alt={`${props?.image?.altText} Image`}
-					className="w-full h-[500px] object-cover object-center"
+					alt={`${props?.title} Image`}
+					className="w-full h-[500px] rounded-lg object-cover object-center"
 				/>
 			</motion.div>
 			<motion.div variants={stagger} className="py-8 px-4">

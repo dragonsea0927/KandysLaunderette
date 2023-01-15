@@ -16,19 +16,16 @@
 	}
 
 	p {
-		font-family: $fontStyle_secondary;
+		font-family: $fontStyle_main;
 	}
 }
 
 .textImageJumbo {
 	padding: 2.5rem 0;
 
-	h2 {
-		font-family: $fontStyle_main;
-	}
-
+	h2,
 	a {
-		font-family: $fontStyle_secondary;
+		font-family: $fontStyle_main;
 	}
 }
 

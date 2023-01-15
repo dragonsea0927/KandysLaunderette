@@ -12,10 +12,10 @@ const HeroSection = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden mt-4 text-white text-left text-base w-full lg:w-[50rem]";
+				"hidden mt-4 text-white text-center sm:text-left text-tiny sm:text-base w-full lg:w-[50rem] font-[300]";
 		} else {
 			contentStyling =
-				"block mt-4 text-white text-left text-base w-full lg:w-[50rem]";
+				"block mt-4 text-white text-center sm:text-left text-tiny sm:text-base w-full lg:w-[50rem] font-[300]";
 		}
 		return contentStyling;
 	}
@@ -109,7 +109,7 @@ const HeroSection = (props) => {
 						<div className="container mx-auto">
 							<div className="flex flex-col lg:flex-row justify-between items-center">
 								<div className="flex flex-col justify-center">
-									<h2 className="text-white text-center lg:text-left text-xl sm:text-3xl font-[500]">
+									<h2 className="text-white text-center lg:text-left text-lg sm:text-3xl font-[500]">
 										{props?.subtitle}
 									</h2>
 									<div

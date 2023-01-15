@@ -59,12 +59,7 @@ export default function Home({homePageContent, themesOptionsContent}) {
 				{/* <!--===== INTRO SECTION =====--> */}
 				<FeaturesBanner
 					title={homePageContent?.featuresBanner?.title}
-					textOne={homePageContent?.featuresBanner?.textOne}
-					textTwo={homePageContent?.featuresBanner?.textTwo}
-					textThree={homePageContent?.featuresBanner?.textThree}
-					iconOne={homePageContent?.featuresBanner?.iconOne?.sourceUrl}
-					iconTwo={homePageContent?.featuresBanner?.iconTwo?.sourceUrl}
-					iconThree={homePageContent?.featuresBanner?.iconThree?.sourceUrl}
+					content={homePageContent?.featuresBanner?.content}
 				/>
 
 				{/* <!--===== INTRO SECTION =====--> */}
@@ -162,17 +157,11 @@ export async function getStaticProps() {
 							}
 							featuresBanner {
 								title
-								textOne
-								textTwo
-								textThree
-								iconOne {
-									sourceUrl
-								}
-								iconTwo {
-									sourceUrl
-								}
-								iconThree {
-									sourceUrl
+								content {
+									title
+									icon {
+										sourceUrl
+									}
 								}
 							}
 							textImageJumbo {

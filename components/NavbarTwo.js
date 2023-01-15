@@ -34,7 +34,7 @@ const NavbarTwo = () => {
 							</ul>
 						</div>
 						{/* // <========== PAGE TITLE ==========> */}
-						<div className={styles.ourStory}>
+						<div className={styles.aboutUs}>
 							<div className={styles.pageTitle}>
 								<div>
 									<div className={styles.content}>

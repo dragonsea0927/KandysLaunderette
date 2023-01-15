@@ -60,7 +60,7 @@ const TwoOptions = (props) => {
 									height={1000}
 									objectFit="cover"
 									objectPosition="center"
-									className="w-[1000px] h-[1000px] object-cover object-center"
+									className="w-[1000px] h-[1000px] rounded-lg object-cover object-center"
 									src={props?.content?.image?.sourceUrl}
 									alt={`${props?.content?.title} Image`}
 								/>
@@ -96,7 +96,7 @@ const TwoOptions = (props) => {
 									height={1000}
 									objectFit="cover"
 									objectPosition="center"
-									className="w-[1000px] h-[1000px] object-cover object-center"
+									className="w-[1000px] h-[1000px] rounded-lg object-cover object-center"
 									src={props?.content?.imageTwo?.sourceUrl}
 									alt={`${props?.content?.titleTwo} Image`}
 								/>

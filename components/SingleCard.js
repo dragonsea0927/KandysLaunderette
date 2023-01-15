@@ -21,7 +21,7 @@ const SingleCard = (props) => {
 						objectPosition="center"
 						alt={props?.image?.altText}
 						src={`${props?.image?.sourceUrl}`}
-						className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] object-cover object-center"
+						className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] rounded-lg object-cover object-center"
 					/>
 				</a>
 			</Link>

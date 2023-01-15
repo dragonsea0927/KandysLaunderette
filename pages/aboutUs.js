@@ -13,7 +13,7 @@ import NavbarTwo from "/components/NavbarTwo";
 import StoreLocation from "/components/storeLocation";
 import ContactBanner from "../components/ContactBanner";
 
-const ourStory = ({pageTitle, ourStoryPageContent, themesOptionsContent}) => {
+const aboutUs = ({pageTitle, aboutUsPageContent, themesOptionsContent}) => {
 	return (
 		<motion.div
 			exit={{
@@ -31,7 +31,7 @@ const ourStory = ({pageTitle, ourStoryPageContent, themesOptionsContent}) => {
 			</Head>
 
 			<main>
-				<div className={styles.ourStoryPage}>
+				<div className={styles.aboutUsPage}>
 					{/* // <========== ABOUT US DESCRIPTIONS ==========> */}
 					{/* <div className={styles.aboutUs}>
 						<div>
@@ -97,13 +97,13 @@ const ourStory = ({pageTitle, ourStoryPageContent, themesOptionsContent}) => {
 
 				{/* <!--===== CONTACT US BANNER =====--> */}
 				{/* <ContactBanner
-					title={ourStoryPageContent?.contactBanner?.title}
-					paragraph={ourStoryPageContent?.contactBanner?.paragraph}
-					buttonLink={ourStoryPageContent?.contactBanner?.buttonLink}
-					backgroundImage={ourStoryPageContent?.contactBanner?.image?.sourceUrl}
+					title={aboutUsPageContent?.contactBanner?.title}
+					paragraph={aboutUsPageContent?.contactBanner?.paragraph}
+					buttonLink={aboutUsPageContent?.contactBanner?.buttonLink}
+					backgroundImage={aboutUsPageContent?.contactBanner?.image?.sourceUrl}
 				/> */}
 
-				{/* <div className={styles.ourStoryPage}>
+				{/* <div className={styles.aboutUsPage}>
 					<div className={styles.ourCollections}>
 						<div>
 							<div className={styles.content}>
@@ -177,21 +177,21 @@ const ourStory = ({pageTitle, ourStoryPageContent, themesOptionsContent}) => {
 
 				{/* <!--===== OUT STORE LOCATION =====--> */}
 				{/* <StoreLocation
-					title={ourStoryPageContent?.ourLocation?.title}
-					paragraph={ourStoryPageContent?.ourLocation?.paragraph}
+					title={aboutUsPageContent?.ourLocation?.title}
+					paragraph={aboutUsPageContent?.ourLocation?.paragraph}
 				/> */}
 			</main>
 		</motion.div>
 	);
 };
 
-export default ourStory;
+export default aboutUs;
 
 // Removes Global Navbar & Adds Custom Header and Footer Page layout Function
-ourStory.getLayout = function PageLayout(page) {
+aboutUs.getLayout = function PageLayout(page) {
 	return (
 		<>
-			<div className={styles.ourStoryPage}>
+			<div className={styles.aboutUsPage}>
 				<div className={styles.backgroundTopCover}>
 					{/* <!--===== NAVIGATION =====--> */}
 					<NavbarTwo />
@@ -208,7 +208,7 @@ ourStory.getLayout = function PageLayout(page) {
 };
 
 // export async function getStaticProps() {
-// 	const getOurStoryPageContent = gql`
+// 	const getaboutUsPageContent = gql`
 // 		{
 // 			pageTitle: pages(where: {id: 171, status: PUBLISH}) {
 // 				edges {
@@ -220,7 +220,7 @@ ourStory.getLayout = function PageLayout(page) {
 // 			mainContent: pages(where: {id: 171, status: PUBLISH}) {
 // 				edges {
 // 					node {
-// 						OurStoryPage {
+// 						aboutUsPage {
 // 							contactBanner {
 // 								title
 // 								paragraph
@@ -245,7 +245,7 @@ ourStory.getLayout = function PageLayout(page) {
 // 	`;
 
 // 	const response = await client.query({
-// 		query: getOurStoryPageContent,
+// 		query: getaboutUsPageContent,
 // 	});
 
 // 	const themesOptionsContent = await getThemesOptionsContent();
@@ -253,8 +253,8 @@ ourStory.getLayout = function PageLayout(page) {
 // 	return {
 // 		props: {
 // 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
-// 			ourStoryPageContent:
-// 				response?.data?.mainContent?.edges[0]?.node?.OurStoryPage,
+// 			aboutUsPageContent:
+// 				response?.data?.mainContent?.edges[0]?.node?.aboutUsPage,
 // 			themesOptionsContent,
 // 		},
 // 		revalidate: 1,

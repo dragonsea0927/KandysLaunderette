@@ -34,7 +34,7 @@ const TitleParagraphGridCard = (props) => {
 					objectPosition="center"
 					alt={props?.image?.altText}
 					src={`${props?.image?.sourceUrl}`}
-					className="w-[350px] h-[350px] object-cover object-center"
+					className="w-[350px] h-[350px] rounded-lg object-cover object-center"
 				/>
 			</motion.div>
 			<motion.div variants={fadeInUp}>
