@@ -88,8 +88,9 @@ const HeroSection = (props) => {
 											<img
 												width="25px"
 												height="25px"
-												src="/svg/Navigation Menu Dropdown Arrow.png"
 												alt="White Arrow Icon"
+												className="cursor-pointer"
+												src="/svg/Navigation Menu Dropdown Arrow.png"
 												onClick={displayServicesMenu}
 											/>
 										</span>
@@ -107,8 +108,9 @@ const HeroSection = (props) => {
 															<img
 																width="25px"
 																height="25px"
-																src="/svg/Navigation Menu Dropdown Arrow.png"
 																alt="White Arrow Icon"
+																className="cursor-pointer"
+																src="/svg/Navigation Menu Dropdown Arrow.png"
 																onClick={displayLaundryDryCleaningMenu}
 															/>
 														</span>
