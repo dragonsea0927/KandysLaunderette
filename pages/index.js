@@ -4,7 +4,10 @@ import {gql} from "@apollo/client";
 import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
 import {getThemesOptionsContent} from "../lib/themesOptions";
-// import {getMainMenuLinksContent} from "../lib/MenuLinks";
+import {
+	getServiceLinksContent,
+	getLaundryDryCleaningLinksContent,
+} from "../lib/MenuLinks";
 
 // Components
 import Navbar from "../components/Navbar";
@@ -22,8 +25,14 @@ import TitleParagraphGridContent from "/components/TitleParagraphGridContent";
 import TextImageJumbo from "../components/TextImageJumbo";
 import ImageTextBulletPoints from "../components/ImageTextBulletPoints";
 
-export default function Home({seo, homePageContent, themesOptionsContent}) {
-	// console.log(seo);
+export default function Home({
+	seo,
+	homePageContent,
+	serviceMenuLinks,
+	themesOptionsContent,
+	laundryDryCleaningMenuLinks,
+}) {
+	// console.log(menuLinks?.serviceMenuLinks);
 
 	return (
 		<motion.div
@@ -41,9 +50,6 @@ export default function Home({seo, homePageContent, themesOptionsContent}) {
 				<link rel="icon" href="img/Logo.png" />
 			</Head>
 
-			{/* <!--===== NAVIGATION =====--> */}
-			{/* <Navbar menuLinks={mainMenuLinks.mainMenuLinks} /> */}
-
 			<main>
 				{/* <!--===== HERO =====--> */}
 				<HeroSection
@@ -51,6 +57,10 @@ export default function Home({seo, homePageContent, themesOptionsContent}) {
 					subtitle={homePageContent?.heroSection?.subtitle}
 					paragraph={homePageContent?.heroSection?.paragraph}
 					buttonLink={homePageContent?.heroSection?.buttonLink}
+					serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks}
+					laundryDryCleaningMenuLinks={
+						laundryDryCleaningMenuLinks?.laundryDryCleaningMenuLinks
+					}
 					backgroundImage={
 						homePageContent?.heroSection?.backgroundImage?.sourceUrl
 					}
@@ -311,15 +321,17 @@ export async function getStaticProps() {
 		query: getHomePageContent,
 	});
 
+	const serviceMenuLinks = await getServiceLinksContent();
+	const laundryDryCleaningMenuLinks = await getLaundryDryCleaningLinksContent();
 	const themesOptionsContent = await getThemesOptionsContent();
-	// const mainMenuLinks = await getMainMenuLinksContent();
 
 	return {
 		props: {
+			serviceMenuLinks,
+			themesOptionsContent,
+			laundryDryCleaningMenuLinks,
 			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
 			homePageContent: response?.data?.mainContent?.edges[0]?.node?.homePage,
-			themesOptionsContent,
-			// mainMenuLinks,
 		},
 		revalidate: 1,
 	};

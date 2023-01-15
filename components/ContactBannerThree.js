@@ -71,7 +71,7 @@ const ContactBannerThree = (props) => {
 					</motion.div>
 					<motion.button
 						variants={fadeIn}
-						className="py-6 px-20 font-[700] uppercase bg-white text-black text-tiny hover:text-white hover:bg-fadedPink hover:ease-in-out hover:duration-[0.5s]"
+						className="py-6 px-20 font-[700] uppercase bg-white text-black text-tiny rounded-lg hover:text-white hover:bg-fadedPink hover:ease-in-out hover:duration-[0.5s]"
 					>
 						<Link
 							href={`${props?.buttonLink?.url}`}
