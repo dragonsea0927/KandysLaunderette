@@ -5,11 +5,8 @@ import {motion} from "framer-motion";
 import {getThemesOptionsContent} from "../lib/themesOptions";
 import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 
-// Components
-
-const services = ({
+const HotelRestaurantServices = ({
 	pageTitle,
-	seo,
 	servicesPageContent,
 	themesOptionsContent,
 }) => {
@@ -33,25 +30,22 @@ const services = ({
 	);
 };
 
-export default services;
+export default HotelRestaurantServices;
 
 export async function getStaticProps() {
-	const getServicesPageContent = gql`
+	const getHotelRestaurantServicesPageContent = gql`
 		{
-			pageTitle: pages(where: {id: 479, status: PUBLISH}) {
+			pageTitle: pages(where: {id: 685, status: PUBLISH}) {
 				edges {
 					node {
 						title
 					}
 				}
 			}
-			mainContent: pages(where: {id: 479, status: PUBLISH}) {
+			mainContent: pages(where: {id: 685, status: PUBLISH}) {
 				edges {
 					node {
-						seo {
-							metaDesc
-						}
-						ServicesPage
+						HotelRestaurantServicesPage
 					}
 				}
 			}
@@ -59,7 +53,7 @@ export async function getStaticProps() {
 	`;
 
 	const response = await client.query({
-		query: getServicesPageContent,
+		query: getHotelRestaurantServicesPageContent,
 	});
 
 	const themesOptionsContent = await getThemesOptionsContent();
@@ -67,9 +61,9 @@ export async function getStaticProps() {
 	return {
 		props: {
 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
-			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
-			servicesPageContent:
-				response?.data?.mainContent?.edges[0]?.node?.ServicesPage,
+			hotelRestaurantServicesPageContent:
+				response?.data?.mainContent?.edges[0]?.node
+					?.HotelRestaurantServicesPage,
 			themesOptionsContent,
 		},
 		revalidate: 1,
