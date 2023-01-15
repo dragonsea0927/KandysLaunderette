@@ -9,8 +9,8 @@ import {getThemesOptionsContent} from "../lib/themesOptions";
 import ContactBanner from "../components/ContactBanner";
 
 const contactUs = ({
-	pageTitle,
 	seo,
+	pageTitle,
 	contactUsPageContent,
 	themesOptionsContent,
 }) => {

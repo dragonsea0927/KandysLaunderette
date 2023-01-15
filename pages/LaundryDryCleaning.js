@@ -5,13 +5,14 @@ import {motion} from "framer-motion";
 import {getThemesOptionsContent} from "../lib/themesOptions";
 
 // Components
+import Navbar from "/components/Navbar";
 import TwoOptions from "../components/TwoOptions";
 import HeroSectionTwo from "../components/HeroSectionTwo";
 import ContactBannerThree from "/components/ContactBannerThree";
 
 const LaundryDryCleaning = ({
-	pageTitle,
 	seo,
+	pageTitle,
 	laundryDryCleaningPageContent,
 	themesOptionsContent,
 }) => {
@@ -30,6 +31,9 @@ const LaundryDryCleaning = ({
 				<meta name="description" content={seo?.metaDesc} />
 				<link rel="icon" href="img/Logo.png" />
 			</Head>
+
+			{/* <!--===== NAVIGATION =====--> */}
+			<Navbar />
 
 			<main>
 				{/* <!--===== HERO =====--> */}

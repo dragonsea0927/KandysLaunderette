@@ -11,8 +11,8 @@ import OurProcess from "/components/ourProcess";
 import ContactBanner from "../components/ContactBanner";
 
 const AlterationsRepairs = ({
-	pageTitle,
 	seo,
+	pageTitle,
 	alterationsRepairsPageContent,
 	themesOptionsContent,
 }) => {

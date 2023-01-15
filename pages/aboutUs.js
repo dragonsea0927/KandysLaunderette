@@ -14,8 +14,8 @@ import StoreLocation from "/components/storeLocation";
 import ContactBanner from "../components/ContactBanner";
 
 const aboutUs = ({
-	pageTitle,
 	seo,
+	pageTitle,
 	aboutUsPageContent,
 	themesOptionsContent,
 }) => {

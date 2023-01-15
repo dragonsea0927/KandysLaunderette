@@ -8,14 +8,15 @@ import {getThemesOptionsContent} from "../lib/themesOptions";
 import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 
 // Components
+import Navbar from "/components/Navbar";
 import OurProcess from "/components/OurProcess";
 import TextImageTwo from "../components/TextImageTwo";
 import HeroSectionTwo from "../components/HeroSectionTwo";
 import ContactBannerThree from "/components/ContactBannerThree";
 
 const WeddingDressesAndBridal = ({
-	pageTitle,
 	seo,
+	pageTitle,
 	weddingDressesAndBridalPageContent,
 	themesOptionsContent,
 }) => {
@@ -34,6 +35,10 @@ const WeddingDressesAndBridal = ({
 				<meta name="description" content={seo?.metaDesc} />
 				<link rel="icon" href="/img/Logo.png" />
 			</Head>
+
+			{/* <!--===== NAVIGATION =====--> */}
+			<Navbar />
+
 			<main>
 				{/* <!--===== HERO =====--> */}
 				<HeroSectionTwo

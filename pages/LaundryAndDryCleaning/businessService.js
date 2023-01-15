@@ -1,17 +1,20 @@
 import Head from "next/head";
 import Link from "next/link";
+import {gql} from "@apollo/client";
+import {client} from "../../lib/apollo";
 import Image from "next/image";
 import {motion} from "framer-motion";
 import styles from "/styles/Home.module.scss";
-import {fadeInUp, fadeIn, stagger} from "../animations/animations";
+import {fadeInUp, fadeIn, stagger} from "../../animations/animations";
 import BusinessServicesListDB from "/lib/IndividualServicesListDB.json";
 
 // Components
+import Navbar from "/components/Navbar";
 import ContactBanner from "/components/ContactBanner";
 
 const businessService = ({
-	pageTitle,
 	seo,
+	pageTitle,
 	businessServicePageContent,
 	themesOptionsContent,
 }) => {
@@ -30,6 +33,9 @@ const businessService = ({
 				<meta name="description" content={seo?.metaDesc} />
 				<link rel="icon" href="/img/Logo.png" />
 			</Head>
+
+			{/* <!--===== NAVIGATION =====--> */}
+			<Navbar />
 
 			<main>
 				{/* // <========== PAGE TITLE ==========> */}
@@ -59,42 +65,42 @@ const businessService = ({
 									<motion.div variants={stagger} className={styles.List}>
 										<h2>Duvet Cleaning</h2>
 										<ul>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[0].serviceName}
 												</motion.a>
 											</Link>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[1].serviceName}
 												</motion.a>
 											</Link>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[2].serviceName}
 												</motion.a>
 											</Link>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[3].serviceName}
 												</motion.a>
 											</Link>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[4].serviceName}
 												</motion.a>
 											</Link>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[5].serviceName}
 												</motion.a>
 											</Link>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[6].serviceName}
 												</motion.a>
 											</Link>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[7].serviceName}
 												</motion.a>
@@ -104,12 +110,12 @@ const businessService = ({
 									<motion.div variants={stagger} className={styles.List}>
 										<h2>Tops & Shirts</h2>
 										<ul>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[8].serviceName}
 												</motion.a>
 											</Link>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[9].serviceName}
 												</motion.a>
@@ -119,12 +125,12 @@ const businessService = ({
 									<motion.div variants={stagger} className={styles.List}>
 										<h2>Trousers</h2>
 										<ul>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[10].serviceName}
 												</motion.a>
 											</Link>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[11].serviceName}
 												</motion.a>
@@ -134,42 +140,42 @@ const businessService = ({
 									<motion.div variants={stagger} className={styles.List}>
 										<h2>Bar & Restaurant</h2>
 										<ul>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[12].serviceName}
 												</motion.a>
 											</Link>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[13].serviceName}
 												</motion.a>
 											</Link>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[14].serviceName}
 												</motion.a>
 											</Link>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[15].serviceName}
 												</motion.a>
 											</Link>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[16].serviceName}
 												</motion.a>
 											</Link>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[17].serviceName}
 												</motion.a>
 											</Link>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[18].serviceName}
 												</motion.a>
 											</Link>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[19].serviceName}
 												</motion.a>
@@ -179,17 +185,17 @@ const businessService = ({
 									<motion.div variants={stagger} className={styles.List}>
 										<h2>Throw-over</h2>
 										<ul>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[20].serviceName}
 												</motion.a>
 											</Link>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[21].serviceName}
 												</motion.a>
 											</Link>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[22].serviceName}
 												</motion.a>
@@ -199,32 +205,32 @@ const businessService = ({
 									<motion.div variants={stagger} className={styles.List}>
 										<h2>Accessories</h2>
 										<ul>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[23].serviceName}
 												</motion.a>
 											</Link>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[24].serviceName}
 												</motion.a>
 											</Link>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[25].serviceName}
 												</motion.a>
 											</Link>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[26].serviceName}
 												</motion.a>
 											</Link>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[27].serviceName}
 												</motion.a>
 											</Link>
-											<Link href="">
+											<Link href="/">
 												<motion.a variants={fadeInUp} target="blank">
 													{BusinessServicesListDB[28].serviceName}
 												</motion.a>
@@ -493,14 +499,14 @@ const businessService = ({
 				</div>
 
 				{/* <!--===== CONTACT US BANNER =====--> */}
-				<ContactBanner
+				{/* <ContactBanner
 					title={businessServicePageContent?.contactBanner?.title}
 					paragraph={businessServicePageContent?.contactBanner?.paragraph}
 					buttonLink={businessServicePageContent?.contactBanner?.buttonLink}
 					backgroundImage={
 						businessServicePageContent?.contactBanner?.image?.sourceUrl
 					}
-				/>
+				/> */}
 			</main>
 		</motion.div>
 	);
@@ -508,55 +514,55 @@ const businessService = ({
 
 export default businessService;
 
-export async function getStaticProps() {
-	const getBusinessServicePageContent = gql`
-		{
-			pageTitle: pages(where: {id: 183, status: PUBLISH}) {
-				edges {
-					node {
-						title
-					}
-				}
-			}
-			mainContent: pages(where: {id: 183, status: PUBLISH}) {
-				edges {
-					node {
-						seo {
-							metaDesc
-						}
-						businessServicePage {
-							contactBanner {
-								title
-								buttonLink {
-									url
-									title
-									target
-								}
-								image {
-									sourceUrl
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	`;
+// export async function getStaticProps() {
+// 	const getBusinessServicePageContent = gql`
+// 		{
+// 			pageTitle: pages(where: {id: 183, status: PUBLISH}) {
+// 				edges {
+// 					node {
+// 						title
+// 					}
+// 				}
+// 			}
+// 			mainContent: pages(where: {id: 183, status: PUBLISH}) {
+// 				edges {
+// 					node {
+// 						seo {
+// 							metaDesc
+// 						}
+// 						businessServicePage {
+// 							contactBanner {
+// 								title
+// 								buttonLink {
+// 									url
+// 									title
+// 									target
+// 								}
+// 								image {
+// 									sourceUrl
+// 								}
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	`;
 
-	const response = await client.query({
-		query: getBusinessServicePageContent,
-	});
+// 	const response = await client.query({
+// 		query: getBusinessServicePageContent,
+// 	});
 
-	const themesOptionsContent = await getThemesOptionsContent();
+// 	const themesOptionsContent = await getThemesOptionsContent();
 
-	return {
-		props: {
-			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
-			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
-			businessServicePageContent:
-				response?.data?.mainContent?.edges[0]?.node?.businessServicePage,
-			themesOptionsContent,
-		},
-		revalidate: 1,
-	};
-}
+// 	return {
+// 		props: {
+// 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
+// 			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
+// 			businessServicePageContent:
+// 				response?.data?.mainContent?.edges[0]?.node?.businessServicePage,
+// 			themesOptionsContent,
+// 		},
+// 		revalidate: 1,
+// 	};
+// }

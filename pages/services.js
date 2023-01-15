@@ -8,8 +8,8 @@ import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 // Components
 
 const services = ({
-	pageTitle,
 	seo,
+	pageTitle,
 	servicesPageContent,
 	themesOptionsContent,
 }) => {

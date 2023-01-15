@@ -6,6 +6,7 @@ import {getThemesOptionsContent} from "../lib/themesOptions";
 import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 
 const HotelRestaurantServices = ({
+	seo,
 	pageTitle,
 	servicesPageContent,
 	themesOptionsContent,
@@ -45,6 +46,9 @@ export async function getStaticProps() {
 			mainContent: pages(where: {id: 685, status: PUBLISH}) {
 				edges {
 					node {
+						seo {
+							metaDesc
+						}
 						HotelRestaurantServicesPage
 					}
 				}
@@ -61,6 +65,7 @@ export async function getStaticProps() {
 	return {
 		props: {
 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
+			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
 			hotelRestaurantServicesPageContent:
 				response?.data?.mainContent?.edges[0]?.node
 					?.HotelRestaurantServicesPage,

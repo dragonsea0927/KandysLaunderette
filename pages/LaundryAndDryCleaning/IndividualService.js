@@ -1,18 +1,21 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import {gql} from "@apollo/client";
 import {motion} from "framer-motion";
+import {client} from "../../lib/apollo";
 import styles from "/styles/Home.module.scss";
 import mainServicesDB from "/lib/mainServicesDB.json";
-import {fadeInUp, fadeIn, stagger} from "../animations/animations";
+import {fadeInUp, fadeIn, stagger} from "../../animations/animations";
 import IndividualServicesListDB from "/lib/IndividualServicesListDB.json";
 
 // Components
+import Navbar from "/components/Navbar";
 import ContactBanner from "/components/ContactBanner";
 
 const IndividualService = ({
-	pageTitle,
 	seo,
+	pageTitle,
 	IndividualServicePageContent,
 	themesOptionsContent,
 }) => {
@@ -31,6 +34,9 @@ const IndividualService = ({
 				<meta name="description" content={seo?.metaDesc} />
 				<link rel="icon" href="/img/Logo.png" />
 			</Head>
+
+			{/* <!--===== NAVIGATION =====--> */}
+			<Navbar />
 
 			<main>
 				{/* // <========== PAGE TITLE ==========> */}
@@ -639,14 +645,14 @@ const IndividualService = ({
 				</div>
 
 				{/* <!--===== CONTACT US BANNER =====--> */}
-				<ContactBanner
+				{/* <ContactBanner
 					title={IndividualServicePageContent?.contactBanner?.title}
 					paragraph={IndividualServicePageContent?.contactBanner?.paragraph}
 					buttonLink={IndividualServicePageContent?.contactBanner?.buttonLink}
 					backgroundImage={
 						IndividualServicePageContent?.contactBanner?.image?.sourceUrl
 					}
-				/>
+				/> */}
 			</main>
 		</motion.div>
 	);
@@ -654,55 +660,55 @@ const IndividualService = ({
 
 export default IndividualService;
 
-export async function getStaticProps() {
-	const getIndividualServicePageContent = gql`
-		{
-			pageTitle: pages(where: {id: 185, status: PUBLISH}) {
-				edges {
-					node {
-						title
-					}
-				}
-			}
-			mainContent: pages(where: {id: 185, status: PUBLISH}) {
-				edges {
-					node {
-						seo {
-							metaDesc
-						}
-						IndividualServicePage {
-							contactBanner {
-								title
-								buttonLink {
-									url
-									title
-									target
-								}
-								image {
-									sourceUrl
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	`;
+// export async function getStaticProps() {
+// 	const getIndividualServicePageContent = gql`
+// 		{
+// 			pageTitle: pages(where: {id: 185, status: PUBLISH}) {
+// 				edges {
+// 					node {
+// 						title
+// 					}
+// 				}
+// 			}
+// 			mainContent: pages(where: {id: 185, status: PUBLISH}) {
+// 				edges {
+// 					node {
+// 						seo {
+// 							metaDesc
+// 						}
+// 						IndividualServicePage {
+// 							contactBanner {
+// 								title
+// 								buttonLink {
+// 									url
+// 									title
+// 									target
+// 								}
+// 								image {
+// 									sourceUrl
+// 								}
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	`;
 
-	const response = await client.query({
-		query: getIndividualServicePageContent,
-	});
+// 	const response = await client.query({
+// 		query: getIndividualServicePageContent,
+// 	});
 
-	const themesOptionsContent = await getThemesOptionsContent();
+// 	const themesOptionsContent = await getThemesOptionsContent();
 
-	return {
-		props: {
-			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
-			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
-			IndividualServicePageContent:
-				response?.data?.mainContent?.edges[0]?.node?.IndividualServicePage,
-			themesOptionsContent,
-		},
-		revalidate: 1,
-	};
-}
+// 	return {
+// 		props: {
+// 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
+// 			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
+// 			IndividualServicePageContent:
+// 				response?.data?.mainContent?.edges[0]?.node?.IndividualServicePage,
+// 			themesOptionsContent,
+// 		},
+// 		revalidate: 1,
+// 	};
+// }

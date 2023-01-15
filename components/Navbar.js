@@ -40,58 +40,58 @@ const Navbar = (props) => {
 					<div className="flex justify-between">
 						<div className="my-auto">
 							<Link href="/">
-								<a className="uppercase my-auto px-2 text-3xl font-[700] text-fadedPink hover:text-darkPink hover:ease-in-out hover:duration-[0.5s]">
+								<a className="uppercase my-auto px-2 text-3xl font-[500] text-fadedPink hover:text-darkPink hover:ease-in-out hover:duration-[0.5s]">
 									Kandys
 								</a>
 							</Link>
 						</div>
-						<ul className="my-auto py-3 flex justify-center gap-4 text-sm text-black">
-							{/* Menu Array from Wordpress */}
-							{/* {props.menuLinks.map((keys) => (
+						{/* <ul className="my-auto py-3 flex justify-center gap-4 text-sm text-black">
+							{Menu Array from Wordpress }
+							{{props.menuLinks.map((keys) => (
 								<NavbarMenuLinks
 									key={keys?.id}
 									linkUrl={keys?.node?.url}
 									linkName={keys?.node?.label}
 								/>
-							))} */}
-						</ul>
-						{/* <ul className="my-auto py-3 flex justify-center gap-4 text-sm text-black">
+							))}}
+						</ul> */}
+						<ul className="my-auto py-3 flex justify-center gap-4 text-sm text-black">
 							<Link href="/">
-								<a className="my-auto px-2 text-sm tracking-[0.05rem] text-black font-[500] hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
+								<a className="my-auto px-2 text-sm tracking-[0.05rem] text-black font-[300] hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
 									Home
 								</a>
 							</Link>
 							<Link href="/services">
-								<a className="my-auto px-2 text-sm tracking-[0.05rem] text-black font-[500] hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
+								<a className="my-auto px-2 text-sm tracking-[0.05rem] text-black font-[300] hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
 									All Services
 								</a>
 							</Link>
 							<Link href="/LaundryDryCleaning">
-								<a className="my-auto px-2 text-sm tracking-[0.05rem] text-black font-[500] hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
+								<a className="my-auto px-2 text-sm tracking-[0.05rem] text-black font-[300] hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
 									Laundry & Dry Cleaning
 								</a>
 							</Link>
 							<Link href="/suitsOxfordShirts">
-								<a className="my-auto px-2 text-sm tracking-[0.05rem] text-black font-[500] hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
+								<a className="my-auto px-2 text-sm tracking-[0.05rem] text-black font-[300] hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
 									Suits & Oxford Shirts
 								</a>
 							</Link>
 							<Link href="/WeddingDressesBridal">
-								<a className="my-auto px-2 text-sm tracking-[0.05rem] text-black font-[500] hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
+								<a className="my-auto px-2 text-sm tracking-[0.05rem] text-black font-[300] hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
 									Wedding Dresses
 								</a>
 							</Link>
 							<Link href="/AlterationsRepairs">
-								<a className="my-auto px-2 text-sm tracking-[0.05rem] text-black font-[500] hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
+								<a className="my-auto px-2 text-sm tracking-[0.05rem] text-black font-[300] hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
 									Alterations & Repairs
 								</a>
 							</Link>
 							<Link href="/aboutUs">
-								<a className="my-auto px-2 text-sm tracking-[0.05rem] text-black font-[500] hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
+								<a className="my-auto px-2 text-sm tracking-[0.05rem] text-black font-[300] hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
 									Our Story
 								</a>
 							</Link>
-						</ul> */}
+						</ul>
 					</div>
 				</div>
 			</div>

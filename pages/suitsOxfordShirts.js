@@ -16,8 +16,8 @@ import ContactBanner from "../components/ContactBanner";
 import HeroSectionTwo from "../components/HeroSectionTwo";
 
 const SuitsOxfordShirts = ({
-	pageTitle,
 	seo,
+	pageTitle,
 	suitsOxfordShirtsPageContent,
 	themesOptionsContent,
 }) => {
