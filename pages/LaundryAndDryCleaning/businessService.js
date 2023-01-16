@@ -10,13 +10,16 @@ import BusinessServicesListDB from "/lib/IndividualServicesListDB.json";
 
 // Components
 import Navbar from "/components/Navbar";
+import Footer from "/components/Footer";
 import ContactBanner from "/components/ContactBanner";
 
 const businessService = ({
 	seo,
 	pageTitle,
-	businessServicePageContent,
+	serviceMenuLinks,
 	themesOptionsContent,
+	laundryDryCleaningMenuLinks,
+	businessServicePageContent,
 }) => {
 	return (
 		<motion.div
@@ -29,13 +32,13 @@ const businessService = ({
 			{/* <!--===== HEAD =====--> */}
 			<Head>
 				{/* <!-- Website Title --> */}
-				<title>{`${pageTitle} | Kandys Launderette`}</title>
+				<title>{`${pageTitle} | Kandy's Launderette`}</title>
 				<meta name="description" content={seo?.metaDesc} />
 				<link rel="icon" href="/img/Logo.png" />
 			</Head>
 
-			{/* <!--===== NAVIGATION =====--> */}
-			<Navbar />
+			{/* <!--===== NAVBAR =====--> */}
+			<Navbar serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks} />
 
 			<main>
 				{/* // <========== PAGE TITLE ==========> */}
@@ -508,61 +511,72 @@ const businessService = ({
 					}
 				/> */}
 			</main>
+
+			{/* <!--===== FOOTER =====--> */}
+			<Footer
+				email={themesOptionsContent?.themesOptions?.email}
+				phoneNumber={themesOptionsContent?.themesOptions?.phoneNumber}
+				serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks}
+			/>
 		</motion.div>
 	);
 };
 
 export default businessService;
 
-// export async function getStaticProps() {
-// 	const getBusinessServicePageContent = gql`
-// 		{
-// 			pageTitle: pages(where: {id: 183, status: PUBLISH}) {
-// 				edges {
-// 					node {
-// 						title
-// 					}
-// 				}
-// 			}
-// 			mainContent: pages(where: {id: 183, status: PUBLISH}) {
-// 				edges {
-// 					node {
-// 						seo {
-// 							metaDesc
-// 						}
-// 						businessServicePage {
-// 							contactBanner {
-// 								title
-// 								buttonLink {
-// 									url
-// 									title
-// 									target
-// 								}
-// 								image {
-// 									sourceUrl
-// 								}
-// 							}
-// 						}
-// 					}
-// 				}
-// 			}
-// 		}
-// 	`;
+export async function getStaticProps() {
+	const getBusinessServicePageContent = gql`
+		{
+			pageTitle: pages(where: {id: 183, status: PUBLISH}) {
+				edges {
+					node {
+						title
+					}
+				}
+			}
+			mainContent: pages(where: {id: 183, status: PUBLISH}) {
+				edges {
+					node {
+						seo {
+							metaDesc
+						}
+						businessServicePage {
+							contactBanner {
+								title
+								buttonLink {
+									url
+									title
+									target
+								}
+								image {
+									sourceUrl
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	`;
 
-// 	const response = await client.query({
-// 		query: getBusinessServicePageContent,
-// 	});
+	const response = await client.query({
+		query: getBusinessServicePageContent,
+	});
 
-// 	const themesOptionsContent = await getThemesOptionsContent();
+	const serviceMenuLinks = await getServiceLinksContent();
+	const themesOptionsContent = await getThemesOptionsContent();
+	const laundryDryCleaningMenuLinks = await getLaundryDryCleaningLinksContent();
 
-// 	return {
-// 		props: {
-// 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
-// 			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
-// 			businessServicePageContent:
-// 				response?.data?.mainContent?.edges[0]?.node?.businessServicePage,
-// 			themesOptionsContent,
-// 		},
-// 		revalidate: 1,
-// 	};
-// }
+	return {
+		props: {
+			serviceMenuLinks,
+			laundryDryCleaningMenuLinks,
+			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
+			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
+			businessServicePageContent:
+				response?.data?.mainContent?.edges[0]?.node?.businessServicePage,
+			themesOptionsContent,
+		},
+		revalidate: 1,
+	};
+}

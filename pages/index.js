@@ -12,7 +12,6 @@ import {
 // Components
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import TextImage from "../components/TextImage";
 import TwoOptions from "../components/TwoOptions";
 import HeroSection from "../components/HeroSection";
 import StoreLocation from "/components/storeLocation";
@@ -32,7 +31,7 @@ export default function Home({
 	themesOptionsContent,
 	laundryDryCleaningMenuLinks,
 }) {
-	// console.log(menuLinks?.serviceMenuLinks);
+	// console.log(themesOptionsContent);
 
 	return (
 		<motion.div
@@ -45,7 +44,7 @@ export default function Home({
 			{/* <!--===== HEAD =====--> */}
 			<Head>
 				{/* <!-- Website Title --> */}
-				<title>Kandys Launderette | Professional Dry Cleaning Solutions</title>
+				<title>Kandy's Launderette | Professional Dry Cleaning Solutions</title>
 				<meta name="description" content={seo?.metaDesc} />
 				<link rel="icon" href="img/Logo.png" />
 			</Head>
@@ -140,7 +139,11 @@ export default function Home({
 			</main>
 
 			{/* <!--===== FOOTER =====--> */}
-			{/* <Footer /> */}
+			<Footer
+				email={themesOptionsContent?.themesOptions?.email}
+				phoneNumber={themesOptionsContent?.themesOptions?.phoneNumber}
+				serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks}
+			/>
 		</motion.div>
 	);
 }
@@ -322,15 +325,15 @@ export async function getStaticProps() {
 	});
 
 	const serviceMenuLinks = await getServiceLinksContent();
-	const laundryDryCleaningMenuLinks = await getLaundryDryCleaningLinksContent();
 	const themesOptionsContent = await getThemesOptionsContent();
+	const laundryDryCleaningMenuLinks = await getLaundryDryCleaningLinksContent();
 
 	return {
 		props: {
 			serviceMenuLinks,
-			themesOptionsContent,
 			laundryDryCleaningMenuLinks,
 			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
+			themesOptionsContent: themesOptionsContent,
 			homePageContent: response?.data?.mainContent?.edges[0]?.node?.homePage,
 		},
 		revalidate: 1,

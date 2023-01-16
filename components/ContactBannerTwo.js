@@ -25,6 +25,7 @@ const ContactBannerTwo = (props) => {
 
 	return (
 		<section
+			id="#contactBannerTwo"
 			className={styles.contactBannerTwo}
 			style={{
 				backgroundImage: `linear-gradient(
@@ -55,7 +56,7 @@ const ContactBannerTwo = (props) => {
 						</span>
 
 						<div className="flex flex-row justify-center items-center text-white gap-2 py-4">
-							<span className="text-white text-center text-base text-base">
+							<span className="text-white text-center text-base ">
 								Tel:
 								<Link
 									href={`tel:${props?.themesOptions?.phoneNumberOptionTwo}`}

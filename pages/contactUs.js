@@ -4,15 +4,23 @@ import styles from "/styles/Home.module.scss";
 import ContactInfoMap from "../components/ContactInfoMap";
 import {fadeInUp} from "../animations/animations";
 import {getThemesOptionsContent} from "../lib/themesOptions";
+import {
+	getServiceLinksContent,
+	getLaundryDryCleaningLinksContent,
+} from "../lib/MenuLinks";
 
 // Components
+import Navbar from "/components/Navbar";
+import Footer from "/components/Footer";
 import ContactBanner from "../components/ContactBanner";
 
 const contactUs = ({
 	seo,
 	pageTitle,
+	serviceMenuLinks,
 	contactUsPageContent,
 	themesOptionsContent,
+	laundryDryCleaningMenuLinks,
 }) => {
 	return (
 		<motion.div
@@ -25,10 +33,13 @@ const contactUs = ({
 			{/* <!--===== HEAD =====--> */}
 			<Head>
 				{/* <!-- Website Title --> */}
-				<title>{`${pageTitle} | Kandys Launderette`}</title>
+				<title>{`${pageTitle} | Kandy's Launderette`}</title>
 				<meta name="description" content={seo?.metaDesc} />
 				<link rel="icon" href="/img/Logo.png" />
 			</Head>
+
+			{/* <!--===== NAVBAR =====--> */}
+			<Navbar serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks} />
 
 			<main>
 				{/* // <========== BACKGROUND IMAGE ==========> */}
@@ -49,6 +60,13 @@ const contactUs = ({
 				{/* <!--===== CONTACT US BANNER =====--> */}
 				<ContactInfoMap />
 			</main>
+
+			{/* <!--===== FOOTER =====--> */}
+			<Footer
+				email={themesOptionsContent?.themesOptions?.email}
+				phoneNumber={themesOptionsContent?.themesOptions?.phoneNumber}
+				serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks}
+			/>
 		</motion.div>
 	);
 };
@@ -84,10 +102,14 @@ export async function getStaticProps() {
 		query: getContactUsPageContent,
 	});
 
+	const serviceMenuLinks = await getServiceLinksContent();
 	const themesOptionsContent = await getThemesOptionsContent();
+	const laundryDryCleaningMenuLinks = await getLaundryDryCleaningLinksContent();
 
 	return {
 		props: {
+			serviceMenuLinks,
+			laundryDryCleaningMenuLinks,
 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
 			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
 			contactUsPageContent:

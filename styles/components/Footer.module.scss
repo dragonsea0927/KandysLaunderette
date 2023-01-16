@@ -1,0 +1,43 @@
+// Imports
+@import "../fonts";
+@import "../colors";
+
+// <========== FOOTER ==========>
+.footer,
+.footerDark {
+	@apply py-4;
+
+	a,
+	p,
+	h2,
+	h4,
+	h5,
+	span,
+	button {
+		font-family: $fontStyle_main;
+	}
+
+	h2 {
+		@apply text-black text-sm uppercase mb-4;
+	}
+
+	a {
+		@apply text-black text-sm text-left py-1 w-[fit-content] hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s];
+	}
+
+	form {
+		input {
+			font-family: $fontStyle_main;
+			@apply border-black border-solid border-[0.05rem];
+		}
+
+		input:focus {
+			@apply border-fadedPink;
+		}
+
+		::placeholder,
+		::-ms-input-placeholder {
+			@apply border-black text-base;
+		}
+	}
+}

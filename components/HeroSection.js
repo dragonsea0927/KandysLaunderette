@@ -73,7 +73,7 @@ const HeroSection = (props) => {
 									</a>
 								</Link>
 								<ul className="hidden lg:flex flex-row justify-start items-start gap-6 py-8">
-									<Link href="/howItWorks">
+									<Link href="/HowItWorks">
 										<a className="my-auto px-2 text-base tracking-[0.05rem] text-white hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
 											How it works
 										</a>
@@ -132,7 +132,7 @@ const HeroSection = (props) => {
 												</div>
 												{/* Menu Array from Wordpress */}
 												{props?.serviceMenuLinks?.map((keys) => (
-													<NavbarMenuLinks
+													<NavbarMenuSublinks
 														Key={keys?.id}
 														linkUrl={keys?.node?.uri}
 														linkName={keys?.node?.label}
@@ -154,7 +154,7 @@ const HeroSection = (props) => {
 								</ul>
 							</div>
 							<div className="hidden md:flex justify-center items-center gap-4 p-4">
-								<Link href="/howItWorks">
+								<Link href="/HowItWorks">
 									<a className="my-auto px-2 text-base tracking-[0.05rem] text-white hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
 										Log in
 									</a>

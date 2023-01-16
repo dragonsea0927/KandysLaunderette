@@ -3,15 +3,23 @@ import {gql} from "@apollo/client";
 import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
 import {getThemesOptionsContent} from "../lib/themesOptions";
+import {
+	getServiceLinksContent,
+	getLaundryDryCleaningLinksContent,
+} from "../lib/MenuLinks";
 import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 
 // Components
+import Navbar from "/components/Navbar";
+import Footer from "/components/Footer";
 
 const services = ({
 	seo,
 	pageTitle,
+	serviceMenuLinks,
 	servicesPageContent,
 	themesOptionsContent,
+	laundryDryCleaningMenuLinks,
 }) => {
 	return (
 		<motion.div
@@ -24,11 +32,22 @@ const services = ({
 			{/* <!--===== HEAD =====--> */}
 			<Head>
 				{/* <!-- Website Title --> */}
-				<title>{`${pageTitle} | Kandys Launderette`}</title>
+				<title>{`${pageTitle} | Kandy's Launderette`}</title>
 				<meta name="description" content={seo?.metaDesc} />
 				<link rel="icon" href="img/Logo.png" />
 			</Head>
+
+			{/* <!--===== NAVBAR =====--> */}
+			<Navbar serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks} />
+
 			<main></main>
+
+			{/* <!--===== FOOTER =====--> */}
+			<Footer
+				email={themesOptionsContent?.themesOptions?.email}
+				phoneNumber={themesOptionsContent?.themesOptions?.phoneNumber}
+				serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks}
+			/>
 		</motion.div>
 	);
 };
@@ -62,10 +81,14 @@ export async function getStaticProps() {
 		query: getServicesPageContent,
 	});
 
+	const serviceMenuLinks = await getServiceLinksContent();
 	const themesOptionsContent = await getThemesOptionsContent();
+	const laundryDryCleaningMenuLinks = await getLaundryDryCleaningLinksContent();
 
 	return {
 		props: {
+			serviceMenuLinks,
+			laundryDryCleaningMenuLinks,
 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
 			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
 			servicesPageContent:

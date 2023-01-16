@@ -5,10 +5,15 @@ import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
 import styles from "/styles/Home.module.scss";
 import {getThemesOptionsContent} from "../lib/themesOptions";
+import {
+	getServiceLinksContent,
+	getLaundryDryCleaningLinksContent,
+} from "../lib/MenuLinks";
 import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 
 // Components
 import Navbar from "/components/Navbar";
+import Footer from "/components/Footer";
 import OurProcess from "/components/ourProcess";
 import FooterDark from "/components/FooterDark";
 import TextImageTwo from "../components/TextImageTwo";
@@ -18,8 +23,10 @@ import HeroSectionTwo from "../components/HeroSectionTwo";
 const SuitsOxfordShirts = ({
 	seo,
 	pageTitle,
-	suitsOxfordShirtsPageContent,
+	serviceMenuLinks,
 	themesOptionsContent,
+	laundryDryCleaningMenuLinks,
+	suitsOxfordShirtsPageContent,
 }) => {
 	return (
 		<motion.div
@@ -32,10 +39,14 @@ const SuitsOxfordShirts = ({
 			{/* <!--===== HEAD =====--> */}
 			<Head>
 				{/* <!-- Website Title --> */}
-				<title>{`${pageTitle} | Kandys Launderette`}</title>
+				<title>{`${pageTitle} | Kandy's Launderette`}</title>
 				<meta name="description" content={seo?.metaDesc} />
 				<link rel="icon" href="/img/Logo.png" />
 			</Head>
+
+			{/* <!--===== NAVBAR =====--> */}
+			<Navbar serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks} />
+
 			<main>
 				{/* <!--===== HERO =====--> */}
 				<HeroSectionTwo
@@ -145,6 +156,13 @@ const SuitsOxfordShirts = ({
 					</div>
 				</div>
 			</main>
+
+			{/* <!--===== FOOTER =====--> */}
+			<Footer
+				email={themesOptionsContent?.themesOptions?.email}
+				phoneNumber={themesOptionsContent?.themesOptions?.phoneNumber}
+				serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks}
+			/>
 		</motion.div>
 	);
 };
@@ -155,9 +173,6 @@ export default SuitsOxfordShirts;
 SuitsOxfordShirts.getLayout = function PageLayout(page) {
 	return (
 		<>
-			{/* <!--===== NAVIGATION =====--> */}
-			<Navbar />
-
 			{/* <!--===== ONE TIME CUSTOM PAGE CONTENT =====--> */}
 			{page}
 
@@ -257,10 +272,14 @@ export async function getStaticProps() {
 		query: getSuitsOxfordShirtsContent,
 	});
 
+	const serviceMenuLinks = await getServiceLinksContent();
 	const themesOptionsContent = await getThemesOptionsContent();
+	const laundryDryCleaningMenuLinks = await getLaundryDryCleaningLinksContent();
 
 	return {
 		props: {
+			serviceMenuLinks,
+			laundryDryCleaningMenuLinks,
 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
 			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
 			suitsOxfordShirtsPageContent:

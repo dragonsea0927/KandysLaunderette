@@ -5,10 +5,15 @@ import Image from "next/image";
 import {motion} from "framer-motion";
 import styles from "/styles/Home.module.scss";
 import {getThemesOptionsContent} from "../lib/themesOptions";
+import {
+	getServiceLinksContent,
+	getLaundryDryCleaningLinksContent,
+} from "../lib/MenuLinks";
 import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 
 // Components
 import Navbar from "/components/Navbar";
+import Footer from "/components/Footer";
 import OurProcess from "/components/OurProcess";
 import TextImageTwo from "../components/TextImageTwo";
 import HeroSectionTwo from "../components/HeroSectionTwo";
@@ -17,9 +22,13 @@ import ContactBannerThree from "/components/ContactBannerThree";
 const WeddingDressesAndBridal = ({
 	seo,
 	pageTitle,
+	serviceMenuLinks,
+	laundryDryCleaningMenuLinks,
 	weddingDressesAndBridalPageContent,
 	themesOptionsContent,
 }) => {
+	console.log(serviceMenuLinks?.serviceMenuLinks);
+
 	return (
 		<motion.div
 			exit={{
@@ -31,13 +40,13 @@ const WeddingDressesAndBridal = ({
 			{/* <!--===== HEAD =====--> */}
 			<Head>
 				{/* <!-- Website Title --> */}
-				<title>{`${pageTitle} | Kandys Launderette`}</title>
+				<title>{`${pageTitle} | Kandy's Launderette`}</title>
 				<meta name="description" content={seo?.metaDesc} />
 				<link rel="icon" href="/img/Logo.png" />
 			</Head>
 
-			{/* <!--===== NAVIGATION =====--> */}
-			<Navbar />
+			{/* <!--===== NAVBAR =====--> */}
+			<Navbar serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks} />
 
 			<main>
 				{/* <!--===== HERO =====--> */}
@@ -99,6 +108,13 @@ const WeddingDressesAndBridal = ({
 					}
 				/>
 			</main>
+
+			{/* <!--===== FOOTER =====--> */}
+			<Footer
+				email={themesOptionsContent?.themesOptions?.email}
+				phoneNumber={themesOptionsContent?.themesOptions?.phoneNumber}
+				serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks}
+			/>
 		</motion.div>
 	);
 };
@@ -178,10 +194,14 @@ export async function getStaticProps() {
 		query: getWeddingDressesBridalContent,
 	});
 
+	const serviceMenuLinks = await getServiceLinksContent();
 	const themesOptionsContent = await getThemesOptionsContent();
+	const laundryDryCleaningMenuLinks = await getLaundryDryCleaningLinksContent();
 
 	return {
 		props: {
+			serviceMenuLinks,
+			laundryDryCleaningMenuLinks,
 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
 			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
 			weddingDressesAndBridalPageContent:

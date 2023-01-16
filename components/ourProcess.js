@@ -11,10 +11,10 @@ const ourProcess = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full xl:w-[45rem] mt-4 mx-auto text-center text-base text-black font-[500]";
+				"hidden w-full xl:w-[45rem] mt-4 mx-auto text-center text-base text-black font-[300]";
 		} else {
 			contentStyling =
-				"block w-full xl:w-[45rem] mt-4 mx-auto text-center text-base text-black font-[500]";
+				"block w-full xl:w-[45rem] mt-4 mx-auto text-center text-base text-black font-[300]";
 		}
 		return contentStyling;
 	}

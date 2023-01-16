@@ -5,9 +5,14 @@ import Image from "next/image";
 import {motion} from "framer-motion";
 import styles from "/styles/Home.module.scss";
 import {getThemesOptionsContent} from "../lib/themesOptions";
+import {
+	getServiceLinksContent,
+	getLaundryDryCleaningLinksContent,
+} from "../lib/MenuLinks";
 import {fadeInUp, fadeIn, fadeInTwo, stagger} from "../animations/animations";
 
 // Components
+import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
 import NavbarTwo from "/components/NavbarTwo";
 import StoreLocation from "/components/storeLocation";
@@ -16,8 +21,10 @@ import ContactBanner from "../components/ContactBanner";
 const aboutUs = ({
 	seo,
 	pageTitle,
+	serviceMenuLinks,
 	aboutUsPageContent,
 	themesOptionsContent,
+	laundryDryCleaningMenuLinks,
 }) => {
 	return (
 		<motion.div
@@ -30,10 +37,13 @@ const aboutUs = ({
 			{/* <!--===== HEAD =====--> */}
 			<Head>
 				{/* <!-- Website Title --> */}
-				<title>{` | Kandys Launderette`}</title>
+				<title>{`${pageTitle} | Kandy's Launderette`}</title>
 				<meta name="description" content={seo?.metaDesc} />
 				<link rel="icon" href="/img/Logo.png" />
 			</Head>
+
+			{/* <!--===== NAVBAR =====--> */}
+			<Navbar serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks} />
 
 			<main>
 				<div className={styles.aboutUsPage}>
@@ -186,6 +196,13 @@ const aboutUs = ({
 					paragraph={aboutUsPageContent?.ourLocation?.paragraph}
 				/> */}
 			</main>
+
+			{/* <!--===== FOOTER =====--> */}
+			<Footer
+				email={themesOptionsContent?.themesOptions?.email}
+				phoneNumber={themesOptionsContent?.themesOptions?.phoneNumber}
+				serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks}
+			/>
 		</motion.div>
 	);
 };
@@ -256,10 +273,14 @@ export async function getStaticProps() {
 		query: getAboutUsPageContent,
 	});
 
+	const serviceMenuLinks = await getServiceLinksContent();
 	const themesOptionsContent = await getThemesOptionsContent();
+	const laundryDryCleaningMenuLinks = await getLaundryDryCleaningLinksContent();
 
 	return {
 		props: {
+			serviceMenuLinks,
+			laundryDryCleaningMenuLinks,
 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
 			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
 			aboutUsPageContent:
