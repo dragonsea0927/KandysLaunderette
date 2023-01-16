@@ -98,10 +98,10 @@ const HeroSection = (props) => {
 											<div className="flex flex-col justify-center absolute w-[max-content] bg-pink rounded-lg mt-4">
 												{/* Laundry Dry Cleaning Menu Links*/}
 												<div>
-													<div className="py-2 hover:rounded-t-lg hover:bg-fadedPink hover:ease-in-out hover:duration-[0.5s]">
-														<span className="flex flex-row px-2 justify-center items-center">
+													<div className="hover:rounded-t-lg hover:bg-fadedPink hover:ease-in-out hover:duration-[0.5s]">
+														<span className="flex flex-row py-3 px-6 justify-center items-center">
 															<Link href="/LaundryDryCleaning">
-																<a className="w-full  text-white text-tiny text-left font-[400] tracking-[0.05rem] ">
+																<a className="w-full text-white text-tiny text-left font-[400] tracking-[0.05rem] ">
 																	Laundry Dry Cleaning
 																</a>
 															</Link>
