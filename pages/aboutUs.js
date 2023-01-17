@@ -46,70 +46,6 @@ const aboutUs = ({
 			/>
 
 			<main>
-				<div className={styles.aboutUsPage}>
-					{/* // <========== ABOUT US DESCRIPTIONS ==========> */}
-					{/* <div className={styles.aboutUs}>
-						<div>
-							<motion.div variants={stagger} className={styles.content}>
-								<motion.h2 variants={fadeInUp}>We may be new to you</motion.h2>
-								<motion.p variants={fadeIn}>
-									But We believe in making the most of lifes simple pleasures -
-									its the little things that matter. Precious moments of
-									uncomplicated happiness are our constant inspiration, and it
-									is with these in mind that we create collections of services
-									that are built to last and become an intimate part of your
-									everyday lives.
-									<br></br>
-									<br></br>I cannot emphasize enough how much thought, care, and
-									attention to detail goes into every service we make at The
-									White Company - I hope you will cherish your purchases as much
-									as we do.
-									<br></br>
-									<br></br>
-									<motion.span variants={fadeInTwo}>
-										Were delighted to meet you
-									</motion.span>
-								</motion.p>
-							</motion.div>
-						</div>
-					</div> */}
-
-					{/* // <========== SUITS & OXFORD DESCRIPTIONS ==========> */}
-					{/* <div className={styles.ourLeader}>
-						<div>
-							<motion.div variants={fadeIn} className={styles.gridDisplay}>
-								<Image
-									src="/img/karsten-winegeart-bwDnRf-r4u8-unsplash.jpg"
-									alt="Product Image"
-									width={400}
-									height={800}
-									objectFit="cover" objectPosition="center"
-								></Image>
-								<Image
-									src="/img/karsten-winegeart-Q7iB4Yixcfw-unsplash.jpg"
-									alt="Product Image"
-									width={400}
-									height={800}
-									objectFit="cover" objectPosition="center"
-								></Image>
-							</motion.div>
-							<div className={styles.content}>
-								<motion.div variants={stagger} className={styles.description}>
-									<motion.h2 variants={fadeInUp}>
-										Kandy Chrissie Rucker
-									</motion.h2>
-									<motion.p variants={fadeIn}>
-										Over 2 years ago, Kandy Chrissie Rucker had a vision: to
-										create a company that specialized in Laundry & Dry Cleaning,
-										Alterations & Repairs, amongst many other services combining
-										the highest quality with affordable prices.
-									</motion.p>
-								</motion.div>
-							</div>
-						</div>
-					</div> */}
-				</div>
-
 				{/* <!--===== CONTACT US BANNER =====--> */}
 				<ContactBanner
 					title={aboutUsPageContent?.contactBanner?.title}
@@ -117,78 +53,6 @@ const aboutUs = ({
 					buttonLink={aboutUsPageContent?.contactBanner?.buttonLink}
 					backgroundImage={aboutUsPageContent?.contactBanner?.image?.sourceUrl}
 				/>
-
-				{/* <div className={styles.aboutUsPage}>
-					<div className={styles.ourCollections}>
-						<div>
-							<div className={styles.content}>
-								<motion.div variants={fadeInUp} className={styles.title}>
-									<h2>Our Attention to Detail</h2>
-									<h5>Consistency, Efficiency & Perfection.</h5>
-								</motion.div>
-								<div className={styles.gridDisplay}>
-									<div className={styles.innerContent}>
-										<motion.div variants={fadeIn} className={styles.Image}>
-											<Image
-												src="/img/nimble-made-N0ke5zChVBU-unsplash.jpg"
-												alt="Product Image"
-												width={600}
-												height={800}
-												objectFit="cover" objectPosition="center"
-											></Image>
-										</motion.div>
-										<motion.div
-											variants={stagger}
-											className={styles.description}
-										>
-											<motion.h2 variants={fadeInUp}>Service</motion.h2>
-											<motion.p variants={fadeIn}>
-												Our staff are highly skilled and trained to understand
-												the complexity of clothes and household furnishings. You
-												can be confident that your articles will always receive
-												the greatest care in dry cleaning, wet cleaning and
-												stain removal services.
-												<br></br>
-												<br></br>
-												Equally we pride ourselves on our ability to iron and
-												hand finish your garments to the highest standard, so
-												they will look their best for your future enjoyment.
-											</motion.p>
-										</motion.div>
-									</div>
-								</div>
-								<div className={styles.gridDisplayTwo}>
-									<div className={styles.innerContent}>
-										<motion.div
-											variants={stagger}
-											className={styles.description}
-										>
-											<motion.h2 variants={fadeInUp}>Convenience</motion.h2>
-											<motion.p variants={fadeIn}>
-												We are located in high Street downtown Swansea. However
-												We also operate a collection and delivery service.
-												<br></br>
-												<br></br>
-												We have a variety of vehicles on the road and in
-												telephone contact, enabling a prompt response to your
-												requests.
-											</motion.p>
-										</motion.div>
-										<motion.div variants={fadeIn} className={styles.Image}>
-											<Image
-												src="/img/nimble-made-Jf7JqVazm-4-unsplash.jpg"
-												alt="Product Image"
-												width={800}
-												height={800}
-												objectFit="contain"
-											></Image>
-										</motion.div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div> */}
 
 				{/* <!--===== OUT STORE LOCATION =====--> */}
 				<StoreLocation
@@ -211,18 +75,8 @@ const aboutUs = ({
 aboutUs.getLayout = function PageLayout(page) {
 	return (
 		<>
-			<div className={styles.aboutUsPage}>
-				<div className={styles.backgroundTopCover}>
-					{/* <!--===== NAVIGATION =====--> */}
-					<NavbarTwo />
-				</div>
-			</div>
-
 			{/* <!--===== ONE TIME CUSTOM PAGE CONTENT =====--> */}
 			{page}
-
-			{/* <!--===== FOOTER =====--> */}
-			<Footer />
 		</>
 	);
 };

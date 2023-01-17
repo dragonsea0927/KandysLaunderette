@@ -3,9 +3,12 @@
 @import "../colors";
 
 // <========== NAVIGATION ==========>
-.navbar {
+.heroContentSection {
+	h1,
 	h2,
-	a {
+	a,
+	span,
+	p {
 		font-family: $fontStyle_main;
 	}
 }

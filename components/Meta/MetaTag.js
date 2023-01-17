@@ -4,7 +4,7 @@ const MetaTag = (props) => {
 	return (
 		<Head>
 			{/* <!-- Website Title --> */}
-			<title key="title">{props?.title}</title>
+			<title key="title">{`${props?.title} | Professional Dry Cleaning Solutions`}</title>
 			<meta name="description" content={props?.seo?.metaDesc} />
 			<link rel="icon" href="../img/Logo.png" />
 			<meta

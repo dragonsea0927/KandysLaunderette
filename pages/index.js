@@ -19,12 +19,12 @@ import HeroSection from "../components/HeroSection";
 import StoreLocation from "/components/storeLocation";
 import ContactBanner from "../components/ContactBanner";
 import FeaturesBanner from "../components/FeaturesBanner";
+import TextImageJumbo from "../components/TextImageJumbo";
 import ContactBannerTwo from "/components/ContactBannerTwo";
 import TitleGridContent from "/components/TitleGridContent";
 import TitleGridContentTwo from "/components/TitleGridContentTwo";
-import TitleParagraphGridContent from "/components/TitleParagraphGridContent";
-import TextImageJumbo from "../components/TextImageJumbo";
 import ImageTextBulletPoints from "../components/ImageTextBulletPoints";
+import TitleParagraphGridContent from "/components/TitleParagraphGridContent";
 
 export default function Home({
 	seo,

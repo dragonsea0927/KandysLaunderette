@@ -12,9 +12,9 @@ import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
 import MetaTag from "../components/Meta/MetaTag";
 import TwoOptions from "../components/TwoOptions";
+import TitleParagraph from "../components/TitleParagraph";
 import HeroSectionTwo from "../components/HeroSectionTwo";
 import ContactBannerThree from "/components/ContactBannerThree";
-import TitleParagraph from "../components/TitleParagraph";
 
 const LaundryDryCleaning = ({
 	seo,
