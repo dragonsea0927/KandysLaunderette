@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/no-unknown-property */
-import Head from "next/head";
+
 import {gql} from "@apollo/client";
 import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
@@ -13,6 +13,7 @@ import {
 // Components
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import MetaTag from "../components/Meta/MetaTag";
 import TwoOptions from "../components/TwoOptions";
 import HeroSection from "../components/HeroSection";
 import StoreLocation from "/components/storeLocation";
@@ -43,12 +44,10 @@ export default function Home({
 			animate="animate"
 		>
 			{/* <!--===== HEAD =====--> */}
-			<Head>
-				{/* <!-- Website Title --> */}
-				<title>Kandy's Launderette | Professional Dry Cleaning Solutions</title>
-				<meta name="description" content={seo?.metaDesc} />
-				<link rel="icon" href="img/Logo.png" />
-			</Head>
+			<MetaTag
+				title={`Kandy's Launderette | Professional Dry Cleaning Solutions`}
+				seo={seo}
+			/>
 
 			<main>
 				{/* <!--===== HERO =====--> */}
@@ -156,7 +155,33 @@ export async function getStaticProps() {
 				edges {
 					node {
 						seo {
+							canonical
+							cornerstone
+							focuskw
+							fullHead
 							metaDesc
+							metaKeywords
+							metaRobotsNofollow
+							metaRobotsNoindex
+							opengraphAuthor
+							opengraphDescription
+							opengraphImage {
+								mediaItemUrl
+							}
+							opengraphModifiedTime
+							opengraphPublishedTime
+							opengraphPublisher
+							opengraphSiteName
+							opengraphTitle
+							opengraphType
+							opengraphUrl
+							readingTime
+							title
+							twitterDescription
+							twitterTitle
+							twitterImage {
+								mediaItemUrl
+							}
 						}
 						homePage {
 							heroSection {

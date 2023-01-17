@@ -1,4 +1,3 @@
-import Head from "next/head";
 import {gql} from "@apollo/client";
 import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
@@ -12,6 +11,9 @@ import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 // Components
 import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
+import MetaTag from "../components/Meta/MetaTag";
+import StoreLocation from "/components/storeLocation";
+import ContactBanner from "../components/ContactBanner";
 
 const Prices = ({
 	seo,
@@ -30,12 +32,7 @@ const Prices = ({
 			animate="animate"
 		>
 			{/* <!--===== HEAD =====--> */}
-			<Head>
-				{/* <!-- Website Title --> */}
-				<title>{`${pageTitle} | Kandy's Launderette`}</title>
-				<meta name="description" content={seo?.metaDesc} />
-				<link rel="icon" href="img/Logo.png" />
-			</Head>
+			<MetaTag title={pageTitle} seo={seo} />
 
 			{/* <!--===== NAVBAR =====--> */}
 			<Navbar
@@ -45,7 +42,20 @@ const Prices = ({
 				}
 			/>
 
-			<main></main>
+			<main>
+				{/* <!--===== CONTACT US BANNER =====--> */}
+				<ContactBanner
+					title={pricesPageContent?.contactBanner?.title}
+					paragraph={pricesPageContent?.contactBanner?.paragraph}
+					buttonLink={pricesPageContent?.contactBanner?.buttonLink}
+					backgroundImage={pricesPageContent?.contactBanner?.image?.sourceUrl}
+				/>
+				{/* <!--===== OUT STORE LOCATION =====--> */}
+				<StoreLocation
+					title={pricesPageContent?.ourLocation?.title}
+					paragraph={pricesPageContent?.ourLocation?.paragraph}
+				/>
+			</main>
 
 			{/* <!--===== FOOTER =====--> */}
 			<Footer
@@ -56,8 +66,6 @@ const Prices = ({
 		</motion.div>
 	);
 };
-
-export default Prices;
 
 export async function getStaticProps() {
 	const getPricesPageContent = gql`
@@ -73,9 +81,59 @@ export async function getStaticProps() {
 				edges {
 					node {
 						seo {
+							canonical
+							cornerstone
+							focuskw
+							fullHead
 							metaDesc
+							metaKeywords
+							metaRobotsNofollow
+							metaRobotsNoindex
+							opengraphAuthor
+							opengraphDescription
+							opengraphImage {
+								mediaItemUrl
+							}
+							opengraphModifiedTime
+							opengraphPublishedTime
+							opengraphPublisher
+							opengraphSiteName
+							opengraphTitle
+							opengraphType
+							opengraphUrl
+							readingTime
+							title
+							twitterDescription
+							twitterTitle
+							twitterImage {
+								mediaItemUrl
+							}
 						}
-						PricesPage
+						PricesPage {
+							heroSection {
+								title
+								subtitle
+								backgroundImage {
+									sourceUrl
+								}
+							}
+							contactBanner {
+								title
+								paragraph
+								image {
+									sourceUrl
+								}
+								buttonLink {
+									url
+									title
+									target
+								}
+							}
+							ourLocation {
+								title
+								paragraph
+							}
+						}
 					}
 				}
 			}
@@ -103,3 +161,5 @@ export async function getStaticProps() {
 		revalidate: 1,
 	};
 }
+
+export default Prices;

@@ -1,4 +1,3 @@
-import Head from "next/head";
 import {gql} from "@apollo/client";
 import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
@@ -12,6 +11,9 @@ import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 // Components
 import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
+import MetaTag from "../components/Meta/MetaTag";
+import StoreLocation from "/components/storeLocation";
+import ContactBanner from "../components/ContactBanner";
 
 const HotelRestaurantServices = ({
 	seo,
@@ -30,12 +32,7 @@ const HotelRestaurantServices = ({
 			animate="animate"
 		>
 			{/* <!--===== HEAD =====--> */}
-			<Head>
-				{/* <!-- Website Title --> */}
-				<title>{`${pageTitle} | Kandy's Launderette`}</title>
-				<meta name="description" content={seo?.metaDesc} />
-				<link rel="icon" href="img/Logo.png" />
-			</Head>
+			<MetaTag title={pageTitle} seo={seo} />
 
 			{/* <!--===== NAVBAR =====--> */}
 			<Navbar
@@ -45,7 +42,29 @@ const HotelRestaurantServices = ({
 				}
 			/>
 
-			<main></main>
+			<main>
+				{/* <!--===== CONTACT US BANNER =====--> */}
+				<ContactBanner
+					title={aboutUsPageContent?.contactBanner?.title}
+					paragraph={aboutUsPageContent?.contactBanner?.paragraph}
+					buttonLink={aboutUsPageContent?.contactBanner?.buttonLink}
+					backgroundImage={aboutUsPageContent?.contactBanner?.image?.sourceUrl}
+				/>
+
+				{/* <!--===== INFORMATION SECTION =====--> */}
+				<ContactBannerTwo
+					title={homePageContent?.contactBannerTwo?.title}
+					themesOptions={themesOptionsContent?.themesOptions}
+					buttonLink={homePageContent?.contactBannerTwo?.buttonLink}
+					backgroundImage={homePageContent?.contactBannerTwo?.image?.sourceUrl}
+				/>
+
+				{/* <!--===== OUT STORE LOCATION =====--> */}
+				<StoreLocation
+					title={aboutUsPageContent?.ourLocation?.title}
+					paragraph={aboutUsPageContent?.ourLocation?.paragraph}
+				/>
+			</main>
 
 			{/* <!--===== FOOTER =====--> */}
 			<Footer
@@ -56,8 +75,6 @@ const HotelRestaurantServices = ({
 		</motion.div>
 	);
 };
-
-export default HotelRestaurantServices;
 
 export async function getStaticProps() {
 	const getHotelRestaurantServicesPageContent = gql`
@@ -73,9 +90,63 @@ export async function getStaticProps() {
 				edges {
 					node {
 						seo {
+							canonical
+							cornerstone
+							focuskw
+							fullHead
 							metaDesc
+							metaKeywords
+							metaRobotsNofollow
+							metaRobotsNoindex
+							opengraphAuthor
+							opengraphDescription
+							opengraphImage {
+								mediaItemUrl
+							}
+							opengraphModifiedTime
+							opengraphPublishedTime
+							opengraphPublisher
+							opengraphSiteName
+							opengraphTitle
+							opengraphType
+							opengraphUrl
+							readingTime
+							title
+							twitterDescription
+							twitterTitle
+							twitterImage {
+								mediaItemUrl
+							}
 						}
-						HotelRestaurantServicesPage
+						HotelRestaurantServicesPage {
+							contactBanner {
+								title
+								paragraph
+								image {
+									sourceUrl
+								}
+								buttonLink {
+									url
+									title
+									target
+								}
+							}
+							contactBannerTwo {
+								title
+								buttonLink {
+									url
+									title
+									target
+								}
+								image {
+									sourceUrl
+								}
+							}
+							ourLocation {
+								title
+								paragraph
+							}
+						}
 					}
 				}
 			}
@@ -104,3 +175,5 @@ export async function getStaticProps() {
 		revalidate: 1,
 	};
 }
+
+export default HotelRestaurantServices;

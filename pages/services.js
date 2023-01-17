@@ -1,4 +1,3 @@
-import Head from "next/head";
 import {gql} from "@apollo/client";
 import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
@@ -12,6 +11,10 @@ import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 // Components
 import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
+import MetaTag from "../components/Meta/MetaTag";
+import StoreLocation from "/components/storeLocation";
+import ContactBanner from "../components/ContactBanner";
+import ContactBannerTwo from "/components/ContactBannerTwo";
 
 const services = ({
 	seo,
@@ -30,12 +33,7 @@ const services = ({
 			animate="animate"
 		>
 			{/* <!--===== HEAD =====--> */}
-			<Head>
-				{/* <!-- Website Title --> */}
-				<title>{`${pageTitle} | Kandy's Launderette`}</title>
-				<meta name="description" content={seo?.metaDesc} />
-				<link rel="icon" href="img/Logo.png" />
-			</Head>
+			<MetaTag title={pageTitle} seo={seo} />
 
 			{/* <!--===== NAVBAR =====--> */}
 			<Navbar
@@ -45,7 +43,31 @@ const services = ({
 				}
 			/>
 
-			<main></main>
+			<main>
+				{/* <!--===== CONTACT US BANNER =====--> */}
+				<ContactBanner
+					title={servicesPageContent?.contactBanner?.title}
+					paragraph={servicesPageContent?.contactBanner?.paragraph}
+					buttonLink={servicesPageContent?.contactBanner?.buttonLink}
+					backgroundImage={servicesPageContent?.contactBanner?.image?.sourceUrl}
+				/>
+
+				{/* <!--===== INFORMATION SECTION =====--> */}
+				<ContactBannerTwo
+					title={servicesPageContent?.contactBannerTwo?.title}
+					themesOptions={themesOptionsContent?.themesOptions}
+					buttonLink={servicesPageContent?.contactBannerTwo?.buttonLink}
+					backgroundImage={
+						servicesPageContent?.contactBannerTwo?.image?.sourceUrl
+					}
+				/>
+
+				{/* <!--===== OUT STORE LOCATION =====--> */}
+				<StoreLocation
+					title={servicesPageContent?.ourLocation?.title}
+					paragraph={servicesPageContent?.ourLocation?.paragraph}
+				/>
+			</main>
 
 			{/* <!--===== FOOTER =====--> */}
 			<Footer
@@ -56,8 +78,6 @@ const services = ({
 		</motion.div>
 	);
 };
-
-export default services;
 
 export async function getStaticProps() {
 	const getServicesPageContent = gql`
@@ -73,9 +93,70 @@ export async function getStaticProps() {
 				edges {
 					node {
 						seo {
+							canonical
+							cornerstone
+							focuskw
+							fullHead
 							metaDesc
+							metaKeywords
+							metaRobotsNofollow
+							metaRobotsNoindex
+							opengraphAuthor
+							opengraphDescription
+							opengraphImage {
+								mediaItemUrl
+							}
+							opengraphModifiedTime
+							opengraphPublishedTime
+							opengraphPublisher
+							opengraphSiteName
+							opengraphTitle
+							opengraphType
+							opengraphUrl
+							readingTime
+							title
+							twitterDescription
+							twitterTitle
+							twitterImage {
+								mediaItemUrl
+							}
 						}
-						ServicesPage
+						ServicesPage {
+							heroSection {
+								title
+								subtitle
+								backgroundImage {
+									sourceUrl
+								}
+							}
+							contactBanner {
+								title
+								paragraph
+								image {
+									sourceUrl
+								}
+								buttonLink {
+									url
+									title
+									target
+								}
+							}
+							contactBannerTwo {
+								title
+								buttonLink {
+									url
+									title
+									target
+								}
+								image {
+									sourceUrl
+								}
+							}
+							ourLocation {
+								title
+								paragraph
+							}
+						}
 					}
 				}
 			}
@@ -103,3 +184,5 @@ export async function getStaticProps() {
 		revalidate: 1,
 	};
 }
+
+export default services;

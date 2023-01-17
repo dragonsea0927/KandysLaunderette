@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import {gql} from "@apollo/client";
@@ -12,6 +11,7 @@ import IndividualServicesListDB from "/lib/IndividualServicesListDB.json";
 // Components
 import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
+import MetaTag from "../components/Meta/MetaTag";
 import ContactBanner from "/components/ContactBanner";
 
 const IndividualService = ({
@@ -31,12 +31,7 @@ const IndividualService = ({
 			animate="animate"
 		>
 			{/* <!--===== HEAD =====--> */}
-			<Head>
-				{/* <!-- Website Title --> */}
-				<title>{`${pageTitle} | Kandy's Launderette`}</title>
-				<meta name="description" content={seo?.metaDesc} />
-				<link rel="icon" href="/img/Logo.png" />
-			</Head>
+			<MetaTag title={pageTitle} seo={seo} />
 
 			{/* <!--===== NAVBAR =====--> */}
 			<Navbar
@@ -653,14 +648,14 @@ const IndividualService = ({
 				</div>
 
 				{/* <!--===== CONTACT US BANNER =====--> */}
-				{/* <ContactBanner
+				<ContactBanner
 					title={IndividualServicePageContent?.contactBanner?.title}
 					paragraph={IndividualServicePageContent?.contactBanner?.paragraph}
 					buttonLink={IndividualServicePageContent?.contactBanner?.buttonLink}
 					backgroundImage={
 						IndividualServicePageContent?.contactBanner?.image?.sourceUrl
 					}
-				/> */}
+				/>
 			</main>
 
 			{/* <!--===== FOOTER =====--> */}
@@ -672,8 +667,6 @@ const IndividualService = ({
 		</motion.div>
 	);
 };
-
-export default IndividualService;
 
 export async function getStaticProps() {
 	const getIndividualServicePageContent = gql`
@@ -689,11 +682,45 @@ export async function getStaticProps() {
 				edges {
 					node {
 						seo {
+							canonical
+							cornerstone
+							focuskw
+							fullHead
 							metaDesc
+							metaKeywords
+							metaRobotsNofollow
+							metaRobotsNoindex
+							opengraphAuthor
+							opengraphDescription
+							opengraphImage {
+								mediaItemUrl
+							}
+							opengraphModifiedTime
+							opengraphPublishedTime
+							opengraphPublisher
+							opengraphSiteName
+							opengraphTitle
+							opengraphType
+							opengraphUrl
+							readingTime
+							title
+							twitterDescription
+							twitterTitle
+							twitterImage {
+								mediaItemUrl
+							}
 						}
 						IndividualServicePage {
+							heroSection {
+								title
+								subtitle
+								backgroundImage {
+									sourceUrl
+								}
+							}
 							contactBanner {
 								title
+								paragraph
 								buttonLink {
 									url
 									title
@@ -731,3 +758,5 @@ export async function getStaticProps() {
 		revalidate: 1,
 	};
 }
+
+export default IndividualService;

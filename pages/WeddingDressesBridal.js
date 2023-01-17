@@ -1,4 +1,3 @@
-import Head from "next/head";
 import {gql} from "@apollo/client";
 import {client} from "../lib/apollo";
 import Image from "next/image";
@@ -15,6 +14,7 @@ import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
 import OurProcess from "/components/OurProcess";
+import MetaTag from "../components/Meta/MetaTag";
 import TextImageTwo from "../components/TextImageTwo";
 import HeroSectionTwo from "../components/HeroSectionTwo";
 import ContactBannerThree from "/components/ContactBannerThree";
@@ -38,12 +38,7 @@ const WeddingDressesAndBridal = ({
 			animate="animate"
 		>
 			{/* <!--===== HEAD =====--> */}
-			<Head>
-				{/* <!-- Website Title --> */}
-				<title>{`${pageTitle} | Kandy's Launderette`}</title>
-				<meta name="description" content={seo?.metaDesc} />
-				<link rel="icon" href="/img/Logo.png" />
-			</Head>
+			<MetaTag title={pageTitle} seo={seo} />
 
 			{/* <!--===== NAVBAR =====--> */}
 			<Navbar
@@ -124,8 +119,6 @@ const WeddingDressesAndBridal = ({
 	);
 };
 
-export default WeddingDressesAndBridal;
-
 export async function getStaticProps() {
 	const getWeddingDressesBridalContent = gql`
 		{
@@ -140,7 +133,33 @@ export async function getStaticProps() {
 				edges {
 					node {
 						seo {
+							canonical
+							cornerstone
+							focuskw
+							fullHead
 							metaDesc
+							metaKeywords
+							metaRobotsNofollow
+							metaRobotsNoindex
+							opengraphAuthor
+							opengraphDescription
+							opengraphImage {
+								mediaItemUrl
+							}
+							opengraphModifiedTime
+							opengraphPublishedTime
+							opengraphPublisher
+							opengraphSiteName
+							opengraphTitle
+							opengraphType
+							opengraphUrl
+							readingTime
+							title
+							twitterDescription
+							twitterTitle
+							twitterImage {
+								mediaItemUrl
+							}
 						}
 						WeddingDressesBridalPage {
 							heroSection {
@@ -216,3 +235,5 @@ export async function getStaticProps() {
 		revalidate: 1,
 	};
 }
+
+export default WeddingDressesAndBridal;

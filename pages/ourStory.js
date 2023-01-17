@@ -1,4 +1,3 @@
-import Head from "next/head";
 import {gql} from "@apollo/client";
 import {client} from "../lib/apollo";
 import Image from "next/image";
@@ -15,6 +14,7 @@ import {fadeInUp, fadeIn, fadeInTwo, stagger} from "../animations/animations";
 import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
 import NavbarTwo from "/components/NavbarTwo";
+import MetaTag from "../components/Meta/MetaTag";
 import StoreLocation from "/components/storeLocation";
 import ContactBanner from "../components/ContactBanner";
 
@@ -35,12 +35,7 @@ const ourStory = ({
 			animate="animate"
 		>
 			{/* <!--===== HEAD =====--> */}
-			<Head>
-				{/* <!-- Website Title --> */}
-				<title>{`${pageTitle} | Kandy's Launderette`}</title>
-				<meta name="description" content={seo?.metaDesc} />
-				<link rel="icon" href="/img/Logo.png" />
-			</Head>
+			<MetaTag title={pageTitle} seo={seo} />
 
 			{/* <!--===== NAVBAR =====--> */}
 			<Navbar
@@ -212,8 +207,6 @@ const ourStory = ({
 	);
 };
 
-export default ourStory;
-
 // Removes Global Navbar & Adds Custom Header and Footer Page layout Function
 ourStory.getLayout = function PageLayout(page) {
 	return (
@@ -248,7 +241,33 @@ export async function getStaticProps() {
 				edges {
 					node {
 						seo {
+							canonical
+							cornerstone
+							focuskw
+							fullHead
 							metaDesc
+							metaKeywords
+							metaRobotsNofollow
+							metaRobotsNoindex
+							opengraphAuthor
+							opengraphDescription
+							opengraphImage {
+								mediaItemUrl
+							}
+							opengraphModifiedTime
+							opengraphPublishedTime
+							opengraphPublisher
+							opengraphSiteName
+							opengraphTitle
+							opengraphType
+							opengraphUrl
+							readingTime
+							title
+							twitterDescription
+							twitterTitle
+							twitterImage {
+								mediaItemUrl
+							}
 						}
 						OurStoryPage {
 							contactBanner {
@@ -295,3 +314,5 @@ export async function getStaticProps() {
 		revalidate: 1,
 	};
 }
+
+export default ourStory;

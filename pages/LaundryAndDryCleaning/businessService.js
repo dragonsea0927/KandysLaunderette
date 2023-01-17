@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import {gql} from "@apollo/client";
 import {client} from "../../lib/apollo";
@@ -11,6 +10,7 @@ import BusinessServicesListDB from "/lib/IndividualServicesListDB.json";
 // Components
 import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
+import MetaTag from "../components/Meta/MetaTag";
 import ContactBanner from "/components/ContactBanner";
 
 const businessService = ({
@@ -30,12 +30,7 @@ const businessService = ({
 			animate="animate"
 		>
 			{/* <!--===== HEAD =====--> */}
-			<Head>
-				{/* <!-- Website Title --> */}
-				<title>{`${pageTitle} | Kandy's Launderette`}</title>
-				<meta name="description" content={seo?.metaDesc} />
-				<link rel="icon" href="/img/Logo.png" />
-			</Head>
+			<MetaTag title={pageTitle} seo={seo} />
 
 			{/* <!--===== NAVBAR =====--> */}
 			<Navbar
@@ -507,14 +502,14 @@ const businessService = ({
 				</div>
 
 				{/* <!--===== CONTACT US BANNER =====--> */}
-				{/* <ContactBanner
+				<ContactBanner
 					title={businessServicePageContent?.contactBanner?.title}
 					paragraph={businessServicePageContent?.contactBanner?.paragraph}
 					buttonLink={businessServicePageContent?.contactBanner?.buttonLink}
 					backgroundImage={
 						businessServicePageContent?.contactBanner?.image?.sourceUrl
 					}
-				/> */}
+				/>
 			</main>
 
 			{/* <!--===== FOOTER =====--> */}
@@ -526,8 +521,6 @@ const businessService = ({
 		</motion.div>
 	);
 };
-
-export default businessService;
 
 export async function getStaticProps() {
 	const getBusinessServicePageContent = gql`
@@ -543,11 +536,45 @@ export async function getStaticProps() {
 				edges {
 					node {
 						seo {
+							canonical
+							cornerstone
+							focuskw
+							fullHead
 							metaDesc
+							metaKeywords
+							metaRobotsNofollow
+							metaRobotsNoindex
+							opengraphAuthor
+							opengraphDescription
+							opengraphImage {
+								mediaItemUrl
+							}
+							opengraphModifiedTime
+							opengraphPublishedTime
+							opengraphPublisher
+							opengraphSiteName
+							opengraphTitle
+							opengraphType
+							opengraphUrl
+							readingTime
+							title
+							twitterDescription
+							twitterTitle
+							twitterImage {
+								mediaItemUrl
+							}
 						}
 						businessServicePage {
+							heroSection {
+								title
+								subtitle
+								backgroundImage {
+									sourceUrl
+								}
+							}
 							contactBanner {
 								title
+								paragraph
 								buttonLink {
 									url
 									title
@@ -585,3 +612,5 @@ export async function getStaticProps() {
 		revalidate: 1,
 	};
 }
+
+export default businessService;
