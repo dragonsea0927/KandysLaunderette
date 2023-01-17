@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/no-unknown-property */
 import Head from "next/head";
 import {gql} from "@apollo/client";

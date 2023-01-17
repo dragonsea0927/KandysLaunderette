@@ -7,14 +7,9 @@
 .textImageJumbo {
 	padding: 5rem 0;
 
-	h2 {
-		font-family: $fontStyle_main;
-	}
-
-	h5 {
-		font-family: $fontStyle_main;
-	}
-
+	h2,
+	h5,
+	a,
 	p {
 		font-family: $fontStyle_main;
 	}
@@ -22,11 +17,6 @@
 
 .textImageJumbo {
 	padding: 2.5rem 0;
-
-	h2,
-	a {
-		font-family: $fontStyle_main;
-	}
 }
 
 .textImageCard {

@@ -14,7 +14,7 @@ const TwoOptions = (props) => {
 		if (isParagraphContent === null) {
 			contentStyling = "hidden mt-4 py-8 px-4 text-black text-center text-base";
 		} else {
-			contentStyling = "block mt-4 py-8 px-4  text-black text-center text-base";
+			contentStyling = "block mt-4 py-8 px-4 text-black text-center text-base";
 		}
 		return contentStyling;
 	}

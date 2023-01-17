@@ -1,0 +1,12 @@
+// Imports
+@import "../fonts";
+@import "../colors";
+
+.titleParagraph {
+	padding: 5rem 0;
+
+	h2,
+	p {
+		font-family: $fontStyle_main;
+	}
+}

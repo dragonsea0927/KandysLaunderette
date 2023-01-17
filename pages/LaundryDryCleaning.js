@@ -14,6 +14,7 @@ import Footer from "/components/Footer";
 import TwoOptions from "../components/TwoOptions";
 import HeroSectionTwo from "../components/HeroSectionTwo";
 import ContactBannerThree from "/components/ContactBannerThree";
+import TitleParagraph from "../components/TitleParagraph";
 
 const LaundryDryCleaning = ({
 	seo,
@@ -40,7 +41,12 @@ const LaundryDryCleaning = ({
 			</Head>
 
 			{/* <!--===== NAVBAR =====--> */}
-			<Navbar serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks} />
+			<Navbar
+				serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks}
+				laundryDryCleaningMenuLinks={
+					laundryDryCleaningMenuLinks?.laundryDryCleaningMenuLinks
+				}
+			/>
 
 			<main>
 				{/* <!--===== HERO =====--> */}
@@ -52,6 +58,13 @@ const LaundryDryCleaning = ({
 							?.sourceUrl
 					}
 				/>
+
+				{/* // <========== OPTIONS ==========> */}
+				<TitleParagraph
+					title={laundryDryCleaningPageContent?.titleParagraph?.title}
+					paragraph={laundryDryCleaningPageContent?.titleParagraph?.paragraph}
+				/>
+
 				{/* // <========== OPTIONS ==========> */}
 				<TwoOptions
 					title={laundryDryCleaningPageContent?.ourOptions?.title}
@@ -105,6 +118,10 @@ export async function getStaticProps() {
 								backgroundImage {
 									sourceUrl
 								}
+							}
+							titleParagraph {
+								title
+								paragraph
 							}
 							ourOptions {
 								title

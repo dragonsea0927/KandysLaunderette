@@ -39,7 +39,12 @@ const IndividualService = ({
 			</Head>
 
 			{/* <!--===== NAVBAR =====--> */}
-			<Navbar serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks} />
+			<Navbar
+				serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks}
+				laundryDryCleaningMenuLinks={
+					laundryDryCleaningMenuLinks?.laundryDryCleaningMenuLinks
+				}
+			/>
 
 			<main>
 				{/* // <========== PAGE TITLE ==========> */}

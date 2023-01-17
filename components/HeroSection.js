@@ -6,7 +6,6 @@ import {motion} from "framer-motion";
 import DOMPurify from "isomorphic-dompurify";
 import {fadeIn, fadeInUp} from "../animations/animations";
 import styles from "../styles/components/HeroSection.module.scss";
-import NavbarMenuLinks from "./NavbarMenuLinks";
 import NavbarMenuSublinks from "./NavbarMenuSublinks";
 
 const HeroSection = (props) => {
@@ -41,6 +40,7 @@ const HeroSection = (props) => {
 	function displayServicesMenu() {
 		setServicesMenuOpen(!servicesMenusOpen);
 	}
+
 	function displayLaundryDryCleaningMenu() {
 		setLaundryDryCleaningMenuOpen(!laundryDryCleaningMenuOpen);
 	}

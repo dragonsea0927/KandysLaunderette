@@ -8,7 +8,7 @@ const Footer = (props) => {
 		<footer className={styles.footer}>
 			<div className="container mx-auto">
 				<div>
-					<div className="grid  grid-cols-1 ld:grid-cols-3 justify-center items-center gap-6 py-14">
+					<div className="grid grid-cols-1 lg:grid-cols-3 justify-center items-center gap-6 py-14">
 						<div className="flex flex-col px-2">
 							<h2 className="text-center lg:text-left">
 								<strong>Don’t miss our latest updates</strong>
@@ -30,7 +30,7 @@ const Footer = (props) => {
 									className="p-2 text-left text-black text-sm w-auto lg:w-[350px] border-solid border-[0.05rem] border-black"
 								/>
 								<button
-									className="border-none py-[0.55rem] px-4 tracking-[0.1rem] uppercase text-white text-sm font-[400] bg-black hover:bg-fadedPink hover:ease-in-out hover:duration-[0.5s]"
+									className="border-none py-[0.60rem] px-4 tracking-[0.1rem] uppercase text-white text-sm font-[400] bg-black hover:bg-fadedPink hover:ease-in-out hover:duration-[0.5s]"
 									type="submit"
 								>
 									Sign Up

@@ -49,13 +49,15 @@ const ContactBanner = (props) => {
 					</div>
 					<motion.button
 						variants={fadeIn}
-						className="py-4 px-6 lg:py-6 lg:px-20 font-[700] uppercase border-[1px] rounded-lg bg-pink border-solid border-pink text-white text-tiny hover:border-yellow hover:bg-yellow hover:ease-in-out hover:duration-[0.5s]"
+						className="font-[700] uppercase text-white text-tiny"
 					>
 						<Link
 							href={`${props?.buttonLink?.url}`}
 							target={`${props?.buttonLink?.target}`}
 						>
-							{props?.buttonLink?.title}
+							<a className="py-4 px-6 lg:py-6 lg:px-20 bg-pink rounded-lg bg-pink hover:bg-yellow hover:ease-in-out hover:duration-[0.5s]">
+								{props?.buttonLink?.title}
+							</a>
 						</Link>
 					</motion.button>
 				</div>

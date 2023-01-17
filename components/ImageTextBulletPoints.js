@@ -17,8 +17,8 @@ const ImageTextBulletPoints = (props) => {
 							height={550}
 							objectFit="cover"
 							objectPosition="center"
-							alt={`${props?.title} Image`}
 							src={`${props?.Image}`}
+							alt={`${props?.title} Image`}
 							className="w-full h-[550px] object-cover object-center"
 						/>
 					</motion.div>
@@ -39,13 +39,13 @@ const ImageTextBulletPoints = (props) => {
 						</div>
 						<motion.button
 							variants={fadeIn}
-							className="mt-5 w-[fit-content] py-2 px-6 flex flex-col justify-center lg:justify-left mx-auto lg:mx-0 bg-white rounded-lg text-blue hover:text-white hover:bg-pink hover:ease-in-out hover:duration-[0.5s]"
+							className="mt-5 w-[fit-content] flex flex-col justify-center lg:justify-left mx-auto lg:mx-0 bg-white rounded-lg text-blue hover:text-white hover:bg-pink hover:ease-in-out hover:duration-[0.5s]"
 						>
 							<Link
 								href={`${props?.buttonLink?.url}`}
 								target={`${props?.buttonLink?.target}`}
 							>
-								<a className="hover:text-white text-base font-[600] py-2 px-4 ">
+								<a className="hover:text-white text-base font-[600] py-4 px-8">
 									{props?.buttonLink?.title}
 								</a>
 							</Link>
