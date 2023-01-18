@@ -9,9 +9,6 @@ import styles from "../styles/components/HeroSection.module.scss";
 import NavbarMenuSublinks from "./NavbarMenuSublinks";
 
 const HeroSection = (props) => {
-	// console.log(props?.serviceMenuLinks);
-	// console.log(props?.laundryDryCleaningMenuLinks);
-
 	/* Check if Paragraph content is null
 	 And Displays content if it null */
 	function isParagraphContent(isParagraphContent) {

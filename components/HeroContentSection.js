@@ -30,12 +30,11 @@ const HeroContentSection = (props) => {
 								</p>
 								<div className="flex flex-wrap justify-center mb-20 -m-2">
 									<div className="w-full md:w-auto p-2">
-										<a
-											className="block w-[fit-content] mx-auto px-8 py-3.5 text-medium text-center text-white font-bold bg-pink hover:bg-fadedPinkThree focus:ring-4 focus:ring-blue rounded-full"
-											href="#"
-										>
-											Get Started
-										</a>
+										<Link href={`/`} target={``}>
+											<a className="block w-[fit-content] mx-auto px-8 py-3.5 text-base text-center text-white font-bold bg-pink hover:bg-fadedPinkThree focus:ring-4 focus:ring-blue rounded-full">
+												Get Started
+											</a>
+										</Link>
 									</div>
 								</div>
 							</div>
@@ -51,10 +50,10 @@ const HeroContentSection = (props) => {
 									src={props?.backgroundImage}
 									className="w-full h-[650px] rounded-lg object-cover object-center"
 								/>
-								<Link href="/services">
+								<Link href={`/services`} target={``}>
 									<motion.a
 										variants={fadeIn}
-										className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 inline-block px-8 py-3.5 text-medium text-center text-white font-[600] bg-pink hover:bg-fadedPink focus:ring-4 focus:ring-fadedPink rounded-full"
+										className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 inline-block px-8 py-3.5 text-base text-center text-white font-[600] cursor-pointer bg-pink hover:bg-fadedPink focus:ring-4 focus:ring-fadedPink rounded-full"
 									>
 										Watch Video
 									</motion.a>

@@ -1,0 +1,12 @@
+// Imports
+@import "../fonts";
+@import "../colors";
+
+.fourGridContent,
+.fourGridContentCard {
+	h2,
+	h3,
+	p {
+		font-family: $fontStyle_main;
+	}
+}

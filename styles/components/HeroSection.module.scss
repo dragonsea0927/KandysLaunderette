@@ -9,16 +9,12 @@
 	background-repeat: no-repeat;
 }
 
-.heroSection {
+.heroSection,
+.heroSectionThree {
 	h1,
-	h2 {
-		font-family: $fontStyle_main;
-	}
-
-	a {
-		font-family: $fontStyle_main;
-	}
-
+	h2,
+	a,
+	span,
 	p {
 		font-family: $fontStyle_main;
 	}

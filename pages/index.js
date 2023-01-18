@@ -65,7 +65,7 @@ export default function Home({
 					}
 				/>
 
-				{/* <!--===== INTRO SECTION =====--> */}
+				{/* <!--===== FEATURE BANNER =====--> */}
 				<FeaturesBanner
 					title={homePageContent?.featuresBanner?.title}
 					content={homePageContent?.featuresBanner?.content}
