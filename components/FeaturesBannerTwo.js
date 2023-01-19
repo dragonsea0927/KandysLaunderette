@@ -11,7 +11,7 @@ const FeaturesBannerTwo = (props) => {
 					<div className="py-16 px-8 bg-white rounded-3xl">
 						<div className="max-w-7xl mx-auto">
 							<h2 className="max-w-xl mb-20 text-4xl md:text-5xl text-black tracking-tight font-[600]">
-								The Process Simplified
+								Our Process Simplified
 							</h2>
 							<div className="flex flex-wrap -m-3">
 								<div className="w-full md:w-1/2 lg:w-1/4 p-3">

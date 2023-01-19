@@ -21,7 +21,7 @@ import ContactBanner from "../components/ContactBanner";
 import FeaturesBanner from "../components/FeaturesBanner";
 import TextImageJumbo from "../components/TextImageJumbo";
 import ContactBannerTwo from "/components/ContactBannerTwo";
-import TitleGridContent from "/components/TitleGridContent";
+import FeaturesBannerTwo from "../components/FeaturesBannerTwo";
 import TitleGridContentTwo from "/components/TitleGridContentTwo";
 import ImageTextBulletPoints from "../components/ImageTextBulletPoints";
 import TitleParagraphGridContent from "/components/TitleParagraphGridContent";
@@ -76,15 +76,8 @@ export default function Home({
 					gridContent={homePageContent?.textImageJumbo?.gridContent}
 				/>
 
-				{/* <!--===== MAIN SERVICES =====--> */}
-				<TitleGridContent
-					title={homePageContent?.ourServices?.title}
-					paragraph={homePageContent?.ourServices?.paragraph}
-					gridContent={homePageContent?.ourServices?.gridContent}
-					backgroundImage={
-						homePageContent?.ourServices?.backgroundImage?.sourceUrl
-					}
-				/>
+				{/* <!--===== FEATURE BANNER =====--> */}
+				<FeaturesBannerTwo />
 
 				{/* <!--===== SPECIAL OCCASIONS =====--> */}
 				<TwoOptions
@@ -220,25 +213,6 @@ export async function getStaticProps() {
 									}
 									image {
 										sourceUrl
-									}
-								}
-							}
-							ourServices {
-								title
-								paragraph
-								backgroundImage {
-									sourceUrl
-								}
-								gridContent {
-									title
-									link {
-										url
-										title
-										target
-									}
-									image {
-										sourceUrl
-										altText
 									}
 								}
 							}
