@@ -93,9 +93,7 @@ const HowItWorks = ({
 
 				{/* <!--===== REINVENTING THE FUTURE =====--> */}
 				<HeroContentSection
-					backgroundImage={
-						howItWorksPageContent?.contactBanner?.image?.sourceUrl
-					}
+					backgroundImage={`http://kandyslaunderette.local/wp-content/uploads/2023/01/windows-hNiNxhUfCfQ-unsplash-scaled.jpg`}
 				/>
 
 				{/* <!--===== REINVENTING THE FUTURE =====--> */}
