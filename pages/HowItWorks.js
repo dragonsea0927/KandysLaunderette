@@ -22,6 +22,7 @@ import HeroSectionThree from "../components/HeroSectionThree";
 import FeaturesBannerTwo from "../components/FeaturesBannerTwo";
 import TitleParagraphVideo from "../components/TitleParagraphVideo";
 import ImageTextBulletPoints from "../components/ImageTextBulletPoints";
+import TitleParagraphGridContentTwo from "../components/TitleParagraphGridContentTwo";
 
 const HowItWorks = ({
 	seo,
@@ -90,6 +91,17 @@ const HowItWorks = ({
 
 				{/* <!--===== FEATURE BANNER =====--> */}
 				<FeaturesBannerTwo />
+
+				{/* <!--===== FEATURE BANNER =====--> */}
+				<TitleParagraphGridContentTwo
+					title={`Here's how Kandy's Launderette makes your life easier.`}
+					paragraph={`In a hurry? Or just from the convenience of your home. We offer a
+							timely Pick-up and drop off collection service. With th best
+							laundry delivery service available Our delivery boys can pick up
+							all your dirty linen in 30 minutes and deliver them washed and
+							folded in just 24 hours.`}
+					gridContent={howItWorksPageContent?.ourServices?.gridContent}
+				/>
 
 				{/* <!--===== REINVENTING THE FUTURE =====--> */}
 				<TitleParagraphVideo
