@@ -62,7 +62,7 @@ const TitleGridContent = (props) => {
 						className="mx-auto mb-8 grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4 px-2 lg:px-0 justify-center items-start"
 					>
 						{/* Array Loop */}
-						{props.gridContent.map((keys) => (
+						{props?.gridContent.map((keys) => (
 							<SingleCard
 								Key={keys?.id}
 								link={keys?.link}

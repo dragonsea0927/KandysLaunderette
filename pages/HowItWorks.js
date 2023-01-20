@@ -20,7 +20,7 @@ import FourGridContent from "../components/FourGridContent";
 import ContactBannerTwo from "/components/ContactBannerTwo";
 import HeroSectionThree from "../components/HeroSectionThree";
 import FeaturesBannerTwo from "../components/FeaturesBannerTwo";
-import HeroContentSection from "../components/HeroContentSection";
+import TitleParagraphVideo from "../components/TitleParagraphVideo";
 import ImageTextBulletPoints from "../components/ImageTextBulletPoints";
 
 const HowItWorks = ({
@@ -92,8 +92,13 @@ const HowItWorks = ({
 				<FeaturesBannerTwo />
 
 				{/* <!--===== REINVENTING THE FUTURE =====--> */}
-				<HeroContentSection
-					backgroundImage={`http://kandyslaunderette.local/wp-content/uploads/2023/01/windows-hNiNxhUfCfQ-unsplash-scaled.jpg`}
+				<TitleParagraphVideo
+					title={howItWorksPageContent?.titleParagraphVideo?.title}
+					subtitle={howItWorksPageContent?.titleParagraphVideo?.subtitle}
+					paragraph={howItWorksPageContent?.titleParagraphVideo?.paragraph}
+					buttonLink={howItWorksPageContent?.titleParagraphVideo?.buttonLink}
+					video={`http://kandyslaunderette.local/wp-content/uploads/2023/01/pexels-karolina-grabowska-4959868-scaled.jpg`}
+					backgroundImage={`http://kandyslaunderette.local/wp-content/uploads/2023/01/pexels-karolina-grabowska-4959868-scaled.jpg`}
 				/>
 
 				{/* <!--===== REINVENTING THE FUTURE =====--> */}
@@ -128,6 +133,9 @@ const HowItWorks = ({
 
 				{/* <!--===== REINVENTING THE FUTURE =====--> */}
 				<FourGridContent
+					title={howItWorksPageContent?.fourGridContent?.title}
+					subtitle={howItWorksPageContent?.fourGridContent?.subtitle}
+					gridContent={howItWorksPageContent?.fourGridContent?.gridContent}
 					Image={
 						howItWorksPageContent?.heroSection?.square?.backgroundImage
 							?.sourceUrl
@@ -306,24 +314,6 @@ export async function getStaticProps() {
 									}
 								}
 							}
-							imageTextBulletPoints {
-								title
-								backgroundColor
-								image {
-									sourceUrl
-								}
-								buttonLink {
-									url
-									title
-									target
-								}
-								bulletPoints {
-									text
-									icon {
-										sourceUrl
-									}
-								}
-							}
 							ourServices {
 								title
 								paragraph
@@ -343,6 +333,35 @@ export async function getStaticProps() {
 									}
 								}
 							}
+							titleParagraphVideo {
+								title
+								subtitle
+								videoLink
+								paragraph
+								buttonLink {
+									url
+									title
+									target
+								}
+							}
+							imageTextBulletPoints {
+								title
+								backgroundColor
+								image {
+									sourceUrl
+								}
+								buttonLink {
+									url
+									title
+									target
+								}
+								bulletPoints {
+									text
+									icon {
+										sourceUrl
+									}
+								}
+							}
 							contactBanner {
 								title
 								paragraph
@@ -353,6 +372,18 @@ export async function getStaticProps() {
 									url
 									title
 									target
+								}
+							}
+							fourGridContent {
+								title
+								subtitle
+								gridContent {
+									title
+									paragraph
+									image {
+										sourceUrl
+										altText
+									}
 								}
 							}
 							contactBannerTwo {

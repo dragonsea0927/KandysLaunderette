@@ -1,0 +1,14 @@
+// Imports
+@import "../fonts";
+@import "../colors";
+
+// <========== NAVIGATION ==========>
+.titleParagraphVideo {
+	h1,
+	h2,
+	a,
+	span,
+	p {
+		font-family: $fontStyle_main;
+	}
+}
