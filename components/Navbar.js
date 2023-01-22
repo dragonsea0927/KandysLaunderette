@@ -56,7 +56,7 @@ const Navbar = (props) => {
 										/>
 									</span>
 									{servicesMenusOpen ? (
-										<div className="flex flex-col justify-center absolute w-[max-content] bg-pink rounded-lg mt-5">
+										<div className="flex flex-col justify-center absolute z-[999] w-[max-content] bg-pink rounded-lg mt-5">
 											{/* Laundry Dry Cleaning Menu Links*/}
 											<div>
 												<div className="hover:rounded-t-lg hover:bg-fadedPink hover:ease-in-out hover:duration-[0.5s]">

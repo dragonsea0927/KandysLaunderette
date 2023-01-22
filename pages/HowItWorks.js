@@ -95,11 +95,13 @@ const HowItWorks = ({
 				{/* <!--===== FEATURE BANNER =====--> */}
 				<TitleParagraphGridContentTwo
 					title={`Here's how Kandy's Launderette makes your life easier.`}
-					paragraph={`In a hurry? Or just from the convenience of your home. We offer a
-							timely Pick-up and drop off collection service. With th best
-							laundry delivery service available Our delivery boys can pick up
-							all your dirty linen in 30 minutes and deliver them washed and
-							folded in just 24 hours.`}
+					paragraph={`<p>
+									Out In a hurry? Or from the convenience of your home. We offer a
+									timely Pick-up and drop off collection service. With th best
+									laundry delivery service available Our delivery boys can pick up
+									all your dirty linen in 30 minutes and deliver them washed and
+									folded in just 24 hours. 
+								</p>`}
 					gridContent={howItWorksPageContent?.ourServices?.gridContent}
 				/>
 
@@ -117,7 +119,7 @@ const HowItWorks = ({
 				<ImageTextBulletPoints
 					title={howItWorksPageContent?.imageTextBulletPoints?.title}
 					buttonLink={howItWorksPageContent?.imageTextBulletPoints?.buttonLink}
-					Image={howItWorksPageContent?.imageTextBulletPoints?.image?.sourceUrl}
+					Image={howItWorksPageContent?.imageTextBulletPoints?.image}
 					bulletPoints={
 						howItWorksPageContent?.imageTextBulletPoints?.bulletPoints
 					}
@@ -148,70 +150,7 @@ const HowItWorks = ({
 					title={howItWorksPageContent?.fourGridContent?.title}
 					subtitle={howItWorksPageContent?.fourGridContent?.subtitle}
 					gridContent={howItWorksPageContent?.fourGridContent?.gridContent}
-					Image={
-						howItWorksPageContent?.heroSection?.square?.backgroundImage
-							?.sourceUrl
-					}
-					ImageTwo={
-						howItWorksPageContent?.heroSection?.squareOne?.backgroundImage
-							?.sourceUrl
-					}
-					ImageThree={
-						howItWorksPageContent?.heroSection?.squareTwo?.backgroundImage
-							?.sourceUrl
-					}
-					ImageFour={
-						howItWorksPageContent?.imageTextBulletPoints?.image?.sourceUrl
-					}
 				/>
-
-				{/* <!--===== REINVENTING THE FUTURE =====--> */}
-				<section className="pt-6 pb-20 bg-white overflow-hidden">
-					<div className="container mx-auto px-4">
-						<div className="px-8 py-20 bg-white overflow-hidden border border-pink rounded-3xl">
-							<div className="md:max-w-2xl text-center mx-auto">
-								<span className="inline-block mb-3 text-medium text-pink font-[600] uppercase tracking-widest">
-									Best caption here
-								</span>
-								<h1 className="my-12 text-5xl lg:text-6xl text-black text-center text-black tracking-tight font-[700] leading-[3.5rem]">
-									<span>Build what you</span>
-									<span className="text-pink bg-clip-text px-3 bg-gradient-fadedYellow">
-										imagine
-									</span>
-									<span>without compromise.</span>
-								</h1>
-								<p className="mb-10 text-base lg:text-medium text-center font-[400] text-black">
-									Thousands of companies trust in our apps, you could be part of
-									our community too.
-								</p>
-								<div className="max-w-lg mx-auto">
-									<div className="flex flex-wrap -m-2">
-										<div className="w-full md:flex-1 p-2">
-											<input
-												className="px-6 py-3.5 w-full text-base text-black font-[400] bg-white outline-none focus:ring-1 focus:ring-pink placeholder-black rounded-xl"
-												id="headerLightBorderInput4-1"
-												type="text"
-												placeholder="Email address"
-											/>
-										</div>
-										<div className="w-full md:w-auto p-2">
-											<div className="flex flex-wrap justify-center -m-2">
-												<div className="w-full md:w-auto p-2">
-													<a
-														className="block w-full px-8 py-3.5 text-base text-center text-white rounded-xl font-[400] bg-pink hover:bg-fadedPink focus:ring-4 focus:ring-fadedPink"
-														href="#"
-													>
-														Get Started
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
 
 				{/* <!--===== INFORMATION SECTION =====--> */}
 				<ContactBannerTwo
@@ -298,6 +237,7 @@ export async function getStaticProps() {
 										target
 									}
 									backgroundImage {
+										altText
 										sourceUrl
 									}
 								}
@@ -310,6 +250,7 @@ export async function getStaticProps() {
 										target
 									}
 									backgroundImage {
+										altText
 										sourceUrl
 									}
 								}
@@ -340,8 +281,8 @@ export async function getStaticProps() {
 										target
 									}
 									image {
-										sourceUrl
 										altText
+										sourceUrl
 									}
 								}
 							}
@@ -360,6 +301,7 @@ export async function getStaticProps() {
 								title
 								backgroundColor
 								image {
+									altText
 									sourceUrl
 								}
 								buttonLink {
@@ -393,8 +335,8 @@ export async function getStaticProps() {
 									title
 									paragraph
 									image {
-										sourceUrl
 										altText
+										sourceUrl
 									}
 								}
 							}

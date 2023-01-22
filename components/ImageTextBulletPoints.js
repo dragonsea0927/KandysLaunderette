@@ -17,8 +17,8 @@ const ImageTextBulletPoints = (props) => {
 							height={550}
 							objectFit="cover"
 							objectPosition="center"
-							src={`${props?.Image}`}
-							alt={`${props?.title} Image`}
+							src={`${props?.Image?.sourceUrl}`}
+							alt={`${props?.Image?.altText} Image`}
 							className="w-full h-[550px] object-cover object-center"
 						/>
 					</motion.div>

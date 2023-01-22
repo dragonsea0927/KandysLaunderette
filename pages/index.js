@@ -90,7 +90,7 @@ export default function Home({
 				<ImageTextBulletPoints
 					title={homePageContent?.imageTextBulletPoints?.title}
 					buttonLink={homePageContent?.imageTextBulletPoints?.buttonLink}
-					Image={homePageContent?.imageTextBulletPoints?.image?.sourceUrl}
+					Image={homePageContent?.imageTextBulletPoints?.image}
 					bulletPoints={homePageContent?.imageTextBulletPoints?.bulletPoints}
 				/>
 
@@ -212,6 +212,7 @@ export async function getStaticProps() {
 										target
 									}
 									image {
+										altText
 										sourceUrl
 									}
 								}
@@ -233,11 +234,12 @@ export async function getStaticProps() {
 										target
 									}
 									imageTwo {
+										altText
 										sourceUrl
 									}
 									image {
-										sourceUrl
 										altText
+										sourceUrl
 									}
 								}
 							}
@@ -249,6 +251,7 @@ export async function getStaticProps() {
 									target
 								}
 								image {
+									altText
 									sourceUrl
 								}
 								bulletPoints {
@@ -277,8 +280,8 @@ export async function getStaticProps() {
 									title
 									paragraph
 									image {
-										sourceUrl
 										altText
+										sourceUrl
 									}
 								}
 							}
@@ -293,8 +296,8 @@ export async function getStaticProps() {
 										target
 									}
 									image {
-										sourceUrl
 										altText
+										sourceUrl
 									}
 								}
 							}

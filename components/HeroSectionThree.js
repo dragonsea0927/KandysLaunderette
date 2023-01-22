@@ -23,7 +23,7 @@ const HeroSectionThree = (props) => {
 								}}
 							>
 								<div className="relative">
-									<span className="block mb-9 text-medium tracking-widest uppercase text-white font-[600]">
+									<span className="block mb-9 text-base tracking-widest uppercase text-white font-[600]">
 										{props?.subtitle}
 									</span>
 									<h1 className="mb-16 text-white text-5xl md:text-6xl xl:text-[3.5rem] leading-[3.5rem]">

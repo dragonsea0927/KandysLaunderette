@@ -2,15 +2,14 @@
 @import "../fonts";
 @import "../colors";
 
-.titleParagraphGridContent {
+.titleParagraphGridContent,
+.titleParagraphGridContentTwo {
 	padding: 5rem 0;
 	overflow: hidden;
 
 	h2,
-	h5 {
-		font-family: $fontStyle_main;
-	}
-
+	h3,
+	span,
 	p {
 		font-family: $fontStyle_main;
 	}
