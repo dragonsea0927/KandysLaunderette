@@ -1,25 +1,32 @@
 import Link from "next/link";
-import {gql} from "@apollo/client";
-import {client} from "../../lib/apollo";
 import Image from "next/image";
+import {gql} from "@apollo/client";
 import {motion} from "framer-motion";
-import styles from "/styles/Home.module.scss";
+import {client} from "../../lib/apollo";
+import styles from "../../styles/Home.module.scss";
+import {getThemesOptionsContent} from "../../lib/themesOptions";
+
+import {
+	getServiceLinksContent,
+	getLaundryDryCleaningLinksContent,
+} from "../../lib/MenuLinks";
+// import styles from "/styles/Home.module.scss";
 import {fadeInUp, fadeIn, stagger} from "../../animations/animations";
 import BusinessServicesListDB from "/lib/IndividualServicesListDB.json";
 
 // Components
 import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
-import MetaTag from "../components/Meta/MetaTag";
+import MetaTag from "../../components/Meta/MetaTag";
 import ContactBanner from "/components/ContactBanner";
 
-const businessService = ({
+const commercialServices = ({
 	seo,
 	pageTitle,
 	serviceMenuLinks,
 	themesOptionsContent,
 	laundryDryCleaningMenuLinks,
-	businessServicePageContent,
+	commercialServicesPageContent,
 }) => {
 	return (
 		<motion.div
@@ -40,7 +47,7 @@ const businessService = ({
 				}
 			/>
 
-			<main>
+			<main className="">
 				{/* // <========== PAGE TITLE ==========> */}
 				<div className={styles.mainContent}>
 					<div>
@@ -503,11 +510,11 @@ const businessService = ({
 
 				{/* <!--===== CONTACT US BANNER =====--> */}
 				<ContactBanner
-					title={businessServicePageContent?.contactBanner?.title}
-					paragraph={businessServicePageContent?.contactBanner?.paragraph}
-					buttonLink={businessServicePageContent?.contactBanner?.buttonLink}
+					title={commercialServicesPageContent?.contactBanner?.title}
+					paragraph={commercialServicesPageContent?.contactBanner?.paragraph}
+					buttonLink={commercialServicesPageContent?.contactBanner?.buttonLink}
 					backgroundImage={
-						businessServicePageContent?.contactBanner?.image?.sourceUrl
+						commercialServicesPageContent?.contactBanner?.image?.sourceUrl
 					}
 				/>
 			</main>
@@ -523,7 +530,7 @@ const businessService = ({
 };
 
 export async function getStaticProps() {
-	const getBusinessServicePageContent = gql`
+	const getCommercialServicesPageContent = gql`
 		{
 			pageTitle: pages(where: {id: 183, status: PUBLISH}) {
 				edges {
@@ -564,7 +571,7 @@ export async function getStaticProps() {
 								mediaItemUrl
 							}
 						}
-						businessServicePage {
+						commercialServicesPage {
 							heroSection {
 								title
 								subtitle
@@ -592,7 +599,7 @@ export async function getStaticProps() {
 	`;
 
 	const response = await client.query({
-		query: getBusinessServicePageContent,
+		query: getCommercialServicesPageContent,
 	});
 
 	const serviceMenuLinks = await getServiceLinksContent();
@@ -605,12 +612,12 @@ export async function getStaticProps() {
 			laundryDryCleaningMenuLinks,
 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
 			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
-			businessServicePageContent:
-				response?.data?.mainContent?.edges[0]?.node?.businessServicePage,
+			commercialServicesPageContent:
+				response?.data?.mainContent?.edges[0]?.node?.commercialServicesPage,
 			themesOptionsContent,
 		},
 		revalidate: 1,
 	};
 }
 
-export default businessService;
+export default commercialServices;

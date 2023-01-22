@@ -45,14 +45,14 @@ const LaundryDryCleaning = ({
 
 			<main>
 				{/* <!--===== HERO =====--> */}
-				<HeroSectionTwo
+				{/* <HeroSectionTwo
 					title={laundryDryCleaningPageContent?.heroSection?.title}
 					subtitle={laundryDryCleaningPageContent?.heroSection?.subtitle}
 					backgroundImage={
 						laundryDryCleaningPageContent?.heroSection?.backgroundImage
 							?.sourceUrl
 					}
-				/>
+				/> */}
 
 				{/* // <========== OPTIONS ==========> */}
 				<TitleParagraph

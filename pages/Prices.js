@@ -50,6 +50,7 @@ const Prices = ({
 					buttonLink={pricesPageContent?.contactBanner?.buttonLink}
 					backgroundImage={pricesPageContent?.contactBanner?.image?.sourceUrl}
 				/>
+
 				{/* <!--===== OUT STORE LOCATION =====--> */}
 				<StoreLocation
 					title={pricesPageContent?.ourLocation?.title}
