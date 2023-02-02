@@ -5,27 +5,31 @@ import {motion} from "framer-motion";
 import styles from "/styles/Home.module.scss";
 import {getThemesOptionsContent} from "../lib/themesOptions";
 import {
-	getServiceLinksContent,
-	getLaundryDryCleaningLinksContent,
+	getCommercialServicesMenu,
+	getIndividualServicesMenu,
 } from "../lib/MenuLinks";
 import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 
 // Components
 import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
-import OurProcess from "/components/ourProcess";
+import OurProcess from "/components/OurProcess";
 import FooterDark from "/components/FooterDark";
 import MetaTag from "../components/Meta/MetaTag";
+import TwoOptions from "../components/TwoOptions";
 import TextImageTwo from "../components/TextImageTwo";
 import ContactBanner from "../components/ContactBanner";
 import HeroSectionTwo from "../components/HeroSectionTwo";
+import CTAContentImage from "../components/CTAContentImage";
+import TitleParagraphTwo from "../components/TitleParagraphTwo";
+import ImageTextBulletPoints from "../components/ImageTextBulletPoints";
 
 const SuitsOxfordShirts = ({
 	seo,
 	pageTitle,
-	serviceMenuLinks,
+	CommercialServicesMenuLinks,
 	themesOptionsContent,
-	laundryDryCleaningMenuLinks,
+	IndividualServicesMenuLinks,
 	suitsOxfordShirtsPageContent,
 }) => {
 	return (
@@ -41,9 +45,11 @@ const SuitsOxfordShirts = ({
 
 			{/* <!--===== NAVBAR =====--> */}
 			<Navbar
-				serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks}
-				laundryDryCleaningMenuLinks={
-					laundryDryCleaningMenuLinks?.laundryDryCleaningMenuLinks
+				CommercialServicesMenuLinks={
+					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
+				}
+				IndividualServicesMenuLinks={
+					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
 				}
 			/>
 
@@ -57,29 +63,57 @@ const SuitsOxfordShirts = ({
 							?.sourceUrl
 					}
 				/>
-
-				{/* // <========== SUITS & OXFORD DESCRIPTIONS ==========> */}
+				{/* <!--===== TITLE PARAGRAPH =====--> */}
+				<TitleParagraphTwo
+					title={suitsOxfordShirtsPageContent?.titleParagraph?.title}
+					paragraph={suitsOxfordShirtsPageContent?.titleParagraph?.paragraph}
+				/>
+				{/* // <========== WEDDING DRESS PROCESS ==========> */}
 				<TextImageTwo
-					title={suitsOxfordShirtsPageContent?.textImage?.title}
-					paragraph={suitsOxfordShirtsPageContent?.textImage?.paragraph}
-					image={suitsOxfordShirtsPageContent?.textImage?.image?.sourceUrl}
+					title={`Professional Dry Cleaning & Laundry Solutions`}
+					paragraph={`<p>Kandy’s Launderette specialises in commercial launderette services in Swansea, wales. We provide professional laundry services to hotels, serviced apartments, restaurants, medical departments, casinos, cafes, pizzeria, gyms, fitness studios, salons, spas, security and offices.</p>`}
+					image={suitsOxfordShirtsPageContent?.ctaContentImage?.image}
 					// Display Options
-					displayImageLocation={
-						suitsOxfordShirtsPageContent?.textImage?.displayOption
+					displayImageLocation={`Left`}
+				/>
+				{/* <!--===== OUR PROCESS INFORMATION =====--> */}
+				<OurProcess
+					title={suitsOxfordShirtsPageContent?.suitsContent?.title}
+					paragraph={suitsOxfordShirtsPageContent?.suitsContent?.paragraph}
+					gridContent={suitsOxfordShirtsPageContent?.suitsContent?.gridContent}
+					// Display Options
+					backgroundColor={
+						suitsOxfordShirtsPageContent?.suitsContent?.backgroundColor
+					}
+					backgroundLetter={
+						suitsOxfordShirtsPageContent?.suitsContent?.backgroundLetter
 					}
 				/>
-
-				{/* <!--===== WEDDING SUITS =====--> */}
-				<TextImageTwo
-					title={suitsOxfordShirtsPageContent?.textImageTwo?.title}
-					paragraph={suitsOxfordShirtsPageContent?.textImageTwo?.paragraph}
-					image={suitsOxfordShirtsPageContent?.textImageTwo?.image?.sourceUrl}
-					// Display Options
-					displayImageLocation={
-						suitsOxfordShirtsPageContent?.textImageTwo?.displayOption
-					}
+				{/* // <========== OUR OPTIONS ==========> */}
+				<TwoOptions
+					title={suitsOxfordShirtsPageContent?.ourOptions?.title}
+					paragraph={suitsOxfordShirtsPageContent?.ourOptions?.paragraph}
+					content={suitsOxfordShirtsPageContent?.ourOptions?.content}
 				/>
-
+				{/* <!--===== GET DOWN TO BUSINESS CTA =====--> */}
+				<CTAContentImage
+					title={suitsOxfordShirtsPageContent?.ctaContentImage?.title}
+					paragraph={suitsOxfordShirtsPageContent?.ctaContentImage?.paragraph}
+					paragraphOne={
+						suitsOxfordShirtsPageContent?.ctaContentImage?.paragraphOne
+					}
+					paragraphTwo={
+						suitsOxfordShirtsPageContent?.ctaContentImage?.paragraphTwo
+					}
+					subtitleOne={
+						suitsOxfordShirtsPageContent?.ctaContentImage?.subtitleOne
+					}
+					subtitleTwo={
+						suitsOxfordShirtsPageContent?.ctaContentImage?.subtitleTwo
+					}
+					buttonLink={suitsOxfordShirtsPageContent?.ctaContentImage?.buttonLink}
+					Image={suitsOxfordShirtsPageContent?.ctaContentImage?.image}
+				/>
 				{/* <!--===== CONTACT US BANNER =====--> */}
 				<ContactBanner
 					title={suitsOxfordShirtsPageContent?.contactBanner?.title}
@@ -89,67 +123,112 @@ const SuitsOxfordShirts = ({
 						suitsOxfordShirtsPageContent?.contactBanner?.image?.sourceUrl
 					}
 				/>
-
 				{/* <!--===== OUR PROCESS INFORMATION =====--> */}
 				<OurProcess
 					title={suitsOxfordShirtsPageContent?.ourProcess?.title}
 					paragraph={suitsOxfordShirtsPageContent?.ourProcess?.paragraph}
 					gridContent={suitsOxfordShirtsPageContent?.ourProcess?.gridContent}
+					// Display Options
+					backgroundColor={
+						suitsOxfordShirtsPageContent?.ourProcess?.backgroundColor
+					}
+					backgroundLetter={
+						suitsOxfordShirtsPageContent?.ourProcess?.backgroundLetter
+					}
+				/>
+				{/* <!--===== REINVENTING THE FUTURE =====--> */}
+				<ImageTextBulletPoints
+					title={suitsOxfordShirtsPageContent?.imageTextBulletPoints?.title}
+					buttonLink={
+						suitsOxfordShirtsPageContent?.imageTextBulletPoints?.buttonLink
+					}
+					Image={suitsOxfordShirtsPageContent?.imageTextBulletPoints?.image}
+					bulletPoints={
+						suitsOxfordShirtsPageContent?.imageTextBulletPoints?.bulletPoints
+					}
+					// Display Options
+					backgroundColor={
+						suitsOxfordShirtsPageContent?.imageTextBulletPoints?.backgroundColor
+					}
 				/>
 
 				{/* <!--===== ALTERATIONS & REPAIRS =====--> */}
 				<div className={styles.alterationsRepairs}>
-					<div>
-						<div className={styles.content}>
-							<motion.div variants={fadeInUp} className={styles.title}>
-								<h2>Suits Alterations & Repairs</h2>
-								<h5>Perfection has never been so easy</h5>
+					<div className="container mx-auto px-4 py-20">
+						<div className="py-20">
+							<motion.div variants={fadeInUp} className="flex flex-col">
+								<h2 className="text-center text-white font-[600] text-3xl lg:text-5xl py-8 leading-10 w-full">
+									Suits Alterations & Repairs
+								</h2>
+								<h5 className="w-full lg:max-w-[75rem] mx-auto mt-4 text-center text-darkGrey text-medium">
+									Perfection has never been so easy
+								</h5>
 							</motion.div>
 						</div>
 					</div>
-					<div className={styles.backgroundImage}></div>
-					<div>
-						<div className={styles.content}>
-							<div className={styles.gridDisplay}>
-								<div className={styles.alterationsDisplay}>
-									<div className={styles.Image}>
-										<Image
-											src="/img/simona-sergi-pmFgcciSt4s-unsplash.jpg"
-											alt="Product Image"
-											width={600}
-											height={800}
-											objectFit="cover"
-											objectPosition="center"
-										></Image>
-									</div>
-									<motion.div variants={stagger} className={styles.description}>
-										<motion.h2 variants={fadeInUp}>Alterations</motion.h2>
-										<motion.p variants={fadeIn}>
-											We offer suit cleaning & alterations for everyday and
-											special day occasions. We specialize in wedding suits, 2
-											Piece & 3 Piece suits and in 2 Piece Dress & Dinner Suit.
-										</motion.p>
-									</motion.div>
+					<div
+						className="flex items-center w-full h-[40rem] bg-center bg-cover bg-[no-repeat]"
+						style={{
+							backgroundImage: `url("http://kandyslaunderette.local/wp-content/uploads/2023/01/rombo-fcLOmr-gRkY-unsplash.jpg");`,
+						}}
+					></div>
+					<div className="container py-20 px-4 mx-auto">
+						<div className="flex flex-col justify-between items-center gap-14">
+							<div className="flex flex-col-reverse sm:flex-row justify-between items-center gap-14">
+								<div className={styles.Image}>
+									<Image
+										width={`600px`}
+										height={`600px`}
+										objectFit="cover"
+										alt="Product Image"
+										objectPosition="center"
+										src={`http://kandyslaunderette.local/wp-content/uploads/2023/01/juan-jose-porta-YsoCJDGoiG4-unsplash.jpg`}
+										className="w-full h-[600px] rounded-lg transform hover:scale-105 transition ease-in-out duration-1000"
+									></Image>
 								</div>
+								<motion.div variants={stagger} className="p-4">
+									<motion.h3
+										variants={fadeInUp}
+										className="text-center sm:text-left text-white font-[600] text-3xl lg:text-5xl py-8 leading-10 w-full"
+									>
+										Alterations
+									</motion.h3>
+									<motion.p
+										variants={fadeIn}
+										className="w-full lg:max-w-[60rem] mx-auto sm:mx-0 mt-4 p-0 text-darkGrey text-medium"
+									>
+										Perfect fitting of clothes augments their overall appeal.
+										This defines our exclusive clothing alterations and clothes
+										repair services intended to glorify your looks.
+									</motion.p>
+								</motion.div>
 							</div>
-							<div className={styles.repairsDisplay}>
-								<div className={styles.innerContent}>
-									<motion.div variants={stagger} className={styles.description}>
-										<motion.h2 variants={fadeInUp}>Repairs</motion.h2>
-										<motion.p variants={fadeIn}>
-											We also take care of your Groomsmen suits. Either 2 Piece
-											& 3 Piece suits, we specialize in all of them.
-										</motion.p>
-									</motion.div>
-									<div className={styles.Image}>
-										<Image
-											src="/img/sandie-clarke-BrohkstBl_w-unsplash.jpg"
-											alt="Product Image"
-											width={800}
-											height={800}
-											objectFit="contain"
-										></Image>
-									</div>
+							<div className="flex flex-col-reverse sm:flex-row justify-between items-center gap-14">
+								<motion.div variants={stagger} className="p-4">
+									<motion.h3
+										variants={fadeInUp}
+										className="text-center sm:text-left text-white font-[600] text-3xl lg:text-5xl py-8 leading-10 w-full"
+									>
+										Repairs
+									</motion.h3>
+									<motion.p
+										variants={fadeIn}
+										className="w-full lg:max-w-[60rem] mx-auto sm:mx-0 mt-4 p-0 text-darkGrey text-medium"
+									>
+										We also take care of your Groomsmen suits. Either 2 Piece &
+										3 Piece suits, we specialize in all of them.
+									</motion.p>
+								</motion.div>
+								<div className={styles.Image}>
+									<Image
+										width={`600px`}
+										height={`600px`}
+										objectFit="cover"
+										alt="Product Image"
+										objectPosition="center"
+										src={`http://kandyslaunderette.local/wp-content/uploads/2023/01/richie-roberts-7or-8zEkxPM-unsplash.jpg`}
+										className="w-full h-[600px] rounded-lg transform hover:scale-105 transition ease-in-out duration-1000"
+									></Image>
 								</div>
 							</div>
 						</div>
@@ -161,7 +240,9 @@ const SuitsOxfordShirts = ({
 			<Footer
 				email={themesOptionsContent?.themesOptions?.email}
 				phoneNumber={themesOptionsContent?.themesOptions?.phoneNumber}
-				serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks}
+				CommercialServicesMenuLinks={
+					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
+				}
 			/>
 		</motion.div>
 	);
@@ -175,7 +256,7 @@ SuitsOxfordShirts.getLayout = function PageLayout(page) {
 			{page}
 
 			{/* <!--===== FOOTER =====--> */}
-			<FooterDark />
+			{/* <FooterDark /> */}
 		</>
 	);
 };
@@ -230,36 +311,63 @@ export async function getStaticProps() {
 									sourceUrl
 								}
 							}
+							titleParagraph {
+								title
+								paragraph
+							}
+							suitsContent {
+								title
+								paragraph
+								backgroundLetter
+								backgroundColor
+								gridContent {
+									title
+									paragraph
+									image {
+										altText
+										sourceUrl
+									}
+								}
+							}
 							ourOptions {
 								title
 								paragraph
 								content {
-									title
 									titleTwo
-									paragraph
-									paragraphTwo
+									title
 									image {
 										sourceUrl
 									}
 									imageTwo {
 										sourceUrl
 									}
+									buttonLink {
+										url
+										title
+										target
+									}
+									buttonLinkTwo {
+										url
+										title
+										target
+									}
 								}
 							}
-							textImage {
+							ctaContentImage {
 								title
+								subtitleOne
+								subtitleTwo
 								paragraph
-								displayOption
+								paragraphOne
+								paragraphTwo
 								image {
+									altText
 									sourceUrl
 								}
-							}
-							textImageTwo {
-								title
-								paragraph
-								displayOption
-								image {
-									sourceUrl
+								buttonLink {
+									url
+									title
+									target
 								}
 							}
 							contactBanner {
@@ -277,10 +385,33 @@ export async function getStaticProps() {
 							ourProcess {
 								title
 								paragraph
+								backgroundLetter
+								backgroundColor
 								gridContent {
 									title
 									paragraph
 									image {
+										altText
+										sourceUrl
+									}
+								}
+							}
+							imageTextBulletPoints {
+								title
+								backgroundColor
+								image {
+									altText
+									sourceUrl
+								}
+								buttonLink {
+									url
+									title
+									target
+								}
+								bulletPoints {
+									text
+									icon {
+										altText
 										sourceUrl
 									}
 								}
@@ -296,14 +427,14 @@ export async function getStaticProps() {
 		query: getSuitsOxfordShirtsContent,
 	});
 
-	const serviceMenuLinks = await getServiceLinksContent();
+	const CommercialServicesMenuLinks = await getCommercialServicesMenu();
 	const themesOptionsContent = await getThemesOptionsContent();
-	const laundryDryCleaningMenuLinks = await getLaundryDryCleaningLinksContent();
+	const IndividualServicesMenuLinks = await getIndividualServicesMenu();
 
 	return {
 		props: {
-			serviceMenuLinks,
-			laundryDryCleaningMenuLinks,
+			CommercialServicesMenuLinks,
+			IndividualServicesMenuLinks,
 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
 			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
 			suitsOxfordShirtsPageContent:

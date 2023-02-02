@@ -5,8 +5,8 @@ import {motion} from "framer-motion";
 import styles from "/styles/Home.module.scss";
 import {getThemesOptionsContent} from "../lib/themesOptions";
 import {
-	getServiceLinksContent,
-	getLaundryDryCleaningLinksContent,
+	getCommercialServicesMenu,
+	getIndividualServicesMenu,
 } from "../lib/MenuLinks";
 import {fadeInUp, fadeIn, fadeInTwo, stagger} from "../animations/animations";
 
@@ -21,10 +21,10 @@ import ContactBanner from "../components/ContactBanner";
 const aboutUs = ({
 	seo,
 	pageTitle,
-	serviceMenuLinks,
+	CommercialServicesMenuLinks,
 	aboutUsPageContent,
 	themesOptionsContent,
-	laundryDryCleaningMenuLinks,
+	IndividualServicesMenuLinks,
 }) => {
 	return (
 		<motion.div
@@ -39,9 +39,11 @@ const aboutUs = ({
 
 			{/* <!--===== NAVBAR =====--> */}
 			<Navbar
-				serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks}
-				laundryDryCleaningMenuLinks={
-					laundryDryCleaningMenuLinks?.laundryDryCleaningMenuLinks
+				CommercialServicesMenuLinks={
+					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
+				}
+				IndividualServicesMenuLinks={
+					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
 				}
 			/>
 
@@ -65,7 +67,9 @@ const aboutUs = ({
 			<Footer
 				email={themesOptionsContent?.themesOptions?.email}
 				phoneNumber={themesOptionsContent?.themesOptions?.phoneNumber}
-				serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks}
+				CommercialServicesMenuLinks={
+					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
+				}
 			/>
 		</motion.div>
 	);
@@ -151,14 +155,14 @@ export async function getStaticProps() {
 		query: getAboutUsPageContent,
 	});
 
-	const serviceMenuLinks = await getServiceLinksContent();
+	const CommercialServicesMenuLinks = await getCommercialServicesMenu();
 	const themesOptionsContent = await getThemesOptionsContent();
-	const laundryDryCleaningMenuLinks = await getLaundryDryCleaningLinksContent();
+	const IndividualServicesMenuLinks = await getIndividualServicesMenu();
 
 	return {
 		props: {
-			serviceMenuLinks,
-			laundryDryCleaningMenuLinks,
+			CommercialServicesMenuLinks,
+			IndividualServicesMenuLinks,
 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
 			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
 			aboutUsPageContent:

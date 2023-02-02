@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 // Imports
+@import "./fonts";
 @import "./colors";
 
 html,
@@ -39,4 +40,18 @@ a {
 
 * {
 	box-sizing: border-box;
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+input,
+button {
+	font-family: $fontStyle_main;
 }

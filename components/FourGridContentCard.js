@@ -24,7 +24,7 @@ const FourGridContentCard = (props) => {
 
 	return (
 		<div className={styles.fourGridContentCard}>
-			<div className="p-8 lg:p-16 text-center h-full bg-white rounded-3xl hover:ease-in-out hover:duration-[0.5s]">
+			<div className="p-8 lg:p-16 text-center h-full bg-white rounded-3xl transition-all ease-in-out duration-[0.5s]">
 				<Image
 					className="mb-8 mx-auto w-full h-[650px] rounded-lg object-cover object-center"
 					width={650}

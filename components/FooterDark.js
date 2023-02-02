@@ -10,7 +10,7 @@ const FooterDark = (props) => {
 			<footer className={styles.footerDark}>
 				<div className="container mx-auto">
 					<div>
-						<div className="grid  grid-cols-1 ld:grid-cols-3 justify-center items-center gap-6 py-14">
+						<div className="grid grid-cols-1 lg:grid-cols-3 justify-center items-center gap-6 py-14">
 							<div className="flex flex-col px-2">
 								<h2 className="text-center lg:text-left">
 									<strong>Don’t miss our latest updates</strong>
@@ -32,7 +32,7 @@ const FooterDark = (props) => {
 										className="p-2 text-left text-black text-sm w-auto lg:w-[350px] border-solid border-[0.05rem] border-black"
 									/>
 									<button
-										className="border-none py-[0.55rem] px-4 tracking-[0.1rem] uppercase text-white text-sm font-[400] bg-black hover:bg-fadedPink hover:ease-in-out hover:duration-[0.5s]"
+										className="border-none py-[0.60rem] px-4 tracking-[0.1rem] uppercase text-white text-sm font-[400] bg-black hover:bg-fadedPink transition-all ease-in-out duration-[0.5s]"
 										type="submit"
 									>
 										Sign Up
@@ -106,14 +106,14 @@ const FooterDark = (props) => {
 									<a>Laundry Dry Cleaning</a>
 								</Link>
 								{/* Menu Array from Wordpress */}
-								{props?.serviceMenuLinks?.map((keys) => (
+								{props?.CommercialServicesMenuLinks?.map((keys) => (
 									<FooterMenuLinks
 										Key={keys?.id}
 										linkUrl={keys?.node?.uri}
 										linkName={keys?.node?.label}
 									/>
 								))}
-								<Link href="/services" target="blank">
+								<Link href=" /Services" target="blank">
 									<a>More Services</a>
 								</Link>
 							</div>
@@ -127,10 +127,10 @@ const FooterDark = (props) => {
 								<Link href="/HowItWorks" target="blank">
 									<a>How It Works</a>
 								</Link>
-								<Link href="/services" target="blank">
+								<Link href=" /Services" target="blank">
 									<a>Self-Service</a>
 								</Link>
-								<Link href="/prices" target="blank">
+								<Link href="/Prices" target="blank">
 									<a>Prices</a>
 								</Link>
 							</div>
@@ -217,7 +217,7 @@ const FooterDark = (props) => {
 										<span className="text-sm flex flex-row justify-center items-center gap-1">
 											Website by
 											<a target="blank">
-												<span className="text-sm text-fadedPink hover:text-pink hover:ease-in-out hover:duration-[0.5s]">
+												<span className="text-sm text-fadedPink hover:text-pink transition-all ease-in-out duration-[0.5s]">
 													ToddBlue Studio
 												</span>
 											</a>

@@ -9,7 +9,7 @@ const FeaturesBanner = (props) => {
 	return (
 		<section className={styles.featuresBanner}>
 			<div className="container px-0 mx-auto">
-				<div className="flex flex-col px-0 md:px-8">
+				<div className="flex flex-col px-4">
 					<motion.div variants={fadeInUp} className="py-8 px-4">
 						<h2 className="w-full lg:w-[45rem] mx-auto leading-[2.5rem] sm:leading-[3rem] text-black text-center font-[600] text-3xl lg:text-5xl">
 							{props?.title}
@@ -21,7 +21,7 @@ const FeaturesBanner = (props) => {
 							<FeaturesBannerCard
 								Key={keys?.id}
 								title={keys?.title}
-								icon={keys?.icon?.sourceUrl}
+								icon={keys?.icon}
 							/>
 						))}
 					</div>

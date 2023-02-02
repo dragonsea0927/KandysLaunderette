@@ -3,27 +3,9 @@
 @import "../colors";
 
 // <========== OUR PROCESS ==========>
-.ourProcess {
-	h2 {
-		font-family: $fontStyle_main;
-	}
-
-	p {
-		font-family: $fontStyle_main;
-	}
-}
-
 .singleCard {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
-
-	h2 {
-		font-family: $fontStyle_main;
-	}
-
-	p {
-		font-family: $fontStyle_main;
-	}
 }

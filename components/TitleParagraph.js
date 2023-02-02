@@ -1,9 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
-import Image from "next/image";
 import {motion} from "framer-motion";
 import DOMPurify from "isomorphic-dompurify";
-import {fadeInUp, stagger} from "../animations/animations";
+import fadeInUp from "../animations/animations";
 import styles from "../styles/components/TitleParagraph.module.scss";
 
 const TitleParagraph = (props) => {
@@ -13,10 +11,10 @@ const TitleParagraph = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden mt-4 w-full lg:w-[50rem] mx-auto py-8 px-4 text-black text-center text-base";
+				"hidden mt-4 w-full lg:max-w-[75rem] mx-auto py-8 px-4 text-black text-center text-medium";
 		} else {
 			contentStyling =
-				"block mt-4 w-full lg:w-[50rem] mx-auto py-8 px-4 text-black text-center text-base";
+				"block mt-4 w-full lg:max-w-[75rem] mx-auto py-8 px-4 text-black text-center text-medium";
 		}
 		return contentStyling;
 	}

@@ -4,8 +4,9 @@
 
 // <========== NAVIGATION ==========>
 .navbar {
-	h2,
-	a {
-		font-family: $fontStyle_main;
-	}
+	width: 100%;
+	z-index: 999;
+	// position: fixed;
+	height: fit-content;
+	background-color: $baseColor_white;
 }

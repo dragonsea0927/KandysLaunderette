@@ -4,7 +4,6 @@ import Image from "next/image";
 import {motion} from "framer-motion";
 import DOMPurify from "isomorphic-dompurify";
 import {fadeInUp, stagger} from "../animations/animations";
-import styles from "../styles/components/TwoOptions.module.scss";
 
 const TwoOptions = (props) => {
 	/* Check if paragraph content is null
@@ -12,9 +11,11 @@ const TwoOptions = (props) => {
 	function isParagraphContent(isParagraphContent) {
 		let contentStyling;
 		if (isParagraphContent === null) {
-			contentStyling = "hidden mt-4 py-8 px-4 text-black text-center text-base";
+			contentStyling =
+				"hidden w-full lg:max-w-[60rem] mx-auto mt-4 py-8 px-4 text-darkGrey text-medium";
 		} else {
-			contentStyling = "block mt-4 py-8 px-4 text-black text-center text-base";
+			contentStyling =
+				"block w-full lg:max-w-[60rem] mx-auto mt-4 py-8 px-4 text-darkGrey text-medium";
 		}
 		return contentStyling;
 	}
@@ -30,7 +31,7 @@ const TwoOptions = (props) => {
 	function isButtonLink(isButtonLink) {
 		let contentStyling;
 		const tailwindStyling =
-			"w-[fit-content] rounded-[50px] bg-white py-2 px-8 hover:bg-fadedPink hover:text-white hover:ease-in-out hover:duration-[0.5s]";
+			"w-[fit-content] rounded-[50px] bg-white py-2 px-8 hover:bg-fadedPink hover:text-white transition-all ease-in-out duration-[0.5s]";
 		if (isButtonLink === null) {
 			contentStyling = `hidden ${tailwindStyling}`;
 		} else {
@@ -40,92 +41,90 @@ const TwoOptions = (props) => {
 	}
 
 	return (
-		<section className={styles.twoOptions}>
-			<div className="container mx-auto p-0">
-				<motion.div variants={fadeInUp} className="py-28">
-					<h2 className="text-black text-center font-[600] text-3xl lg:text-5xl">
-						{props?.title}
-					</h2>
-					<div
-						className={isParagraphContent(props?.paragraph)}
-						dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
-					/>
-				</motion.div>
-				<div className="flex flex-col justify-between items-center lg:grid lg:grid-cols-2 gap-4">
-					<div>
-						<Link href={`${props?.content?.buttonLink?.url}`}>
-							<a>
-								<Image
-									width={1000}
-									height={1000}
-									objectFit="cover"
-									objectPosition="center"
-									className="w-[1000px] h-[1000px] rounded-lg object-cover object-center"
-									src={props?.content?.image?.sourceUrl}
-									alt={`${props?.content?.title} Image`}
-								/>
-							</a>
-						</Link>
-						<motion.div
-							variants={stagger}
-							className="relative px-4 ml-5 bottom-[140px]"
+		<section className="bg-white container mx-auto p-0">
+			<motion.div variants={fadeInUp} className="px-4 py-28">
+				<h2 className="text-black text-center font-[600] text-3xl lg:text-5xl">
+					{props?.title}
+				</h2>
+				<div
+					className={isParagraphContent(props?.paragraph)}
+					dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
+				/>
+			</motion.div>
+			<div className="flex flex-col justify-between items-center lg:grid lg:grid-cols-2 gap-4 px-4">
+				<div>
+					<Link href={`${props?.content?.buttonLink?.url}`}>
+						<a>
+							<Image
+								width={1000}
+								height={1000}
+								objectFit="cover"
+								objectPosition="center"
+								className="w-[1000px] h-[1000px] rounded-lg object-cover object-center"
+								src={props?.content?.image?.sourceUrl}
+								alt={`${props?.content?.title} Image`}
+							/>
+						</a>
+					</Link>
+					<motion.div
+						variants={stagger}
+						className="relative px-4 ml-5 bottom-[140px]"
+					>
+						<motion.h2
+							variants={fadeInUp}
+							className="text-white text-left text-base py-4"
 						>
-							<motion.h2
-								variants={fadeInUp}
-								className="text-white text-left text-base py-4"
+							{props?.content?.title}
+						</motion.h2>
+						<button className={isButtonLink(props?.content?.buttonLink?.url)}>
+							<Link
+								href={`${props?.content?.buttonLink?.url}`}
+								target={`${props?.content?.buttonLink?.target}`}
 							>
-								{props?.content?.title}
-							</motion.h2>
-							<button className={isButtonLink(props?.content?.buttonLink?.url)}>
-								<Link
-									href={`${props?.content?.buttonLink?.url}`}
-									target={`${props?.content?.buttonLink?.target}`}
-								>
-									<a className="font-[400] text-tiny hover:text-white hover:ease-in-out hover:duration-[0.5s]">
-										{props?.content?.buttonLink?.title}
-									</a>
-								</Link>
-							</button>
-						</motion.div>
-					</div>
-					<div>
-						<Link href={`${props?.content?.buttonLinkTwo?.url}`}>
-							<a>
-								<Image
-									width={1000}
-									height={1000}
-									objectFit="cover"
-									objectPosition="center"
-									className="w-[1000px] h-[1000px] rounded-lg object-cover object-center"
-									src={props?.content?.imageTwo?.sourceUrl}
-									alt={`${props?.content?.titleTwo} Image`}
-								/>
-							</a>
-						</Link>
-						<motion.div
-							variants={stagger}
-							className="relative px-4 ml-5 bottom-[140px]"
+								<a className="font-[400] text-tiny hover:text-white">
+									{props?.content?.buttonLink?.title}
+								</a>
+							</Link>
+						</button>
+					</motion.div>
+				</div>
+				<div>
+					<Link href={`${props?.content?.buttonLinkTwo?.url}`}>
+						<a>
+							<Image
+								width={1000}
+								height={1000}
+								objectFit="cover"
+								objectPosition="center"
+								className="w-[1000px] h-[1000px] rounded-lg object-cover object-center"
+								src={props?.content?.imageTwo?.sourceUrl}
+								alt={`${props?.content?.titleTwo} Image`}
+							/>
+						</a>
+					</Link>
+					<motion.div
+						variants={stagger}
+						className="relative px-4 ml-5 bottom-[140px]"
+					>
+						<motion.h2
+							variants={fadeInUp}
+							className="text-white text-left text-base py-4"
 						>
-							<motion.h2
-								variants={fadeInUp}
-								className="text-white text-left text-base py-4"
+							{props?.content?.titleTwo}
+						</motion.h2>
+						<button
+							className={isButtonLink(props?.content?.buttonLinkTwo?.url)}
+						>
+							<Link
+								href={`${props?.content?.buttonLinkTwo?.url}`}
+								target={`${props?.content?.buttonLinkTwo?.target}`}
 							>
-								{props?.content?.titleTwo}
-							</motion.h2>
-							<button
-								className={isButtonLink(props?.content?.buttonLinkTwo?.url)}
-							>
-								<Link
-									href={`${props?.content?.buttonLinkTwo?.url}`}
-									target={`${props?.content?.buttonLinkTwo?.target}`}
-								>
-									<a className="font-[400] text-tiny hover:text-white hover:ease-in-out hover:duration-[0.5s]">
-										{props?.content?.buttonLinkTwo?.title}
-									</a>
-								</Link>
-							</button>
-						</motion.div>
-					</div>
+								<a className="font-[400] text-tiny hover:text-white">
+									{props?.content?.buttonLinkTwo?.title}
+								</a>
+							</Link>
+						</button>
+					</motion.div>
 				</div>
 			</div>
 		</section>

@@ -3,33 +3,34 @@ import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
 import {getThemesOptionsContent} from "../lib/themesOptions";
 import {
-	getServiceLinksContent,
-	getLaundryDryCleaningLinksContent,
+	getCommercialServicesMenu,
+	getIndividualServicesMenu,
 } from "../lib/MenuLinks";
 import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 
 // Components
 import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
+import OurProcess from "/components/OurProcess";
 import MetaTag from "../components/Meta/MetaTag";
 import StoreLocation from "/components/storeLocation";
 import ContactBanner from "../components/ContactBanner";
+import FeaturesBanner from "../components/FeaturesBanner";
 import TitleGridContent from "/components/TitleGridContent";
-import FourGridContent from "../components/FourGridContent";
-import ContactBannerTwo from "/components/ContactBannerTwo";
 import HeroSectionThree from "../components/HeroSectionThree";
 import FeaturesBannerTwo from "../components/FeaturesBannerTwo";
 import TitleParagraphVideo from "../components/TitleParagraphVideo";
 import ImageTextBulletPoints from "../components/ImageTextBulletPoints";
 import TitleParagraphGridContentTwo from "../components/TitleParagraphGridContentTwo";
+import SignUp from "../components/SignUp";
 
 const HowItWorks = ({
 	seo,
 	pageTitle,
-	serviceMenuLinks,
+	CommercialServicesMenuLinks,
 	howItWorksPageContent,
 	themesOptionsContent,
-	laundryDryCleaningMenuLinks,
+	IndividualServicesMenuLinks,
 }) => {
 	return (
 		<motion.div
@@ -44,9 +45,11 @@ const HowItWorks = ({
 
 			{/* <!--===== NAVBAR =====--> */}
 			<Navbar
-				serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks}
-				laundryDryCleaningMenuLinks={
-					laundryDryCleaningMenuLinks?.laundryDryCleaningMenuLinks
+				CommercialServicesMenuLinks={
+					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
+				}
+				IndividualServicesMenuLinks={
+					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
 				}
 			/>
 
@@ -89,7 +92,12 @@ const HowItWorks = ({
 				/>
 
 				{/* <!--===== FEATURE BANNER =====--> */}
-				<FeaturesBannerTwo />
+				<FeaturesBannerTwo
+					title={howItWorksPageContent?.featuresBannerTwo?.title}
+					gridContent={howItWorksPageContent?.featuresBannerTwo?.content}
+					IconImage={howItWorksPageContent?.featuresBannerTwo?.iconBanner}
+					paragraph={howItWorksPageContent?.featuresBannerTwo?.paragraphBanner}
+				/>
 
 				{/* <!--===== FEATURE BANNER =====--> */}
 				<TitleParagraphGridContentTwo
@@ -122,6 +130,34 @@ const HowItWorks = ({
 					bulletPoints={
 						howItWorksPageContent?.imageTextBulletPoints?.bulletPoints
 					}
+					// Display Options
+					backgroundColor={
+						howItWorksPageContent?.imageTextBulletPoints?.backgroundColor
+					}
+				/>
+				{/* <!--===== SIGN UP =====--> */}
+				<SignUp
+					title={howItWorksPageContent?.signUp?.title}
+					paragraph={howItWorksPageContent?.signUp?.paragraph}
+					buttonLink={howItWorksPageContent?.signUp?.buttonLink}
+					// Display Options
+					backgroundColor={howItWorksPageContent?.signUp?.backgroundColor}
+				/>
+
+				{/* <!--===== FEATURE BANNER =====--> */}
+				<FeaturesBanner
+					title={howItWorksPageContent?.featuresBanner?.title}
+					content={howItWorksPageContent?.featuresBanner?.content}
+				/>
+
+				{/* <!--===== OUR PROCESS INFORMATION =====--> */}
+				<OurProcess
+					title={howItWorksPageContent?.ourProcess?.title}
+					paragraph={howItWorksPageContent?.ourProcess?.paragraph}
+					gridContent={howItWorksPageContent?.ourProcess?.gridContent}
+					// Display Options
+					backgroundColor={howItWorksPageContent?.ourProcess?.backgroundColor}
+					backgroundLetter={howItWorksPageContent?.ourProcess?.backgroundLetter}
 				/>
 
 				{/* <!--===== MAIN SERVICES =====--> */}
@@ -145,21 +181,11 @@ const HowItWorks = ({
 				/>
 
 				{/* <!--===== REINVENTING THE FUTURE =====--> */}
-				<FourGridContent
+				{/* <FourGridContent
 					title={howItWorksPageContent?.fourGridContent?.title}
 					subtitle={howItWorksPageContent?.fourGridContent?.subtitle}
 					gridContent={howItWorksPageContent?.fourGridContent?.gridContent}
-				/>
-
-				{/* <!--===== INFORMATION SECTION =====--> */}
-				<ContactBannerTwo
-					title={howItWorksPageContent?.contactBannerTwo?.title}
-					themesOptions={themesOptionsContent?.themesOptions}
-					buttonLink={howItWorksPageContent?.contactBannerTwo?.buttonLink}
-					backgroundImage={
-						howItWorksPageContent?.contactBannerTwo?.image?.sourceUrl
-					}
-				/>
+				/> */}
 
 				{/* <!--===== OUT STORE LOCATION =====--> */}
 				<StoreLocation
@@ -172,7 +198,9 @@ const HowItWorks = ({
 			<Footer
 				email={themesOptionsContent?.themesOptions?.email}
 				phoneNumber={themesOptionsContent?.themesOptions?.phoneNumber}
-				serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks}
+				CommercialServicesMenuLinks={
+					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
+				}
 			/>
 		</motion.div>
 	);
@@ -266,6 +294,22 @@ export async function getStaticProps() {
 									}
 								}
 							}
+							featuresBannerTwo {
+								title
+								paragraphBanner
+								iconBanner {
+									altText
+									sourceUrl
+								}
+								content {
+									title
+									paragraph
+									icon {
+										altText
+										sourceUrl
+									}
+								}
+							}
 							ourServices {
 								title
 								paragraph
@@ -311,6 +355,41 @@ export async function getStaticProps() {
 								bulletPoints {
 									text
 									icon {
+										altText
+										sourceUrl
+									}
+								}
+							}
+							signUp {
+								title
+								paragraph
+								backgroundColor
+								buttonLink {
+									url
+									title
+									target
+								}
+							}
+							featuresBanner {
+								title
+								content {
+									title
+									icon {
+										altText
+										sourceUrl
+									}
+								}
+							}
+							ourProcess {
+								title
+								paragraph
+								backgroundLetter
+								backgroundColor
+								gridContent {
+									title
+									paragraph
+									image {
+										altText
 										sourceUrl
 									}
 								}
@@ -325,29 +404,6 @@ export async function getStaticProps() {
 									url
 									title
 									target
-								}
-							}
-							fourGridContent {
-								title
-								subtitle
-								gridContent {
-									title
-									paragraph
-									image {
-										altText
-										sourceUrl
-									}
-								}
-							}
-							contactBannerTwo {
-								title
-								buttonLink {
-									url
-									title
-									target
-								}
-								image {
-									sourceUrl
 								}
 							}
 							ourLocation {
@@ -365,14 +421,14 @@ export async function getStaticProps() {
 		query: getHowItWorksPageContent,
 	});
 
-	const serviceMenuLinks = await getServiceLinksContent();
+	const CommercialServicesMenuLinks = await getCommercialServicesMenu();
 	const themesOptionsContent = await getThemesOptionsContent();
-	const laundryDryCleaningMenuLinks = await getLaundryDryCleaningLinksContent();
+	const IndividualServicesMenuLinks = await getIndividualServicesMenu();
 
 	return {
 		props: {
-			serviceMenuLinks,
-			laundryDryCleaningMenuLinks,
+			CommercialServicesMenuLinks,
+			IndividualServicesMenuLinks,
 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
 			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
 			howItWorksPageContent:

@@ -15,10 +15,10 @@ const HeroSection = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden mt-4 text-white text-center sm:text-left text-tiny sm:text-base w-full lg:w-[50rem] font-[300]";
+				"hidden mt-4 max-w-[40rem] text-white text-center sm:text-left text-base  w-full lg:max-w-[75rem] font-[300]";
 		} else {
 			contentStyling =
-				"block mt-4 text-white text-center sm:text-left text-tiny sm:text-base w-full lg:w-[50rem] font-[300]";
+				"block mt-4 max-w-[40rem] text-white text-center sm:text-left text-base  w-full lg:max-w-[75rem] font-[300]";
 		}
 		return contentStyling;
 	}
@@ -31,15 +31,23 @@ const HeroSection = (props) => {
 
 	// Display Services sublinks
 	const [servicesMenusOpen, setServicesMenuOpen] = useState(false);
-	const [laundryDryCleaningMenuOpen, setLaundryDryCleaningMenuOpen] =
+	const [IndividualServicesMenuOpen, setIndividualServicesMenuOpen] =
+		useState(false);
+	const [CommercialServicesMenuOpen, setCommercialServicesMenuOpen] =
 		useState(false);
 
+	// Hides or Display Services sublinks
 	function displayServicesMenu() {
 		setServicesMenuOpen(!servicesMenusOpen);
 	}
 
-	function displayLaundryDryCleaningMenu() {
-		setLaundryDryCleaningMenuOpen(!laundryDryCleaningMenuOpen);
+	// Hides or Display Commercial Services sublinks
+	function displayCommercialServicesMenu() {
+		setCommercialServicesMenuOpen(!CommercialServicesMenuOpen);
+	}
+	// Hides or Display Individual Services sublinks
+	function displayIndividualServicesMenu() {
+		setIndividualServicesMenuOpen(!IndividualServicesMenuOpen);
 	}
 
 	return (
@@ -71,14 +79,14 @@ const HeroSection = (props) => {
 								</Link>
 								<ul className="hidden lg:flex flex-row justify-start items-start gap-6 py-8">
 									<Link href="/HowItWorks">
-										<a className="my-auto px-2 text-base tracking-[0.05rem] text-white hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
+										<a className="my-auto px-2 text-base tracking-[0.05rem] text-white hover:text-fadedPink transition-all ease-in-out duration-[0.5s]">
 											How it works
 										</a>
 									</Link>
 									<div className="menuLink relative">
 										<span className="flex flex-row justify-center items-center">
-											<Link href="/services">
-												<a className="my-auto px-2 text-base tracking-[0.05rem] text-white hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
+											<Link href=" /Services">
+												<a className="my-auto px-2 text-base tracking-[0.05rem] text-white hover:text-fadedPink transition-all ease-in-out duration-[0.5s]">
 													Services
 												</a>
 											</Link>
@@ -92,30 +100,30 @@ const HeroSection = (props) => {
 											/>
 										</span>
 										{servicesMenusOpen ? (
-											<div className="flex flex-col justify-center absolute w-[max-content] bg-pink rounded-lg mt-4">
-												{/* Laundry Dry Cleaning Menu Links*/}
+											<div className="flex flex-col justify-center absolute z-[999] w-[max-content] bg-pink rounded-lg mt-5">
+												{/* Individual Services Menu Links*/}
 												<div>
-													<div className="hover:rounded-t-lg hover:bg-fadedPink hover:ease-in-out hover:duration-[0.5s]">
+													<div className="hover:rounded-t-lg hover:bg-fadedPink transition-all ease-in-out duration-[0.5s]">
 														<span className="flex flex-row py-3 px-6 justify-center items-center">
-															<Link href="/LaundryDryCleaning">
-																<a className="w-full text-white text-tiny text-left font-[400] tracking-[0.05rem] ">
-																	Laundry Dry Cleaning
+															<Link href="/LaundryAndDryCleaning/IndividualService">
+																<a className="w-full text-white text-base text-left font-[400] tracking-[0.05rem] ">
+																	Individual Services
 																</a>
 															</Link>
 															<img
 																width="25px"
 																height="25px"
-																alt="White Arrow Icon"
+																alt="white Arrow Icon"
 																className="cursor-pointer"
 																src="/svg/Navigation Menu Dropdown Arrow.png"
-																onClick={displayLaundryDryCleaningMenu}
+																onClick={displayIndividualServicesMenu}
 															/>
 														</span>
 													</div>
-													{laundryDryCleaningMenuOpen ? (
-														<div className="flex flex-col justify-center bg-darkPink">
+													{IndividualServicesMenuOpen ? (
+														<ul className="flex flex-col justify-center bg-darkPink">
 															{/* Menu Array from Wordpress */}
-															{props?.laundryDryCleaningMenuLinks?.map(
+															{props?.IndividualServicesMenuLinks?.map(
 																(keys) => (
 																	<NavbarMenuSublinks
 																		Key={keys?.id}
@@ -124,27 +132,53 @@ const HeroSection = (props) => {
 																	/>
 																)
 															)}
-														</div>
+														</ul>
 													) : null}
 												</div>
-												{/* Menu Array from Wordpress */}
-												{props?.serviceMenuLinks?.map((keys) => (
-													<NavbarMenuSublinks
-														Key={keys?.id}
-														linkUrl={keys?.node?.uri}
-														linkName={keys?.node?.label}
-													/>
-												))}
+												{/* Commercial Services Menu Links*/}
+												<div>
+													<div className="hover:rounded-b-lg hover:bg-fadedPink transition-all ease-in-out duration-[0.5s]">
+														<span className="flex flex-row py-3 px-6 justify-center items-center">
+															<Link href="/LaundryAndDryCleaning/CommercialServices">
+																<a className="w-full text-white text-base text-left font-[400] tracking-[0.05rem] ">
+																	Commercial Services
+																</a>
+															</Link>
+															<img
+																width="25px"
+																height="25px"
+																alt="white Arrow Icon"
+																className="cursor-pointer"
+																src="/svg/Navigation Menu Dropdown Arrow.png"
+																onClick={displayCommercialServicesMenu}
+															/>
+														</span>
+													</div>
+													{CommercialServicesMenuOpen ? (
+														<ul className="flex flex-col justify-center bg-darkPink rounded-b-lg">
+															{/* Menu Array from Wordpress */}
+															{props?.CommercialServicesMenuLinks?.map(
+																(keys) => (
+																	<NavbarMenuSublinks
+																		Key={keys?.id}
+																		linkUrl={keys?.node?.uri}
+																		linkName={keys?.node?.label}
+																	/>
+																)
+															)}
+														</ul>
+													) : null}
+												</div>
 											</div>
 										) : null}
 									</div>
-									<Link href="/prices">
-										<a className="my-auto px-2 text-base tracking-[0.05rem] text-white hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
+									<Link href="/Prices">
+										<a className="my-auto px-2 text-base tracking-[0.05rem] text-white hover:text-fadedPink transition-all ease-in-out duration-[0.5s]">
 											Prices
 										</a>
 									</Link>
-									<Link href="/aboutUs">
-										<a className="my-auto px-2 text-base tracking-[0.05rem] text-white hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
+									<Link href="/AboutUs">
+										<a className="my-auto px-2 text-base tracking-[0.05rem] text-white hover:text-fadedPink transition-all ease-in-out duration-[0.5s]">
 											About us
 										</a>
 									</Link>
@@ -152,17 +186,17 @@ const HeroSection = (props) => {
 							</div>
 							<div className="hidden md:flex justify-center items-center gap-4 p-4">
 								<Link href="/HowItWorks">
-									<a className="my-auto px-2 text-base tracking-[0.05rem] text-white hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]">
+									<a className="my-auto px-2 text-base tracking-[0.05rem] text-white hover:text-fadedPink transition-all ease-in-out duration-[0.5s]">
 										Log in
 									</a>
 								</Link>
 								<motion.button
 									variants={fadeIn}
-									className="rounded-lg py-3 px-8 text-white bg-pink hover:text-blue hover:bg-yellow hover:ease-in-out hover:duration-[0.5s]"
+									className="rounded-lg py-3 px-8 text-white bg-pink hover:text-white hover:bg-yellow transition-all ease-in-out duration-[0.5s]"
 								>
 									<Link href="/">
-										<a className="text-right text-base font-[600] hover:text-blue hover:ease-in-out hover:duration-[0.5s]">
-											Book Now
+										<a className="text-right text-base font-[600] hover:text-white">
+											Create an account
 										</a>
 									</Link>
 								</motion.button>
@@ -183,7 +217,7 @@ const HeroSection = (props) => {
 						<div className="container mx-auto">
 							<div className="flex flex-col lg:flex-row justify-between items-center">
 								<div className="flex flex-col justify-center">
-									<h2 className="text-white text-center lg:text-left text-lg sm:text-3xl font-[500]">
+									<h2 className="text-white text-center lg:text-left text-lg sm:text-medium lg:text-lg xl:text-3xl font-[500]">
 										{props?.subtitle}
 									</h2>
 									<div
@@ -201,15 +235,15 @@ const HeroSection = (props) => {
 										src="/svg/Rating Stars.svg"
 										className="w-full h-[200px] object-contain"
 										alt="Icon"
-										width={200}
-										height="50"
+										width={125}
+										height="25"
 									/>
 									<motion.button variants={fadeIn}>
 										<Link
 											href={`${props?.buttonLink?.url}`}
 											target={`${props?.buttonLink?.target}`}
 										>
-											<a className="text-white text-center lg:text-right text-base font-[500] hover:text-fadedYellow hover:ease-in-out hover:duration-[0.5s]">
+											<a className="text-white text-center lg:text-right text-tiny font-[500] hover:text-fadedYellow transition-all ease-in-out duration-[0.5s]">
 												{props?.buttonLink?.title}
 											</a>
 										</Link>

@@ -10,10 +10,10 @@ const HeroSectionTwo = (props) => {
 		let contentStyling;
 		if (isSubtitleContent === null) {
 			contentStyling =
-				"hidden mt-4 text-white text-center text-base font-[400] tracking-[0.15rem]";
+				"hidden w-full lg:max-w-[65rem] mx-auto mt-4 text-white text-center text-medium tracking-[0.15rem]";
 		} else {
 			contentStyling =
-				"block mt-4 text-white text-center text-base font-[400] tracking-[0.15rem]";
+				"block w-full lg:max-w-[65rem] mx-auto mt-4 text-white text-center text-medium tracking-[0.15rem]";
 		}
 		return contentStyling;
 	}
@@ -37,7 +37,7 @@ const HeroSectionTwo = (props) => {
 			<div className="container mx-auto p-0">
 				<div className="flex flex-col justify-center items-center">
 					<motion.div variants={fadeInUp} className="py-5 px-8">
-						<h1 className="text-white text-center text-4xl font-[500] sm:text-6xl">
+						<h1 className="text-white text-center text-4xl font-[600] sm:text-6xl">
 							{props?.title}
 						</h1>
 						<div

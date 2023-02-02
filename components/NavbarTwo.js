@@ -28,7 +28,7 @@ const NavbarTwo = () => {
 								</Link>
 							</div>
 							<ul>
-								<Link href="/services" target="blank">
+								<Link href=" /Services" target="blank">
 									<a>All Services</a>
 								</Link>
 							</ul>

@@ -10,8 +10,8 @@ const HeroSectionThree = (props) => {
 		<section className={styles.heroSectionThree}>
 			<div className="container mx-auto relative">
 				<div className="pb-10 xl:pb-20">
-					<div className="flex flex-wrap items-stretch -mx-1">
-						<div className="w-full lg:w-3/5 px-1 mb-2 lg:mb-0">
+					<div className="flex flex-wrap items-stretch px-2 sm:px-4">
+						<div className="w-full lg:w-3/5 px-0 sm:px-1 mb-2 lg:mb-0">
 							<div
 								className="flex items-end relative h-full px-8 md:px-16 py-16 xl:pb-36 xl:pt-80 rounded-5xl overflow-hidden rounded-lg bg-center bg-cover bg-[no-repeat]"
 								style={{

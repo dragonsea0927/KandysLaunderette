@@ -9,9 +9,9 @@ const SingleCardTwo = (props) => {
 	function isParagraphContent(isParagraphContent) {
 		let contentStyling;
 		if (isParagraphContent === null) {
-			contentStyling = "hidden mt-8 text-left text-black text-base";
+			contentStyling = `"hidden mt-8 text-left text-${props?.paragraphColor} text-medium"`;
 		} else {
-			contentStyling = "block mt-8 text-left text-black text-base";
+			contentStyling = `block mt-8 text-left text-${props?.paragraphColor} text-medium`;
 		}
 		return contentStyling;
 	}
@@ -24,7 +24,10 @@ const SingleCardTwo = (props) => {
 
 	return (
 		<div className={styles.singleCardTwo}>
-			<motion.div variants={fadeIn}>
+			<motion.div
+				variants={fadeIn}
+				className="w-full flex justify-center items-center"
+			>
 				<Image
 					width={500}
 					height={500}
@@ -38,7 +41,7 @@ const SingleCardTwo = (props) => {
 			<motion.div variants={stagger} className="py-8 px-4">
 				<motion.h2
 					variants={fadeInUp}
-					className="text-black text-center font-[500] text-xl py-8"
+					className={`text-center text-${props?.textColor} font-[600] text-2xl py-8 leading-10 w-full`}
 				>
 					{props?.title}
 				</motion.h2>

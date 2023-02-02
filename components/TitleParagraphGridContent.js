@@ -12,10 +12,10 @@ const TitleParagraphGridContent = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full lg:w-[45rem] my-12 py-8 mx-auto text-black text-center font-[400] text-base";
+				"hidden w-full lg:w-[45rem] my-12 py-8 mx-auto text-black text-center font-[400] text-medium";
 		} else {
 			contentStyling =
-				"block w-full lg:w-[45rem] my-12 py-8 mx-auto text-black text-center font-[400] text-base";
+				"block w-full lg:w-[45rem] my-12 py-8 mx-auto text-black text-center font-[400] text-medium";
 		}
 		return contentStyling;
 	}
@@ -27,38 +27,32 @@ const TitleParagraphGridContent = (props) => {
 	}
 
 	return (
-		<section>
-			<div className={styles.titleParagraphGridContent}>
-				<div>
-					<div className="px-4 sm:px-8 flex flex-col">
-						<motion.div variants={fadeInUp}>
-							<h2 className="text-black text-center font-[600] text-3xl lg:text-5xl">
-								{props?.title}
-							</h2>
-							<div
-								className={isParagraphContent(props?.paragraph)}
-								dangerouslySetInnerHTML={createParagraphMarkup(
-									props?.paragraph
-								)}
-							/>
-						</motion.div>
-						<motion.div
-							variants={stagger}
-							className="py-22 mx-auto mb-8 grid grid-cols-1 lg:grid-cols-2 gap-4 justify-center items-start"
-						>
-							{/* Array Loop */}
-							{props.gridContent.map((keys) => (
-								<TitleParagraphGridCard
-									Key={keys?.id}
-									link={keys?.link}
-									image={keys?.image}
-									title={keys?.title}
-									paragraph={keys?.paragraph}
-								/>
-							))}
-						</motion.div>
-					</div>
-				</div>
+		<section className={styles.titleParagraphGridContent}>
+			<div className="container mx-auto px-4 flex flex-col">
+				<motion.div variants={fadeInUp}>
+					<h2 className="text-black text-center font-[600] text-3xl lg:text-5xl">
+						{props?.title}
+					</h2>
+					<div
+						className={isParagraphContent(props?.paragraph)}
+						dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
+					/>
+				</motion.div>
+				<motion.div
+					variants={stagger}
+					className="py-22 mx-auto mb-8 grid grid-cols-1 lg:grid-cols-2 gap-4 justify-center items-start"
+				>
+					{/* Array Loop */}
+					{props.gridContent.map((keys) => (
+						<TitleParagraphGridCard
+							Key={keys?.id}
+							link={keys?.link}
+							image={keys?.image}
+							title={keys?.title}
+							paragraph={keys?.paragraph}
+						/>
+					))}
+				</motion.div>
 			</div>
 		</section>
 	);

@@ -12,10 +12,10 @@ const TitleGridContent = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full lg:w-[50rem] mx-auto mt-4 py-8 px-4  text-white text-center text-base font-[400]";
+				"hidden  w-full lg:max-w-[75rem] mx-auto mt-4 py-8 px-4 text-white text-center text-medium font-[400]";
 		} else {
 			contentStyling =
-				"block w-full lg:w-[50rem] mx-auto mt-4 py-8 px-4 text-white text-center text-base font-[400]";
+				"block  w-full lg:max-w-[75rem] mx-auto mt-4 py-8 px-4 text-white text-center text-medium font-[400]";
 		}
 		return contentStyling;
 	}
@@ -37,42 +37,40 @@ const TitleGridContent = (props) => {
 						),url(${props.backgroundImage})`,
 			}}
 		>
-			<div className="container mx-auto p-0">
-				<div className="flex flex-col px-0 md:px-8">
-					<motion.div variants={fadeInUp} className="py-28">
-						<h2 className="text-white text-center font-[600] text-3xl lg:text-5xl">
-							{props?.title}
-						</h2>
-						<div
-							className={isParagraphContent(props?.paragraph)}
-							dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
-						/>
-					</motion.div>
-					<div className="flex justify-end items-center p-4">
-						<Link
-							href="/services"
-							target=""
-							className="border-none no-underline bg-transparent text-white text-2xl hover:text-yellow hover:ease-in-out hover:duration-[0.5s]"
-						>
-							View All Services
-						</Link>
-					</div>
-					<motion.div
-						variants={stagger}
-						className="mx-auto mb-8 grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4 px-2 lg:px-0 justify-center items-start"
+			<div className="container mx-auto flex flex-col px-4">
+				<motion.div variants={fadeInUp} className="py-28">
+					<h2 className="text-white text-center font-[600] text-3xl lg:text-5xl">
+						{props?.title}
+					</h2>
+					<div
+						className={isParagraphContent(props?.paragraph)}
+						dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
+					/>
+				</motion.div>
+				<div className="flex justify-end items-center p-4">
+					<Link
+						href=" /Services"
+						target=""
+						className="border-none no-underline bg-transparent text-white text-2xl hover:text-yellow transition-all ease-in-out duration-[0.5s]"
 					>
-						{/* Array Loop */}
-						{props?.gridContent.map((keys) => (
-							<SingleCard
-								Key={keys?.id}
-								link={keys?.link}
-								image={keys?.image}
-								title={keys?.title}
-								buttonLink={keys?.link}
-							/>
-						))}
-					</motion.div>
+						View All Services
+					</Link>
 				</div>
+				<motion.div
+					variants={stagger}
+					className="mx-auto mb-8 px-0 grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4 justify-center items-start"
+				>
+					{/* Array Loop */}
+					{props?.gridContent.map((keys) => (
+						<SingleCard
+							Key={keys?.id}
+							link={keys?.link}
+							image={keys?.image}
+							title={keys?.title}
+							buttonLink={keys?.link}
+						/>
+					))}
+				</motion.div>
 			</div>
 		</section>
 	);

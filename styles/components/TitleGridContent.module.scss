@@ -6,20 +6,9 @@
 .titleGridContentTwo {
 	padding: 1rem 0;
 
-	h2 {
-		font-family: $fontStyle_main;
-	}
-
-	h5 {
-		font-family: $fontStyle_main;
-	}
-
-	a,
-	p {
-		font-family: $fontStyle_main;
-	}
-
 	a {
+		color: $baseColor_white;
+
 		&:hover {
 			transition: all 0.5s ease-in-out;
 			color: $yellow;
@@ -31,10 +20,6 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-
-	a {
-		color: $baseColor_white;
-	}
 }
 
 .titleGridContentTwo {
@@ -48,12 +33,4 @@
 			rgba(221, 69, 119, 0.5)
 		),
 		url("/svg/w.svg");
-
-	a {
-		color: $baseColor_white;
-	}
-
-	p {
-		font-family: $fontStyle_main;
-	}
 }

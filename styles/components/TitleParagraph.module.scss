@@ -2,11 +2,22 @@
 @import "../fonts";
 @import "../colors";
 
-.titleParagraph {
+.titleParagraph,
+.titleParagraphTwo,
+.titleParagraphThree {
 	padding: 5rem 0;
+	overflow: hidden;
+}
 
-	h2,
-	p {
-		font-family: $fontStyle_main;
-	}
+.titleParagraphThree {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: $darkPink;
+	background-image: linear-gradient(
+			0deg,
+			rgba(149, 14, 59, 0.85),
+			rgba(221, 69, 119, 0.5)
+		),
+		url("/svg/w.svg");
 }

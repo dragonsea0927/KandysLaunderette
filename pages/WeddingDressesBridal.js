@@ -1,14 +1,11 @@
 import {gql} from "@apollo/client";
 import {client} from "../lib/apollo";
-import Image from "next/image";
 import {motion} from "framer-motion";
-import styles from "/styles/Home.module.scss";
 import {getThemesOptionsContent} from "../lib/themesOptions";
 import {
-	getServiceLinksContent,
-	getLaundryDryCleaningLinksContent,
+	getCommercialServicesMenu,
+	getIndividualServicesMenu,
 } from "../lib/MenuLinks";
-import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 
 // Components
 import Navbar from "/components/Navbar";
@@ -18,17 +15,17 @@ import MetaTag from "../components/Meta/MetaTag";
 import TextImageTwo from "../components/TextImageTwo";
 import HeroSectionTwo from "../components/HeroSectionTwo";
 import ContactBannerThree from "/components/ContactBannerThree";
+import ImageTextBulletPoints from "../components/ImageTextBulletPoints";
+import TitleParagraphThree from "../components/TitleParagraphThree";
 
 const WeddingDressesAndBridal = ({
 	seo,
 	pageTitle,
-	serviceMenuLinks,
-	laundryDryCleaningMenuLinks,
+	CommercialServicesMenuLinks,
+	IndividualServicesMenuLinks,
 	weddingDressesAndBridalPageContent,
 	themesOptionsContent,
 }) => {
-	console.log(serviceMenuLinks?.serviceMenuLinks);
-
 	return (
 		<motion.div
 			exit={{
@@ -42,9 +39,11 @@ const WeddingDressesAndBridal = ({
 
 			{/* <!--===== NAVBAR =====--> */}
 			<Navbar
-				serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks}
-				laundryDryCleaningMenuLinks={
-					laundryDryCleaningMenuLinks?.laundryDryCleaningMenuLinks
+				CommercialServicesMenuLinks={
+					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
+				}
+				IndividualServicesMenuLinks={
+					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
 				}
 			/>
 
@@ -59,16 +58,36 @@ const WeddingDressesAndBridal = ({
 					}
 				/>
 
+				{/* <!--===== TITLE PARAGRAPH =====--> */}
+
+				<TitleParagraphThree
+					title={weddingDressesAndBridalPageContent?.titleParagraph?.title}
+					paragraph={
+						weddingDressesAndBridalPageContent?.titleParagraph?.paragraph
+					}
+				/>
+
 				{/* // <========== WEDDING DRESS PROCESS ==========> */}
 				<TextImageTwo
 					title={weddingDressesAndBridalPageContent?.textImage?.title}
 					paragraph={weddingDressesAndBridalPageContent?.textImage?.paragraph}
-					image={
-						weddingDressesAndBridalPageContent?.textImage?.image?.sourceUrl
-					}
+					image={weddingDressesAndBridalPageContent?.textImage?.image}
 					// Display Options
 					displayImageLocation={
 						weddingDressesAndBridalPageContent?.textImage?.displayOption
+					}
+				/>
+
+				{/* // <========== WEDDING DRESS PROCESS ==========> */}
+				<TextImageTwo
+					title={weddingDressesAndBridalPageContent?.textImageTwo?.title}
+					paragraph={
+						weddingDressesAndBridalPageContent?.textImageTwo?.paragraph
+					}
+					image={weddingDressesAndBridalPageContent?.textImageTwo?.image}
+					// Display Options
+					displayImageLocation={
+						weddingDressesAndBridalPageContent?.textImageTwo?.displayOption
 					}
 				/>
 
@@ -79,20 +98,35 @@ const WeddingDressesAndBridal = ({
 					gridContent={
 						weddingDressesAndBridalPageContent?.ourProcess?.gridContent
 					}
+					// Display Options
+					backgroundColor={
+						weddingDressesAndBridalPageContent?.ourProcess?.backgroundColor
+					}
+					backgroundLetter={
+						weddingDressesAndBridalPageContent?.ourProcess?.backgroundLetter
+					}
 				/>
 
-				{/* // <========== WEDDING DRESS PROCESS ==========> */}
-				<TextImageTwo
-					title={weddingDressesAndBridalPageContent?.textImageTwo?.title}
-					paragraph={
-						weddingDressesAndBridalPageContent?.textImageTwo?.paragraph
+				{/* <!--===== REINVENTING THE FUTURE =====--> */}
+				<ImageTextBulletPoints
+					title={
+						weddingDressesAndBridalPageContent?.imageTextBulletPoints?.title
 					}
-					image={
-						weddingDressesAndBridalPageContent?.textImageTwo?.image?.sourceUrl
+					buttonLink={
+						weddingDressesAndBridalPageContent?.imageTextBulletPoints
+							?.buttonLink
+					}
+					Image={
+						weddingDressesAndBridalPageContent?.imageTextBulletPoints?.image
+					}
+					bulletPoints={
+						weddingDressesAndBridalPageContent?.imageTextBulletPoints
+							?.bulletPoints
 					}
 					// Display Options
-					displayImageLocation={
-						weddingDressesAndBridalPageContent?.textImageTwo?.displayOption
+					backgroundColor={
+						weddingDressesAndBridalPageContent?.imageTextBulletPoints
+							?.backgroundColor
 					}
 				/>
 
@@ -113,7 +147,9 @@ const WeddingDressesAndBridal = ({
 			<Footer
 				email={themesOptionsContent?.themesOptions?.email}
 				phoneNumber={themesOptionsContent?.themesOptions?.phoneNumber}
-				serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks}
+				CommercialServicesMenuLinks={
+					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
+				}
 			/>
 		</motion.div>
 	);
@@ -169,21 +205,49 @@ export async function getStaticProps() {
 									sourceUrl
 								}
 							}
+							titleParagraph {
+								title
+								paragraph
+							}
 							textImage {
 								title
 								paragraph
 								displayOption
 								image {
+									altText
 									sourceUrl
 								}
 							}
 							ourProcess {
 								title
 								paragraph
+								backgroundLetter
+								backgroundColor
 								gridContent {
 									title
 									paragraph
 									image {
+										altText
+										sourceUrl
+									}
+								}
+							}
+							imageTextBulletPoints {
+								title
+								backgroundColor
+								image {
+									altText
+									sourceUrl
+								}
+								buttonLink {
+									url
+									title
+									target
+								}
+								bulletPoints {
+									text
+									icon {
+										altText
 										sourceUrl
 									}
 								}
@@ -193,6 +257,7 @@ export async function getStaticProps() {
 								paragraph
 								displayOption
 								image {
+									altText
 									sourceUrl
 								}
 							}
@@ -218,14 +283,14 @@ export async function getStaticProps() {
 		query: getWeddingDressesBridalContent,
 	});
 
-	const serviceMenuLinks = await getServiceLinksContent();
+	const CommercialServicesMenuLinks = await getCommercialServicesMenu();
 	const themesOptionsContent = await getThemesOptionsContent();
-	const laundryDryCleaningMenuLinks = await getLaundryDryCleaningLinksContent();
+	const IndividualServicesMenuLinks = await getIndividualServicesMenu();
 
 	return {
 		props: {
-			serviceMenuLinks,
-			laundryDryCleaningMenuLinks,
+			CommercialServicesMenuLinks,
+			IndividualServicesMenuLinks,
 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
 			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
 			weddingDressesAndBridalPageContent:

@@ -11,10 +11,10 @@ const ContactBanner = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full xl:w-[45rem] mt-4 text-center lg:text-left text-white font-[400] text-base";
+				"hidden w-full lg:max-w-[40rem] mt-4 text-center lg:text-left text-white font-[400] text-medium";
 		} else {
 			contentStyling =
-				"block w-full xl:w-[45rem] mt-4 text-center lg:text-left text-white font-[400] text-base";
+				"block w-full lg:max-w-[40rem] mt-4 text-center lg:text-left text-white font-[400] text-medium";
 		}
 		return contentStyling;
 	}
@@ -33,12 +33,12 @@ const ContactBanner = (props) => {
 							0deg,
 							rgba(221, 69, 119, 0.65),
 							rgba(221, 69, 119, 0.15)
-						),url(${props.backgroundImage}`,
+						),url(${props.backgroundImage})`,
 			}}
 		>
 			<div className="container mx-auto p-0">
 				<div className="flex flex-col lg:flex-row py-8 gap-10 px-8 justify-between items-center">
-					<div className="flex flex-col gap-4 justify-between items-center">
+					<div className="flex flex-col gap-4 justify-between items-start">
 						<h2 className="text-center lg:text-left text-white text-4xl font-[600]">
 							{props?.title}
 						</h2>
@@ -47,15 +47,12 @@ const ContactBanner = (props) => {
 							dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 						/>
 					</div>
-					<motion.button
-						variants={fadeIn}
-						className="font-[700] uppercase text-white text-tiny"
-					>
+					<motion.button variants={fadeIn}>
 						<Link
 							href={`${props?.buttonLink?.url}`}
 							target={`${props?.buttonLink?.target}`}
 						>
-							<a className="py-4 px-6 lg:py-6 lg:px-20 bg-pink rounded-lg bg-pink hover:bg-yellow hover:ease-in-out hover:duration-[0.5s]">
+							<a className="py-4 px-6 lg:py-6 lg:px-20 font-[700] text-white text-base leading-4 bg-pink rounded-lg hover:bg-yellow transition-all ease-in-out duration-[0.5s]">
 								{props?.buttonLink?.title}
 							</a>
 						</Link>

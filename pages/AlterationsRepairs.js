@@ -3,21 +3,26 @@ import {gql} from "@apollo/client";
 import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
 import styles from "/styles/Home.module.scss";
+import {getThemesOptionsContent} from "../lib/themesOptions";
+import {
+	getCommercialServicesMenu,
+	getIndividualServicesMenu,
+} from "../lib/MenuLinks";
 import {fadeInUp, fadeIn, fadeInTwo, stagger} from "../animations/animations";
 
 // Components
 import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
-import OurProcess from "/components/ourProcess";
-import StoreLocation from "/components/storeLocation";
+import OurProcess from "/components/OurProcess";
+import MetaTag from "../components/Meta/MetaTag";
 import ContactBanner from "../components/ContactBanner";
 
 const AlterationsRepairs = ({
 	seo,
 	pageTitle,
-	serviceMenuLinks,
+	CommercialServicesMenuLinks,
 	themesOptionsContent,
-	laundryDryCleaningMenuLinks,
+	IndividualServicesMenuLinks,
 	alterationsRepairsPageContent,
 }) => {
 	return (
@@ -33,9 +38,11 @@ const AlterationsRepairs = ({
 
 			{/* <!--===== NAVBAR =====--> */}
 			<Navbar
-				serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks}
-				laundryDryCleaningMenuLinks={
-					laundryDryCleaningMenuLinks?.laundryDryCleaningMenuLinks
+				CommercialServicesMenuLinks={
+					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
+				}
+				IndividualServicesMenuLinks={
+					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
 				}
 			/>
 
@@ -163,11 +170,13 @@ const AlterationsRepairs = ({
 					title={alterationsRepairsPageContent?.ourProcess?.title}
 					paragraph={alterationsRepairsPageContent?.ourProcess?.paragraph}
 					gridContent={alterationsRepairsPageContent?.ourProcess?.gridContent}
-				/>
-				{/* <!--===== OUT STORE LOCATION =====--> */}
-				<StoreLocation
-					title={alterationsRepairsPageContent?.ourLocation?.title}
-					paragraph={alterationsRepairsPageContent?.ourLocation?.paragraph}
+					// Display Options
+					backgroundColor={
+						alterationsRepairsPageContent?.ourProcess?.backgroundColor
+					}
+					backgroundLetter={
+						alterationsRepairsPageContent?.ourProcess?.backgroundLetter
+					}
 				/>
 			</main>
 
@@ -175,7 +184,9 @@ const AlterationsRepairs = ({
 			<Footer
 				email={themesOptionsContent?.themesOptions?.email}
 				phoneNumber={themesOptionsContent?.themesOptions?.phoneNumber}
-				serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks}
+				CommercialServicesMenuLinks={
+					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
+				}
 			/>
 		</motion.div>
 	);
@@ -245,17 +256,16 @@ export async function getStaticProps() {
 							ourProcess {
 								title
 								paragraph
+								backgroundLetter
+								backgroundColor
 								gridContent {
 									title
 									paragraph
 									image {
+										altText
 										sourceUrl
 									}
 								}
-							}
-							ourLocation {
-								title
-								paragraph
 							}
 						}
 					}
@@ -268,14 +278,14 @@ export async function getStaticProps() {
 		query: getAlterationsRepairsPageContent,
 	});
 
-	const serviceMenuLinks = await getServiceLinksContent();
+	const CommercialServicesMenuLinks = await getCommercialServicesMenu();
 	const themesOptionsContent = await getThemesOptionsContent();
-	const laundryDryCleaningMenuLinks = await getLaundryDryCleaningLinksContent();
+	const IndividualServicesMenuLinks = await getIndividualServicesMenu();
 
 	return {
 		props: {
-			serviceMenuLinks,
-			laundryDryCleaningMenuLinks,
+			CommercialServicesMenuLinks,
+			IndividualServicesMenuLinks,
 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
 			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
 			alterationsRepairsPageContent:

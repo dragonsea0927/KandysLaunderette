@@ -29,14 +29,16 @@ module.exports = {
 			white: "#fff",
 			black: "#111",
 			grey: "#b3b3b3",
+			darkGrey: "#8f8f8f",
 			pureBlack: "#000",
-			lightGrey: "#fafafa",
+			lightGrey: "#f5f5f5",
 
 			// Main colors
 			pink: "#dd4577",
 			blue: "#2563eb",
 			yellow: "#ffc915",
 			darkPink: "#950e3b",
+			babyBlue: "#5ac3ff",
 			fadedPink: "#ff8fb4",
 			fadedYellow: "#f3d162",
 			fadedPinkTwo: "#fcbfd4",

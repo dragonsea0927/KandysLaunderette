@@ -11,10 +11,10 @@ const TitleGridContentTwo = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full lg:w-[50rem] mx-auto mt-4 py-8 px-4 text-white text-center text-base font-[400]";
+				"hidden  w-full lg:max-w-[75rem] mx-auto mt-4 py-8 px-4 text-white text-center text-medium leading-loose";
 		} else {
 			contentStyling =
-				"block w-full lg:w-[50rem] mx-auto mt-4 py-8 px-4 text-white text-center text-base font-[400]";
+				"block w-full lg:max-w-[75rem] mx-auto mt-4 py-8 px-4 text-white text-center text-medium leading-normal";
 		}
 		return contentStyling;
 	}
@@ -28,7 +28,7 @@ const TitleGridContentTwo = (props) => {
 	return (
 		<section className={styles.titleGridContentTwo}>
 			<div className="container mx-auto p-0">
-				<div className="flex flex-col px-0 md:px-8">
+				<div className="flex flex-col px-4">
 					<motion.div variants={fadeInUp} className="py-28">
 						<h2 className="text-white text-center font-[600] text-3xl lg:text-5xl">
 							{props?.title}
@@ -40,7 +40,7 @@ const TitleGridContentTwo = (props) => {
 					</motion.div>
 					<motion.div
 						variants={stagger}
-						className="mx-auto mb-8 grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4 px-2  gap-4 justify-center items-start"
+						className="mx-auto mb-8 grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4 px-0 gap-4 justify-center items-start"
 					>
 						{/* Array Loop */}
 						{props.gridContent.map((keys) => (

@@ -9,9 +9,9 @@ const ContactBannerThree = (props) => {
 	function isParagraphContent(isParagraphContent) {
 		let contentStyling;
 		if (isParagraphContent === null) {
-			contentStyling = "hidden text-white text-center text-base leading-8";
+			contentStyling = "hidden text-white text-center text-medium leading-8";
 		} else {
-			contentStyling = "block text-white text-center text-base leading-8";
+			contentStyling = "block text-white text-center text-medium leading-8";
 		}
 		return contentStyling;
 	}
@@ -37,19 +37,19 @@ const ContactBannerThree = (props) => {
 						<h2 className="pb-10 text-white text-center text-2xl">
 							{props?.title}
 						</h2>
-						<span className="gap-2 flex flex-row text-base text-white items-center justify-center">
+						<span className="gap-2 flex flex-row text-medium text-white items-center justify-center">
 							Email:
 							<Link
 								href={`mailto:${props?.themesOptions?.email}`}
 								target="blank"
-								className="flex flex-row justify-center items-center gap-2 text-white text-base text-center hover:text-fadedPink hover:ease-in-out hover:duration-[0.5s]"
+								className="flex flex-row justify-center items-center gap-2 text-white text-medium text-center hover:text-fadedPink transition-all ease-in-out duration-[0.5s]"
 							>
 								{props?.themesOptions?.email}
 							</Link>
 						</span>
 
 						<div className="flex flex-row justify-center items-center text-white gap-2 py-4">
-							<span className="text-white text-center text-base">
+							<span className="text-white text-center text-medium">
 								Tel:
 								<Link
 									href={`tel:${props?.themesOptions?.phoneNumberOptionTwo}`}
@@ -58,7 +58,7 @@ const ContactBannerThree = (props) => {
 								</Link>
 							</span>
 							|
-							<span className="text-white text-center text-base">
+							<span className="text-white text-center text-medium">
 								<Link href={`tel:${props?.themesOptions?.phoneNumber}`}>
 									{props?.themesOptions?.phoneNumber}
 								</Link>
@@ -69,15 +69,12 @@ const ContactBannerThree = (props) => {
 							dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 						/>
 					</motion.div>
-					<motion.button
-						variants={fadeIn}
-						className="py-6 px-20 font-[700] uppercase text-black text-tiny"
-					>
+					<motion.button variants={fadeIn} className="py-6 px-20">
 						<Link
 							href={`${props?.buttonLink?.url}`}
 							target={`${props?.buttonLink?.target}`}
 						>
-							<a className="py-4 px-6 lg:py-6 lg:px-20 bg-white rounded-lg hover:text-white hover:bg-fadedPink hover:ease-in-out hover:duration-[0.5s]">
+							<a className="py-4 px-6 lg:py-6 lg:px-20 font-[700] text-black text-base leading-4 bg-white rounded-lg hover:text-white hover:bg-fadedPink transition-all ease-in-out duration-[0.5s]">
 								{props?.buttonLink?.title}
 							</a>
 						</Link>

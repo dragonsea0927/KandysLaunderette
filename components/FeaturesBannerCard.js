@@ -8,16 +8,16 @@ const FeaturesBannerCard = (props) => {
 				<div className="flex flex-row justify-center items-center m-0 sm:m-3">
 					<div className="w-auto p-0 sm:p-3">
 						<Image
-							alt=""
 							width="125px"
 							height="125px"
-							src={props.icon}
 							objectFit="cover"
 							objectPosition="center"
+							src={props.icon?.sourceUrl}
+							alt={`${props.icon?.altText} Icon`}
 						/>
 					</div>
 					<div className="flex-1 p-3">
-						<h3 className="text-base text-center font-[600] lg:text-left">
+						<h3 className="text-base md:text-medium text-center text-black font-[600] lg:text-left">
 							{props.title}
 						</h3>
 					</div>

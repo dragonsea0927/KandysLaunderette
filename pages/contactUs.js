@@ -4,8 +4,8 @@ import ContactInfoMap from "../components/ContactInfoMap";
 import {fadeInUp} from "../animations/animations";
 import {getThemesOptionsContent} from "../lib/themesOptions";
 import {
-	getServiceLinksContent,
-	getLaundryDryCleaningLinksContent,
+	getCommercialServicesMenu,
+	getIndividualServicesMenu,
 } from "../lib/MenuLinks";
 
 // Components
@@ -16,10 +16,10 @@ import MetaTag from "../components/Meta/MetaTag";
 const contactUs = ({
 	seo,
 	pageTitle,
-	serviceMenuLinks,
+	CommercialServicesMenuLinks,
 	contactUsPageContent,
 	themesOptionsContent,
-	laundryDryCleaningMenuLinks,
+	IndividualServicesMenuLinks,
 }) => {
 	return (
 		<motion.div
@@ -34,9 +34,11 @@ const contactUs = ({
 
 			{/* <!--===== NAVBAR =====--> */}
 			<Navbar
-				serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks}
-				laundryDryCleaningMenuLinks={
-					laundryDryCleaningMenuLinks?.laundryDryCleaningMenuLinks
+				CommercialServicesMenuLinks={
+					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
+				}
+				IndividualServicesMenuLinks={
+					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
 				}
 			/>
 
@@ -64,7 +66,9 @@ const contactUs = ({
 			<Footer
 				email={themesOptionsContent?.themesOptions?.email}
 				phoneNumber={themesOptionsContent?.themesOptions?.phoneNumber}
-				serviceMenuLinks={serviceMenuLinks?.serviceMenuLinks}
+				CommercialServicesMenuLinks={
+					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
+				}
 			/>
 		</motion.div>
 	);
@@ -105,14 +109,14 @@ export async function getStaticProps() {
 		query: getContactUsPageContent,
 	});
 
-	const serviceMenuLinks = await getServiceLinksContent();
+	const CommercialServicesMenuLinks = await getCommercialServicesMenu();
 	const themesOptionsContent = await getThemesOptionsContent();
-	const laundryDryCleaningMenuLinks = await getLaundryDryCleaningLinksContent();
+	const IndividualServicesMenuLinks = await getIndividualServicesMenu();
 
 	return {
 		props: {
-			serviceMenuLinks,
-			laundryDryCleaningMenuLinks,
+			CommercialServicesMenuLinks,
+			IndividualServicesMenuLinks,
 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
 			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
 			contactUsPageContent:

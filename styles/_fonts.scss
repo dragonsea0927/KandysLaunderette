@@ -2,7 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Sarabun:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+	font-family: Rubik;
+	src: url("/fonts/Rubik/Rubik-VariableFont_wght.ttf");
+}
 
 // Font Stack Properties
 $fontStyle_main: "Rubik", sans-serif;

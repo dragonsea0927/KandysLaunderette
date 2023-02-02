@@ -9,27 +9,8 @@
 	background-repeat: no-repeat;
 }
 
-.heroSection,
-.heroSectionThree {
-	h1,
-	h2,
-	a,
-	span,
-	p {
-		font-family: $fontStyle_main;
-	}
-}
-
 .heroSectionTwo {
-	height: 100vh;
+	height: 70vh;
 	display: flex;
 	align-items: center;
-
-	h1 {
-		font-family: $fontStyle_main;
-	}
-
-	p {
-		font-family: $fontStyle_main;
-	}
 }

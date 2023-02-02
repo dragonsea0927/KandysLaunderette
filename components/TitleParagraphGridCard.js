@@ -11,10 +11,10 @@ const TitleParagraphGridCard = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden py-4 px-0 sm:p-4 w-full lg:w-[30rem] mx-auto text-black text-center font-[400] text-base";
+				"hidden py-4 px-0 sm:p-4 w-full mx-auto text-darkGrey text-center font-[400] text-medium";
 		} else {
 			contentStyling =
-				"block py-4 px-0 sm:p-4 w-full lg:w-[30rem] mx-auto text-black text-center font-[400] text-base";
+				"block py-4 px-0 sm:p-4 mx-auto text-darkGrey text-center font-[400] text-medium";
 		}
 		return contentStyling;
 	}
@@ -26,7 +26,10 @@ const TitleParagraphGridCard = (props) => {
 	}
 	return (
 		<div className="flex flex-col sm:flex-row py-4 gap-y-8 gap-x-0 sm:gap-10 justify-center items-center">
-			<motion.div variants={fadeIn}>
+			<motion.div
+				variants={fadeIn}
+				className="w-full lg:w-1/2 flex justify-center items-center"
+			>
 				<Image
 					width={350}
 					height={350}
@@ -34,11 +37,11 @@ const TitleParagraphGridCard = (props) => {
 					objectPosition="center"
 					alt={props?.image?.altText}
 					src={`${props?.image?.sourceUrl}`}
-					className="w-[350px] h-[350px] rounded-lg object-cover object-center"
+					className="w-[350px] h-[350px] mx-auto lg:mx-0 rounded-lg object-cover object-center"
 				/>
 			</motion.div>
-			<motion.div variants={fadeInUp}>
-				<h2 className="text-fadedPink text-[1.05rem] text-center font-[700]">
+			<motion.div variants={fadeInUp} className="w-full lg:w-1/2">
+				<h2 className="text-black text-lg text-center font-[700]">
 					{props?.title}
 				</h2>
 				<div

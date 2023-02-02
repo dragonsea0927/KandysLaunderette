@@ -10,11 +10,9 @@ const TextImageTwo = (props) => {
 	function isParagraphContent(isParagraphContent) {
 		let contentStyling;
 		if (isParagraphContent === null) {
-			contentStyling =
-				"hidden w-full xl:w-[45rem] text-left text-black font-[300] text-base";
+			contentStyling = "hidden text-darkGrey text-medium";
 		} else {
-			contentStyling =
-				"block w-full xl:w-[45rem] text-left text-black font-[300] text-base";
+			contentStyling = "block text-darkGrey text-medium";
 		}
 		return contentStyling;
 	}
@@ -37,30 +35,30 @@ const TextImageTwo = (props) => {
 
 	return (
 		<section className={styles.textImageTwo}>
-			<div className="container mx-auto p-0">
-				<div className="flex flex-col lg:flex-row p-4 gap-y-4 gap-x-8 lg:gap-x-28 justify-between items-center">
+			<div className="container mx-auto px-4">
+				<div className="flex flex-col lg:flex-row gap-y-4 gap-x-8 lg:gap-x-28 justify-between items-center">
 					<motion.div
 						variants={fadeIn}
 						className="mt-10 md:mt-0 w-full md:w-1/2"
 						style={{display: leftImageDisplay}}
 					>
 						<Image
-							width="100%"
-							height="100%"
-							objectFit="contain"
-							layout="responsive"
-							src={`${props?.image}`}
+							width={`600px`}
+							height={`600px`}
+							objectFit="cover"
+							objectPosition="center"
+							src={`${props?.image?.sourceUrl}`}
 							alt={`${props?.image?.altText} Image`}
-							className="w-full h-[650px] object-contain object-center"
+							className="w-full h-[600px] rounded-lg object-cover object-center"
 						/>
 					</motion.div>
 					<motion.div variants={fadeInUp} className="w-full md:w-1/2">
-						<motion.h2
+						<motion.h3
 							variants={fadeInUp}
 							className="text-black text-left text-4xl py-6 md:text-5xl"
 						>
 							{props?.title}
-						</motion.h2>
+						</motion.h3>
 						<motion.div
 							variants={fadeIn}
 							className={isParagraphContent(props?.paragraph)}
@@ -73,13 +71,13 @@ const TextImageTwo = (props) => {
 						style={{display: rightImageDisplay}}
 					>
 						<Image
-							width="100%"
-							height="100%"
-							objectFit="contain"
-							layout="responsive"
-							src={`${props?.image}`}
+							width={`600px`}
+							height={`600px`}
+							objectFit="cover"
+							objectPosition="center"
+							src={`${props?.image?.sourceUrl}`}
 							alt={`${props?.image?.altText} Image`}
-							className="w-full h-[650px] object-contain object-center"
+							className="w-full h-[600px] rounded-lg object-cover object-center"
 						/>
 					</motion.div>
 				</div>

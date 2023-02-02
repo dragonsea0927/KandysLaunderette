@@ -1,0 +1,12 @@
+// Imports
+@import "../fonts";
+@import "../colors";
+
+/* ===== SING UP TWO =====*/
+.signUpTwo {
+	p {
+		a {
+			@apply text-pink hover:text-yellow transition-all ease-in-out duration-[0.5s];
+		}
+	}
+}

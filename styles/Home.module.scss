@@ -2,14 +2,30 @@
 @import "./fonts";
 @import "./colors";
 
-// Components Styling
-@import "./components/ContactInfoMap";
-@import "./components/WeddingDressesAndBridal/ContactInfo.scss";
-
 // Pages Styling
-@import "./pages/_AlterationsRepairs.scss";
-@import "./pages/SuitsOxfordShirts/_suitsOxfordShirts";
-@import "./pages/WeddingDressesAndBridal/_WeddingDressesBridal";
-@import "./pages/LaundryAndDryCleaning/_LaundryDryCleaning";
 @import "./pages/LaundryAndDryCleaning/pages/_IndividualService";
-// @import "./pages/LaundryAndDryCleaning/pages/commercialServices";
+@import "./pages/LaundryAndDryCleaning/pages/_CommercialServices";
+
+// <========== ALTERATIONS & REPAIRS ==========>
+.alterationsRepairs {
+	background-size: cover;
+	background-color: $blue;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(
+			0deg,
+			rgba(36, 14, 149, 0.85),
+			rgba(36, 14, 149, 0.5)
+		),
+		url("/svg/w.svg");
+
+	h2,
+	h3,
+	h5,
+	span,
+	a,
+	p {
+		color: $baseColor_white;
+		font-family: $fontStyle_main;
+	}
+}

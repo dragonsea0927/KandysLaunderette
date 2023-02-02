@@ -11,9 +11,11 @@ const TextImageCard = (props) => {
 	function isParagraphContent(isParagraphContent) {
 		let contentStyling;
 		if (isParagraphContent === null) {
-			contentStyling = "hidden text-left text-base text-pureBlack font-[400] ";
+			contentStyling =
+				"hidden w-full lg:max-w-[75rem] text-darkGrey text-medium";
 		} else {
-			contentStyling = "block text-left text-base text-pureBlack font-[400] ";
+			contentStyling =
+				"block w-full lg:max-w-[75rem] text-darkGrey text-medium";
 		}
 		return contentStyling;
 	}
@@ -66,32 +68,33 @@ const TextImageCard = (props) => {
 						className="w-full h-[250px] rounded-lg object-cover object-center"
 					/>
 				</motion.div>
-				<motion.div variants={fadeInUp} className="w-full md:w-1/2">
-					<div className="w-full lg:w-[30rem]">
-						<h5 className="text-grey text-left text-tiny uppercase">
-							{props?.subtitle}
-						</h5>
-						<h2 className="text-black text-left leading-[2rem] font-[600] text-2xl py-4 md:text-4xl">
-							{props?.title}
-						</h2>
-						<div
-							className={isParagraphContent(props?.paragraph)}
-							dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
-						/>
-						<motion.button
-							variants={fadeIn}
-							className={isButtonLink(props?.buttonLink?.url)}
+				<motion.div
+					variants={fadeInUp}
+					className="w-full md:w-1/2 flex flex-col justify-center items-start"
+				>
+					<h5 className="text-grey text-left text-tiny font-[600] uppercase tracking-[0.15rem]">
+						{props?.subtitle}
+					</h5>
+					<h2 className="text-black text-left text-3xl py-8 md:text-4xl leading-[2rem] font-[700]">
+						{props?.title}
+					</h2>
+					<div
+						className={isParagraphContent(props?.paragraph)}
+						dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
+					/>
+					<motion.button
+						variants={fadeIn}
+						className={isButtonLink(props?.buttonLink?.url)}
+					>
+						<Link
+							href={`${props?.buttonLink?.url}`}
+							target={`${props?.buttonLink?.target}`}
 						>
-							<Link
-								href={`${props?.buttonLink?.url}`}
-								target={`${props?.buttonLink?.target}`}
-							>
-								<a className="text-fadedPink font-[700] text-base hover:text-blue hover:ease-in-out hover:duration-[0.5s]">
-									{props?.buttonLink?.title}
-								</a>
-							</Link>
-						</motion.button>
-					</div>
+							<a className="text-fadedPink font-[700] text-medium hover:text-blue transition-all ease-in-out duration-[0.5s]">
+								{props?.buttonLink?.title}
+							</a>
+						</Link>
+					</motion.button>
 				</motion.div>
 				<motion.div
 					variants={fadeIn}
