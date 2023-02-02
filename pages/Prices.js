@@ -20,6 +20,8 @@ import StoreLocation from "/components/storeLocation";
 import ContactBanner from "../components/ContactBanner";
 import ImageTextBulletPoints from "../components/ImageTextBulletPoints";
 import TwitterTestimonialGrid from "../components/TwitterTestimonialGrid";
+import FAQTwo from "../components/FAQTwo";
+import BlogBanner from "../components/BlogBanner";
 
 const Prices = ({
 	seo,
@@ -209,6 +211,8 @@ const Prices = ({
 				</section>
 
 				{/* PRICING */}
+
+				{/* PRICING */}
 				<section className="py-10 bg-white overflow-hidden">
 					<div className="container mx-auto px-4">
 						<div className="py-16 px-8 bg-white rounded-3xl">
@@ -235,7 +239,7 @@ const Prices = ({
 														<svg
 															width="22"
 															height="22"
-															viewbox="0 0 22 22"
+															viewBox="0 0 22 22"
 															fill="none"
 															xmlns="http://www.w3.org/2000/svg"
 														>
@@ -249,7 +253,7 @@ const Prices = ({
 														<svg
 															width="22"
 															height="22"
-															viewbox="0 0 22 22"
+															viewBox="0 0 22 22"
 															fill="none"
 															xmlns="http://www.w3.org/2000/svg"
 														>
@@ -263,7 +267,7 @@ const Prices = ({
 														<svg
 															width="22"
 															height="22"
-															viewbox="0 0 22 22"
+															viewBox="0 0 22 22"
 															fill="none"
 															xmlns="http://www.w3.org/2000/svg"
 														>
@@ -277,7 +281,7 @@ const Prices = ({
 														<svg
 															width="22"
 															height="22"
-															viewbox="0 0 22 22"
+															viewBox="0 0 22 22"
 															fill="none"
 															xmlns="http://www.w3.org/2000/svg"
 														>
@@ -291,7 +295,7 @@ const Prices = ({
 														<svg
 															width="22"
 															height="22"
-															viewbox="0 0 22 22"
+															viewBox="0 0 22 22"
 															fill="none"
 															xmlns="http://www.w3.org/2000/svg"
 														>
@@ -568,16 +572,16 @@ const Prices = ({
 														className="mr-2"
 														width="20"
 														height="20"
-														viewbox="0 0 20 20"
+														viewBox="0 0 20 20"
 														fill="none"
 														xmlns="http://www.w3.org/2000/svg"
 													>
 														<path
 															d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
 															stroke="#4F46E5"
-															stroke-width="2"
-															stroke-linecap="round"
-															stroke-linejoin="round"
+															strokeWidth="2"
+															strokeLinecap="round"
+															strokeLinejoin="round"
 														></path>
 													</svg>
 													<p className="font-semibold leading-normal">
@@ -589,16 +593,16 @@ const Prices = ({
 														className="mr-2"
 														width="20"
 														height="20"
-														viewbox="0 0 20 20"
+														viewBox="0 0 20 20"
 														fill="none"
 														xmlns="http://www.w3.org/2000/svg"
 													>
 														<path
 															d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
 															stroke="#4F46E5"
-															stroke-width="2"
-															stroke-linecap="round"
-															stroke-linejoin="round"
+															strokeWidth="2"
+															strokeLinecap="round"
+															strokeLinejoin="round"
 														></path>
 													</svg>
 													<p className="font-semibold leading-normal">
@@ -610,16 +614,16 @@ const Prices = ({
 														className="mr-2"
 														width="20"
 														height="20"
-														viewbox="0 0 20 20"
+														viewBox="0 0 20 20"
 														fill="none"
 														xmlns="http://www.w3.org/2000/svg"
 													>
 														<path
 															d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
 															stroke="#4F46E5"
-															stroke-width="2"
-															stroke-linecap="round"
-															stroke-linejoin="round"
+															strokeWidth="2"
+															strokeLinecap="round"
+															strokeLinejoin="round"
 														></path>
 													</svg>
 													<p className="font-semibold leading-normal">
@@ -631,16 +635,16 @@ const Prices = ({
 														className="mr-2"
 														width="20"
 														height="20"
-														viewbox="0 0 20 20"
+														viewBox="0 0 20 20"
 														fill="none"
 														xmlns="http://www.w3.org/2000/svg"
 													>
 														<path
 															d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
 															stroke="#4F46E5"
-															stroke-width="2"
-															stroke-linecap="round"
-															stroke-linejoin="round"
+															strokeWidth="2"
+															strokeLinecap="round"
+															strokeLinejoin="round"
 														></path>
 													</svg>
 													<p className="font-semibold leading-normal">
@@ -652,16 +656,16 @@ const Prices = ({
 														className="mr-2"
 														width="20"
 														height="20"
-														viewbox="0 0 20 20"
+														viewBox="0 0 20 20"
 														fill="none"
 														xmlns="http://www.w3.org/2000/svg"
 													>
 														<path
 															d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
 															stroke="#4F46E5"
-															stroke-width="2"
-															stroke-linecap="round"
-															stroke-linejoin="round"
+															strokeWidth="2"
+															strokeLinecap="round"
+															strokeLinejoin="round"
 														></path>
 													</svg>
 													<p className="font-semibold leading-normal">
@@ -710,16 +714,16 @@ const Prices = ({
 														className="mr-2"
 														width="20"
 														height="20"
-														viewbox="0 0 20 20"
+														viewBox="0 0 20 20"
 														fill="none"
 														xmlns="http://www.w3.org/2000/svg"
 													>
 														<path
 															d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
 															stroke="#4F46E5"
-															stroke-width="2"
-															stroke-linecap="round"
-															stroke-linejoin="round"
+															strokeWidth="2"
+															strokeLinecap="round"
+															strokeLinejoin="round"
 														></path>
 													</svg>
 													<p className="font-semibold leading-normal">
@@ -731,16 +735,16 @@ const Prices = ({
 														className="mr-2"
 														width="20"
 														height="20"
-														viewbox="0 0 20 20"
+														viewBox="0 0 20 20"
 														fill="none"
 														xmlns="http://www.w3.org/2000/svg"
 													>
 														<path
 															d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
 															stroke="#4F46E5"
-															stroke-width="2"
-															stroke-linecap="round"
-															stroke-linejoin="round"
+															strokeWidth="2"
+															strokeLinecap="round"
+															strokeLinejoin="round"
 														></path>
 													</svg>
 													<p className="font-semibold leading-normal">
@@ -752,16 +756,16 @@ const Prices = ({
 														className="mr-2"
 														width="20"
 														height="20"
-														viewbox="0 0 20 20"
+														viewBox="0 0 20 20"
 														fill="none"
 														xmlns="http://www.w3.org/2000/svg"
 													>
 														<path
 															d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
 															stroke="#4F46E5"
-															stroke-width="2"
-															stroke-linecap="round"
-															stroke-linejoin="round"
+															strokeWidth="2"
+															strokeLinecap="round"
+															strokeLinejoin="round"
 														></path>
 													</svg>
 													<p className="font-semibold leading-normal">
@@ -773,16 +777,16 @@ const Prices = ({
 														className="mr-2"
 														width="20"
 														height="20"
-														viewbox="0 0 20 20"
+														viewBox="0 0 20 20"
 														fill="none"
 														xmlns="http://www.w3.org/2000/svg"
 													>
 														<path
 															d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
 															stroke="#4F46E5"
-															stroke-width="2"
-															stroke-linecap="round"
-															stroke-linejoin="round"
+															strokeWidth="2"
+															strokeLinecap="round"
+															strokeLinejoin="round"
 														></path>
 													</svg>
 													<p className="font-semibold leading-normal">
@@ -794,16 +798,16 @@ const Prices = ({
 														className="mr-2"
 														width="20"
 														height="20"
-														viewbox="0 0 20 20"
+														viewBox="0 0 20 20"
 														fill="none"
 														xmlns="http://www.w3.org/2000/svg"
 													>
 														<path
 															d="M7.5 10L9.16667 11.6667L12.5 8.33333M17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10Z"
 															stroke="#4F46E5"
-															stroke-width="2"
-															stroke-linecap="round"
-															stroke-linejoin="round"
+															strokeWidth="2"
+															strokeLinecap="round"
+															strokeLinejoin="round"
 														></path>
 													</svg>
 													<p className="font-semibold leading-normal">
@@ -1066,6 +1070,9 @@ const Prices = ({
 					content={pricesPageContent?.ourOptions?.content}
 				/>
 
+				{/* <!--===== BLOG BANNER =====--> */}
+				<BlogBanner />
+
 				{/* <!--===== REINVENTING THE FUTURE =====--> */}
 				<ImageTextBulletPoints
 					title={pricesPageContent?.imageTextBulletPoints?.title}
@@ -1093,594 +1100,14 @@ const Prices = ({
 					gridContent={pricesPageContent?.twitterTestimonial?.gridContent}
 				/>
 
+				{/* <!--===== FAQ TWO =====--> */}
+				<FAQTwo />
+
 				{/* <!--===== OUT STORE LOCATION =====--> */}
 				<StoreLocation
 					title={pricesPageContent?.ourLocation?.title}
 					paragraph={pricesPageContent?.ourLocation?.paragraph}
 				/>
-
-				<section className="pt-10 sm:pt-16 lg:pt-24">
-					<div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-						<div className="max-w-2xl mx-auto text-center">
-							<h2 className="font-[600] text-3xl lg:text-5xl py-2">
-								Your Laundry and Dry cleaning solution just a click away
-							</h2>
-							<p className="mt-6 text-medium text-darkGrey">
-								Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-								amet sint.
-							</p>
-							<a
-								title=""
-								className="inline-flex items-center justify-center px-6 py-4 mt-12 text-base font-semibold text-white transition-all ease-in-out duration-[0.5s] bg-blue border border-transparent rounded-lg hover:bg-blue focus:bg-blue"
-								role="button"
-							>
-								<svg
-									className="w-5 h-5 mr-2 -ml-1"
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke="currentColor"
-								>
-									<path
-										strokeLinecap="round"
-										strokeLinejoin="round"
-										strokeWidth="2"
-										d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-									/>
-								</svg>
-								Contact our support
-							</a>
-						</div>
-					</div>
-
-					<div className="container mx-auto 2xl:px-12">
-						<img
-							className="w-full mt-6"
-							src="https://cdn.rareblocks.xyz/collection/celebration/images/team/4/group-of-people.png"
-							alt=""
-						/>
-					</div>
-				</section>
-
-				{/* <!--===== SIGN UP THREE =====--> */}
-				<section className="bg-white">
-					<div className="grid grid-cols-1 lg:grid-cols-2">
-						<div className="flex items-center justify-center px-4 py-10 bg-white sm:px-6 lg:px-8 sm:py-16 lg:py-24">
-							<div className="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
-								<motion.h2
-									variants={fadeIn}
-									className="text-3xl leading-tight text-black sm:text-4xl"
-								>
-									Sign up to today
-								</motion.h2>
-								<p className="mt-2 text-base text-grey">
-									Already have an account?
-									<a className="flex gap-2 text-base text-pink px-2 transition-all ease-in-out duration-[0.5s] hover:text-yellow focus:text-yellow hover:underline">
-										Login
-									</a>
-								</p>
-
-								<form action="#" method="POST" className="mt-8">
-									<div className="space-y-5">
-										<div>
-											<label className="text-base flex gap-2 text-base text-grey">
-												First & Last name
-											</label>
-											<div className="mt-2.5 relative text-grey focus-within:text-grey">
-												<div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-													<svg
-														className="w-5 h-5 text-pink"
-														xmlns="http://www.w3.org/2000/svg"
-														fill="none"
-														viewBox="0 0 24 24"
-														stroke="currentColor"
-													>
-														<path
-															strokeLinecap="round"
-															strokeLinejoin="round"
-															strokeWidth="2"
-															d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-														/>
-													</svg>
-												</div>
-
-												<input
-													type="text"
-													name=""
-													id=""
-													placeholder="Enter your full name"
-													className="block w-full py-4 pl-10 pr-4 text-black placeholder-darkGrey transition-all ease-in-out duration-[0.5s] border border-grey rounded-lg bg-white focus:outline-none focus:border-pink focus:bg-white caret-pink"
-												/>
-											</div>
-										</div>
-
-										<div>
-											<label className="text-base flex gap-2 text-base text-grey">
-												Email address
-											</label>
-											<div className="mt-2.5 relative text-grey focus-within:text-grey">
-												<div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-													<svg
-														className="w-5 h-5 text-pink"
-														xmlns="http://www.w3.org/2000/svg"
-														fill="none"
-														viewBox="0 0 24 24"
-														stroke="currentColor"
-													>
-														<path
-															strokeLinecap="round"
-															strokeLinejoin="round"
-															strokeWidth="2"
-															d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
-														/>
-													</svg>
-												</div>
-
-												<input
-													type="email"
-													name=""
-													id=""
-													placeholder="Enter email to get started"
-													className="block w-full py-4 pl-10 pr-4 text-black placeholder-darkGrey transition-all ease-in-out duration-[0.5s] border border-grey rounded-lg bg-white focus:outline-none focus:border-pink focus:bg-white caret-pink"
-												/>
-											</div>
-										</div>
-
-										<div>
-											<label className="text-base flex gap-2 text-base text-grey">
-												Password
-											</label>
-											<div className="mt-2.5 relative text-grey focus-within:text-grey">
-												<div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-													<svg
-														className="w-5 h-5 text-pink"
-														xmlns="http://www.w3.org/2000/svg"
-														fill="none"
-														viewBox="0 0 24 24"
-														stroke="currentColor"
-													>
-														<path
-															strokeLinecap="round"
-															strokeLinejoin="round"
-															strokeWidth="2"
-															d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"
-														/>
-													</svg>
-												</div>
-
-												<input
-													type="password"
-													name=""
-													id=""
-													placeholder="Enter your password"
-													className="block w-full py-4 pl-10 pr-4 text-black placeholder-darkGrey transition-all ease-in-out duration-[0.5s] border border-grey rounded-lg bg-white focus:outline-none focus:border-pink focus:bg-white caret-pink"
-												/>
-											</div>
-										</div>
-
-										<button
-											type="submit"
-											className="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all ease-in-out duration-[0.5s] border border-transparent rounded-lg bg-pink focus:outline-none hover:bg-yellow"
-										>
-											<Link href={`/`} target={``}>
-												<a
-													title=""
-													className="text-white transition-all ease-in-out duration-[0.5s] hover:underline hover:text-blue"
-												>
-													Sign up
-												</a>
-											</Link>
-										</button>
-									</div>
-								</form>
-
-								{/* Google & Facebook Sign Up */}
-								<div className="mt-3 space-y-3">
-									<button
-										type="button"
-										className="relative inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-darkGrey transition-all ease-in-out duration-[0.5s] bg-white border-2 border-grey rounded-lg hover:text-pink hover:border-pink focus:text-pink focus:outline-none"
-									>
-										<div className="absolute inset-y-0 left-0 p-4">
-											<svg
-												className="w-6 h-6 text-pink"
-												xmlns="http://www.w3.org/2000/svg"
-												viewBox="0 0 24 24"
-												fill="currentColor"
-											>
-												<path d="M20.283 10.356h-8.327v3.451h4.792c-.446 2.193-2.313 3.453-4.792 3.453a5.27 5.27 0 0 1-5.279-5.28 5.27 5.27 0 0 1 5.279-5.279c1.259 0 2.397.447 3.29 1.178l2.6-2.599c-1.584-1.381-3.615-2.233-5.89-2.233a8.908 8.908 0 0 0-8.934 8.934 8.907 8.907 0 0 0 8.934 8.934c4.467 0 8.529-3.249 8.529-8.934 0-.528-.081-1.097-.202-1.625z"></path>
-											</svg>
-										</div>
-										<Link href={`/`} target={``}>
-											<a title="" className="hover:text-pink">
-												Sign up with Google
-											</a>
-										</Link>
-									</button>
-
-									<button
-										type="button"
-										className="relative inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-darkGrey transition-all ease-in-out duration-[0.5s] bg-white border-2 border-grey rounded-lg hover:text-pink hover:border-pink focus:text-pink focus:outline-none"
-									>
-										<div className="absolute inset-y-0 left-0 p-4">
-											<svg
-												className="w-6 h-6 text-pink"
-												xmlns="http://www.w3.org/2000/svg"
-												viewBox="0 0 24 24"
-												fill="currentColor"
-											>
-												<path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path>
-											</svg>
-										</div>
-										<Link href={`/`} target={``}>
-											<a title="" className="hover:text-pink">
-												Sign up with Facebook
-											</a>
-										</Link>
-									</button>
-								</div>
-							</div>
-						</div>
-
-						<div className="flex items-center justify-center px-4 py-10 sm:py-16 lg:py-24 bg-grey sm:px-6 lg:px-8">
-							<div>
-								<img
-									className="w-full mx-auto"
-									src="https://cdn.rareblocks.xyz/collection/celebration/images/signup/1/cards.png"
-									alt=""
-								/>
-
-								<div className="w-full max-w-md mx-auto xl:max-w-xl">
-									<h3 className="text-2xl text-center text-black">
-										Design your own card
-									</h3>
-									<p className="leading-relaxed text-center text-darkGrey mt-2.5">
-										Amet minim mollit non deserunt ullamco est sit aliqua dolor
-										do amet sint. Velit officia consequat duis.
-									</p>
-
-									<div className="flex items-center justify-center mt-10 space-x-3">
-										<div className="bg-pink0 rounded-full w-20 h-1.5"></div>
-
-										<div className="bg-grey rounded-full w-12 h-1.5"></div>
-
-										<div className="bg-grey rounded-full w-12 h-1.5"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section className="py-10 bg-white sm:py-16 lg:py-24">
-					<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-						<div className="grid grid-cols-1 gap-12 text-center sm:grid-cols-2 md:grid-cols-3 lg:gap-y-16">
-							<div>
-								<div className="relative flex items-center justify-center mx-auto">
-									<svg
-										className="text-blue"
-										width="72"
-										height="75"
-										viewBox="0 0 72 75"
-										fill="currentColor"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path d="M63.6911 28.8569C68.0911 48.8121 74.6037 61.2674 53.2349 65.9792C31.8661 70.6909 11.6224 61.2632 7.22232 41.308C2.82229 21.3528 3.6607 12.3967 25.0295 7.68503C46.3982 2.97331 59.2911 8.90171 63.6911 28.8569Z" />
-									</svg>
-									<svg
-										className="absolute text-white w-9 h-9"
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 24 24"
-										stroke="currentColor"
-									>
-										<path
-											strokeLinecap="round"
-											strokeLinejoin="round"
-											strokeWidth="1.5"
-											d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"
-										/>
-									</svg>
-								</div>
-								<h3 className="mt-8 text-lg font-semibold text-black">
-									Secured Payments
-								</h3>
-								<p className="mt-4 text-medium text-darkGrey">
-									Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-									amet sint. Velit officia consequat duis enim velit mollit.
-								</p>
-							</div>
-
-							<div>
-								<div className="relative flex items-center justify-center mx-auto">
-									<svg
-										className="text-pink"
-										width="62"
-										height="64"
-										viewBox="0 0 62 64"
-										fill="currentColor"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path d="M62 13.001C62 33.4355 53.9345 64.001 33.5 64.001C13.0655 64.001 0 50.435 0 30.0005C0 9.56596 2.56546 4.00021 23 4.00021C43.4345 4.00021 62 -7.43358 62 13.001Z" />
-									</svg>
-									<svg
-										className="absolute text-white w-9 h-9"
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 24 24"
-										stroke="currentColor"
-									>
-										<path
-											strokeLinecap="round"
-											strokeLinejoin="round"
-											strokeWidth="1.5"
-											d="M13 10V3L4 14h7v7l9-11h-7z"
-										/>
-									</svg>
-								</div>
-								<h3 className="mt-8 text-lg font-semibold text-black">
-									Fast & Easy to Load
-								</h3>
-								<p className="mt-4 text-medium text-darkGrey">
-									Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-									amet sint. Velit officia consequat duis enim velit mollit.
-								</p>
-							</div>
-
-							<div>
-								<div className="relative flex items-center justify-center mx-auto">
-									<svg
-										className="text-fadedPink"
-										width="66"
-										height="68"
-										viewBox="0 0 66 68"
-										fill="currentColor"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path d="M65.5 30C65.5 50.4345 46.4345 68 26 68C5.56546 68 0 50.4345 0 30C0 9.56546 12.5655 0 33 0C53.4345 0 65.5 9.56546 65.5 30Z" />
-									</svg>
-									<svg
-										className="absolute text-white w-9 h-9"
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 24 24"
-										stroke="currentColor"
-									>
-										<path
-											strokeLinecap="round"
-											strokeLinejoin="round"
-											strokeWidth="1.5"
-											d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-										/>
-									</svg>
-								</div>
-								<h3 className="mt-8 text-lg font-semibold text-black">
-									Light & Dark Version
-								</h3>
-								<p className="mt-4 text-medium text-darkGrey">
-									Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-									amet sint. Velit officia consequat duis enim velit mollit.
-								</p>
-							</div>
-
-							<div>
-								<div className="relative flex items-center justify-center mx-auto">
-									<svg
-										className="text-yellow"
-										width="66"
-										height="68"
-										viewBox="0 0 66 68"
-										fill="currentColor"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path d="M65.5 30C65.5 50.4345 46.4345 68 26 68C5.56546 68 0 50.4345 0 30C0 9.56546 12.5655 0 33 0C53.4345 0 65.5 9.56546 65.5 30Z" />
-									</svg>
-									<svg
-										className="absolute text-white w-9 h-9"
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 24 24"
-										stroke="currentColor"
-									>
-										<path
-											strokeLinecap="round"
-											strokeLinejoin="round"
-											strokeWidth="1.5"
-											d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-										/>
-									</svg>
-								</div>
-								<h3 className="mt-8 text-lg font-semibold text-black">
-									Light & Dark Version
-								</h3>
-								<p className="mt-4 text-medium text-darkGrey">
-									Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-									amet sint. Velit officia consequat duis enim velit mollit.
-								</p>
-							</div>
-
-							<div>
-								<div className="relative flex items-center justify-center mx-auto">
-									<svg
-										className="text-fadedPinkTwo"
-										width="65"
-										height="70"
-										viewBox="0 0 65 70"
-										fill="currentColor"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path d="M64.5 26C64.5 46.4345 56.4345 70 36 70C15.5655 70 0 53.9345 0 33.5C0 13.0655 13.0655 0 33.5 0C53.9345 0 64.5 5.56546 64.5 26Z" />
-									</svg>
-									<svg
-										className="absolute text-white w-9 h-9"
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 24 24"
-										stroke="currentColor"
-									>
-										<path
-											strokeLinecap="round"
-											strokeLinejoin="round"
-											strokeWidth="1.5"
-											d="M13 10V3L4 14h7v7l9-11h-7z"
-										/>
-									</svg>
-								</div>
-								<h3 className="mt-8 text-lg font-semibold text-black">
-									Fast & Easy to Load
-								</h3>
-								<p className="mt-4 text-medium text-darkGrey">
-									Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-									amet sint. Velit officia consequat duis enim velit mollit.
-								</p>
-							</div>
-
-							<div>
-								<div className="relative flex items-center justify-center mx-auto">
-									<svg
-										className="text-yellow"
-										width="78"
-										height="78"
-										viewBox="0 0 78 78"
-										fill="currentColor"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path d="M8.49996 28.0002C4.09993 47.9554 14.1313 66.7885 35.5 71.5002C56.8688 76.2119 68.0999 58.4553 72.5 38.5001C76.9 18.5449 68.3688 12.711 47 7.99931C25.6312 3.28759 12.9 8.04499 8.49996 28.0002Z" />
-									</svg>
-									<svg
-										className="absolute text-white w-9 h-9"
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 24 24"
-										stroke="currentColor"
-									>
-										<path
-											strokeLinecap="round"
-											strokeLinejoin="round"
-											strokeWidth="1.5"
-											d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"
-										/>
-									</svg>
-								</div>
-								<h3 className="mt-8 text-lg font-semibold text-black">
-									Secured Payments
-								</h3>
-								<p className="mt-4 text-medium text-darkGrey">
-									Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-									amet sint. Velit officia consequat duis enim velit mollit.
-								</p>
-							</div>
-
-							<div>
-								<div className="relative flex items-center justify-center mx-auto">
-									<svg
-										className="text-fadedPinkThree"
-										width="62"
-										height="64"
-										viewBox="0 0 62 64"
-										fill="currentColor"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path d="M62 13.001C62 33.4355 53.9345 64.001 33.5 64.001C13.0655 64.001 0 50.435 0 30.0005C0 9.56596 2.56546 4.00021 23 4.00021C43.4345 4.00021 62 -7.43358 62 13.001Z"></path>
-									</svg>
-									<svg
-										className="absolute text-white w-9 h-9"
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 24 24"
-										stroke="currentColor"
-									>
-										<path
-											strokeLinecap="round"
-											strokeLinejoin="round"
-											strokeWidth="1.5"
-											d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-										/>
-									</svg>
-								</div>
-								<h3 className="mt-8 text-lg font-semibold text-black">
-									Light & Dark Version
-								</h3>
-								<p className="mt-4 text-medium text-darkGrey">
-									Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-									amet sint. Velit officia consequat duis enim velit mollit.
-								</p>
-							</div>
-
-							<div>
-								<div className="relative flex items-center justify-center mx-auto">
-									<svg
-										className="text-blue"
-										width="72"
-										height="75"
-										viewBox="0 0 72 75"
-										fill="currentColor"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path d="M63.6911 28.8569C68.0911 48.8121 74.6037 61.2674 53.2349 65.9792C31.8661 70.6909 11.6224 61.2632 7.22232 41.308C2.82229 21.3528 3.6607 12.3967 25.0295 7.68503C46.3982 2.97331 59.2911 8.90171 63.6911 28.8569Z" />
-									</svg>
-									<svg
-										className="absolute text-white w-9 h-9"
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 24 24"
-										stroke="currentColor"
-									>
-										<path
-											strokeLinecap="round"
-											strokeLinejoin="round"
-											strokeWidth="1.5"
-											d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"
-										/>
-									</svg>
-								</div>
-								<h3 className="mt-8 text-lg font-semibold text-black">
-									Secured Payments
-								</h3>
-								<p className="mt-4 text-medium text-darkGrey">
-									Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-									amet sint. Velit officia consequat duis enim velit mollit.
-								</p>
-							</div>
-
-							<div>
-								<div className="relative flex items-center justify-center mx-auto">
-									<svg
-										className="text-pink"
-										width="62"
-										height="65"
-										viewBox="0 0 62 65"
-										fill="currentColor"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path d="M0 13.0264C0 33.4609 8.06546 64.0264 28.5 64.0264C48.9345 64.0264 62 50.4604 62 30.0259C62 9.59135 59.4345 4.0256 39 4.0256C18.5655 4.0256 0 -7.40819 0 13.0264Z" />
-									</svg>
-
-									<svg
-										className="absolute text-white w-9 h-9"
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 24 24"
-										stroke="currentColor"
-									>
-										<path
-											strokeLinecap="round"
-											strokeLinejoin="round"
-											strokeWidth="1.5"
-											d="M13 10V3L4 14h7v7l9-11h-7z"
-										/>
-									</svg>
-								</div>
-								<h3 className="mt-8 text-lg font-semibold text-black">
-									Fast & Easy to Load
-								</h3>
-								<p className="mt-4 text-medium text-darkGrey">
-									Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-									amet sint. Velit officia consequat duis enim velit mollit.
-								</p>
-							</div>
-						</div>
-					</div>
-				</section>
 
 				<section className="py-10 bg-lightGrey sm:py-16 lg:py-24">
 					<div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -1937,351 +1364,10 @@ const Prices = ({
 					</div>
 				</section>
 
-				<section className="py-32 bg-white overflow-hidden">
-					<div className="container px-4 mx-auto">
-						<div className="flex flex-wrap -m-8">
-							<div className="w-full md:w-1/2 p-8">
-								<div className="md:max-w-md">
-									<h2 className="mb-7 text-6xl md:text-7xl font-bold font-heading tracking-px-n leading-tight">
-										Frequently Asked Questions
-									</h2>
-									<p className="mb-11 text-grey font-medium leading-relaxed">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit
-										olutpat tempor.
-									</p>
-									<div className="md:inline-block">
-										<button
-											className="py-4 px-6 w-full text-white font-semibold border border-blue rounded-xl shadow-4xl focus:ring focus:ring-blue bg-blue hover:bg-blue transition-all ease-in-out duration-[0.5s]"
-											type="button"
-										>
-											Read Our Full FAQs
-										</button>
-									</div>
-								</div>
-							</div>
-							<div className="w-full md:w-1/2 p-8">
-								<div className="md:max-w-2xl ml-auto">
-									<div className="flex flex-wrap">
-										<div className="w-full">
-											<div className="pb-5 border-b border-grey">
-												<div className="flex flex-wrap -m-1.5">
-													<div className="w-auto p-1.5">
-														<svg
-															className="relative top-1"
-															width="15"
-															height="15"
-															viewbox="0 0 15 15"
-															fill="none"
-															xmlns="http://www.w3.org/2000/svg"
-														>
-															<path
-																d="M5.14229 5.625C5.48549 4.89675 6.41152 4.375 7.50003 4.375C8.88075 4.375 10 5.21447 10 6.25C10 7.12465 9.20152 7.85942 8.12142 8.06662C7.78242 8.13166 7.50003 8.40482 7.50003 8.75M7.5 10.625H7.50625M13.125 7.5C13.125 10.6066 10.6066 13.125 7.5 13.125C4.3934 13.125 1.875 10.6066 1.875 7.5C1.875 4.3934 4.3934 1.875 7.5 1.875C10.6066 1.875 13.125 4.3934 13.125 7.5Z"
-																stroke="#4F46E5"
-																stroke-width="1.5"
-																stroke-linecap="round"
-																stroke-linejoin="round"
-															></path>
-														</svg>
-													</div>
-													<div className="flex-1 p-1.5">
-														<h3 className="mb-4 font-semibold leading-normal">
-															How does App help people in problems?
-														</h3>
-														<p className="mb-5 text-grey font-medium leading-relaxed">
-															Lorem ipsum dolor sit amet, consectetur adipiscing
-															elit. Volutpat, tempor condimentum commodo
-															tincidunt sit dictumst. Eu placerat to a arcu at
-															sem vitae eros, purus nonprofit organizations for
-															all,
-														</p>
-														<p className="text-grey font-medium leading-relaxed">
-															Lorem ipsum dolor sit amet, to the consectr
-															adipiscing elit. Volutpat to the full tempor to
-															the condimentum vitae vel purus.
-														</p>
-													</div>
-													<div className="w-auto p-1.5">
-														<a href="#">
-															<svg
-																className="relative top-1"
-																width="15"
-																height="15"
-																viewbox="0 0 15 15"
-																fill="none"
-																xmlns="http://www.w3.org/2000/svg"
-															>
-																<path
-																	fill-rule="evenodd"
-																	clip-rule="evenodd"
-																	d="M3.21967 3.21967C3.51256 2.92678 3.98744 2.92678 4.28033 3.21967L7.5 6.43934L10.7197 3.21967C11.0126 2.92678 11.4874 2.92678 11.7803 3.21967C12.0732 3.51256 12.0732 3.98744 11.7803 4.28033L8.56066 7.5L11.7803 10.7197C12.0732 11.0126 12.0732 11.4874 11.7803 11.7803C11.4874 12.0732 11.0126 12.0732 10.7197 11.7803L7.5 8.56066L4.28033 11.7803C3.98744 12.0732 3.51256 12.0732 3.21967 11.7803C2.92678 11.4874 2.92678 11.0126 3.21967 10.7197L6.43934 7.5L3.21967 4.28033C2.92678 3.98744 2.92678 3.51256 3.21967 3.21967Z"
-																	fill="black"
-																></path>
-															</svg>
-														</a>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div className="w-full">
-											<a className="block border-b border-grey" href="#">
-												<div className="flex flex-wrap justify-between py-7 -m-1.5">
-													<div className="flex-1 p-1.5">
-														<div className="flex flex-wrap -m-1.5">
-															<div className="w-auto p-1.5">
-																<svg
-																	className="relative top-1"
-																	width="15"
-																	height="15"
-																	viewbox="0 0 15 15"
-																	fill="none"
-																	xmlns="http://www.w3.org/2000/svg"
-																>
-																	<path
-																		d="M5.14229 5.625C5.48549 4.89675 6.41152 4.375 7.50003 4.375C8.88075 4.375 10 5.21447 10 6.25C10 7.12465 9.20152 7.85942 8.12142 8.06662C7.78242 8.13166 7.50003 8.40482 7.50003 8.75M7.5 10.625H7.50625M13.125 7.5C13.125 10.6066 10.6066 13.125 7.5 13.125C4.3934 13.125 1.875 10.6066 1.875 7.5C1.875 4.3934 4.3934 1.875 7.5 1.875C10.6066 1.875 13.125 4.3934 13.125 7.5Z"
-																		stroke="#4F46E5"
-																		stroke-width="1.5"
-																		stroke-linecap="round"
-																		stroke-linejoin="round"
-																	></path>
-																</svg>
-															</div>
-															<div className="flex-1 p-1.5">
-																<h3 className="font-semibold leading-normal">
-																	What happens if i go over my subscription
-																	limits?
-																</h3>
-															</div>
-														</div>
-													</div>
-													<div className="w-auto p-1.5">
-														<svg
-															className="relative top-1"
-															width="15"
-															height="15"
-															viewbox="0 0 15 15"
-															fill="none"
-															xmlns="http://www.w3.org/2000/svg"
-														>
-															<path
-																fill-rule="evenodd"
-																clip-rule="evenodd"
-																d="M7.5 2.25C7.91421 2.25 8.25 2.58579 8.25 3V6.75H12C12.4142 6.75 12.75 7.08579 12.75 7.5C12.75 7.91421 12.4142 8.25 12 8.25H8.25V12C8.25 12.4142 7.91421 12.75 7.5 12.75C7.08579 12.75 6.75 12.4142 6.75 12V8.25H3C2.58579 8.25 2.25 7.91421 2.25 7.5C2.25 7.08579 2.58579 6.75 3 6.75L6.75 6.75V3C6.75 2.58579 7.08579 2.25 7.5 2.25Z"
-																fill="black"
-															></path>
-														</svg>
-													</div>
-												</div>
-											</a>
-										</div>
-										<div className="w-full">
-											<a className="block border-b border-grey" href="#">
-												<div className="flex flex-wrap justify-between py-7 -m-1.5">
-													<div className="flex-1 p-1.5">
-														<div className="flex flex-wrap -m-1.5">
-															<div className="w-auto p-1.5">
-																<svg
-																	className="relative top-1"
-																	width="15"
-																	height="15"
-																	viewbox="0 0 15 15"
-																	fill="none"
-																	xmlns="http://www.w3.org/2000/svg"
-																>
-																	<path
-																		d="M5.14229 5.625C5.48549 4.89675 6.41152 4.375 7.50003 4.375C8.88075 4.375 10 5.21447 10 6.25C10 7.12465 9.20152 7.85942 8.12142 8.06662C7.78242 8.13166 7.50003 8.40482 7.50003 8.75M7.5 10.625H7.50625M13.125 7.5C13.125 10.6066 10.6066 13.125 7.5 13.125C4.3934 13.125 1.875 10.6066 1.875 7.5C1.875 4.3934 4.3934 1.875 7.5 1.875C10.6066 1.875 13.125 4.3934 13.125 7.5Z"
-																		stroke="#4F46E5"
-																		stroke-width="1.5"
-																		stroke-linecap="round"
-																		stroke-linejoin="round"
-																	></path>
-																</svg>
-															</div>
-															<div className="flex-1 p-1.5">
-																<h3 className="font-semibold leading-normal">
-																	Why we are so confident about the future?
-																</h3>
-															</div>
-														</div>
-													</div>
-													<div className="w-auto p-1.5">
-														<svg
-															className="relative top-1"
-															width="15"
-															height="15"
-															viewbox="0 0 15 15"
-															fill="none"
-															xmlns="http://www.w3.org/2000/svg"
-														>
-															<path
-																fill-rule="evenodd"
-																clip-rule="evenodd"
-																d="M7.5 2.25C7.91421 2.25 8.25 2.58579 8.25 3V6.75H12C12.4142 6.75 12.75 7.08579 12.75 7.5C12.75 7.91421 12.4142 8.25 12 8.25H8.25V12C8.25 12.4142 7.91421 12.75 7.5 12.75C7.08579 12.75 6.75 12.4142 6.75 12V8.25H3C2.58579 8.25 2.25 7.91421 2.25 7.5C2.25 7.08579 2.58579 6.75 3 6.75L6.75 6.75V3C6.75 2.58579 7.08579 2.25 7.5 2.25Z"
-																fill="black"
-															></path>
-														</svg>
-													</div>
-												</div>
-											</a>
-										</div>
-										<div className="w-full">
-											<a className="block border-b border-grey" href="#">
-												<div className="flex flex-wrap justify-between py-7 -m-1.5">
-													<div className="flex-1 p-1.5">
-														<div className="flex flex-wrap -m-1.5">
-															<div className="w-auto p-1.5">
-																<svg
-																	className="relative top-1"
-																	width="15"
-																	height="15"
-																	viewbox="0 0 15 15"
-																	fill="none"
-																	xmlns="http://www.w3.org/2000/svg"
-																>
-																	<path
-																		d="M5.14229 5.625C5.48549 4.89675 6.41152 4.375 7.50003 4.375C8.88075 4.375 10 5.21447 10 6.25C10 7.12465 9.20152 7.85942 8.12142 8.06662C7.78242 8.13166 7.50003 8.40482 7.50003 8.75M7.5 10.625H7.50625M13.125 7.5C13.125 10.6066 10.6066 13.125 7.5 13.125C4.3934 13.125 1.875 10.6066 1.875 7.5C1.875 4.3934 4.3934 1.875 7.5 1.875C10.6066 1.875 13.125 4.3934 13.125 7.5Z"
-																		stroke="#4F46E5"
-																		stroke-width="1.5"
-																		stroke-linecap="round"
-																		stroke-linejoin="round"
-																	></path>
-																</svg>
-															</div>
-															<div className="flex-1 p-1.5">
-																<h3 className="font-semibold leading-normal">
-																	Where&rsquo;s the funding goes?
-																</h3>
-															</div>
-														</div>
-													</div>
-													<div className="w-auto p-1.5">
-														<svg
-															className="relative top-1"
-															width="15"
-															height="15"
-															viewbox="0 0 15 15"
-															fill="none"
-															xmlns="http://www.w3.org/2000/svg"
-														>
-															<path
-																fill-rule="evenodd"
-																clip-rule="evenodd"
-																d="M7.5 2.25C7.91421 2.25 8.25 2.58579 8.25 3V6.75H12C12.4142 6.75 12.75 7.08579 12.75 7.5C12.75 7.91421 12.4142 8.25 12 8.25H8.25V12C8.25 12.4142 7.91421 12.75 7.5 12.75C7.08579 12.75 6.75 12.4142 6.75 12V8.25H3C2.58579 8.25 2.25 7.91421 2.25 7.5C2.25 7.08579 2.58579 6.75 3 6.75L6.75 6.75V3C6.75 2.58579 7.08579 2.25 7.5 2.25Z"
-																fill="black"
-															></path>
-														</svg>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section className="py-32 bg-white overflow-hidden">
-					<div className="container px-4 mx-auto">
-						<div className="flex flex-wrap -m-8">
-							<div className="w-full md:w-5/12 p-8">
-								<div className="flex flex-col justify-between h-full">
-									<div className="mb-8">
-										<h2 className="mb-5 text-6xl md:text-7xl font-bold font-heading tracking-px-n leading-tight">
-											Our Latest News and Articles
-										</h2>
-										<p className="text-gray-600 font-medium leading-relaxed">
-											Lorem ipsum dolor sit amet, consectetury adipiscing elit.
-											Volutpat, tempor to after condimentum commodo
-										</p>
-									</div>
-									<a
-										className="inline-flex items-center text-indigo-600 hover:text-indigo-700 leading-normal"
-										href="#"
-									>
-										<span className="mr-2 font-semibold">See all articles</span>
-										<svg
-											width="18"
-											height="18"
-											viewbox="0 0 18 18"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<path
-												d="M10.5 3.75L15.75 9M15.75 9L10.5 14.25M15.75 9L2.25 9"
-												stroke="currentColor"
-												stroke-width="2"
-												stroke-linecap="round"
-												stroke-linejoin="round"
-											></path>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<div className="w-full md:flex-1 p-8">
-								<div className="flex flex-wrap -m-3">
-									<div className="w-full md:w-1/2 p-3">
-										<div className="max-w-sm mx-auto">
-											<div className="mb-6 max-w-max overflow-hidden rounded-xl">
-												<img
-													className="transform hover:scale-105 transition ease-in-out duration-1000"
-													src="flaro-assets/images/blog/blog-wide.png"
-													alt=""
-												/>
-											</div>
-											<p className="mb-4 font-sans max-w-max px-3 py-1.5 text-sm text-indigo-600 font-semibold bg-indigo-50 uppercase rounded-md">
-												Business
-											</p>
-											<a
-												className="mb-2 inline-block hover:text-gray-800 hover:underline"
-												href="#"
-											>
-												<h3 className="text-xl font-bold font-heading leading-normal">
-													How to handle your good employee for the business.
-												</h3>
-											</a>
-											<p className="text-gray-600 font-medium leading-relaxed">
-												Lorem ipsum dolor sit amet, consectetury of a adipiscing
-												elit. Volutpat to a main.
-											</p>
-										</div>
-									</div>
-									<div className="w-full md:w-1/2 p-3">
-										<div className="max-w-sm mx-auto">
-											<div className="mb-6 max-w-max overflow-hidden rounded-xl">
-												<img
-													className="transform hover:scale-105 transition ease-in-out duration-1000"
-													src="flaro-assets/images/blog/blog-wide2.png"
-													alt=""
-												/>
-											</div>
-											<p className="mb-4 font-sans max-w-max px-3 py-1.5 text-sm text-indigo-600 font-semibold bg-indigo-50 uppercase rounded-md">
-												Productivity
-											</p>
-											<a
-												className="mb-2 inline-block hover:text-gray-800 hover:underline"
-												href="#"
-											>
-												<h3 className="text-xl font-bold font-heading leading-normal">
-													How startup company can help you to grow as a
-													developer.
-												</h3>
-											</a>
-											<p className="text-gray-600 font-medium leading-relaxed">
-												Lorem ipsum dolor sit amet, consectetury of a adipiscing
-												elit. Volutpat to a main.
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
 				<section className="pt-20 pb-32 overflow-hidden">
 					<div className="container mx-auto px-4">
 						<div className="md:max-w-lg mx-auto text-center mb-20">
-							<h2 className="mb-4 font-heading font-semibold text-gray-900 text-6xl sm:text-7xl">
+							<h2 className="mb-4 font-heading font-semibold text-grey text-6xl sm:text-7xl">
 								Latest from our blog
 							</h2>
 							<p className="text-lg text-gray-500">
@@ -2299,7 +1385,7 @@ const Prices = ({
 											alt=""
 										/>
 									</div>
-									<p className="mb-4 font-heading font-medium text-xl text-gray-900 group-hover:underline">
+									<p className="mb-4 font-heading font-medium text-xl text-grey group-hover:underline">
 										You will never believe these bizarre truth of travel.
 									</p>
 									<h2 className="font-heading font-medium text-xs uppercase text-gray-500 tracking-px">
@@ -2316,7 +1402,7 @@ const Prices = ({
 											alt=""
 										/>
 									</div>
-									<p className="mb-4 font-heading font-medium text-xl text-gray-900 group-hover:underline">
+									<p className="mb-4 font-heading font-medium text-xl text-grey group-hover:underline">
 										You will never believe these bizarre truth of travel.
 									</p>
 									<h2 className="font-heading font-medium text-xs uppercase text-gray-500 tracking-px">
@@ -2333,7 +1419,7 @@ const Prices = ({
 											alt=""
 										/>
 									</div>
-									<p className="mb-4 font-heading font-medium text-xl text-gray-900 group-hover:underline">
+									<p className="mb-4 font-heading font-medium text-xl text-grey group-hover:underline">
 										You will never believe these bizarre truth of travel.
 									</p>
 									<h2 className="font-heading font-medium text-xs uppercase text-gray-500 tracking-px">
@@ -2365,7 +1451,7 @@ const Prices = ({
 									<div className="absolute bottom-0 left-0 w-full p-2">
 										<div
 											className="bg-black bg-opacity-80 w-full py-4 px-5 rounded-lg"
-											style="backdrop-filter: blur(3px);"
+											style={{backdropFilter: "blur(3px)"}}
 										>
 											<h3 className="mb-1 text-lg text-white font-bold leading-snug">
 												Floyd Miles
@@ -2385,7 +1471,7 @@ const Prices = ({
 									<div className="absolute bottom-0 left-0 w-full p-2">
 										<div
 											className="bg-black bg-opacity-80 w-full py-4 px-5 rounded-lg"
-											style="backdrop-filter: blur(3px);"
+											style={{backdropFilter: "blur(3px)"}}
 										>
 											<div className="mb-4 pb-3 border-b border-gray-700">
 												<h3 className="mb-1 text-lg text-white font-bold leading-snug">
@@ -2402,7 +1488,7 @@ const Prices = ({
 														<svg
 															width="13"
 															height="11"
-															viewbox="0 0 13 11"
+															viewBox="0 0 13 11"
 															fill="none"
 															xmlns="http://www.w3.org/2000/svg"
 														>
@@ -2421,7 +1507,7 @@ const Prices = ({
 														<svg
 															width="8"
 															height="14"
-															viewbox="0 0 8 14"
+															viewBox="0 0 8 14"
 															fill="none"
 															xmlns="http://www.w3.org/2000/svg"
 														>
@@ -2440,7 +1526,7 @@ const Prices = ({
 														<svg
 															width="17"
 															height="16"
-															viewbox="0 0 17 16"
+															viewBox="0 0 17 16"
 															fill="none"
 															xmlns="http://www.w3.org/2000/svg"
 														>
@@ -2474,7 +1560,7 @@ const Prices = ({
 									<div className="absolute bottom-0 left-0 w-full p-2">
 										<div
 											className="bg-black bg-opacity-80 w-full py-4 px-5 rounded-lg"
-											style="backdrop-filter: blur(3px);"
+											style={{backdropFilter: "blur(3px)"}}
 										>
 											<h3 className="mb-1 text-lg text-white font-bold leading-snug">
 												Devon Lane
@@ -2496,7 +1582,7 @@ const Prices = ({
 									<div className="absolute bottom-0 left-0 w-full p-2">
 										<div
 											className="bg-black bg-opacity-80 w-full py-4 px-5 rounded-lg"
-											style="backdrop-filter: blur(3px);"
+											style={{backdropFilter: "blur(3px)"}}
 										>
 											<h3 className="mb-1 text-lg text-white font-bold leading-snug">
 												Jane Cooper
@@ -2654,7 +1740,7 @@ const Prices = ({
 																value=""
 															/>
 															<label
-																className="ml-2 text-sm text-gray-900 font-medium"
+																className="ml-2 text-sm text-grey font-medium"
 																for="default-checkbox"
 															>
 																<span>By signing up, I agree to the</span>
