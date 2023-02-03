@@ -1,10 +1,28 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import Image from "next/image";
 import {motion} from "framer-motion";
-import {fadeInUp} from "../animations/animations";
+import {fadeIn, stagger} from "../animations/animations";
+import BlogCard from "./BlogCard";
 
 const BlogBanner = (props) => {
+	/* Check if paragraph content is null
+	 And Displays content if it null */
+	function isParagraphContent(isParagraphContent) {
+		let contentStyling;
+		if (isParagraphContent === null) {
+			contentStyling = "hidden mb-5 mb-11 text-medium text-darkGrey font-[400]";
+		} else {
+			contentStyling = "block mb-11 text-medium text-darkGrey font-[400]";
+		}
+		return contentStyling;
+	}
+
+	function createParagraphMarkup(paragraphContent) {
+		return {
+			__html: DOMPurify.sanitize(paragraphContent),
+		};
+	}
+
 	return (
 		<section className="py-32 bg-white overflow-hidden">
 			<div className="container px-4 mx-auto">
@@ -13,91 +31,57 @@ const BlogBanner = (props) => {
 						<div className="flex flex-col justify-between h-full">
 							<div className="mb-8">
 								<h2 className="mb-5 font-[600] text-3xl lg:text-5xl">
-									Our Latest News and Articles
+									{props?.title}
 								</h2>
-								<p className="text-darkGrey text-medium">
-									Lorem ipsum dolor sit amet, consectetury adipiscing elit.
-									Volutpat, tempor to after condimentum commodo
-								</p>
+								<motion.div
+									variants={fadeIn}
+									className={isParagraphContent(props?.paragraph)}
+									dangerouslySetInnerHTML={createParagraphMarkup(
+										props?.paragraph
+									)}
+								/>
 							</div>
-							<a
-								className="inline-flex items-center text-pink hover:text-yellow leading-normal transition-all ease-in-out duration-[0.5s]"
-								href="#"
+							<Link
+								href={`${props?.buttonLink?.url}`}
+								target={`${props?.buttonLink?.target}`}
 							>
-								<span className="mr-2 font-semibold">See all articles</span>
-								<svg
-									width="18"
-									height="18"
-									viewBox="0 0 18 18"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path
-										d="M10.5 3.75L15.75 9M15.75 9L10.5 14.25M15.75 9L2.25 9"
-										stroke="currentColor"
-										strokeWidth="2"
-										strokeLinecap="round"
-										strokeLinejoin="round"
-									></path>
-								</svg>
-							</a>
+								<a className="inline-flex items-center text-pink hover:text-yellow leading-normal transition-all ease-in-out duration-[0.5s]">
+									<span className="mr-2 font-semibold">
+										{props?.buttonLink?.title}
+									</span>
+									<svg
+										width="18"
+										height="18"
+										viewBox="0 0 18 18"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M10.5 3.75L15.75 9M15.75 9L10.5 14.25M15.75 9L2.25 9"
+											stroke="currentColor"
+											strokeWidth="2"
+											strokeLinecap="round"
+											strokeLinejoin="round"
+										></path>
+									</svg>
+								</a>
+							</Link>
 						</div>
 					</div>
 					<div className="w-full md:flex-1 p-8">
-						<div className="flex flex-wrap -m-3">
-							<div className="w-full md:w-1/2 p-3">
-								<div className="max-w-sm mx-auto">
-									<div className="mb-6 overflow-hidden rounded-lg">
-										<img
-											className="w-full h-[250px] object-cover transform hover:scale-105 transition ease-in-out duration-1000"
-											src="http://kandyslaunderette.local/wp-content/uploads/2023/01/pexels-cottonbro-studio-4880411-min-scaled.jpg"
-											alt=""
-										/>
-									</div>
-									<p className="mb-4 max-w-max px-3 py-1.5 text-sm text-white font-semibold bg-blue uppercase rounded-lg">
-										Productivity
-									</p>
-									<a
-										className="mb-2 inline-block hover:text-pink hover:underline transition-all ease-in-out duration-[0.5s]"
-										href="#"
-									>
-										<h3 className="text-xl font-[600] leading-normal">
-											How startup company can help you to grow as a developer.
-										</h3>
-									</a>
-									<p className="text-darkGrey text-medium">
-										Lorem ipsum dolor sit amet, consectetury of a adipiscing
-										elit. Volutpat to a main.
-									</p>
-								</div>
-							</div>
-							<div className="w-full md:w-1/2 p-3">
-								<div className="max-w-sm mx-auto">
-									<div className="mb-6 overflow-hidden rounded-lg">
-										<img
-											className="w-full h-[250px] object-cover transform hover:scale-105 transition ease-in-out duration-1000"
-											src="http://kandyslaunderette.local/wp-content/uploads/2023/01/pexels-anastasia-shuraeva-8083846-scaled.jpg"
-											alt=""
-										/>
-									</div>
-									<p className="mb-4 max-w-max px-3 py-1.5 text-sm text-white font-semibold bg-blue uppercase rounded-lg">
-										Productivity
-									</p>
-									<a
-										className="mb-2 inline-block hover:text-pink hover:underline transition-all ease-in-out duration-[0.5s]"
-										href="#"
-									>
-										<h3 className="text-xl font-[600] leading-normal">
-											How startup company can help you to grow as a developer.
-										</h3>
-									</a>
-									<p className="text-darkGrey text-medium">
-										Lorem ipsum dolor sit amet, consectetury of a adipiscing
-										elit. Volutpat to a main.
-									</p>
-								</div>
-							</div>
-						</div>
+						<motion.div variants={stagger} className="flex flex-row -m-3">
+							{/* Array Loop */}
+							{props?.latestTwoPosts.map((keys) => (
+								<BlogCard
+									Key={props?.id}
+									link={keys?.node?.link}
+									title={keys?.node?.title}
+									paragraph={keys?.node?.content}
+									image={keys?.node?.featuredImage?.node}
+									categories={keys?.node?.categories?.nodes[0]?.name}
+								/>
+							))}
+						</motion.div>
 					</div>
 				</div>
 			</div>

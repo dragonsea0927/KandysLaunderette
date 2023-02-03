@@ -3,6 +3,7 @@ import Link from "next/link";
 import {gql} from "@apollo/client";
 import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
+import {getLatestTwoPosts} from "../lib/blogBannerPosts";
 import {getThemesOptionsContent} from "../lib/themesOptions";
 import {
 	getCommercialServicesMenu,
@@ -27,9 +28,10 @@ import TwitterTestimonialGrid from "../components/TwitterTestimonialGrid";
 const Prices = ({
 	seo,
 	pageTitle,
-	CommercialServicesMenuLinks,
+	latestTwoPosts,
 	pricesPageContent,
 	themesOptionsContent,
+	CommercialServicesMenuLinks,
 	IndividualServicesMenuLinks,
 }) => {
 	return (
@@ -921,7 +923,12 @@ const Prices = ({
 				/>
 
 				{/* <!--===== BLOG BANNER =====--> */}
-				<BlogBanner />
+				<BlogBanner
+					title={`Our Latest News and Articles`}
+					paragraph={`<p>Discuss your needs with our team of experts! Contact us today. And If you book with Kandys Launderette, you can be sure that we work towards making your day an enjoyable and stress free occasion.</p>`}
+					buttonLink={pricesPageContent?.contactBanner?.buttonLink}
+					latestTwoPosts={latestTwoPosts?.latestTwoPosts}
+				/>
 
 				{/* <!--===== REINVENTING THE FUTURE =====--> */}
 				<ImageTextBulletPoints
@@ -1574,12 +1581,14 @@ export async function getStaticProps() {
 		query: getPricesPageContent,
 	});
 
+	const latestTwoPosts = await getLatestTwoPosts();
 	const CommercialServicesMenuLinks = await getCommercialServicesMenu();
 	const themesOptionsContent = await getThemesOptionsContent();
 	const IndividualServicesMenuLinks = await getIndividualServicesMenu();
 
 	return {
 		props: {
+			latestTwoPosts,
 			CommercialServicesMenuLinks,
 			IndividualServicesMenuLinks,
 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
