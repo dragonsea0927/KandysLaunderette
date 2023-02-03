@@ -1,4 +1,5 @@
 import {useState} from "react";
+import DOMPurify from "isomorphic-dompurify";
 
 const FAQCard = (props) => {
 	/* Check if paragraph content is null

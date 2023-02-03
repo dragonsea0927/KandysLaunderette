@@ -10,7 +10,7 @@ import {
 } from "../lib/MenuLinks";
 
 // Components
-import FAQ from "../components/FAQ";
+import FAQTwo from "../components/FAQTwo";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import MetaTag from "../components/Meta/MetaTag";
@@ -140,6 +140,14 @@ export default function Home({
 					themesOptions={themesOptionsContent?.themesOptions}
 					buttonLink={homePageContent?.contactBannerTwo?.buttonLink}
 					backgroundImage={homePageContent?.contactBannerTwo?.image?.sourceUrl}
+				/>
+
+				{/* <!--===== FAQ TWO =====--> */}
+				<FAQTwo
+					title={homePageContent?.faq?.title}
+					paragraph={homePageContent?.faq?.paragraph}
+					buttonLink={homePageContent?.faq?.buttonLink}
+					faqContent={homePageContent?.faq?.faqContent}
 				/>
 
 				{/* <!--===== FAQ =====--> */}
@@ -723,7 +731,12 @@ export async function getStaticProps() {
 							}
 							faq {
 								title
-								subtitle
+								paragraph
+								buttonLink {
+									url
+									title
+									target
+								}
 								faqContent {
 									title
 									paragraph

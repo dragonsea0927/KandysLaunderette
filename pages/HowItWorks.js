@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {gql} from "@apollo/client";
 import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
@@ -186,6 +187,79 @@ const HowItWorks = ({
 					subtitle={howItWorksPageContent?.fourGridContent?.subtitle}
 					gridContent={howItWorksPageContent?.fourGridContent?.gridContent}
 				/> */}
+
+				<section className="pt-20 pb-32 overflow-hidden">
+					<div className="container mx-auto px-4">
+						<div className="md:max-w-lg mx-auto text-center mb-20">
+							<h2 className="text-center font-[600] text-3xl lg:text-5xl py-4 leading-14">
+								Latest from our blog
+							</h2>
+							<p className="text-medium text-grey text-center font-[400]">
+								Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+								amet sint. Velit officia consequat duis enim.
+							</p>
+						</div>
+						<div className="flex flex-wrap -m-9">
+							<div className="w-full md:w-1/3 p-9">
+								<Link href={`/`} target={``}>
+									<a className="group" href="#">
+										<div className="group flex flex-col mb-5 overflow-hidden rounded-xl">
+											<img
+												className="w-full h-[300px] object-cover object-center transform group-hover:scale-110 transition ease-out duration-500"
+												src="http://kandyslaunderette.local/wp-content/uploads/2023/01/pexels-ron-lach-10557476-min-scaled.jpg"
+												alt=""
+											/>
+										</div>
+										<h3 className="mb-4 font-medium text-xl text-grey group-hover:underline group-hover:text-pink transition-all ease-in-out duration-[0.5s]">
+											You will never believe these bizarre truth of travel.
+										</h3>
+										<h2 className="font-medium text-xs uppercase text-black tracking-px">
+											Technology . 4 min read
+										</h2>
+									</a>
+								</Link>
+							</div>
+							<div className="w-full md:w-1/3 p-9">
+								<Link href={`/`} target={``}>
+									<a className="group" href="#">
+										<div className="group flex flex-col mb-5 overflow-hidden rounded-xl">
+											<img
+												className="w-full h-[300px] object-cover object-center transform group-hover:scale-110 transition ease-out duration-500"
+												src="http://kandyslaunderette.local/wp-content/uploads/2023/01/no-revisions-qYODM2MGLWs-unsplash-scaled-e1674906512220.jpg"
+												alt=""
+											/>
+										</div>
+										<h3 className="mb-4 font-medium text-xl text-grey group-hover:underline group-hover:text-pink transition-all ease-in-out duration-[0.5s]">
+											You will never believe these bizarre truth of travel.
+										</h3>
+										<h2 className="font-medium text-xs uppercase text-black tracking-px">
+											Technology . 4 min read
+										</h2>
+									</a>
+								</Link>
+							</div>
+							<div className="w-full md:w-1/3 p-9">
+								<Link href={`/`} target={``}>
+									<a className="group" href="#">
+										<div className="group flex flex-col mb-5 overflow-hidden rounded-xl">
+											<img
+												className="w-full h-[300px] object-cover object-center transform group-hover:scale-110 transition ease-out duration-500"
+												src="http://kandyslaunderette.local/wp-content/uploads/2023/01/pexels-polina-tankilevitch-3875082-scaled.jpg"
+												alt=""
+											/>
+										</div>
+										<h3 className="mb-4 font-medium text-xl text-grey group-hover:underline group-hover:text-pink transition-all ease-in-out duration-[0.5s]">
+											You will never believe these bizarre truth of travel.
+										</h3>
+										<h2 className="font-medium text-xs uppercase text-black tracking-px">
+											Technology . 4 min read
+										</h2>
+									</a>
+								</Link>
+							</div>
+						</div>
+					</div>
+				</section>
 
 				{/* <!--===== OUT STORE LOCATION =====--> */}
 				<StoreLocation
