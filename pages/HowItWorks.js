@@ -26,6 +26,7 @@ import ImageTextBulletPoints from "../components/ImageTextBulletPoints";
 import TitleParagraphGridContentTwo from "../components/TitleParagraphGridContentTwo";
 import SignUp from "../components/SignUp";
 import Blogs from "../components/Blogs";
+import PricingPlans from "../components/PricingPlans";
 
 const HowItWorks = ({
 	seo,
@@ -116,6 +117,15 @@ const HowItWorks = ({
 					gridContent={howItWorksPageContent?.ourServices?.gridContent}
 				/>
 
+				{/* <!--===== REINVENTING THE FUTURE =====--> */}
+				<TitleParagraphVideo
+					title={howItWorksPageContent?.titleParagraphVideo?.title}
+					subtitle={howItWorksPageContent?.titleParagraphVideo?.subtitle}
+					paragraph={howItWorksPageContent?.titleParagraphVideo?.paragraph}
+					buttonLink={howItWorksPageContent?.titleParagraphVideo?.buttonLink}
+					video={`/videos/pexels-tima-miroshnichenko-8756819.mp4`}
+				/>
+
 				{/* <!--===== SIGN UP =====--> */}
 				<SignUp
 					title={howItWorksPageContent?.signUp?.title}
@@ -125,14 +135,8 @@ const HowItWorks = ({
 					backgroundColor={howItWorksPageContent?.signUp?.backgroundColor}
 				/>
 
-				{/* <!--===== REINVENTING THE FUTURE =====--> */}
-				<TitleParagraphVideo
-					title={howItWorksPageContent?.titleParagraphVideo?.title}
-					subtitle={howItWorksPageContent?.titleParagraphVideo?.subtitle}
-					paragraph={howItWorksPageContent?.titleParagraphVideo?.paragraph}
-					buttonLink={howItWorksPageContent?.titleParagraphVideo?.buttonLink}
-					video={`/videos/pexels-tima-miroshnichenko-8756819.mp4`}
-				/>
+				{/* <!--===== PRICING PLANS =====--> */}
+				<PricingPlans />
 
 				{/* <!--===== REINVENTING THE FUTURE =====--> */}
 				<ImageTextBulletPoints

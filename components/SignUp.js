@@ -71,7 +71,7 @@ const SignUp = (props) => {
 							<div className="max-w-sm mx-auto lg:mr-0 lg:ml-auto">
 								<motion.div
 									variants={fadeInUp}
-									className="mb-6 py-8 px-6 bg-white shadow rounded-3xl text-center"
+									className="mb-6 py-8 px-6 bg-white shadow rounded-3xl text-center border border-pink"
 								>
 									<form action="">
 										<div className="mb-6">

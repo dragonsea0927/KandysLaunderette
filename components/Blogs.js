@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
 import {motion} from "framer-motion";
 import {fadeIn, stagger} from "../animations/animations";
 import BlogCardTwo from "./BlogCardTwo";
@@ -11,10 +10,10 @@ const Blogs = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full lg:max-w-[75rem] mx-auto mb-11 text-medium text-darkGrey text-center font-[400]";
+				"hidden w-full lg:max-w-[75rem] mx-auto py-8 px-4 text-medium text-darkGrey text-center font-[400]";
 		} else {
 			contentStyling =
-				"block w-full lg:max-w-[75rem] mx-auto mb-11 text-medium text-darkGrey text-center font-[400]";
+				"block w-full lg:max-w-[75rem] mx-auto py-8 px-4 text-medium text-darkGrey text-center font-[400]";
 		}
 		return contentStyling;
 	}

@@ -10,10 +10,10 @@ const TeamMembers = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden mt-4 mb-20 text-medium text-grey text-center font-[400] md:max-w-xl mx-auto";
+				"hidden text-medium text-grey py-8 px-4 text-center font-[400] md:max-w-xl mx-auto";
 		} else {
 			contentStyling =
-				"block mt-4 mb-20 text-medium text-grey text-center font-[400] md:max-w-xl mx-auto";
+				"block text-medium text-grey py-8 px-4 text-center font-[400] md:max-w-xl mx-auto";
 		}
 		return contentStyling;
 	}

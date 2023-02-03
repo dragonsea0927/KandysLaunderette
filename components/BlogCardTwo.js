@@ -20,14 +20,14 @@ const BlogCardTwo = (props) => {
 	function createParagraphMarkup(paragraphContent) {
 		const sanitizedContent = DOMPurify.sanitize(paragraphContent);
 		return {
-			__html: `${sanitizedContent.substring(0, 170)}...`,
+			__html: `${sanitizedContent.substring(0, 200)}...`,
 		};
 	}
 
 	return (
 		<div className="w-full md:w-1/3 p-9">
 			<Link href={`${props?.link}`}>
-				<a className="group" href="#">
+				<a className="group">
 					<div className="group flex flex-col mb-5 overflow-hidden rounded-xl">
 						<Image
 							width={500}
@@ -39,17 +39,19 @@ const BlogCardTwo = (props) => {
 							className="w-full h-[250px] rounded-lg object-cover transform hover:scale-105 transition ease-in-out duration-1000"
 						/>
 					</div>
-					<h3 className="mb-4 font-medium text-xl text-black group-hover:underline group-hover:text-pink transition-all ease-in-out duration-[0.5s]">
-						{props?.title}
-					</h3>
-					<motion.div
-						variants={fadeIn}
-						className={isParagraphContent(props?.paragraph)}
-						dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
-					/>
-					<h5 className="font-medium text-xs uppercase text-black tracking-px">
-						{props?.categories}
-					</h5>
+					<div className="w-full flex flex-col justify-between gap-4">
+						<h3 className="mb-4 font-medium text-xl text-black group-hover:underline group-hover:text-pink transition-all ease-in-out duration-[0.5s]">
+							{props?.title}
+						</h3>
+						<motion.div
+							variants={fadeIn}
+							className={isParagraphContent(props?.paragraph)}
+							dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
+						/>
+						<h5 className="font-medium text-xs uppercase text-black tracking-px">
+							{props?.categories}
+						</h5>
+					</div>
 				</a>
 			</Link>
 		</div>
