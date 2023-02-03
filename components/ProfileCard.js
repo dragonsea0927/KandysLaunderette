@@ -1,4 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
+import Image from "next/image";
 import {motion} from "framer-motion";
 import {fadeInUp, stagger} from "../animations/animations";
 
@@ -7,9 +9,9 @@ const ProfileCard = (props) => {
 		<div className="w-full md:w-1/2 lg:w-1/4 p-3">
 			<div className="relative max-w-max mx-auto h-full overflow-hidden rounded-lg">
 				<img
-					className="h-full object-cover transform hover:scale-105 transition ease-in-out duration-1000"
 					src={`${props?.image?.sourceUrl}`}
 					alt={`${props?.image?.altText} Image`}
+					className="h-full h-full object-cover transform hover:scale-105 transition ease-in-out duration-1000"
 				/>
 				<div className="absolute bottom-0 left-0 w-full p-2">
 					<div
@@ -28,7 +30,7 @@ const ProfileCard = (props) => {
 						>
 							<motion.div variants={fadeInUp} className="w-auto p-2.5">
 								<Link href={`${props?.twitter}`}>
-									<a className="text-darkPink hover:text-fadedPink transition-all ease-in-out duration-[0.5s]">
+									<a className="text-white hover:text-fadedPink transition-all ease-in-out duration-[0.5s]">
 										<svg
 											width="13"
 											height="11"
@@ -46,7 +48,7 @@ const ProfileCard = (props) => {
 							</motion.div>
 							<motion.div variants={fadeInUp} className="w-auto p-2.5">
 								<Link href={`${props?.facebook}`}>
-									<a className="text-darkPink hover:text-fadedPink transition-all ease-in-out duration-[0.5s]">
+									<a className="text-white hover:text-fadedPink transition-all ease-in-out duration-[0.5s]">
 										<svg
 											width="8"
 											height="14"
@@ -64,7 +66,7 @@ const ProfileCard = (props) => {
 							</motion.div>
 							<motion.div variants={fadeInUp} className="w-auto p-2.5">
 								<Link href={`${props?.instagram}`}>
-									<a className="text-darkPink hover:text-fadedPink transition-all ease-in-out duration-[0.5s]">
+									<a className="text-white hover:text-fadedPink transition-all ease-in-out duration-[0.5s]">
 										<svg
 											width="17"
 											height="16"

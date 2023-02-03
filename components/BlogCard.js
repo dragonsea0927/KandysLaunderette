@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import {motion} from "framer-motion";
 import {fadeIn} from "../animations/animations";
+
 const BlogCard = (props) => {
 	/* Check if paragraph content is null
 	 And Displays content if it null */

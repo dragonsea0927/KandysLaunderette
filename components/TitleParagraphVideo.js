@@ -60,16 +60,18 @@ const TitleParagraphVideo = (props) => {
 						</div>
 						<div className="relative">
 							<div className="relative z-20 px-8 max-w-max mx-auto">
-								<Image
-									width={1000}
+								<video
+									loop
+									muted
+									autoPlay
+									controls=""
 									height={650}
-									objectFit="cover"
-									objectPosition="center"
-									alt={`Image`}
-									src={props?.backgroundImage}
-									className="w-full h-[650px] rounded-lg object-cover object-center"
-								/>
-								<Link href={` /Services`} target={``}>
+									width={1000}
+									className="rounded-lg w-full h-[650px] rounded-lg object-cover object-center"
+								>
+									<source src={props?.video} />
+								</video>
+								<Link href={`${props?.video}`} target={`blank`}>
 									<motion.a
 										variants={fadeIn}
 										className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 inline-block px-8 py-3.5 text-base text-center text-white font-[600] cursor-pointer bg-pink hover:bg-fadedPink focus:ring-4 focus:ring-fadedPink rounded-full"

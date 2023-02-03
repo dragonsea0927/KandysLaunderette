@@ -64,8 +64,8 @@ const TextImage = (props) => {
 							height={650}
 							objectFit="cover"
 							objectPosition="center"
-							alt={`${props?.image?.altText} Image`}
 							src={`${props?.image?.sourceUrl}`}
+							alt={`${props?.image?.altText} Image`}
 							className="w-full h-[650px] rounded-full object-cover object-center"
 						/>
 					</motion.div>

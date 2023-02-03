@@ -2,6 +2,7 @@ import Link from "next/link";
 import {gql} from "@apollo/client";
 import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
+import {getLatestThreePosts} from "../lib/blogPosts";
 import {getThemesOptionsContent} from "../lib/themesOptions";
 import {
 	getCommercialServicesMenu,
@@ -24,14 +25,16 @@ import TitleParagraphVideo from "../components/TitleParagraphVideo";
 import ImageTextBulletPoints from "../components/ImageTextBulletPoints";
 import TitleParagraphGridContentTwo from "../components/TitleParagraphGridContentTwo";
 import SignUp from "../components/SignUp";
+import Blogs from "../components/Blogs";
 
 const HowItWorks = ({
 	seo,
 	pageTitle,
-	CommercialServicesMenuLinks,
-	howItWorksPageContent,
+	latestThreePosts,
 	themesOptionsContent,
+	howItWorksPageContent,
 	IndividualServicesMenuLinks,
+	CommercialServicesMenuLinks,
 }) => {
 	return (
 		<motion.div
@@ -113,14 +116,22 @@ const HowItWorks = ({
 					gridContent={howItWorksPageContent?.ourServices?.gridContent}
 				/>
 
+				{/* <!--===== SIGN UP =====--> */}
+				<SignUp
+					title={howItWorksPageContent?.signUp?.title}
+					paragraph={howItWorksPageContent?.signUp?.paragraph}
+					buttonLink={howItWorksPageContent?.signUp?.buttonLink}
+					// Display Options
+					backgroundColor={howItWorksPageContent?.signUp?.backgroundColor}
+				/>
+
 				{/* <!--===== REINVENTING THE FUTURE =====--> */}
 				<TitleParagraphVideo
 					title={howItWorksPageContent?.titleParagraphVideo?.title}
 					subtitle={howItWorksPageContent?.titleParagraphVideo?.subtitle}
 					paragraph={howItWorksPageContent?.titleParagraphVideo?.paragraph}
 					buttonLink={howItWorksPageContent?.titleParagraphVideo?.buttonLink}
-					video={`http://kandyslaunderette.local/wp-content/uploads/2023/01/pexels-karolina-grabowska-4959868-scaled.jpg`}
-					backgroundImage={`http://kandyslaunderette.local/wp-content/uploads/2023/01/pexels-karolina-grabowska-4959868-scaled.jpg`}
+					video={`/videos/pexels-tima-miroshnichenko-8756819.mp4`}
 				/>
 
 				{/* <!--===== REINVENTING THE FUTURE =====--> */}
@@ -135,14 +146,6 @@ const HowItWorks = ({
 					backgroundColor={
 						howItWorksPageContent?.imageTextBulletPoints?.backgroundColor
 					}
-				/>
-				{/* <!--===== SIGN UP =====--> */}
-				<SignUp
-					title={howItWorksPageContent?.signUp?.title}
-					paragraph={howItWorksPageContent?.signUp?.paragraph}
-					buttonLink={howItWorksPageContent?.signUp?.buttonLink}
-					// Display Options
-					backgroundColor={howItWorksPageContent?.signUp?.backgroundColor}
 				/>
 
 				{/* <!--===== FEATURE BANNER =====--> */}
@@ -181,85 +184,13 @@ const HowItWorks = ({
 					}
 				/>
 
-				{/* <!--===== REINVENTING THE FUTURE =====--> */}
-				{/* <FourGridContent
-					title={howItWorksPageContent?.fourGridContent?.title}
-					subtitle={howItWorksPageContent?.fourGridContent?.subtitle}
-					gridContent={howItWorksPageContent?.fourGridContent?.gridContent}
-				/> */}
-
-				<section className="pt-20 pb-32 overflow-hidden">
-					<div className="container mx-auto px-4">
-						<div className="md:max-w-lg mx-auto text-center mb-20">
-							<h2 className="text-center font-[600] text-3xl lg:text-5xl py-4 leading-14">
-								Latest from our blog
-							</h2>
-							<p className="text-medium text-grey text-center font-[400]">
-								Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-								amet sint. Velit officia consequat duis enim.
-							</p>
-						</div>
-						<div className="flex flex-wrap -m-9">
-							<div className="w-full md:w-1/3 p-9">
-								<Link href={`/`} target={``}>
-									<a className="group" href="#">
-										<div className="group flex flex-col mb-5 overflow-hidden rounded-xl">
-											<img
-												className="w-full h-[300px] object-cover object-center transform group-hover:scale-110 transition ease-out duration-500"
-												src="http://kandyslaunderette.local/wp-content/uploads/2023/01/pexels-ron-lach-10557476-min-scaled.jpg"
-												alt=""
-											/>
-										</div>
-										<h3 className="mb-4 font-medium text-xl text-grey group-hover:underline group-hover:text-pink transition-all ease-in-out duration-[0.5s]">
-											You will never believe these bizarre truth of travel.
-										</h3>
-										<h2 className="font-medium text-xs uppercase text-black tracking-px">
-											Technology . 4 min read
-										</h2>
-									</a>
-								</Link>
-							</div>
-							<div className="w-full md:w-1/3 p-9">
-								<Link href={`/`} target={``}>
-									<a className="group" href="#">
-										<div className="group flex flex-col mb-5 overflow-hidden rounded-xl">
-											<img
-												className="w-full h-[300px] object-cover object-center transform group-hover:scale-110 transition ease-out duration-500"
-												src="http://kandyslaunderette.local/wp-content/uploads/2023/01/no-revisions-qYODM2MGLWs-unsplash-scaled-e1674906512220.jpg"
-												alt=""
-											/>
-										</div>
-										<h3 className="mb-4 font-medium text-xl text-grey group-hover:underline group-hover:text-pink transition-all ease-in-out duration-[0.5s]">
-											You will never believe these bizarre truth of travel.
-										</h3>
-										<h2 className="font-medium text-xs uppercase text-black tracking-px">
-											Technology . 4 min read
-										</h2>
-									</a>
-								</Link>
-							</div>
-							<div className="w-full md:w-1/3 p-9">
-								<Link href={`/`} target={``}>
-									<a className="group" href="#">
-										<div className="group flex flex-col mb-5 overflow-hidden rounded-xl">
-											<img
-												className="w-full h-[300px] object-cover object-center transform group-hover:scale-110 transition ease-out duration-500"
-												src="http://kandyslaunderette.local/wp-content/uploads/2023/01/pexels-polina-tankilevitch-3875082-scaled.jpg"
-												alt=""
-											/>
-										</div>
-										<h3 className="mb-4 font-medium text-xl text-grey group-hover:underline group-hover:text-pink transition-all ease-in-out duration-[0.5s]">
-											You will never believe these bizarre truth of travel.
-										</h3>
-										<h2 className="font-medium text-xs uppercase text-black tracking-px">
-											Technology . 4 min read
-										</h2>
-									</a>
-								</Link>
-							</div>
-						</div>
-					</div>
-				</section>
+				{/* <!--===== BLOG =====--> */}
+				<Blogs
+					title={howItWorksPageContent?.blogs?.title}
+					paragraph={howItWorksPageContent?.blogs?.paragraph}
+					buttonLink={howItWorksPageContent?.blogs?.buttonLink}
+					latestThreePosts={latestThreePosts?.latestThreePosts}
+				/>
 
 				{/* <!--===== OUT STORE LOCATION =====--> */}
 				<StoreLocation
@@ -480,6 +411,15 @@ export async function getStaticProps() {
 									target
 								}
 							}
+							blogs {
+								title
+								paragraph
+								buttonLink {
+									url
+									title
+									target
+								}
+							}
 							ourLocation {
 								title
 								paragraph
@@ -495,12 +435,14 @@ export async function getStaticProps() {
 		query: getHowItWorksPageContent,
 	});
 
-	const CommercialServicesMenuLinks = await getCommercialServicesMenu();
+	const latestThreePosts = await getLatestThreePosts();
 	const themesOptionsContent = await getThemesOptionsContent();
+	const CommercialServicesMenuLinks = await getCommercialServicesMenu();
 	const IndividualServicesMenuLinks = await getIndividualServicesMenu();
 
 	return {
 		props: {
+			latestThreePosts,
 			CommercialServicesMenuLinks,
 			IndividualServicesMenuLinks,
 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
