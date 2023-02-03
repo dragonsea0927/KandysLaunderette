@@ -10,9 +10,9 @@ const TwitterGridCard = (props) => {
 	function isParagraphContent(isParagraphContent) {
 		let contentStyling;
 		if (isParagraphContent === null) {
-			contentStyling = "hidden text-base text-darkGrey font-[300]";
+			contentStyling = "hidden text-base text-darkGrey font-[400]";
 		} else {
-			contentStyling = "block text-base text-darkGrey font-[300]";
+			contentStyling = "block text-base text-darkGrey font-[400]";
 		}
 		return contentStyling;
 	}
@@ -62,7 +62,7 @@ const TwitterGridCard = (props) => {
 						className={isParagraphContent(props?.paragraph)}
 						dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 					/>
-					<p className="block font-[300] text-[#5ac3ff]">{props?.hashTags}</p>
+					<p className="block font-[400] text-[#5ac3ff]">{props?.hashTags}</p>
 				</blockquote>
 			</div>
 		</div>

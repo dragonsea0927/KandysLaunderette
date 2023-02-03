@@ -10,7 +10,7 @@ const BlogBanner = (props) => {
 	function isParagraphContent(isParagraphContent) {
 		let contentStyling;
 		if (isParagraphContent === null) {
-			contentStyling = "hidden mb-5 mb-11 text-medium text-darkGrey font-[400]";
+			contentStyling = "hidden mb-11 text-medium text-darkGrey font-[400]";
 		} else {
 			contentStyling = "block mb-11 text-medium text-darkGrey font-[400]";
 		}

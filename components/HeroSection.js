@@ -15,10 +15,10 @@ const HeroSection = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden mt-4 max-w-[40rem] text-white text-center sm:text-left text-base  w-full lg:max-w-[75rem] font-[300]";
+				"hidden mt-4 max-w-[40rem] text-white text-center sm:text-left text-base  w-full lg:max-w-[75rem] font-[400]";
 		} else {
 			contentStyling =
-				"block mt-4 max-w-[40rem] text-white text-center sm:text-left text-base  w-full lg:max-w-[75rem] font-[300]";
+				"block mt-4 max-w-[40rem] text-white text-center sm:text-left text-base  w-full lg:max-w-[75rem] font-[400]";
 		}
 		return contentStyling;
 	}

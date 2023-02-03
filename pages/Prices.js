@@ -922,14 +922,6 @@ const Prices = ({
 					profileGrid={pricesPageContent?.teamMembers?.profileGrid}
 				/>
 
-				{/* <!--===== BLOG BANNER =====--> */}
-				<BlogBanner
-					title={`Our Latest News and Articles`}
-					paragraph={`<p>Discuss your needs with our team of experts! Contact us today. And If you book with Kandys Launderette, you can be sure that we work towards making your day an enjoyable and stress free occasion.</p>`}
-					buttonLink={pricesPageContent?.contactBanner?.buttonLink}
-					latestTwoPosts={latestTwoPosts?.latestTwoPosts}
-				/>
-
 				{/* <!--===== REINVENTING THE FUTURE =====--> */}
 				<ImageTextBulletPoints
 					title={pricesPageContent?.imageTextBulletPoints?.title}
@@ -955,6 +947,14 @@ const Prices = ({
 					title={pricesPageContent?.twitterTestimonial?.title}
 					paragraph={pricesPageContent?.twitterTestimonial?.paragraph}
 					gridContent={pricesPageContent?.twitterTestimonial?.gridContent}
+				/>
+
+				{/* <!--===== BLOG BANNER =====--> */}
+				<BlogBanner
+					title={pricesPageContent?.blogBanner?.title}
+					paragraph={pricesPageContent?.blogBanner?.paragraph}
+					buttonLink={pricesPageContent?.blogBanner?.buttonLink}
+					latestTwoPosts={latestTwoPosts?.latestTwoPosts}
 				/>
 
 				{/* <!--===== FAQ TWO =====--> */}
@@ -1294,10 +1294,7 @@ const Prices = ({
 																type="checkbox"
 																value=""
 															/>
-															<label
-																className="ml-2 text-sm text-grey font-medium"
-																for="default-checkbox"
-															>
+															<label className="ml-2 text-sm text-grey font-medium">
 																<span>By signing up, I agree to the</span>
 																<a
 																	className="text-blue hover:text-indigo-700"
@@ -1551,6 +1548,15 @@ export async function getStaticProps() {
 											sourceUrl
 										}
 									}
+								}
+							}
+							blogBanner {
+								title
+								paragraph
+								buttonLink {
+									url
+									title
+									target
 								}
 							}
 							faq {

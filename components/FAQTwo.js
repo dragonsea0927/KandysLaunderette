@@ -10,7 +10,7 @@ const FAQTwo = (props) => {
 	function isParagraphContent(isParagraphContent) {
 		let contentStyling;
 		if (isParagraphContent === null) {
-			contentStyling = "hidden mb-5 mb-11 text-medium text-darkGrey font-[400]";
+			contentStyling = "hidden mb-11 text-medium text-darkGrey font-[400]";
 		} else {
 			contentStyling = "block mb-11 text-medium text-darkGrey font-[400]";
 		}
@@ -29,7 +29,7 @@ const FAQTwo = (props) => {
 					<div className="w-full md:w-1/2 p-8">
 						<motion.h2
 							variants={fadeIn}
-							className="mb-7 font-[600] text-3xl lg:text-5xl pt-4"
+							className="mb-5 font-[600] text-3xl lg:text-5xl"
 						>
 							{props?.title}
 						</motion.h2>

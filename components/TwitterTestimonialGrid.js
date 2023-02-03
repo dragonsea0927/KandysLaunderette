@@ -12,10 +12,10 @@ const TwitterTestimonialGrid = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden max-w-lg mx-auto mt-4 text-medium leading-relaxed text-darkGrey";
+				"hidden max-w-lg mx-auto mt-4 text-medium leading-relaxed text-darkGrey font-[400]";
 		} else {
 			contentStyling =
-				"block max-w-lg mx-auto mt-4 text-medium leading-relaxed text-darkGrey";
+				"block max-w-lg mx-auto mt-4 text-medium leading-relaxed text-darkGrey font-[400]";
 		}
 		return contentStyling;
 	}
