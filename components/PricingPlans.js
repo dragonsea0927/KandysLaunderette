@@ -17,7 +17,7 @@ const PricingPlans = (props) => {
 									<h2 className="font-[600] text-3xl lg:text-5xl py-8">
 										Affordable pricing plans
 									</h2>
-									<p className="text-grey text-medium">
+									<p className="text-darkGrey text-medium">
 										Amet minim mollit non deserunt ullamco an aliqua dolor elit
 										officia consequat duis.Amet minim mollit non deserunt
 										ullamco est sit aliqua.
@@ -123,10 +123,7 @@ const PricingPlans = (props) => {
 											<div className="flex flex-wrap -m-2">
 												<div className="w-full p-2">
 													<Link href={`/`} target={``}>
-														<a
-															className="block w-full px-8 py-2.5 text-base text-center text-white transition-all ease-in-out duration-[0.5s] bg-pink hover:bg-yellow focus:ring-4 focus:ring-pink rounded-lg"
-															href="#"
-														>
+														<a className="block w-full px-8 py-2.5 text-base text-center text-white transition-all ease-in-out duration-[0.5s] bg-pink hover:bg-yellow focus:ring-4 focus:ring-pink rounded-lg">
 															Sign up
 														</a>
 													</Link>
@@ -160,10 +157,7 @@ const PricingPlans = (props) => {
 											<div className="flex flex-wrap -m-2">
 												<div className="w-full p-2">
 													<Link href={`/`} target={``}>
-														<a
-															className="block w-full px-8 py-2.5 text-base text-center text-white transition-all ease-in-out duration-[0.5s] bg-blue hover:bg-pink focus:ring-4 focus:ring-fadedPinkThree rounded-lg"
-															href="#"
-														>
+														<a className="block w-full px-8 py-2.5 text-base text-center text-white transition-all ease-in-out duration-[0.5s] bg-blue hover:bg-pink focus:ring-4 focus:ring-fadedPinkThree rounded-lg">
 															Get in Touch
 														</a>
 													</Link>

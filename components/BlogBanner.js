@@ -28,24 +28,22 @@ const BlogBanner = (props) => {
 			<div className="container px-4 mx-auto">
 				<div className="flex flex-wrap -m-8">
 					<div className="w-full md:w-5/12 p-8">
-						<div className="flex flex-col justify-between h-full">
-							<div className="mb-8">
-								<h2 className="mb-5 font-[600] text-3xl lg:text-5xl">
-									{props?.title}
-								</h2>
-								<motion.div
-									variants={fadeIn}
-									className={isParagraphContent(props?.paragraph)}
-									dangerouslySetInnerHTML={createParagraphMarkup(
-										props?.paragraph
-									)}
-								/>
-							</div>
+						<div className="flex flex-col justify-center h-full">
+							<h2 className="mb-5 font-[600] text-3xl lg:text-5xl">
+								{props?.title}
+							</h2>
+							<motion.div
+								variants={fadeIn}
+								className={isParagraphContent(props?.paragraph)}
+								dangerouslySetInnerHTML={createParagraphMarkup(
+									props?.paragraph
+								)}
+							/>
 							<Link
 								href={`${props?.buttonLink?.url}`}
 								target={`${props?.buttonLink?.target}`}
 							>
-								<a className="inline-flex items-center text-pink hover:text-yellow leading-normal transition-all ease-in-out duration-[0.5s]">
+								<a className="mt-8 inline-flex items-center text-pink hover:text-yellow leading-normal transition-all ease-in-out duration-[0.5s]">
 									<span className="mr-2 font-semibold">
 										{props?.buttonLink?.title}
 									</span>
