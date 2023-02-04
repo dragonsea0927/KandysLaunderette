@@ -15,14 +15,16 @@ const ProfileCard = (props) => {
 				/>
 				<div className="absolute bottom-0 left-0 w-full p-2">
 					<div
-						className="bg-white bg-opacity-40 w-full py-4 px-5 rounded-lg"
+						className="bg-pureBlack bg-opacity-40 w-full py-4 px-5 rounded-lg"
 						style={{backdropFilter: "blur(3px)"}}
 					>
 						<div className="mb-4 pb-3 border-b border-grey">
-							<h3 className="mb-1 text-lg text-pureBlack font-bold leading-snug">
+							<h3 className="mb-1 text-lg text-white font-[600] leading-snug">
 								{props?.title}
 							</h3>
-							<p className="text-pureBlack font-medium">{props?.jobPosition}</p>
+							<p className="text-white text-base font-[400]">
+								{props?.jobPosition}
+							</p>
 						</div>
 						<motion.div
 							variants={stagger}
@@ -30,7 +32,7 @@ const ProfileCard = (props) => {
 						>
 							<motion.div variants={fadeInUp} className="w-auto p-2.5">
 								<Link href={`${props?.twitter}`}>
-									<a className="text-white hover:text-fadedPink transition-all ease-in-out duration-[0.5s]">
+									<a className="text-white hover:text-pink transition-all ease-in-out duration-[0.5s]">
 										<svg
 											width="13"
 											height="11"
@@ -48,7 +50,7 @@ const ProfileCard = (props) => {
 							</motion.div>
 							<motion.div variants={fadeInUp} className="w-auto p-2.5">
 								<Link href={`${props?.facebook}`}>
-									<a className="text-white hover:text-fadedPink transition-all ease-in-out duration-[0.5s]">
+									<a className="text-white hover:text-pink transition-all ease-in-out duration-[0.5s]">
 										<svg
 											width="8"
 											height="14"
@@ -66,7 +68,7 @@ const ProfileCard = (props) => {
 							</motion.div>
 							<motion.div variants={fadeInUp} className="w-auto p-2.5">
 								<Link href={`${props?.instagram}`}>
-									<a className="text-white hover:text-fadedPink transition-all ease-in-out duration-[0.5s]">
+									<a className="text-white hover:text-pink transition-all ease-in-out duration-[0.5s]">
 										<svg
 											width="17"
 											height="16"

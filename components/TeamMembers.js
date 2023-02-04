@@ -10,10 +10,10 @@ const TeamMembers = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden text-medium text-grey py-8 px-4 text-center font-[400] md:max-w-xl mx-auto";
+				"hidden text-medium text-grey py-8 px-4 text-center font-[400]";
 		} else {
 			contentStyling =
-				"block text-medium text-grey py-8 px-4 text-center font-[400] md:max-w-xl mx-auto";
+				"block text-medium text-grey py-8 px-4 text-center font-[400]";
 		}
 		return contentStyling;
 	}
@@ -35,7 +35,7 @@ const TeamMembers = (props) => {
 					className={isParagraphContent(props?.paragraph)}
 					dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 				/>
-				<div className="flex flex-wrap max-w-7xl mx-auto -m-3">
+				<div className="flex flex-wrap mt-8 m-3">
 					{/* Array Loop */}
 					{props?.profileGrid.map((keys) => (
 						<ProfileCard
