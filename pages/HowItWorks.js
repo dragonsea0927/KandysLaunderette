@@ -123,7 +123,7 @@ const HowItWorks = ({
 					subtitle={howItWorksPageContent?.titleParagraphVideo?.subtitle}
 					paragraph={howItWorksPageContent?.titleParagraphVideo?.paragraph}
 					buttonLink={howItWorksPageContent?.titleParagraphVideo?.buttonLink}
-					video={`/videos/pexels-tima-miroshnichenko-8756819.mp4`}
+					video={howItWorksPageContent?.titleParagraphVideo?.videoLink}
 				/>
 
 				{/* <!--===== SIGN UP =====--> */}
