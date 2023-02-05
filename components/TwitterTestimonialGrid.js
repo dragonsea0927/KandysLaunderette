@@ -41,7 +41,6 @@ const TwitterTestimonialGrid = (props) => {
 				</div>
 
 				<div className="grid grid-cols-1 gap-6 px-4 mt-12 sm:px-0 xl:mt-20 xl:grid-cols-4 sm:grid-cols-2">
-					{/* Array Loop */}
 					{props.gridContent.map((keys) => (
 						<TwitterGridCard
 							Key={keys?.singleCard?.id}

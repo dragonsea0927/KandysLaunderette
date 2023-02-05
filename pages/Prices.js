@@ -67,6 +67,9 @@ const Prices = ({
 				<Subscriptions
 					title={pricesPageContent?.pricesSubscriptions?.title}
 					paragraph={pricesPageContent?.pricesSubscriptions?.paragraph}
+					subscriptionsGrid={
+						pricesPageContent?.pricesSubscriptions?.subscriptionsGrid
+					}
 				/>
 
 				{/* JOIN COMMUNITY */}
@@ -846,6 +849,22 @@ export async function getStaticProps() {
 							pricesSubscriptions {
 								title
 								paragraph
+								subscriptionsGrid {
+									card {
+										tier
+										billingInfo
+										paragraph
+										price
+										buttonLink {
+											url
+											title
+											target
+										}
+										points {
+											point
+										}
+									}
+								}
 							}
 							signUp {
 								title

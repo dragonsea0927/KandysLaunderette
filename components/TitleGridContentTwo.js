@@ -42,7 +42,6 @@ const TitleGridContentTwo = (props) => {
 						variants={stagger}
 						className="mx-auto mb-8 grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4 px-0 gap-4 justify-center items-start"
 					>
-						{/* Array Loop */}
 						{props.gridContent.map((keys) => (
 							<SingleCard
 								Key={keys?.id}

@@ -5,7 +5,6 @@ const TextImageJumbo = (props) => {
 	return (
 		<section className={styles.textImageJumbo}>
 			<div className="container mx-auto p-0">
-				{/* Array Loop */}
 				{props.gridContent.map((keys) => (
 					<TextImageCard
 						Key={keys?.id}

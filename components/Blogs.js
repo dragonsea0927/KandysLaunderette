@@ -38,7 +38,7 @@ const Blogs = (props) => {
 					/>
 				</div>
 				<motion.div variants={stagger} className="flex flex-wrap -m-9">
-					{/* Array Loop */}
+					
 					{props?.latestThreePosts.map((keys) => (
 						<BlogCardTwo
 							Key={props?.id}

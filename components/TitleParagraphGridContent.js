@@ -42,7 +42,6 @@ const TitleParagraphGridContent = (props) => {
 					variants={stagger}
 					className="py-22 mx-auto mb-8 grid grid-cols-1 lg:grid-cols-2 gap-4 justify-center items-start"
 				>
-					{/* Array Loop */}
 					{props.gridContent.map((keys) => (
 						<TitleParagraphGridCard
 							Key={keys?.id}

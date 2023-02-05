@@ -36,7 +36,6 @@ const TeamMembers = (props) => {
 					dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 				/>
 				<div className="flex flex-wrap mt-8 m-3">
-					{/* Array Loop */}
 					{props?.profileGrid.map((keys) => (
 						<ProfileCard
 							Key={props?.id}

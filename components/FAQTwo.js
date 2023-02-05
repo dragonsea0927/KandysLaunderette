@@ -55,7 +55,6 @@ const FAQTwo = (props) => {
 					<div className="w-full md:w-1/2 p-8">
 						<div className="md:max-w-2xl ml-auto">
 							<div className="flex flex-col">
-								{/* Array Loop */}
 								{props?.faqContent.map((keys) => (
 									<FAQCardTwo
 										Key={props?.id}

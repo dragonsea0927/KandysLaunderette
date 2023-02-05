@@ -31,7 +31,6 @@ const FAQ = (props) => {
 					</div>
 					<div className="max-w-4xl">
 						<ul>
-							{/* Array Loop */}
 							{props?.faqContent.map((keys) => (
 								<FAQCard
 									Key={keys?.id}

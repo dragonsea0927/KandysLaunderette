@@ -16,7 +16,6 @@ const FeaturesBanner = (props) => {
 						</h2>
 					</motion.div>
 					<div className="flex flex-col sm:flex-row justify-between items-center">
-						{/* Array Loop */}
 						{props.content.map((keys) => (
 							<FeaturesBannerCard
 								Key={keys?.id}

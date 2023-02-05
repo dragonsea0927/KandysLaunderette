@@ -34,7 +34,6 @@ const FeaturesBannerTwo = (props) => {
 							{props?.title}
 						</h2>
 						<div className="flex flex-wrap">
-							{/* Array Loop */}
 							{props.gridContent.map((keys) => (
 								<FeaturesBannerCardTwo
 									Key={keys?.id}

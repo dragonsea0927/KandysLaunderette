@@ -35,6 +35,7 @@ const ImageTextBulletPoints = (props) => {
 			buttonHoverColor = "pink";
 			break;
 	}
+
 	return (
 		<section
 			className={styles.imageTextBulletPoints}
@@ -60,7 +61,6 @@ const ImageTextBulletPoints = (props) => {
 							{props?.title}
 						</h2>
 						<div className="flex flex-col py-8 gap-4">
-							{/* Array Loop */}
 							{props.bulletPoints.map((keys) => (
 								<IconTextCard
 									Key={keys?.id}

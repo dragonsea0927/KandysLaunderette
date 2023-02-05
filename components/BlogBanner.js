@@ -68,7 +68,6 @@ const BlogBanner = (props) => {
 					</div>
 					<div className="w-full md:flex-1 p-8">
 						<motion.div variants={stagger} className="flex flex-row -m-3">
-							{/* Array Loop */}
 							{props?.latestTwoPosts.map((keys) => (
 								<BlogCard
 									Key={props?.id}
