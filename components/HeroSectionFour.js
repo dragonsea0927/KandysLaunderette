@@ -4,11 +4,10 @@ import {useState} from "react";
 import Image from "next/image";
 import {motion} from "framer-motion";
 import DOMPurify from "isomorphic-dompurify";
-import {fadeIn, fadeInUp} from "../animations/animations";
-import styles from "../styles/components/HeroSection.module.scss";
+import {fadeIn} from "../animations/animations";
 import NavbarMenuSublinks from "./NavbarMenuSublinks";
 
-const HeroSection = (props) => {
+const HeroSectionFour = (props) => {
 	/* Check if Paragraph content is null
 	 And Displays content if it null */
 	function isParagraphContent(isParagraphContent) {
@@ -52,7 +51,7 @@ const HeroSection = (props) => {
 
 	return (
 		<section
-			className={styles.heroSection}
+			className="bg-cover bg-center bg-[no-repeat]"
 			style={{
 				backgroundImage: `linear-gradient(
 							0deg,
@@ -62,7 +61,7 @@ const HeroSection = (props) => {
 			}}
 		>
 			<div
-				className="min-h-[100vh] flex flex-col justify-between"
+				className="min-h-[40vh] flex flex-col justify-between"
 				style={{backdropFilter: "blur(3px)"}}
 			>
 				<div className="flex flex-row justify-center gap-4 w-full z-[999] fixed h-[fit-content]">
@@ -195,7 +194,7 @@ const HeroSection = (props) => {
 								</Link>
 								<motion.button
 									variants={fadeIn}
-									className="rounded-lg py-3 px-8 text-white bg-pink hover:text-white hover:bg-yellow transition-all ease-in-out duration-[0.5s]"
+									className="rounded-lg py-3 px-8 text-white bg-yellow hover:text-white hover:bg-blue transition-all ease-in-out duration-[0.5s]"
 								>
 									<Link href="/">
 										<a className="text-right text-base font-[600] hover:text-white">
@@ -210,50 +209,55 @@ const HeroSection = (props) => {
 				<div className="pt-0 pb-20 md:py-20 px-0 my-auto">
 					<motion.h1
 						variants={fadeIn}
-						className="text-white leading-[2rem] sm:leading-[4rem] text-center mx-auto text-4xl sm:text-6xl p-4 lg:p-0 w-full lg:w-[45rem] font-[500]"
+						className="text-white text-center text-7xl sm:text-7xl font-bold leading-normal p-4 pt-28 lg:pt-28 lg:p-0 lg:max-w-[45rem] mx-auto"
 					>
 						{props?.title}
 					</motion.h1>
-				</div>
-				<div className="flex flex-col">
-					<div className="bg-pink p-6">
-						<div className="container mx-auto">
-							<div className="flex flex-col lg:flex-row justify-between items-center">
-								<div className="flex flex-col justify-center">
-									<h2 className="text-white text-center lg:text-left text-lg sm:text-medium lg:text-lg xl:text-3xl font-[500]">
-										{props?.subtitle}
-									</h2>
-									<div
-										className={isParagraphContent(props?.paragraph)}
-										dangerouslySetInnerHTML={createParagraphMarkup(
-											props?.paragraph
-										)}
-									/>
-								</div>
-								<motion.div
-									variants={fadeInUp}
-									className="flex flex-col justify-center items-center lg:items-end gap-2 p-4"
+					<div className="mt-8 p-4 lg:p-0">
+						<p className="mb-10 font-medium text-xl text-center text-white">
+							Velit officia consequat duis enim velit mollit. Exercitation
+							veniam consequat.
+						</p>
+						<ul className="flex justify-center">
+							<li className="flex items-center mr-6">
+								<svg
+									className="mr-2"
+									width="19"
+									height="19"
+									viewBox="0 0 19 19"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
 								>
-									<Image
-										src="/svg/Rating Stars.svg"
-										className="w-full h-[200px] object-contain"
-										alt="Icon"
-										width={125}
-										height="25"
-									/>
-									<motion.button variants={fadeIn}>
-										<Link
-											href={`${props?.buttonLink?.url}`}
-											target={`${props?.buttonLink?.target}`}
-										>
-											<a className="text-white text-center lg:text-right text-tiny font-[500] hover:text-fadedYellow transition-all ease-in-out duration-[0.5s]">
-												{props?.buttonLink?.title}
-											</a>
-										</Link>
-									</motion.button>
-								</motion.div>
-							</div>
-						</div>
+									<path
+										d="M3.95831 10.2917L7.12498 13.4584L15.0416 5.54169"
+										stroke="white"
+										strokeWidth="1.5"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+									></path>
+								</svg>
+								<p className="text-white text-base">No credit card required</p>
+							</li>
+							<li className="flex items-center">
+								<svg
+									className="mr-2"
+									width="19"
+									height="19"
+									viewBox="0 0 19 19"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M3.95831 10.2917L7.12498 13.4584L15.0416 5.54169"
+										stroke="white"
+										strokeWidth="1.5"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+									></path>
+								</svg>
+								<p className="text-white text-base">Cancel anytime</p>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -261,4 +265,4 @@ const HeroSection = (props) => {
 	);
 };
 
-export default HeroSection;
+export default HeroSectionFour;
