@@ -43,12 +43,12 @@ const Hotel = ({
 			<main>
 				{/* <!--===== HERO =====--> */}
 				<HeroSectionFour
-					title={gymPageContent?.heroSection?.title}
-					paragraph={gymPageContent?.heroSection?.paragraph}
+					title={hotelPageContent?.heroSection?.title}
+					paragraph={hotelPageContent?.heroSection?.paragraph}
 					backgroundImage={
-						gymPageContent?.heroSection?.backgroundImage?.sourceUrl
+						hotelPageContent?.heroSection?.backgroundImage?.sourceUrl
 					}
-					displayPaymentInfo={gymPageContent?.heroSection?.displayPaymentInfo}
+					displayPaymentInfo={hotelPageContent?.heroSection?.displayPaymentInfo}
 					CommercialServicesMenuLinks={
 						CommercialServicesMenuLinks?.CommercialServicesMenuLinks
 					}
@@ -58,60 +58,60 @@ const Hotel = ({
 				/>
 
 				<TitleParagraphImage
-					image={gymPageContent?.whoWeAre?.image}
-					title={gymPageContent?.whoWeAre?.title}
-					subtitle={gymPageContent?.whoWeAre?.subtitle}
-					paragraph={gymPageContent?.whoWeAre?.paragraph}
+					image={hotelPageContent?.whoWeAre?.image}
+					title={hotelPageContent?.whoWeAre?.title}
+					subtitle={hotelPageContent?.whoWeAre?.subtitle}
+					paragraph={hotelPageContent?.whoWeAre?.paragraph}
 				/>
 
 				{/* <!--===== TITLE PARAGRAPH =====--> */}
 				<TitleParagraphThree
-					title={gymPageContent?.titleParagraph?.title}
-					paragraph={gymPageContent?.titleParagraph?.paragraph}
+					title={hotelPageContent?.titleParagraph?.title}
+					paragraph={hotelPageContent?.titleParagraph?.paragraph}
 				/>
 
 				{/* <!--===== INTRO SECTION =====--> */}
 				<TextImageJumbo
-					gridContent={gymPageContent?.textImageJumbo?.gridContent}
+					gridContent={hotelPageContent?.textImageJumbo?.gridContent}
 				/>
 
 				{/* <!--===== LOGO BANNER =====--> */}
 				<Logos
-					title={gymPageContent?.logos?.title}
-					logoGrid={gymPageContent?.logos?.logoGrid}
+					title={hotelPageContent?.logos?.title}
+					logoGrid={hotelPageContent?.logos?.logoGrid}
 				/>
 
 				{/* TEAM MEMBERS */}
 				<TeamMembers
-					title={gymPageContent?.teamMembers?.title}
-					paragraph={gymPageContent?.teamMembers?.paragraph}
-					profileGrid={gymPageContent?.teamMembers?.profileGrid}
+					title={hotelPageContent?.teamMembers?.title}
+					paragraph={hotelPageContent?.teamMembers?.paragraph}
+					profileGrid={hotelPageContent?.teamMembers?.profileGrid}
 				/>
 
 				{/* <!--===== CONTACT US BANNER =====--> */}
 				<ContactBanner
-					title={gymPageContent?.contactBanner?.title}
-					paragraph={gymPageContent?.contactBanner?.paragraph}
-					buttonLink={gymPageContent?.contactBanner?.buttonLink}
-					backgroundImage={gymPageContent?.contactBanner?.image?.sourceUrl}
+					title={hotelPageContent?.contactBanner?.title}
+					paragraph={hotelPageContent?.contactBanner?.paragraph}
+					buttonLink={hotelPageContent?.contactBanner?.buttonLink}
+					backgroundImage={hotelPageContent?.contactBanner?.image?.sourceUrl}
 				/>
 
 				{/* <!--===== OUR PROCESS INFORMATION =====--> */}
 				<OurProcess
-					title={gymPageContent?.bookingContent?.title}
-					paragraph={gymPageContent?.bookingContent?.paragraph}
-					gridContent={gymPageContent?.bookingContent?.gridContent}
+					title={hotelPageContent?.bookingContent?.title}
+					paragraph={hotelPageContent?.bookingContent?.paragraph}
+					gridContent={hotelPageContent?.bookingContent?.gridContent}
 					// Display Options
-					backgroundColor={gymPageContent?.bookingContent?.backgroundColor}
-					backgroundLetter={gymPageContent?.bookingContent?.backgroundLetter}
+					backgroundColor={hotelPageContent?.bookingContent?.backgroundColor}
+					backgroundLetter={hotelPageContent?.bookingContent?.backgroundLetter}
 				/>
 
 				{/* <!--===== USER ACCOUNT =====--> */}
 				<TitleParagraphImage
-					image={gymPageContent?.titleParagraphImage?.image}
-					title={gymPageContent?.titleParagraphImage?.title}
-					subtitle={gymPageContent?.titleParagraphImage?.subtitle}
-					paragraph={gymPageContent?.titleParagraphImage?.paragraph}
+					image={hotelPageContent?.titleParagraphImage?.image}
+					title={hotelPageContent?.titleParagraphImage?.title}
+					subtitle={hotelPageContent?.titleParagraphImage?.subtitle}
+					paragraph={hotelPageContent?.titleParagraphImage?.paragraph}
 				/>
 
 				{/* <!--===== CONTACT US MAP =====--> */}
@@ -119,7 +119,7 @@ const Hotel = ({
 					title={`Feedback`}
 					paragraph={`<p>Post-ironic portland shabby chic echo park, banjo fashion axe</p>`}
 					paragraphTwo={`<p>This site is protected by reCAPTCHA and the Google <a href="/PrivacyPolicy">Privacy Policy</a> &amp; <a href="/TermsOfService">Terms of Service</a>.</p>`}
-					buttonLink={gymPageContent?.contactBanner?.buttonLink}
+					buttonLink={hotelPageContent?.contactBanner?.buttonLink}
 				/>
 			</main>
 
@@ -138,14 +138,14 @@ const Hotel = ({
 export async function getStaticProps() {
 	const getHotelPageContent = gql`
 		{
-			pageTitle: pages(where: {id: 685, status: PUBLISH}) {
+			pageTitle: pages(where: {id: 2915, status: PUBLISH}) {
 				edges {
 					node {
 						title
 					}
 				}
 			}
-			mainContent: pages(where: {id: 685, status: PUBLISH}) {
+			mainContent: pages(where: {id: 2915, status: PUBLISH}) {
 				edges {
 					node {
 						seo {
@@ -180,8 +180,18 @@ export async function getStaticProps() {
 						HotelPage {
 							heroSection {
 								title
-								subtitle
+								paragraph
+								displayPaymentInfo
 								backgroundImage {
+									sourceUrl
+								}
+							}
+							whoWeAre {
+								title
+								subtitle
+								paragraph
+								image {
+									altText
 									sourceUrl
 								}
 							}
@@ -189,34 +199,55 @@ export async function getStaticProps() {
 								title
 								paragraph
 							}
-							ourOptions {
+							textImageJumbo {
+								gridContent {
+									card {
+										title
+										subtitle
+										paragraph
+										displayImageOption
+										displayButtonOption
+										buttonLink {
+											url
+											title
+											target
+										}
+										image {
+											altText
+											sourceUrl
+										}
+									}
+								}
+							}
+							logos {
 								title
-								paragraph
-								content {
-									title
-									titleTwo
+								logoGrid {
 									image {
 										altText
 										sourceUrl
 									}
-									imageTwo {
-										altText
-										sourceUrl
-									}
-									buttonLink {
-										url
+								}
+							}
+							teamMembers {
+								title
+								paragraph
+								profileGrid {
+									profileCard {
 										title
-										target
-									}
-									buttonLinkTwo {
-										url
-										title
-										target
+										jobPosition
+										twitter
+										facebook
+										instagram
+										image {
+											altText
+											sourceUrl
+										}
 									}
 								}
 							}
 							contactBanner {
 								title
+								paragraph
 								image {
 									sourceUrl
 								}
@@ -224,6 +255,29 @@ export async function getStaticProps() {
 									url
 									title
 									target
+								}
+							}
+							bookingContent {
+								title
+								paragraph
+								backgroundLetter
+								backgroundColor
+								gridContent {
+									title
+									paragraph
+									image {
+										altText
+										sourceUrl
+									}
+								}
+							}
+							titleParagraphImage {
+								title
+								subtitle
+								paragraph
+								image {
+									altText
+									sourceUrl
 								}
 							}
 						}
