@@ -10,10 +10,10 @@ const HeroSectionTwo = (props) => {
 		let contentStyling;
 		if (isSubtitleContent === null) {
 			contentStyling =
-				"hidden w-full lg:max-w-[65rem] mx-auto mt-4 text-white text-center text-medium tracking-[0.15rem]";
+				"hidden mt-4 max-w-[65rem] mx-auto mb-5 md:mb-10 font-[400] text-medium sm:text-lg text-center text-white tracking-[0.10rem]";
 		} else {
 			contentStyling =
-				"block w-full lg:max-w-[65rem] mx-auto mt-4 text-white text-center text-medium tracking-[0.15rem]";
+				"block mt-4 max-w-[65rem] mx-auto mb-5 md:mb-10 font-[400] text-medium sm:text-lg text-center text-white tracking-[0.10rem]";
 		}
 		return contentStyling;
 	}

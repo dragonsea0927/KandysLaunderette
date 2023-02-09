@@ -13,11 +13,10 @@ import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 // Components
 import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
+import SignUp from "../components/SignUp";
 import OurProcess from "/components/OurProcess";
-import FooterDark from "/components/FooterDark";
 import MetaTag from "../components/Meta/MetaTag";
 import TwoOptions from "../components/TwoOptions";
-import TextImageTwo from "../components/TextImageTwo";
 import ContactBanner from "../components/ContactBanner";
 import HeroSectionTwo from "../components/HeroSectionTwo";
 import CTAContentImage from "../components/CTAContentImage";
@@ -68,14 +67,7 @@ const SuitsOxfordShirts = ({
 					title={suitsOxfordShirtsPageContent?.titleParagraph?.title}
 					paragraph={suitsOxfordShirtsPageContent?.titleParagraph?.paragraph}
 				/>
-				{/* // <========== WEDDING DRESS PROCESS ==========> */}
-				<TextImageTwo
-					title={`Professional Dry Cleaning & Laundry Solutions`}
-					paragraph={`<p>Kandy’s Launderette specialises in commercial launderette services in Swansea, wales. We provide professional laundry services to hotels, serviced apartments, restaurants, medical departments, casinos, cafes, pizzeria, gyms, fitness studios, salons, spas, security and offices.</p>`}
-					image={suitsOxfordShirtsPageContent?.ctaContentImage?.image}
-					// Display Options
-					displayImageLocation={`Left`}
-				/>
+
 				{/* <!--===== OUR PROCESS INFORMATION =====--> */}
 				<OurProcess
 					title={suitsOxfordShirtsPageContent?.suitsContent?.title}
@@ -114,6 +106,18 @@ const SuitsOxfordShirts = ({
 					buttonLink={suitsOxfordShirtsPageContent?.ctaContentImage?.buttonLink}
 					Image={suitsOxfordShirtsPageContent?.ctaContentImage?.image}
 				/>
+
+				{/* <!--===== SIGN UP =====--> */}
+				<SignUp
+					title={suitsOxfordShirtsPageContent?.signUp?.title}
+					paragraph={suitsOxfordShirtsPageContent?.signUp?.paragraph}
+					buttonLink={suitsOxfordShirtsPageContent?.signUp?.buttonLink}
+					// Display Options
+					backgroundColor={
+						suitsOxfordShirtsPageContent?.signUp?.backgroundColor
+					}
+				/>
+
 				{/* <!--===== CONTACT US BANNER =====--> */}
 				<ContactBanner
 					title={suitsOxfordShirtsPageContent?.contactBanner?.title}
@@ -169,7 +173,7 @@ const SuitsOxfordShirts = ({
 					<div
 						className="flex items-center w-full h-[40rem] bg-center bg-cover bg-[no-repeat]"
 						style={{
-							backgroundImage: `url("http://kandyslaunderette.local/wp-content/uploads/2023/01/rombo-fcLOmr-gRkY-unsplash.jpg");`,
+							backgroundImage: `url("http://kandyslaunderette.local/wp-content/uploads/2023/01/richie-roberts-7or-8zEkxPM-unsplash.jpg");`,
 						}}
 					></div>
 					<div className="container py-20 px-4 mx-auto">
@@ -364,6 +368,16 @@ export async function getStaticProps() {
 									altText
 									sourceUrl
 								}
+								buttonLink {
+									url
+									title
+									target
+								}
+							}
+							signUp {
+								title
+								paragraph
+								backgroundColor
 								buttonLink {
 									url
 									title

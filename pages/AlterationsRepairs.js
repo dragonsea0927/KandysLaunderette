@@ -11,11 +11,14 @@ import {
 import {fadeInUp, fadeIn, fadeInTwo, stagger} from "../animations/animations";
 
 // Components
-import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
+import SignUp from "../components/SignUp";
 import OurProcess from "/components/OurProcess";
 import MetaTag from "../components/Meta/MetaTag";
+import TitleParagraph from "/components/TitleParagraph";
 import ContactBanner from "../components/ContactBanner";
+import HeroSectionFour from "../components/HeroSectionFour";
+import TitleParagraphImage from "../components/TitleParagraphImage";
 
 const AlterationsRepairs = ({
 	seo,
@@ -37,123 +40,55 @@ const AlterationsRepairs = ({
 			<MetaTag title={pageTitle} seo={seo} />
 
 			{/* <!--===== NAVBAR =====--> */}
-			<Navbar
-				CommercialServicesMenuLinks={
-					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
-				}
-				IndividualServicesMenuLinks={
-					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
-				}
-			/>
 
 			<main>
-				{/* // <========== ABOUT US DESCRIPTIONS ==========> */}
-				<div className={styles.alterationsRepairsSection}>
-					{/* // <========== PAGE TITLE ==========> */}
-					<div className={styles.pageTitle}>
-						<div>
-							<div className={styles.content}>
-								<motion.div variants={fadeInUp} className={styles.title}>
-									<h2>Alterations & Repairs</h2>
-									<h5>Garments Repairs And Alterations By Experts</h5>
-								</motion.div>
-							</div>
-						</div>
-					</div>
+				{/* <!--===== HERO =====--> */}
+				<HeroSectionFour
+					title={alterationsRepairsPageContent?.heroSection?.title}
+					paragraph={alterationsRepairsPageContent?.heroSection?.paragraph}
+					backgroundImage={
+						alterationsRepairsPageContent?.heroSection?.backgroundImage
+							?.sourceUrl
+					}
+					displayPaymentInfo={
+						alterationsRepairsPageContent?.heroSection?.displayPaymentInfo
+					}
+					CommercialServicesMenuLinks={
+						CommercialServicesMenuLinks?.CommercialServicesMenuLinks
+					}
+					IndividualServicesMenuLinks={
+						IndividualServicesMenuLinks?.IndividualServicesMenuLinks
+					}
+				/>
 
-					{/* // <========== BACKGROUND IMAGE ==========> */}
-					<div className={styles.backgroundImageAlterationsRepairs}></div>
+				{/* // <========== TITLE & PARAGRAPH ==========> */}
+				<TitleParagraph
+					title={alterationsRepairsPageContent?.titleParagraph?.title}
+					paragraph={alterationsRepairsPageContent?.titleParagraph?.paragraph}
+				/>
 
-					<div className={styles.aboutUs}>
-						<div>
-							<motion.div variants={stagger} className={styles.content}>
-								<motion.h2 variants={fadeInUp}>We may be new to you</motion.h2>
-								<motion.p variants={fadeIn}>
-									But We believe in making the most of life❜s simple pleasures -
-									it❜s the little things that matter. Precious moments of
-									uncomplicated happiness are our constant inspiration, and it
-									is with these in mind that we create collections of services
-									that are built to last and become an intimate part of your
-									everyday lives.
-									<br></br>
-									<br></br>I cannot emphasize enough how much thought, care, and
-									attention to detail goes into every service we make at The
-									White Company - I hope you❜ll cherish your purchases as much
-									as we do.
-									<br></br>
-									<br></br>
-									<motion.span variants={fadeInTwo}>
-										We❜re delighted to meet you
-									</motion.span>
-								</motion.p>
-							</motion.div>
-						</div>
-					</div>
+				{/* <!--===== USER ACCOUNT =====--> */}
+				<TitleParagraphImage
+					image={alterationsRepairsPageContent?.titleParagraphImage?.image}
+					title={alterationsRepairsPageContent?.titleParagraphImage?.title}
+					subtitle={
+						alterationsRepairsPageContent?.titleParagraphImage?.subtitle
+					}
+					paragraph={
+						alterationsRepairsPageContent?.titleParagraphImage?.paragraph
+					}
+				/>
 
-					{/* <!--===== WEDDING SUITS =====--> */}
-					<div className={styles.suitsBridal}>
-						<div>
-							<div className={styles.content}>
-								<motion.div variants={fadeInUp} className={styles.title}>
-									<h2>Wedding Suits & Bridal Dresses</h2>
-									<h5>We make your special day simple.</h5>
-								</motion.div>
-								<div className={styles.gridDisplay}>
-									<div className={styles.innerContent}>
-										<motion.div variants={fadeIn} className={styles.Image}>
-											<Image
-												src="/img/tengyart-Q5jO8wxYnys-unsplash.jpg"
-												alt="Product Image"
-												width={600}
-												height={800}
-												objectFit="cover"
-												objectPosition="center"
-											></Image>
-										</motion.div>
-										<motion.div
-											variants={stagger}
-											className={styles.description}
-										>
-											<motion.h2 variants={fadeInUp}>Suits</motion.h2>
-											<motion.p variants={fadeIn}>
-												We offer suit cleaning & alterations for everyday and
-												special day occasions. We specialize in wedding suits, 2
-												Piece & 3 Piece suits and in 2 Piece Dress & Dinner
-												Suit.
-											</motion.p>
-										</motion.div>
-									</div>
-								</div>
-								<div className={styles.gridDisplay}>
-									<div className={styles.innerContent}>
-										<motion.div
-											variants={stagger}
-											className={styles.description}
-										>
-											<motion.h2 variants={fadeInUp}>Bridal Dresses</motion.h2>
-											<motion.p variants={fadeIn}>
-												We offer suit cleaning & alterations for everyday and
-												special day occasions. We specialize in wedding suits, 2
-												Piece & 3 Piece suits and in 2 Piece Dress & Dinner
-												Suit.
-											</motion.p>
-										</motion.div>
-										<motion.div variants={fadeIn} className={styles.Image}>
-											<Image
-												src="/img/w920_q60.webp"
-												alt="Product Image"
-												width={600}
-												height={800}
-												objectFit="cover"
-												objectPosition="center"
-											></Image>
-										</motion.div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				{/* <!--===== SIGN UP =====--> */}
+				<SignUp
+					title={alterationsRepairsPageContent?.signUp?.title}
+					paragraph={alterationsRepairsPageContent?.signUp?.paragraph}
+					buttonLink={alterationsRepairsPageContent?.signUp?.buttonLink}
+					// Display Options
+					backgroundColor={
+						alterationsRepairsPageContent?.signUp?.backgroundColor
+					}
+				/>
 
 				{/* <!--===== CONTACT US BANNER =====--> */}
 				<ContactBanner
@@ -237,13 +172,38 @@ export async function getStaticProps() {
 						alterationsRepairsPage {
 							heroSection {
 								title
-								subtitle
+								paragraph
+								displayPaymentInfo
 								backgroundImage {
 									sourceUrl
 								}
 							}
+							titleParagraph {
+								title
+								paragraph
+							}
+							titleParagraphImage {
+								title
+								subtitle
+								paragraph
+								image {
+									altText
+									sourceUrl
+								}
+							}
+							signUp {
+								title
+								paragraph
+								backgroundColor
+								buttonLink {
+									url
+									title
+									target
+								}
+							}
 							contactBanner {
 								title
+								paragraph
 								buttonLink {
 									url
 									title

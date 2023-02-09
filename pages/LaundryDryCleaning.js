@@ -9,20 +9,19 @@ import {
 } from "../lib/MenuLinks";
 
 // Components
-import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
 import MetaTag from "../components/Meta/MetaTag";
 import TwoOptions from "../components/TwoOptions";
 import TitleParagraph from "../components/TitleParagraph";
-import HeroSectionTwo from "../components/HeroSectionTwo";
+import HeroSectionFour from "../components/HeroSectionFour";
 import ContactBannerThree from "/components/ContactBannerThree";
 
 const LaundryDryCleaning = ({
 	seo,
 	pageTitle,
-	CommercialServicesMenuLinks,
 	themesOptionsContent,
 	IndividualServicesMenuLinks,
+	CommercialServicesMenuLinks,
 	laundryDryCleaningPageContent,
 }) => {
 	return (
@@ -36,26 +35,25 @@ const LaundryDryCleaning = ({
 			{/* <!--===== HEAD =====--> */}
 			<MetaTag title={pageTitle} seo={seo} />
 
-			{/* <!--===== NAVBAR =====--> */}
-			<Navbar
-				CommercialServicesMenuLinks={
-					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
-				}
-				IndividualServicesMenuLinks={
-					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
-				}
-			/>
-
 			<main>
 				{/* <!--===== HERO =====--> */}
-				{/* <HeroSectionTwo
+				<HeroSectionFour
 					title={laundryDryCleaningPageContent?.heroSection?.title}
-					subtitle={laundryDryCleaningPageContent?.heroSection?.subtitle}
+					paragraph={laundryDryCleaningPageContent?.heroSection?.paragraph}
 					backgroundImage={
 						laundryDryCleaningPageContent?.heroSection?.backgroundImage
 							?.sourceUrl
 					}
-				/> */}
+					displayPaymentInfo={
+						laundryDryCleaningPageContent?.heroSection?.displayPaymentInfo
+					}
+					CommercialServicesMenuLinks={
+						CommercialServicesMenuLinks?.CommercialServicesMenuLinks
+					}
+					IndividualServicesMenuLinks={
+						IndividualServicesMenuLinks?.IndividualServicesMenuLinks
+					}
+				/>
 
 				{/* // <========== TITLE & PARAGRAPH ==========> */}
 				<TitleParagraph
@@ -138,7 +136,8 @@ export async function getStaticProps() {
 						LaundryDryCleaningPage {
 							heroSection {
 								title
-								subtitle
+								paragraph
+								displayPaymentInfo
 								backgroundImage {
 									sourceUrl
 								}

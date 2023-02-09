@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/no-unknown-property */
 import {gql} from "@apollo/client";
@@ -25,6 +26,7 @@ import FeaturesBannerTwo from "../components/FeaturesBannerTwo";
 import TitleGridContentTwo from "/components/TitleGridContentTwo";
 import ImageTextBulletPoints from "../components/ImageTextBulletPoints";
 import TitleParagraphGridContent from "/components/TitleParagraphGridContent";
+import LogoBanner from "../components/LogoBanner";
 
 export default function Home({
 	seo,
@@ -33,8 +35,6 @@ export default function Home({
 	themesOptionsContent,
 	IndividualServicesMenuLinks,
 }) {
-	// console.log(homePageContent?.faq?.title);
-
 	return (
 		<motion.div
 			exit={{
@@ -126,6 +126,9 @@ export default function Home({
 					paragraph={homePageContent?.whyChooseUs?.paragraph}
 					gridContent={homePageContent?.whyChooseUs?.gridContent}
 				/>
+
+				{/* <!--===== LOGO BANNER =====--> */}
+				<LogoBanner logoBanner={homePageContent?.logoBanner} />
 
 				{/* <!--===== HOTEL & RESTAURANT =====--> */}
 				<TitleGridContentTwo
@@ -576,19 +579,21 @@ export async function getStaticProps() {
 							}
 							textImageJumbo {
 								gridContent {
-									title
-									subtitle
-									paragraph
-									displayImageOption
-									displayButtonOption
-									buttonLink {
-										url
+									card {
 										title
-										target
-									}
-									image {
-										altText
-										sourceUrl
+										subtitle
+										paragraph
+										displayImageOption
+										displayButtonOption
+										buttonLink {
+											url
+											title
+											target
+										}
+										image {
+											altText
+											sourceUrl
+										}
 									}
 								}
 							}
@@ -700,6 +705,12 @@ export async function getStaticProps() {
 										altText
 										sourceUrl
 									}
+								}
+							}
+							logoBanner {
+								image {
+									altText
+									sourceUrl
 								}
 							}
 							commercialServices {

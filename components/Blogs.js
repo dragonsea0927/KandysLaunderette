@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import {motion} from "framer-motion";
 import {fadeIn, stagger} from "../animations/animations";
-import BlogCardTwo from "./BlogCardTwo";
+import BlogCardTwo from "./Cards/BlogCardTwo";
 
 const Blogs = (props) => {
 	/* Check if paragraph content is null
@@ -38,7 +38,6 @@ const Blogs = (props) => {
 					/>
 				</div>
 				<motion.div variants={stagger} className="flex flex-wrap -m-9">
-					
 					{props?.latestThreePosts.map((keys) => (
 						<BlogCardTwo
 							Key={props?.id}

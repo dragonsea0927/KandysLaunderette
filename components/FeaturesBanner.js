@@ -3,7 +3,7 @@ import Image from "next/image";
 import {motion} from "framer-motion";
 import {fadeInUp} from "../animations/animations";
 import styles from "../styles/components/FeaturesBanner.module.scss";
-import FeaturesBannerCard from "./FeaturesBannerCard";
+import FeaturesBannerCard from "./Cards/FeaturesBannerCard";
 
 const FeaturesBanner = (props) => {
 	return (

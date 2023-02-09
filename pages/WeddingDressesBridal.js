@@ -15,16 +15,16 @@ import MetaTag from "../components/Meta/MetaTag";
 import TextImageTwo from "../components/TextImageTwo";
 import HeroSectionTwo from "../components/HeroSectionTwo";
 import ContactBannerThree from "/components/ContactBannerThree";
-import ImageTextBulletPoints from "../components/ImageTextBulletPoints";
 import TitleParagraphThree from "../components/TitleParagraphThree";
+import ImageTextBulletPoints from "../components/ImageTextBulletPoints";
 
 const WeddingDressesAndBridal = ({
 	seo,
 	pageTitle,
+	themesOptionsContent,
 	CommercialServicesMenuLinks,
 	IndividualServicesMenuLinks,
 	weddingDressesAndBridalPageContent,
-	themesOptionsContent,
 }) => {
 	return (
 		<motion.div
@@ -58,15 +58,6 @@ const WeddingDressesAndBridal = ({
 					}
 				/>
 
-				{/* <!--===== TITLE PARAGRAPH =====--> */}
-
-				<TitleParagraphThree
-					title={weddingDressesAndBridalPageContent?.titleParagraph?.title}
-					paragraph={
-						weddingDressesAndBridalPageContent?.titleParagraph?.paragraph
-					}
-				/>
-
 				{/* // <========== WEDDING DRESS PROCESS ==========> */}
 				<TextImageTwo
 					title={weddingDressesAndBridalPageContent?.textImage?.title}
@@ -75,6 +66,14 @@ const WeddingDressesAndBridal = ({
 					// Display Options
 					displayImageLocation={
 						weddingDressesAndBridalPageContent?.textImage?.displayOption
+					}
+				/>
+
+				{/* <!--===== TITLE PARAGRAPH =====--> */}
+				<TitleParagraphThree
+					title={weddingDressesAndBridalPageContent?.titleParagraph?.title}
+					paragraph={
+						weddingDressesAndBridalPageContent?.titleParagraph?.paragraph
 					}
 				/>
 
@@ -283,8 +282,8 @@ export async function getStaticProps() {
 		query: getWeddingDressesBridalContent,
 	});
 
-	const CommercialServicesMenuLinks = await getCommercialServicesMenu();
 	const themesOptionsContent = await getThemesOptionsContent();
+	const CommercialServicesMenuLinks = await getCommercialServicesMenu();
 	const IndividualServicesMenuLinks = await getIndividualServicesMenu();
 
 	return {

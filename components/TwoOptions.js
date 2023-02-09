@@ -12,10 +12,10 @@ const TwoOptions = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full lg:max-w-[60rem] mx-auto mt-4 py-8 px-4 text-darkGrey text-medium";
+				"hidden w-full lg:max-w-[60rem] mx-auto mt-4 py-8 px-4 text-center text-darkGrey text-medium";
 		} else {
 			contentStyling =
-				"block w-full lg:max-w-[60rem] mx-auto mt-4 py-8 px-4 text-darkGrey text-medium";
+				"block w-full lg:max-w-[60rem] mx-auto mt-4 py-8 px-4 text-center text-darkGrey text-medium";
 		}
 		return contentStyling;
 	}
@@ -51,7 +51,10 @@ const TwoOptions = (props) => {
 					dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 				/>
 			</motion.div>
-			<div className="flex flex-col justify-between items-center lg:grid lg:grid-cols-2 gap-4 px-4">
+			<motion.div
+				variants={stagger}
+				className="flex flex-col justify-between items-center lg:grid lg:grid-cols-2 gap-4 px-4"
+			>
 				<div>
 					<Link href={`${props?.content?.buttonLink?.url}`}>
 						<a>
@@ -126,7 +129,7 @@ const TwoOptions = (props) => {
 						</button>
 					</motion.div>
 				</div>
-			</div>
+			</motion.div>
 		</section>
 	);
 };

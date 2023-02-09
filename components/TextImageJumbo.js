@@ -1,5 +1,5 @@
 import styles from "../styles/components/TextImage.module.scss";
-import TextImageCard from "./TextImageCard";
+import TextImageCard from "./Cards/TextImageCard";
 
 const TextImageJumbo = (props) => {
 	return (
@@ -9,14 +9,14 @@ const TextImageJumbo = (props) => {
 					<TextImageCard
 						Key={keys?.id}
 						// Content
-						title={keys?.title}
-						image={keys?.image}
-						subtitle={keys?.subtitle}
-						paragraph={keys?.paragraph}
-						buttonLink={keys?.buttonLink}
+						title={keys?.card?.title}
+						image={keys?.card?.image}
+						subtitle={keys?.card?.subtitle}
+						paragraph={keys?.card?.paragraph}
+						buttonLink={keys?.card?.buttonLink}
 						// DisplayOptions
-						displayImage={keys?.displayImageOption}
-						displayButton={keys?.displayButtonOption}
+						displayImage={keys?.card?.displayImageOption}
+						displayButton={keys?.card?.displayButtonOption}
 					/>
 				))}
 			</div>

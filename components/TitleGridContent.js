@@ -1,7 +1,7 @@
 import Link from "next/link";
 import {motion} from "framer-motion";
 import DOMPurify from "isomorphic-dompurify";
-import SingleCard from "/components/SingleCard";
+import SingleCard from "/components/cards/SingleCard";
 import {fadeInUp, stagger} from "../animations/animations";
 import styles from "../styles/components/TitleGridContent.module.scss";
 

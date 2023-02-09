@@ -109,21 +109,27 @@ const PricingPlans = (props) => {
 						<div className="w-full md:w-1/2 p-8">
 							<div className="flex flex-wrap -m-4">
 								<div className="w-full lg:w-1/2 p-4">
-									<div className="flex flex-col justify-between p-8 h-full bg-lightGrey rounded-3xl">
+									<div className="flex flex-col justify-between p-8 h-full bg-blue rounded-3xl">
 										<div className="flex-initial mb-8">
-											<span className="inline-block mb-6 text-pink font-[600] uppercase tracking-widest">
-												Individual
+											<span className="inline-block mb-6 text-yellow font-[600] uppercase tracking-widest">
+												Standard
 											</span>
-											<h2 className="mb-2 text-4xl text-black tracking-tight font-[600]">
+											<h2 className="mb-2 text-4xl text-white tracking-tight font-[600]">
 												£19.99/mo
 											</h2>
-											<p className="mb-6 text-tiny text-darkGrey">
-												Starting from, best for the casual everyday needs.
+											<p
+												className={`mb-8 text-sm text-white font-medium leading-relaxed`}
+											>
+												Monthly Yearly
+											</p>
+											<p className="mb-6 text-tiny text-white">
+												Best for students, everyday nine to five workers and
+												night shift workers.
 											</p>
 											<div className="flex flex-wrap -m-2">
 												<div className="w-full p-2">
 													<Link href={`/`} target={``}>
-														<a className="block w-full px-8 py-2.5 text-base text-center text-white transition-all ease-in-out duration-[0.5s] bg-pink hover:bg-yellow focus:ring-4 focus:ring-pink rounded-lg">
+														<a className="block w-full px-8 py-2.5 text-base text-center text-white transition-all ease-in-out duration-[0.5s] bg-yellow hover:bg-fadedYellow focus:ring-4 focus:ring-pink rounded-lg">
 															Sign up
 														</a>
 													</Link>
@@ -131,10 +137,10 @@ const PricingPlans = (props) => {
 											</div>
 										</div>
 										<div className="flex-initial">
-											<h4 className="mb-4 text-black">
+											<h4 className="mb-4 text-white">
 												What&rsquo;s included:
 											</h4>
-											<p className="text-darkGrey">
+											<p className="text-white">
 												130+ Coded blocks Best for Developers Made with Tailwind
 												CSS Premium Support Future Updates
 											</p>
@@ -145,19 +151,24 @@ const PricingPlans = (props) => {
 									<div className="flex flex-col justify-between p-8 h-full bg-lightGrey rounded-3xl">
 										<div className="flex-initial mb-8">
 											<span className="inline-block mb-6 text-pink font-[600] uppercase tracking-widest">
-												Commercial
+												Commercial Business
 											</span>
 											<h2 className="mb-2 text-4xl text-black tracking-tight font-[600]">
-												£49.99/mo
+												Contact us
 											</h2>
+											<p
+												className={`mb-8 text-sm text-black font-medium leading-relaxed`}
+											>
+												for custom offer
+											</p>
 											<p className="mb-6 text-tiny text-darkGrey">
-												Starting from, best for hotels, restaurants, cafes, spas
-												and salons.
+												Starting from £49.99/mo, best for hotels, restaurants,
+												cafes, spas and salons.
 											</p>
 											<div className="flex flex-wrap -m-2">
 												<div className="w-full p-2">
 													<Link href={`/`} target={``}>
-														<a className="block w-full px-8 py-2.5 text-base text-center text-white transition-all ease-in-out duration-[0.5s] bg-blue hover:bg-pink focus:ring-4 focus:ring-fadedPinkThree rounded-lg">
+														<a className="block w-full px-8 py-2.5 text-base text-center text-white transition-all ease-in-out duration-[0.5s] bg-pink hover:bg-darkPink focus:ring-4 focus:ring-fadedPinkThree rounded-lg">
 															Get in Touch
 														</a>
 													</Link>

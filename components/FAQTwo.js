@@ -1,6 +1,6 @@
 import Link from "next/link";
 import {motion} from "framer-motion";
-import FAQCardTwo from "./FAQCardTwo";
+import FAQCardTwo from "./Cards/FAQCardTwo";
 import DOMPurify from "isomorphic-dompurify";
 import {fadeIn} from "../animations/animations";
 

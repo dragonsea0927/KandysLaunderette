@@ -15,11 +15,11 @@ import {fadeInUp, fadeIn, stagger} from "../../animations/animations";
 import IndividualServicesListDB from "/lib/IndividualServicesListDB.json";
 
 // Components
-import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
 import MetaTag from "../../components/Meta/MetaTag";
 import ContactBanner from "/components/ContactBanner";
 import TitleParagraph from "/components/TitleParagraph";
+import HeroSectionFour from "../../components/HeroSectionFour";
 
 const IndividualService = ({
 	seo,
@@ -40,17 +40,26 @@ const IndividualService = ({
 			{/* <!--===== HEAD =====--> */}
 			<MetaTag title={pageTitle} seo={seo} />
 
-			{/* <!--===== NAVBAR =====--> */}
-			<Navbar
-				CommercialServicesMenuLinks={
-					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
-				}
-				IndividualServicesMenuLinks={
-					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
-				}
-			/>
-
 			<main>
+				{/* <!--===== HERO =====--> */}
+				<HeroSectionFour
+					title={IndividualServicePageContent?.heroSection?.title}
+					paragraph={IndividualServicePageContent?.heroSection?.paragraph}
+					backgroundImage={
+						IndividualServicePageContent?.heroSection?.backgroundImage
+							?.sourceUrl
+					}
+					displayPaymentInfo={
+						IndividualServicePageContent?.heroSection?.displayPaymentInfo
+					}
+					CommercialServicesMenuLinks={
+						CommercialServicesMenuLinks?.CommercialServicesMenuLinks
+					}
+					IndividualServicesMenuLinks={
+						IndividualServicesMenuLinks?.IndividualServicesMenuLinks
+					}
+				/>
+
 				{/* // <========== TITLE & PARAGRAPH ==========> */}
 				<TitleParagraph
 					title={IndividualServicePageContent?.titleParagraph?.title}
@@ -904,6 +913,14 @@ export async function getStaticProps() {
 							}
 						}
 						IndividualServicePage {
+							heroSection {
+								title
+								paragraph
+								displayPaymentInfo
+								backgroundImage {
+									sourceUrl
+								}
+							}
 							titleParagraph {
 								title
 								paragraph

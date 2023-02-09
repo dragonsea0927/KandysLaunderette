@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 import DOMPurify from "isomorphic-dompurify";
 import {fadeIn} from "../animations/animations";
 import NavbarMenuSublinks from "./NavbarMenuSublinks";
-import SubscriptionsCard from "./SubscriptionsCard";
+import SubscriptionsCard from "./Cards/SubscriptionsCard";
 
 const Subscriptions = (props) => {
 	/* Check if Paragraph content is null

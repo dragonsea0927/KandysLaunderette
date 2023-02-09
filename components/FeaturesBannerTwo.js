@@ -2,7 +2,7 @@ import Image from "next/image";
 import {motion} from "framer-motion";
 import {fadeIn} from "../animations/animations";
 import styles from "../styles/components/FeaturesBanner.module.scss";
-import FeaturesBannerCardTwo from "./FeaturesBannerCardTwo";
+import FeaturesBannerCardTwo from "./Cards/FeaturesBannerCardTwo";
 
 const FeaturesBannerTwo = (props) => {
 	/* Check if paragraph content is null

@@ -1,7 +1,7 @@
 import {motion} from "framer-motion";
 import DOMPurify from "isomorphic-dompurify";
 import {fadeIn} from "../animations/animations";
-import ProfileCard from "./ProfileCard";
+import ProfileCard from "./Cards/ProfileCard";
 
 const TeamMembers = (props) => {
 	/* Check if paragraph content is null
@@ -10,10 +10,10 @@ const TeamMembers = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden text-medium text-grey py-8 px-4 text-center font-[400]";
+				"hidden mt-4 w-full lg:max-w-[75rem] mx-auto py-8 px-4 text-darkGrey text-center text-medium";
 		} else {
 			contentStyling =
-				"block text-medium text-grey py-8 px-4 text-center font-[400]";
+				"block mt-4 w-full lg:max-w-[75rem] mx-auto py-8 px-4 text-darkGrey text-center text-medium";
 		}
 		return contentStyling;
 	}

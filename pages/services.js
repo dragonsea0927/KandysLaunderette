@@ -1,22 +1,23 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
 import {gql} from "@apollo/client";
 import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
+import {getLatestTwoPosts} from "../lib/blogPosts";
 import {getThemesOptionsContent} from "../lib/themesOptions";
 import {
 	getCommercialServicesMenu,
 	getIndividualServicesMenu,
 } from "../lib/MenuLinks";
-import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 
 // Components
 import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
 import MetaTag from "../components/Meta/MetaTag";
+import BlogBanner from "../components/BlogBanner";
 import TwoOptions from "../components/TwoOptions";
 import StoreLocation from "/components/storeLocation";
 import ImageContent from "../components/ImageContent";
+import PricingPlans from "../components/PricingPlans";
 import ContactBanner from "../components/ContactBanner";
 import TitleGridContent from "/components/TitleGridContent";
 import ContactBannerTwo from "/components/ContactBannerTwo";
@@ -29,9 +30,10 @@ import TwitterTestimonialGrid from "../components/TwitterTestimonialGrid";
 const services = ({
 	seo,
 	pageTitle,
-	CommercialServicesMenuLinks,
+	latestTwoPosts,
 	servicesPageContent,
 	themesOptionsContent,
+	CommercialServicesMenuLinks,
 	IndividualServicesMenuLinks,
 }) => {
 	return (
@@ -137,6 +139,9 @@ const services = ({
 					Image={servicesPageContent?.ctaContentImage?.image}
 				/>
 
+				{/* <!--===== PRICING PLANS =====--> */}
+				<PricingPlans />
+
 				{/* <!--===== INDIVIDUAL SERVICES =====--> */}
 				<TitleGridContent
 					title={servicesPageContent?.individualServices?.title}
@@ -174,6 +179,14 @@ const services = ({
 					title={servicesPageContent?.twitterTestimonial?.title}
 					paragraph={servicesPageContent?.twitterTestimonial?.paragraph}
 					gridContent={servicesPageContent?.twitterTestimonial?.gridContent}
+				/>
+
+				{/* <!--===== BLOG BANNER =====--> */}
+				<BlogBanner
+					title={servicesPageContent?.blogBanner?.title}
+					paragraph={servicesPageContent?.blogBanner?.paragraph}
+					buttonLink={servicesPageContent?.blogBanner?.buttonLink}
+					latestTwoPosts={latestTwoPosts?.latestTwoPosts}
 				/>
 
 				{/* <!--===== OUT STORE LOCATION =====--> */}
@@ -429,6 +442,15 @@ export async function getStaticProps() {
 									}
 								}
 							}
+							blogBanner {
+								title
+								paragraph
+								buttonLink {
+									url
+									title
+									target
+								}
+							}
 							ourLocation {
 								title
 								paragraph
@@ -444,12 +466,14 @@ export async function getStaticProps() {
 		query: getServicesPageContent,
 	});
 
+	const latestTwoPosts = await getLatestTwoPosts();
 	const CommercialServicesMenuLinks = await getCommercialServicesMenu();
 	const themesOptionsContent = await getThemesOptionsContent();
 	const IndividualServicesMenuLinks = await getIndividualServicesMenu();
 
 	return {
 		props: {
+			latestTwoPosts,
 			CommercialServicesMenuLinks,
 			IndividualServicesMenuLinks,
 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,

@@ -4,7 +4,7 @@ import {useState} from "react";
 import Image from "next/image";
 import {motion} from "framer-motion";
 import DOMPurify from "isomorphic-dompurify";
-import {fadeIn} from "../animations/animations";
+import {fadeIn, fadeInUp} from "../animations/animations";
 import NavbarMenuSublinks from "./NavbarMenuSublinks";
 
 const HeroSectionFour = (props) => {
@@ -14,10 +14,10 @@ const HeroSectionFour = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden mt-4 max-w-[40rem] text-white text-center sm:text-left text-base  w-full lg:max-w-[75rem] font-[400]";
+				"hidden mt-4 max-w-[65rem] mx-auto mb-5 md:mb-10 font-[400] text-medium sm:text-lg text-center text-white tracking-[0.10rem]";
 		} else {
 			contentStyling =
-				"block mt-4 max-w-[40rem] text-white text-center sm:text-left text-base  w-full lg:max-w-[75rem] font-[400]";
+				"block mt-4 max-w-[65rem] mx-auto mb-5 md:mb-10 font-[400] text-medium sm:text-lg text-center text-white tracking-[0.10rem]";
 		}
 		return contentStyling;
 	}
@@ -49,6 +49,14 @@ const HeroSectionFour = (props) => {
 		setIndividualServicesMenuOpen(!IndividualServicesMenuOpen);
 	}
 
+	// Displays or Removes the Payment Info
+	let contentStyling;
+	if (props?.displayPaymentInfo === "Yes") {
+		contentStyling = "block flex justify-center";
+	} else if (props?.displayPaymentInfo === "No") {
+		contentStyling = "hidden flex justify-center";
+	}
+
 	return (
 		<section
 			className="bg-cover bg-center bg-[no-repeat]"
@@ -61,10 +69,10 @@ const HeroSectionFour = (props) => {
 			}}
 		>
 			<div
-				className="min-h-[40vh] flex flex-col justify-between"
+				className="min-h-[40vh] flex flex-col justify-between relative z-[999]"
 				style={{backdropFilter: "blur(3px)"}}
 			>
-				<div className="flex flex-row justify-center gap-4 w-full z-[999] fixed h-[fit-content]">
+				<div className="flex flex-row justify-center gap-4 w-full h-[fit-content]">
 					<div className="container mx-auto">
 						<div className="flex flex-row justify-between items-center">
 							<div className="flex flex-row justify-start items-start gap-10 p-4">
@@ -187,16 +195,16 @@ const HeroSectionFour = (props) => {
 								</ul>
 							</div>
 							<div className="hidden md:flex justify-center items-center gap-4 p-4">
-								<Link href="/HowItWorks">
+								<Link href="/Login">
 									<a className="my-auto px-2 text-base tracking-[0.05rem] text-white hover:text-fadedPink transition-all ease-in-out duration-[0.5s]">
 										Log in
 									</a>
 								</Link>
 								<motion.button
 									variants={fadeIn}
-									className="rounded-lg py-3 px-8 text-white bg-yellow hover:text-white hover:bg-blue transition-all ease-in-out duration-[0.5s]"
+									className="rounded-lg py-3 px-8 text-white bg-yellow hover:text-white hover:bg-pink transition-all ease-in-out duration-[0.5s]"
 								>
-									<Link href="/">
+									<Link href="/Login">
 										<a className="text-right text-base font-[600] hover:text-white">
 											Create an account
 										</a>
@@ -209,16 +217,17 @@ const HeroSectionFour = (props) => {
 				<div className="pt-0 pb-20 md:py-20 px-0 my-auto">
 					<motion.h1
 						variants={fadeIn}
-						className="text-white text-center text-7xl sm:text-7xl font-bold leading-normal p-4 pt-28 lg:pt-28 lg:p-0 lg:max-w-[45rem] mx-auto"
+						className="text-white text-center text-4xl sm:text-6xl font-bold leading-normal p-4 pt-28 lg:pt-28 lg:p-0 lg:max-w-[45rem] mx-auto"
 					>
 						{props?.title}
 					</motion.h1>
-					<div className="mt-8 p-4 lg:p-0">
-						<p className="mb-10 font-medium text-xl text-center text-white">
-							Velit officia consequat duis enim velit mollit. Exercitation
-							veniam consequat.
-						</p>
-						<ul className="flex justify-center">
+					<div className="mt-0 sm:mt-8 p-4 lg:p-0">
+						<motion.div
+							variants={fadeInUp}
+							className={isParagraphContent(props?.paragraph)}
+							dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
+						/>
+						<ul className={contentStyling}>
 							<li className="flex items-center mr-6">
 								<svg
 									className="mr-2"

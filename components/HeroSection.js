@@ -62,10 +62,10 @@ const HeroSection = (props) => {
 			}}
 		>
 			<div
-				className="min-h-[100vh] flex flex-col justify-between"
+				className="min-h-[100vh] flex flex-col justify-between relative z-[999]"
 				style={{backdropFilter: "blur(3px)"}}
 			>
-				<div className="flex flex-row justify-center gap-4 w-full z-[999] fixed h-[fit-content]">
+				<div className="flex flex-row justify-center gap-4 w-full h-[fit-content]">
 					<div className="container mx-auto">
 						<div className="flex flex-row justify-between items-center">
 							<div className="flex flex-row justify-start items-start gap-10 p-4">
@@ -210,7 +210,7 @@ const HeroSection = (props) => {
 				<div className="pt-0 pb-20 md:py-20 px-0 my-auto">
 					<motion.h1
 						variants={fadeIn}
-						className="text-white leading-[2rem] sm:leading-[4rem] text-center mx-auto text-4xl sm:text-6xl p-4 lg:p-0 w-full lg:w-[45rem] font-[500]"
+						className="text-white leading-[2rem] sm:leading-[4rem] font-bold text-center mx-auto text-4xl sm:text-6xl p-4 lg:p-0 w-full lg:w-[45rem]"
 					>
 						{props?.title}
 					</motion.h1>

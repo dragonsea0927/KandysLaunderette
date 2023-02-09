@@ -2,7 +2,7 @@
 import Link from "next/link";
 import {motion} from "framer-motion";
 import {fadeIn, stagger} from "../animations/animations";
-import BlogCard from "./BlogCard";
+import BlogCard from "./Cards/BlogCard";
 
 const BlogBanner = (props) => {
 	/* Check if paragraph content is null

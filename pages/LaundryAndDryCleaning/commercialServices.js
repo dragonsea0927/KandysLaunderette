@@ -19,6 +19,8 @@ import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
 import MetaTag from "../../components/Meta/MetaTag";
 import ContactBanner from "/components/ContactBanner";
+import TitleParagraph from "/components/TitleParagraph";
+import HeroSectionFour from "../../components/HeroSectionFour";
 
 const commercialServices = ({
 	seo,
@@ -39,17 +41,32 @@ const commercialServices = ({
 			{/* <!--===== HEAD =====--> */}
 			<MetaTag title={pageTitle} seo={seo} />
 
-			{/* <!--===== NAVBAR =====--> */}
-			<Navbar
-				CommercialServicesMenuLinks={
-					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
-				}
-				IndividualServicesMenuLinks={
-					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
-				}
-			/>
-
 			<main>
+				{/* <!--===== HERO =====--> */}
+				<HeroSectionFour
+					title={commercialServicesPageContent?.heroSection?.title}
+					paragraph={commercialServicesPageContent?.heroSection?.paragraph}
+					backgroundImage={
+						commercialServicesPageContent?.heroSection?.backgroundImage
+							?.sourceUrl
+					}
+					displayPaymentInfo={
+						commercialServicesPageContent?.heroSection?.displayPaymentInfo
+					}
+					CommercialServicesMenuLinks={
+						CommercialServicesMenuLinks?.CommercialServicesMenuLinks
+					}
+					IndividualServicesMenuLinks={
+						IndividualServicesMenuLinks?.IndividualServicesMenuLinks
+					}
+				/>
+
+				{/* // <========== TITLE & PARAGRAPH ==========> */}
+				<TitleParagraph
+					title={commercialServicesPageContent?.titleParagraph?.title}
+					paragraph={commercialServicesPageContent?.titleParagraph?.paragraph}
+				/>
+
 				{/* // <========== PAGE TITLE ==========> */}
 				<section className="container mx-auto">
 					<div className={styles.mainContent}>
@@ -62,14 +79,6 @@ const commercialServices = ({
 								</Link>
 							</div>
 							<div className={styles.content}>
-								<motion.div variants={fadeInUp} className={styles.title}>
-									<h2>Business Tailored Service</h2>
-									<motion.p variants={fadeIn}>
-										Our services provides our business partners professional
-										solution to their various requirements. Prior booking is
-										required. <br></br>
-									</motion.p>
-								</motion.div>
 								<motion.div variants={fadeIn} className={styles.subtitle}>
 									<h2>All Our Services</h2>
 								</motion.div>
@@ -616,10 +625,15 @@ export async function getStaticProps() {
 						commercialServicesPage {
 							heroSection {
 								title
-								subtitle
+								paragraph
+								displayPaymentInfo
 								backgroundImage {
 									sourceUrl
 								}
+							}
+							titleParagraph {
+								title
+								paragraph
 							}
 							contactBanner {
 								title
@@ -644,8 +658,8 @@ export async function getStaticProps() {
 		query: getCommercialServicesPageContent,
 	});
 
-	const CommercialServicesMenuLinks = await getCommercialServicesMenu();
 	const themesOptionsContent = await getThemesOptionsContent();
+	const CommercialServicesMenuLinks = await getCommercialServicesMenu();
 	const IndividualServicesMenuLinks = await getIndividualServicesMenu();
 
 	return {

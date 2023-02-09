@@ -13,6 +13,8 @@ import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 // Components
 import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
+import Blogs from "../components/Blogs";
+import SignUp from "../components/SignUp";
 import OurProcess from "/components/OurProcess";
 import MetaTag from "../components/Meta/MetaTag";
 import StoreLocation from "/components/storeLocation";
@@ -24,9 +26,6 @@ import FeaturesBannerTwo from "../components/FeaturesBannerTwo";
 import TitleParagraphVideo from "../components/TitleParagraphVideo";
 import ImageTextBulletPoints from "../components/ImageTextBulletPoints";
 import TitleParagraphGridContentTwo from "../components/TitleParagraphGridContentTwo";
-import SignUp from "../components/SignUp";
-import Blogs from "../components/Blogs";
-import PricingPlans from "../components/PricingPlans";
 
 const HowItWorks = ({
 	seo,
@@ -134,9 +133,6 @@ const HowItWorks = ({
 					// Display Options
 					backgroundColor={howItWorksPageContent?.signUp?.backgroundColor}
 				/>
-
-				{/* <!--===== PRICING PLANS =====--> */}
-				<PricingPlans />
 
 				{/* <!--===== REINVENTING THE FUTURE =====--> */}
 				<ImageTextBulletPoints

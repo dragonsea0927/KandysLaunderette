@@ -3,7 +3,7 @@ import Link from "next/link";
 import {motion} from "framer-motion";
 import DOMPurify from "isomorphic-dompurify";
 import {fadeInUp, fadeIn} from "../animations/animations";
-import TwitterGridCard from "./TwitterGridCard";
+import TwitterGridCard from "./Cards/TwitterGridCard";
 
 const TwitterTestimonialGrid = (props) => {
 	/* Check if paragraph content is null

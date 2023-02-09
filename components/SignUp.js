@@ -44,7 +44,7 @@ const SignUp = (props) => {
 								variants={fadeIn}
 								className="mb-4 font-[600] text-3xl lg:text-5xl leading-14"
 							>
-								So much more than a business analytics tool
+								{props?.title}
 							</motion.h2>
 							<motion.div
 								variants={fadeInUp}

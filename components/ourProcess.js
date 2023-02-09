@@ -1,7 +1,7 @@
 import {motion} from "framer-motion";
 import styles from "../styles/components/OurProcess.module.scss";
 import {fadeIn, fadeInUp} from "../animations/animations";
-import SingleCardTwo from "./SingleCardTwo";
+import SingleCardTwo from "./cards/SingleCardTwo";
 
 const OurProcess = (props) => {
 	/* Sets the Background Color
