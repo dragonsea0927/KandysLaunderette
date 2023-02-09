@@ -1,4 +1,4 @@
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
 import {gql} from "@apollo/client";
 import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
@@ -21,13 +21,13 @@ import HeroSectionFour from "../components/HeroSectionFour";
 import TitleParagraphImage from "../components/TitleParagraphImage";
 import TitleParagraphThree from "../components/TitleParagraphThree";
 
-const Gym = ({
+const Hotel = ({
 	seo,
 	pageTitle,
-	gymPageContent,
+	hotelPageContent,
 	themesOptionsContent,
-	IndividualServicesMenuLinks,
 	CommercialServicesMenuLinks,
+	IndividualServicesMenuLinks,
 }) => {
 	return (
 		<motion.div
@@ -136,16 +136,16 @@ const Gym = ({
 };
 
 export async function getStaticProps() {
-	const getGymPageContent = gql`
+	const getHotelPageContent = gql`
 		{
-			pageTitle: pages(where: {id: 2679, status: PUBLISH}) {
+			pageTitle: pages(where: {id: 685, status: PUBLISH}) {
 				edges {
 					node {
 						title
 					}
 				}
 			}
-			mainContent: pages(where: {id: 2679, status: PUBLISH}) {
+			mainContent: pages(where: {id: 685, status: PUBLISH}) {
 				edges {
 					node {
 						seo {
@@ -177,21 +177,11 @@ export async function getStaticProps() {
 								mediaItemUrl
 							}
 						}
-						GymPage {
+						HotelPage {
 							heroSection {
 								title
-								paragraph
-								displayPaymentInfo
-								backgroundImage {
-									sourceUrl
-								}
-							}
-							whoWeAre {
-								title
 								subtitle
-								paragraph
-								image {
-									altText
+								backgroundImage {
 									sourceUrl
 								}
 							}
@@ -199,55 +189,34 @@ export async function getStaticProps() {
 								title
 								paragraph
 							}
-							textImageJumbo {
-								gridContent {
-									card {
-										title
-										subtitle
-										paragraph
-										displayImageOption
-										displayButtonOption
-										buttonLink {
-											url
-											title
-											target
-										}
-										image {
-											altText
-											sourceUrl
-										}
-									}
-								}
-							}
-							logos {
+							ourOptions {
 								title
-								logoGrid {
+								paragraph
+								content {
+									title
+									titleTwo
 									image {
 										altText
 										sourceUrl
 									}
-								}
-							}
-							teamMembers {
-								title
-								paragraph
-								profileGrid {
-									profileCard {
+									imageTwo {
+										altText
+										sourceUrl
+									}
+									buttonLink {
+										url
 										title
-										jobPosition
-										twitter
-										facebook
-										instagram
-										image {
-											altText
-											sourceUrl
-										}
+										target
+									}
+									buttonLinkTwo {
+										url
+										title
+										target
 									}
 								}
 							}
 							contactBanner {
 								title
-								paragraph
 								image {
 									sourceUrl
 								}
@@ -255,29 +224,6 @@ export async function getStaticProps() {
 									url
 									title
 									target
-								}
-							}
-							bookingContent {
-								title
-								paragraph
-								backgroundLetter
-								backgroundColor
-								gridContent {
-									title
-									paragraph
-									image {
-										altText
-										sourceUrl
-									}
-								}
-							}
-							titleParagraphImage {
-								title
-								subtitle
-								paragraph
-								image {
-									altText
-									sourceUrl
 								}
 							}
 						}
@@ -288,7 +234,7 @@ export async function getStaticProps() {
 	`;
 
 	const response = await client.query({
-		query: getGymPageContent,
+		query: getHotelPageContent,
 	});
 
 	const CommercialServicesMenuLinks = await getCommercialServicesMenu();
@@ -302,10 +248,10 @@ export async function getStaticProps() {
 			IndividualServicesMenuLinks,
 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
 			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
-			gymPageContent: response?.data?.mainContent?.edges[0]?.node?.GymPage,
+			hotelPageContent: response?.data?.mainContent?.edges[0]?.node?.HotelPage,
 		},
 		revalidate: 1,
 	};
 }
 
-export default Gym;
+export default Hotel;
