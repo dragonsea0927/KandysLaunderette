@@ -1,4 +1,3 @@
-import Link from "next/link";
 import {gql} from "@apollo/client";
 import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
@@ -8,7 +7,6 @@ import {
 	getCommercialServicesMenu,
 	getIndividualServicesMenu,
 } from "../lib/MenuLinks";
-import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 
 // Components
 import Navbar from "/components/Navbar";
