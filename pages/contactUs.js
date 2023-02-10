@@ -1,3 +1,5 @@
+import {gql} from "@apollo/client";
+import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
 import styles from "/styles/Home.module.scss";
 import ContactInfoMap from "../components/ContactInfoMap";
@@ -115,13 +117,13 @@ export async function getStaticProps() {
 
 	return {
 		props: {
+			themesOptionsContent,
 			CommercialServicesMenuLinks,
 			IndividualServicesMenuLinks,
 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
 			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
 			contactUsPageContent:
 				response?.data?.mainContent?.edges[0]?.node?.contactUsPage,
-			themesOptionsContent,
 		},
 		revalidate: 1,
 	};

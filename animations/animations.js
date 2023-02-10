@@ -38,3 +38,5 @@ export const fadeInTwo = {
 		transition: {duration: 1, delay: 2, ease: "easeOut"},
 	},
 };
+
+export default fadeInUp;

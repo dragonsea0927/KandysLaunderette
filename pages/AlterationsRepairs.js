@@ -1,14 +1,11 @@
-import Image from "next/image";
 import {gql} from "@apollo/client";
 import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
-import styles from "/styles/Home.module.scss";
 import {getThemesOptionsContent} from "../lib/themesOptions";
 import {
 	getCommercialServicesMenu,
 	getIndividualServicesMenu,
 } from "../lib/MenuLinks";
-import {fadeInUp, fadeIn, fadeInTwo, stagger} from "../animations/animations";
 
 // Components
 import Footer from "/components/Footer";
