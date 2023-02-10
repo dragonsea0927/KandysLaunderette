@@ -325,7 +325,7 @@ const aboutUs = ({
 							</div>
 							<img
 								className="w-full lg:w-3/5 md:w-1/2 h-[750px] object-cover object-center rounded-lg md:mt-0 mt-12"
-								src="http://kandyslaunderette.local/wp-content/uploads/2023/01/pexels-ketut-subiyanto-4546003-min-scaled.jpg"
+								src="https://mydummysite.co.uk/ToddLearning/wp-content/uploads/2023/01/pexels-polina-tankilevitch-7741615-two.jpg"
 								alt="step"
 							/>
 						</div>

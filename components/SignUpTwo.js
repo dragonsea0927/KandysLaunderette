@@ -52,7 +52,7 @@ const SignUpTwo = (props) => {
 									variants={fadeInUp}
 									className="flex items-center space-x-3"
 								>
-									<div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue0 rounded-full">
+									<div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-pink rounded-full">
 										<svg
 											className="w-3.5 h-3.5 text-white"
 											xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +74,7 @@ const SignUpTwo = (props) => {
 									variants={fadeInUp}
 									className="flex items-center space-x-3"
 								>
-									<div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue0 rounded-full">
+									<div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-pink rounded-full">
 										<svg
 											className="w-3.5 h-3.5 text-white"
 											xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +96,7 @@ const SignUpTwo = (props) => {
 									variants={fadeInUp}
 									className="flex items-center space-x-3"
 								>
-									<div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue0 rounded-full">
+									<div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-pink rounded-full">
 										<svg
 											className="w-3.5 h-3.5 text-white"
 											xmlns="http://www.w3.org/2000/svg"
@@ -118,7 +118,7 @@ const SignUpTwo = (props) => {
 									variants={fadeInUp}
 									className="flex items-center space-x-3"
 								>
-									<div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-blue0 rounded-full">
+									<div className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 bg-pink rounded-full">
 										<svg
 											className="w-3.5 h-3.5 text-white"
 											xmlns="http://www.w3.org/2000/svg"
@@ -161,7 +161,7 @@ const SignUpTwo = (props) => {
 						<form action="#" method="POST" className="mt-8">
 							<div className="space-y-5">
 								<div>
-									<label className="text-base font-medium text-grey">
+									<label className="text-base font-[400] text-grey">
 										First & Last name
 									</label>
 									<div className="mt-2.5 relative text-grey focus-within:text-grey">
@@ -193,7 +193,7 @@ const SignUpTwo = (props) => {
 								</div>
 
 								<div>
-									<label className="text-base font-medium text-grey">
+									<label className="text-base font-[400] text-grey">
 										Email address
 									</label>
 									<div className="mt-2.5 relative text-grey focus-within:text-grey">
@@ -225,7 +225,7 @@ const SignUpTwo = (props) => {
 								</div>
 
 								<div>
-									<label className="text-base font-medium text-grey">
+									<label className="text-base font-[400] text-grey">
 										Password
 									</label>
 									<div className="mt-2.5 relative text-grey focus-within:text-grey">

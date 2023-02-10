@@ -52,6 +52,13 @@ h5,
 h6,
 span,
 input,
+label,
 button {
 	font-family: $fontStyle_main;
+}
+
+p {
+	a {
+		@apply text-pink transition-all ease-in-out duration-[0.5s] hover:text-yellow focus:text-yellow hover:underline;
+	}
 }

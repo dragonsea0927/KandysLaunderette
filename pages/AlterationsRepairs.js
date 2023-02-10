@@ -69,6 +69,14 @@ const AlterationsRepairs = ({
 
 				{/* <!--===== USER ACCOUNT =====--> */}
 				<TitleParagraphImage
+					image={alterationsRepairsPageContent?.whatIsIncluded?.image}
+					title={alterationsRepairsPageContent?.whatIsIncluded?.title}
+					subtitle={alterationsRepairsPageContent?.whatIsIncluded?.subtitle}
+					paragraph={alterationsRepairsPageContent?.whatIsIncluded?.paragraph}
+				/>
+
+				{/* <!--===== USER ACCOUNT =====--> */}
+				<TitleParagraphImage
 					image={alterationsRepairsPageContent?.titleParagraphImage?.image}
 					title={alterationsRepairsPageContent?.titleParagraphImage?.title}
 					subtitle={
@@ -181,6 +189,15 @@ export async function getStaticProps() {
 							titleParagraph {
 								title
 								paragraph
+							}
+							whatIsIncluded {
+								title
+								subtitle
+								paragraph
+								image {
+									altText
+									sourceUrl
+								}
 							}
 							titleParagraphImage {
 								title
