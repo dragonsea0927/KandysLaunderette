@@ -18,10 +18,10 @@ import MetaTag from "../components/Meta/MetaTag";
 const contactUs = ({
 	seo,
 	pageTitle,
-	CommercialServicesMenuLinks,
 	contactUsPageContent,
 	themesOptionsContent,
 	IndividualServicesMenuLinks,
+	CommercialServicesMenuLinks,
 }) => {
 	return (
 		<motion.div
