@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {gql} from "@apollo/client";
 import {client} from "../lib/apollo";
 import {motion} from "framer-motion";

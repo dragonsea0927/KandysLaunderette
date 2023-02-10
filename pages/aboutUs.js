@@ -8,6 +8,7 @@ import {
 	getCommercialServicesMenu,
 	getIndividualServicesMenu,
 } from "../lib/MenuLinks";
+import {fadeInUp, fadeIn, fadeInTwo, stagger} from "../animations/animations";
 
 // Components
 import Footer from "/components/Footer";
