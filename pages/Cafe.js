@@ -10,8 +10,8 @@ import {
 // Components
 import Footer from "/components/Footer";
 import Logos from "../components/Logos";
-import OurProcess from "/components/OurProcess";
 import MetaTag from "../components/Meta/MetaTag";
+import OurProcess from "../components/OurProcess";
 import TeamMembers from "../components/TeamMembers";
 import ContactBanner from "../components/ContactBanner";
 import TextImageJumbo from "../components/TextImageJumbo";

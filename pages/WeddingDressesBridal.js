@@ -10,7 +10,7 @@ import {
 // Components
 import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
-import OurProcess from "/components/OurProcess";
+import OurProcess from "../components/OurProcess";
 import MetaTag from "../components/Meta/MetaTag";
 import TextImageTwo from "../components/TextImageTwo";
 import HeroSectionTwo from "../components/HeroSectionTwo";

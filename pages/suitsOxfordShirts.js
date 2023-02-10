@@ -14,7 +14,7 @@ import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
 import SignUp from "../components/SignUp";
-import OurProcess from "/components/OurProcess";
+import OurProcess from "../components/OurProcess";
 import MetaTag from "../components/Meta/MetaTag";
 import TwoOptions from "../components/TwoOptions";
 import ContactBanner from "../components/ContactBanner";
