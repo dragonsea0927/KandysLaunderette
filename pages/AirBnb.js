@@ -10,8 +10,8 @@ import {
 // Components
 import Footer from "/components/Footer";
 import Logos from "../components/Logos";
-// import OurProcess from "../components/OurProcess";
 import MetaTag from "../components/Meta/MetaTag";
+import OurProcess from "../components/OurProcess";
 import TeamMembers from "../components/TeamMembers";
 import ContactBanner from "../components/ContactBanner";
 import TextImageJumbo from "../components/TextImageJumbo";
@@ -98,14 +98,14 @@ const AirBnb = ({
 				/>
 
 				{/* <!--===== OUR PROCESS INFORMATION =====--> */}
-				{/* <OurProcess
+				<OurProcess
 					title={airBnbPageContent?.bookingContent?.title}
 					paragraph={airBnbPageContent?.bookingContent?.paragraph}
 					gridContent={airBnbPageContent?.bookingContent?.gridContent}
 					// Display Options
 					backgroundColor={airBnbPageContent?.bookingContent?.backgroundColor}
 					backgroundLetter={airBnbPageContent?.bookingContent?.backgroundLetter}
-				/> */}
+				/>
 
 				{/* <!--===== USER ACCOUNT =====--> */}
 				<TitleParagraphImage

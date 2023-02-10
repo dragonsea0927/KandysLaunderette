@@ -10,8 +10,8 @@ import {
 // Components
 import Footer from "/components/Footer";
 import Logos from "../components/Logos";
-// import OurProcess from "../components/OurProcess";
 import MetaTag from "../components/Meta/MetaTag";
+import OurProcess from "../components/OurProcess";
 import TeamMembers from "../components/TeamMembers";
 import ContactBanner from "../components/ContactBanner";
 import TextImageJumbo from "../components/TextImageJumbo";
@@ -96,14 +96,14 @@ const Gym = ({
 				/>
 
 				{/* <!--===== OUR PROCESS INFORMATION =====--> */}
-				{/* <OurProcess
+				<OurProcess
 					title={gymPageContent?.bookingContent?.title}
 					paragraph={gymPageContent?.bookingContent?.paragraph}
 					gridContent={gymPageContent?.bookingContent?.gridContent}
 					// Display Options
 					backgroundColor={gymPageContent?.bookingContent?.backgroundColor}
 					backgroundLetter={gymPageContent?.bookingContent?.backgroundLetter}
-				/> */}
+				/>
 
 				{/* <!--===== USER ACCOUNT =====--> */}
 				<TitleParagraphImage

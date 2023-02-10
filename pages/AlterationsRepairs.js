@@ -11,7 +11,7 @@ import {
 import Footer from "/components/Footer";
 import SignUp from "../components/SignUp";
 import MetaTag from "../components/Meta/MetaTag";
-// import OurProcess from "../components/OurProcess";
+import OurProcess from "../components/OurProcess";
 import TitleParagraph from "/components/TitleParagraph";
 import ContactBanner from "../components/ContactBanner";
 import HeroSectionFour from "../components/HeroSectionFour";
@@ -106,7 +106,7 @@ const AlterationsRepairs = ({
 				/>
 
 				{/* <!--===== OUR PROCESS INFORMATION =====--> */}
-				{/* <OurProcess
+				<OurProcess
 					title={alterationsRepairsPageContent?.ourProcess?.title}
 					paragraph={alterationsRepairsPageContent?.ourProcess?.paragraph}
 					gridContent={alterationsRepairsPageContent?.ourProcess?.gridContent}
@@ -117,7 +117,7 @@ const AlterationsRepairs = ({
 					backgroundLetter={
 						alterationsRepairsPageContent?.ourProcess?.backgroundLetter
 					}
-				/> */}
+				/>
 			</main>
 
 			{/* <!--===== FOOTER =====--> */}

@@ -12,7 +12,7 @@ import {
 import Footer from "/components/Footer";
 import Logos from "../components/Logos";
 import MetaTag from "../components/Meta/MetaTag";
-// import OurProcess from "../components/OurProcess";
+import OurProcess from "../components/OurProcess";
 import TeamMembers from "../components/TeamMembers";
 import ContactBanner from "../components/ContactBanner";
 import TextImageJumbo from "../components/TextImageJumbo";
@@ -97,14 +97,14 @@ const Hotel = ({
 				/>
 
 				{/* <!--===== OUR PROCESS INFORMATION =====--> */}
-				{/* <OurProcess
+				<OurProcess
 					title={hotelPageContent?.bookingContent?.title}
 					paragraph={hotelPageContent?.bookingContent?.paragraph}
 					gridContent={hotelPageContent?.bookingContent?.gridContent}
 					// Display Options
 					backgroundColor={hotelPageContent?.bookingContent?.backgroundColor}
 					backgroundLetter={hotelPageContent?.bookingContent?.backgroundLetter}
-				/> */}
+				/>
 
 				{/* <!--===== USER ACCOUNT =====--> */}
 				<TitleParagraphImage
