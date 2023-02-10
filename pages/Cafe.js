@@ -11,7 +11,7 @@ import {
 import Footer from "/components/Footer";
 import Logos from "../components/Logos";
 import MetaTag from "../components/Meta/MetaTag";
-import OurProcess from "../components/OurProcess";
+// import OurProcess from "../components/OurProcess";
 import TeamMembers from "../components/TeamMembers";
 import ContactBanner from "../components/ContactBanner";
 import TextImageJumbo from "../components/TextImageJumbo";
@@ -96,14 +96,14 @@ const Cafe = ({
 				/>
 
 				{/* <!--===== OUR PROCESS INFORMATION =====--> */}
-				<OurProcess
+				{/* <OurProcess
 					title={cafePageContent?.bookingContent?.title}
 					paragraph={cafePageContent?.bookingContent?.paragraph}
 					gridContent={cafePageContent?.bookingContent?.gridContent}
 					// Display Options
 					backgroundColor={cafePageContent?.bookingContent?.backgroundColor}
 					backgroundLetter={cafePageContent?.bookingContent?.backgroundLetter}
-				/>
+				/> */}
 
 				{/* <!--===== USER ACCOUNT =====--> */}
 				<TitleParagraphImage

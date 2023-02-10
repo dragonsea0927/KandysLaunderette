@@ -17,9 +17,6 @@ const Logos = (props) => {
 					<motion.div
 						variants={stagger}
 						className="flex flex-col sm:grid sm:grid-cols-2 lg:grid lg:grid-cols-5 justify-center xl:justify-between items-center gap-4 gap-y-8"
-						// style={{
-						// 	filter: "grayscale(1) contrast(1.2) opacity(0.8)",
-						// }}
 					>
 						{props?.logoGrid.map((keys) => (
 							<LogoCardTwo Key={keys?.id} image={keys?.image} />
