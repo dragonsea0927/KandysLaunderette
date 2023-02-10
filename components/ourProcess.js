@@ -16,7 +16,7 @@ const OurProcess = (props) => {
 			textColor = "white";
 			paragraphColor = "white";
 			backgroundColor = "#950e3b";
-			linearGradientColor = `linear-gradient(0deg,
+			linearGradientColor = `0deg,
 			rgba(149, 14, 59, 0.85),
 			rgba(221, 69, 119, 0.5)`;
 			break;
@@ -24,7 +24,7 @@ const OurProcess = (props) => {
 			textColor = "white";
 			paragraphColor = "white";
 			backgroundColor = "#3375fa";
-			linearGradientColor = `linear-gradient(0deg,
+			linearGradientColor = `0deg,
 			rgba(36, 14, 149, 0.85),
 			rgba(36, 14, 149, 0.5)`;
 			break;
@@ -32,7 +32,7 @@ const OurProcess = (props) => {
 			textColor = "black";
 			paragraphColor = "darkGrey";
 			backgroundColor = "#fff";
-			linearGradientColor = `linear-gradient(0deg,
+			linearGradientColor = `0deg,
                         rgba(255,255,255, 1),
                         rgba(255,255,255, 1)`;
 			break;

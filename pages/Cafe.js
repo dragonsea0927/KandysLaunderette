@@ -11,7 +11,7 @@ import {
 import Footer from "/components/Footer";
 import Logos from "../components/Logos";
 import MetaTag from "../components/Meta/MetaTag";
-import OurProcess from "../components/ourProcess";
+import OurProcess from "../components/OurProcess";
 import TeamMembers from "../components/TeamMembers";
 import ContactBanner from "../components/ContactBanner";
 import TextImageJumbo from "../components/TextImageJumbo";

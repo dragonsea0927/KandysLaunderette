@@ -11,7 +11,7 @@ import {
 import Footer from "/components/Footer";
 import SignUp from "../components/SignUp";
 import MetaTag from "../components/Meta/MetaTag";
-import OurProcess from "../components/ourProcess";
+import OurProcess from "../components/OurProcess";
 import TitleParagraph from "/components/TitleParagraph";
 import ContactBanner from "../components/ContactBanner";
 import HeroSectionFour from "../components/HeroSectionFour";
