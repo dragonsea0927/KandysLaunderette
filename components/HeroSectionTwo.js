@@ -31,7 +31,7 @@ const HeroSectionTwo = (props) => {
 							0deg,
 							rgba(0, 0, 0, 0.30),
 							rgba(0, 0, 0, 0.30)
-						),url(${props.backgroundImage})`,
+						),url("${props.backgroundImage}")`,
 			}}
 		>
 			<div className="container mx-auto p-0">

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import DOMPurify from "isomorphic-dompurify";
 import {motion} from "framer-motion";
 import styles from "../../styles/components/OurProcess.module.scss";
 import {

@@ -1,8 +1,8 @@
 import {motion} from "framer-motion";
+import DOMPurify from "isomorphic-dompurify";
 import styles from "../styles/components/OurProcess.module.scss";
 import {fadeIn, fadeInUp} from "../animations/animations";
 import SingleCardTwo from "./cards/SingleCardTwo";
-import DOMPurify from "isomorphic-dompurify";
 
 const OurProcess = (props) => {
 	/* Sets the Background Color
@@ -17,7 +17,7 @@ const OurProcess = (props) => {
 			textColor = "white";
 			paragraphColor = "white";
 			backgroundColor = "#950e3b";
-			linearGradientColor = `0deg,
+			linearGradientColor = `linear-gradient(0deg,
 			rgba(149, 14, 59, 0.85),
 			rgba(221, 69, 119, 0.5)`;
 			break;
@@ -25,7 +25,7 @@ const OurProcess = (props) => {
 			textColor = "white";
 			paragraphColor = "white";
 			backgroundColor = "#3375fa";
-			linearGradientColor = `0deg,
+			linearGradientColor = `linear-gradient(0deg,
 			rgba(36, 14, 149, 0.85),
 			rgba(36, 14, 149, 0.5)`;
 			break;
@@ -33,7 +33,9 @@ const OurProcess = (props) => {
 			textColor = "black";
 			paragraphColor = "darkGrey";
 			backgroundColor = "#fff";
-			linearGradientColor = "#fff";
+			linearGradientColor = `linear-gradient(0deg,
+                        rgba(255,255,255, 1),
+                        rgba(255,255,255, 1)`;
 			break;
 	}
 
@@ -71,7 +73,7 @@ const OurProcess = (props) => {
 				backgroundPosition: "center",
 				backgroundRepeat: "no-repeat",
 				backgroundColor: `${backgroundColor}`,
-				backgroundImage: `linear-gradient(${linearGradientColor}), url("/svg/${backgroundLetter}.svg");`,
+				backgroundImage: `linear-gradient(${linearGradientColor}), url("/svg/${backgroundLetter}.svg")`,
 			}}
 		>
 			<div className="container mx-auto p-0">

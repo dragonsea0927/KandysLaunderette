@@ -1,8 +1,5 @@
 /* eslint-disable @next/next/link-passhref */
 import Link from "next/link";
-import Image from "next/image";
-import {motion} from "framer-motion";
-import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 import styles from "../styles/components/HeroSection.module.scss";
 
 const HeroSectionThree = (props) => {
@@ -19,7 +16,7 @@ const HeroSectionThree = (props) => {
 														0deg,
 														rgba(149, 14, 59, 0.35),
 														rgba(149, 14, 59, 0.05)
-													),url(${props.backgroundImage})`,
+													),url("${props.backgroundImage}")`,
 								}}
 							>
 								<div className="relative">
