@@ -1,13 +1,10 @@
 import Image from "next/image";
-import {motion} from "framer-motion";
-import DOMPurify from "isomorphic-dompurify";
-import {fadeIn, fadeInUp} from "../animations/animations";
 import FAQCard from "./FAQCard";
 
 const FAQ = (props) => {
 	let iterationCount = 1;
 	return (
-		<section className={styles.faq}>
+		<section>
 			<div className="flex flex-col-reverse lg:flex-row relative py-20 bg-white overflow-hidden">
 				<div className="hidden lg:block w-full lg:w-1/2 my-auto">
 					<Image

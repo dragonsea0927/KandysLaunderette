@@ -1,9 +1,7 @@
 /* eslint-disable @next/next/link-passhref */
 import Link from "next/link";
-import Image from "next/image";
 import {motion} from "framer-motion";
-import {fadeInUp, fadeIn, stagger} from "../animations/animations";
-import styles from "../styles/components/TitleParagraphVideo.module.scss";
+import {fadeIn} from "../animations/animations";
 
 const TitleParagraphVideo = (props) => {
 	/* Check if paragraph content is null
@@ -25,7 +23,7 @@ const TitleParagraphVideo = (props) => {
 	}
 
 	return (
-		<section className={styles.titleParagraphVideo}>
+		<section>
 			<div className="pt-6 pb-20 bg-white overflow-hidden">
 				<div className="container mx-auto px-4">
 					<div className="relative bg-white overflow-hidden rounded-t-3xl">

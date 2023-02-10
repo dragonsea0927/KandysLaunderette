@@ -12,7 +12,6 @@ import {
 
 // Components
 import FAQTwo from "../components/FAQTwo";
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import MetaTag from "../components/Meta/MetaTag";
 import TwoOptions from "../components/TwoOptions";

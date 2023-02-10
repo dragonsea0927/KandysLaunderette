@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import {motion} from "framer-motion";
-import {fadeInUp, fadeIn, stagger} from "../animations/animations";
+import {fadeIn} from "../animations/animations";
 
 const HeroContentSection = (props) => {
 	return (

@@ -2,7 +2,6 @@ import {motion} from "framer-motion";
 import DOMPurify from "isomorphic-dompurify";
 import {fadeIn, fadeInUp} from "../animations/animations";
 import SingleCardTwo from "../components/Cards/SingleCardTwo";
-import styles from "../styles/components/OurProcess.module.scss";
 
 const OurProcess = (props) => {
 	/* Sets the Background Color
@@ -67,7 +66,6 @@ const OurProcess = (props) => {
 
 	return (
 		<section
-			className={styles.ourProcess}
 			style={{
 				backgroundSize: "cover",
 				backgroundPosition: "center",
