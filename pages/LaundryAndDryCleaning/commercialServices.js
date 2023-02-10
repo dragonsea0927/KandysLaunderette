@@ -73,7 +73,7 @@ const commercialServices = ({
 						<div>
 							<div className={styles.previousButton}>
 								<Link href="/LaundryDryCleaning">
-									<a target="blank">
+									<a>
 										<i className="bi bi-arrow-left-circle"></i>
 									</a>
 								</Link>
@@ -87,175 +87,233 @@ const commercialServices = ({
 										<motion.div variants={stagger} className={styles.List}>
 											<h2>Duvet Cleaning</h2>
 											<ul>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[0].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[0].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[1].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[1].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[2].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[2].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[3].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[3].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[4].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[4].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[5].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[5].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[6].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[6].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[7].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[7].serviceName}
+														</motion.span>
+													</a>
 												</Link>
 											</ul>
 										</motion.div>
 										<motion.div variants={stagger} className={styles.List}>
 											<h2>Tops & Shirts</h2>
 											<ul>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[8].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[8].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[9].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[9].serviceName}
+														</motion.span>
+													</a>
 												</Link>
 											</ul>
 										</motion.div>
 										<motion.div variants={stagger} className={styles.List}>
 											<h2>Trousers</h2>
 											<ul>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[10].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[10].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[11].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[11].serviceName}
+														</motion.span>
+													</a>
 												</Link>
 											</ul>
 										</motion.div>
 										<motion.div variants={stagger} className={styles.List}>
 											<h2>Bar & Restaurant</h2>
 											<ul>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[12].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[12].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[13].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[13].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[14].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[14].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[15].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[15].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[16].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[16].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[17].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[17].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[18].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[18].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[19].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[19].serviceName}
+														</motion.span>
+													</a>
 												</Link>
 											</ul>
 										</motion.div>
 										<motion.div variants={stagger} className={styles.List}>
 											<h2>Throw-over</h2>
 											<ul>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[20].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[20].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[21].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[21].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[22].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[22].serviceName}
+														</motion.span>
+													</a>
 												</Link>
 											</ul>
 										</motion.div>
 										<motion.div variants={stagger} className={styles.List}>
 											<h2>Accessories</h2>
 											<ul>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[23].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[23].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[24].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[24].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[25].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[25].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[26].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[26].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[27].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[27].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp} target="blank">
-														{BusinessServicesListDB[28].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{BusinessServicesListDB[28].serviceName}
+														</motion.span>
+													</a>
 												</Link>
 											</ul>
 										</motion.div>
@@ -270,8 +328,8 @@ const commercialServices = ({
 												variants={fadeInUp}
 												className={styles.content}
 											>
-												<Link href="/">
-													<a target="blank">
+												<Link href={`/`}>
+													<a>
 														<Image
 															src="/img/supersoft_duvet_1_8.jpg"
 															alt="Product Image"
@@ -283,8 +341,8 @@ const commercialServices = ({
 													</a>
 												</Link>
 												<div className={styles.header}>
-													<Link href="/">
-														<a target="blank">Duvet Cleaning</a>
+													<Link href={`/`}>
+														<a>Duvet Cleaning</a>
 													</Link>
 												</div>
 											</motion.div>
@@ -292,8 +350,8 @@ const commercialServices = ({
 												variants={fadeInUp}
 												className={styles.content}
 											>
-												<Link href="/">
-													<a target="blank">
+												<Link href={`/`}>
+													<a>
 														<Image
 															src="/img/UK_BuyingGuide_Duvet.webp"
 															alt="Product Image"
@@ -305,8 +363,8 @@ const commercialServices = ({
 													</a>
 												</Link>
 												<div className={styles.header}>
-													<Link href="/">
-														<a target="blank">Bed Linen</a>
+													<Link href={`/`}>
+														<a>Bed Linen</a>
 													</Link>
 												</div>
 											</motion.div>
@@ -314,8 +372,8 @@ const commercialServices = ({
 												variants={fadeInUp}
 												className={styles.content}
 											>
-												<Link href="/">
-													<a target="blank">
+												<Link href={`/`}>
+													<a>
 														<Image
 															src="/img/UK_BuyingGuide_Pillows.webp"
 															alt="Product Image"
@@ -327,8 +385,8 @@ const commercialServices = ({
 													</a>
 												</Link>
 												<div className={styles.header}>
-													<Link href="/">
-														<a target="blank">Bed Single Blanket</a>
+													<Link href={`/`}>
+														<a>Bed Single Blanket</a>
 													</Link>
 												</div>
 											</motion.div>
@@ -336,8 +394,8 @@ const commercialServices = ({
 												variants={fadeInUp}
 												className={styles.content}
 											>
-												<Link href="/">
-													<a target="blank">
+												<Link href={`/`}>
+													<a>
 														<Image
 															src="/img/Size-Chart-LP_Bed-Linen.webp"
 															alt="Product Image"
@@ -349,8 +407,8 @@ const commercialServices = ({
 													</a>
 												</Link>
 												<div className={styles.header}>
-													<Link href="/">
-														<a target="blank">King & Queen Bed</a>
+													<Link href={`/`}>
+														<a>King & Queen Bed</a>
 													</Link>
 												</div>
 											</motion.div>
@@ -364,8 +422,8 @@ const commercialServices = ({
 												variants={fadeInUp}
 												className={styles.content}
 											>
-												<Link href="/">
-													<a target="blank">
+												<Link href={`/`}>
+													<a>
 														<Image
 															src="/img/491-325s5.jpg"
 															alt="Product Image"
@@ -378,8 +436,8 @@ const commercialServices = ({
 												</Link>
 
 												<div className={styles.header}>
-													<Link href="/">
-														<a target="blank">Staff Tops & Shirts</a>
+													<Link href={`/`}>
+														<a>Staff Tops & Shirts</a>
 													</Link>
 												</div>
 											</motion.div>
@@ -387,8 +445,8 @@ const commercialServices = ({
 												variants={fadeInUp}
 												className={styles.content}
 											>
-												<Link href="/">
-													<a target="blank">
+												<Link href={`/`}>
+													<a>
 														<Image
 															src="/img/skubb-storage-case-dark-grey__0940614_pe795076_s5.webp"
 															alt="Product Image"
@@ -401,8 +459,8 @@ const commercialServices = ({
 												</Link>
 
 												<div className={styles.header}>
-													<Link href="/">
-														<a target="blank">Money Pouch Waist Apron</a>
+													<Link href={`/`}>
+														<a>Money Pouch Waist Apron</a>
 													</Link>
 												</div>
 											</motion.div>
@@ -410,8 +468,8 @@ const commercialServices = ({
 												variants={fadeInUp}
 												className={styles.content}
 											>
-												<Link href="/">
-													<a target="blank">
+												<Link href={`/`}>
+													<a>
 														<Image
 															src="/img/pants-cleaning.jpg"
 															alt="Product Image"
@@ -424,8 +482,8 @@ const commercialServices = ({
 												</Link>
 
 												<div className={styles.header}>
-													<Link href="/">
-														<a target="blank">Staff Trousers</a>
+													<Link href={`/`}>
+														<a>Staff Trousers</a>
 													</Link>
 												</div>
 											</motion.div>
@@ -433,8 +491,8 @@ const commercialServices = ({
 												variants={fadeInUp}
 												className={styles.content}
 											>
-												<Link href="/">
-													<a target="blank">
+												<Link href={`/`}>
+													<a>
 														<Image
 															src="/img/attention-to-detail.webp"
 															alt="Product Image"
@@ -447,8 +505,8 @@ const commercialServices = ({
 												</Link>
 
 												<div className={styles.header}>
-													<Link href="/">
-														<a target="blank">Waist Coat</a>
+													<Link href={`/`}>
+														<a>Waist Coat</a>
 													</Link>
 												</div>
 											</motion.div>
@@ -462,8 +520,8 @@ const commercialServices = ({
 												variants={fadeInUp}
 												className={styles.content}
 											>
-												<Link href="/">
-													<a target="blank">
+												<Link href={`/`}>
+													<a>
 														<Image
 															src="/img/a210e29d04087417d25f542234b19422.jpg"
 															alt="Product Image"
@@ -476,8 +534,8 @@ const commercialServices = ({
 												</Link>
 
 												<div className={styles.header}>
-													<Link href="/">
-														<a target="blank">Waiters Uniforms Set</a>
+													<Link href={`/`}>
+														<a>Waiters Uniforms Set</a>
 													</Link>
 												</div>
 											</motion.div>
@@ -485,8 +543,8 @@ const commercialServices = ({
 												variants={fadeInUp}
 												className={styles.content}
 											>
-												<Link href="/">
-													<a target="blank">
+												<Link href={`/`}>
+													<a>
 														<Image
 															src="/img/26d4c8388751821fbdea71c0c26f46f0.jpg"
 															alt="Product Image"
@@ -499,8 +557,8 @@ const commercialServices = ({
 												</Link>
 
 												<div className={styles.header}>
-													<Link href="/">
-														<a target="blank">Kitchen Staff Shirts</a>
+													<Link href={`/`}>
+														<a>Kitchen Staff Shirts</a>
 													</Link>
 												</div>
 											</motion.div>
@@ -508,8 +566,8 @@ const commercialServices = ({
 												variants={fadeInUp}
 												className={styles.content}
 											>
-												<Link href="/">
-													<a target="blank">
+												<Link href={`/`}>
+													<a>
 														<Image
 															src="/img/PH165543-crop001.webp"
 															alt="Product Image"
@@ -522,8 +580,8 @@ const commercialServices = ({
 												</Link>
 
 												<div className={styles.header}>
-													<Link href="/">
-														<a target="blank">Bar Staff Aprons</a>
+													<Link href={`/`}>
+														<a>Bar Staff Aprons</a>
 													</Link>
 												</div>
 											</motion.div>
@@ -531,8 +589,8 @@ const commercialServices = ({
 												variants={fadeInUp}
 												className={styles.content}
 											>
-												<Link href="/">
-													<a target="blank">
+												<Link href={`/`}>
+													<a>
 														<Image
 															src="/img/Multislider_Barnham_Collection.webp"
 															alt="Product Image"
@@ -544,8 +602,8 @@ const commercialServices = ({
 													</a>
 												</Link>
 												<div className={styles.header}>
-													<Link href="/">
-														<a target="blank">Kitchen Cloths</a>
+													<Link href={`/`}>
+														<a>Kitchen Cloths</a>
 													</Link>
 												</div>
 											</motion.div>

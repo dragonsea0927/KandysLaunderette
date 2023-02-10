@@ -86,325 +86,429 @@ const IndividualService = ({
 										<motion.div variants={stagger} className={styles.List}>
 											<h2>Suits</h2>
 											<ul>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[0].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[0].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[1].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[1].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[2].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[2].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[3].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[3].serviceName}
+														</motion.span>
+													</a>
 												</Link>
 											</ul>
 										</motion.div>
 										<motion.div variants={stagger} className={styles.List}>
 											<h2>Trousers</h2>
 											<ul>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[4].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[4].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[5].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[5].serviceName}
+														</motion.span>
+													</a>
 												</Link>
 											</ul>
 										</motion.div>
 										<motion.div variants={stagger} className={styles.List}>
 											<h2>Skirts</h2>
 											<ul>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[6].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[6].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[7].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[7].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[8].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[8].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[9].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[9].serviceName}
+														</motion.span>
+													</a>
 												</Link>
 											</ul>
 										</motion.div>
 										<motion.div variants={stagger} className={styles.List}>
 											<h2>Dresses</h2>
 											<ul>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[10].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[10].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[11].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[11].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[12].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[12].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[13].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[13].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[14].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[14].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[15].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[15].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[16].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[16].serviceName}
+														</motion.span>
+													</a>
 												</Link>
 											</ul>
 										</motion.div>
 										<motion.div variants={stagger} className={styles.List}>
 											<h2>Coats</h2>
 											<ul>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[17].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[17].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[18].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[18].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[19].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[19].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[20].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[20].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[21].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[21].serviceName}
+														</motion.span>
+													</a>
 												</Link>
 											</ul>
 										</motion.div>
 										<motion.div variants={stagger} className={styles.List}>
 											<h2>Tops & Shirts</h2>
 											<ul>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[22].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[22].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[23].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[23].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[24].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[24].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[25].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[25].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[26].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[26].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[27].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[27].serviceName}
+														</motion.span>
+													</a>
 												</Link>
 											</ul>
 										</motion.div>
 										<motion.div variants={stagger} className={styles.List}>
 											<h2>Jackets</h2>
 											<ul>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[28].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[28].serviceName}
+														</motion.span>
+													</a>
 												</Link>
 											</ul>
 										</motion.div>
 										<motion.div variants={stagger} className={styles.List}>
 											<h2>Throw-over</h2>
 											<ul>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[29].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[29].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[30].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[30].serviceName}
+														</motion.span>
+													</a>
 												</Link>
 											</ul>
 										</motion.div>
 										<motion.div variants={stagger} className={styles.List}>
 											<h2>Wedding Items</h2>
 											<ul>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[31].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[31].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[32].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[32].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[33].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[33].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[34].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[34].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[35].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[35].serviceName}
+														</motion.span>
+													</a>
 												</Link>
 											</ul>
 										</motion.div>
 										<motion.div variants={stagger} className={styles.List}>
 											<h2>Accessories</h2>
 											<ul>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[36].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[36].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[37].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[37].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[38].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[38].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[39].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[39].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[40].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[40].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[41].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[41].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[42].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[42].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[43].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[43].serviceName}
+														</motion.span>
+													</a>
 												</Link>
 											</ul>
 										</motion.div>
 										<motion.div variants={stagger} className={styles.List}>
 											<h2>Duvet Cleaning</h2>
 											<ul>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[44].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[44].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[45].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[45].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[46].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[46].serviceName}
+														</motion.span>
+													</a>
 												</Link>
 											</ul>
 										</motion.div>
 										<motion.div variants={stagger} className={styles.List}>
 											<h2>Sleeping Bag</h2>
 											<ul>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[47].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[46].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[48].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[47].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[49].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[48].serviceName}
+														</motion.span>
+													</a>
 												</Link>
 											</ul>
 										</motion.div>
 										<motion.div variants={stagger} className={styles.List}>
 											<h2>Full Bags</h2>
 											<ul>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[49].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[49].serviceName}
+														</motion.span>
+													</a>
 												</Link>
-												<Link href="/">
-													<motion.a variants={fadeInUp}>
-														{IndividualServicesListDB[50].serviceName}
-													</motion.a>
+												<Link href={`/`}>
+													<a>
+														<motion.span variants={fadeInUp}>
+															{IndividualServicesListDB[50].serviceName}
+														</motion.span>
+													</a>
 												</Link>
 											</ul>
 										</motion.div>

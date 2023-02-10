@@ -551,7 +551,7 @@ const HotelRestaurantServices = ({
 													className="mr-3"
 													width="20"
 													height="20"
-													vieBox="0 0 20 20"
+													viewBox="0 0 20 20"
 													fill="none"
 													xmlns="http://www.w3.org/2000/svg"
 												>
@@ -576,7 +576,7 @@ const HotelRestaurantServices = ({
 													className="mr-3"
 													width="20"
 													height="20"
-													vieBox="0 0 20 20"
+													viewBox="0 0 20 20"
 													fill="none"
 													xmlns="http://www.w3.org/2000/svg"
 												>
@@ -601,7 +601,7 @@ const HotelRestaurantServices = ({
 													className="mr-3"
 													width="20"
 													height="20"
-													vieBox="0 0 20 20"
+													viewBox="0 0 20 20"
 													fill="none"
 													xmlns="http://www.w3.org/2000/svg"
 												>

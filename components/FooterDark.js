@@ -13,7 +13,7 @@ const FooterDark = (props) => {
 						<div className="grid grid-cols-1 lg:grid-cols-3 justify-center items-center gap-6 py-14">
 							<div className="flex flex-col px-2">
 								<h2 className="text-center lg:text-left">
-									<strong>Don’t miss our latest updates</strong>
+									<strong>Don&apos;t miss our latest updates</strong>
 								</h2>
 								<p className="text-center lg:text-left text-sm text-black mt-4">
 									Be the first to know about new discounts, services and offers.
@@ -209,19 +209,21 @@ const FooterDark = (props) => {
 								</ul>
 								<div>
 									<h5 className="text-black text-sm text-center mb-4 mt-8">
-										&copy; 2022 Kandy's Launderette. All Rights Reserved
+										&copy; 2022 Kandy&apos;s Launderette. All Rights Reserved
 										<br></br>
 										High St, Swansea
 									</h5>
-									<Link href="https://todd-owen-mpeli.github.io/Web-Developer-Portfolio-Final-/src/index.html">
-										<span className="text-sm flex flex-row justify-center items-center gap-1">
-											Website by
-											<a target="blank">
+									<Link
+										href={`https://todd-owen-mpeli.github.io/Web-Developer-Portfolio-Final-/src/index.html`}
+									>
+										<a>
+											<span className="text-sm text-black flex flex-row justify-center items-center gap-1">
+												Website by
 												<span className="text-sm text-fadedPink hover:text-pink transition-all ease-in-out duration-[0.5s]">
 													ToddBlue Studio
 												</span>
-											</a>
-										</span>
+											</span>
+										</a>
 									</Link>
 								</div>
 							</div>

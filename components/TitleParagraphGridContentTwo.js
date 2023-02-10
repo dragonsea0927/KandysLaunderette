@@ -75,7 +75,7 @@ const TitleParagraphGridContentTwo = (props) => {
 								100% Happiness Guarantee
 							</h3>
 							<p className="py-4 text-darkGrey text-medium">
-								If you're not completely satisfied with the wash or dry
+								If you&apos;re not completely satisfied with the wash or dry
 								cleaning, we will re-process your clothes for free!
 							</p>
 						</div>
@@ -91,7 +91,9 @@ const TitleParagraphGridContentTwo = (props) => {
 									height="75px"
 								/>
 							</div>
-							<h3 className="my-2 text-lg text-black font-bold">It's fast!</h3>
+							<h3 className="my-2 text-lg text-black font-bold">
+								It&apos;s fast!
+							</h3>
 							<p className="py-4 text-darkGrey text-medium">
 								We pickup, wash, & deliver in less than 24 hours. with Heighest
 								priority for every Customer
