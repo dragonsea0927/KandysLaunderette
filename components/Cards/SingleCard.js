@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import {motion} from "framer-motion";
-import {fadeInUp} from "../../animations/animations";
+import fadeInUp from "../../animations/animations";
 import styles from "../../styles/components/SingleCard.module.scss";
 
 const SingleCard = (props) => {
@@ -35,5 +35,3 @@ const SingleCard = (props) => {
 };
 
 export default SingleCard;
-
-// kandyslaunderette.local;

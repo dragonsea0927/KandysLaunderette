@@ -2,7 +2,7 @@
 import {motion} from "framer-motion";
 import DOMPurify from "isomorphic-dompurify";
 import {fadeInUp, stagger} from "../animations/animations";
-import TitleParagraphGridCard from "/components/cards/TitleParagraphGridCard";
+import TitleParagraphGridCard from "../components/Cards/TitleParagraphGridCard";
 import styles from "../styles/components/TitleParagraphGridContent.module.scss";
 
 const TitleParagraphGridContent = (props) => {

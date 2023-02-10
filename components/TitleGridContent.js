@@ -1,7 +1,7 @@
 import Link from "next/link";
 import {motion} from "framer-motion";
 import DOMPurify from "isomorphic-dompurify";
-import SingleCard from "/components/cards/SingleCard";
+import SingleCard from "../components/Cards/SingleCard";
 import {fadeInUp, stagger} from "../animations/animations";
 import styles from "../styles/components/TitleGridContent.module.scss";
 
@@ -34,7 +34,7 @@ const TitleGridContent = (props) => {
 							0deg,
 							rgba(149, 14, 59, 0.85),
 							rgba(221, 69, 119, 0.50)
-						),url(${props.backgroundImage})`,
+						),url("${props.backgroundImage}")`,
 			}}
 		>
 			<div className="container mx-auto flex flex-col px-4">

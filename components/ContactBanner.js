@@ -33,7 +33,7 @@ const ContactBanner = (props) => {
 							0deg,
 							rgba(221, 69, 119, 0.65),
 							rgba(221, 69, 119, 0.15)
-						),url(${props.backgroundImage})`,
+						),url("${props.backgroundImage}")`,
 			}}
 		>
 			<div className="container mx-auto p-0">
