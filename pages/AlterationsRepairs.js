@@ -11,7 +11,7 @@ import {
 import Footer from "/components/Footer";
 import SignUp from "../components/SignUp";
 import MetaTag from "../components/Meta/MetaTag";
-import OurProcess from "../components/OurProcess";
+import OurProcess from "../components/ourProcess";
 import TitleParagraph from "/components/TitleParagraph";
 import ContactBanner from "../components/ContactBanner";
 import HeroSectionFour from "../components/HeroSectionFour";
@@ -20,8 +20,8 @@ import TitleParagraphImage from "../components/TitleParagraphImage";
 const AlterationsRepairs = ({
 	seo,
 	pageTitle,
-	CommercialServicesMenuLinks,
 	themesOptionsContent,
+	CommercialServicesMenuLinks,
 	IndividualServicesMenuLinks,
 	alterationsRepairsPageContent,
 }) => {
@@ -258,13 +258,13 @@ export async function getStaticProps() {
 
 	return {
 		props: {
+			themesOptionsContent,
 			CommercialServicesMenuLinks,
 			IndividualServicesMenuLinks,
 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
 			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
 			alterationsRepairsPageContent:
 				response?.data?.mainContent?.edges[0]?.node?.alterationsRepairsPage,
-			themesOptionsContent,
 		},
 		revalidate: 1,
 	};

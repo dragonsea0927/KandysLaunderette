@@ -23,10 +23,10 @@ import TitleParagraphThree from "../components/TitleParagraphThree";
 const AirBnb = ({
 	seo,
 	pageTitle,
+	airBnbPageContent,
 	themesOptionsContent,
 	IndividualServicesMenuLinks,
 	CommercialServicesMenuLinks,
-	airBnbPageContent,
 }) => {
 	return (
 		<motion.div
