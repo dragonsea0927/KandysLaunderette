@@ -78,7 +78,7 @@ const ContactBannerTwo = (props) => {
 							dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 						/>
 					</motion.div>
-					<motion.button variants={fadeIn}>
+					<motion.div variants={fadeIn}>
 						<Link
 							href={`${props?.buttonLink?.url}`}
 							target={`${props?.buttonLink?.target}`}
@@ -87,7 +87,7 @@ const ContactBannerTwo = (props) => {
 								{props?.buttonLink?.title}
 							</a>
 						</Link>
-					</motion.button>
+					</motion.div>
 				</motion.div>
 			</div>
 		</section>
