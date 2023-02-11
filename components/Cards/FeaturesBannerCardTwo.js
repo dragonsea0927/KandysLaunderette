@@ -6,9 +6,11 @@ const FeaturesBannerCardTwo = (props) => {
 	function isParagraphContent(isParagraphContent) {
 		let contentStyling;
 		if (isParagraphContent === null) {
-			contentStyling = "hidden text-left text-white text-medium text-white";
+			contentStyling =
+				"hidden text-left text-white text-medium text-white font-[400]";
 		} else {
-			contentStyling = "block text-left text-white text-medium text-white";
+			contentStyling =
+				"block text-left text-white text-medium text-white font-[400]";
 		}
 		return contentStyling;
 	}

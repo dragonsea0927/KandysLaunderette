@@ -50,69 +50,68 @@ const TextImageCard = (props) => {
 	}
 
 	return (
-		<div className={styles.textImageCard}>
-			<div className="flex flex-col md:flex-row py-10 px-4 my-4 gap-16 justify-center items-center">
-				<motion.div
+		<div className="flex flex-col lg:flex-row py-10 px-4 my-4 gap-16 justify-center items-center">
+			<motion.div
+				variants={fadeIn}
+				className="px-0 xl:px-10 w-full lg:w-1/2"
+				style={{display: leftImageDisplay}}
+			>
+				<Image
+					width="40px"
+					height="35px"
+					objectFit="cover"
+					objectPosition="center"
+					layout="responsive"
+					alt={`${props?.image?.altText} Image`}
+					src={`${props?.image?.sourceUrl}`}
+					className="w-[40px] h-[35px] rounded-lg object-cover object-center"
+				/>
+			</motion.div>
+			<motion.div
+				variants={fadeInUp}
+				className="w-full m
+			lg:w-1/2 flex flex-col justify-center items-start"
+			>
+				<h5 className="text-grey text-left text-tiny font-[600] uppercase tracking-[0.15rem]">
+					{props?.subtitle}
+				</h5>
+				<h2 className="text-black text-left py-8 text-xl sm:text-3xl lg:text-4xl font-[600]">
+					{props?.title}
+				</h2>
+				<div
+					className={isParagraphContent(props?.paragraph)}
+					dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
+				/>
+				<motion.button
 					variants={fadeIn}
-					className="px-0 xl:px-10 w-full md:w-1/2"
-					style={{display: leftImageDisplay}}
+					className={isButtonLink(props?.buttonLink?.url)}
 				>
-					<Image
-						width="40px"
-						height="35px"
-						objectFit="cover"
-						objectPosition="center"
-						layout="responsive"
-						alt={`${props?.image?.altText} Image`}
-						src={`${props?.image?.sourceUrl}`}
-						className="w-[40px] h-[35px] rounded-lg object-cover object-center"
-					/>
-				</motion.div>
-				<motion.div
-					variants={fadeInUp}
-					className="w-full md:w-1/2 flex flex-col justify-center items-start"
-				>
-					<h5 className="text-grey text-center text-tiny font-[600] uppercase tracking-[0.15rem]">
-						{props?.subtitle}
-					</h5>
-					<h2 className="text-black text-center py-8 text-xl sm:text-3xl lg:text-4xl font-[600]">
-						{props?.title}
-					</h2>
-					<div
-						className={isParagraphContent(props?.paragraph)}
-						dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
-					/>
-					<motion.button
-						variants={fadeIn}
-						className={isButtonLink(props?.buttonLink?.url)}
+					<Link
+						href={`${props?.buttonLink?.url}`}
+						target={`${props?.buttonLink?.target}`}
 					>
-						<Link
-							href={`${props?.buttonLink?.url}`}
-							target={`${props?.buttonLink?.target}`}
-						>
-							<a className="text-fadedPink font-[600] text-medium hover:text-blue transition-all ease-in-out duration-[0.5s]">
-								{props?.buttonLink?.title}
-							</a>
-						</Link>
-					</motion.button>
-				</motion.div>
-				<motion.div
-					variants={fadeIn}
-					className="px-0 xl:px-10 w-full md:w-1/2"
-					style={{display: rightImageDisplay}}
-				>
-					<Image
-						width="40px"
-						height="35px"
-						objectFit="cover"
-						objectPosition="center"
-						layout="responsive"
-						alt={`${props?.image?.altText} Image`}
-						src={`${props?.image?.sourceUrl}`}
-						className="w-[40px] h-[35px] rounded-lg object-cover object-center"
-					/>
-				</motion.div>
-			</div>
+						<a className="text-fadedPink font-[600] text-medium hover:text-blue transition-all ease-in-out duration-[0.5s]">
+							{props?.buttonLink?.title}
+						</a>
+					</Link>
+				</motion.button>
+			</motion.div>
+			<motion.div
+				variants={fadeIn}
+				className="px-0 xl:px-10 w-full lg:w-1/2"
+				style={{display: rightImageDisplay}}
+			>
+				<Image
+					width="40px"
+					height="35px"
+					objectFit="cover"
+					objectPosition="center"
+					layout="responsive"
+					alt={`${props?.image?.altText} Image`}
+					src={`${props?.image?.sourceUrl}`}
+					className="w-[40px] h-[35px] rounded-lg object-cover object-center"
+				/>
+			</motion.div>
 		</div>
 	);
 };
