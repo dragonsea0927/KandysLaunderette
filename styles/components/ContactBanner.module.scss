@@ -1,9 +1,6 @@
+.contactBanner,
 .contactBannerTwo,
 .contactBannerThree {
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-
 	button {
 		a {
 			padding: 1.5rem 3.5rem;
@@ -18,14 +15,4 @@
 			}
 		}
 	}
-}
-
-// <========== CONTACT US BANNER TWO ==========>
-.contactBannerTwo {
-	padding: 7.5rem 5rem;
-}
-
-// <========== CONTACT US BANNER THREE ==========>
-.contactBannerThree {
-	padding: 5rem;
 }

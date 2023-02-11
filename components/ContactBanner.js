@@ -2,6 +2,7 @@ import Link from "next/link";
 import {motion} from "framer-motion";
 import DOMPurify from "isomorphic-dompurify";
 import {fadeIn} from "../animations/animations";
+import styles from "../styles/components/ContactBanner.module.scss";
 
 const ContactBanner = (props) => {
 	/* Check if paragraph content is null
@@ -26,7 +27,7 @@ const ContactBanner = (props) => {
 
 	return (
 		<section
-			className="py-20 px-0 lg:px-8 "
+			className={styles.contactBanner}
 			style={{
 				backgroundSize: "cover",
 				backgroundPosition: "center",
@@ -38,27 +39,31 @@ const ContactBanner = (props) => {
 						),url("${props.backgroundImage}")`,
 			}}
 		>
-			<div className="container mx-auto p-0">
-				<div className="flex flex-col lg:flex-row py-8 gap-10 px-0 lg:px-8 justify-between items-center">
-					<div className="flex flex-col gap-4 justify-between items-start">
-						<h2 className="text-center lg:text-left text-white text-4xl font-[600]">
-							{props?.title}
-						</h2>
-						<div
-							className={isParagraphContent(props?.paragraph)}
-							dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
-						/>
+			<div className="py-20 px-4 lg:px-0">
+				<div className="container mx-auto p-0">
+					<div className="flex flex-col lg:flex-row py-8 gap-10 px-0 lg:px-8 justify-between items-center">
+						<div className="flex flex-col gap-4 justify-between items-center lg:items-start">
+							<h2 className="text-center lg:text-left text-white text-4xl font-[600]">
+								{props?.title}
+							</h2>
+							<div
+								className={isParagraphContent(props?.paragraph)}
+								dangerouslySetInnerHTML={createParagraphMarkup(
+									props?.paragraph
+								)}
+							/>
+						</div>
+						<motion.button variants={fadeIn}>
+							<Link
+								href={`${props?.buttonLink?.url}`}
+								target={`${props?.buttonLink?.target}`}
+							>
+								<a className="py-4 px-6 sm:px-12 md:py-6 xl:px-20 font-[700] text-white text-base bg-pink rounded-lg hover:bg-yellow transition-all ease-in-out duration-[0.5s]">
+									{props?.buttonLink?.title}
+								</a>
+							</Link>
+						</motion.button>
 					</div>
-					<motion.button variants={fadeIn}>
-						<Link
-							href={`${props?.buttonLink?.url}`}
-							target={`${props?.buttonLink?.target}`}
-						>
-							<a className="py-4 px-6 sm:px-12 md:py-6 xl:px-20 font-[700] text-white text-base bg-pink rounded-lg hover:bg-yellow transition-all ease-in-out duration-[0.5s]">
-								{props?.buttonLink?.title}
-							</a>
-						</Link>
-					</motion.button>
 				</div>
 			</div>
 		</section>
