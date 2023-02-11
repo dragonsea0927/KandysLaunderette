@@ -101,7 +101,7 @@ const Prices = ({
 								</div>
 							</div>
 
-							<h2 className="font-[600] text-xl sm:text-3xl lg:text-5xl pt-4">
+							<h2 className="font-[600] text-xl sm:text-4xl lg:text-5xl pt-4">
 								Join <span className="border-b-4 border-yellow">5,482 </span>
 								community members
 							</h2>
