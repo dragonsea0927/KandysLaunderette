@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import {motion} from "framer-motion";
-import DOMPurify from "isomorphic-dompurify";
 import {fadeIn, fadeInUp} from "../animations/animations";
 import IconTextCard from "./Cards/IconTextCard";
 import styles from "../styles/components/ImageTextBulletPoints.module.scss";

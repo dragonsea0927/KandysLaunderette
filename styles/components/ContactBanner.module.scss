@@ -1,14 +1,23 @@
-.contactBanner,
 .contactBannerTwo,
 .contactBannerThree {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-}
 
-// <========== CONTACT US BANNER ==========>
-.contactBanner {
-	padding: 5rem 2rem;
+	button {
+		a {
+			padding: 1.5rem 3.5rem;
+		}
+	}
+
+	/* Screen (1024px) */
+	@media screen and (max-width: 1024px) {
+		button {
+			a {
+				padding: 1rem 1.5rem;
+			}
+		}
+	}
 }
 
 // <========== CONTACT US BANNER TWO ==========>

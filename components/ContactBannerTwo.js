@@ -28,11 +28,14 @@ const ContactBannerTwo = (props) => {
 			id="#contactBannerTwo"
 			className={styles.contactBannerTwo}
 			style={{
+				backgroundSize: "cover",
+				backgroundPosition: "center",
+				backgroundRepeat: "no-repeat",
 				backgroundImage: `linear-gradient(
 							0deg,
 							rgba(221, 69, 119, 0.45),
 							rgba(221, 69, 119, 0.45)
-						),url(${props.backgroundImage}`,
+						),url("${props.backgroundImage}"`,
 			}}
 		>
 			<div className="container mx-auto p-0">

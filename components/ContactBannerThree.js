@@ -25,7 +25,10 @@ const ContactBannerThree = (props) => {
 		<section
 			className={styles.contactBannerThree}
 			style={{
-				backgroundImage: `url(${props.backgroundImage}`,
+				backgroundSize: "cover",
+				backgroundPosition: "center",
+				backgroundRepeat: "no-repeat",
+				backgroundImage: `url("${props.backgroundImage}"`,
 			}}
 		>
 			<div className="container mx-auto p-0">
