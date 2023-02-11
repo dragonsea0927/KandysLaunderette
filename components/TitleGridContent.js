@@ -39,7 +39,7 @@ const TitleGridContent = (props) => {
 		>
 			<div className="container mx-auto flex flex-col px-4">
 				<motion.div variants={fadeInUp} className="py-28">
-					<h2 className="text-white text-center font-[600] text-xl sm:text-5xl">
+					<h2 className="text-white text-center font-[600] text-2xl sm:text-3xl lg:text-5xl">
 						{props?.title}
 					</h2>
 					<div

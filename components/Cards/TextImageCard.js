@@ -75,7 +75,7 @@ const TextImageCard = (props) => {
 				<h5 className="text-grey text-left text-tiny font-[600] uppercase tracking-[0.15rem]">
 					{props?.subtitle}
 				</h5>
-				<h2 className="text-black text-left py-8 text-xl sm:text-3xl lg:text-4xl font-[600]">
+				<h2 className="text-black text-left py-8  text-2xl sm:text-3xl lg:text-5xl font-[600]">
 					{props?.title}
 				</h2>
 				<div

@@ -8,7 +8,9 @@ const PerformanceBanner = (props) => {
 		<section className="py-10 bg-white sm:py-16 lg:py-24">
 			<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
 				<div className="text-center">
-					<h2 className="font-[600] text-xl sm:text-5xl">{props?.title}</h2>
+					<h2 className="font-[600] text-2xl sm:text-3xl lg:text-5xl">
+						{props?.title}
+					</h2>
 				</div>
 
 				<motion.div

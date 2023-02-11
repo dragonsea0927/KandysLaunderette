@@ -26,7 +26,7 @@ const StoreLocation = (props) => {
 		<section>
 			<div className="container mx-auto p-0">
 				<motion.div variants={fadeInUp} className="flex flex-col py-28">
-					<h2 className="text-black text-center font-[600] text-xl sm:text-5xl">
+					<h2 className="text-black text-center font-[600] text-2xl sm:text-3xl lg:text-5xl">
 						{props?.title}
 					</h2>
 					<div

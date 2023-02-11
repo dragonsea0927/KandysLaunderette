@@ -14,7 +14,7 @@ const PricingPlans = (props) => {
 						<div className="w-full md:w-1/2 p-8">
 							<div className="flex flex-col justify-between md:max-w-sm h-full">
 								<div className="flex-initial mb-8">
-									<h2 className="font-[600] text-xl sm:text-5xl py-8">
+									<h2 className="font-[600] text-2xl sm:text-3xl lg:text-5xl py-8">
 										Affordable pricing plans
 									</h2>
 									<p className="text-darkGrey text-medium">

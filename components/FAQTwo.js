@@ -29,7 +29,7 @@ const FAQTwo = (props) => {
 					<div className="w-full md:w-1/2 p-8">
 						<motion.h2
 							variants={fadeIn}
-							className="mb-5 font-[600] text-xl sm:text-5xl"
+							className="mb-5 font-[600] text-2xl sm:text-3xl lg:text-5xl"
 						>
 							{props?.title}
 						</motion.h2>
