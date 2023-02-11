@@ -76,7 +76,7 @@ const ContactBannerThree = (props) => {
 							href={`${props?.buttonLink?.url}`}
 							target={`${props?.buttonLink?.target}`}
 						>
-							<a className="py-4 px-6 sm:px-12 md:py-6 xl:px-20 font-[700] text-black text-base bg-white rounded-lg hover:text-white hover:bg-fadedPink transition-all ease-in-out duration-[0.5s]">
+							<a className="py-4 px-12 md:py-6 xl:px-20 font-[700] text-black text-base bg-white rounded-lg hover:text-white hover:bg-fadedPink transition-all ease-in-out duration-[0.5s]">
 								{props?.buttonLink?.title}
 							</a>
 						</Link>
