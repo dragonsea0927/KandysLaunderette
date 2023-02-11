@@ -71,9 +71,9 @@ const HeroSection = (props) => {
 							<div className="flex flex-row justify-start items-start gap-10 p-4">
 								<Link href="/">
 									<a>
-										<Image
+										<img
 											src="/img/icons/skirt.png"
-											className="w-full h-[200px] object-contain"
+											className="w-[65px] h-[65px] sm:w-[75px] sm:h-[75px] object-contain object-center"
 											alt="Icon"
 											width={75}
 											height={75}
@@ -232,7 +232,7 @@ const HeroSection = (props) => {
 								</div>
 								<motion.div
 									variants={fadeInUp}
-									className="flex flex-col justify-center items-center lg:items-end gap-2 p-4"
+									className="hidden sm:flex flex-col justify-center items-center lg:items-end gap-2 p-4"
 								>
 									<Image
 										src="/svg/Rating Stars.svg"

@@ -93,7 +93,7 @@ const aboutUs = ({
 							<span className="text-xs text-blue font-semibold">
 								Get to know us better
 							</span>
-							<h2 className="mt-8 mb-10 text-black text-center font-[600] text-3xl lg:text-5xl">
+							<h2 className="mt-8 mb-10 text-black text-center font-[600] text-xl sm:text-3xl lg:text-5xl">
 								Reinventing the future of laundry and dry cleaning.
 							</h2>
 							<div className="max-w-2xl mx-auto">

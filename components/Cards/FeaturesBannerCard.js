@@ -1,4 +1,5 @@
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/no-unknown-property */
 import styles from "../../styles/components/FeaturesBanner.module.scss";
 
 const FeaturesBannerCard = (props) => {
@@ -7,17 +8,14 @@ const FeaturesBannerCard = (props) => {
 			<div className={styles.iconsWrap}>
 				<div className="flex flex-row justify-center items-center m-0 sm:m-3">
 					<div className="w-auto p-0 sm:p-3">
-						<Image
-							width="125px"
-							height="125px"
-							objectFit="cover"
-							objectPosition="center"
+						<img
 							src={props.icon?.sourceUrl}
 							alt={`${props.icon?.altText} Icon`}
+							className="w-[75px] h-[75px] sm:w-[100px] sm:h-[100px] lg:w-[110px] lg:h-[110px] object-contain object-center"
 						/>
 					</div>
 					<div className="flex-1 p-3">
-						<h3 className="text-base md:text-medium text-center text-black font-[600] lg:text-left">
+						<h3 className="text-base md:text-medium text-center text-black font-[400] lg:text-left">
 							{props.title}
 						</h3>
 					</div>
