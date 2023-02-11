@@ -356,11 +356,6 @@ export async function getStaticProps() {
 								title
 								paragraph
 								backgroundColor
-								buttonLink {
-									url
-									title
-									target
-								}
 							}
 							ourServices {
 								title

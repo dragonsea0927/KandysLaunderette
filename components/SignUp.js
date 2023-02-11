@@ -42,7 +42,7 @@ const SignUp = (props) => {
 						<div className="mb-16 lg:mb-0 max-w-2xl lg:w-1/2 px-4">
 							<motion.h2
 								variants={fadeIn}
-								className="mb-4 font-[600] text-2xl sm:text-3xl lg:text-5xl leading-14"
+								className="mb-4 font-[600] text-2xl sm:text-3xl lg:text-5xl"
 							>
 								{props?.title}
 							</motion.h2>
@@ -53,19 +53,6 @@ const SignUp = (props) => {
 									props?.paragraph
 								)}
 							/>
-							<motion.button
-								variants={fadeIn}
-								className="w-full flex justify-center sm:justify-start"
-							>
-								<Link
-									href={`${props?.buttonLink?.url}`}
-									target={`${props?.buttonLink?.target}`}
-								>
-									<a className="inline-block py-2 px-6 bg-pink hover:bg-yellow text-white font-[600] leading-loose transition-all ease-in-out duration-[0.5s] rounded-l-xl rounded-t-xl">
-										{props?.buttonLink?.title}
-									</a>
-								</Link>
-							</motion.button>
 						</div>
 						<div className="w-full lg:w-1/2 px-4">
 							<div className="max-w-sm mx-auto lg:mr-0 lg:ml-auto">
@@ -112,7 +99,7 @@ const SignUp = (props) => {
 											variants={fadeIn}
 											className="mb-4 py-4 w-full rounded text-sm bg-pink hover:bg-yellow text-white font-bold leading-normal transition-all ease-in-out duration-[0.5s]"
 										>
-											<Link href={`/`} target={``}>
+											<Link href={`/Login`} target={``}>
 												<a className="text-white text-base font-[600] tracking-loose">
 													Sign Up
 												</a>
