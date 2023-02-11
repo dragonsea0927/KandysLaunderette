@@ -42,7 +42,7 @@ const SignUp = (props) => {
 						<div className="mb-16 lg:mb-0 max-w-2xl lg:w-1/2 px-4">
 							<motion.h2
 								variants={fadeIn}
-								className="mb-4 font-[600] text-xl sm:text-4xl lg:text-5xl leading-14"
+								className="mb-4 font-[600] text-xl sm:text-5xl leading-14"
 							>
 								{props?.title}
 							</motion.h2>

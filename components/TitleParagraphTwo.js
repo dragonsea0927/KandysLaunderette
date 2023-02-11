@@ -31,7 +31,7 @@ const TitleParagraphTwo = (props) => {
 		<section className={styles.titleParagraphTwo}>
 			<div className="container px-0 mx-auto">
 				<motion.div variants={fadeInUp} className="max-w-6xl mx-auto">
-					<h2 className="text-center font-[600] text-xl sm:text-4xl lg:text-5xl py-8 leading-10 w-full">
+					<h2 className="text-center font-[600] text-xl sm:text-5xl py-8 leading-10 w-full">
 						{props?.title}
 					</h2>
 					<div

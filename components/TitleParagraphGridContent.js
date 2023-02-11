@@ -30,7 +30,7 @@ const TitleParagraphGridContent = (props) => {
 		<section className={styles.titleParagraphGridContent}>
 			<div className="container mx-auto px-4 flex flex-col">
 				<motion.div variants={fadeInUp}>
-					<h2 className="text-black text-center font-[600] text-xl sm:text-4xl lg:text-5xl">
+					<h2 className="text-black text-center font-[600] text-xl sm:text-5xl">
 						{props?.title}
 					</h2>
 					<div

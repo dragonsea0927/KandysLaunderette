@@ -161,7 +161,7 @@ const SuitsOxfordShirts = ({
 					<div className="container mx-auto px-4 py-20">
 						<div className="py-20">
 							<motion.div variants={fadeInUp} className="flex flex-col">
-								<h2 className="text-center text-white font-[600] text-xl sm:text-4xl lg:text-5xl py-8 leading-10 w-full">
+								<h2 className="text-center text-white font-[600] text-xl sm:text-5xl py-8 leading-10 w-full">
 									Suits Alterations & Repairs
 								</h2>
 								<h5 className="w-full lg:max-w-[75rem] mx-auto mt-4 text-center text-darkGrey text-medium">
@@ -193,7 +193,7 @@ const SuitsOxfordShirts = ({
 								<motion.div variants={stagger} className="p-4">
 									<motion.h3
 										variants={fadeInUp}
-										className="text-center sm:text-left text-white font-[600] text-xl sm:text-4xl lg:text-5xl py-8 leading-10 w-full"
+										className="text-center sm:text-left text-white font-[600] text-xl sm:text-5xl py-8 leading-10 w-full"
 									>
 										Alterations
 									</motion.h3>
@@ -211,7 +211,7 @@ const SuitsOxfordShirts = ({
 								<motion.div variants={stagger} className="p-4">
 									<motion.h3
 										variants={fadeInUp}
-										className="text-center sm:text-left text-white font-[600] text-xl sm:text-4xl lg:text-5xl py-8 leading-10 w-full"
+										className="text-center sm:text-left text-white font-[600] text-xl sm:text-5xl py-8 leading-10 w-full"
 									>
 										Repairs
 									</motion.h3>

@@ -29,7 +29,7 @@ const BlogBanner = (props) => {
 				<div className="flex flex-wrap -m-8">
 					<div className="w-full md:w-5/12 p-8">
 						<div className="flex flex-col justify-center h-full">
-							<h2 className="mb-5 font-[600] text-xl sm:text-4xl lg:text-5xl">
+							<h2 className="mb-5 font-[600] text-xl sm:text-5xl">
 								{props?.title}
 							</h2>
 							<motion.div
