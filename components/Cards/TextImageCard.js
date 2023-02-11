@@ -12,10 +12,10 @@ const TextImageCard = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full lg:max-w-[75rem] text-darkGrey text-medium";
+				"hidden w-full lg:max-w-[75rem] text-darkGrey text-medium font-[400]";
 		} else {
 			contentStyling =
-				"block w-full lg:max-w-[75rem] text-darkGrey text-medium";
+				"block w-full lg:max-w-[75rem] text-darkGrey text-medium font-[400]";
 		}
 		return contentStyling;
 	}
@@ -51,10 +51,10 @@ const TextImageCard = (props) => {
 
 	return (
 		<div className={styles.textImageCard}>
-			<div className="flex flex-col md:flex-row py-10 px-4 gap-16 justify-center items-center my-8 border-b-solid border-b-grey border-b-[1px]">
+			<div className="flex flex-col md:flex-row py-10 px-4 my-4 gap-16 justify-center items-center">
 				<motion.div
 					variants={fadeIn}
-					className="mt-10 px-0 xl:px-20 md:mt-0 w-full md:w-1/2"
+					className="px-0 xl:px-10 w-full md:w-1/2"
 					style={{display: leftImageDisplay}}
 				>
 					<Image
@@ -65,17 +65,17 @@ const TextImageCard = (props) => {
 						layout="responsive"
 						alt={`${props?.image?.altText} Image`}
 						src={`${props?.image?.sourceUrl}`}
-						className="w-full h-[250px] rounded-lg object-cover object-center"
+						className="w-[40px] h-[35px] rounded-lg object-cover object-center"
 					/>
 				</motion.div>
 				<motion.div
 					variants={fadeInUp}
 					className="w-full md:w-1/2 flex flex-col justify-center items-start"
 				>
-					<h5 className="text-grey text-left text-tiny font-[600] uppercase tracking-[0.15rem]">
+					<h5 className="text-grey text-center text-tiny font-[600] uppercase tracking-[0.15rem]">
 						{props?.subtitle}
 					</h5>
-					<h2 className="text-black text-left text-3xl py-8 md:text-4xl leading-[2rem] font-[700]">
+					<h2 className="text-black text-center py-8 text-xl sm:text-3xl lg:text-4xl font-[600]">
 						{props?.title}
 					</h2>
 					<div
@@ -90,7 +90,7 @@ const TextImageCard = (props) => {
 							href={`${props?.buttonLink?.url}`}
 							target={`${props?.buttonLink?.target}`}
 						>
-							<a className="text-fadedPink font-[700] text-medium hover:text-blue transition-all ease-in-out duration-[0.5s]">
+							<a className="text-fadedPink font-[600] text-medium hover:text-blue transition-all ease-in-out duration-[0.5s]">
 								{props?.buttonLink?.title}
 							</a>
 						</Link>
@@ -98,7 +98,7 @@ const TextImageCard = (props) => {
 				</motion.div>
 				<motion.div
 					variants={fadeIn}
-					className="mt-10 px-0 xl:px-20 md:mt-0 w-full md:w-1/2"
+					className="px-0 xl:px-10 w-full md:w-1/2"
 					style={{display: rightImageDisplay}}
 				>
 					<Image
@@ -109,7 +109,7 @@ const TextImageCard = (props) => {
 						layout="responsive"
 						alt={`${props?.image?.altText} Image`}
 						src={`${props?.image?.sourceUrl}`}
-						className="w-full h-[250px] rounded-lg object-cover object-center"
+						className="w-[40px] h-[35px] rounded-lg object-cover object-center"
 					/>
 				</motion.div>
 			</div>
