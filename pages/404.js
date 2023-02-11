@@ -44,7 +44,7 @@ const noPageExits = ({
 										rgba(13, 23, 42, 0.45),
 										rgba(13, 23, 42, 0.45)
 									),
-									url("http://kandyslaunderette.local/wp-content/uploads/2023/02/pexels-vlada-karpovich-7365299-scaled.jpg")`,
+									url("https://mydummysite.co.uk/ToddLearning/wp-content/uploads/2023/02/pexels-vlada-karpovich-7365299-scaled.jpg")`,
 					}}
 				>
 					<div className="my-auto px-10 py-44 overflow-hidden">

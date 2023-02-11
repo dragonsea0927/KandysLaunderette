@@ -75,7 +75,7 @@ const Navbar = (props) => {
 										height="21px"
 										alt="black Arrow Icon"
 										className="cursor-pointer"
-										src="/svg/Navigation Menu Dropdown Arrow bLACK.png"
+										src="/svg/Navigation Menu Dropdown Arrow Black.png"
 										onClick={displayServicesMenu}
 									/>
 								</span>
