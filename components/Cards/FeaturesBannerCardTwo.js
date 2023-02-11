@@ -25,15 +25,15 @@ const FeaturesBannerCardTwo = (props) => {
 	return (
 		<div className="w-full md:w-1/2 lg:w-1/4 py-8 px-0">
 			<div className="flex flex-wrap items-center mb-2">
-				<div className="w-auto mx-auto lg:mx-0 mb-6 lg:mb-0">
+				<div className="mx-auto lg:mx-0 mb-6">
 					<img
 						src={props.icon?.sourceUrl}
 						alt={`${props.icon?.altText} Icon`}
 						className="w-[75px] h-[75px] object-contain object-center"
 					/>
 				</div>
-				<div className="flex lg:flex-1 p-3">
-					<div className="bg-darkPink h-px"></div>
+				<div className="hidden lg:block lg:flex-1 p-3">
+					<div className="bg-darkPink mx-4 h-[1px]"></div>
 				</div>
 			</div>
 			<div className="md:w-3/4">
