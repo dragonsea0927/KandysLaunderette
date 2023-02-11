@@ -69,14 +69,6 @@ const TitleParagraphVideo = (props) => {
 								>
 									<source src={props?.video} />
 								</video>
-								<Link href={`${props?.video}`} target={`blank`}>
-									<motion.a
-										variants={fadeIn}
-										className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 inline-block px-8 py-3.5 text-base text-center text-white font-[600] cursor-pointer bg-pink hover:bg-fadedPink focus:ring-4 focus:ring-fadedPink rounded-full"
-									>
-										Watch Video
-									</motion.a>
-								</Link>
 							</div>
 							<div className="absolute left-0 top-0 w-full h-1/2 bg-white">
 								<div className="h-full bg-white border-b border-l border-r border-fadedYellow rounded-b-3xl"></div>
