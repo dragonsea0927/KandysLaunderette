@@ -1,4 +1,3 @@
-import Link from "next/link";
 import {gql} from "@apollo/client";
 import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
@@ -8,7 +7,6 @@ import {
 	getCommercialServicesMenu,
 	getIndividualServicesMenu,
 } from "../lib/MenuLinks";
-import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 
 // Components
 import Navbar from "/components/Navbar";
@@ -105,15 +103,9 @@ const HowItWorks = ({
 
 				{/* <!--===== FEATURE BANNER =====--> */}
 				<TitleParagraphGridContentTwo
-					title={`Here's how Kandy's Launderette makes your life easier.`}
-					paragraph={`<p>
-									Out In a hurry? Or from the convenience of your home. We offer a
-									timely Pick-up and drop off collection service. With th best
-									laundry delivery service available Our delivery boys can pick up
-									all your dirty linen in 30 minutes and deliver them washed and
-									folded in just 24 hours. 
-								</p>`}
-					gridContent={howItWorksPageContent?.ourServices?.gridContent}
+					title={howItWorksPageContent?.featureGrid?.title}
+					paragraph={howItWorksPageContent?.featureGrid?.paragraph}
+					gridContent={howItWorksPageContent?.featureGrid?.gridContent}
 				/>
 
 				{/* <!--===== REINVENTING THE FUTURE =====--> */}
@@ -315,22 +307,17 @@ export async function getStaticProps() {
 									}
 								}
 							}
-							ourServices {
+							featureGrid {
 								title
 								paragraph
-								backgroundImage {
-									sourceUrl
-								}
 								gridContent {
-									title
-									link {
-										url
+									card {
 										title
-										target
-									}
-									image {
-										altText
-										sourceUrl
+										paragraph
+										icon {
+											altText
+											sourceUrl
+										}
 									}
 								}
 							}
@@ -373,6 +360,25 @@ export async function getStaticProps() {
 									url
 									title
 									target
+								}
+							}
+							ourServices {
+								title
+								paragraph
+								backgroundImage {
+									sourceUrl
+								}
+								gridContent {
+									title
+									link {
+										url
+										title
+										target
+									}
+									image {
+										altText
+										sourceUrl
+									}
 								}
 							}
 							featuresBanner {
