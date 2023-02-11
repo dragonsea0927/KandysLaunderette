@@ -319,7 +319,7 @@ export async function getStaticProps() {
 			medicalFacilitiesPageContent:
 				response?.data?.mainContent?.edges[0]?.node?.MedicalFacilitiesPage,
 		},
-		revalidate: 1,
+		revalidate: 60,
 	};
 }
 

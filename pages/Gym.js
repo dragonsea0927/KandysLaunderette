@@ -303,7 +303,7 @@ export async function getStaticProps() {
 			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
 			gymPageContent: response?.data?.mainContent?.edges[0]?.node?.GymPage,
 		},
-		revalidate: 1,
+		revalidate: 60,
 	};
 }
 

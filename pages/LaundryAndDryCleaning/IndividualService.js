@@ -1093,7 +1093,7 @@ export async function getStaticProps() {
 				response?.data?.mainContent?.edges[0]?.node?.IndividualServicePage,
 			themesOptionsContent,
 		},
-		revalidate: 1,
+		revalidate: 60,
 	};
 }
 

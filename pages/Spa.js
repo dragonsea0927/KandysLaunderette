@@ -304,7 +304,7 @@ export async function getStaticProps() {
 			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
 			spaPageContent: response?.data?.mainContent?.edges[0]?.node?.SpaPage,
 		},
-		revalidate: 1,
+		revalidate: 60,
 	};
 }
 

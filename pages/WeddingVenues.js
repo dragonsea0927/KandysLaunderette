@@ -312,7 +312,7 @@ export async function getStaticProps() {
 			weddingVenuesPageContent:
 				response?.data?.mainContent?.edges[0]?.node?.WeddingVenuesPage,
 		},
-		revalidate: 1,
+		revalidate: 60,
 	};
 }
 

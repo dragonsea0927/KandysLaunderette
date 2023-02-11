@@ -534,7 +534,7 @@ export async function getStaticProps() {
 				response?.data?.mainContent?.edges[0]?.node?.aboutUsPage,
 			themesOptionsContent,
 		},
-		revalidate: 1,
+		revalidate: 60,
 	};
 }
 

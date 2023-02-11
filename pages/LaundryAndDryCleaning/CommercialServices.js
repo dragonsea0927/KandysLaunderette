@@ -730,7 +730,7 @@ export async function getStaticProps() {
 				response?.data?.mainContent?.edges[0]?.node?.commercialServicesPage,
 			themesOptionsContent,
 		},
-		revalidate: 1,
+		revalidate: 60,
 	};
 }
 

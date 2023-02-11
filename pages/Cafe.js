@@ -303,7 +303,7 @@ export async function getStaticProps() {
 			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
 			cafePageContent: response?.data?.mainContent?.edges[0]?.node?.CafePage,
 		},
-		revalidate: 1,
+		revalidate: 60,
 	};
 }
 

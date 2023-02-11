@@ -125,7 +125,7 @@ export async function getStaticProps() {
 			contactUsPageContent:
 				response?.data?.mainContent?.edges[0]?.node?.contactUsPage,
 		},
-		revalidate: 1,
+		revalidate: 60,
 	};
 }
 

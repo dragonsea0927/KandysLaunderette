@@ -266,7 +266,7 @@ export async function getStaticProps() {
 			alterationsRepairsPageContent:
 				response?.data?.mainContent?.edges[0]?.node?.alterationsRepairsPage,
 		},
-		revalidate: 1,
+		revalidate: 60,
 	};
 }
 

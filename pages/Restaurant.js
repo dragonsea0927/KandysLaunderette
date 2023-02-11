@@ -312,7 +312,7 @@ export async function getStaticProps() {
 			restaurantPageContent:
 				response?.data?.mainContent?.edges[0]?.node?.RestaurantPage,
 		},
-		revalidate: 1,
+		revalidate: 60,
 	};
 }
 

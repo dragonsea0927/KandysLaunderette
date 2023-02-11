@@ -306,7 +306,7 @@ export async function getStaticProps() {
 			airBnbPageContent:
 				response?.data?.mainContent?.edges[0]?.node?.AirBnbPage,
 		},
-		revalidate: 1,
+		revalidate: 60,
 	};
 }
 
