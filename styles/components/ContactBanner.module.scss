@@ -6,23 +6,6 @@
 	background-repeat: no-repeat;
 }
 
-.contactBannerTwo,
-.contactBannerThree {
-	a {
-		&:hover {
-			@apply hover:text-yellow transition-all ease-in-out duration-[0.5s];
-		}
-	}
-
-	button {
-		a {
-			&:hover {
-				@apply hover:text-white;
-			}
-		}
-	}
-}
-
 // <========== CONTACT US BANNER ==========>
 .contactBanner {
 	padding: 5rem 2rem;

@@ -9,7 +9,7 @@ const FeaturesBanner = (props) => {
 		<section className={styles.featuresBanner}>
 			<div className="container px-0 mx-auto">
 				<div className="flex flex-col justify-center items-center px-4">
-					<motion.div variants={fadeInUp} className="py-8 px-4">
+					<motion.div variants={fadeInUp} className="py-8 px-4 mb-8">
 						<h2 className="w-full lg:w-[45rem] mx-auto text-black text-center font-[600] text-xl sm:text-3xl lg:text-5xl">
 							{props?.title}
 						</h2>

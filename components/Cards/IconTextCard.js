@@ -4,7 +4,7 @@ import {fadeIn} from "../../animations/animations";
 
 const IconTextCard = (props) => {
 	return (
-		<div className="flex flex-row justify-start items-center gap-4">
+		<div className="flex flex-row justify-start items-center gap-4 mx-auto lg:mx-0">
 			<Image
 				src={props?.icon}
 				className="w-full h-[4px] object-contain"

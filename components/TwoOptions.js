@@ -12,10 +12,10 @@ const TwoOptions = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full lg:max-w-[60rem] mx-auto mt-4 py-8 px-4 text-center text-darkGrey text-medium";
+				"hidden w-full lg:max-w-[75rem] mx-auto mt-4 py-8 px-0 text-center text-darkGrey text-medium";
 		} else {
 			contentStyling =
-				"block w-full lg:max-w-[60rem] mx-auto mt-4 py-8 px-4 text-center text-darkGrey text-medium";
+				"block w-full lg:max-w-[75rem] mx-auto mt-4 py-8 px-0 text-center text-darkGrey text-medium";
 		}
 		return contentStyling;
 	}

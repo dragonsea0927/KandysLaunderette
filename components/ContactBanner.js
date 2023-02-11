@@ -47,12 +47,12 @@ const ContactBanner = (props) => {
 							dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 						/>
 					</div>
-					<motion.button variants={fadeIn}>
+					<motion.button variants={fadeIn} className="">
 						<Link
 							href={`${props?.buttonLink?.url}`}
 							target={`${props?.buttonLink?.target}`}
 						>
-							<a className="py-4 px-6 lg:py-6 lg:px-20 font-[700] text-white text-base leading-4 bg-pink rounded-lg hover:bg-yellow transition-all ease-in-out duration-[0.5s]">
+							<a className="py-4 px-6 lg:py-6 lg:px-20 font-[700] text-white text-base bg-pink rounded-lg hover:bg-yellow transition-all ease-in-out duration-[0.5s]">
 								{props?.buttonLink?.title}
 							</a>
 						</Link>
