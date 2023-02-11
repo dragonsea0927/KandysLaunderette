@@ -12,10 +12,10 @@ const SignUp = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden mt-4 w-full lg:max-w-[75rem] mx-auto mb-8 text-darkGrey text-medium leading-loose";
+				"hidden mt-4 w-full lg:max-w-[75rem] mx-auto mb-8 text-darkGrey text-medium";
 		} else {
 			contentStyling =
-				"block mt-4 w-full lg:max-w-[75rem] mx-auto mb-8 text-darkGrey text-medium leading-loose";
+				"block mt-4 w-full lg:max-w-[75rem] mx-auto mb-8 text-darkGrey text-medium";
 		}
 		return contentStyling;
 	}
@@ -42,7 +42,7 @@ const SignUp = (props) => {
 						<div className="mb-16 lg:mb-0 max-w-2xl lg:w-1/2 px-4">
 							<motion.h2
 								variants={fadeIn}
-								className="mb-4 font-[600] text-2xl sm:text-3xl lg:text-5xl"
+								className="mb-4 font-[600] text-center lg:text-left text-2xl sm:text-3xl lg:text-5xl"
 							>
 								{props?.title}
 							</motion.h2>
@@ -58,7 +58,7 @@ const SignUp = (props) => {
 							<div className="max-w-sm mx-auto lg:mr-0 lg:ml-auto">
 								<motion.div
 									variants={fadeInUp}
-									className="mb-6 py-8 px-6 bg-white shadow rounded-3xl text-center border border-pink"
+									className="mb-6 py-8 px-6 bg-white shadow rounded-3xl text-center border border-pureBlack"
 								>
 									<form action="">
 										<div className="mb-6">
