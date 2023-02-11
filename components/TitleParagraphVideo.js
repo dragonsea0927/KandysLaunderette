@@ -9,9 +9,11 @@ const TitleParagraphVideo = (props) => {
 	function isParagraphContent(isParagraphContent) {
 		let contentStyling;
 		if (isParagraphContent === null) {
-			contentStyling = "hidden mb-10 text-darkGrey text-medium text-center";
+			contentStyling =
+				"hidden mb-10 text-darkGrey text-medium font-[400] text-center";
 		} else {
-			contentStyling = "block mb-10 text-darkGrey text-medium text-center";
+			contentStyling =
+				"block mb-10 text-darkGrey text-medium font-[400] text-center";
 		}
 		return contentStyling;
 	}
@@ -33,7 +35,7 @@ const TitleParagraphVideo = (props) => {
 								<span className="inline-block mb-3 text-medium text-pink font-[600] uppercase tracking-widest">
 									{props?.subtitle}
 								</span>
-								<h2 className="my-12 text-5xl lg:text-6xl text-black text-center tracking-tight font-[700] leading-[3.5rem]">
+								<h2 className="my-12 text-2xl sm:text-3xl lg:text-6xl text-black text-center tracking-tight font-[700]">
 									{props?.title}
 								</h2>
 								<div
