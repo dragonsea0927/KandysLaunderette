@@ -12,9 +12,11 @@ const CTAContentImage = (props) => {
 	function isParagraphContent(isParagraphContent) {
 		let contentStyling;
 		if (isParagraphContent === null) {
-			contentStyling = "hidden md:max-w-xl py-8 text-darkGrey text-medium";
+			contentStyling =
+				"hidden md:max-w-xl py-8 text-darkGrey text-medium font-[400]";
 		} else {
-			contentStyling = "block md:max-w-xl py-8 text-darkGrey text-medium";
+			contentStyling =
+				"block md:max-w-xl py-8 text-darkGrey text-medium font-[400]";
 		}
 		return contentStyling;
 	}
@@ -37,17 +39,15 @@ const CTAContentImage = (props) => {
 							className={isParagraphContent(props?.paragraph)}
 							dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 						/>
-						<div className="mt-4 mb-20 md:inline-block">
-							<button className="text-white font-semibold" type="button">
-								<Link
-									href={`${props?.buttonLink?.url}`}
-									target={`${props?.buttonLink?.target}`}
-								>
-									<a className="py-4 px-6 lg:py-6 lg:px-8 text-base bg-pink rounded-lg hover:bg-yellow transition-all ease-in-out duration-[0.5s]">
-										{props?.buttonLink?.title}
-									</a>
-								</Link>
-							</button>
+						<div className="mt-4 mb-20 md:inline-block text-white font-semibold">
+							<Link
+								href={`${props?.buttonLink?.url}`}
+								target={`${props?.buttonLink?.target}`}
+							>
+								<a className="py-4 px-6 lg:py-6 lg:px-8 text-base bg-pink rounded-lg hover:bg-yellow transition-all ease-in-out duration-[0.5s]">
+									{props?.buttonLink?.title}
+								</a>
+							</Link>
 						</div>
 						<div className="flex flex-row justify-center items-center gap-8">
 							<div className="w-full md:w-1/2 p-8">
