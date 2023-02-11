@@ -5,9 +5,9 @@ const FeaturesBannerTwo = (props) => {
 	return (
 		<section className={styles.featuresBannerTwo}>
 			<div className="py-10 bg-pink overflow-hidden">
-				<div className="container mx-auto px-4">
-					<div className="py-16 px-8 sm:p-16">
-						<h2 className="mb-10 text-4xl md:text-5xl text-white tracking-tight font-[600]">
+				<div className="container mx-auto px-0">
+					<div className="py-16 px-4 md:px-8 sm:p-16">
+						<h2 className="mb-10 text-white font-[600] text-center lg:text-left text-xl sm:text-3xl lg:text-5xl">
 							{props?.title}
 						</h2>
 						<div className="flex flex-wrap">

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 
 const FeaturesBannerCardTwo = (props) => {
@@ -7,10 +8,10 @@ const FeaturesBannerCardTwo = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden text-left text-white text-medium text-white font-[400]";
+				"hidden text-white text-medium text-center lg:text-left font-[400]";
 		} else {
 			contentStyling =
-				"block text-left text-white text-medium text-white font-[400]";
+				"block text-white text-medium text-center lg:text-left font-[400]";
 		}
 		return contentStyling;
 	}
@@ -22,23 +23,21 @@ const FeaturesBannerCardTwo = (props) => {
 	}
 
 	return (
-		<div className="w-full md:w-1/2 lg:w-1/4 p-3">
+		<div className="w-full md:w-1/2 lg:w-1/4 py-8 px-0">
 			<div className="flex flex-wrap items-center mb-2">
-				<div className="w-auto p-3">
-					<Image
-						width="75px"
-						height="75px"
+				<div className="w-auto mx-auto lg:mx-0 mb-6 lg:mb-0">
+					<img
 						src={props.icon?.sourceUrl}
 						alt={`${props.icon?.altText} Icon`}
-						className="w-full h-[4px] object-contain"
+						className="w-[75px] h-[75px] object-contain object-center"
 					/>
 				</div>
-				<div className="flex-1 p-3">
+				<div className="flex lg:flex-1 p-3">
 					<div className="bg-darkPink h-px"></div>
 				</div>
 			</div>
 			<div className="md:w-3/4">
-				<h3 className="mb-4 text-xl text-white font-[600] leading-[2.15rem]">
+				<h3 className="mb-4 text-lg lg:text-xl text-white text-center lg:text-left font-[600]">
 					{props.title}
 				</h3>
 				<div
