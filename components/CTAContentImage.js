@@ -49,7 +49,7 @@ const CTAContentImage = (props) => {
 								</a>
 							</Link>
 						</div>
-						<div className="flex flex-row justify-center items-center gap-8">
+						<div className="flex flex-col sm:flex-row justify-center items-center gap-8">
 							<div className="w-full md:w-1/2 p-8">
 								<div className="md:max-w-xs">
 									<svg
