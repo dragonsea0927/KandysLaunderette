@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const LogoCard = (props) => {
 	return (
-		<div className="w-1/2 md:w-1/3 xl:w-1/6">
+		<div className="w-full md:w-1/2 lg:w-1/6">
 			<Image
-				className="w-full h-[200px] object-contain object center"
+				className="w-full h-[400] object-contain object center"
 				width={400}
 				height={400}
 				objectFit="contain"

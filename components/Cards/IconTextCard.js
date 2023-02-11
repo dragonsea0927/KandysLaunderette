@@ -4,7 +4,7 @@ import {fadeIn} from "../../animations/animations";
 
 const IconTextCard = (props) => {
 	return (
-		<div className="flex flex-row justify-start items-center gap-4 mx-auto lg:mx-0">
+		<div className="flex flex-row justify-start items-center gap-4">
 			<Image
 				src={props?.icon}
 				className="w-full h-[4px] object-contain"
@@ -14,7 +14,7 @@ const IconTextCard = (props) => {
 			/>
 			<motion.p
 				variants={fadeIn}
-				className={`text-${props?.textColor} text-center lg:text-left text-lg font-[600]`}
+				className={`text-${props?.textColor} text-left text-lg font-[600]`}
 			>
 				{props?.text}
 			</motion.p>
