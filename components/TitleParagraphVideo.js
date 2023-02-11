@@ -32,7 +32,7 @@ const TitleParagraphVideo = (props) => {
 						<div className="absolute w-full h-full bg-white border-t border-l border-r border-fadedYellow rounded-t-3xl"></div>
 						<div className="relative px-8 pt-20">
 							<div className="md:max-w-2xl text-center mx-auto">
-								<span className="inline-block mb-3 text-medium text-pink font-[600] uppercase tracking-widest">
+								<span className="inline-block mb-3 text-tiny sm:text-medium text-pink font-[600] uppercase tracking-widest">
 									{props?.subtitle}
 								</span>
 								<h2 className="my-12 text-2xl sm:text-3xl lg:text-6xl text-black text-center tracking-tight font-[700]">
