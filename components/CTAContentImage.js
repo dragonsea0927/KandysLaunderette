@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import {motion} from "framer-motion";
 import DOMPurify from "isomorphic-dompurify";
-import {fadeInUp, stagger} from "../animations/animations";
+import {fadeIn} from "../animations/animations";
 import styles from "../styles/components/CTA.module.scss";
 
 const CTAContentImage = (props) => {
@@ -13,10 +13,10 @@ const CTAContentImage = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden md:max-w-xl py-8 text-darkGrey text-medium font-[400]";
+				"hidden md:max-w-xl py-4 lg:py-8 text-center lg:text-left text-darkGrey text-medium font-[400]";
 		} else {
 			contentStyling =
-				"block md:max-w-xl py-8 text-darkGrey text-medium font-[400]";
+				"block md:max-w-xl py-4 lg:py-8 text-center lg:text-left text-darkGrey text-medium font-[400]";
 		}
 		return contentStyling;
 	}
@@ -32,26 +32,29 @@ const CTAContentImage = (props) => {
 			<div className="container mx-auto bg-white overflow-hidden">
 				<div className="flex flex-col lg:flex-row justify-center xl:items-center gap-8 py-8 px-4">
 					<div className="w-full md:w-1/2">
-						<h2 className="mb-5 text-3xl lg:text-6xl font-[600] font-heading tracking-px-n leading-tight">
+						<h2 className="mb-5 text-center lg:text-left text-2xl sm:text-3xl lg:text-5xl font-[600]">
 							{props?.title}
 						</h2>
 						<div
 							className={isParagraphContent(props?.paragraph)}
 							dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 						/>
-						<div className="mt-4 mb-20 md:inline-block text-white font-semibold">
+						<motion.div
+							variants={fadeIn}
+							className="mt-6 mb-12 flex flex-col justify-center items-center lg:items-baseline"
+						>
 							<Link
 								href={`${props?.buttonLink?.url}`}
 								target={`${props?.buttonLink?.target}`}
 							>
-								<a className="py-4 px-6 lg:py-6 lg:px-8 text-base bg-pink rounded-lg hover:bg-yellow transition-all ease-in-out duration-[0.5s]">
+								<a className="py-4 px-8 font-[700] text-white text-base bg-pink rounded-lg hover:bg-yellow transition-all ease-in-out duration-[0.5s]">
 									{props?.buttonLink?.title}
 								</a>
 							</Link>
-						</div>
-						<div className="flex flex-col sm:flex-row justify-center items-center gap-8">
-							<div className="w-full md:w-1/2 p-8">
-								<div className="md:max-w-xs">
+						</motion.div>
+						<div className="flex flex-col sm:flex-row justify-center items-center gap-4 lg:gap-8">
+							<div className="w-full md:w-1/2 p-0 lg:p-8">
+								<div className="md:max-w-xs flex flex-col justify-center items-center lg:items-baseline">
 									<svg
 										className="mb-6"
 										width="28"
@@ -65,7 +68,7 @@ const CTAContentImage = (props) => {
 											fill="#ff8fb4"
 										></path>
 									</svg>
-									<h3 className="mb-3 text-xl font-semibold leading-normal">
+									<h3 className="text-xl text-center lg:text-left font-[600]">
 										{props?.subtitleOne}
 									</h3>
 									<div
@@ -76,8 +79,8 @@ const CTAContentImage = (props) => {
 									/>
 								</div>
 							</div>
-							<div className="w-full md:w-1/2 p-8">
-								<div className="md:max-w-xs">
+							<div className="w-full md:w-1/2 p-0 lg:p-8">
+								<div className="md:max-w-xs flex flex-col justify-center items-center lg:items-baseline">
 									<svg
 										className="mb-6"
 										width="28"
@@ -94,7 +97,7 @@ const CTAContentImage = (props) => {
 											strokeLinejoin="round"
 										></path>
 									</svg>
-									<h3 className="mb-3 text-xl font-semibold leading-normal">
+									<h3 className="text-xl text-center lg:text-left font-[600]">
 										{props?.subtitleTwo}
 									</h3>
 									<div
