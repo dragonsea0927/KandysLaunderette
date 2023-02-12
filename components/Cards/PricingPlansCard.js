@@ -54,7 +54,7 @@ const PricingPlansCard = (props) => {
 	}
 
 	return (
-		<div className="w-full lg:w-1/2 p-4">
+		<div className="w-full lg:w-1/2">
 			<div
 				className={`flex flex-col justify-between p-8 h-full bg-${backgroundColor} rounded-3xl`}
 			>
