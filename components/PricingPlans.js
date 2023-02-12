@@ -35,7 +35,7 @@ const PricingPlans = (props) => {
 						<div className="w-full md:w-1/2 lg:p-8">
 							<div className="flex flex-col justify-between md:max-w-sm h-full">
 								<div className="flex-initial mb-8">
-									<h2 className="font-[600] text-2xl sm:text-3xl lg:text-5xl py-8">
+									<h2 className="font-[600] text-center lg:text-left text-2xl sm:text-3xl lg:text-5xl py-8">
 										{props?.title}
 									</h2>
 									<div
