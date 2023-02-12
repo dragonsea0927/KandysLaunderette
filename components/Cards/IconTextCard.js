@@ -14,7 +14,7 @@ const IconTextCard = (props) => {
 			/>
 			<motion.p
 				variants={fadeIn}
-				className={`text-${props?.textColor} text-left text-lg font-[600]`}
+				className={`text-${props?.textColor} text-left text-lg font-[400]`}
 			>
 				{props?.text}
 			</motion.p>
