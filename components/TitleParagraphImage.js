@@ -33,7 +33,7 @@ const TitleParagraphImage = (props) => {
 							<span className="text-base text-center lg:text-left text-pink font-[600]">
 								{props?.subtitle}
 							</span>
-							<h2 className="mt-8 text-center lg:text-left leading-[2.75rem] font-[800] text-2xl sm:text-3xl lg:text-5xl">
+							<h2 className="mt-8 text-center lg:text-left leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl">
 								{props?.title}
 							</h2>
 							<motion.div

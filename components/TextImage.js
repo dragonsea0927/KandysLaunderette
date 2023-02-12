@@ -34,7 +34,7 @@ const TextImage = (props) => {
 						<h5 className="text-fadedPink text-left text-tiny">
 							{props?.subtitle}
 						</h5>
-						<h2 className="text-black text-left py-6 leading-[2.75rem] font-[800] text-2xl sm:text-3xl lg:text-5xl">
+						<h2 className="text-black text-left py-6 leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl">
 							{props?.title}
 						</h2>
 						<div

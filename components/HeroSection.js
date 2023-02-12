@@ -210,7 +210,7 @@ const HeroSection = (props) => {
 				<div className="pt-0 pb-20 md:py-20 px-0 my-auto">
 					<motion.h1
 						variants={fadeIn}
-						className="text-white leading-[2rem] sm:leading-[4rem] font-bold text-center mx-auto text-4xl sm:text-6xl p-4 lg:p-0 w-full lg:w-[45rem]"
+						className=" p-4 lg:p-0 w-full mx-auto lg:w-[45rem] text-white text-center leading-[2.75rem] leading-[2.75rem] font-[600] text-4xl sm:text-6xl"
 					>
 						{props?.title}
 					</motion.h1>

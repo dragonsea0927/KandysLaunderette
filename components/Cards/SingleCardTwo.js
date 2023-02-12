@@ -47,7 +47,7 @@ const SingleCardTwo = (props) => {
 			<motion.div variants={stagger} className="py-8 px-4">
 				<motion.h2
 					variants={fadeInUp}
-					className={`text-center text-${props?.textColor} font-[600] text-2xl py-8 leading-10 w-full`}
+					className={`py-8 w-full text-center text-${props?.textColor} leading-[2.75rem] font-[600] text-2xl`}
 				>
 					{props?.title}
 				</motion.h2>
