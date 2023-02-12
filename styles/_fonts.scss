@@ -1,17 +1,19 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Sarabun:wght@200&display=swap");
 
 @font-face {
 	font-family: Rubik;
 	src: url("./fonts/Rubik-VariableFont_wght.ttf");
 }
 
+@font-face {
+	font-family: Inter;
+	src: url("./fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
 // Font Stack Properties
 $fontStyle_main: "Rubik", sans-serif;
-$fontStyle_secondary: "Sarabun", sans-serif;
-$fontStyle_option1: "Lora", sans-serif;
+$fontStyle_secondary: "Inter", sans-serif;
 
 // Font Sizes
 $fontSize_xSmall: 0.75rem;
