@@ -1,17 +1,26 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
+import Image from "next/image";
 import {motion} from "framer-motion";
 import {fadeInUp, stagger} from "../../animations/animations";
 
 const ProfileCard = (props) => {
 	return (
-		<div className="w-full md:w-1/2 lg:w-1/4 p-3">
+		<div className="w-full md:w-1/2 lg:w-1/4">
 			<div className="relative max-w-max mx-auto h-full overflow-hidden rounded-lg">
-				<img
-					src={`${props?.image?.sourceUrl}`}
-					alt={`${props?.image?.altText} Image`}
-					className="w-full h-full object-cover transform hover:scale-105 transition ease-in-out duration-1000"
-				/>
+				<div className="relative my-10 lg:my-0 min-w-full h-[550px]">
+					<Image
+						width={350}
+						height={650}
+						layout="intrinsic"
+						objectFit="cover"
+						objectPosition="center"
+						src={`${props?.image?.sourceUrl}`}
+						alt={`${props?.image?.altText} Image`}
+						className="rounded-lg transform hover:scale-105 transition ease-in-out duration-1000"
+					/>
+				</div>
+
 				<div className="absolute bottom-0 left-0 w-full p-2">
 					<div
 						className="bg-pureBlack bg-opacity-40 w-full py-4 px-5 rounded-lg"
