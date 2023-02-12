@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import {motion} from "framer-motion";
-import {fadeIn, fadeInUp, fadeInTwo, stagger} from "../animations/animations";
+import {stagger} from "../animations/animations";
 import PerformanceBannerCard from "./Cards/PerformanceBannerCard";
 
 const PerformanceBanner = (props) => {

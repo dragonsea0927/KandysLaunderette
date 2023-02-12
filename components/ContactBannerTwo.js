@@ -48,12 +48,10 @@ const ContactBannerTwo = (props) => {
 						</h2>
 						<span className="gap-2 flex flex-row text-medium text-white items-center justify-center">
 							Email:
-							<Link
-								href={`mailto:${props?.themesOptions?.email}`}
-								target="blank"
-								className="flex flex-row justify-center items-center gap-2 text-white text-medium text-center hover:text-fadedPink transition-all ease-in-out duration-[0.5s]"
-							>
-								{props?.themesOptions?.email}
+							<Link href={`mailto:${props?.themesOptions?.email}`}>
+								<a className="text-white text-medium text-center hover:text-pink transition-all ease-in-out duration-[0.5s]">
+									{props?.themesOptions?.email}
+								</a>
 							</Link>
 						</span>
 
@@ -63,13 +61,17 @@ const ContactBannerTwo = (props) => {
 								<Link
 									href={`tel:${props?.themesOptions?.phoneNumberOptionTwo}`}
 								>
-									{props?.themesOptions?.phoneNumberOptionTwo}
+									<a className="text-white text-medium hover:text-pink transition-all ease-in-out duration-[0.5s]">
+										{props?.themesOptions?.phoneNumberOptionTwo}
+									</a>
 								</Link>
 							</span>
 							|
 							<span className="text-white text-center text-medium">
 								<Link href={`tel:${props?.themesOptions?.phoneNumber}`}>
-									{props?.themesOptions?.phoneNumber}
+									<a className="text-white text-medium hover:text-pink transition-all ease-in-out duration-[0.5s]">
+										{props?.themesOptions?.phoneNumber}
+									</a>
 								</Link>
 							</span>
 						</div>
