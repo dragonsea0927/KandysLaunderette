@@ -33,7 +33,7 @@ const PricingPlans = (props) => {
 				<div className="py-16 px-4 lg:px-8 bg-white rounded-none lg:rounded-3xl">
 					<div className="flex flex-wrap">
 						<div className="w-full md:w-1/2 lg:p-8">
-							<div className="flex flex-col justify-between md:max-w-sm h-full">
+							<div className="flex flex-col justify-between items-center lg:items-baseline md:max-w-sm h-full">
 								<div className="flex-initial mb-8">
 									<h2 className="font-[600] text-center lg:text-left text-2xl sm:text-3xl lg:text-5xl">
 										{props?.title}
@@ -49,8 +49,8 @@ const PricingPlans = (props) => {
 									<p className="mb-2 text-base font-[600] text-black uppercase">
 										Trusted by 30k users
 									</p>
-									<div className="flex flex-wrap -m-0.5 mb-2">
-										<div className="w-auto">
+									<div className="flex flex-row justify-start items-center lg:items-baseline m-0.5 mb-2">
+										<div className="mx-auto lg:mx-0">
 											<svg
 												width="22"
 												height="22"
@@ -64,7 +64,7 @@ const PricingPlans = (props) => {
 												></path>
 											</svg>
 										</div>
-										<div className="w-auto">
+										<div className="mx-auto lg:mx-0">
 											<svg
 												width="22"
 												height="22"
@@ -78,7 +78,7 @@ const PricingPlans = (props) => {
 												></path>
 											</svg>
 										</div>
-										<div className="w-auto">
+										<div className="mx-auto lg:mx-0">
 											<svg
 												width="22"
 												height="22"
@@ -92,7 +92,7 @@ const PricingPlans = (props) => {
 												></path>
 											</svg>
 										</div>
-										<div className="w-auto">
+										<div className="mx-auto lg:mx-0">
 											<svg
 												width="22"
 												height="22"
@@ -106,7 +106,7 @@ const PricingPlans = (props) => {
 												></path>
 											</svg>
 										</div>
-										<div className="w-auto">
+										<div className="mx-auto lg:mx-0">
 											<svg
 												width="22"
 												height="22"
@@ -129,7 +129,7 @@ const PricingPlans = (props) => {
 							</div>
 						</div>
 						<div className="w-full md:w-1/2 mt-20 lg:mt-0 lg:p-8">
-							<div className="flex flex-wrap">
+							<div className="flex flex-col lg:flex-row justify-center items-center gap-8">
 								{props?.subscriptionsGrid.map((keys) => (
 									<PricingPlansCard
 										Key={keys?.id}
