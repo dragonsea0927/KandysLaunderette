@@ -49,7 +49,7 @@ const TitleGridContent = (props) => {
 				</motion.div>
 				<div className="flex justify-end items-center p-4">
 					<Link
-						href=" /Services"
+						href=" /LaundryAndDryCleaning/IndividualService"
 						target=""
 						className="border-none no-underline bg-transparent text-white text-2xl hover:text-yellow transition-all ease-in-out duration-[0.5s]"
 					>
