@@ -140,7 +140,13 @@ const services = ({
 				/>
 
 				{/* <!--===== PRICING PLANS =====--> */}
-				<PricingPlans />
+				<PricingPlans
+					title={servicesPageContent?.pricingPlans?.title}
+					paragraph={servicesPageContent?.pricingPlans?.paragraph}
+					subscriptionsGrid={
+						servicesPageContent?.pricingPlans?.subscriptionsGrid
+					}
+				/>
 
 				{/* <!--===== INDIVIDUAL SERVICES =====--> */}
 				<TitleGridContent
@@ -375,6 +381,24 @@ export async function getStaticProps() {
 									url
 									title
 									target
+								}
+							}
+							pricingPlans {
+								title
+								paragraph
+								subscriptionsGrid {
+									card {
+										tier
+										price
+										billingInfo
+										paragraphTop
+										paragraphBottom
+										buttonLink {
+											url
+											title
+											target
+										}
+									}
 								}
 							}
 							individualServices {

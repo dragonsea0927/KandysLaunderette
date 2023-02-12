@@ -11,10 +11,10 @@ const TitleParagraph = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden mt-4 w-full lg:max-w-[75rem] mx-auto py-8 px-4 text-black text-center text-medium";
+				"hidden mt-4 w-full lg:max-w-[75rem] mx-auto py-8 px-4 text-darkGrey text-center text-medium";
 		} else {
 			contentStyling =
-				"block mt-4 w-full lg:max-w-[75rem] mx-auto py-8 px-4 text-black text-center text-medium";
+				"block mt-4 w-full lg:max-w-[75rem] mx-auto py-8 px-4 text-darkGrey text-center text-medium";
 		}
 		return contentStyling;
 	}
