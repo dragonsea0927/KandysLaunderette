@@ -27,7 +27,7 @@ const TeamMembers = (props) => {
 	return (
 		<section className="pt-24 pb-36 bg-white overflow-hidden">
 			<div className="container px-4 mx-auto">
-				<h2 className="text-center font-[600] text-2xl sm:text-3xl lg:text-5xl py-4 leading-14">
+				<h2 className="text-center font-[600] text-2xl sm:text-3xl lg:text-5xl py-4  ">
 					{props?.title}
 				</h2>
 				<motion.div
