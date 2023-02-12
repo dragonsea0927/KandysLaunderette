@@ -41,7 +41,7 @@ const ContactBanner = (props) => {
 			<div className="container mx-auto p-0">
 				<div className="flex flex-col lg:flex-row py-8 gap-10 px-0 lg:px-8 justify-between items-center">
 					<div className="flex flex-col gap-4 justify-between items-center lg:items-start">
-						<h2 className="text-center lg:text-left text-white font-[600] text-2xl sm:text-3xl lg:text-5xl">
+						<h2 className="text-center lg:text-left text-white leading-[2.75rem] font-[800] text-2xl sm:text-3xl lg:text-5xl">
 							{props?.title}
 						</h2>
 						<div

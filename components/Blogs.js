@@ -28,7 +28,7 @@ const Blogs = (props) => {
 		<section className="pt-20 pb-32 overflow-hidden">
 			<div className="container mx-auto px-4">
 				<div className="text-center mb-20">
-					<h2 className="text-center mb-5 font-[600] text-2xl sm:text-3xl lg:text-5xl">
+					<h2 className="text-center mb-5 leading-[2.75rem] font-[800] text-2xl sm:text-3xl lg:text-5xl">
 						{props?.title}
 					</h2>
 					<motion.div

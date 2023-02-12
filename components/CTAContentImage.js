@@ -32,7 +32,7 @@ const CTAContentImage = (props) => {
 			<div className="container mx-auto bg-white overflow-hidden">
 				<div className="flex flex-col lg:flex-row justify-center xl:items-center gap-8 py-8 px-4">
 					<div className="w-full md:w-1/2">
-						<h2 className="mb-5 text-center lg:text-left text-2xl sm:text-3xl lg:text-5xl font-[600]">
+						<h2 className="mb-5 text-center lg:text-left leading-[2.75rem] font-[800] text-2xl sm:text-3xl lg:text-5xl">
 							{props?.title}
 						</h2>
 						<div
