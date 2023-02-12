@@ -24,7 +24,7 @@ const BlogCard = (props) => {
 	}
 
 	return (
-		<motion.div variants={fadeIn} className="w-full md:w-1/2 p-3">
+		<motion.div variants={fadeIn} className="w-full lg:w-1/2">
 			<div className="max-w-sm mx-auto">
 				<div className="mb-6 overflow-hidden rounded-lg">
 					<Image

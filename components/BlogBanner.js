@@ -24,12 +24,12 @@ const BlogBanner = (props) => {
 	}
 
 	return (
-		<section className="py-32 bg-white overflow-hidden">
-			<div className="container px-4 mx-auto">
-				<div className="flex flex-wrap -m-8">
-					<div className="w-full md:w-5/12 p-8">
+		<section className="py-12 lg:py-32 px-4 bg-white overflow-hidden">
+			<div className="container mx-auto px-0">
+				<div className="flex flex-wrap">
+					<div className="w-full md:w-5/12 py-8">
 						<div className="flex flex-col justify-center h-full">
-							<h2 className="mb-5 font-[600] text-2xl sm:text-3xl lg:text-5xl">
+							<h2 className="mb-5 text-center lg:text-left font-[600] text-2xl sm:text-3xl lg:text-5xl">
 								{props?.title}
 							</h2>
 							<motion.div
@@ -66,8 +66,11 @@ const BlogBanner = (props) => {
 							</Link>
 						</div>
 					</div>
-					<div className="w-full md:flex-1 p-8">
-						<motion.div variants={stagger} className="flex flex-row -m-3">
+					<div className="w-full lg:flex-1 py-8 px-0 lg:p-8">
+						<motion.div
+							variants={stagger}
+							className="flex flex-col lg:flex-row justify-center items-start"
+						>
 							{props?.latestTwoPosts.map((keys) => (
 								<BlogCard
 									Key={props?.id}
