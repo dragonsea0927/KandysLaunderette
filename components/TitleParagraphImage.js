@@ -29,7 +29,7 @@ const TitleParagraphImage = (props) => {
 			<div className="relative container px-4 mx-auto">
 				<div className="flex flex-wrap items-center">
 					<div className="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
-						<div className="max-w-lg flex flex-col">
+						<div className="w-full lg:max-w-lg flex flex-col">
 							<span className="text-base text-center lg:text-left text-pink font-[600]">
 								{props?.subtitle}
 							</span>

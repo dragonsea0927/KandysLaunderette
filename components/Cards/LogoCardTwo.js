@@ -4,9 +4,9 @@ import {fadeIn} from "../../animations/animations";
 
 const LogoCardTwo = (props) => {
 	return (
-		<motion.div variants={fadeIn}>
+		<motion.div variants={fadeIn} className="mx-auto">
 			<Image
-				className="w-full h-[200px] object-contain object center"
+				className="w-full h-[200px] object-contain object-center"
 				width={200}
 				height={100}
 				objectFit="contain"

@@ -10,9 +10,11 @@ const FAQTwo = (props) => {
 	function isParagraphContent(isParagraphContent) {
 		let contentStyling;
 		if (isParagraphContent === null) {
-			contentStyling = "hidden mb-11 text-medium text-darkGrey font-[400]";
+			contentStyling =
+				"hidden mb-11 text-center lg:text-left text-medium text-darkGrey font-[400]";
 		} else {
-			contentStyling = "block mb-11 text-medium text-darkGrey font-[400]";
+			contentStyling =
+				"block mb-11 text-center lg:text-left text-medium text-darkGrey font-[400]";
 		}
 		return contentStyling;
 	}
@@ -22,14 +24,15 @@ const FAQTwo = (props) => {
 			__html: DOMPurify.sanitize(paragraphContent),
 		};
 	}
+
 	return (
-		<section className="py-32 bg-white overflow-hidden">
+		<section className="py-16 lg:py-32 bg-white overflow-hidden">
 			<div className="container px-4 mx-auto">
-				<div className="flex flex-wrap -m-8">
-					<div className="w-full md:w-1/2 p-8">
+				<div className="flex flex-col lg:flex-row justify-center items-center">
+					<div className="w-full lg:w-1/2 p-8">
 						<motion.h2
 							variants={fadeIn}
-							className="mb-5 font-[600] text-2xl sm:text-3xl lg:text-5xl"
+							className="mb-5 text-center lg:text-left font-[600] text-2xl sm:text-3xl lg:text-5xl"
 						>
 							{props?.title}
 						</motion.h2>
@@ -38,7 +41,7 @@ const FAQTwo = (props) => {
 							className={isParagraphContent(props?.paragraph)}
 							dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 						/>
-						<div className="md:inline-block">
+						<div className="md:inline-block mx-auto lg:mx-0">
 							<button
 								className="py-4 px-6 w-full text-white font-semibold rounded-lg shadow-4xl focus:ring focus:ring-pink bg-pink hover:bg-yellow transition-all ease-in-out duration-[0.5s]"
 								type="button"
@@ -52,7 +55,7 @@ const FAQTwo = (props) => {
 							</button>
 						</div>
 					</div>
-					<div className="w-full md:w-1/2 p-8">
+					<div className="w-full lg:w-1/2 p-8">
 						<div className="md:max-w-2xl ml-auto">
 							<div className="flex flex-col">
 								{props?.faqContent.map((keys) => (

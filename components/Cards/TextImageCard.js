@@ -12,10 +12,10 @@ const TextImageCard = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full lg:max-w-[75rem] text-darkGrey text-medium font-[400]";
+				"hidden w-full lg:max-w-[75rem] text-center lg:text-left text-darkGrey text-medium font-[400]";
 		} else {
 			contentStyling =
-				"block w-full lg:max-w-[75rem] text-darkGrey text-medium font-[400]";
+				"block w-full lg:max-w-[75rem] text-center lg:text-left text-darkGrey text-medium font-[400]";
 		}
 		return contentStyling;
 	}
@@ -70,12 +70,12 @@ const TextImageCard = (props) => {
 			<motion.div
 				variants={fadeInUp}
 				className="w-full m
-			lg:w-1/2 flex flex-col justify-center items-start"
+			lg:w-1/2 flex flex-col justify-center items-center lg:items-start"
 			>
-				<h5 className="text-grey text-left text-tiny font-[600] uppercase tracking-[0.15rem]">
+				<h5 className="text-grey text-center lg:text-left text-tiny font-[600] uppercase tracking-[0.15rem]">
 					{props?.subtitle}
 				</h5>
-				<h2 className="text-black text-left py-8  text-2xl sm:text-3xl lg:text-5xl font-[600]">
+				<h2 className="text-black text-center lg:text-left py-8 text-2xl sm:text-3xl lg:text-5xl font-[600]">
 					{props?.title}
 				</h2>
 				<div

@@ -1,9 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
+import {motion} from "framer-motion";
+import {fadeIn} from "../../animations/animations";
 
 const LogoCard = (props) => {
 	return (
-		<div className="w-full md:w-1/2 lg:w-1/6">
+		<motion.div
+			variants={fadeIn}
+			className="w-full md:w-1/2 lg:w-1/6 mx-auto lg:mx-0"
+		>
 			<Image
 				className="w-full h-[400] object-contain object center"
 				width={400}
@@ -13,7 +18,7 @@ const LogoCard = (props) => {
 				alt={props?.image?.altText}
 				src={`${props?.image?.sourceUrl}`}
 			/>
-		</div>
+		</motion.div>
 	);
 };
 

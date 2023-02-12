@@ -23,7 +23,7 @@ const FeaturesBannerCardTwo = (props) => {
 	}
 
 	return (
-		<div className="w-full md:w-1/2 lg:w-1/4 py-8 px-0">
+		<div className="w-full sm:w-1/2 lg:w-1/4 py-8 px-0">
 			<div className="flex flex-wrap items-center mb-2">
 				<div className="mx-auto lg:mx-0 mb-6">
 					<img
@@ -36,7 +36,7 @@ const FeaturesBannerCardTwo = (props) => {
 					<div className="bg-darkPink mx-4 h-[1px]"></div>
 				</div>
 			</div>
-			<div className="md:w-3/4">
+			<div className="mx-auto lg:mx-0 md:w-3/4">
 				<h3 className="mb-4 text-lg lg:text-xl text-white text-center lg:text-left font-[600]">
 					{props.title}
 				</h3>
