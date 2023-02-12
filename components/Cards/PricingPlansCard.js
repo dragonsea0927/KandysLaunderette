@@ -40,9 +40,9 @@ const PricingPlansCard = (props) => {
 	function isParagraphContent(isParagraphContent) {
 		let contentStyling;
 		if (isParagraphContent === null) {
-			contentStyling = `hidden w-full lg:max-w-[55rem] py-8 text-center lg:text-left ${paragraphColor} text-base font-[400]`;
+			contentStyling = `hidden w-full lg:max-w-[55rem] py-8 text-left ${paragraphColor} text-base font-[400]`;
 		} else {
-			contentStyling = `block w-full lg:max-w-[55rem] py-8 text-center lg:text-left ${paragraphColor} text-base font-[400]`;
+			contentStyling = `block w-full lg:max-w-[55rem] py-8 text-left ${paragraphColor} text-base font-[400]`;
 		}
 		return contentStyling;
 	}
