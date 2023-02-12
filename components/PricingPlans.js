@@ -30,7 +30,7 @@ const PricingPlans = (props) => {
 	return (
 		<section className="py-0 lg:py-10 bg-lightGrey overflow-hidden">
 			<div className="container mx-auto px-0">
-				<div className="py-16 px-4 lg:px-8 bg-white rounded-3xl">
+				<div className="py-16 px-4 lg:px-8 bg-white rounded-none lg:rounded-3xl">
 					<div className="flex flex-wrap">
 						<div className="w-full md:w-1/2 lg:p-8">
 							<div className="flex flex-col justify-between md:max-w-sm h-full">
