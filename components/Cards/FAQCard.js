@@ -38,7 +38,7 @@ const FAQCard = (props) => {
 					</div>
 					<div className="w-full mt-3">
 						<div className="flex items-center justify-between">
-							<h3 className="text-lg font-[600] leading-normal lg:leading-[2rem] text-white">
+							<h3 className="text-lg font-[600]  lg:leading-[2rem] text-white">
 								{props?.title}
 							</h3>
 							<span className="ml-4" onClick={displayAccordionContent}>

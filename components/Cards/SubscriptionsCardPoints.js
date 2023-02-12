@@ -41,9 +41,7 @@ const SubscriptionsCardPoints = (props) => {
 					strokeLinejoin="round"
 				></path>
 			</svg>
-			<p className={`font-[600] text-${textColor} leading-normal`}>
-				{props?.point}
-			</p>
+			<p className={`font-[600] text-${textColor} `}>{props?.point}</p>
 		</li>
 	);
 };

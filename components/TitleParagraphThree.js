@@ -11,10 +11,10 @@ const TitleParagraphThree = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full lg:max-w-[75rem] mx-auto mt-4 py-8 px-4 text-white text-center text-medium leading-normal";
+				"hidden w-full lg:max-w-[75rem] mx-auto mt-4 py-8 px-4 text-white text-center text-medium";
 		} else {
 			contentStyling =
-				"block w-full lg:max-w-[75rem] mx-auto mt-4 py-8 px-4 text-white text-center text-medium leading-normal";
+				"block w-full lg:max-w-[75rem] mx-auto mt-4 py-8 px-4 text-white text-center text-medium";
 		}
 		return contentStyling;
 	}
@@ -29,7 +29,7 @@ const TitleParagraphThree = (props) => {
 		<section className={styles.titleParagraphThree}>
 			<div className="container mx-auto p-0">
 				<div className="flex flex-col px-4">
-					<motion.div variants={fadeInUp} className="py-28">
+					<motion.div variants={fadeInUp} className="py-16 sm:py-20 md:py-28">
 						<h2 className="text-white text-center font-[600] text-2xl sm:text-3xl lg:text-5xl">
 							{props?.title}
 						</h2>

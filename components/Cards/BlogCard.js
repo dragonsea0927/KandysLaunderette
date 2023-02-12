@@ -42,7 +42,7 @@ const BlogCard = (props) => {
 				</h4>
 				<Link href={`${props?.link}`}>
 					<a>
-						<h2 className="text-xl font-[600] leading-normal mb-2 hover:text-pink hover:underline transition-all ease-in-out duration-[0.5s]">
+						<h2 className="text-xl font-[600]  mb-2 hover:text-pink hover:underline transition-all ease-in-out duration-[0.5s]">
 							{props?.title}
 						</h2>
 					</a>

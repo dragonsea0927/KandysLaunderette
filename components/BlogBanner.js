@@ -45,7 +45,7 @@ const BlogBanner = (props) => {
 								href={`${props?.buttonLink?.url}`}
 								target={`${props?.buttonLink?.target}`}
 							>
-								<a className="mt-8 inline-flex items-center text-pink hover:text-yellow leading-normal transition-all ease-in-out duration-[0.5s]">
+								<a className="mt-8 inline-flex items-center text-pink hover:text-yellow  transition-all ease-in-out duration-[0.5s]">
 									<span className="mr-2 font-[600]">
 										{props?.buttonLink?.title}
 									</span>

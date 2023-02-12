@@ -14,7 +14,7 @@ const TitleGridContentTwo = (props) => {
 				"hidden  w-full lg:max-w-[75rem] mx-auto mt-4 py-8 px-4 text-white text-center text-medium leading-loose";
 		} else {
 			contentStyling =
-				"block w-full lg:max-w-[75rem] mx-auto mt-4 py-8 px-4 text-white text-center text-medium leading-normal";
+				"block w-full lg:max-w-[75rem] mx-auto mt-4 py-8 px-4 text-white text-center text-medium ";
 		}
 		return contentStyling;
 	}

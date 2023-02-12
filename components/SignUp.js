@@ -97,7 +97,7 @@ const SignUp = (props) => {
 										/>
 										<motion.button
 											variants={fadeIn}
-											className="mb-4 py-4 w-full rounded text-sm bg-pink hover:bg-yellow text-white font-bold leading-normal transition-all ease-in-out duration-[0.5s]"
+											className="mb-4 py-4 w-full rounded text-sm bg-pink hover:bg-yellow text-white font-bold  transition-all ease-in-out duration-[0.5s]"
 										>
 											<Link href={`/Login`} target={``}>
 												<a className="text-white text-base font-[600] tracking-loose">
