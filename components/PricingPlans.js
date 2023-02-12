@@ -128,7 +128,7 @@ const PricingPlans = (props) => {
 								</div>
 							</div>
 						</div>
-						<div className="w-full md:w-1/2 lg:p-8">
+						<div className="w-full md:w-1/2 mt-10 lg:mt-0 lg:p-8">
 							<div className="flex flex-wrap">
 								{props?.subscriptionsGrid.map((keys) => (
 									<PricingPlansCard
