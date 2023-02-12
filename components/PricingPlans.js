@@ -29,10 +29,10 @@ const PricingPlans = (props) => {
 
 	return (
 		<section className="py-10 bg-lightGrey overflow-hidden">
-			<div className="container mx-auto px-4">
-				<div className="py-16 px-8 bg-white rounded-3xl">
+			<div className="container mx-auto px-0">
+				<div className="py-16 px-4 lg:px-8 bg-white rounded-3xl">
 					<div className="flex flex-wrap">
-						<div className="w-full md:w-1/2 p-8">
+						<div className="w-full md:w-1/2 lg:p-8">
 							<div className="flex flex-col justify-between md:max-w-sm h-full">
 								<div className="flex-initial mb-8">
 									<h2 className="font-[600] text-2xl sm:text-3xl lg:text-5xl py-8">
@@ -128,8 +128,8 @@ const PricingPlans = (props) => {
 								</div>
 							</div>
 						</div>
-						<div className="w-full md:w-1/2 p-8">
-							<div className="flex flex-wrap -m-4">
+						<div className="w-full md:w-1/2 lg:p-8">
+							<div className="flex flex-wrap">
 								{props?.subscriptionsGrid.map((keys) => (
 									<PricingPlansCard
 										Key={keys?.id}
