@@ -7,13 +7,13 @@
 }
 
 @font-face {
-	font-family: Jost;
-	src: url("./fonts/Jost-VariableFont_wght.ttf");
+	font-family: Work Sans;
+	src: url("./fonts/WorkSans-VariableFont_wght.ttf");
 }
 
 // Font Stack Properties
 $fontStyle_main: "Rubik", sans-serif;
-$fontStyle_secondary: "Jost", sans-serif;
+$fontStyle_secondary: "Work Sans", sans-serif;
 
 // Font Sizes
 $fontSize_xSmall: 0.75rem;
