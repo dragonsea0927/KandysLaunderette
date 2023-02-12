@@ -41,9 +41,9 @@ const FAQTwo = (props) => {
 							className={isParagraphContent(props?.paragraph)}
 							dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 						/>
-						<div className="md:inline-block mx-auto lg:mx-0">
+						<div className="lg:inline-block w-[fit-content] mx-auto lg:mx-0">
 							<button
-								className="py-4 px-6 w-full text-white font-semibold rounded-lg shadow-4xl focus:ring focus:ring-pink bg-pink hover:bg-yellow transition-all ease-in-out duration-[0.5s]"
+								className="py-4 px-6 w-full text-white font-[600] rounded-lg shadow-4xl focus:ring focus:ring-pink bg-pink hover:bg-yellow transition-all ease-in-out duration-[0.5s]"
 								type="button"
 							>
 								<Link

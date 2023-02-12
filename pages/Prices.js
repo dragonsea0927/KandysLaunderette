@@ -112,7 +112,7 @@ const Prices = ({
 							<Link href={`/`} target={``}>
 								<a
 									title=""
-									className="inline-flex items-center justify-center px-4 py-4 mt-8 font-semibold text-white transition-all ease-in-out duration-[0.5s] bg-pink border border-transparent rounded-lg lg:mt-12 hover:bg-yellow focus:bg-blue"
+									className="inline-flex items-center justify-center px-4 py-4 mt-8 font-[600] text-white transition-all ease-in-out duration-[0.5s] bg-pink border border-transparent rounded-lg lg:mt-12 hover:bg-yellow focus:bg-blue"
 									role="button"
 								>
 									<svg

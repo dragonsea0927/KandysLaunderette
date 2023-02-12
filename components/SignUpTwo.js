@@ -258,7 +258,7 @@ const SignUpTwo = (props) => {
 
 								<button
 									type="submit"
-									className="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all ease-in-out duration-[0.5s] border border-transparent rounded-lg bg-pink focus:outline-none hover:bg-yellow"
+									className="inline-flex items-center justify-center w-full px-4 py-4 text-base font-[600] text-white transition-all ease-in-out duration-[0.5s] border border-transparent rounded-lg bg-pink focus:outline-none hover:bg-yellow"
 								>
 									<Link href={`/Login`}>
 										<a
@@ -276,7 +276,7 @@ const SignUpTwo = (props) => {
 						<div className="mt-3 space-y-3">
 							<button
 								type="button"
-								className="relative inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-darkdarkGrey transition-all ease-in-out duration-[0.5s] bg-white border-2 border-darkGrey rounded-lg hover:text-pink hover:border-pink focus:text-pink focus:outline-none"
+								className="relative inline-flex items-center justify-center w-full px-4 py-4 text-base font-[600] text-darkdarkGrey transition-all ease-in-out duration-[0.5s] bg-white border-2 border-darkGrey rounded-lg hover:text-pink hover:border-pink focus:text-pink focus:outline-none"
 							>
 								<div className="absolute inset-y-0 left-0 p-4">
 									<svg
@@ -297,7 +297,7 @@ const SignUpTwo = (props) => {
 
 							<button
 								type="button"
-								className="relative inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-darkdarkGrey transition-all ease-in-out duration-[0.5s] bg-white border-2 border-darkGrey rounded-lg hover:text-pink hover:border-pink focus:text-pink focus:outline-none"
+								className="relative inline-flex items-center justify-center w-full px-4 py-4 text-base font-[600] text-darkdarkGrey transition-all ease-in-out duration-[0.5s] bg-white border-2 border-darkGrey rounded-lg hover:text-pink hover:border-pink focus:text-pink focus:outline-none"
 							>
 								<div className="absolute inset-y-0 left-0 p-4">
 									<svg

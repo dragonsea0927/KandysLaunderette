@@ -85,7 +85,7 @@ const SubscriptionsCard = (props) => {
 			>
 				<div>
 					<span
-						className={`mb-3 inline-block text-tiny ${tierColor} font-semibold uppercase tracking-px leading-snug`}
+						className={`mb-3 inline-block text-tiny ${tierColor} font-[600] uppercase tracking-px leading-snug`}
 					>
 						{props?.tier}
 					</span>

@@ -37,7 +37,7 @@ const BlogCard = (props) => {
 						className="w-full h-[250px] rounded-lg object-cover transform hover:scale-105 transition ease-in-out duration-1000"
 					/>
 				</div>
-				<h4 className="mb-4 max-w-max px-3 py-1.5 text-sm text-white font-semibold bg-blue uppercase rounded-lg">
+				<h4 className="mb-4 max-w-max px-3 py-1.5 text-sm text-white font-[600] bg-blue uppercase rounded-lg">
 					{props?.categories}
 				</h4>
 				<Link href={`${props?.link}`}>

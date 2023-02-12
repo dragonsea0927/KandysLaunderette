@@ -65,7 +65,7 @@ const ImageContent = (props) => {
 											</svg>
 										</div>
 										<div className="flex-1">
-											<h3 className="text-lg font-semibold">{props?.title}</h3>
+											<h3 className="text-lg font-[600]">{props?.title}</h3>
 										</div>
 									</div>
 									<div className="w-full">
@@ -99,9 +99,7 @@ const ImageContent = (props) => {
 											</svg>
 										</div>
 										<div className="flex-1">
-											<h3 className="text-lg font-semibold">
-												{props?.titleTwo}
-											</h3>
+											<h3 className="text-lg font-[600]">{props?.titleTwo}</h3>
 										</div>
 									</div>
 									<div className="w-full">
@@ -135,7 +133,7 @@ const ImageContent = (props) => {
 											</svg>
 										</div>
 										<div className="flex-1">
-											<h3 className="text-lg font-semibold">
+											<h3 className="text-lg font-[600]">
 												{props?.titleThree}
 											</h3>
 										</div>

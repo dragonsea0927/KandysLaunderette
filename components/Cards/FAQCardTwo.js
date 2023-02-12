@@ -59,7 +59,7 @@ const FAQCardTwo = (props) => {
 						<button onClick={displayAccordionContent}>
 							<motion.h3
 								variants={fadeIn}
-								className="mb-4 font-semibold leading-normal"
+								className="mb-4 font-[600] leading-normal"
 							>
 								{props?.title}
 							</motion.h3>

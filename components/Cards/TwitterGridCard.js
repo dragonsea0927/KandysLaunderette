@@ -35,7 +35,7 @@ const TwitterGridCard = (props) => {
 					<div className="min-w-0 ml-3 mr-auto">
 						<motion.h2
 							variants={fadeIn}
-							className="text-base font-semibold text-black truncate"
+							className="text-base font-[600] text-black truncate"
 						>
 							{props?.userName}
 						</motion.h2>
