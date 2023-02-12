@@ -10,7 +10,7 @@ const ProfileCard = (props) => {
 				<img
 					src={`${props?.image?.sourceUrl}`}
 					alt={`${props?.image?.altText} Image`}
-					className="h-full h-full object-cover transform hover:scale-105 transition ease-in-out duration-1000"
+					className="w-full h-full object-cover transform hover:scale-105 transition ease-in-out duration-1000"
 				/>
 				<div className="absolute bottom-0 left-0 w-full p-2">
 					<div

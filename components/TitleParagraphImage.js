@@ -10,10 +10,10 @@ const TitleParagraphImage = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full lg:max-w-[75rem] mx-auto py-8 px-4 lg:px-0 text-medium text-darkGrey";
+				"hidden w-full lg:max-w-[75rem] mx-auto py-8 text-center lg:text-left text-medium text-darkGrey";
 		} else {
 			contentStyling =
-				"block w-full lg:max-w-[75rem] mx-auto py-8 px-4 lg:px-0 text-medium text-darkGrey";
+				"block w-full lg:max-w-[75rem] mx-auto py-8 text-center lg:text-left text-medium text-darkGrey";
 		}
 		return contentStyling;
 	}
@@ -29,11 +29,11 @@ const TitleParagraphImage = (props) => {
 			<div className="relative container px-4 mx-auto">
 				<div className="flex flex-wrap items-center">
 					<div className="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
-						<div className="max-w-lg">
-							<span className="text-base text-pink font-semibold">
+						<div className="max-w-lg flex flex-col">
+							<span className="text-base text-center lg:text-left text-pink font-[600]">
 								{props?.subtitle}
 							</span>
-							<h2 className="font-[600] text-2xl sm:text-3xl lg:text-5xl mt-8">
+							<h2 className="mt-8 text-center lg:text-left font-[600] text-2xl sm:text-3xl lg:text-5xl">
 								{props?.title}
 							</h2>
 							<motion.div

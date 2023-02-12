@@ -11,9 +11,9 @@ const SignUpTwo = (props) => {
 	function isParagraphContent(isParagraphContent) {
 		let contentStyling;
 		if (isParagraphContent === null) {
-			contentStyling = "hidden mt-5 text-sm text-grey";
+			contentStyling = "hidden mt-5 text-sm text-darkGrey";
 		} else {
-			contentStyling = "block mt-5 text-sm text-grey";
+			contentStyling = "block mt-5 text-sm text-darkGrey";
 		}
 		return contentStyling;
 	}
@@ -26,7 +26,7 @@ const SignUpTwo = (props) => {
 	return (
 		<section className={styles.signUpTwo}>
 			<div className="grid grid-cols-1 lg:grid-cols-2">
-				<div className="relative flex items-end px-4 pb-10 pt-60 sm:pb-16 md:justify-center lg:pb-24 bg-grey sm:px-6 lg:px-8">
+				<div className="relative flex items-end px-4 pb-10 pt-60 sm:pb-16 md:justify-center lg:pb-24 bg-darkGrey sm:px-6 lg:px-8">
 					<div className="absolute inset-0">
 						<img
 							className="object-cover w-full h-full"
@@ -145,11 +145,11 @@ const SignUpTwo = (props) => {
 					<div className="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
 						<motion.h2
 							variants={fadeIn}
-							className="text-3xl font-bold leading-tight text-black sm:text-4xl"
+							className="text-center lg:text-left text-3xl sm:text-4xl font-bold leading-tight text-black"
 						>
 							{props?.titleTwo}
 						</motion.h2>
-						<p className="mt-2 text-base text-grey">
+						<p className="mt-2 text-base text-darkGrey text-center lg:text-left">
 							Already have an account?
 							<Link href="/Login">
 								<a className="font-medium text-pink px-2 transition-all ease-in-out duration-[0.5s] hover:text-yellow focus:text-yellow hover:underline">
@@ -161,10 +161,10 @@ const SignUpTwo = (props) => {
 						<form action="#" method="POST" className="mt-8">
 							<div className="space-y-5">
 								<div>
-									<label className="text-base font-[400] text-grey">
+									<label className="text-base font-[400] text-darkGrey">
 										First & Last name
 									</label>
-									<div className="mt-2.5 relative text-grey focus-within:text-grey">
+									<div className="mt-2.5 relative text-darkGrey focus-within:text-darkGrey">
 										<div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
 											<svg
 												className="w-5 h-5 text-pink"
@@ -187,16 +187,16 @@ const SignUpTwo = (props) => {
 											name=""
 											id=""
 											placeholder="Enter your full name"
-											className="block w-full py-4 pl-10 pr-4 text-black placeholder-darkGrey transition-all ease-in-out duration-[0.5s] border border-grey rounded-lg bg-white focus:outline-none focus:border-pink focus:bg-white caret-pink"
+											className="block w-full py-4 pl-10 pr-4 text-black placeholder-darkdarkGrey transition-all ease-in-out duration-[0.5s] border border-darkGrey rounded-lg bg-white focus:outline-none focus:border-pink focus:bg-white caret-pink"
 										/>
 									</div>
 								</div>
 
 								<div>
-									<label className="text-base font-[400] text-grey">
+									<label className="text-base font-[400] text-darkGrey">
 										Email address
 									</label>
-									<div className="mt-2.5 relative text-grey focus-within:text-grey">
+									<div className="mt-2.5 relative text-darkGrey focus-within:text-darkGrey">
 										<div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
 											<svg
 												className="w-5 h-5 text-pink"
@@ -219,16 +219,16 @@ const SignUpTwo = (props) => {
 											name=""
 											id=""
 											placeholder="Enter email to get started"
-											className="block w-full py-4 pl-10 pr-4 text-black placeholder-darkGrey transition-all ease-in-out duration-[0.5s] border border-grey rounded-lg bg-white focus:outline-none focus:border-pink focus:bg-white caret-pink"
+											className="block w-full py-4 pl-10 pr-4 text-black placeholder-darkdarkGrey transition-all ease-in-out duration-[0.5s] border border-darkGrey rounded-lg bg-white focus:outline-none focus:border-pink focus:bg-white caret-pink"
 										/>
 									</div>
 								</div>
 
 								<div>
-									<label className="text-base font-[400] text-grey">
+									<label className="text-base font-[400] text-darkGrey">
 										Password
 									</label>
-									<div className="mt-2.5 relative text-grey focus-within:text-grey">
+									<div className="mt-2.5 relative text-darkGrey focus-within:text-darkGrey">
 										<div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
 											<svg
 												className="w-5 h-5 text-pink"
@@ -251,7 +251,7 @@ const SignUpTwo = (props) => {
 											name=""
 											id=""
 											placeholder="Enter your password"
-											className="block w-full py-4 pl-10 pr-4 text-black placeholder-darkGrey transition-all ease-in-out duration-[0.5s] border border-grey rounded-lg bg-white focus:outline-none focus:border-pink focus:bg-white caret-pink"
+											className="block w-full py-4 pl-10 pr-4 text-black placeholder-darkdarkGrey transition-all ease-in-out duration-[0.5s] border border-darkGrey rounded-lg bg-white focus:outline-none focus:border-pink focus:bg-white caret-pink"
 										/>
 									</div>
 								</div>
@@ -276,7 +276,7 @@ const SignUpTwo = (props) => {
 						<div className="mt-3 space-y-3">
 							<button
 								type="button"
-								className="relative inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-darkGrey transition-all ease-in-out duration-[0.5s] bg-white border-2 border-grey rounded-lg hover:text-pink hover:border-pink focus:text-pink focus:outline-none"
+								className="relative inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-darkdarkGrey transition-all ease-in-out duration-[0.5s] bg-white border-2 border-darkGrey rounded-lg hover:text-pink hover:border-pink focus:text-pink focus:outline-none"
 							>
 								<div className="absolute inset-y-0 left-0 p-4">
 									<svg
@@ -297,7 +297,7 @@ const SignUpTwo = (props) => {
 
 							<button
 								type="button"
-								className="relative inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-darkGrey transition-all ease-in-out duration-[0.5s] bg-white border-2 border-grey rounded-lg hover:text-pink hover:border-pink focus:text-pink focus:outline-none"
+								className="relative inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-darkdarkGrey transition-all ease-in-out duration-[0.5s] bg-white border-2 border-darkGrey rounded-lg hover:text-pink hover:border-pink focus:text-pink focus:outline-none"
 							>
 								<div className="absolute inset-y-0 left-0 p-4">
 									<svg
