@@ -15,9 +15,9 @@ const SingleCardTwo = (props) => {
 	function isParagraphContent(isParagraphContent) {
 		let contentStyling;
 		if (isParagraphContent === null) {
-			contentStyling = `"hidden mt-8 text-left text-${props?.paragraphColor} text-medium"`;
+			contentStyling = `"hidden mt-8 text-center lg:text-left text-${props?.paragraphColor} text-medium"`;
 		} else {
-			contentStyling = `block mt-8 text-left text-${props?.paragraphColor} text-medium`;
+			contentStyling = `block mt-8 text-center lg:text-left text-${props?.paragraphColor} text-medium`;
 		}
 		return contentStyling;
 	}

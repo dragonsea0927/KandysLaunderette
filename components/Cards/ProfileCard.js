@@ -5,7 +5,7 @@ import {fadeInUp, stagger} from "../../animations/animations";
 
 const ProfileCard = (props) => {
 	return (
-		<div className="w-full md:w-1/2 lg:w-1/4 my-3 px-0 lg:p-3">
+		<div className="w-full lg:w-1/4 my-3 px-0 lg:p-3">
 			<div className="relative max-w-max mx-auto h-full overflow-hidden rounded-lg">
 				<img
 					src={`${props?.image?.sourceUrl}`}

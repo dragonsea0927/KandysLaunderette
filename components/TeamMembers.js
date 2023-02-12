@@ -35,7 +35,7 @@ const TeamMembers = (props) => {
 					className={isParagraphContent(props?.paragraph)}
 					dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 				/>
-				<div className="flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row mt-8 m-3">
+				<div className="flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row gap-x-8 mt-8 m-3">
 					{props?.profileGrid.map((keys) => (
 						<ProfileCard
 							Key={props?.id}
