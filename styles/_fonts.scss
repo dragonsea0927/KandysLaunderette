@@ -7,13 +7,13 @@
 }
 
 @font-face {
-	font-family: Inter;
-	src: url("./fonts/Inter-VariableFont_slnt,wght.ttf");
+	font-family: Nunito;
+	src: url("./fonts/Nunito-VariableFont_wght.ttf");
 }
 
 // Font Stack Properties
 $fontStyle_main: "Rubik", sans-serif;
-$fontStyle_secondary: "Inter", sans-serif;
+$fontStyle_secondary: "Nunito", sans-serif;
 
 // Font Sizes
 $fontSize_xSmall: 0.75rem;

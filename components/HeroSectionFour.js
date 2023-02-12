@@ -79,11 +79,11 @@ const HeroSectionFour = (props) => {
 								<Link href="/">
 									<a>
 										<Image
-											src="/img/icons/skirt.png"
-											className="w-full h-[200px] object-contain"
 											alt="Icon"
 											width={75}
 											height={75}
+											src="/img/icons/skirt.png"
+											className="w-[65px] h-[65px] sm:w-[75px] sm:h-[75px] object-contain object-center"
 										/>
 									</a>
 								</Link>

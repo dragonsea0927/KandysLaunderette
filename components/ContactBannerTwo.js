@@ -43,7 +43,7 @@ const ContactBannerTwo = (props) => {
 					className="flex flex-col lg:flex-row py-8 gap-y-28 lg:gap-10 px-8 justify-between items-center"
 				>
 					<motion.div variants={fadeInUp}>
-						<h2 className="pb-10 text-white text-center  text-2xl sm:text-3xl lg:text-5xl">
+						<h2 className="pb-10 text-white text-center text-2xl sm:text-3xl lg:text-4xl">
 							{props?.title}
 						</h2>
 						<span className="gap-2 flex flex-row text-medium text-white items-center justify-center">
