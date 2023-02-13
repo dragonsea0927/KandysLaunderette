@@ -55,7 +55,7 @@ const ImageTextBulletPoints = (props) => {
 					</motion.div>
 					<motion.div variants={fadeInUp} className="px-4 lg:px-0">
 						<h2
-							className={`py-8 w-full md:max-w-[35rem] mx-auto lg:mx-0 text-${textColor} uppercase text-center lg:text-left leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl`}
+							className={`py-8 w-full md:max-w-[35rem] mx-auto lg:mx-0 text-${textColor} uppercase text-center lg:text-left tracking-normal tracking-normal leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl`}
 						>
 							{props?.title}
 						</h2>

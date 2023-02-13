@@ -9,7 +9,7 @@ const Logos = (props) => {
 			<div className="container px-4 mx-auto">
 				<motion.h2
 					variants={fadeIn}
-					className="text-black text-center leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl mb-24"
+					className="text-black text-center tracking-normal leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl mb-24"
 				>
 					{props?.title}
 				</motion.h2>

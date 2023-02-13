@@ -78,7 +78,7 @@ const OurProcess = (props) => {
 				<div className="py-20 px-4 lg:px-0">
 					<motion.div variants={fadeInUp}>
 						<h2
-							className={` py-8 w-full text-center text-${textColor} leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl`}
+							className={` py-8 w-full text-center text-${textColor} tracking-normal leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl`}
 						>
 							{props?.title}
 						</h2>

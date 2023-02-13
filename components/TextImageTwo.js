@@ -55,7 +55,7 @@ const TextImageTwo = (props) => {
 					<motion.div variants={fadeInUp} className="w-full md:w-1/2">
 						<motion.h3
 							variants={fadeInUp}
-							className="text-black text-left py-6 leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl"
+							className="text-black text-left py-6 tracking-normal leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl"
 						>
 							{props?.title}
 						</motion.h3>
