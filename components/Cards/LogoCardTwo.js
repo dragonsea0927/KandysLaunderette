@@ -6,13 +6,13 @@ const LogoCardTwo = (props) => {
 	return (
 		<motion.div variants={fadeIn} className="mx-auto">
 			<Image
-				className="w-full h-[200px] object-contain object-center"
 				width={200}
 				height={100}
 				objectFit="contain"
 				objectPosition="center"
-				alt={props?.image?.altText}
 				src={`${props?.image?.sourceUrl}`}
+				alt={`${props?.image?.altText} Image`}
+				className="w-full h-[200px] object-contain object-center"
 			/>
 		</motion.div>
 	);

@@ -14,13 +14,15 @@ import {fadeInUp, fadeIn, stagger} from "../animations/animations";
 import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
 import SignUp from "../components/SignUp";
-import OurProcess from "../components/OurProcess";
 import MetaTag from "../components/Meta/MetaTag";
 import TwoOptions from "../components/TwoOptions";
+import OurProcess from "../components/OurProcess";
 import ContactBanner from "../components/ContactBanner";
 import HeroSectionTwo from "../components/HeroSectionTwo";
+import ContactFormMap from "../components/ContactFormMap";
 import CTAContentImage from "../components/CTAContentImage";
 import TitleParagraphTwo from "../components/TitleParagraphTwo";
+import AlterationsRepairs from "../components/AlterationsRepairs";
 import ImageTextBulletPoints from "../components/ImageTextBulletPoints";
 
 const SuitsOxfordShirts = ({
@@ -62,6 +64,7 @@ const SuitsOxfordShirts = ({
 							?.sourceUrl
 					}
 				/>
+
 				{/* <!--===== TITLE PARAGRAPH =====--> */}
 				<TitleParagraphTwo
 					title={suitsOxfordShirtsPageContent?.titleParagraph?.title}
@@ -81,12 +84,14 @@ const SuitsOxfordShirts = ({
 						suitsOxfordShirtsPageContent?.suitsContent?.backgroundLetter
 					}
 				/>
+
 				{/* // <========== OUR OPTIONS ==========> */}
 				<TwoOptions
 					title={suitsOxfordShirtsPageContent?.ourOptions?.title}
 					paragraph={suitsOxfordShirtsPageContent?.ourOptions?.paragraph}
 					content={suitsOxfordShirtsPageContent?.ourOptions?.content}
 				/>
+
 				{/* <!--===== GET DOWN TO BUSINESS CTA =====--> */}
 				<CTAContentImage
 					title={suitsOxfordShirtsPageContent?.ctaContentImage?.title}
@@ -127,6 +132,7 @@ const SuitsOxfordShirts = ({
 						suitsOxfordShirtsPageContent?.contactBanner?.image?.sourceUrl
 					}
 				/>
+
 				{/* <!--===== OUR PROCESS INFORMATION =====--> */}
 				<OurProcess
 					title={suitsOxfordShirtsPageContent?.ourProcess?.title}
@@ -140,6 +146,7 @@ const SuitsOxfordShirts = ({
 						suitsOxfordShirtsPageContent?.ourProcess?.backgroundLetter
 					}
 				/>
+
 				{/* <!--===== REINVENTING THE FUTURE =====--> */}
 				<ImageTextBulletPoints
 					title={suitsOxfordShirtsPageContent?.imageTextBulletPoints?.title}
@@ -157,87 +164,38 @@ const SuitsOxfordShirts = ({
 				/>
 
 				{/* <!--===== ALTERATIONS & REPAIRS =====--> */}
-				<div className={styles.alterationsRepairs}>
-					<div className="container mx-auto px-4 py-20">
-						<div className="py-20">
-							<motion.div variants={fadeInUp} className="flex flex-col">
-								<h2 className="text-center text-white tracking-normal leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl py-8 leading-[2.75rem] w-full">
-									Suits Alterations & Repairs
-								</h2>
-								<h5 className="w-full lg:max-w-[75rem] mx-auto mt-4 text-center text-darkGrey text-medium">
-									Perfection has never been so easy
-								</h5>
-							</motion.div>
-						</div>
-					</div>
-					<div
-						className="flex items-center w-full h-[40rem] bg-center bg-cover bg-[no-repeat]"
-						style={{
-							backgroundImage: `url("http://kandyslaunderette.local/wp-content/uploads/2023/01/richie-roberts-7or-8zEkxPM-unsplash.jpg");`,
-						}}
-					></div>
-					<div className="container py-20 px-4 mx-auto">
-						<div className="flex flex-col justify-between items-center gap-14">
-							<div className="flex flex-col-reverse sm:flex-row justify-between items-center gap-14">
-								<div className={styles.Image}>
-									<Image
-										width={`600px`}
-										height={`600px`}
-										objectFit="cover"
-										alt="Product Image"
-										objectPosition="center"
-										src={`http://kandyslaunderette.local/wp-content/uploads/2023/01/juan-jose-porta-YsoCJDGoiG4-unsplash.jpg`}
-										className="w-full h-[600px] rounded-lg transform hover:scale-105 transition ease-in-out duration-1000"
-									></Image>
-								</div>
-								<motion.div variants={stagger} className="p-4">
-									<motion.h3
-										variants={fadeInUp}
-										className="text-center sm:text-left text-white tracking-normal leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl py-8 leading-[2.75rem] w-full"
-									>
-										Alterations
-									</motion.h3>
-									<motion.p
-										variants={fadeIn}
-										className="w-full lg:max-w-[60rem] mx-auto sm:mx-0 mt-4 p-0 text-darkGrey text-medium"
-									>
-										Perfect fitting of clothes augments their overall appeal.
-										This defines our exclusive clothing alterations and clothes
-										repair services intended to glorify your looks.
-									</motion.p>
-								</motion.div>
-							</div>
-							<div className="flex flex-col-reverse sm:flex-row justify-between items-center gap-14">
-								<motion.div variants={stagger} className="p-4">
-									<motion.h3
-										variants={fadeInUp}
-										className="text-center sm:text-left text-white tracking-normal leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl py-8 leading-[2.75rem] w-full"
-									>
-										Repairs
-									</motion.h3>
-									<motion.p
-										variants={fadeIn}
-										className="w-full lg:max-w-[60rem] mx-auto sm:mx-0 mt-4 p-0 text-darkGrey text-medium"
-									>
-										We also take care of your Groomsmen suits. Either 2 Piece &
-										3 Piece suits, we specialize in all of them.
-									</motion.p>
-								</motion.div>
-								<div className={styles.Image}>
-									<Image
-										width={`600px`}
-										height={`600px`}
-										objectFit="cover"
-										alt="Product Image"
-										objectPosition="center"
-										src={`http://kandyslaunderette.local/wp-content/uploads/2023/01/richie-roberts-7or-8zEkxPM-unsplash.jpg`}
-										className="w-full h-[600px] rounded-lg transform hover:scale-105 transition ease-in-out duration-1000"
-									></Image>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				<AlterationsRepairs
+					title={suitsOxfordShirtsPageContent?.alterationsRepairs?.title}
+					titleTwo={suitsOxfordShirtsPageContent?.alterationsRepairs?.titleTwo}
+					titleThree={
+						suitsOxfordShirtsPageContent?.alterationsRepairs?.titleThree
+					}
+					paragraph={
+						suitsOxfordShirtsPageContent?.alterationsRepairs?.paragraph
+					}
+					paragraphTwo={
+						suitsOxfordShirtsPageContent?.alterationsRepairs?.paragraphTwo
+					}
+					paragraphThree={
+						suitsOxfordShirtsPageContent?.alterationsRepairs?.paragraphThree
+					}
+					imageThree={
+						suitsOxfordShirtsPageContent?.alterationsRepairs?.imageThree
+					}
+					imageTwo={suitsOxfordShirtsPageContent?.alterationsRepairs?.imageTwo}
+					imageBanner={
+						suitsOxfordShirtsPageContent?.alterationsRepairs?.imageBanner
+							?.sourceUrl
+					}
+				/>
+
+				{/* <!--===== CONTACT US MAP =====--> */}
+				<ContactFormMap
+					title={`Feedback`}
+					paragraph={`<p>Post-ironic portland shabby chic echo park, banjo fashion axe</p>`}
+					paragraphTwo={`<p>This site is protected by reCAPTCHA and the Google <a href="/PrivacyPolicy">Privacy Policy</a> &amp; <a href="/TermsOfService">Terms of Service</a>.</p>`}
+					buttonLink={suitsOxfordShirtsPageContent?.contactBanner?.buttonLink}
+				/>
 			</main>
 
 			{/* <!--===== FOOTER =====--> */}
@@ -428,6 +386,25 @@ export async function getStaticProps() {
 										altText
 										sourceUrl
 									}
+								}
+							}
+							alterationsRepairs {
+								title
+								titleTwo
+								titleThree
+								paragraph
+								paragraphTwo
+								paragraphThree
+								imageBanner {
+									sourceUrl
+								}
+								imageTwo {
+									altText
+									sourceUrl
+								}
+								imageThree {
+									altText
+									sourceUrl
 								}
 							}
 						}

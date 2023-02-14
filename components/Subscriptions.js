@@ -13,9 +13,9 @@ const Subscriptions = (props) => {
 	function isParagraphContent(isParagraphContent) {
 		let contentStyling;
 		if (isParagraphContent === null) {
-			contentStyling = "hidden text-darkGrey text-center text-medium";
+			contentStyling = "hidden text-center text-darkGrey text-medium";
 		} else {
-			contentStyling = "block text-darkGrey text-center text-medium";
+			contentStyling = "block text-center text-darkGrey text-medium";
 		}
 		return contentStyling;
 	}
