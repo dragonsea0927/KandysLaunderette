@@ -5,11 +5,11 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-color: $darkPink;
+	background-color: $blue;
 	background-image: linear-gradient(
 			0deg,
-			rgba(106, 78, 247, 0.85),
-			rgba(92, 61, 249, 0.5)
+			rgba(36, 14, 149, 0.85),
+			rgba(36, 14, 149, 0.5)
 		),
 		url("/svg/w.svg");
 }

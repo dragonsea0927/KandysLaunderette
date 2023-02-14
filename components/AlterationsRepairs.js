@@ -11,21 +11,22 @@ const AlterationsRepairs = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden mt-4 w-full lg:max-w-[75rem] mx-auto py-8 px-4 text-center text-white text-medium";
+				"hidden mt-4 w-full lg:max-w-[75rem] mx-auto py-8 text-center text-white text-medium";
 		} else {
 			contentStyling =
-				"block mt-4 w-full lg:max-w-[75rem] mx-auto py-8 px-4 text-center text-white text-medium";
+				"block mt-4 w-full lg:max-w-[75rem] mx-auto py-8 text-center text-white text-medium";
 		}
 		return contentStyling;
 	}
+
 	function isParagraphContentTwo(isParagraphContent) {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden mt-4 w-full lg:max-w-[75rem] mx-auto py-8 px-4 text-center lg:text-left text-white text-medium";
+				"hidden mt-4 w-full lg:max-w-[75rem] mx-auto py-8 text-center lg:text-left text-white text-medium";
 		} else {
 			contentStyling =
-				"block mt-4 w-full lg:max-w-[75rem] mx-auto py-8 px-4 text-center lg:text-left text-white text-medium";
+				"block mt-4 w-full lg:max-w-[75rem] mx-auto py-8 text-center lg:text-left text-white text-medium";
 		}
 		return contentStyling;
 	}
