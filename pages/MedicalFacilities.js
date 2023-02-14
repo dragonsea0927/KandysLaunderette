@@ -130,10 +130,12 @@ const MedicalFacilities = ({
 
 				{/* <!--===== CONTACT US MAP =====--> */}
 				<ContactFormMap
-					title={`Feedback`}
-					paragraph={`<p>Post-ironic portland shabby chic echo park, banjo fashion axe</p>`}
-					paragraphTwo={`<p>This site is protected by reCAPTCHA and the Google <a href="/PrivacyPolicy">Privacy Policy</a> &amp; <a href="/TermsOfService">Terms of Service</a>.</p>`}
-					buttonLink={medicalFacilitiesPageContent?.contactBanner?.buttonLink}
+					title={medicalFacilitiesPageContent?.contactUs?.title}
+					paragraph={medicalFacilitiesPageContent?.contactUs?.paragraph}
+					buttonLink={medicalFacilitiesPageContent?.contactUs?.buttonLink}
+					paragraphTwo={
+						medicalFacilitiesPageContent?.contactUs?.paragraphBottom
+					}
 				/>
 			</main>
 
@@ -292,6 +294,16 @@ export async function getStaticProps() {
 								image {
 									altText
 									sourceUrl
+								}
+							}
+							contactUs {
+								title
+								paragraph
+								paragraphBottom
+								buttonLink {
+									url
+									title
+									target
 								}
 							}
 						}

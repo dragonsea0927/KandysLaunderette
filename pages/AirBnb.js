@@ -117,10 +117,10 @@ const AirBnb = ({
 
 				{/* <!--===== CONTACT US MAP =====--> */}
 				<ContactFormMap
-					title={`Feedback`}
-					paragraph={`<p>Post-ironic portland shabby chic echo park, banjo fashion axe</p>`}
-					paragraphTwo={`<p>This site is protected by reCAPTCHA and the Google <a href="/PrivacyPolicy">Privacy Policy</a> &amp; <a href="/TermsOfService">Terms of Service</a>.</p>`}
-					buttonLink={airBnbPageContent?.contactBanner?.buttonLink}
+					title={airBnbPageContent?.contactUs?.title}
+					paragraph={airBnbPageContent?.contactUs?.paragraph}
+					buttonLink={airBnbPageContent?.contactUs?.buttonLink}
+					paragraphTwo={airBnbPageContent?.contactUs?.paragraphBottom}
 				/>
 			</main>
 
@@ -279,6 +279,16 @@ export async function getStaticProps() {
 								image {
 									altText
 									sourceUrl
+								}
+							}
+							contactUs {
+								title
+								paragraph
+								paragraphBottom
+								buttonLink {
+									url
+									title
+									target
 								}
 							}
 						}
