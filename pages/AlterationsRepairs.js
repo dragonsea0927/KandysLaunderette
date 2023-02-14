@@ -12,9 +12,12 @@ import Footer from "/components/Footer";
 import SignUp from "../components/SignUp";
 import MetaTag from "../components/Meta/MetaTag";
 import OurProcess from "../components/OurProcess";
+import TeamMembers from "../components/TeamMembers";
+import StoreLocation from "/components/storeLocation";
 import TitleParagraph from "/components/TitleParagraph";
 import ContactBanner from "../components/ContactBanner";
 import HeroSectionFour from "../components/HeroSectionFour";
+import AlterationsReline from "../components/AlterationsRepairs";
 import TitleParagraphImage from "../components/TitleParagraphImage";
 
 const AlterationsRepairs = ({
@@ -64,12 +67,45 @@ const AlterationsRepairs = ({
 					paragraph={alterationsRepairsPageContent?.titleParagraph?.paragraph}
 				/>
 
+				{/* <!--===== ALTERATIONS & REPAIRS =====--> */}
+				<AlterationsReline
+					title={alterationsRepairsPageContent?.alterationsRepairs?.title}
+					titleTwo={alterationsRepairsPageContent?.alterationsRepairs?.titleTwo}
+					titleThree={
+						alterationsRepairsPageContent?.alterationsRepairs?.titleThree
+					}
+					paragraph={
+						alterationsRepairsPageContent?.alterationsRepairs?.paragraph
+					}
+					paragraphTwo={
+						alterationsRepairsPageContent?.alterationsRepairs?.paragraphTwo
+					}
+					paragraphThree={
+						alterationsRepairsPageContent?.alterationsRepairs?.paragraphThree
+					}
+					imageThree={
+						alterationsRepairsPageContent?.alterationsRepairs?.imageThree
+					}
+					imageTwo={alterationsRepairsPageContent?.alterationsRepairs?.imageTwo}
+					imageBanner={
+						alterationsRepairsPageContent?.alterationsRepairs?.imageBanner
+							?.sourceUrl
+					}
+				/>
+
 				{/* <!--===== USER ACCOUNT =====--> */}
 				<TitleParagraphImage
 					image={alterationsRepairsPageContent?.whatIsIncluded?.image}
 					title={alterationsRepairsPageContent?.whatIsIncluded?.title}
 					subtitle={alterationsRepairsPageContent?.whatIsIncluded?.subtitle}
 					paragraph={alterationsRepairsPageContent?.whatIsIncluded?.paragraph}
+				/>
+
+				{/* TEAM MEMBERS */}
+				<TeamMembers
+					title={alterationsRepairsPageContent?.teamMembers?.title}
+					paragraph={alterationsRepairsPageContent?.teamMembers?.paragraph}
+					profileGrid={alterationsRepairsPageContent?.teamMembers?.profileGrid}
 				/>
 
 				{/* <!--===== USER ACCOUNT =====--> */}
@@ -117,6 +153,12 @@ const AlterationsRepairs = ({
 					backgroundLetter={
 						alterationsRepairsPageContent?.ourProcess?.backgroundLetter
 					}
+				/>
+
+				{/* <!--===== OUT STORE LOCATION =====--> */}
+				<StoreLocation
+					title={alterationsRepairsPageContent?.ourLocation?.title}
+					paragraph={alterationsRepairsPageContent?.ourLocation?.paragraph}
 				/>
 			</main>
 
@@ -187,6 +229,25 @@ export async function getStaticProps() {
 								title
 								paragraph
 							}
+							alterationsRepairs {
+								title
+								titleTwo
+								titleThree
+								paragraph
+								paragraphTwo
+								paragraphThree
+								imageBanner {
+									sourceUrl
+								}
+								imageTwo {
+									altText
+									sourceUrl
+								}
+								imageThree {
+									altText
+									sourceUrl
+								}
+							}
 							whatIsIncluded {
 								title
 								subtitle
@@ -194,6 +255,23 @@ export async function getStaticProps() {
 								image {
 									altText
 									sourceUrl
+								}
+							}
+							teamMembers {
+								title
+								paragraph
+								profileGrid {
+									profileCard {
+										title
+										jobPosition
+										twitter
+										facebook
+										instagram
+										image {
+											altText
+											sourceUrl
+										}
+									}
 								}
 							}
 							titleParagraphImage {
@@ -240,6 +318,10 @@ export async function getStaticProps() {
 										sourceUrl
 									}
 								}
+							}
+							ourLocation {
+								title
+								paragraph
 							}
 						}
 					}

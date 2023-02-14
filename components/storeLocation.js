@@ -9,10 +9,10 @@ const StoreLocation = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full lg:w-[45rem] py-8 mx-auto text-black text-center font-[400] text-base";
+				"hidden mt-4 w-full lg:max-w-[75rem] mx-auto py-8 px-4 text-center text-darkGrey text-medium";
 		} else {
 			contentStyling =
-				"block w-full lg:w-[45rem] py-8 mx-auto text-black text-center font-[400] text-base";
+				"block mt-4 w-full lg:max-w-[75rem] mx-auto py-8 px-4 text-center text-darkGrey text-medium";
 		}
 		return contentStyling;
 	}
