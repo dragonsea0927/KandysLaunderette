@@ -87,7 +87,7 @@ const AlterationsRepairs = (props) => {
 							/>
 						</motion.div>
 					</div>
-					<div className="flex flex-col-reverse sm:flex-row justify-between items-center gap-14">
+					<div className="flex flex-col sm:flex-row justify-between items-center gap-14">
 						<motion.div variants={stagger} className="p-4">
 							<motion.h3
 								variants={fadeInUp}
