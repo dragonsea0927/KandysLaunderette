@@ -210,17 +210,17 @@ const SuitsOxfordShirts = ({
 };
 
 // Removes Global Navbar & Adds Custom Header and Footer Page layout Function
-SuitsOxfordShirts.getLayout = function PageLayout(page) {
-	return (
-		<>
-			{/* <!--===== ONE TIME CUSTOM PAGE CONTENT =====--> */}
-			{page}
+// SuitsOxfordShirts.getLayout = function PageLayout(page) {
+// 	return (
+// 		<>
+// 			{/* <!--===== ONE TIME CUSTOM PAGE CONTENT =====--> */}
+// 			{page}
 
-			{/* <!--===== FOOTER =====--> */}
-			{/* <FooterDark /> */}
-		</>
-	);
-};
+// 			{/* <!--===== FOOTER =====--> */}
+// 			{/* <FooterDark /> */}
+// 		</>
+// 	);
+// };
 
 export async function getStaticProps() {
 	const getSuitsOxfordShirtsContent = gql`

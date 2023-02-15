@@ -39,7 +39,7 @@ const HeroSectionThree = (props) => {
 											href={`${props?.buttonLinkTwo?.url}`}
 											target={`${props?.buttonLinkTwo?.target}`}
 										>
-											<a className="inline-block py-2 px-8 w-[fit-content] mx-auto lg:mx-0 leading-8 text-tiny font-[600] rounded-xl text-center bg-white focus:ring-2 focus:ring-yellow hover:text-blue hover:bg-yellow ">
+											<a className="inline-block py-2 px-8 w-[fit-content] mx-auto lg:mx-0 leading-8 text-tiny font-[600] rounded-xl text-center bg-white focus:ring-2 focus:ring-fadedPinkThree hover:text-white hover:bg-fadedPinkThree ">
 												{props?.buttonLinkTwo?.title}
 											</a>
 										</Link>
@@ -69,7 +69,7 @@ const HeroSectionThree = (props) => {
 										href={`${props?.buttonLinkThree?.url}`}
 										target={`${props?.buttonLinkThree?.target}`}
 									>
-										<a className="inline-block py-2 px-6 w-[fit-content] mx-auto lg:mx-0 leading-8 text-tiny font-[600] rounded-xl text-center bg-white focus:ring-2 focus:ring-yellow hover:text-white hover:bg-fadedPinkThree ">
+										<a className="inline-block py-2 px-6 w-[fit-content] mx-auto lg:mx-0 leading-8 text-tiny font-[600] rounded-xl text-center bg-white focus:ring-2 focus:ring-fadedPinkThree hover:text-white hover:bg-fadedPinkThree ">
 											{props?.buttonLinkThree?.title}
 										</a>
 									</Link>
@@ -96,7 +96,7 @@ const HeroSectionThree = (props) => {
 										href={`${props?.buttonLinkFour?.url}`}
 										target={`${props?.buttonLinkFour?.target}`}
 									>
-										<a className="inline-block py-2 px-6 w-[fit-content] mx-auto lg:mx-0 leading-8 text-tiny font-[600] rounded-xl text-center bg-white focus:ring-2 focus:ring-yellow hover:text-white hover:bg-fadedPinkThree ">
+										<a className="inline-block py-2 px-6 w-[fit-content] mx-auto lg:mx-0 leading-8 text-tiny font-[600] rounded-xl text-center bg-white focus:ring-2 focus:ring-fadedPinkThree hover:text-white hover:bg-fadedPinkThree ">
 											{props?.buttonLinkFour?.title}
 										</a>
 									</Link>

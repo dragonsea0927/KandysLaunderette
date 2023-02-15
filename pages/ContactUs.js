@@ -2,7 +2,6 @@ import {gql} from "@apollo/client";
 import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
 import styles from "/styles/Home.module.scss";
-import ContactInfoMap from "../components/ContactInfoMap";
 import {fadeInUp} from "../animations/animations";
 import {getThemesOptionsContent} from "../lib/themesOptions";
 import {
@@ -11,9 +10,10 @@ import {
 } from "../lib/MenuLinks";
 
 // Components
-import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
 import MetaTag from "../components/Meta/MetaTag";
+import StoreLocation from "/components/storeLocation";
+import HeroSectionFour from "../components/HeroSectionFour";
 
 const contactUs = ({
 	seo,
@@ -34,23 +34,28 @@ const contactUs = ({
 			{/* <!--===== HEAD =====--> */}
 			<MetaTag title={pageTitle} seo={seo} />
 
-			{/* <!--===== NAVBAR =====--> */}
-			<Navbar
-				CommercialServicesMenuLinks={
-					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
-				}
-				IndividualServicesMenuLinks={
-					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
-				}
-			/>
-
 			<main>
-				{/* // <========== BACKGROUND IMAGE ==========> */}
-				<div className={styles.backgroundImageContactUs}></div>
+				{/* <!--===== HERO =====--> */}
+				<HeroSectionFour
+					title={contactUsPageContent?.heroSection?.title}
+					paragraph={contactUsPageContent?.heroSection?.paragraph}
+					backgroundImage={
+						contactUsPageContent?.heroSection?.backgroundImage?.sourceUrl
+					}
+					displayPaymentInfo={
+						contactUsPageContent?.heroSection?.displayPaymentInfo
+					}
+					CommercialServicesMenuLinks={
+						CommercialServicesMenuLinks?.CommercialServicesMenuLinks
+					}
+					IndividualServicesMenuLinks={
+						IndividualServicesMenuLinks?.IndividualServicesMenuLinks
+					}
+				/>
 
 				{/* // <========== PAGE TITLE ==========> */}
 				<div className={styles.pageTitle}>
-					<div>
+					<div className="container mx-auto flex flex-col justify-center items-center gap-4">
 						<div className={styles.content}>
 							<motion.div variants={fadeInUp} className={styles.title}>
 								<h2>Contact Us</h2>
@@ -60,8 +65,11 @@ const contactUs = ({
 					</div>
 				</div>
 
-				{/* <!--===== CONTACT US BANNER =====--> */}
-				<ContactInfoMap />
+				{/* <!--===== OUT STORE LOCATION =====--> */}
+				<StoreLocation
+					title={contactUsPageContent?.ourLocation?.title}
+					paragraph={contactUsPageContent?.ourLocation?.paragraph}
+				/>
 			</main>
 
 			{/* <!--===== FOOTER =====--> */}
@@ -90,15 +98,46 @@ export async function getStaticProps() {
 				edges {
 					node {
 						seo {
+							canonical
+							cornerstone
+							focuskw
 							fullHead
+							metaDesc
+							metaKeywords
+							metaRobotsNofollow
+							metaRobotsNoindex
+							opengraphAuthor
+							opengraphDescription
+							opengraphImage {
+								mediaItemUrl
+							}
+							opengraphModifiedTime
+							opengraphPublishedTime
+							opengraphPublisher
+							opengraphSiteName
+							opengraphTitle
+							opengraphType
+							opengraphUrl
+							readingTime
+							title
+							twitterDescription
+							twitterTitle
+							twitterImage {
+								mediaItemUrl
+							}
 						}
 						contactUsPage {
 							heroSection {
 								title
-								subtitle
+								paragraph
+								displayPaymentInfo
 								backgroundImage {
 									sourceUrl
 								}
+							}
+							ourLocation {
+								title
+								paragraph
 							}
 						}
 					}
