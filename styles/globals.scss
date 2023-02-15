@@ -85,7 +85,8 @@ p {
 	background-color: $fadedYellow;
 	background-repeat: no-repeat;
 	background-image: linear-gradient($yellow 50%, $baseColor_white 51%),
-		linear-gradient($yellow, $baseColor_white), linear-gradient(#ddd, #ddd),
+		linear-gradient($yellow, $baseColor_white),
+		linear-gradient($baseColor_white, $baseColor_white),
 		radial-gradient(ellipse at center, $pink 25%, #eee 26%, #eee 50%, #0000 55%),
 		radial-gradient(ellipse at center, $pink 25%, #eee 26%, #eee 50%, #0000 55%),
 		radial-gradient(ellipse at center, $pink 25%, #eee 26%, #eee 50%, #0000 55%);
