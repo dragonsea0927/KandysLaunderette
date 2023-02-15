@@ -16,7 +16,7 @@ function MyApp({Component, pageProps}) {
 				url === router.asPath &&
 				setTimeout(() => {
 					setLoading(false);
-				}, 2000);
+				}, 10000);
 
 			router.events.on("routeChangeStart", handleStart);
 			router.events.on("routeChangeComplete", handleComplete);

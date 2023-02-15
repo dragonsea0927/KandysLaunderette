@@ -65,76 +65,107 @@ p {
 	}
 }
 
+// PAGE LOADING ANIMATION
 .spinner-wrapper {
-	height: 100vh;
-	width: 100vw;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: fixed;
 	top: 0;
 	left: 0;
-	// background-color: rgb(255, 255, 255);
+	width: 100vw;
+	height: 100vh;
 	z-index: 9999;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-image: linear-gradient(
-			0deg,
-			rgba(13, 23, 42, 0.45),
-			rgba(13, 23, 42, 0.45)
-		),
-		url("https://mydummysite.co.uk/ToddLearning/wp-content/uploads/2023/01/mediamodifier-JskqEILt-ds-unsplash-scaled.jpg");
-}
-.spinner {
-	left: 50%;
-	top: 50%;
-	height: 60px;
-	width: 60px;
-	margin: 0px auto;
-	position: absolute;
-	backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(10px);
-	-webkit-animation: rotation 0.6s infinite linear;
-	-moz-animation: rotation 0.6s infinite linear;
-	-o-animation: rotation 0.6s infinite linear;
-	animation: rotation 0.6s infinite linear;
-	border-left: 6px solid rgba(221, 69, 119, 0.15);
-	border-right: 6px solid rgba(221, 69, 119, 0.15);
-	border-bottom: 6px solid rgba(221, 69, 119, 0.15);
-	border-top: 6px solid rgba(242, 115, 157, 0.8);
-	border-radius: 100%;
+	display: flex;
+	position: fixed;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(221, 69, 119, 0.95);
 }
 
-@-webkit-keyframes rotation {
-	from {
-		-webkit-transform: rotate(0deg);
-	}
-	to {
-		-webkit-transform: rotate(359deg);
-	}
+.spinner {
+	width: 120px;
+	height: 150px;
+	background-color: $fadedYellow;
+	background-repeat: no-repeat;
+	background-image: linear-gradient($yellow 50%, $baseColor_white 51%),
+		linear-gradient($yellow, $baseColor_white), linear-gradient(#ddd, #ddd),
+		radial-gradient(ellipse at center, $pink 25%, #eee 26%, #eee 50%, #0000 55%),
+		radial-gradient(ellipse at center, $pink 25%, #eee 26%, #eee 50%, #0000 55%),
+		radial-gradient(ellipse at center, $pink 25%, #eee 26%, #eee 50%, #0000 55%);
+	background-position: 0 20px, 45px 0, 8px 6px, 55px 3px, 75px 3px, 95px 3px;
+	background-size: 100% 4px, 1px 23px, 30px 8px, 15px 15px, 15px 15px, 15px 15px;
+	position: relative;
+	border-radius: 6%;
+	animation: shake 3s ease-in-out infinite;
+	transform-origin: 60px 180px;
 }
-@-moz-keyframes rotation {
-	from {
-		-moz-transform: rotate(0deg);
-	}
-	to {
-		-moz-transform: rotate(359deg);
-	}
+.spinner:before {
+	content: "";
+	position: absolute;
+	left: 5px;
+	top: 100%;
+	width: 7px;
+	height: 5px;
+	background: $yellow;
+	border-radius: 0 0 4px 4px;
+	box-shadow: 102px 0 $yellow;
 }
-@-o-keyframes rotation {
-	from {
-		-o-transform: rotate(0deg);
-	}
-	to {
-		-o-transform: rotate(359deg);
-	}
+
+.spinner:after {
+	content: "";
+	position: absolute;
+	width: 95px;
+	height: 95px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: 20px;
+	background-color: $fadedPink2;
+	background-image: linear-gradient(
+			to right,
+			#0004 0%,
+			#0004 49%,
+			#0000 50%,
+			#0000 100%
+		),
+		linear-gradient(135deg, $pink 50%, $fadedPink3 51%);
+	background-size: 30px 100%, 90px 80px;
+	border-radius: 50%;
+	background-repeat: repeat, no-repeat;
+	background-position: 0 0;
+	box-sizing: border-box;
+	border: 10px solid #f0b800;
+	box-shadow: 0 0 0 4px $baseColor_white inset, 0 0 6px 6px #0004 inset;
+	animation: spin 3s ease-in-out infinite;
 }
-@keyframes rotation {
-	from {
+
+@keyframes spin {
+	0% {
 		transform: rotate(0deg);
 	}
-	to {
-		transform: rotate(359deg);
+	50% {
+		transform: rotate(360deg);
+	}
+	75% {
+		transform: rotate(750deg);
+	}
+	100% {
+		transform: rotate(1800deg);
+	}
+}
+@keyframes shake {
+	65%,
+	80%,
+	88%,
+	96% {
+		transform: rotate(0.5deg);
+	}
+	50%,
+	75%,
+	84%,
+	92% {
+		transform: rotate(-0.5deg);
+	}
+	0%,
+	50%,
+	100% {
+		transform: rotate(0);
 	}
 }
