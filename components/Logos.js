@@ -4,8 +4,16 @@ import LogoCardTwo from "./Cards/LogoCardTwo";
 import {fadeIn, stagger} from "../animations/animations";
 
 const Logos = (props) => {
+	/* Sets the Background Color */
+	let backgroundColor = props?.backgroundColor;
+	if (backgroundColor === "White") {
+		backgroundColor = "white";
+	} else if (backgroundColor === "LightGrey") {
+		backgroundColor = "lightGrey";
+	}
+
 	return (
-		<section className="py-20 bg-lightGrey">
+		<section className={`py-20 bg-${backgroundColor}`}>
 			<div className="container px-4 mx-auto">
 				<motion.h2
 					variants={fadeIn}

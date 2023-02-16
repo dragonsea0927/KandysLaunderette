@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import {motion} from "framer-motion";
-import {fadeIn, stagger} from "../animations/animations";
+import DOMPurify from "isomorphic-dompurify";
 import BlogCardTwo from "./Cards/BlogCardTwo";
+import {fadeIn, stagger} from "../animations/animations";
 
 const Blogs = (props) => {
 	/* Check if paragraph content is null
@@ -10,10 +11,10 @@ const Blogs = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full lg:max-w-[75rem] mx-auto py-8 px-4 text-medium text-darkGrey text-center font-[400]";
+				"hidden w-full lg:max-w-[75rem] mx-auto py-8 text-medium text-darkGrey text-center font-[400]";
 		} else {
 			contentStyling =
-				"block w-full lg:max-w-[75rem] mx-auto py-8 px-4 text-medium text-darkGrey text-center font-[400]";
+				"block w-full lg:max-w-[75rem] mx-auto py-8 text-medium text-darkGrey text-center font-[400]";
 		}
 		return contentStyling;
 	}
@@ -37,7 +38,10 @@ const Blogs = (props) => {
 						dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 					/>
 				</div>
-				<motion.div variants={stagger} className="flex flex-wrap -m-9">
+				<motion.div
+					variants={stagger}
+					className="flex flex-col lg:flex-row -m-9"
+				>
 					{props?.latestThreePosts.map((keys) => (
 						<BlogCardTwo
 							Key={props?.id}

@@ -80,6 +80,8 @@ const Restaurant = ({
 				<Logos
 					title={restaurantPageContent?.logos?.title}
 					logoGrid={restaurantPageContent?.logos?.logoGrid}
+					// Display Options
+					backgroundColor={restaurantPageContent?.logos?.backgroundColor}
 				/>
 
 				{/* TEAM MEMBERS */}
@@ -228,6 +230,7 @@ export async function getStaticProps() {
 							}
 							logos {
 								title
+								backgroundColor
 								logoGrid {
 									image {
 										altText

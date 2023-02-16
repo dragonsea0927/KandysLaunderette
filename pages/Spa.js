@@ -56,6 +56,7 @@ const Spa = ({
 					}
 				/>
 
+				{/* <!--===== TITLE PARAGRAPH & IMAGE =====--> */}
 				<TitleParagraphImage
 					image={spaPageContent?.whoWeAre?.image}
 					title={spaPageContent?.whoWeAre?.title}
@@ -78,6 +79,8 @@ const Spa = ({
 				<Logos
 					title={spaPageContent?.logos?.title}
 					logoGrid={spaPageContent?.logos?.logoGrid}
+					// Display Options
+					backgroundColor={spaPageContent?.logos?.backgroundColor}
 				/>
 
 				{/* TEAM MEMBERS */}
@@ -220,6 +223,7 @@ export async function getStaticProps() {
 							}
 							logos {
 								title
+								backgroundColor
 								logoGrid {
 									image {
 										altText

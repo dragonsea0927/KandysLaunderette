@@ -49,7 +49,7 @@ const noPageExits = ({
 				>
 					<div className="my-auto px-10 py-44 overflow-hidden">
 						<div className="container mx-auto p-0">
-							<h1 className="mb-4 text-5xl md:text-7xl text-white text-center font-bold font-heading leading-tight">
+							<h1 className="mb-4 text-5xl md:text-7xl text-white text-center font-[600] font-heading leading-tight">
 								Something went wrong!
 							</h1>
 							<p className="my-10 text-white text-center text-lg leading-relaxed md:max-w-md mx-auto">

@@ -97,7 +97,7 @@ const SubscriptionsCard = (props) => {
 				</div>
 				<div>
 					<h3
-						className={`mb-1 text-4xl text-${textColor} font-bold leading-tight`}
+						className={`mb-1 text-4xl text-${textColor} font-[600] leading-tight`}
 					>
 						<span>{props?.price}</span>
 					</h3>

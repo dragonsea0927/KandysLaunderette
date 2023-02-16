@@ -127,7 +127,10 @@ export default function Home({
 				/>
 
 				{/* <!--===== LOGO BANNER =====--> */}
-				<LogoBanner logoBanner={homePageContent?.logoBanner} />
+				<LogoBanner
+					title={homePageContent?.logos?.title}
+					logoBanner={homePageContent?.logos?.logoBanner}
+				/>
 
 				{/* <!--===== HOTEL & RESTAURANT =====--> */}
 				<TitleGridContentTwo
@@ -360,10 +363,13 @@ export async function getStaticProps() {
 									}
 								}
 							}
-							logoBanner {
-								image {
-									altText
-									sourceUrl
+							logos {
+								title
+								logoBanner {
+									image {
+										altText
+										sourceUrl
+									}
 								}
 							}
 							commercialServices {

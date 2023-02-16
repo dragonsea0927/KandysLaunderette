@@ -37,7 +37,7 @@ const FeatureGridCard = (props) => {
 				</motion.div>
 				<motion.h3
 					variants={fadeIn}
-					className="my-2 text-lg text-black font-bold"
+					className="my-2 text-lg text-black font-[600]"
 				>
 					{props?.title}
 				</motion.h3>

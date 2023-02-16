@@ -1,8 +1,6 @@
 import {gql} from "@apollo/client";
 import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
-import styles from "/styles/Home.module.scss";
-import {fadeInUp} from "../animations/animations";
 import {getThemesOptionsContent} from "../lib/themesOptions";
 import {
 	getCommercialServicesMenu,
@@ -10,10 +8,12 @@ import {
 } from "../lib/MenuLinks";
 
 // Components
+import Logos from "../components/Logos";
 import Footer from "/components/Footer";
 import MetaTag from "../components/Meta/MetaTag";
-import StoreLocation from "/components/storeLocation";
+import ContactForm from "../components/ContactForm";
 import HeroSectionFour from "../components/HeroSectionFour";
+import ImageTextBulletPoints from "../components/ImageTextBulletPoints";
 
 const contactUs = ({
 	seo,
@@ -53,22 +53,39 @@ const contactUs = ({
 					}
 				/>
 
-				{/* // <========== PAGE TITLE ==========> */}
-				<div className={styles.pageTitle}>
-					<div className="container mx-auto flex flex-col justify-center items-center gap-4">
-						<div className={styles.content}>
-							<motion.div variants={fadeInUp} className={styles.title}>
-								<h2>Contact Us</h2>
-								<h5>Lets get In Touch</h5>
-							</motion.div>
-						</div>
-					</div>
-				</div>
+				{/* <!--===== CONTACT FORM LOCATION =====--> */}
+				<ContactForm
+					image={contactUsPageContent?.contactForm?.image}
+					title={contactUsPageContent?.contactForm?.title}
+					email={themesOptionsContent?.themesOptions?.email}
+					formText={contactUsPageContent?.contactForm?.formText}
+					paragraph={contactUsPageContent?.contactForm?.paragraph}
+					phoneNumber={themesOptionsContent?.themesOptions?.phoneNumber}
+					backgroundImage={
+						contactUsPageContent?.contactForm?.backgroundImage?.sourceUrl
+					}
+				/>
 
-				{/* <!--===== OUT STORE LOCATION =====--> */}
-				<StoreLocation
-					title={contactUsPageContent?.ourLocation?.title}
-					paragraph={contactUsPageContent?.ourLocation?.paragraph}
+				{/* <!--===== LOGO BANNER =====--> */}
+				<Logos
+					title={contactUsPageContent?.logos?.title}
+					logoGrid={contactUsPageContent?.logos?.logoGrid}
+					// Display Options
+					backgroundColor={contactUsPageContent?.logos?.backgroundColor}
+				/>
+
+				{/* <!--===== REINVENTING THE FUTURE =====--> */}
+				<ImageTextBulletPoints
+					title={contactUsPageContent?.imageTextBulletPoints?.title}
+					buttonLink={contactUsPageContent?.imageTextBulletPoints?.buttonLink}
+					Image={contactUsPageContent?.imageTextBulletPoints?.image}
+					bulletPoints={
+						contactUsPageContent?.imageTextBulletPoints?.bulletPoints
+					}
+					// Display Options
+					backgroundColor={
+						contactUsPageContent?.imageTextBulletPoints?.backgroundColor
+					}
 				/>
 			</main>
 
@@ -135,9 +152,46 @@ export async function getStaticProps() {
 									sourceUrl
 								}
 							}
-							ourLocation {
+							contactForm {
 								title
 								paragraph
+								formText
+								image {
+									altText
+									sourceUrl
+								}
+								backgroundImage {
+									sourceUrl
+								}
+							}
+							logos {
+								title
+								backgroundColor
+								logoGrid {
+									image {
+										altText
+										sourceUrl
+									}
+								}
+							}
+							imageTextBulletPoints {
+								title
+								backgroundColor
+								buttonLink {
+									url
+									title
+									target
+								}
+								image {
+									altText
+									sourceUrl
+								}
+								bulletPoints {
+									text
+									icon {
+										sourceUrl
+									}
+								}
 							}
 						}
 					}

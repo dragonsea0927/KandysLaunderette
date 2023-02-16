@@ -59,13 +59,15 @@ button {
 	font-family: $fontStyle_main;
 }
 
+li,
 p {
 	a {
 		@apply text-pink transition-all ease-in-out duration-[0.5s] hover:text-yellow focus:text-yellow hover:underline;
 	}
 }
 
-// PAGE LOADING ANIMATION
+/*  WASHING MACHINE
+PAGE LOADING ANIMATION */
 .spinner-wrapper {
 	top: 0;
 	left: 0;
@@ -87,9 +89,27 @@ p {
 	background-image: linear-gradient($yellow 50%, $baseColor_white 51%),
 		linear-gradient($yellow, $baseColor_white),
 		linear-gradient($baseColor_white, $baseColor_white),
-		radial-gradient(ellipse at center, $pink 25%, #eee 26%, #eee 50%, #0000 55%),
-		radial-gradient(ellipse at center, $pink 25%, #eee 26%, #eee 50%, #0000 55%),
-		radial-gradient(ellipse at center, $pink 25%, #eee 26%, #eee 50%, #0000 55%);
+		radial-gradient(
+			ellipse at center,
+			$pink 25%,
+			$pink 26%,
+			$baseColor_white 50%,
+			#0000 55%
+		),
+		radial-gradient(
+			ellipse at center,
+			$pink 25%,
+			$pink 26%,
+			$baseColor_white 50%,
+			#0000 55%
+		),
+		radial-gradient(
+			ellipse at center,
+			$pink 25%,
+			$pink 26%,
+			$baseColor_white 50%,
+			#0000 55%
+		);
 	background-position: 0 20px, 45px 0, 8px 6px, 55px 3px, 75px 3px, 95px 3px;
 	background-size: 100% 4px, 1px 23px, 30px 8px, 15px 15px, 15px 15px, 15px 15px;
 	position: relative;
@@ -97,6 +117,7 @@ p {
 	animation: shake 3s ease-in-out infinite;
 	transform-origin: 60px 180px;
 }
+
 .spinner:before {
 	content: "";
 	position: absolute;
@@ -151,6 +172,7 @@ p {
 		transform: rotate(1800deg);
 	}
 }
+
 @keyframes shake {
 	65%,
 	80%,

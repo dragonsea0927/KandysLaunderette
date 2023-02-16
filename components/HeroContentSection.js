@@ -29,7 +29,7 @@ const HeroContentSection = (props) => {
 							<div className="flex flex-wrap justify-center mb-20 -m-2">
 								<div className="w-full md:w-auto p-2">
 									<Link href={`/`} target={``}>
-										<a className="block w-[fit-content] mx-auto px-8 py-3.5 text-base text-center text-white font-bold bg-pink hover:bg-fadedPinkThree focus:ring-4 focus:ring-blue rounded-full">
+										<a className="block w-[fit-content] mx-auto px-8 py-3.5 text-base text-center text-white font-[600] bg-pink hover:bg-fadedPinkThree focus:ring-4 focus:ring-blue rounded-full">
 											Get Started
 										</a>
 									</Link>

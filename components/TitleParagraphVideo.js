@@ -50,7 +50,7 @@ const TitleParagraphVideo = (props) => {
 											href={`${props?.buttonLink?.url}`}
 											target={`${props?.buttonLink?.target}`}
 										>
-											<a className="block w-[fit-content] mx-auto px-8 py-3.5 text-base text-center text-white font-bold bg-pink hover:bg-fadedPinkThree focus:ring-4 focus:ring-blue rounded-full">
+											<a className="block w-[fit-content] mx-auto px-8 py-3.5 text-base text-center text-white font-[600] bg-pink hover:bg-fadedPinkThree focus:ring-4 focus:ring-blue rounded-full">
 												{props?.buttonLink?.title}
 											</a>
 										</Link>

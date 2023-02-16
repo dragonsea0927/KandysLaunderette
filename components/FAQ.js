@@ -22,7 +22,7 @@ const FAQ = (props) => {
 						<span className="text-lg font-[500] text-pink">
 							{props?.subtitle}
 						</span>
-						<h2 className="mt-8 text-5xl font-bold font-heading">
+						<h2 className="mt-8 text-5xl font-[600] font-heading">
 							{props?.title}
 						</h2>
 					</div>

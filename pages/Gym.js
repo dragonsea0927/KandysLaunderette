@@ -78,6 +78,8 @@ const Gym = ({
 				<Logos
 					title={gymPageContent?.logos?.title}
 					logoGrid={gymPageContent?.logos?.logoGrid}
+					// Display Options
+					backgroundColor={gymPageContent?.logos?.backgroundColor}
 				/>
 
 				{/* TEAM MEMBERS */}
@@ -220,6 +222,7 @@ export async function getStaticProps() {
 							}
 							logos {
 								title
+								backgroundColor
 								logoGrid {
 									image {
 										altText

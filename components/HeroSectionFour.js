@@ -217,7 +217,7 @@ const HeroSectionFour = (props) => {
 				<div className="pt-0 pb-20 md:py-20 md:pb-28 px-0 my-auto">
 					<motion.h1
 						variants={fadeIn}
-						className="text-white text-center text-4xl sm:text-6xl font-bold  p-4 pt-28 md:pt-20 md:p-0 lg:max-w-[45rem] mx-auto"
+						className="text-white text-center text-4xl sm:text-6xl font-[600]  p-4 pt-28 md:pt-20 md:p-0 lg:max-w-[45rem] mx-auto"
 					>
 						{props?.title}
 					</motion.h1>

@@ -80,6 +80,8 @@ const AirBnb = ({
 				<Logos
 					title={airBnbPageContent?.logos?.title}
 					logoGrid={airBnbPageContent?.logos?.logoGrid}
+					// Display Options
+					backgroundColor={airBnbPageContent?.logos?.backgroundColor}
 				/>
 
 				{/* TEAM MEMBERS */}
@@ -222,6 +224,7 @@ export async function getStaticProps() {
 							}
 							logos {
 								title
+								backgroundColor
 								logoGrid {
 									image {
 										altText

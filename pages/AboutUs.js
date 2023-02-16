@@ -77,6 +77,8 @@ const aboutUs = ({
 				<Logos
 					title={aboutUsPageContent?.logos?.title}
 					logoGrid={aboutUsPageContent?.logos?.logoGrid}
+					// Display Options
+					backgroundColor={aboutUsPageContent?.logos?.backgroundColor}
 				/>
 
 				{/* TEAM MEMBERS */}
@@ -436,6 +438,7 @@ export async function getStaticProps() {
 							}
 							logos {
 								title
+								backgroundColor
 								logoGrid {
 									image {
 										altText

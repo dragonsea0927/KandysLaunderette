@@ -32,7 +32,7 @@ const FAQCard = (props) => {
 			<div className="mb-4 px-4 lg:px-12 py-8 bg-pink rounded-2xl">
 				<button className="flex w-full text-left">
 					<div className="w-auto mr-8">
-						<span className="flex items-center justify-center w-12 h-12 text-white text-lg font-bold bg-fadedPinkThree rounded-full">
+						<span className="flex items-center justify-center w-12 h-12 text-white text-lg font-[600] bg-fadedPinkThree rounded-full">
 							{props?.numberCount}
 						</span>
 					</div>

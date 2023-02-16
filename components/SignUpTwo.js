@@ -40,7 +40,7 @@ const SignUpTwo = (props) => {
 						<div className="w-full max-w-xl xl:w-full xl:mx-auto xl:pr-24 xl:max-w-2xl">
 							<motion.h2
 								variants={fadeIn}
-								className="text-4xl font-bold text-white"
+								className="text-4xl font-[600] text-white"
 							>
 								{props?.title}
 							</motion.h2>
@@ -145,7 +145,7 @@ const SignUpTwo = (props) => {
 					<div className="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
 						<motion.h2
 							variants={fadeIn}
-							className="text-center lg:text-left text-3xl sm:text-4xl font-bold leading-tight text-black"
+							className="text-center lg:text-left text-3xl sm:text-4xl font-[600] leading-tight text-black"
 						>
 							{props?.titleTwo}
 						</motion.h2>

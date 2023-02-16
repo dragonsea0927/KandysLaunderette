@@ -12,10 +12,10 @@ const SignUp = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden mt-4 w-full lg:max-w-[75rem] mx-auto mb-8 text-darkGrey text-medium";
+				"hidden mt-4 w-full lg:max-w-[75rem] mx-auto text-center lg:text-left mb-8 text-darkGrey text-medium";
 		} else {
 			contentStyling =
-				"block mt-4 w-full lg:max-w-[75rem] mx-auto mb-8 text-darkGrey text-medium";
+				"block mt-4 w-full lg:max-w-[75rem] mx-auto text-center lg:text-left mb-8 text-darkGrey text-medium";
 		}
 		return contentStyling;
 	}
@@ -97,7 +97,7 @@ const SignUp = (props) => {
 										/>
 										<motion.button
 											variants={fadeIn}
-											className="mb-4 py-4 w-full rounded text-sm bg-pink hover:bg-yellow text-white font-bold  transition-all ease-in-out duration-[0.5s]"
+											className="mb-4 py-4 w-full rounded text-sm bg-pink hover:bg-yellow text-white font-[600]  transition-all ease-in-out duration-[0.5s]"
 										>
 											<Link href={`/Login`} target={``}>
 												<a className="text-white text-base font-[600] tracking-loose">

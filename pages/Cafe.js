@@ -78,6 +78,8 @@ const Cafe = ({
 				<Logos
 					title={cafePageContent?.logos?.title}
 					logoGrid={cafePageContent?.logos?.logoGrid}
+					// Display Options
+					backgroundColor={cafePageContent?.logos?.backgroundColor}
 				/>
 
 				{/* TEAM MEMBERS */}
@@ -220,6 +222,7 @@ export async function getStaticProps() {
 							}
 							logos {
 								title
+								backgroundColor
 								logoGrid {
 									image {
 										altText

@@ -25,7 +25,7 @@ const BlogCardTwo = (props) => {
 	}
 
 	return (
-		<div className="w-full md:w-1/3 p-9">
+		<div className="w-full lg:w-1/3 p-9">
 			<Link href={`${props?.link}`}>
 				<a className="group">
 					<div className="group flex flex-col mb-5 overflow-hidden rounded-xl">

@@ -83,6 +83,8 @@ const MedicalFacilities = ({
 				<Logos
 					title={medicalFacilitiesPageContent?.logos?.title}
 					logoGrid={medicalFacilitiesPageContent?.logos?.logoGrid}
+					// Display Options
+					backgroundColor={medicalFacilitiesPageContent?.logos?.backgroundColor}
 				/>
 
 				{/* TEAM MEMBERS */}
@@ -237,6 +239,7 @@ export async function getStaticProps() {
 							}
 							logos {
 								title
+								backgroundColor
 								logoGrid {
 									image {
 										altText

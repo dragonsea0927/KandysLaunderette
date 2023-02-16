@@ -12,24 +12,24 @@ const ImageTextBulletPoints = (props) => {
 	let backgroundColor;
 	let buttonHoverColor;
 
-	switch (props?.backgroundColor) {
+	switch ("Yellow") {
 		case "Pink":
-			textColor = "white";
+			textColor = "text-white";
 			backgroundColor = "#dd4577";
 			buttonHoverColor = "yellow";
 			break;
 		case "Blue":
-			textColor = "white";
+			textColor = "text-white";
 			backgroundColor = "#2563eb";
 			buttonHoverColor = "pink";
 			break;
 		case "Yellow":
-			textColor = "blue";
+			textColor = "text-darkPink";
 			backgroundColor = "#ffc915";
 			buttonHoverColor = "pink";
 			break;
 		case "DarkPink":
-			textColor = "white";
+			textColor = "text-white";
 			backgroundColor = "#950e3b";
 			buttonHoverColor = "pink";
 			break;
@@ -55,7 +55,7 @@ const ImageTextBulletPoints = (props) => {
 					</motion.div>
 					<motion.div variants={fadeInUp} className="px-4 lg:px-0">
 						<h2
-							className={`py-8 w-full md:max-w-[35rem] mx-auto lg:mx-0 text-${textColor} uppercase text-center lg:text-left tracking-normal tracking-normal leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl`}
+							className={`py-8 w-full md:max-w-[35rem] mx-auto lg:mx-0 ${textColor} uppercase text-center lg:text-left leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl`}
 						>
 							{props?.title}
 						</h2>

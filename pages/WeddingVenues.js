@@ -80,6 +80,8 @@ const WeddingVenues = ({
 				<Logos
 					title={weddingVenuesPageContent?.logos?.title}
 					logoGrid={weddingVenuesPageContent?.logos?.logoGrid}
+					// Display Options
+					backgroundColor={weddingVenuesPageContent?.logos?.backgroundColor}
 				/>
 
 				{/* TEAM MEMBERS */}
@@ -228,6 +230,7 @@ export async function getStaticProps() {
 							}
 							logos {
 								title
+								backgroundColor
 								logoGrid {
 									image {
 										altText

@@ -79,6 +79,8 @@ const Hotel = ({
 				<Logos
 					title={hotelPageContent?.logos?.title}
 					logoGrid={hotelPageContent?.logos?.logoGrid}
+					// Display Options
+					backgroundColor={hotelPageContent?.logos?.backgroundColor}
 				/>
 
 				{/* TEAM MEMBERS */}
@@ -221,6 +223,7 @@ export async function getStaticProps() {
 							}
 							logos {
 								title
+								backgroundColor
 								logoGrid {
 									image {
 										altText

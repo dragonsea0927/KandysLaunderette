@@ -31,11 +31,9 @@ function MyApp({Component, pageProps}) {
 
 		return (
 			loading && (
-				<ApolloProvider client={client}>
-					<div className="spinner-wrapper">
-						<div className="spinner"></div>
-					</div>
-				</ApolloProvider>
+				<div className="spinner-wrapper">
+					<div className="spinner"></div>
+				</div>
 			)
 		);
 	}
