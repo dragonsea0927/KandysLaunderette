@@ -1,4 +1,5 @@
 import Link from "next/link";
+import {useState} from "react";
 import Image from "next/image";
 import {motion} from "framer-motion";
 import DOMPurify from "isomorphic-dompurify";
@@ -24,6 +25,39 @@ const ContactForm = (props) => {
 			__html: DOMPurify.sanitize(paragraphContent),
 		};
 	}
+
+	/* Contact Form Field */
+	const [fullName, setFullName] = useState("");
+	const [email, setEmail] = useState("");
+	const [subject, setSubject] = useState("");
+	const [message, setMessage] = useState("");
+
+	/* Contact Form Data Handing */
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+
+		let isValidForm = handleValidation();
+
+		const res = await fetch("/api/sendgrid", {
+			body: JSON.stringify({
+				email: email,
+				fullname: fullname,
+				subject: subject,
+				message: message,
+			}),
+			headers: {
+				"Content-Type": "application/json",
+			},
+			method: "POST",
+		});
+
+		const {error} = await res.json();
+		if (error) {
+			console.log(error);
+			return;
+		}
+		console.log(fullname, email, subject, message);
+	};
 
 	return (
 		<section className="relative overflow-hidden">
@@ -112,40 +146,66 @@ const ContactForm = (props) => {
 			>
 				<div className="relative z-10 px-4 lg:px-0 py-20 container mx-auto">
 					<form
+						onSubmit={handleSubmit}
 						className="px-11 pt-9 pb-11 bg-white bg-opacity-80 md:max-w-xl mx-auto rounded-lg shadow-12xl"
 						style={{backdropFilter: "blur(5px)"}}
 					>
 						<h3 className="mb-8 text-xl text-center font-semibold leading-normal md:max-w-sm mx-auto">
 							{props?.formText}
 						</h3>
-						<label className="block mb-4">
+						<label className="block mb-4" htmlFor="fullName">
 							<input
-								className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-pink rounded-lg focus:ring-[1px] focus:ring-pink"
 								id="text"
 								type="text"
+								value={fullName}
+								onChange={(e) => {
+									setFullName(e.target.value);
+								}}
 								placeholder="First &amp; last name"
+								className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-lightGrey rounded-lg focus:ring-[1px] focus:ring-pink"
 							/>
 						</label>
-						<label className="block mb-4">
+						<label className="block mb-4" htmlFor="email">
 							<input
-								className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-pink rounded-lg focus:ring-[1px] focus:ring-pink"
 								type="email"
 								id="email"
 								name="email"
+								value={email}
+								onChange={(e) => {
+									setEmail(e.target.value);
+								}}
 								placeholder="Email Address"
+								className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-lightGrey rounded-lg focus:ring-[1px] focus:ring-pink"
 							/>
 						</label>
-						<label className="block mb-4">
+						<label className="block mb-4" htmlFor="subject">
+							<input
+								type="subject"
+								id="subject"
+								name="subject"
+								value={subject}
+								placeholder="Subject"
+								onChange={(e) => {
+									setSubject(e.target.value);
+								}}
+								className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-lightGrey rounded-lg focus:ring-[1px] focus:ring-pink"
+							/>
+						</label>
+						<label className="block mb-4" htmlFor="message">
 							<textarea
-								className="p-4 w-full h-48 font-[400] text-darkGrey placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-pink resize-none rounded-lg focus:ring-[1px] focus:ring-pink"
 								id="message"
 								name="message"
+								value={message}
 								placeholder="Write message"
+								onChange={(e) => {
+									setMessage(e.target.value);
+								}}
+								className="p-4 w-full h-48 font-[400] text-darkGrey placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-lightGrey resize-none rounded-lg focus:ring-[1px] focus:ring-pink"
 							></textarea>
 						</label>
 						<button
 							className="py-4 px-9 w-full text-white text-medium font-[400] border-[1px] border-pink rounded-xl shadow-4xl focus:ring focus:ring-fadedPinkThree bg-pink hover:border-fadedPinkThree hover:bg-fadedPinkThree transition-all ease-in-out duration-[0.5s]"
-							type="button"
+							type="submit"
 						>
 							Send Message
 						</button>
