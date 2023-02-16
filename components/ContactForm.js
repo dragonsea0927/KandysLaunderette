@@ -121,7 +121,7 @@ const ContactForm = (props) => {
 						<label className="block mb-4">
 							<input
 								className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-pink rounded-lg focus:ring-[1px] focus:ring-pink"
-								id="contactInput5-1"
+								id="text"
 								type="text"
 								placeholder="First &amp; last name"
 							/>
@@ -129,15 +129,17 @@ const ContactForm = (props) => {
 						<label className="block mb-4">
 							<input
 								className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-pink rounded-lg focus:ring-[1px] focus:ring-pink"
-								id="contactInput5-2"
-								type="text"
-								placeholder="First &amp; last name"
+								type="email"
+								id="email"
+								name="email"
+								placeholder="Email Address"
 							/>
 						</label>
 						<label className="block mb-4">
 							<textarea
 								className="p-4 w-full h-48 font-[400] text-darkGrey placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-pink resize-none rounded-lg focus:ring-[1px] focus:ring-pink"
-								id="contactInput3-3"
+								id="message"
+								name="message"
 								placeholder="Write message"
 							></textarea>
 						</label>
