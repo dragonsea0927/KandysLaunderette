@@ -10,112 +10,82 @@ const FooterDark = (props) => {
 			<footer className={styles.footerDark}>
 				<div className="container mx-auto">
 					<div>
-						<div className="grid grid-cols-1 lg:grid-cols-3 justify-center items-center gap-6 py-14">
-							<div className="flex flex-col px-2">
-								<h2 className="text-center lg:text-left">
-									<strong>Don&apos;t miss our latest updates</strong>
-								</h2>
-								<p className="text-center lg:text-left text-sm text-black mt-4">
-									Be the first to know about new discounts, services and offers.
-									By choosing to sign up, you will join our mailing list. You
-									can opt out at any time.
-								</p>
-							</div>
-							<div className="mx-auto">
-								<form className="flex flex-row justify-center items-center">
-									<input
-										id="email"
-										name="email"
-										type="email"
-										required
-										placeholder="Enter email address"
-										className="p-2 text-left text-black text-sm w-auto lg:w-[350px] border-solid border-[0.05rem] border-black"
+						<div className="flex flex-row justify-center items-center py-14 mx-auto gap-8">
+							<Link href="/">
+								<a className="text-medium" target="blank">
+									<Image
+										src="/svg/facebook.svg"
+										alt="Product Image"
+										width={20}
+										height={20}
+										objectFit="contain"
 									/>
-									<button
-										className="border-none py-[0.60rem] px-4 tracking-[0.1rem] uppercase text-white text-sm font-[400] bg-black hover:bg-fadedPink transition-all ease-in-out duration-[0.5s]"
-										type="submit"
-									>
-										Sign Up
-									</button>
-								</form>
-							</div>
-							<div className="flex flex-row justify-between items-center py-4 mx-auto gap-8">
-								<Link href="/">
-									<a className="text-medium" target="blank">
-										<Image
-											src="/svg/facebook.svg"
-											alt="Product Image"
-											width={20}
-											height={20}
-											objectFit="contain"
-										/>
-									</a>
-								</Link>
-								<Link href="/">
-									<a target="blank">
-										<Image
-											src="/svg/instagram.svg"
-											alt="Product Image"
-											width={20}
-											height={20}
-											objectFit="contain"
-										/>
-									</a>
-								</Link>
-								<Link href="/">
-									<a target="blank">
-										<Image
-											src="/svg/twitter.svg"
-											alt="Product Image"
-											width={20}
-											height={20}
-											objectFit="contain"
-										/>
-									</a>
-								</Link>
-								<Link href={`https://wa.me/${props?.phoneNumber}`}>
-									<a target="blank">
-										<Image
-											src="/svg/whatsapp.svg"
-											alt="Product Image"
-											width={20}
-											height={20}
-											objectFit="contain"
-										/>
-									</a>
-								</Link>
-								<Link href="https://goo.gl/maps/pMZ677fPJ8kFjMug8">
-									<a target="blank">
-										<Image
-											src="/svg/google.svg"
-											alt="Product Image"
-											width={20}
-											height={20}
-											objectFit="contain"
-										/>
-									</a>
-								</Link>
-							</div>
+								</a>
+							</Link>
+							<Link href="/">
+								<a target="blank">
+									<Image
+										src="/svg/instagram.svg"
+										alt="Product Image"
+										width={20}
+										height={20}
+										objectFit="contain"
+									/>
+								</a>
+							</Link>
+							<Link href="/">
+								<a target="blank">
+									<Image
+										src="/svg/twitter.svg"
+										alt="Product Image"
+										width={20}
+										height={20}
+										objectFit="contain"
+									/>
+								</a>
+							</Link>
+							<Link href={`https://wa.me/${props?.phoneNumber}`}>
+								<a target="blank">
+									<Image
+										src="/svg/whatsapp.svg"
+										alt="Product Image"
+										width={20}
+										height={20}
+										objectFit="contain"
+									/>
+								</a>
+							</Link>
+							<Link href="https://goo.gl/maps/pMZ677fPJ8kFjMug8">
+								<a target="blank">
+									<Image
+										src="/svg/google.svg"
+										alt="Product Image"
+										width={20}
+										height={20}
+										objectFit="contain"
+									/>
+								</a>
+							</Link>
 						</div>
 						<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-4 gap-6 border-t-solid border-t-[0.05rem] border-t-grey">
 							<div className="flex flex-col mt-4 gap-x-3">
 								<h2>
 									<strong>Services</strong>
 								</h2>
-								<Link href="/LaundryDryCleaning">
-									<a>Laundry Dry Cleaning</a>
+								<Link href="/LaundryAndDryCleaning/IndividualService">
+									<a>Individual Services</a>
+								</Link>
+								<Link href="/LaundryAndDryCleaning/CommercialServices">
+									<a>Commercial Services</a>
 								</Link>
 								{/* Menu Array from Wordpress */}
-								{props?.CommercialServicesMenuLinks?.map((keys) => (
+								{props?.IndividualServicesMenuLinks?.map((keys) => (
 									<FooterMenuLinks
 										Key={keys?.id}
 										linkUrl={keys?.node?.uri}
 										linkName={keys?.node?.label}
 									/>
 								))}
-								<Link href=" /Services" target="blank">
-									<a>More Services</a>
-								</Link>
 							</div>
 							<div className="flex flex-col mt-4 gap-x-3">
 								<h2>
@@ -128,10 +98,16 @@ const FooterDark = (props) => {
 									<a>How It Works</a>
 								</Link>
 								<Link href=" /Services" target="blank">
-									<a>Self-Service</a>
+									<a>Services</a>
 								</Link>
 								<Link href="/Prices" target="blank">
 									<a>Prices</a>
+								</Link>
+								<Link href="/AboutUs" target="blank">
+									<a>About Us</a>
+								</Link>
+								<Link href="/ContactUs" target="blank">
+									<a>Contact Us</a>
 								</Link>
 							</div>
 							<div className="flex flex-col mt-4 gap-x-3">
