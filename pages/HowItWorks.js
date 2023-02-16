@@ -50,9 +50,6 @@ const HowItWorks = ({
 				IndividualServicesMenuLinks={
 					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
 				}
-				IndividualServicesMenuLinks={
-					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
-				}
 			/>
 
 			<main>

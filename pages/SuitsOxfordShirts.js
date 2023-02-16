@@ -46,9 +46,6 @@ const SuitsOxfordShirts = ({
 				IndividualServicesMenuLinks={
 					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
 				}
-				IndividualServicesMenuLinks={
-					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
-				}
 			/>
 
 			<main>

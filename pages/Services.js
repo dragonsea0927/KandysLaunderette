@@ -52,9 +52,6 @@ const services = ({
 				IndividualServicesMenuLinks={
 					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
 				}
-				IndividualServicesMenuLinks={
-					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
-				}
 			/>
 
 			<main>

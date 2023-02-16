@@ -42,9 +42,6 @@ const WeddingDressesAndBridal = ({
 				IndividualServicesMenuLinks={
 					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
 				}
-				IndividualServicesMenuLinks={
-					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
-				}
 			/>
 
 			<main>
