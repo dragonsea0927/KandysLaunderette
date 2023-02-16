@@ -31,7 +31,7 @@ const TextImageCard = (props) => {
 	function isButtonLink(isButtonLink) {
 		let contentStyling;
 		const tailwindStyling = "mt-5 w-[fit-content] flex flex-col justify-left";
-		if (isButtonLink === null) {
+		if (isButtonLink === null || isButtonLink === undefined) {
 			contentStyling = `hidden ${tailwindStyling}`;
 		} else {
 			contentStyling = `block ${tailwindStyling}`;

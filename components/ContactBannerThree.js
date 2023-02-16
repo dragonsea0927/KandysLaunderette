@@ -20,6 +20,19 @@ const ContactBannerThree = (props) => {
 			__html: DOMPurify.sanitize(`${props?.themesOptions?.openingHours}`),
 		};
 	}
+
+	/* Check if Button Link content is null
+	 And Displays content if it isn't null */
+	function isButtonLink(isButtonLink) {
+		let contentStyling;
+		if (isButtonLink === null || isButtonLink === undefined) {
+			contentStyling = `hidden`;
+		} else {
+			contentStyling = `block`;
+		}
+		return contentStyling;
+	}
+
 	return (
 		<section
 			className="py-20 px-4 lg:px-0"
@@ -73,12 +86,15 @@ const ContactBannerThree = (props) => {
 							dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 						/>
 					</motion.div>
-					<motion.div variants={fadeIn}>
+					<motion.div
+						variants={fadeIn}
+						className={isButtonLink(props?.buttonLink?.url)}
+					>
 						<Link
 							href={`${props?.buttonLink?.url}`}
 							target={`${props?.buttonLink?.target}`}
 						>
-							<a className="py-4 px-12 md:py-6 xl:px-20 font-[700] text-black text-base bg-white rounded-lg hover:text-white hover:bg-fadedPink transition-all ease-in-out duration-[0.5s]">
+							<a className="py-4 px-12 md:py-6 xl:px-20 font-[700] text-black text-base hover:text-white rounded-lg bg-white hover:bg-fadedPink transition-all ease-in-out duration-[0.5s]">
 								{props?.buttonLink?.title}
 							</a>
 						</Link>

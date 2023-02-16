@@ -129,8 +129,8 @@ const Spa = ({
 			<Footer
 				email={themesOptionsContent?.themesOptions?.email}
 				phoneNumber={themesOptionsContent?.themesOptions?.phoneNumber}
-				CommercialServicesMenuLinks={
-					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
+				IndividualServicesMenuLinks={
+					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
 				}
 			/>
 		</motion.div>

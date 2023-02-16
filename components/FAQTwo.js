@@ -25,6 +25,20 @@ const FAQTwo = (props) => {
 		};
 	}
 
+	/* Check if Button Link content is null
+	 And Displays content if it isn't null */
+	function isButtonLink(isButtonLink) {
+		let contentStyling;
+		let tailwindStyling =
+			"py-4 px-6 w-full text-white font-[600] rounded-lg shadow-4xl focus:ring focus:ring-pink bg-pink hover:bg-yellow transition-all ease-in-out duration-[0.5s]";
+		if (isButtonLink === null || isButtonLink === undefined) {
+			contentStyling = `hidden ${tailwindStyling}`;
+		} else {
+			contentStyling = `block ${tailwindStyling}`;
+		}
+		return contentStyling;
+	}
+
 	return (
 		<section className="py-16 lg:py-32 px-4 bg-white overflow-hidden">
 			<div className="container mx-auto px-0">
@@ -42,17 +56,14 @@ const FAQTwo = (props) => {
 							dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 						/>
 						<div className="lg:inline-block w-[fit-content] mx-auto lg:mx-0">
-							<button
-								className="py-4 px-6 w-full text-white font-[600] rounded-lg shadow-4xl focus:ring focus:ring-pink bg-pink hover:bg-yellow transition-all ease-in-out duration-[0.5s]"
-								type="button"
-							>
+							<div className={isButtonLink(props?.buttonLink?.url)}>
 								<Link
 									href={`${props?.buttonLink?.url}`}
 									target={`${props?.buttonLink?.target}`}
 								>
 									<a>{props?.buttonLink?.title}</a>
 								</Link>
-							</button>
+							</div>
 						</div>
 					</div>
 					<div className="w-full lg:w-1/2 p-0 lg:p-8">

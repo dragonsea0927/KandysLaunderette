@@ -35,6 +35,19 @@ const ImageTextBulletPoints = (props) => {
 			break;
 	}
 
+	/* Check if Button Link content is null
+	 And Displays content if it isn't null */
+	function isButtonLink(isButtonLink) {
+		let contentStyling;
+		let tailwindStyling = `mt-5 w-[fit-content] flex flex-col justify-center lg:justify-left mx-auto lg:mx-0 bg-white rounded-lg text-blue hover:text-white hover:bg-${buttonHoverColor} transition-all ease-in-out duration-[0.5s]`;
+		if (isButtonLink === null || isButtonLink === undefined) {
+			contentStyling = `hidden ${tailwindStyling}`;
+		} else {
+			contentStyling = `block ${tailwindStyling}`;
+		}
+		return contentStyling;
+	}
+
 	return (
 		<section
 			className={styles.imageTextBulletPoints}
@@ -72,7 +85,7 @@ const ImageTextBulletPoints = (props) => {
 						</div>
 						<motion.button
 							variants={fadeIn}
-							className={`mt-5 w-[fit-content] flex flex-col justify-center lg:justify-left mx-auto lg:mx-0 bg-white rounded-lg text-blue hover:text-white hover:bg-${buttonHoverColor} transition-all ease-in-out duration-[0.5s]`}
+							className={isButtonLink(props?.buttonLink?.url)}
 						>
 							<Link
 								href={`${props?.buttonLink?.url}`}

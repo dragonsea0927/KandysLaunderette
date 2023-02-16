@@ -24,6 +24,19 @@ const TitleParagraphVideo = (props) => {
 		};
 	}
 
+	/* Check if Button Link content is null
+	 And Displays content if it isn't null */
+	function isButtonLink(isButtonLink) {
+		let contentStyling;
+		let tailwindStyling = "w-full md:w-auto p-2";
+		if (isButtonLink === null || isButtonLink === undefined) {
+			contentStyling = `hidden ${tailwindStyling}`;
+		} else {
+			contentStyling = `block ${tailwindStyling}`;
+		}
+		return contentStyling;
+	}
+
 	return (
 		<section>
 			<div className="pt-6 pb-20 bg-white overflow-hidden">
@@ -45,7 +58,7 @@ const TitleParagraphVideo = (props) => {
 									)}
 								/>
 								<div className="flex flex-wrap justify-center mb-20 -m-2">
-									<div className="w-full md:w-auto p-2">
+									<div className={isButtonLink(props?.buttonLink?.url)}>
 										<Link
 											href={`${props?.buttonLink?.url}`}
 											target={`${props?.buttonLink?.target}`}

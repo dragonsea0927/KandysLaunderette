@@ -22,6 +22,18 @@ const ContactBannerTwo = (props) => {
 		};
 	}
 
+	/* Check if Button Link content is null
+	 And Displays content if it isn't null */
+	function isButtonLink(isButtonLink) {
+		let contentStyling;
+		if (isButtonLink === null || isButtonLink === undefined) {
+			contentStyling = `hidden`;
+		} else {
+			contentStyling = `block`;
+		}
+		return contentStyling;
+	}
+
 	return (
 		<section
 			id="#contactBannerTwo"
@@ -80,7 +92,10 @@ const ContactBannerTwo = (props) => {
 							dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 						/>
 					</motion.div>
-					<motion.div variants={fadeIn}>
+					<motion.div
+						variants={fadeIn}
+						className={isButtonLink(props?.buttonLink?.url)}
+					>
 						<Link
 							href={`${props?.buttonLink?.url}`}
 							target={`${props?.buttonLink?.target}`}

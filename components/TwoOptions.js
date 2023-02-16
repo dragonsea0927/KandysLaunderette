@@ -32,7 +32,7 @@ const TwoOptions = (props) => {
 		let contentStyling;
 		const tailwindStyling =
 			"w-[fit-content] rounded-[50px] bg-white py-2 px-8 hover:bg-fadedPink hover:text-white transition-all ease-in-out duration-[0.5s]";
-		if (isButtonLink === null) {
+		if (isButtonLink === null || isButtonLink === undefined) {
 			contentStyling = `hidden ${tailwindStyling}`;
 		} else {
 			contentStyling = `block ${tailwindStyling}`;

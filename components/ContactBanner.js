@@ -24,6 +24,18 @@ const ContactBanner = (props) => {
 		};
 	}
 
+	/* Check if Button Link content is null
+	 And Displays content if it isn't null */
+	function isButtonLink(isButtonLink) {
+		let contentStyling;
+		if (isButtonLink === null || isButtonLink === undefined) {
+			contentStyling = `hidden`;
+		} else {
+			contentStyling = `block`;
+		}
+		return contentStyling;
+	}
+
 	return (
 		<section
 			className="py-20 px-4 lg:px-0"
@@ -49,7 +61,10 @@ const ContactBanner = (props) => {
 							dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 						/>
 					</div>
-					<motion.div variants={fadeIn}>
+					<motion.div
+						variants={fadeIn}
+						className={isButtonLink(props?.buttonLink?.url)}
+					>
 						<Link
 							href={`${props?.buttonLink?.url}`}
 							target={`${props?.buttonLink?.target}`}

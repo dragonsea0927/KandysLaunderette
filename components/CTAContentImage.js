@@ -27,6 +27,20 @@ const CTAContentImage = (props) => {
 		};
 	}
 
+	/* Check if Button Link content is null
+	 And Displays content if it isn't null */
+	function isButtonLink(isButtonLink) {
+		let contentStyling;
+		let tailwindStyling =
+			"mt-6 mb-12 flex flex-col justify-center items-center lg:items-baseline";
+		if (isButtonLink === null || isButtonLink === undefined) {
+			contentStyling = `hidden ${tailwindStyling}`;
+		} else {
+			contentStyling = `block ${tailwindStyling}`;
+		}
+		return contentStyling;
+	}
+
 	return (
 		<section className={styles.ctaContentImage}>
 			<div className="container mx-auto bg-white overflow-hidden">
@@ -41,7 +55,7 @@ const CTAContentImage = (props) => {
 						/>
 						<motion.div
 							variants={fadeIn}
-							className="mt-6 mb-12 flex flex-col justify-center items-center lg:items-baseline"
+							className={isButtonLink(props?.buttonLink?.url)}
 						>
 							<Link
 								href={`${props?.buttonLink?.url}`}

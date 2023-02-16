@@ -3,6 +3,18 @@ import Link from "next/link";
 import styles from "../styles/components/HeroSection.module.scss";
 
 const HeroSectionThree = (props) => {
+	/* Check if Button Link content is null
+	 And Displays content if it isn't null */
+	function isButtonLink(isButtonLink) {
+		let contentStyling;
+		if (isButtonLink === null || isButtonLink === undefined) {
+			contentStyling = `hidden`;
+		} else {
+			contentStyling = `block`;
+		}
+		return contentStyling;
+	}
+
 	return (
 		<section className={styles.heroSectionThree}>
 			<div className="container mx-auto relative">
@@ -27,22 +39,26 @@ const HeroSectionThree = (props) => {
 										{props?.title}
 									</h1>
 									<div className="flex flex-col sm:flex-row justify-start items-start gap-4">
-										<Link
-											href={`${props?.buttonLink?.url}`}
-											target={`${props?.buttonLink?.target}`}
-										>
-											<a className="inline-block py-2 px-8 w-[fit-content] mx-auto lg:mx-0 md:mr-6 mb-2 md:mb-0 leading-8 text-tiny font-[600] rounded-xl text-white text-center bg-pink focus:ring-2 focus:ring-fadedPinkThree hover:bg-fadedPinkThree ">
-												{props?.buttonLink?.title}
-											</a>
-										</Link>
-										<Link
-											href={`${props?.buttonLinkTwo?.url}`}
-											target={`${props?.buttonLinkTwo?.target}`}
-										>
-											<a className="inline-block py-2 px-8 w-[fit-content] mx-auto lg:mx-0 leading-8 text-tiny font-[600] rounded-xl text-center bg-white focus:ring-2 focus:ring-fadedPinkThree hover:text-white hover:bg-fadedPinkThree ">
-												{props?.buttonLinkTwo?.title}
-											</a>
-										</Link>
+										<div className={isButtonLink(props?.buttonLink?.url)}>
+											<Link
+												href={`${props?.buttonLink?.url}`}
+												target={`${props?.buttonLink?.target}`}
+											>
+												<a className="inline-block py-2 px-8 w-[fit-content] mx-auto lg:mx-0 md:mr-6 mb-2 md:mb-0 leading-8 text-tiny font-[600] rounded-xl text-white text-center bg-pink focus:ring-2 focus:ring-fadedPinkThree hover:bg-fadedPinkThree ">
+													{props?.buttonLink?.title}
+												</a>
+											</Link>
+										</div>
+										<div className={isButtonLink(props?.buttonLinkTwo?.url)}>
+											<Link
+												href={`${props?.buttonLinkTwo?.url}`}
+												target={`${props?.buttonLinkTwo?.target}`}
+											>
+												<a className="inline-block py-2 px-8 w-[fit-content] mx-auto lg:mx-0 leading-8 text-tiny font-[600] rounded-xl text-center bg-white focus:ring-2 focus:ring-fadedPinkThree hover:text-white hover:bg-fadedPinkThree ">
+													{props?.buttonLinkTwo?.title}
+												</a>
+											</Link>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -65,14 +81,16 @@ const HeroSectionThree = (props) => {
 									<h2 className="mb-8 text-white text-4xl leading-[2.25rem]">
 										{props?.titleTwo}
 									</h2>
-									<Link
-										href={`${props?.buttonLinkThree?.url}`}
-										target={`${props?.buttonLinkThree?.target}`}
-									>
-										<a className="inline-block py-2 px-6 w-[fit-content] mx-auto lg:mx-0 leading-8 text-tiny font-[600] rounded-xl text-center bg-white focus:ring-2 focus:ring-fadedPinkThree hover:text-white hover:bg-fadedPinkThree ">
-											{props?.buttonLinkThree?.title}
-										</a>
-									</Link>
+									<div className={isButtonLink(props?.buttonLinkThree?.url)}>
+										<Link
+											href={`${props?.buttonLinkThree?.url}`}
+											target={`${props?.buttonLinkThree?.target}`}
+										>
+											<a className="inline-block py-2 px-6 w-[fit-content] mx-auto lg:mx-0 leading-8 text-tiny font-[600] rounded-xl text-center bg-white focus:ring-2 focus:ring-fadedPinkThree hover:text-white hover:bg-fadedPinkThree ">
+												{props?.buttonLinkThree?.title}
+											</a>
+										</Link>
+									</div>
 								</div>
 							</div>
 							<div
@@ -92,14 +110,16 @@ const HeroSectionThree = (props) => {
 									<h2 className="mb-8 text-white text-4xl leading-[2.25rem]">
 										{props?.titleThree}
 									</h2>
-									<Link
-										href={`${props?.buttonLinkFour?.url}`}
-										target={`${props?.buttonLinkFour?.target}`}
-									>
-										<a className="inline-block py-2 px-6 w-[fit-content] mx-auto lg:mx-0 leading-8 text-tiny font-[600] rounded-xl text-center bg-white focus:ring-2 focus:ring-fadedPinkThree hover:text-white hover:bg-fadedPinkThree ">
-											{props?.buttonLinkFour?.title}
-										</a>
-									</Link>
+									<div className={isButtonLink(props?.buttonLinkFour?.url)}>
+										<Link
+											href={`${props?.buttonLinkFour?.url}`}
+											target={`${props?.buttonLinkFour?.target}`}
+										>
+											<a className="inline-block py-2 px-6 w-[fit-content] mx-auto lg:mx-0 leading-8 text-tiny font-[600] rounded-xl text-center bg-white focus:ring-2 focus:ring-fadedPinkThree hover:text-white hover:bg-fadedPinkThree ">
+												{props?.buttonLinkFour?.title}
+											</a>
+										</Link>
+									</div>
 								</div>
 							</div>
 						</div>

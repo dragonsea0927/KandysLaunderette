@@ -39,8 +39,8 @@ const WeddingDressesAndBridal = ({
 
 			{/* <!--===== NAVBAR =====--> */}
 			<Navbar
-				CommercialServicesMenuLinks={
-					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
+				IndividualServicesMenuLinks={
+					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
 				}
 				IndividualServicesMenuLinks={
 					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
@@ -146,8 +146,8 @@ const WeddingDressesAndBridal = ({
 			<Footer
 				email={themesOptionsContent?.themesOptions?.email}
 				phoneNumber={themesOptionsContent?.themesOptions?.phoneNumber}
-				CommercialServicesMenuLinks={
-					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
+				IndividualServicesMenuLinks={
+					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
 				}
 			/>
 		</motion.div>

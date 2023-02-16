@@ -43,8 +43,8 @@ const SuitsOxfordShirts = ({
 
 			{/* <!--===== NAVBAR =====--> */}
 			<Navbar
-				CommercialServicesMenuLinks={
-					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
+				IndividualServicesMenuLinks={
+					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
 				}
 				IndividualServicesMenuLinks={
 					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
@@ -201,8 +201,8 @@ const SuitsOxfordShirts = ({
 			<Footer
 				email={themesOptionsContent?.themesOptions?.email}
 				phoneNumber={themesOptionsContent?.themesOptions?.phoneNumber}
-				CommercialServicesMenuLinks={
-					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
+				IndividualServicesMenuLinks={
+					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
 				}
 			/>
 		</motion.div>
