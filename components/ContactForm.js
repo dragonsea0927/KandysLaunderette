@@ -26,8 +26,8 @@ const ContactForm = (props) => {
 	}
 
 	return (
-		<section className="relative px-4 lg:px-0 overflow-hidden">
-			<div className="container mx-auto p-0">
+		<section className="relative overflow-hidden">
+			<div className="container mx-auto px-4 lg:px-0">
 				<div className="pt-28 mb-28 bg-white overflow-hidden">
 					<div className="mb-20 text-center mx-auto">
 						<h2 className="text-center tracking-normal leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl py-4">
@@ -110,7 +110,7 @@ const ContactForm = (props) => {
 						),url("${props.backgroundImage}")`,
 				}}
 			>
-				<div className="relative z-10 py-20 container mx-auto">
+				<div className="relative z-10 px-4 lg:px-0 py-20 container mx-auto">
 					<form
 						className="px-11 pt-9 pb-11 bg-white bg-opacity-80 md:max-w-xl mx-auto rounded-lg shadow-12xl"
 						style={{backdropFilter: "blur(5px)"}}
