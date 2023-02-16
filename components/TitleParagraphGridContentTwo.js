@@ -1,6 +1,5 @@
-import Image from "next/image";
 import {motion} from "framer-motion";
-import {fadeInUp, fadeIn, stagger} from "../animations/animations";
+import {fadeIn} from "../animations/animations";
 import styles from "../styles/components/TitleParagraphGridContent.module.scss";
 import FeatureGridCard from "./Cards/FeatureGridCard";
 
@@ -27,7 +26,7 @@ const TitleParagraphGridContentTwo = (props) => {
 
 	return (
 		<section className={styles.titleParagraphGridContentTwo}>
-			<div className="container mx-auto px-0">
+			<div className="container mx-auto px-4 lg:px-0">
 				<div className="flex flex-col lg:flex-row gap-8 items-center mb-20">
 					<div className="w-full lg:w-1/2">
 						<motion.h2
