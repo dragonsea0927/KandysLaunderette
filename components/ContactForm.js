@@ -97,58 +97,57 @@ const ContactForm = (props) => {
 						</motion.div>
 					</div>
 				</div>
-
-				<div
-					style={{
-						backgroundSize: "cover",
-						backgroundPosition: "center",
-						backgroundRepeat: "no-repeat",
-						backgroundImage: `linear-gradient(
+			</div>
+			<div
+				style={{
+					backgroundSize: "cover",
+					backgroundPosition: "center",
+					backgroundRepeat: "no-repeat",
+					backgroundImage: `linear-gradient(
 							0deg,
 							rgba(221, 69, 119, 0.65),
 							rgba(221, 69, 119, 0.15)
 						),url("${props.backgroundImage}")`,
-					}}
-				>
-					<div className="relative z-10 py-20 container mx-auto">
-						<form
-							className="px-11 pt-9 pb-11 bg-white bg-opacity-80 md:max-w-xl mx-auto rounded-lg shadow-12xl"
-							style={{backdropFilter: "blur(5px)"}}
+				}}
+			>
+				<div className="relative z-10 py-20 container mx-auto">
+					<form
+						className="px-11 pt-9 pb-11 bg-white bg-opacity-80 md:max-w-xl mx-auto rounded-lg shadow-12xl"
+						style={{backdropFilter: "blur(5px)"}}
+					>
+						<h3 className="mb-8 text-xl text-center font-semibold leading-normal md:max-w-sm mx-auto">
+							{props?.formText}
+						</h3>
+						<label className="block mb-4">
+							<input
+								className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-pink rounded-lg focus:ring-[1px] focus:ring-pink"
+								id="contactInput5-1"
+								type="text"
+								placeholder="First &amp; last name"
+							/>
+						</label>
+						<label className="block mb-4">
+							<input
+								className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-pink rounded-lg focus:ring-[1px] focus:ring-pink"
+								id="contactInput5-2"
+								type="text"
+								placeholder="First &amp; last name"
+							/>
+						</label>
+						<label className="block mb-4">
+							<textarea
+								className="p-4 w-full h-48 font-[400] text-darkGrey placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-pink resize-none rounded-lg focus:ring-[1px] focus:ring-pink"
+								id="contactInput3-3"
+								placeholder="Write message"
+							></textarea>
+						</label>
+						<button
+							className="py-4 px-9 w-full text-white text-medium font-[400] border border-pink rounded-xl shadow-4xl focus:ring focus:ring-fadedPinkThree bg-pink hover:border-fadedPinkThree hover:bg-fadedPinkThree transition-all ease-in-out duration-[0.5s]"
+							type="button"
 						>
-							<h3 className="mb-8 text-xl text-center font-semibold leading-normal md:max-w-sm mx-auto">
-								{props?.formText}
-							</h3>
-							<label className="block mb-4">
-								<input
-									className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-pink rounded-lg focus:ring-[1px] focus:ring-pink"
-									id="contactInput5-1"
-									type="text"
-									placeholder="First &amp; last name"
-								/>
-							</label>
-							<label className="block mb-4">
-								<input
-									className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-pink rounded-lg focus:ring-[1px] focus:ring-pink"
-									id="contactInput5-2"
-									type="text"
-									placeholder="First &amp; last name"
-								/>
-							</label>
-							<label className="block mb-4">
-								<textarea
-									className="p-4 w-full h-48 font-[400] text-darkGrey placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-pink resize-none rounded-lg focus:ring-[1px] focus:ring-pink"
-									id="contactInput3-3"
-									placeholder="Write message"
-								></textarea>
-							</label>
-							<button
-								className="py-4 px-9 w-full text-white text-medium font-[400] border border-pink rounded-xl shadow-4xl focus:ring focus:ring-fadedPinkThree bg-pink hover:border-fadedPinkThree hover:bg-fadedPinkThree transition-all ease-in-out duration-[0.5s]"
-								type="button"
-							>
-								Send Message
-							</button>
-						</form>
-					</div>
+							Send Message
+						</button>
+					</form>
 				</div>
 			</div>
 		</section>
