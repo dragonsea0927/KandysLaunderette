@@ -13,7 +13,7 @@ const Logos = (props) => {
 	}
 
 	return (
-		<section className={`py-20 bg-${backgroundColor}`}>
+		<section className={`py-20 px-4 lg:px-0 bg-${backgroundColor}`}>
 			<div className="container mx-auto px-0">
 				<motion.h2
 					variants={fadeIn}

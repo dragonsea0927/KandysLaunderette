@@ -4,7 +4,7 @@ import {fadeIn, stagger} from "../animations/animations";
 
 const LogoBanner = (props) => {
 	return (
-		<section className="py-20 px-4">
+		<section className="py-20 px-4 lg:px-0">
 			<div className="container mx-auto px-0">
 				<motion.h2
 					variants={fadeIn}
