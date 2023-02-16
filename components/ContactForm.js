@@ -144,7 +144,7 @@ const ContactForm = (props) => {
 							></textarea>
 						</label>
 						<button
-							className="py-4 px-9 w-full text-white text-medium font-[400] border border-pink rounded-xl shadow-4xl focus:ring focus:ring-fadedPinkThree bg-pink hover:border-fadedPinkThree hover:bg-fadedPinkThree transition-all ease-in-out duration-[0.5s]"
+							className="py-4 px-9 w-full text-white text-medium font-[400] border-[1px] border-pink rounded-xl shadow-4xl focus:ring focus:ring-fadedPinkThree bg-pink hover:border-fadedPinkThree hover:bg-fadedPinkThree transition-all ease-in-out duration-[0.5s]"
 							type="button"
 						>
 							Send Message

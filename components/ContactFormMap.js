@@ -46,20 +46,20 @@ const ContactFormMap = (props) => {
 						dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 					/>
 					<div className="relative mb-4">
-						<label className="leading-7 text-sm text-grey">Email</label>
+						<label className="leading-7 text-sm text-darkGrey">Email</label>
 						<input
 							type="email"
 							id="email"
 							name="email"
-							className="w-full bg-white rounded border border-grey focus:border-pink focus:ring-2 focus:ring-pink text-base outline-none text-grey py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+							className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-darkGrey rounded-lg focus:ring-[1px] focus:ring-pink"
 						/>
 					</div>
 					<div className="relative mb-4">
-						<label className="leading-7 text-sm text-grey">Message</label>
+						<label className="leading-7 text-sm text-darkGrey">Message</label>
 						<textarea
 							id="message"
 							name="message"
-							className="w-full bg-white rounded border border-grey focus:border-pink focus:ring-2 focus:ring-pink h-32 text-base outline-none text-grey py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+							className="p-4 w-full h-48 font-[400] text-darkGrey placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-darkGrey resize-none rounded-lg focus:ring-[1px] focus:ring-pink"
 						/>
 					</div>
 					<button className="inline-block py-2 px-6 bg-pink hover:bg-yellow text-white font-[600] leading-loose transition-all ease-in-out duration-[0.5s] rounded-lg">
