@@ -12,7 +12,7 @@ const ImageTextBulletPoints = (props) => {
 	let backgroundColor;
 	let buttonHoverColor;
 
-	switch ("Yellow") {
+	switch (props?.backgroundColor) {
 		case "Pink":
 			textColor = "text-white";
 			backgroundColor = "#dd4577";
@@ -24,7 +24,7 @@ const ImageTextBulletPoints = (props) => {
 			buttonHoverColor = "pink";
 			break;
 		case "Yellow":
-			textColor = "text-darkPink";
+			textColor = "text-pink";
 			backgroundColor = "#ffc915";
 			buttonHoverColor = "pink";
 			break;
