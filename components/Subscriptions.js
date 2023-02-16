@@ -32,7 +32,7 @@ const Subscriptions = (props) => {
 
 	return (
 		<section className="pt-24 pb-32 bg-lightGrey overflow-hidden">
-			<div className="container px-4 mx-auto">
+			<div className="container mx-auto px-0">
 				<div className="max-w-[75rem] mx-auto mb-28 flex flex-col justify-between m-4">
 					<h2 className="font-[600] text-black text-center text-2xl sm:text-3xl lg:text-5xl py-8">
 						{props?.title}

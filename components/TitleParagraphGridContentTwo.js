@@ -27,7 +27,7 @@ const TitleParagraphGridContentTwo = (props) => {
 
 	return (
 		<section className={styles.titleParagraphGridContentTwo}>
-			<div className="container px-4 mx-auto">
+			<div className="container mx-auto px-0">
 				<div className="flex flex-col lg:flex-row gap-8 items-center mb-20">
 					<div className="w-full lg:w-1/2">
 						<motion.h2

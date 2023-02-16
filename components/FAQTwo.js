@@ -26,8 +26,8 @@ const FAQTwo = (props) => {
 	}
 
 	return (
-		<section className="py-16 lg:py-32 bg-white overflow-hidden">
-			<div className="container px-4 mx-auto">
+		<section className="py-16 lg:py-32 px-4 bg-white overflow-hidden">
+			<div className="container mx-auto px-0">
 				<div className="flex flex-col lg:flex-row justify-center items-center">
 					<div className="w-full lg:w-1/2 p-8">
 						<motion.h2
@@ -55,7 +55,7 @@ const FAQTwo = (props) => {
 							</button>
 						</div>
 					</div>
-					<div className="w-full lg:w-1/2 p-8">
+					<div className="w-full lg:w-1/2 p-0 lg:p-8">
 						<div className="md:max-w-2xl ml-auto">
 							<div className="flex flex-col">
 								{props?.faqContent.map((keys) => (

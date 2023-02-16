@@ -27,7 +27,7 @@ const ImageContent = (props) => {
 
 	return (
 		<section className="py-20 bg-white overflow-hidden">
-			<div className="container px-4 mx-auto">
+			<div className="container mx-auto px-0">
 				<div className="flex flex-col-reverse lg:flex-row justify-center items-center">
 					<div className="w-full lg:w-1/2 p-0 lg:p-8">
 						<div className="overflow-hidden">

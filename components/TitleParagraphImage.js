@@ -26,7 +26,7 @@ const TitleParagraphImage = (props) => {
 
 	return (
 		<section className="relative py-20">
-			<div className="relative container px-4 mx-auto">
+			<div className="relative container mx-auto px-0">
 				<div className="flex flex-wrap items-center">
 					<div className="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
 						<div className="w-full lg:max-w-lg flex flex-col">

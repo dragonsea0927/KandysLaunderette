@@ -89,7 +89,7 @@ const aboutUs = ({
 				/>
 
 				{/* <section className="py-20">
-					<div className="container px-4 mx-auto">
+					<div className="container mx-auto px-0">
 						<div className="max-w-3xl mx-auto mb-12 lg:mb-16 text-center">
 							<span className="text-xs text-blue font-[600]">
 								Get to know us better
