@@ -46,6 +46,17 @@ const ContactFormMap = (props) => {
 						dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 					/>
 					<div className="relative mb-4">
+						<label className="leading-7 text-sm text-darkGrey">
+							First &amp; last name
+						</label>
+						<input
+							id="text"
+							type="text"
+							name="First &amp; last name"
+							className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-darkGrey rounded-lg focus:ring-[1px] focus:ring-pink"
+						/>
+					</div>
+					<div className="relative mb-4">
 						<label className="leading-7 text-sm text-darkGrey">Email</label>
 						<input
 							type="email"
