@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import {useState} from "react";
-import Image from "next/image";
 import {motion} from "framer-motion";
 import DOMPurify from "isomorphic-dompurify";
 import {fadeIn, fadeInUp} from "../animations/animations";
@@ -78,7 +77,7 @@ const HeroSectionFour = (props) => {
 							<div className="flex flex-row justify-start items-start gap-10 p-4">
 								<Link href="/">
 									<a>
-										<Image
+										<img
 											alt="Icon"
 											width={75}
 											height={75}
