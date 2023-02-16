@@ -104,6 +104,9 @@ const Footer = (props) => {
 							<Link href="/AboutUs" target="blank">
 								<a>About Us</a>
 							</Link>
+							<Link href="/ContactUs" target="blank">
+								<a>Contact Us</a>
+							</Link>
 						</div>
 						<div className="flex flex-col mt-4 gap-x-3">
 							<h2>
