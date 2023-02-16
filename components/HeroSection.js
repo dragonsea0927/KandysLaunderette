@@ -193,16 +193,13 @@ const HeroSection = (props) => {
 										Log in
 									</a>
 								</Link>
-								<motion.button
-									variants={fadeIn}
-									className="rounded-lg py-3 px-8 text-white bg-pink hover:text-white hover:bg-yellow transition-all ease-in-out duration-[0.5s]"
-								>
+								<button className="rounded-lg py-3 px-8 text-white bg-pink hover:text-white hover:bg-yellow transition-all ease-in-out duration-[0.5s]">
 									<Link href="/">
 										<a className="text-right text-base font-[600] hover:text-white">
 											Create an account
 										</a>
 									</Link>
-								</motion.button>
+								</button>
 							</div>
 						</div>
 					</div>
