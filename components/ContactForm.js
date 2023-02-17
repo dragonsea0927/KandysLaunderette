@@ -240,7 +240,7 @@ const ContactForm = (props) => {
 
 							<motion.div variants={stagger} className="flex flex-col gap-4">
 								<motion.div variants={fadeInUp}>
-									{formik.errors.firstName ? (
+									{formik.touched.firstName && formik.errors.firstName ? (
 										<div>
 											<p className="py-1 text-left text-tiny text-pink font-[400]">
 												{formik.errors.firstName}
@@ -258,7 +258,7 @@ const ContactForm = (props) => {
 									/>
 								</motion.div>
 								<motion.div variants={fadeInUp}>
-									{formik.errors.lastName ? (
+									{formik.touched.lastName && formik.errors.lastName ? (
 										<div>
 											<p className="py-1 text-left text-tiny text-pink font-[400]">
 												{formik.errors.lastName}
@@ -295,7 +295,7 @@ const ContactForm = (props) => {
 									/>
 								</motion.div>
 								<motion.div variants={fadeInUp}>
-									{formik.errors.subject ? (
+									{formik.touched.subject && formik.errors.subject ? (
 										<div>
 											<p className="py-1 text-left text-tiny text-pink font-[400]">
 												{formik.errors.subject}
@@ -314,7 +314,7 @@ const ContactForm = (props) => {
 									/>
 								</motion.div>
 								<motion.div variants={fadeInUp}>
-									{formik.errors.message ? (
+									{formik.touched.message && formik.errors.message ? (
 										<div>
 											<p className="py-1 text-left text-tiny text-pink font-[400]">
 												{formik.errors.message}

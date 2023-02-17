@@ -153,7 +153,7 @@ const ContactFormMap = (props) => {
 					<Formik>
 						<motion.Form variants={stagger}>
 							<motion.div variants={fadeInUp} className="relative mb-4">
-								{formik.errors.fullName ? (
+								{formik.touched.fullName && formik.errors.fullName ? (
 									<div>
 										<p className="py-1 text-left text-tiny text-pink font-[400]">
 											{formik.errors.fullName}
@@ -173,7 +173,7 @@ const ContactFormMap = (props) => {
 								/>
 							</motion.div>
 							<motion.div variants={fadeInUp} className="relative mb-4">
-								{formik.errors.email ? (
+								{formik.touched.email && formik.errors.email ? (
 									<div>
 										<p className="py-1 text-left text-tiny text-pink font-[400]">
 											{formik.errors.email}
@@ -192,7 +192,7 @@ const ContactFormMap = (props) => {
 								/>
 							</motion.div>
 							<motion.div variants={fadeInUp} className="relative mb-4">
-								{formik.errors.message ? (
+								{formik.touched.message && formik.errors.message ? (
 									<div>
 										<p className="py-1 text-left text-tiny text-pink font-[400]">
 											{formik.errors.message}
