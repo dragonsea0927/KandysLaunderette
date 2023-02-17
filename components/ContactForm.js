@@ -1,9 +1,9 @@
-import React, {useState} from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {motion} from "framer-motion";
-import {useFormik, Formik, Field, Form} from "formik";
+import React, {useState} from "react";
 import DOMPurify from "isomorphic-dompurify";
+import {useFormik, Formik, Field, Form} from "formik";
 import {fadeIn, fadeInUp, stagger} from "../animations/animations";
 
 const ContactForm = (props) => {
