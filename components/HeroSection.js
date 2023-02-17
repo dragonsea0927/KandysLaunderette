@@ -67,8 +67,8 @@ const HeroSection = (props) => {
 			>
 				<div className="flex flex-row justify-center gap-4 w-full h-[fit-content]">
 					<div className="container mx-auto">
-						<div className="flex flex-row justify-between items-center">
-							<div className="flex flex-row justify-start items-start gap-10 p-4">
+						<div className="flex flex-row items-center justify-between">
+							<div className="flex flex-row items-start justify-start gap-10 p-4">
 								<Link href="/">
 									<a>
 										<img
@@ -80,14 +80,14 @@ const HeroSection = (props) => {
 										/>
 									</a>
 								</Link>
-								<ul className="hidden lg:flex flex-row justify-start items-start gap-6 py-8">
+								<ul className="flex-row items-start justify-start hidden gap-6 py-8 lg:flex">
 									<Link href="/HowItWorks">
 										<a className="my-auto px-2 text-base tracking-[0.05rem] text-white hover:text-fadedPink transition-all ease-in-out duration-[0.5s]">
 											How it works
 										</a>
 									</Link>
-									<div className="menuLink relative">
-										<span className="flex flex-row justify-center items-center">
+									<div className="relative menuLink ">
+										<span className="flex flex-row items-center justify-center">
 											<Link href=" /Services">
 												<a className="my-auto px-2 text-base tracking-[0.05rem] text-white hover:text-fadedPink transition-all ease-in-out duration-[0.5s]">
 													Services
@@ -107,7 +107,7 @@ const HeroSection = (props) => {
 												{/* Individual Services Menu Links*/}
 												<div>
 													<div className="hover:rounded-t-lg hover:bg-fadedPink transition-all ease-in-out duration-[0.5s]">
-														<span className="flex flex-row py-3 px-6 justify-center items-center">
+														<span className="flex flex-row items-center justify-center px-6 py-3">
 															<Link href="/LaundryAndDryCleaning/IndividualService">
 																<a className="w-full text-white text-base text-left font-[400] tracking-[0.05rem] ">
 																	Individual Services
@@ -141,7 +141,7 @@ const HeroSection = (props) => {
 												{/* Commercial Services Menu Links*/}
 												<div>
 													<div className="hover:rounded-b-lg hover:bg-fadedPink transition-all ease-in-out duration-[0.5s]">
-														<span className="flex flex-row py-3 px-6 justify-center items-center">
+														<span className="flex flex-row items-center justify-center px-6 py-3">
 															<Link href="/LaundryAndDryCleaning/CommercialServices">
 																<a className="w-full text-white text-base text-left font-[400] tracking-[0.05rem] ">
 																	Commercial Services
@@ -158,7 +158,7 @@ const HeroSection = (props) => {
 														</span>
 													</div>
 													{CommercialServicesMenuOpen ? (
-														<ul className="flex flex-col justify-center bg-darkPink rounded-b-lg">
+														<ul className="flex flex-col justify-center rounded-b-lg bg-darkPink">
 															{/* Menu Array from Wordpress */}
 															{props?.CommercialServicesMenuLinks?.map(
 																(keys) => (
@@ -187,7 +187,7 @@ const HeroSection = (props) => {
 									</Link>
 								</ul>
 							</div>
-							<div className="hidden md:flex justify-center items-center gap-4 p-4">
+							<div className="items-center justify-center hidden gap-4 p-4 md:flex">
 								<Link href="/HowItWorks">
 									<a className="my-auto px-2 text-base tracking-[0.05rem] text-white hover:text-fadedPink transition-all ease-in-out duration-[0.5s]">
 										Log in
@@ -195,7 +195,7 @@ const HeroSection = (props) => {
 								</Link>
 								<button className="rounded-lg py-3 px-8 text-white bg-pink hover:text-white hover:bg-yellow transition-all ease-in-out duration-[0.5s]">
 									<Link href="/">
-										<a className="text-right text-base font-[600] hover:text-white">
+										<a className="text-right text-base font-[600] hover:text-white ">
 											Create an account
 										</a>
 									</Link>
@@ -204,7 +204,7 @@ const HeroSection = (props) => {
 						</div>
 					</div>
 				</div>
-				<div className="pt-0 pb-20 md:py-20 px-0 my-auto">
+				<div className="px-0 pt-0 pb-20 my-auto md:py-20">
 					<motion.h1
 						variants={fadeIn}
 						className=" p-4 lg:p-0 w-full mx-auto lg:w-[45rem] text-white text-center leading-[2.75rem] leading-[2.75rem] font-[600] text-4xl sm:text-6xl"
@@ -213,9 +213,9 @@ const HeroSection = (props) => {
 					</motion.h1>
 				</div>
 				<div className="flex flex-col">
-					<div className="bg-pink p-6">
+					<div className="p-6 bg-pink">
 						<div className="container mx-auto">
-							<div className="flex flex-col lg:flex-row justify-between items-center">
+							<div className="flex flex-col items-center justify-between lg:flex-row">
 								<div className="flex flex-col justify-center">
 									<h2 className="text-white text-center lg:text-left text-lg sm:text-medium lg:text-lg xl:text-3xl font-[500]">
 										{props?.subtitle}
@@ -229,7 +229,7 @@ const HeroSection = (props) => {
 								</div>
 								<motion.div
 									variants={fadeInUp}
-									className="hidden sm:flex flex-col justify-center items-center lg:items-end gap-2 p-4"
+									className="flex-col items-center justify-center hidden gap-2 p-4 sm:flex lg:items-end"
 								>
 									<Image
 										src="/svg/Rating Stars.svg"

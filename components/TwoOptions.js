@@ -31,7 +31,7 @@ const TwoOptions = (props) => {
 	function isButtonLink(isButtonLink) {
 		let contentStyling;
 		const tailwindStyling =
-			"w-[fit-content] rounded-[50px] bg-white py-2 px-8 hover:bg-fadedPink hover:text-white transition-all ease-in-out duration-[0.5s]";
+			"w-[fit-content] rounded-[50px]  bg-white py-2 px-8 hover:bg-fadedPink hover:text-white transition-all ease-in-out duration-[0.5s]";
 		if (isButtonLink === null || isButtonLink === undefined) {
 			contentStyling = `hidden ${tailwindStyling}`;
 		} else {
@@ -41,7 +41,7 @@ const TwoOptions = (props) => {
 	}
 
 	return (
-		<section className="bg-white container mx-auto p-0">
+		<section className="container p-0 mx-auto bg-white">
 			<motion.div variants={fadeInUp} className="px-4 py-28">
 				<h2 className="text-black text-center tracking-normal leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl">
 					{props?.title}
@@ -53,7 +53,7 @@ const TwoOptions = (props) => {
 			</motion.div>
 			<motion.div
 				variants={stagger}
-				className="flex flex-col justify-between items-center lg:grid lg:grid-cols-2 gap-4 px-4"
+				className="flex flex-col items-center justify-between gap-4 px-4 lg:grid lg:grid-cols-2"
 			>
 				<div>
 					<Link href={`${props?.content?.buttonLink?.url}`}>
@@ -75,7 +75,7 @@ const TwoOptions = (props) => {
 					>
 						<motion.h2
 							variants={fadeInUp}
-							className="text-white text-left text-base py-4"
+							className="py-4 text-base text-left text-white"
 						>
 							{props?.content?.title}
 						</motion.h2>
@@ -111,7 +111,7 @@ const TwoOptions = (props) => {
 					>
 						<motion.h2
 							variants={fadeInUp}
-							className="text-white text-left text-base py-4"
+							className="py-4 text-base text-left text-white"
 						>
 							{props?.content?.titleTwo}
 						</motion.h2>

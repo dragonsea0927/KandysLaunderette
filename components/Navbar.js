@@ -63,7 +63,7 @@ const Navbar = (props) => {
 									How it works
 								</a>
 							</Link>
-							<div className="menuLink relative">
+							<div className="relative menuLink ">
 								<span className="flex flex-row justify-center items-center gap-2 ">
 									<Link href=" /Services">
 										<a className="text-black text-base text-left font-[400] tracking-[0.05rem] hover:text-fadedPinkThree transition-all ease-in-out duration-[0.5s]">

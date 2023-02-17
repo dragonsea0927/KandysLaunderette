@@ -335,7 +335,7 @@ const ContactForm = (props) => {
 								<motion.button
 									variants={fadeInUp}
 									type="submit"
-									className="py-4 px-9 w-full text-white text-medium font-[400] rounded-lg shadow-4xl focus:outline-none focus:ring focus:ring-fadedPinkThree active:ring-fadedPinkThree focus-visible:ring-pink disabled:bg-opacity-50 disabled:cursor-not-allowed bg-pink active:bg-pink hover:bg-fadedPinkThree transition-all ease-in-out duration-[0.5s]"
+									className="py-4 px-9 w-full text-white text-medium font-[400] rounded-lg shadow-4xl  disabled:bg-opacity-50 disabled:cursor-not-allowed bg-pink active:bg-pink hover:bg-fadedPinkThree transition-all ease-in-out duration-[0.5s]"
 								>
 									Send Message
 								</motion.button>

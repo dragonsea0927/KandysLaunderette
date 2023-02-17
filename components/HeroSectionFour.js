@@ -92,7 +92,7 @@ const HeroSectionFour = (props) => {
 											How it works
 										</a>
 									</Link>
-									<div className="menuLink relative">
+									<div className="relative menuLink ">
 										<span className="flex flex-row justify-center items-center">
 											<Link href=" /Services">
 												<a className="my-auto px-2 text-base tracking-[0.05rem] text-white hover:text-fadedPink transition-all ease-in-out duration-[0.5s]">

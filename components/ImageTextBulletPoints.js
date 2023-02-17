@@ -39,7 +39,7 @@ const ImageTextBulletPoints = (props) => {
 	 And Displays content if it isn't null */
 	function isButtonLink(isButtonLink) {
 		let contentStyling;
-		let tailwindStyling = `mt-5 w-[fit-content] flex flex-col justify-center lg:justify-left mx-auto lg:mx-0 bg-white rounded-lg text-blue hover:text-white hover:bg-${buttonHoverColor} transition-all ease-in-out duration-[0.5s]`;
+		let tailwindStyling = `mt-5 w-[fit-content] flex flex-col justify-center lg:justify-left mx-auto lg:mx-0 bg-white rounded-lg  text-blue hover:text-white hover:bg-${buttonHoverColor} transition-all ease-in-out duration-[0.5s]`;
 		if (isButtonLink === null || isButtonLink === undefined) {
 			contentStyling = `hidden ${tailwindStyling}`;
 		} else {
@@ -53,8 +53,8 @@ const ImageTextBulletPoints = (props) => {
 			className={styles.imageTextBulletPoints}
 			style={{backgroundColor: backgroundColor}}
 		>
-			<div className="container mx-auto p-0">
-				<div className="flex flex-col-reverse lg:flex-row gap-20 justify-center items-center">
+			<div className="container p-0 mx-auto">
+				<div className="flex flex-col-reverse items-center justify-center gap-20 lg:flex-row">
 					<motion.div variants={fadeIn} className="px-4 lg:px-0">
 						<Image
 							width={550}
@@ -72,7 +72,7 @@ const ImageTextBulletPoints = (props) => {
 						>
 							{props?.title}
 						</h2>
-						<div className="flex flex-col py-8 gap-4">
+						<div className="flex flex-col gap-4 py-8">
 							{props.bulletPoints.map((keys) => (
 								<IconTextCard
 									Key={keys?.id}
