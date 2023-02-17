@@ -20,7 +20,7 @@ const ContactFormMap = (props) => {
 	}
 
 	return (
-		<section className="text-grey body-font relative">
+		<section className="relative text-grey body-font">
 			<div className="absolute inset-0 bg-grey">
 				<iframe
 					title="map"
@@ -38,15 +38,15 @@ const ContactFormMap = (props) => {
 					src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9907.997021073143!2d-3.9420236!3d51.6232228!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x919fb6f2312ca92b!2sKandys%20Launderette%20%26%20Dry%20Cleaner!5e0!3m2!1sen!2suk!4v1637884674092!5m2!1sen!2suk"
 				/>
 			</div>
-			<div className="container px-5 py-24 mx-auto flex">
-				<div className="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
-					<h2 className="text-pink text-xl mb-3 font-medium">{props?.title}</h2>
+			<div className="container flex px-5 py-24 mx-auto">
+				<div className="relative z-10 flex flex-col w-full p-8 mt-10 bg-white rounded-lg shadow-md lg:w-1/3 md:w-1/2 md:ml-auto md:mt-0">
+					<h2 className="mb-3 text-xl font-medium text-pink">{props?.title}</h2>
 					<div
 						className={isParagraphContent(props?.paragraph)}
 						dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 					/>
 					<div className="relative mb-4">
-						<label className="leading-7 text-sm text-darkGrey">
+						<label className="text-sm leading-7 text-darkGrey">
 							First &amp; last name
 						</label>
 						<input
@@ -57,7 +57,7 @@ const ContactFormMap = (props) => {
 						/>
 					</div>
 					<div className="relative mb-4">
-						<label className="leading-7 text-sm text-darkGrey">Email</label>
+						<label className="text-sm leading-7 text-darkGrey">Email</label>
 						<input
 							type="email"
 							id="email"
@@ -66,20 +66,18 @@ const ContactFormMap = (props) => {
 						/>
 					</div>
 					<div className="relative mb-4">
-						<label className="leading-7 text-sm text-darkGrey">Message</label>
+						<label className="text-sm leading-7 text-darkGrey">Message</label>
 						<textarea
 							id="message"
 							name="message"
 							className="p-4 w-full h-48 font-[400] text-darkGrey placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-darkGrey resize-none rounded-lg focus:ring-[1px] focus:ring-pink"
 						/>
 					</div>
-					<button className="inline-block py-2 px-6 bg-pink hover:bg-yellow text-white font-[600] leading-loose transition-all ease-in-out duration-[0.5s] rounded-lg">
-						<Link
-							href={`${props?.buttonLink?.url}`}
-							target={`${props?.buttonLink?.target}`}
-						>
-							<a>Get In touch</a>
-						</Link>
+					<button
+						className="py-4 px-9 w-full text-white text-medium font-[400] border-[1px] border-pink rounded-xl shadow-4xl focus:ring focus:ring-yellow disabled:bg-opacity-50 disabled:cursor-not-allowed bg-pink hover:border-yellow active:bg-yellow hover:bg-yellow transition-all ease-in-out duration-[0.5s]"
+						type="submit"
+					>
+						Send Message
 					</button>
 					<div className="mt-5">
 						<div

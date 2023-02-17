@@ -1,10 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
 import Image from "next/image";
 import {motion} from "framer-motion";
 import DOMPurify from "isomorphic-dompurify";
-import {fadeInUp, stagger} from "../animations/animations";
-import styles from "../styles/components/CTA.module.scss";
+import {fadeIn, fadeInUp, stagger} from "../animations/animations";
 
 const ImageContent = (props) => {
 	/* Check if paragraph content is null
@@ -26,11 +24,11 @@ const ImageContent = (props) => {
 	}
 
 	return (
-		<section className="py-20 bg-white overflow-hidden">
-			<div className="container mx-auto px-0">
-				<div className="flex flex-col-reverse lg:flex-row justify-center items-center">
-					<div className="w-full lg:w-1/2 p-0 lg:p-8">
-						<div className="overflow-hidden">
+		<section className="px-4 py-20 overflow-hidden bg-white lg:px-0">
+			<div className="container px-0 mx-auto">
+				<div className="flex flex-col-reverse items-center justify-center lg:flex-row">
+					<div className="w-full p-0 lg:w-1/2 lg:p-8">
+						<motion.div variants={fadeIn} className="overflow-hidden">
 							<Image
 								width={`750px`}
 								height={`750px`}
@@ -40,13 +38,13 @@ const ImageContent = (props) => {
 								alt={`${props?.Image?.altText} Image`}
 								className="w-full h-[750px] object-cover rounded-lg transform hover:scale-105 transition ease-in-out duration-1000"
 							/>
-						</div>
+						</motion.div>
 					</div>
-					<div className="w-full lg:w-1/2 p-0 lg:p-8">
+					<div className="w-full p-0 lg:w-1/2 lg:p-8">
 						<div className="md:max-w-2xl">
-							<div className="flex flex-col">
-								<div className="flex flex-col">
-									<div className="flex flex-row mt-8 gap-4">
+							<motion.div variants={stagger} className="flex flex-col">
+								<motion.div variants={fadeInUp} className="flex flex-col">
+									<div className="flex flex-row gap-4 mt-8">
 										<div className="w-auto">
 											<svg
 												width="28"
@@ -78,9 +76,9 @@ const ImageContent = (props) => {
 											/>
 										</div>
 									</div>
-								</div>
-								<div className="flex flex-col">
-									<div className="flex flex-row mt-8 gap-4">
+								</motion.div>
+								<motion.div variants={fadeInUp} className="flex flex-col">
+									<div className="flex flex-row gap-4 mt-8">
 										<div className="w-auto">
 											<svg
 												width="28"
@@ -112,9 +110,9 @@ const ImageContent = (props) => {
 											/>
 										</div>
 									</div>
-								</div>
-								<div className="flex flex-col">
-									<div className="flex flex-row mt-8 gap-4">
+								</motion.div>
+								<motion.div variants={fadeInUp} className="flex flex-col">
+									<div className="flex flex-row gap-4 mt-8">
 										<div className="w-auto">
 											<svg
 												width="28"
@@ -146,8 +144,8 @@ const ImageContent = (props) => {
 											)}
 										/>
 									</div>
-								</div>
-							</div>
+								</motion.div>
+							</motion.div>
 						</div>
 					</div>
 				</div>

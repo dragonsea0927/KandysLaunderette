@@ -1,7 +1,8 @@
+import React, {useState} from "react";
 import Link from "next/link";
-import {useState} from "react";
 import Image from "next/image";
 import {motion} from "framer-motion";
+import {useFormik, Formik, Field, Form} from "formik";
 import DOMPurify from "isomorphic-dompurify";
 import {fadeIn, stagger} from "../animations/animations";
 
@@ -26,44 +27,124 @@ const ContactForm = (props) => {
 		};
 	}
 
-	/* Contact Form Field */
-	const [fullName, setFullName] = useState("");
-	const [email, setEmail] = useState("");
-	const [subject, setSubject] = useState("");
-	const [message, setMessage] = useState("");
-
-	/* Contact Form Data Handing */
-	const handleSubmit = async (e) => {
-		e.preventDefault();
-
-		let isValidForm = handleValidation();
-
-		const res = await fetch("/api/sendgrid", {
-			body: JSON.stringify({
-				email: email,
-				fullname: fullname,
-				subject: subject,
-				message: message,
-			}),
-			headers: {
-				"Content-Type": "application/json",
-			},
-			method: "POST",
-		});
-
-		const {error} = await res.json();
-		if (error) {
-			console.log(error);
-			return;
+	// A custom validation function. This must return an object
+	// which keys are symmetrical to our values/initialValues
+	const validate = (values) => {
+		const errors = {};
+		if (!values.firstName) {
+			errors.firstName = "Required";
+		} else if (values.firstName.length >= 16) {
+			errors.firstName = "Must be 15 characters or less";
 		}
-		console.log(fullname, email, subject, message);
+
+		if (!values.lastName) {
+			errors.lastName = "Required";
+		} else if (values.lastName.length >= 21) {
+			errors.lastName = "Must be 20 characters or less";
+		}
+
+		if (!values.email) {
+			errors.email = "Required";
+		} else if (
+			!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
+		) {
+			errors.email = "Invalid email address";
+		}
+
+		if (!values.subject) {
+			errors.subject = "Required";
+		} else if (values.subject.length <= 0) {
+			errors.subject = "Please inform us about the topic.";
+		}
+
+		if (!values.message) {
+			errors.message = "Required";
+		} else if (values.message.length <= 0) {
+			errors.message = "Please tell us about your enquiry.";
+		}
+
+		return errors;
 	};
+
+	const [values, setValues] = useState({});
+	const handleChange = (event) => {
+		setValues((prevValues) => ({
+			...prevValues,
+			[event.target.name]: event.target.value,
+		}));
+	};
+
+	/* Contact Form Fields
+	And Initial Values */
+	const formik = useFormik({
+		initialValues: {
+			firstName: "",
+			lastName: "",
+			email: "",
+			subject: "",
+			message: "",
+		},
+		validate,
+		onSubmit: (values) => {
+			alert(JSON.stringify(values, null, 2));
+		},
+	});
+
+	// /* Contact Form Field */
+	// const [fullName, setFullName] = useState("");
+	// const [email, setEmail] = useState("");
+	// const [subject, setSubject] = useState("");
+	// const [message, setMessage] = useState("");
+	// const [errors, setErrors] = useState({});
+
+	// useEffect(() => {
+	// 	const errors = {};
+
+	// 	if (!fullName.trim()) {
+	// 		errors.name = "Name is required";
+	// 	}
+
+	// 	if (!email.trim()) {
+	// 		errors.email = "Email is required";
+	// 	} else if (!/\S+@\S+\.\S+/.test(email)) {
+	// 		errors.email = "Email is invalid";
+	// 	}
+
+	// 	if (!subject.trim()) {
+	// 		errors.name = "Subject is required";
+	// 	}
+
+	// 	if (!message.trim()) {
+	// 		errors.name = "Please add a message.";
+	// 	}
+
+	// 	setErrors(errors);
+	// }, [fullName, email, subject, message]);
+
+	// /* Contact Form Data Handing */
+	// const handleSubmit = async (event) => {
+	// 	event.preventDefault();
+
+	// 	const formData = {};
+
+	// 	Array.from(event.currentTarget.elements).forEach((field) => {
+	// 		if (!field.name) return;
+	// 		formData[field.name] = field.value;
+	// 	});
+
+	// 	// console.log(formData);
+
+	// 	fetch("/api/mail", {
+	// 		method: "post",
+	// 		body: JSON.stringify(formData),
+	// 	});
+	// };
 
 	return (
 		<section className="relative overflow-hidden">
-			<div className="container mx-auto px-4 lg:px-0">
-				<div className="pt-28 mb-28 bg-white overflow-hidden">
-					<div className="mb-20 text-center mx-auto">
+			<div className="container px-4 mx-auto lg:px-0">
+				<div className="overflow-hidden bg-white pt-28 mb-28">
+					<div className="mx-auto mb-20 text-center">
 						<h2 className="text-center tracking-normal leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl py-4">
 							{props?.title}
 						</h2>
@@ -74,8 +155,8 @@ const ContactForm = (props) => {
 						/>
 					</div>
 					<div className="flex flex-col justify-center gap-4 lg:flex-row lg:items-center">
-						<div className="w-full lg:w-1/2 p-0 lg:p-8">
-							<div className="max-w-max mx-auto overflow-hidden rounded-3xl">
+						<div className="w-full p-0 lg:w-1/2 lg:p-8">
+							<div className="mx-auto overflow-hidden max-w-max rounded-3xl">
 								<Image
 									width={1000}
 									height={600}
@@ -83,13 +164,13 @@ const ContactForm = (props) => {
 									objectPosition="center"
 									src={`${props?.image?.sourceUrl}`}
 									alt={`${props?.image?.altText} Image`}
-									className="transform hover:scale-105 transition ease-in-out duration-1000"
+									className="transition duration-1000 ease-in-out transform hover:scale-105"
 								/>
 							</div>
 						</div>
 						<motion.div
 							variants={stagger}
-							className="w-full lg:w-1/2 p-0 pt-8 lg:p-8 flex flex-col justify-center items-center lg:items-start"
+							className="flex flex-col items-center justify-center w-full p-0 pt-8 lg:w-1/2 lg:p-8 lg:items-start"
 						>
 							<motion.div variants={fadeIn}>
 								<p className="text-center lg:text-left mb-4 text-sm font-[600] uppercase tracking-px">
@@ -144,72 +225,91 @@ const ContactForm = (props) => {
 						),url("${props.backgroundImage}")`,
 				}}
 			>
-				<div className="relative z-10 px-4 lg:px-0 py-20 container mx-auto">
-					<form
-						onSubmit={handleSubmit}
-						className="px-11 pt-9 pb-11 bg-white bg-opacity-80 md:max-w-xl mx-auto rounded-lg shadow-12xl"
-						style={{backdropFilter: "blur(5px)"}}
-					>
-						<h3 className="mb-8 text-xl text-center font-semibold leading-normal md:max-w-sm mx-auto">
-							{props?.formText}
-						</h3>
-						<label className="block mb-4" htmlFor="fullName">
-							<input
-								id="text"
-								type="text"
-								value={fullName}
-								onChange={(e) => {
-									setFullName(e.target.value);
-								}}
-								placeholder="First &amp; last name"
-								className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-lightGrey rounded-lg focus:ring-[1px] focus:ring-pink"
-							/>
-						</label>
-						<label className="block mb-4" htmlFor="email">
-							<input
-								type="email"
-								id="email"
-								name="email"
-								value={email}
-								onChange={(e) => {
-									setEmail(e.target.value);
-								}}
-								placeholder="Email Address"
-								className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-lightGrey rounded-lg focus:ring-[1px] focus:ring-pink"
-							/>
-						</label>
-						<label className="block mb-4" htmlFor="subject">
-							<input
-								type="subject"
-								id="subject"
-								name="subject"
-								value={subject}
-								placeholder="Subject"
-								onChange={(e) => {
-									setSubject(e.target.value);
-								}}
-								className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-lightGrey rounded-lg focus:ring-[1px] focus:ring-pink"
-							/>
-						</label>
-						<label className="block mb-4" htmlFor="message">
-							<textarea
-								id="message"
-								name="message"
-								value={message}
-								placeholder="Write message"
-								onChange={(e) => {
-									setMessage(e.target.value);
-								}}
-								className="p-4 w-full h-48 font-[400] text-darkGrey placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-lightGrey resize-none rounded-lg focus:ring-[1px] focus:ring-pink"
-							></textarea>
-						</label>
-						<button
-							className="py-4 px-9 w-full text-white text-medium font-[400] border-[1px] border-pink rounded-xl shadow-4xl focus:ring focus:ring-fadedPinkThree bg-pink hover:border-fadedPinkThree hover:bg-fadedPinkThree transition-all ease-in-out duration-[0.5s]"
-							type="submit"
+				<div className="container relative z-10 px-4 py-20 mx-auto lg:px-0">
+					<Formik>
+						<Form
+							className="mx-auto bg-white rounded-lg px-11 pt-9 pb-11 bg-opacity-80 md:max-w-xl shadow-12xl"
+							style={{backdropFilter: "blur(5px)"}}
 						>
-							Send Message
-						</button>
-					</form>
+							<h3 className="mx-auto mb-8 text-xl font-semibold leading-normal text-center uppercase md:max-w-sm">
+								{props?.formText}
+							</h3>
+
+							<div className="flex flex-col items-center justify-center gap-4">
+								<Field
+									id="firstName"
+									name="firstName"
+									placeholder="First Name"
+									onBlur={formik.handleBlur}
+									onChange={formik.handleChange}
+									value={formik.values.firstName}
+									className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-lightGrey rounded-lg focus:ring-[1px] focus:ring-pink"
+								/>
+								{formik.errors.firstName ? (
+									<div>{formik.errors.firstName}</div>
+								) : null}
+
+								<Field
+									id="lastName"
+									name="lastName"
+									placeholder="Last Name"
+									onBlur={formik.handleBlur}
+									onChange={formik.handleChange}
+									value={formik.values.lastName}
+									className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-lightGrey rounded-lg focus:ring-[1px] focus:ring-pink"
+								/>
+								{formik.errors.lastName ? (
+									<div>{formik.errors.lastName}</div>
+								) : null}
+
+								<Field
+									id="email"
+									name="email"
+									type="email"
+									placeholder="Email Address"
+									onBlur={formik.handleBlur}
+									onChange={formik.handleChange}
+									value={formik.values.email}
+									className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-lightGrey rounded-lg focus:ring-[1px] focus:ring-pink"
+								/>
+								{formik.errors.email ? <div>{formik.errors.email}</div> : null}
+
+								<Field
+									id="subject"
+									name="subject"
+									type="text"
+									placeholder="Subject"
+									onBlur={formik.handleBlur}
+									onChange={formik.handleChange}
+									value={formik.values.subject}
+									className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-lightGrey rounded-lg focus:ring-[1px] focus:ring-pink"
+								/>
+								{formik.errors.subject ? (
+									<div>{formik.errors.subject}</div>
+								) : null}
+
+								<textarea
+									rows={5}
+									id="message"
+									name="message"
+									placeholder="Your message"
+									onBlur={formik.handleBlur}
+									onChange={formik.handleChange}
+									value={formik.values.message}
+									className="p-4 w-full h-48 font-[400] text-darkGrey placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-lightGrey resize-none rounded-lg focus:ring-[1px] focus:ring-pink"
+								></textarea>
+								{formik.errors.message ? (
+									<div>{formik.errors.message}</div>
+								) : null}
+								<button
+									type="submit"
+									className="py-4 px-9 w-full text-white text-medium font-[400] border-[1px] border-pink rounded-xl shadow-4xl focus:ring focus:ring-fadedPinkThree disabled:bg-opacity-50 disabled:cursor-not-allowed bg-pink hover:border-fadedPinkThree active:bg-pink hover:bg-fadedPinkThree transition-all ease-in-out duration-[0.5s]"
+								>
+									Send Message
+								</button>
+							</div>
+						</Form>
+					</Formik>
 				</div>
 			</div>
 		</section>
