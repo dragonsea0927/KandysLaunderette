@@ -37,7 +37,7 @@ const TitleGridContent = (props) => {
 						),url("${props.backgroundImage}")`,
 			}}
 		>
-			<div className="container mx-auto flex flex-col px-4">
+			<div className="container flex flex-col px-4 mx-auto">
 				<motion.div variants={fadeInUp} className="py-28">
 					<h2 className="text-white text-center tracking-normal leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl">
 						{props?.title}
@@ -47,7 +47,7 @@ const TitleGridContent = (props) => {
 						dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 					/>
 				</motion.div>
-				<div className="flex justify-end items-center p-4">
+				<div className="flex items-center justify-end p-4">
 					<Link
 						href=" /LaundryAndDryCleaning/IndividualService"
 						target=""
@@ -58,7 +58,7 @@ const TitleGridContent = (props) => {
 				</div>
 				<motion.div
 					variants={stagger}
-					className="mx-auto mb-8 px-0 grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4 justify-center items-start"
+					className="grid items-start justify-center grid-cols-2 gap-2 px-0 mx-auto mb-8 lg:grid-cols-4 lg:gap-4"
 				>
 					{props?.gridContent.map((keys) => (
 						<SingleCard

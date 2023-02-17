@@ -4,7 +4,7 @@ import Image from "next/image";
 import {motion} from "framer-motion";
 import {useFormik, Formik, Field, Form} from "formik";
 import DOMPurify from "isomorphic-dompurify";
-import {fadeIn, stagger} from "../animations/animations";
+import {fadeIn, fadeInUp, stagger} from "../animations/animations";
 
 const ContactForm = (props) => {
 	/* Check if paragraph content is null
@@ -32,19 +32,19 @@ const ContactForm = (props) => {
 	const validate = (values) => {
 		const errors = {};
 		if (!values.firstName) {
-			errors.firstName = "Required";
+			errors.firstName = "Required*";
 		} else if (values.firstName.length >= 16) {
 			errors.firstName = "Must be 15 characters or less";
 		}
 
 		if (!values.lastName) {
-			errors.lastName = "Required";
+			errors.lastName = "Required*";
 		} else if (values.lastName.length >= 21) {
 			errors.lastName = "Must be 20 characters or less";
 		}
 
 		if (!values.email) {
-			errors.email = "Required";
+			errors.email = "Required*";
 		} else if (
 			!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
 		) {
@@ -52,13 +52,13 @@ const ContactForm = (props) => {
 		}
 
 		if (!values.subject) {
-			errors.subject = "Required";
+			errors.subject = "Required*";
 		} else if (values.subject.length <= 0) {
 			errors.subject = "Please inform us about the topic.";
 		}
 
 		if (!values.message) {
-			errors.message = "Required";
+			errors.message = "Required*";
 		} else if (values.message.length <= 0) {
 			errors.message = "Please tell us about your enquiry.";
 		}
@@ -228,86 +228,118 @@ const ContactForm = (props) => {
 				<div className="container relative z-10 px-4 py-20 mx-auto lg:px-0">
 					<Formik>
 						<Form
-							className="mx-auto bg-white rounded-lg px-11 pt-9 pb-11 bg-opacity-80 md:max-w-xl shadow-12xl"
+							className="mx-auto bg-white rounded-lg px-11 pt-9 pb-11 bg-opacity-90 transition-all ease-in-out duration-[0.5s] md:max-w-xl shadow-12xl"
 							style={{backdropFilter: "blur(5px)"}}
 						>
-							<h3 className="mx-auto mb-8 text-xl font-semibold leading-normal text-center uppercase md:max-w-sm">
+							<motion.h3
+								variants={fadeIn}
+								className="mx-auto mb-8 text-xl font-semibold leading-normal text-center uppercase md:max-w-sm"
+							>
 								{props?.formText}
-							</h3>
+							</motion.h3>
 
-							<div className="flex flex-col items-center justify-center gap-4">
-								<Field
-									id="firstName"
-									name="firstName"
-									placeholder="First Name"
-									onBlur={formik.handleBlur}
-									onChange={formik.handleChange}
-									value={formik.values.firstName}
-									className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-lightGrey rounded-lg focus:ring-[1px] focus:ring-pink"
-								/>
-								{formik.errors.firstName ? (
-									<div>{formik.errors.firstName}</div>
-								) : null}
-
-								<Field
-									id="lastName"
-									name="lastName"
-									placeholder="Last Name"
-									onBlur={formik.handleBlur}
-									onChange={formik.handleChange}
-									value={formik.values.lastName}
-									className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-lightGrey rounded-lg focus:ring-[1px] focus:ring-pink"
-								/>
-								{formik.errors.lastName ? (
-									<div>{formik.errors.lastName}</div>
-								) : null}
-
-								<Field
-									id="email"
-									name="email"
-									type="email"
-									placeholder="Email Address"
-									onBlur={formik.handleBlur}
-									onChange={formik.handleChange}
-									value={formik.values.email}
-									className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-lightGrey rounded-lg focus:ring-[1px] focus:ring-pink"
-								/>
-								{formik.errors.email ? <div>{formik.errors.email}</div> : null}
-
-								<Field
-									id="subject"
-									name="subject"
-									type="text"
-									placeholder="Subject"
-									onBlur={formik.handleBlur}
-									onChange={formik.handleChange}
-									value={formik.values.subject}
-									className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-lightGrey rounded-lg focus:ring-[1px] focus:ring-pink"
-								/>
-								{formik.errors.subject ? (
-									<div>{formik.errors.subject}</div>
-								) : null}
-
-								<textarea
-									rows={5}
-									id="message"
-									name="message"
-									placeholder="Your message"
-									onBlur={formik.handleBlur}
-									onChange={formik.handleChange}
-									value={formik.values.message}
-									className="p-4 w-full h-48 font-[400] text-darkGrey placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-lightGrey resize-none rounded-lg focus:ring-[1px] focus:ring-pink"
-								></textarea>
-								{formik.errors.message ? (
-									<div>{formik.errors.message}</div>
-								) : null}
-								<button
+							<motion.div variants={stagger} className="flex flex-col gap-4">
+								<motion.div variants={fadeInUp}>
+									{formik.errors.firstName ? (
+										<div>
+											<p className="py-1 text-left text-tiny text-pink font-[400]">
+												{formik.errors.firstName}
+											</p>
+										</div>
+									) : null}
+									<Field
+										id="firstName"
+										name="firstName"
+										placeholder="First Name"
+										onBlur={formik.handleBlur}
+										onChange={formik.handleChange}
+										value={formik.values.firstName}
+										className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-darkGrey active:border-pink focus:border-pink rounded-lg focus:ring-[1px] focus:ring-pink"
+									/>
+								</motion.div>
+								<motion.div variants={fadeInUp}>
+									{formik.errors.lastName ? (
+										<div>
+											<p className="py-1 text-left text-tiny text-pink font-[400]">
+												{formik.errors.lastName}
+											</p>
+										</div>
+									) : null}
+									<Field
+										id="lastName"
+										name="lastName"
+										placeholder="Last Name"
+										onBlur={formik.handleBlur}
+										onChange={formik.handleChange}
+										value={formik.values.lastName}
+										className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-darkGrey active:border-pink focus:border-pink rounded-lg focus:ring-[1px] focus:ring-pink"
+									/>
+								</motion.div>
+								<motion.div variants={fadeInUp}>
+									{formik.errors.email ? (
+										<div>
+											<p className="py-1 text-left text-tiny text-pink font-[400]">
+												{formik.errors.email}
+											</p>
+										</div>
+									) : null}
+									<Field
+										id="email"
+										name="email"
+										type="email"
+										placeholder="Email Address"
+										onBlur={formik.handleBlur}
+										onChange={formik.handleChange}
+										value={formik.values.email}
+										className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-darkGrey active:border-pink focus:border-pink rounded-lg focus:ring-[1px] focus:ring-pink"
+									/>
+								</motion.div>
+								<motion.div variants={fadeInUp}>
+									{formik.errors.subject ? (
+										<div>
+											<p className="py-1 text-left text-tiny text-pink font-[400]">
+												{formik.errors.subject}
+											</p>
+										</div>
+									) : null}
+									<Field
+										id="subject"
+										name="subject"
+										type="text"
+										placeholder="Subject"
+										onBlur={formik.handleBlur}
+										onChange={formik.handleChange}
+										value={formik.values.subject}
+										className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-darkGrey active:border-pink focus:border-pink rounded-lg focus:ring-[1px] focus:ring-pink"
+									/>
+								</motion.div>
+								<motion.div variants={fadeInUp}>
+									{formik.errors.message ? (
+										<div>
+											<p className="py-1 text-left text-tiny text-pink font-[400]">
+												{formik.errors.message}
+											</p>
+										</div>
+									) : null}
+									<textarea
+										rows={5}
+										id="message"
+										name="message"
+										placeholder="Your message"
+										onBlur={formik.handleBlur}
+										onChange={formik.handleChange}
+										value={formik.values.message}
+										className="p-4 w-full h-48 font-[400] text-darkGrey placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-darkGrey active:border-pink focus:border-pink resize-none rounded-lg focus:ring-[1px] focus:ring-pink"
+									></textarea>
+								</motion.div>
+								<motion.button
+									variants={fadeInUp}
 									type="submit"
-									className="py-4 px-9 w-full text-white text-medium font-[400] border-[1px] border-pink rounded-xl shadow-4xl focus:ring focus:ring-fadedPinkThree disabled:bg-opacity-50 disabled:cursor-not-allowed bg-pink hover:border-fadedPinkThree active:bg-pink hover:bg-fadedPinkThree transition-all ease-in-out duration-[0.5s]"
+									className="py-4 px-9 w-full text-white text-medium font-[400] rounded-lg shadow-4xl focus:outline-none focus:ring focus:ring-fadedPinkThree active:ring-fadedPinkThree focus-visible:ring-pink disabled:bg-opacity-50 disabled:cursor-not-allowed bg-pink active:bg-pink hover:bg-fadedPinkThree transition-all ease-in-out duration-[0.5s]"
 								>
 									Send Message
-								</button>
-							</div>
+								</motion.button>
+							</motion.div>
 						</Form>
 					</Formik>
 				</div>

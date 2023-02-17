@@ -13,9 +13,12 @@ const FourGridContent = (props) => {
 						<span className="inline-block mb-3 text-tiny text-white text-center mx-auto font-[600] uppercase tracking-widest">
 							{props?.subtitle}
 						</span>
-						<h2 className="my-12 text-5xl lg:text-6xl text-white text-center tracking-tight font-[700] leading-[3.5rem]">
+						<motion.h2
+							variants={fadeIn}
+							className="my-12 text-5xl lg:text-6xl text-white text-center tracking-tight font-[700] leading-[3.5rem]"
+						>
 							{props?.title}
-						</h2>
+						</motion.h2>
 					</div>
 					<div className="flex flex-col sm:grid sm:grid-cols-2 justify-between items-center gap-5 lg:gap-8 m-4 p-4 xl:py-8 xl:px-28">
 						{props?.gridContent.map((keys) => (
