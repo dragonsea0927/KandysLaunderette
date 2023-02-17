@@ -51,14 +51,6 @@ const ContactFormMap = (props) => {
 		return errors;
 	};
 
-	const [values, setValues] = useState({});
-	const handleChange = (event) => {
-		setValues((prevValues) => ({
-			...prevValues,
-			[event.target.name]: event.target.value,
-		}));
-	};
-
 	/* Contact Form Fields
 	And Initial Values */
 	const formik = useFormik({
@@ -69,59 +61,12 @@ const ContactFormMap = (props) => {
 		},
 		validate,
 		onSubmit: (values) => {
-			alert(JSON.stringify(values, null, 2));
+			fetch("/api/mail", {
+				method: "post",
+				body: JSON.stringify(values, null, 2),
+			});
 		},
 	});
-
-	// /* Contact Form Field */
-	// const [fullName, setFullName] = useState("");
-	// const [email, setEmail] = useState("");
-	// const [subject, setSubject] = useState("");
-	// const [message, setMessage] = useState("");
-	// const [errors, setErrors] = useState({});
-
-	// useEffect(() => {
-	// 	const errors = {};
-
-	// 	if (!fullName.trim()) {
-	// 		errors.name = "Name is required";
-	// 	}
-
-	// 	if (!email.trim()) {
-	// 		errors.email = "Email is required";
-	// 	} else if (!/\S+@\S+\.\S+/.test(email)) {
-	// 		errors.email = "Email is invalid";
-	// 	}
-
-	// 	if (!subject.trim()) {
-	// 		errors.name = "Subject is required";
-	// 	}
-
-	// 	if (!message.trim()) {
-	// 		errors.name = "Please add a message.";
-	// 	}
-
-	// 	setErrors(errors);
-	// }, [fullName, email, subject, message]);
-
-	// /* Contact Form Data Handing */
-	// const handleSubmit = async (event) => {
-	// 	event.preventDefault();
-
-	// 	const formData = {};
-
-	// 	Array.from(event.currentTarget.elements).forEach((field) => {
-	// 		if (!field.name) return;
-	// 		formData[field.name] = field.value;
-	// 	});
-
-	// 	// console.log(formData);
-
-	// 	fetch("/api/mail", {
-	// 		method: "post",
-	// 		body: JSON.stringify(formData),
-	// 	});
-	// };
 
 	return (
 		<section className="relative text-grey body-font">
@@ -151,7 +96,7 @@ const ContactFormMap = (props) => {
 						dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
 					/>
 					<Formik>
-						<motion.Form variants={stagger}>
+						<motion.Form variants={stagger} onSubmit={formik.handleSubmit}>
 							<motion.div variants={fadeInUp} className="relative mb-4">
 								{formik.touched.fullName && formik.errors.fullName ? (
 									<div>
