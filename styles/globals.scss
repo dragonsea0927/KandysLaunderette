@@ -58,6 +58,7 @@ input,
 label,
 button {
 	font-family: $fontStyle_main;
+	@apply focus:outline-none;
 }
 
 li,

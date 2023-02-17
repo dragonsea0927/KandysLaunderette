@@ -53,7 +53,7 @@ const ContactFormMap = (props) => {
 							id="text"
 							type="text"
 							name="First &amp; last name"
-							className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-darkGrey rounded-lg focus:ring-[1px] focus:ring-pink"
+							className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-darkGrey active:border-pink focus:border-pink rounded-lg focus:ring-[1px] focus:ring-pink"
 						/>
 					</div>
 					<div className="relative mb-4">
@@ -62,7 +62,7 @@ const ContactFormMap = (props) => {
 							type="email"
 							id="email"
 							name="email"
-							className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-darkGrey rounded-lg focus:ring-[1px] focus:ring-pink"
+							className="px-4 py-3 w-full text-darkGrey font-[400] placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-darkGrey active:border-pink focus:border-pink rounded-lg focus:ring-[1px] focus:ring-pink"
 						/>
 					</div>
 					<div className="relative mb-4">
@@ -70,7 +70,7 @@ const ContactFormMap = (props) => {
 						<textarea
 							id="message"
 							name="message"
-							className="p-4 w-full h-48 font-[400] text-darkGrey placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-darkGrey resize-none rounded-lg focus:ring-[1px] focus:ring-pink"
+							className="p-4 w-full h-48 font-[400] text-darkGrey placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-darkGrey active:border-pink focus:border-pink resize-none rounded-lg focus:ring-[1px] focus:ring-pink"
 						/>
 					</div>
 					<button
