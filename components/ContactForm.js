@@ -1,7 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
+import React, {useState} from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {motion} from "framer-motion";
-import React, {useState} from "react";
+import {sendContactForm} from "../lib/api";
 import DOMPurify from "isomorphic-dompurify";
 import {useFormik, Formik, Field, Form} from "formik";
 import {fadeIn, fadeInUp, stagger} from "../animations/animations";
@@ -26,6 +28,10 @@ const ContactForm = (props) => {
 			__html: DOMPurify.sanitize(paragraphContent),
 		};
 	}
+
+	const initState = {isLoading: false, error: ""};
+	const [state, setState] = useState(initState);
+	const {isLoading, error} = state;
 
 	// A custom validation function. This must return an object
 	// which keys are symmetrical to our values/initialValues
@@ -66,6 +72,8 @@ const ContactForm = (props) => {
 		return errors;
 	};
 
+	console.log();
+
 	/* Contact Form Fields
 	And Initial Values */
 	const formik = useFormik({
@@ -77,11 +85,21 @@ const ContactForm = (props) => {
 			message: "",
 		},
 		validate,
-		onSubmit: (values) => {
-			fetch("/api/mail", {
-				method: "post",
-				body: JSON.stringify(values, null, 2),
-			});
+		onSubmit: async (values) => {
+			setState((prev) => ({
+				...prev,
+				isLoading: true,
+			}));
+			try {
+				await sendContactForm(values);
+				setState(initState);
+			} catch (error) {
+				setState((prev) => ({
+					...prev,
+					isLoading: false,
+					error: error.message,
+				}));
+			}
 		},
 	});
 
@@ -173,16 +191,31 @@ const ContactForm = (props) => {
 				<div className="container relative z-10 px-4 py-20 mx-auto lg:px-0">
 					<Formik>
 						<Form
-							onSubmit={formik.handleSubmit}
 							className="mx-auto bg-white rounded-lg px-11 pt-9 pb-11 bg-opacity-90 transition-all ease-in-out duration-[0.5s] md:max-w-xl shadow-12xl"
 							style={{backdropFilter: "blur(5px)"}}
 						>
 							<motion.h3
 								variants={fadeIn}
-								className="mx-auto mb-8 text-xl font-semibold leading-normal text-center uppercase md:max-w-sm"
+								className="mx-auto mb-8 text-xl font-semibold text-center uppercase"
 							>
 								{props?.formText}
 							</motion.h3>
+
+							{isLoading ? (
+								<motion.div
+									variants={fadeIn}
+									className="flex justify-center items-center gap-x-2 my-4 mb-8"
+								>
+									<h4 className="text-lg text-brightGreen font-semibold text-center uppercase">
+										Message sent
+									</h4>
+									<img
+										src={`/img/icons/checkMarkGreen.png`}
+										alt={`Message Sent verification Icon`}
+										className="w-[22px] h-[22px] object-contain object-center"
+									/>
+								</motion.div>
+							) : null}
 
 							<motion.div variants={stagger} className="flex flex-col gap-4">
 								<motion.div variants={fadeInUp}>
@@ -280,7 +313,16 @@ const ContactForm = (props) => {
 								</motion.div>
 								<motion.button
 									variants={fadeInUp}
-									className="py-4 px-9 w-full text-white text-medium font-[400] rounded-xl shadow-4xl focus:ring focus:ring-yellow disabled:bg-opacity-50 disabled:cursor-not-allowed bg-pink active:bg-yellow hover:bg-yellow transition-all ease-in-out duration-[0.5s]"
+									isLoading={isLoading}
+									onClick={formik.handleSubmit}
+									disabled={
+										!formik.values.firstName ||
+										!formik.values.lastName ||
+										!formik.values.email ||
+										!formik.values.subject ||
+										!formik.values.message
+									}
+									className="py-4 px-9 w-full text-white text-medium font-[400] rounded-xl shadow-4xl disabled:bg-opacity-50 disabled:cursor-not-allowed bg-pink active:bg-yellow hover:bg-yellow transition-all ease-in-out duration-[0.5s]"
 									type="submit"
 								>
 									Send Message

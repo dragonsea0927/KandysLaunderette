@@ -79,7 +79,7 @@ const Footer = (props) => {
 							{/* Menu Array from Wordpress */}
 							{props?.IndividualServicesMenuLinks?.map((keys) => (
 								<FooterMenuLinks
-									Key={keys?.id}
+									key={keys?.node?.id}
 									linkUrl={keys?.node?.uri}
 									linkName={keys?.node?.label}
 								/>

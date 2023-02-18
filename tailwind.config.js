@@ -42,6 +42,7 @@ module.exports = {
 			babyBlue: "#5ac3ff",
 			fadedPink: "#ff8fb4",
 			darkYellow: "#f0b800",
+			brightGreen: "#1eca00",
 			fadedYellow: "#f3d162",
 			fadedPinkTwo: "#fcbfd4",
 			fadedPinkThree: "#f2739d",

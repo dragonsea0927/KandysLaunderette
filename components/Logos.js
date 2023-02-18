@@ -27,7 +27,7 @@ const Logos = (props) => {
 						className="flex flex-col sm:grid sm:grid-cols-2 lg:grid lg:grid-cols-5 justify-center lg:justify-between items-center gap-4 gap-y-8"
 					>
 						{props?.logoGrid.map((keys) => (
-							<LogoCardTwo Key={keys?.id} image={keys?.image} />
+							<LogoCardTwo key={keys?.id} image={keys?.image} />
 						))}
 					</motion.div>
 				</div>
