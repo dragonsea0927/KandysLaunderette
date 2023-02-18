@@ -1,8 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import {useState} from "react";
-import {motion} from "framer-motion";
-import {fadeIn} from "../animations/animations";
 import NavbarMenuSublinks from "./NavbarMenuSublinks";
 import styles from "../styles/components/Navbar.module.scss";
 
@@ -28,25 +26,8 @@ const Navbar = (props) => {
 		setIndividualServicesMenuOpen(!IndividualServicesMenuOpen);
 	}
 
-	// window.onscroll = function () {
-	// 	changeNavbarFixedPosition();
-	// };
-
-	// function changeNavbarFixedPosition() {
-	// 	let navbarFixedPosition;
-	// 	if (document.documentElement.scrollTop > 50) {
-	// 		navbarFixedPosition === "fixed";
-	// 	} else {
-	// 		navbarFixedPosition === "relative";
-	// 	}
-	// 	return navbarFixedPosition;
-	// }
-
 	return (
-		<section
-			className={styles.navbar}
-			// style={{position: navbarFixedPosition}}
-		>
+		<section className={styles.navbar}>
 			<div className="container mx-auto py-5 px-4">
 				<div className="flex justify-between">
 					<div className="flex flex-row justify-start items-center gap-10">
