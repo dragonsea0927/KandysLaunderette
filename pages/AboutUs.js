@@ -3,6 +3,7 @@
 import {gql} from "@apollo/client";
 import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
+import {getLatestThreePosts} from "../lib/blogPosts";
 import {getThemesOptionsContent} from "../lib/themesOptions";
 import {
 	getCommercialServicesMenu,
@@ -12,6 +13,7 @@ import {
 // Components
 import Footer from "/components/Footer";
 import Logos from "../components/Logos";
+import BlogsTwo from "../components/BlogsTwo";
 import SignUpTwo from "../components/SignUpTwo";
 import OurProcess from "../components/OurProcess";
 import MetaTag from "../components/Meta/MetaTag";
@@ -25,9 +27,10 @@ import TitleParagraphThree from "../components/TitleParagraphThree";
 const aboutUs = ({
 	seo,
 	pageTitle,
-	CommercialServicesMenuLinks,
+	latestThreePosts,
 	aboutUsPageContent,
 	themesOptionsContent,
+	CommercialServicesMenuLinks,
 	IndividualServicesMenuLinks,
 }) => {
 	return (
@@ -60,6 +63,7 @@ const aboutUs = ({
 					}
 				/>
 
+				{/* <!--===== TITLE PARAGRAPH IMAGE =====--> */}
 				<TitleParagraphImage
 					image={aboutUsPageContent?.whoWeAre?.image}
 					title={aboutUsPageContent?.whoWeAre?.title}
@@ -269,6 +273,9 @@ const aboutUs = ({
 					</div>
 				</section>
 
+				{/* <!--===== BLOGS =====--> */}
+				<BlogsTwo latestThreePosts={latestThreePosts?.latestThreePosts} />
+
 				{/* <!--===== CONTACT US BANNER =====--> */}
 				<ContactBanner
 					title={aboutUsPageContent?.contactBanner?.title}
@@ -458,12 +465,14 @@ export async function getStaticProps() {
 		query: getAboutUsPageContent,
 	});
 
-	const CommercialServicesMenuLinks = await getCommercialServicesMenu();
+	const latestThreePosts = await getLatestThreePosts();
 	const themesOptionsContent = await getThemesOptionsContent();
+	const CommercialServicesMenuLinks = await getCommercialServicesMenu();
 	const IndividualServicesMenuLinks = await getIndividualServicesMenu();
 
 	return {
 		props: {
+			latestThreePosts,
 			CommercialServicesMenuLinks,
 			IndividualServicesMenuLinks,
 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,

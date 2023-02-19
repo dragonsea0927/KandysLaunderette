@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import {gql} from "@apollo/client";
 import {client} from "../lib/apollo";
 import {motion} from "framer-motion";
@@ -13,8 +14,9 @@ import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
 import Blogs from "../components/Blogs";
 import SignUp from "../components/SignUp";
-import OurProcess from "../components/OurProcess";
+import BlogsTwo from "../components/BlogsTwo";
 import MetaTag from "../components/Meta/MetaTag";
+import OurProcess from "../components/OurProcess";
 import StoreLocation from "/components/storeLocation";
 import ContactBanner from "../components/ContactBanner";
 import FeaturesBanner from "../components/FeaturesBanner";
