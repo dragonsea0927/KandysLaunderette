@@ -81,7 +81,7 @@ const FooterDark = (props) => {
 								{/* Menu Array from Wordpress */}
 								{props?.IndividualServicesMenuLinks?.map((keys) => (
 									<FooterMenuLinks
-										Key={keys?.id}
+										key={keys?.node?.id}
 										linkUrl={keys?.node?.uri}
 										linkName={keys?.node?.label}
 									/>
@@ -116,9 +116,6 @@ const FooterDark = (props) => {
 								</h2>
 								<Link href="#support" target="blank">
 									<a>Support</a>
-								</Link>
-								<Link href="#privacy" target="blank">
-									<a>Privacy</a>
 								</Link>
 								<Link href="#paymentOptions" target="blank">
 									<a>Payment Options</a>
@@ -179,8 +176,8 @@ const FooterDark = (props) => {
 										<a>Privacy Policy</a>
 									</Link>
 									<div> | </div>
-									<Link href="/Accessibility" target="blank">
-										<a>Accessibility</a>
+									<Link href="/Sustainability" target="blank">
+										<a>Sustainability</a>
 									</Link>
 								</ul>
 								<div>

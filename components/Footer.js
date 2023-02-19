@@ -115,9 +115,6 @@ const Footer = (props) => {
 							<Link href="#support" target="blank">
 								<a>Support</a>
 							</Link>
-							<Link href="#privacy" target="blank">
-								<a>Privacy</a>
-							</Link>
 							<Link href="#paymentOptions" target="blank">
 								<a>Payment Options</a>
 							</Link>
