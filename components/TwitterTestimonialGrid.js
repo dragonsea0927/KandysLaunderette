@@ -27,7 +27,10 @@ const TwitterTestimonialGrid = (props) => {
 	}
 
 	return (
-		<section className="py-10 bg-lightGrey sm:py-16 lg:py-24">
+		<section
+			id="twitterTestimonial"
+			className="py-10 bg-lightGrey sm:py-16 lg:py-24"
+		>
 			<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
 				<div className="max-w-2xl mx-auto text-center">
 					<h2 className="font-[600] text-center text-2xl sm:text-3xl lg:text-5xl py-8  ">

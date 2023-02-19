@@ -91,13 +91,13 @@ const FooterDark = (props) => {
 								<h2>
 									<strong>About Us</strong>
 								</h2>
-								<Link href="#customerReviews" target="blank">
+								<Link href="/Services/#twitterTestimonial" target="blank">
 									<a>Customer Reviews</a>
 								</Link>
 								<Link href="/HowItWorks" target="blank">
 									<a>How It Works</a>
 								</Link>
-								<Link href=" /Services" target="blank">
+								<Link href="/Services" target="blank">
 									<a>Services</a>
 								</Link>
 								<Link href="/Prices" target="blank">
@@ -114,16 +114,16 @@ const FooterDark = (props) => {
 								<h2>
 									<strong>Customer Support</strong>
 								</h2>
-								<Link href="#support" target="blank">
+								<Link href="/Support" target="blank">
 									<a>Support</a>
 								</Link>
-								<Link href="#paymentOptions" target="blank">
+								<Link href="/PaymentOptions" target="blank">
 									<a>Payment Options</a>
 								</Link>
-								<Link href="#studentDiscounts" target="blank">
+								<Link href="/DiscountsPromotions" target="blank">
 									<a>Discounts & Promotions</a>
 								</Link>
-								<Link href="/termsAndConditions" target="blank">
+								<Link href="/CollectionDelivery" target="blank">
 									<a>Collection & Delivery</a>
 								</Link>
 							</div>
@@ -131,7 +131,7 @@ const FooterDark = (props) => {
 								<h2>
 									<strong>Contact Us</strong>
 								</h2>
-								<Link href="/#contactBannerTwo">
+								<Link href="/ContactUs">
 									<a>Opening Times</a>
 								</Link>
 								<Link href={`mailto:${props?.email}`} target="blank">
@@ -140,7 +140,7 @@ const FooterDark = (props) => {
 								<Link href={`tel:${props?.phoneNumber}`} target="blank">
 									<a>{props?.phoneNumber}</a>
 								</Link>
-								<Link href="#help" target="blank">
+								<Link href="/ContactUs" target="blank">
 									<a>Help</a>
 								</Link>
 							</div>
