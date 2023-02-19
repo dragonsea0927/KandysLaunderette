@@ -10,18 +10,17 @@ import {
 // Components
 import Footer from "/components/Footer";
 import MetaTag from "../components/Meta/MetaTag";
-import TwoOptions from "../components/TwoOptions";
-import TitleParagraph from "../components/TitleParagraph";
+import ContactFormMap from "../components/ContactFormMap";
 import HeroSectionFour from "../components/HeroSectionFour";
-import ContactBannerThree from "/components/ContactBannerThree";
+import TitleParagraphFour from "../components/TitleParagraphFour";
 
-const LaundryDryCleaning = ({
+const TermsConditions = ({
 	seo,
 	pageTitle,
 	themesOptionsContent,
+	termsConditionsPageContent,
 	IndividualServicesMenuLinks,
 	CommercialServicesMenuLinks,
-	laundryDryCleaningPageContent,
 }) => {
 	return (
 		<motion.div
@@ -37,14 +36,13 @@ const LaundryDryCleaning = ({
 			<main>
 				{/* <!--===== HERO =====--> */}
 				<HeroSectionFour
-					title={laundryDryCleaningPageContent?.heroSection?.title}
-					paragraph={laundryDryCleaningPageContent?.heroSection?.paragraph}
+					title={termsConditionsPageContent?.heroSection?.title}
+					paragraph={termsConditionsPageContent?.heroSection?.paragraph}
 					backgroundImage={
-						laundryDryCleaningPageContent?.heroSection?.backgroundImage
-							?.sourceUrl
+						termsConditionsPageContent?.heroSection?.backgroundImage?.sourceUrl
 					}
 					displayPaymentInfo={
-						laundryDryCleaningPageContent?.heroSection?.displayPaymentInfo
+						termsConditionsPageContent?.heroSection?.displayPaymentInfo
 					}
 					CommercialServicesMenuLinks={
 						CommercialServicesMenuLinks?.CommercialServicesMenuLinks
@@ -54,27 +52,18 @@ const LaundryDryCleaning = ({
 					}
 				/>
 
-				{/* // <========== TITLE & PARAGRAPH ==========> */}
-				<TitleParagraph
-					title={laundryDryCleaningPageContent?.titleParagraph?.title}
-					paragraph={laundryDryCleaningPageContent?.titleParagraph?.paragraph}
+				{/* <!--===== TITLE PARAGRAPH =====--> */}
+				<TitleParagraphFour
+					title={termsConditionsPageContent?.titleParagraph?.title}
+					paragraph={termsConditionsPageContent?.titleParagraph?.paragraph}
 				/>
 
-				{/* // <========== OPTIONS ==========> */}
-				<TwoOptions
-					title={laundryDryCleaningPageContent?.ourOptions?.title}
-					paragraph={laundryDryCleaningPageContent?.ourOptions?.paragraph}
-					content={laundryDryCleaningPageContent?.ourOptions?.content}
-				/>
-
-				{/* <!--===== CONTACT BANNER THREE =====--> */}
-				<ContactBannerThree
-					title={laundryDryCleaningPageContent?.contactBanner?.title}
-					themesOptions={themesOptionsContent?.themesOptions}
-					buttonLink={laundryDryCleaningPageContent?.contactBanner?.buttonLink}
-					backgroundImage={
-						laundryDryCleaningPageContent?.contactBanner?.image?.sourceUrl
-					}
+				{/* <!--===== CONTACT US MAP =====--> */}
+				<ContactFormMap
+					title={termsConditionsPageContent?.contactUs?.title}
+					paragraph={termsConditionsPageContent?.contactUs?.paragraph}
+					buttonLink={termsConditionsPageContent?.contactUs?.buttonLink}
+					paragraphTwo={termsConditionsPageContent?.contactUs?.paragraphBottom}
 				/>
 			</main>
 
@@ -90,17 +79,19 @@ const LaundryDryCleaning = ({
 	);
 };
 
+export default TermsConditions;
+
 export async function getStaticProps() {
-	const getLaundryDryCleaningPageContent = gql`
+	const getTermsConditionsPageContent = gql`
 		{
-			pageTitle: pages(where: {id: 177, status: PUBLISH}) {
+			pageTitle: pages(where: {id: 3805, status: PUBLISH}) {
 				edges {
 					node {
 						title
 					}
 				}
 			}
-			mainContent: pages(where: {id: 177, status: PUBLISH}) {
+			mainContent: pages(where: {id: 3805, status: PUBLISH}) {
 				edges {
 					node {
 						seo {
@@ -132,7 +123,7 @@ export async function getStaticProps() {
 								mediaItemUrl
 							}
 						}
-						LaundryDryCleaningPage {
+						TermsConditionsPage {
 							heroSection {
 								title
 								paragraph
@@ -145,35 +136,10 @@ export async function getStaticProps() {
 								title
 								paragraph
 							}
-							ourOptions {
+							contactUs {
 								title
 								paragraph
-								content {
-									titleTwo
-									title
-									image {
-										sourceUrl
-									}
-									imageTwo {
-										sourceUrl
-									}
-									buttonLink {
-										url
-										title
-										target
-									}
-									buttonLinkTwo {
-										url
-										title
-										target
-									}
-								}
-							}
-							contactBanner {
-								title
-								image {
-									sourceUrl
-								}
+								paragraphBottom
 								buttonLink {
 									url
 									title
@@ -188,7 +154,7 @@ export async function getStaticProps() {
 	`;
 
 	const response = await client.query({
-		query: getLaundryDryCleaningPageContent,
+		query: getTermsConditionsPageContent,
 	});
 
 	const themesOptionsContent = await getThemesOptionsContent();
@@ -197,16 +163,14 @@ export async function getStaticProps() {
 
 	return {
 		props: {
+			themesOptionsContent,
 			CommercialServicesMenuLinks,
 			IndividualServicesMenuLinks,
 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
 			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
-			laundryDryCleaningPageContent:
-				response?.data?.mainContent?.edges[0]?.node?.LaundryDryCleaningPage,
-			themesOptionsContent,
+			termsConditionsPageContent:
+				response?.data?.mainContent?.edges[0]?.node?.TermsConditionsPage,
 		},
 		revalidate: 60,
 	};
 }
-
-export default LaundryDryCleaning;

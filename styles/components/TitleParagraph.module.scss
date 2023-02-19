@@ -19,3 +19,12 @@
 		),
 		url("/svg/w.svg");
 }
+
+.titleParagraphFour {
+	p {
+		strong {
+			color: $baseColor_black;
+			text-transform: uppercase;
+		}
+	}
+}

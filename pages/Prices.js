@@ -452,8 +452,8 @@ export async function getStaticProps() {
 		query: getPricesPageContent,
 	});
 
-	const CommercialServicesMenuLinks = await getCommercialServicesMenu();
 	const themesOptionsContent = await getThemesOptionsContent();
+	const CommercialServicesMenuLinks = await getCommercialServicesMenu();
 	const IndividualServicesMenuLinks = await getIndividualServicesMenu();
 
 	return {

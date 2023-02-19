@@ -304,8 +304,8 @@ export async function getStaticProps() {
 		query: getSpaPageContent,
 	});
 
-	const CommercialServicesMenuLinks = await getCommercialServicesMenu();
 	const themesOptionsContent = await getThemesOptionsContent();
+	const CommercialServicesMenuLinks = await getCommercialServicesMenu();
 	const IndividualServicesMenuLinks = await getIndividualServicesMenu();
 
 	return {
