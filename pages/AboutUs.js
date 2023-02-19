@@ -124,11 +124,11 @@ const aboutUs = ({
 					Image={aboutUsPageContent?.signUp?.image}
 				/>
 
-				<section className="text-grey body-font">
-					<div className="container px-5 py-24 mx-auto flex flex-wrap">
-						<div className="flex flex-wrap w-full">
-							<div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
-								<div className="flex relative pb-12">
+				<section className="py-24 px-5 px-4 lg:px-0">
+					<div className="container mx-auto">
+						<div className="flex flex-col lg:flex-row w-full">
+							<div className="w-full lg:w-1/2 lg:pr-10 py-6">
+								<div className="flex flex-row items-center justify-center relative pb-12">
 									<div className="h-full w-10 absolute inset-0 flex items-center justify-center">
 										<div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
 									</div>
@@ -155,7 +155,7 @@ const aboutUs = ({
 										</p>
 									</div>
 								</div>
-								<div className="flex relative pb-12">
+								<div className="flex flex-row items-center justify-center relative pb-12">
 									<div className="h-full w-10 absolute inset-0 flex items-center justify-center">
 										<div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
 									</div>
@@ -182,7 +182,7 @@ const aboutUs = ({
 										</p>
 									</div>
 								</div>
-								<div className="flex relative pb-12">
+								<div className="flex flex-row items-center justify-center relative pb-12">
 									<div className="h-full w-10 absolute inset-0 flex items-center justify-center">
 										<div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
 									</div>
@@ -210,7 +210,7 @@ const aboutUs = ({
 										</p>
 									</div>
 								</div>
-								<div className="flex relative pb-12">
+								<div className="flex flex-row items-center justify-center relative pb-12">
 									<div className="h-full w-10 absolute inset-0 flex items-center justify-center">
 										<div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
 									</div>
@@ -238,7 +238,7 @@ const aboutUs = ({
 										</p>
 									</div>
 								</div>
-								<div className="flex relative">
+								<div className="flex flex-row items-center justify-center relative">
 									<div className="flex-shrink-0 w-10 h-10 rounded-full bg-pink inline-flex items-center justify-center text-white relative z-10">
 										<svg
 											fill="none"
@@ -265,7 +265,7 @@ const aboutUs = ({
 								</div>
 							</div>
 							<img
-								className="w-full lg:w-3/5 md:w-1/2 h-[750px] object-cover object-center rounded-lg md:mt-0 mt-12"
+								className="w-full lg:w-1/2 h-[750px] object-cover object-center rounded-lg md:mt-0 mt-12"
 								src="https://mydummysite.co.uk/ToddLearning/wp-content/uploads/2023/01/pexels-polina-tankilevitch-7741615-two.jpg"
 								alt="step"
 							/>

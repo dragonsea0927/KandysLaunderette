@@ -7,7 +7,7 @@ const BlogsTwo = (props) => {
 		<section className="py-20 px-4 lg:px-0 overflow-hidden">
 			<div className="container mx-auto px-0">
 				<div className="flex flex-wrap items-center -mx-4 mb-16">
-					<div className="w-full xl:w-2/3 px-4 mb-8 xl:mb-0 flex flex-col justify-center">
+					<div className="w-full lg:w-2/3 px-4 mb-8 xl:mb-0 flex flex-col justify-center">
 						<span className="text-sm font-semibold uppercase text-pink text-center lg:text-left">
 							Operational Insights
 						</span>
@@ -15,9 +15,9 @@ const BlogsTwo = (props) => {
 							Our Latest News and Articles
 						</h2>
 					</div>
-					<div className="w-full xl:w-auto ml-auto px-4 xl:text-right">
+					<div className="w-full mx-auto lg:w-auto ml-auto px-4 lg:text-right flex justify-center items-center ">
 						<Link href={`/Blogs`} target={``}>
-							<a className="inline-block w-full sm:w-auto py-4 px-6 text-center font-[400] text-base text-darkGrey hover:text-pink border border-darkGrey hover:border-pink rounded-lg  transition-all ease-in-out duration-[0.5s]">
+							<a className="inline-block w-[fit-content] lg:w-auto py-4 px-6 text-center font-[400] text-base text-darkGrey hover:text-pink border border-darkGrey hover:border-pink rounded-lg  transition-all ease-in-out duration-[0.5s]">
 								Check all posts
 							</a>
 						</Link>
