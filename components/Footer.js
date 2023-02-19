@@ -175,8 +175,8 @@ const Footer = (props) => {
 									<a>Privacy Policy</a>
 								</Link>
 								<div> | </div>
-								<Link href="/Accessibility" target="blank">
-									<a>Accessibility</a>
+								<Link href="/Sustainability" target="blank">
+									<a>Sustainability</a>
 								</Link>
 							</ul>
 							<div>

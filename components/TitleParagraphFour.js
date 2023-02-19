@@ -11,10 +11,10 @@ const TitleParagraphFour = (props) => {
 		let contentStyling;
 		if (isParagraphContent === null) {
 			contentStyling =
-				"hidden w-full lg:max-w-[75rem] mx-auto mt-4 py-8 px-4 text-darkGrey text-left text-medium";
+				"hidden w-full lg:max-w-[75rem] mx-auto mt-4 py-8 text-darkGrey text-left text-medium";
 		} else {
 			contentStyling =
-				"block w-full lg:max-w-[75rem] mx-auto mt-4 py-8 px-4 text-darkGrey text-left text-medium";
+				"block w-full lg:max-w-[75rem] mx-auto mt-4 py-8 text-darkGrey text-left text-medium";
 		}
 		return contentStyling;
 	}
@@ -30,6 +30,9 @@ const TitleParagraphFour = (props) => {
 			<div className="container mx-auto p-0">
 				<div className="flex flex-col px-4">
 					<motion.div variants={fadeInUp} className="py-16 sm:py-20 md:py-28">
+						<h2 className="text-black text-center tracking-normal leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl">
+							{props?.title}
+						</h2>
 						<div
 							className={isParagraphContent(props?.paragraph)}
 							dangerouslySetInnerHTML={createParagraphMarkup(props?.paragraph)}
