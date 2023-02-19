@@ -3,7 +3,6 @@ import Image from "next/image";
 import {motion} from "framer-motion";
 import DOMPurify from "isomorphic-dompurify";
 import {fadeIn, fadeInUp} from "../../animations/animations";
-import styles from "../../styles/components/TextImage.module.scss";
 
 const TextImageCard = (props) => {
 	/* Check if paragraph content is null
@@ -50,7 +49,7 @@ const TextImageCard = (props) => {
 	}
 
 	return (
-		<div className="flex flex-col lg:flex-row py-10 px-4 my-4 gap-16 justify-center items-center">
+		<div className="flex flex-col lg:flex-row bg-white rounded-xl py-10 px-4 my-4 gap-16 justify-center items-center">
 			<motion.div
 				variants={fadeIn}
 				className="px-0 xl:px-10 w-full lg:w-1/2"
