@@ -61,9 +61,9 @@ const ImageTextBulletPoints = (props) => {
 							height={550}
 							objectFit="cover"
 							objectPosition="center"
+							className={styles.Image}
 							src={`${props?.Image?.sourceUrl}`}
 							alt={`${props?.Image?.altText} Image`}
-							className="w-full h-[550px] object-cover object-center"
 						/>
 					</motion.div>
 					<motion.div variants={fadeInUp} className="px-4 lg:px-0">
