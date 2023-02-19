@@ -54,7 +54,9 @@ export default async function handler(req, res) {
 				...generateEmailContent(body),
 				bcc: "toddowenmpeli@rocketmail.com",
 				replyTo: body.email,
-				subject: `New enquiry for ${body.subject}`,
+				subject: `${
+					body.subject ? `New enquiry for ${body.subject}` : "Feedback Form"
+				}`,
 				text: "This is a test string",
 				html: `<strong>Name:</strong> ${body.firstName} ${body.lastName}<br/>
 					<strong>Email:</strong> ${body.email}<br/>
