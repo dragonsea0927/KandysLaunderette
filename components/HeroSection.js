@@ -213,7 +213,7 @@ const HeroSection = (props) => {
 					</motion.h1>
 				</div>
 				<div className="flex flex-col">
-					<div className="p-6 bg-pink">
+					<div className="p-6 m-4 bg-pink rounded-lg">
 						<div className="container mx-auto">
 							<div className="flex flex-col items-center justify-between lg:flex-row">
 								<div className="flex flex-col justify-center">
