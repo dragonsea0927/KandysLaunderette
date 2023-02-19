@@ -27,4 +27,16 @@
 			text-transform: uppercase;
 		}
 	}
+
+	ul {
+		gap: 0.5rem;
+		display: flex;
+		flex-direction: column;
+		padding-left: 2.5rem;
+
+		li {
+			list-style: disc;
+			list-style-type: disc;
+		}
+	}
 }

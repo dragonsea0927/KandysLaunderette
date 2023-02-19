@@ -286,11 +286,6 @@ export async function getStaticProps() {
 								title
 								paragraph
 								paragraphBottom
-								buttonLink {
-									url
-									title
-									target
-								}
 							}
 						}
 					}

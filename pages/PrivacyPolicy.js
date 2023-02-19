@@ -14,11 +14,11 @@ import ContactFormMap from "../components/ContactFormMap";
 import HeroSectionFour from "../components/HeroSectionFour";
 import TitleParagraphFour from "../components/TitleParagraphFour";
 
-const TermsConditions = ({
+const PrivacyPolicy = ({
 	seo,
 	pageTitle,
 	themesOptionsContent,
-	termsConditionsPageContent,
+	privacyPolicyPageContent,
 	IndividualServicesMenuLinks,
 	CommercialServicesMenuLinks,
 }) => {
@@ -36,13 +36,13 @@ const TermsConditions = ({
 			<main>
 				{/* <!--===== HERO =====--> */}
 				<HeroSectionFour
-					title={termsConditionsPageContent?.heroSection?.title}
-					paragraph={termsConditionsPageContent?.heroSection?.paragraph}
+					title={privacyPolicyPageContent?.heroSection?.title}
+					paragraph={privacyPolicyPageContent?.heroSection?.paragraph}
 					backgroundImage={
-						termsConditionsPageContent?.heroSection?.backgroundImage?.sourceUrl
+						privacyPolicyPageContent?.heroSection?.backgroundImage?.sourceUrl
 					}
 					displayPaymentInfo={
-						termsConditionsPageContent?.heroSection?.displayPaymentInfo
+						privacyPolicyPageContent?.heroSection?.displayPaymentInfo
 					}
 					CommercialServicesMenuLinks={
 						CommercialServicesMenuLinks?.CommercialServicesMenuLinks
@@ -54,16 +54,16 @@ const TermsConditions = ({
 
 				{/* <!--===== TITLE PARAGRAPH =====--> */}
 				<TitleParagraphFour
-					title={termsConditionsPageContent?.titleParagraph?.title}
-					paragraph={termsConditionsPageContent?.titleParagraph?.paragraph}
+					title={privacyPolicyPageContent?.titleParagraph?.title}
+					paragraph={privacyPolicyPageContent?.titleParagraph?.paragraph}
 				/>
 
 				{/* <!--===== CONTACT US MAP =====--> */}
 				<ContactFormMap
-					title={termsConditionsPageContent?.contactUs?.title}
-					paragraph={termsConditionsPageContent?.contactUs?.paragraph}
-					buttonLink={termsConditionsPageContent?.contactUs?.buttonLink}
-					paragraphTwo={termsConditionsPageContent?.contactUs?.paragraphBottom}
+					title={privacyPolicyPageContent?.contactUs?.title}
+					paragraph={privacyPolicyPageContent?.contactUs?.paragraph}
+					buttonLink={privacyPolicyPageContent?.contactUs?.buttonLink}
+					paragraphTwo={privacyPolicyPageContent?.contactUs?.paragraphBottom}
 				/>
 			</main>
 
@@ -79,19 +79,19 @@ const TermsConditions = ({
 	);
 };
 
-export default TermsConditions;
+export default PrivacyPolicy;
 
 export async function getStaticProps() {
-	const getTermsConditionsPageContent = gql`
+	const getPrivacyPolicyPageContent = gql`
 		{
-			pageTitle: pages(where: {id: 3805, status: PUBLISH}) {
+			pageTitle: pages(where: {id: 3893, status: PUBLISH}) {
 				edges {
 					node {
 						title
 					}
 				}
 			}
-			mainContent: pages(where: {id: 3805, status: PUBLISH}) {
+			mainContent: pages(where: {id: 3893, status: PUBLISH}) {
 				edges {
 					node {
 						seo {
@@ -123,7 +123,7 @@ export async function getStaticProps() {
 								mediaItemUrl
 							}
 						}
-						TermsConditionsPage {
+						PrivacyPolicyPage {
 							heroSection {
 								title
 								paragraph
@@ -149,7 +149,7 @@ export async function getStaticProps() {
 	`;
 
 	const response = await client.query({
-		query: getTermsConditionsPageContent,
+		query: getPrivacyPolicyPageContent,
 	});
 
 	const themesOptionsContent = await getThemesOptionsContent();
@@ -163,8 +163,8 @@ export async function getStaticProps() {
 			IndividualServicesMenuLinks,
 			pageTitle: response?.data?.pageTitle?.edges[0]?.node?.title,
 			seo: response?.data?.mainContent?.edges[0]?.node?.seo,
-			termsConditionsPageContent:
-				response?.data?.mainContent?.edges[0]?.node?.TermsConditionsPage,
+			privacyPolicyPageContent:
+				response?.data?.mainContent?.edges[0]?.node?.PrivacyPolicyPage,
 		},
 		revalidate: 60,
 	};
