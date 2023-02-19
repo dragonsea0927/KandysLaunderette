@@ -58,7 +58,11 @@ export default async function handler(req, res) {
 					body.subject ? `New enquiry for ${body.subject}` : "Feedback Form"
 				}`,
 				text: "This is a test string",
-				html: `<strong>Name:</strong> ${body.firstName} ${body.lastName}<br/>
+				html: `<strong>Name:</strong> ${
+					(body.firstName, body.lastName)
+						? `${body.firstName} ${body.lastName}`
+						: `${body.fullName}`
+				}<br/>
 					<strong>Email:</strong> ${body.email}<br/>
 					<strong>Message:</strong> ${body.message}`,
 			});
