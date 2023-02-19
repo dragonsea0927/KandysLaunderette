@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import React, {useState} from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {motion} from "framer-motion";
+import React, {useState} from "react";
 import {sendContactForm} from "../lib/api";
 import DOMPurify from "isomorphic-dompurify";
 import {useFormik, Formik, Field, Form} from "formik";
@@ -71,8 +71,6 @@ const ContactForm = (props) => {
 
 		return errors;
 	};
-
-	console.log();
 
 	/* Contact Form Fields
 	And Initial Values */

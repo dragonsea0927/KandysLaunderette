@@ -35,18 +35,18 @@ export default async function handler(req, res) {
 	if (req.method === "POST") {
 		const body = JSON.parse(req.body);
 
-		if (
-			!body?.firstName ||
-			!body?.lastName ||
-			!body?.email ||
-			!body?.subject ||
-			!body?.message
-		) {
-			return res.status(400).json({
-				status: "error",
-				message: "Bad request. Values input are undefined please try again.",
-			});
-		}
+		// if (
+		// 	!body?.firstName ||
+		// 	!body?.lastName ||
+		// 	!body?.email ||
+		// 	!body?.subject ||
+		// 	!body?.message
+		// ) {
+		// 	return res.status(400).json({
+		// 		status: "error",
+		// 		message: "Bad request. Values input are undefined please try again.",
+		// 	});
+		// }
 
 		try {
 			await transporter.sendMail({
