@@ -52,6 +52,9 @@ const services = ({
 				IndividualServicesMenuLinks={
 					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
 				}
+				CommercialServicesMenuLinks={
+					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
+				}
 			/>
 
 			<main>

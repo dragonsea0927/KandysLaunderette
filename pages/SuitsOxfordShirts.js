@@ -25,8 +25,8 @@ import ImageTextBulletPoints from "../components/ImageTextBulletPoints";
 const SuitsOxfordShirts = ({
 	seo,
 	pageTitle,
-	CommercialServicesMenuLinks,
 	themesOptionsContent,
+	CommercialServicesMenuLinks,
 	IndividualServicesMenuLinks,
 	suitsOxfordShirtsPageContent,
 }) => {
@@ -45,6 +45,9 @@ const SuitsOxfordShirts = ({
 			<Navbar
 				IndividualServicesMenuLinks={
 					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
+				}
+				CommercialServicesMenuLinks={
+					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
 				}
 			/>
 

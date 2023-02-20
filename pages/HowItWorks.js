@@ -14,7 +14,6 @@ import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
 import Blogs from "../components/Blogs";
 import SignUp from "../components/SignUp";
-import BlogsTwo from "../components/BlogsTwo";
 import MetaTag from "../components/Meta/MetaTag";
 import OurProcess from "../components/OurProcess";
 import StoreLocation from "/components/storeLocation";
@@ -51,6 +50,9 @@ const HowItWorks = ({
 			<Navbar
 				IndividualServicesMenuLinks={
 					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
+				}
+				CommercialServicesMenuLinks={
+					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
 				}
 			/>
 

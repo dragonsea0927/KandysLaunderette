@@ -30,6 +30,9 @@ const noPageExits = ({
 				IndividualServicesMenuLinks={
 					IndividualServicesMenuLinks?.IndividualServicesMenuLinks
 				}
+				CommercialServicesMenuLinks={
+					CommercialServicesMenuLinks?.CommercialServicesMenuLinks
+				}
 			/>
 
 			<main>

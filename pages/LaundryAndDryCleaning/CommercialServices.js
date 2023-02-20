@@ -15,7 +15,6 @@ import {fadeInUp, fadeIn, stagger} from "../../animations/animations";
 import BusinessServicesListDB from "/lib/IndividualServicesListDB.json";
 
 // Components
-import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
 import MetaTag from "../../components/Meta/MetaTag";
 import ContactBanner from "/components/ContactBanner";
@@ -25,8 +24,8 @@ import HeroSectionFour from "../../components/HeroSectionFour";
 const commercialServices = ({
 	seo,
 	pageTitle,
-	CommercialServicesMenuLinks,
 	themesOptionsContent,
+	CommercialServicesMenuLinks,
 	IndividualServicesMenuLinks,
 	commercialServicesPageContent,
 }) => {
