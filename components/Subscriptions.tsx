@@ -10,7 +10,6 @@ interface IProps {
 			card: {
 				id: string;
 				tier: string;
-				title: string;
 				price: string;
 				paragraph: string;
 				billingInfo: string;
@@ -58,8 +57,8 @@ const Subscriptions: FunctionComponent<IProps> = ({
 	let iterationCount: number = 1;
 
 	return (
-		<section className="pt-24 pb-32 bg-lightGrey overflow-hidden">
-			<div className="container mx-auto px-0">
+		<section className="pt-24 pb-32 overflow-hidden bg-lightGrey">
+			<div className="container px-0 mx-auto">
 				<div className="max-w-[75rem] mx-auto mb-28 flex flex-col justify-between m-4">
 					<h2 className="font-[600] text-black text-center text-2xl sm:text-3xl lg:text-5xl py-8">
 						{title}
@@ -69,12 +68,11 @@ const Subscriptions: FunctionComponent<IProps> = ({
 						dangerouslySetInnerHTML={createParagraphMarkup(paragraph)}
 					/>
 				</div>
-				<div className="flex flex-col md:grid md:grid-cols-2 mt-10 xl:flex xl:flex-row gap-8 overflow-hidden rounded-lg">
+				<div className="flex flex-col gap-8 mt-10 overflow-hidden rounded-lg md:grid md:grid-cols-2 xl:flex xl:flex-row">
 					{subscriptionsGrid.map((keys) => (
 						<SubscriptionsCard
 							key={keys?.card?.id}
 							tier={keys?.card?.tier}
-							title={keys?.card?.title}
 							price={keys?.card?.price}
 							points={keys?.card?.points}
 							buttonLink={keys?.card?.buttonLink}
