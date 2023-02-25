@@ -144,7 +144,10 @@ const ContactFormMap: FunctionComponent<IProps> = ({
 						</motion.div>
 					) : null}
 
-					<Formik>
+					<Formik
+						initialValues={formik?.initialValues}
+						onSubmit={formik?.onSubmit}
+					>
 						<motion.div variants={stagger}>
 							<motion.div variants={fadeInUp} className="relative mb-4">
 								{formik.touched.fullName && formik.errors.fullName ? (
@@ -208,7 +211,7 @@ const ContactFormMap: FunctionComponent<IProps> = ({
 							</motion.div>
 							<motion.button
 								variants={fadeInUp}
-								isLoading={isLoading}
+								// isLoading={isLoading}
 								onClick={formik.handleSubmit}
 								disabled={
 									!formik.values.fullName ||
