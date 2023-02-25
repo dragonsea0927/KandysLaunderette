@@ -15,7 +15,7 @@ import ContactForm from "../components/ContactForm";
 import HeroSectionFour from "../components/HeroSectionFour";
 import ImageTextBulletPoints from "../components/ImageTextBulletPoints";
 
-const contactUs = ({
+const ContactUs = ({
 	seo,
 	pageTitle,
 	contactUsPageContent,
@@ -222,4 +222,4 @@ export async function getStaticProps() {
 	};
 }
 
-export default contactUs;
+export default ContactUs;

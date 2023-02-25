@@ -67,7 +67,7 @@ const Navbar: FunctionComponent<IProps> = ({
 						</div>
 						<ul className="hidden my-auto py-3 lg:flex justify-center gap-8 text-sm text-black">
 							<Link
-								href="/HowItWorks"
+								href="https://mydummysite.co.uk/ToddLearning/HowItWorks"
 								className="text-black text-base text-left font-[400] tracking-[0.05rem] hover:text-fadedPinkThree transition-all ease-in-out duration-[0.5s]"
 							>
 								How it works
@@ -75,7 +75,7 @@ const Navbar: FunctionComponent<IProps> = ({
 							<div className="relative menuLink ">
 								<span className="flex flex-row justify-center items-center gap-2 ">
 									<Link
-										href="/Services"
+										href="https://mydummysite.co.uk/ToddLearning/Services"
 										className="text-black text-base text-left font-[400] tracking-[0.05rem] hover:text-fadedPinkThree transition-all ease-in-out duration-[0.5s]"
 									>
 										Services
@@ -96,7 +96,7 @@ const Navbar: FunctionComponent<IProps> = ({
 											<div className="hover:rounded-t-lg hover:bg-fadedPink transition-all ease-in-out duration-[0.5s]">
 												<span className="flex flex-row py-3 px-6 justify-center items-center">
 													<Link
-														href="/LaundryAndDryCleaning/IndividualService"
+														href="https://mydummysite.co.uk/ToddLearning/LaundryAndDryCleaning/IndividualService"
 														className="w-full text-white text-base text-left font-[400] tracking-[0.05rem]"
 													>
 														Individual Services
@@ -129,7 +129,7 @@ const Navbar: FunctionComponent<IProps> = ({
 											<div className="hover:rounded-b-lg hover:bg-fadedPink transition-all ease-in-out duration-[0.5s]">
 												<span className="flex flex-row py-3 px-6 justify-center items-center">
 													<Link
-														href="/LaundryAndDryCleaning/CommercialServices"
+														href="https://mydummysite.co.uk/ToddLearning/LaundryAndDryCleaning/CommercialServices"
 														className="w-full text-white text-base text-left font-[400] tracking-[0.05rem]"
 													>
 														Commercial Services
@@ -161,13 +161,13 @@ const Navbar: FunctionComponent<IProps> = ({
 								) : null}
 							</div>
 							<Link
-								href="/Prices"
+								href="https://mydummysite.co.uk/ToddLearning/Prices"
 								className="text-black text-base text-left font-[400] tracking-[0.05rem] hover:text-fadedPinkThree transition-all ease-in-out duration-[0.5s]"
 							>
 								Prices
 							</Link>
 							<Link
-								href="/AboutUs"
+								href="https://mydummysite.co.uk/ToddLearning/AboutUs"
 								className="text-black text-base text-left font-[400] tracking-[0.05rem] hover:text-fadedPinkThree transition-all ease-in-out duration-[0.5s]"
 							>
 								About us
@@ -176,7 +176,7 @@ const Navbar: FunctionComponent<IProps> = ({
 					</div>
 					<div className="hidden md:flex justify-center items-center gap-4">
 						<Link
-							href="/HowItWorks"
+							href="https://mydummysite.co.uk/ToddLearning/HowItWorks"
 							className="my-auto px-2 text-base tracking-[0.05rem] text-black hover:text-fadedPink transition-all ease-in-out duration-[0.5s]"
 						>
 							Log in

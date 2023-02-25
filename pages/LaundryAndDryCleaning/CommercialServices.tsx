@@ -21,7 +21,7 @@ import ContactBanner from "../../components/ContactBanner";
 import TitleParagraph from "../../components/TitleParagraph";
 import HeroSectionFour from "../../components/HeroSectionFour";
 
-const commercialServices = ({
+const CommercialServices = ({
 	seo,
 	pageTitle,
 	themesOptionsContent,
@@ -71,7 +71,7 @@ const commercialServices = ({
 					<div className={styles.mainContent}>
 						<div>
 							<div className={styles.previousButton}>
-								<Link href="/LaundryDryCleaning">
+								<Link href="https://mydummysite.co.uk/ToddLearning/LaundryDryCleaning">
 									<i className="bi bi-arrow-left-circle"></i>
 								</Link>
 							</div>
@@ -613,4 +613,4 @@ export async function getStaticProps() {
 	};
 }
 
-export default commercialServices;
+export default CommercialServices;

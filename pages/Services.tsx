@@ -27,7 +27,7 @@ import TitleGridContentTwo from "../components/TitleGridContentTwo";
 import ImageTextBulletPoints from "../components/ImageTextBulletPoints";
 import TwitterTestimonialGrid from "../components/TwitterTestimonialGrid";
 
-const services = ({
+const Services = ({
 	seo,
 	pageTitle,
 	latestTwoPosts,
@@ -510,4 +510,4 @@ export async function getStaticProps() {
 	};
 }
 
-export default services;
+export default Services;

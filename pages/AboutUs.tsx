@@ -23,7 +23,7 @@ import HeroSectionFour from "../components/HeroSectionFour";
 import TitleParagraphImage from "../components/TitleParagraphImage";
 import TitleParagraphThree from "../components/TitleParagraphThree";
 
-const aboutUs = ({
+const AboutUs = ({
 	seo,
 	pageTitle,
 	latestThreePosts,
@@ -293,7 +293,7 @@ const aboutUs = ({
 				<ContactFormMap
 					title={`Feedback`}
 					paragraph={`<p>Post-ironic portland shabby chic echo park, banjo fashion axe</p>`}
-					paragraphBottom={`<p>This site is protected by reCAPTCHA and the Google <a href="/PrivacyPolicy">Privacy Policy</a> &amp; <a href="/TermsOfService">Terms of Service</a>.</p>`}
+					paragraphBottom={`<p>This site is protected by reCAPTCHA and the Google <a href="https://mydummysite.co.uk/ToddLearning/PrivacyPolicy">Privacy Policy</a> &amp; <a href="/TermsOfService">Terms of Service</a>.</p>`}
 				/>
 			</main>
 
@@ -310,7 +310,7 @@ const aboutUs = ({
 };
 
 // Removes Global Navbar & Adds Custom Header and Footer Page layout Function
-aboutUs.getLayout = function PageLayout(page) {
+AboutUs.getLayout = function PageLayout(page) {
 	return (
 		<>
 			{/* <!--===== ONE TIME CUSTOM PAGE CONTENT =====--> */}
@@ -489,4 +489,4 @@ export async function getStaticProps() {
 	};
 }
 
-export default aboutUs;
+export default AboutUs;
