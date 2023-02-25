@@ -8,7 +8,7 @@ This projects is constructed solely with Next.js - featuring, Bootstrap 5, JSON,
 
 1. All images are in 4K resolution, click to enlarge for better viewing.
 
-<img src="/public/img/kandy's%20projects%20cover%20image%201.png" width="100%" height="700px">
+<Image src="/public/img/kandy's%20projects%20cover%20image%201.png" width="100%" height="700px">
 
 # Project Context
 
@@ -30,11 +30,11 @@ The main objective is to display the updated list of services provided by Kandy'
 
 1. All images are in 4K resolution, click to enlarge for better viewing.
 
-<img src="/public/img/Laptop%20View%20Screenshot%201.png" width="100%" height="625px">
+<Image src="/public/img/Laptop%20View%20Screenshot%201.png" width="100%" height="625px">
 
-<img src="/public/img/Laptop%20View%20Screenshot%202.png" width="100%" height="625px">
+<Image src="/public/img/Laptop%20View%20Screenshot%202.png" width="100%" height="625px">
 
-<img src="/public/img/Laptop%20View%20Screenshot%203.png" width="100%" height="625px">
+<Image src="/public/img/Laptop%20View%20Screenshot%203.png" width="100%" height="625px">
 
 # Lessons Learned
 
@@ -55,11 +55,11 @@ Although the website is fairly functional and provides the minimum viable produc
 
 1. All images are in 4K resolution, click to enlarge for better viewing.
 
-<img src="/public/img/Mobile%20View%20Screenshot%201.png" width="100%" height="850px">
+<Image src="/public/img/Mobile%20View%20Screenshot%201.png" width="100%" height="850px">
 
-<img src="/public/img/Mobile%20View%20Screenshot%202.png" width="100%" height="850px">
+<Image src="/public/img/Mobile%20View%20Screenshot%202.png" width="100%" height="850px">
 
-<img src="/public/img/Mobile%20View%20Screenshot%203.png" width="100%" height="850px">
+<Image src="/public/img/Mobile%20View%20Screenshot%203.png" width="100%" height="850px">
 
 # Potential Future Features
 
@@ -69,7 +69,7 @@ Although the website is fairly functional and provides the minimum viable produc
 
 # Deployment
 
-Deployed with vercel here: 
+Deployed with vercel here:
 
 a). https://kandys-launderette.vercel.app/
 
@@ -81,7 +81,7 @@ c). https://kandys-launderette-git-main-todd-owen-mpeli.vercel.app/
 
 1. All images are in 4K resolution, click to enlarge for better viewing.
 
-<img src="/public/img/Mobile%20View%20Screenshot.png" width="100%" height="350px">
+<Image src="/public/img/Mobile%20View%20Screenshot.png" width="100%" height="350px">
 
 ## Getting Started
 
