@@ -130,6 +130,8 @@ const ContactForm: FunctionComponent<IProps> = ({
 		},
 	});
 
+	console.log(formik);
+
 	return (
 		<section className="relative overflow-hidden">
 			<div className="container px-4 mx-auto lg:px-0">
@@ -210,7 +212,10 @@ const ContactForm: FunctionComponent<IProps> = ({
 				}}
 			>
 				<div className="container relative z-10 px-4 py-20 mx-auto lg:px-0">
-					<Formik>
+					<Formik
+						initialValues={formik?.initialValues}
+						onSubmit={formik?.onSubmit}
+					>
 						<Form
 							className="mx-auto bg-white rounded-lg px-11 pt-9 pb-11 bg-opacity-90 transition-all ease-in-out duration-[0.5s] md:max-w-xl shadow-12xl"
 							style={{backdropFilter: "blur(5px)"}}
@@ -334,7 +339,7 @@ const ContactForm: FunctionComponent<IProps> = ({
 								</motion.div>
 								<motion.button
 									variants={fadeInUp}
-									isLoading={isLoading}
+									// isLoading={isLoading}
 									onClick={formik.handleSubmit}
 									disabled={
 										!formik?.values?.firstName ||
