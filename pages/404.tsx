@@ -42,19 +42,19 @@ const noPageExits = ({
 										rgba(13, 23, 42, 0.45),
 										rgba(13, 23, 42, 0.45)
 									),
-									url("https://mydummysite.co.uk/ToddLearning/wp-content/uploads/2023/02/pexels-vlada-karpovich-7365299-scaled.jpg")`,
+									url("/wp-content/uploads/2023/02/pexels-vlada-karpovich-7365299-scaled.jpg")`,
 					}}
 				>
-					<div className="my-auto px-10 py-44 overflow-hidden">
-						<div className="container mx-auto p-0">
+					<div className="px-10 my-auto overflow-hidden py-44">
+						<div className="container p-0 mx-auto">
 							<h1 className="mb-4 text-5xl md:text-7xl text-white text-center font-[600] font-heading leading-tight">
 								Something went wrong!
 							</h1>
-							<p className="my-10 text-white text-center text-lg leading-relaxed md:max-w-md mx-auto">
+							<p className="mx-auto my-10 text-lg leading-relaxed text-center text-white md:max-w-md">
 								The page you are looking for is not found! Try something else or
 								go back to homepage.
 							</p>
-							<div className="md:max-w-max mx-auto flex flex-col justify-center items-center">
+							<div className="flex flex-col items-center justify-center mx-auto md:max-w-max">
 								<button type="button">
 									<Link href={`/`} target={``}>
 										<a className="py-4 px-6 lg:py-6 lg:px-20 flex flex-row font-[700] text-white text-base leading-4 bg-pink rounded-lg hover:bg-yellow transition-all ease-in-out duration-[0.5s]">

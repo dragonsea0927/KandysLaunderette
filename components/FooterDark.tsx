@@ -73,10 +73,10 @@ const FooterDark: FunctionComponent<IProps> = ({
 						<h2>
 							<strong>Services</strong>
 						</h2>
-						<Link href="https://mydummysite.co.uk/ToddLearning/LaundryAndDryCleaning/IndividualService">
+						<Link href="/LaundryAndDryCleaning/IndividualService">
 							Individual Services
 						</Link>
-						<Link href="https://mydummysite.co.uk/ToddLearning/LaundryAndDryCleaning/CommercialServices">
+						<Link href="/LaundryAndDryCleaning/CommercialServices">
 							Commercial Services
 						</Link>
 						{/* Menu Array from Wordpress */}
@@ -92,24 +92,12 @@ const FooterDark: FunctionComponent<IProps> = ({
 						<h2>
 							<strong>About Us</strong>
 						</h2>
-						<Link href="https://mydummysite.co.uk/ToddLearning/Services/#twitterTestimonial">
-							Customer Reviews
-						</Link>
-						<Link href="https://mydummysite.co.uk/ToddLearning/HowItWorks">
-							How It Works
-						</Link>
-						<Link href="https://mydummysite.co.uk/ToddLearning/Services">
-							Services
-						</Link>
-						<Link href="https://mydummysite.co.uk/ToddLearning/Prices">
-							Prices
-						</Link>
-						<Link href="https://mydummysite.co.uk/ToddLearning/AboutUs">
-							About Us
-						</Link>
-						<Link href="https://mydummysite.co.uk/ToddLearning/ContactUs">
-							Contact Us
-						</Link>
+						<Link href="/Services/#twitterTestimonial">Customer Reviews</Link>
+						<Link href="/HowItWorks">How It Works</Link>
+						<Link href="/Services">Services</Link>
+						<Link href="/Prices">Prices</Link>
+						<Link href="/AboutUs">About Us</Link>
+						<Link href="/ContactUs">Contact Us</Link>
 					</div>
 					<div className="flex flex-col mt-4 gap-x-3">
 						<h2>
@@ -124,14 +112,10 @@ const FooterDark: FunctionComponent<IProps> = ({
 						<h2>
 							<strong>Contact Us</strong>
 						</h2>
-						<Link href="https://mydummysite.co.uk/ToddLearning/ContactUs">
-							Opening Times
-						</Link>
+						<Link href="/ContactUs">Opening Times</Link>
 						<Link href={`mailto:${email}`}>{email}</Link>
 						<Link href={`tel:${phoneNumber}`}>{phoneNumber}</Link>
-						<Link href="https://mydummysite.co.uk/ToddLearning/ContactUs">
-							Help
-						</Link>
+						<Link href="/ContactUs">Help</Link>
 					</div>
 				</div>
 				<div className="mt-8 border-t-solid border-t-grey border-t-[0.05rem]">
@@ -153,17 +137,11 @@ const FooterDark: FunctionComponent<IProps> = ({
 					</div>
 					<div className="mb-4 border-solid border-t-[0.05rem] border-t-grey">
 						<ul className="flex flex-row items-center justify-center gap-4 py-4">
-							<Link href="https://mydummysite.co.uk/ToddLearning/TermsConditions">
-								Terms & Conditions
-							</Link>
+							<Link href="/TermsConditions">Terms & Conditions</Link>
 							<div> | </div>
-							<Link href="https://mydummysite.co.uk/ToddLearning/PrivacyPolicy">
-								Privacy Policy
-							</Link>
+							<Link href="/PrivacyPolicy">Privacy Policy</Link>
 							<div> | </div>
-							<Link href="https://mydummysite.co.uk/ToddLearning/Sustainability">
-								Sustainability
-							</Link>
+							<Link href="/Sustainability">Sustainability</Link>
 						</ul>
 						<div>
 							<h5 className="mt-8 mb-4 text-sm text-center text-black">

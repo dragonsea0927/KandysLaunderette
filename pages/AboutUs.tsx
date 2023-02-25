@@ -268,7 +268,7 @@ const AboutUs = ({
 								height={550}
 								className="w-full lg:w-1/2 h-[750px] object-cover object-center rounded-lg md:mt-0 mt-12"
 								alt="step"
-								src="https://mydummysite.co.uk/ToddLearning/wp-content/uploads/2023/01/pexels-polina-tankilevitch-7741615-two.jpg"
+								src="/wp-content/uploads/2023/01/pexels-polina-tankilevitch-7741615-two.jpg"
 							/>
 						</div>
 					</div>
@@ -293,7 +293,7 @@ const AboutUs = ({
 				<ContactFormMap
 					title={`Feedback`}
 					paragraph={`<p>Post-ironic portland shabby chic echo park, banjo fashion axe</p>`}
-					paragraphBottom={`<p>This site is protected by reCAPTCHA and the Google <a href="https://mydummysite.co.uk/ToddLearning/PrivacyPolicy">Privacy Policy</a> &amp; <a href="/TermsOfService">Terms of Service</a>.</p>`}
+					paragraphBottom={`<p>This site is protected by reCAPTCHA and the Google <a href="/PrivacyPolicy">Privacy Policy</a> &amp; <a href="/TermsOfService">Terms of Service</a>.</p>`}
 				/>
 			</main>
 

@@ -121,7 +121,7 @@ const HeroSectionFour: FunctionComponent<IProps> = ({
 								</Link>
 								<ul className="flex-row items-start justify-start hidden gap-6 py-8 lg:flex">
 									<Link
-										href="https://mydummysite.co.uk/ToddLearning/HowItWorks"
+										href="/HowItWorks"
 										className="my-auto px-2 text-base tracking-[0.05rem] text-white hover:text-fadedPink transition-all ease-in-out duration-[0.5s]"
 									>
 										How it works
@@ -129,7 +129,7 @@ const HeroSectionFour: FunctionComponent<IProps> = ({
 									<div className="relative menuLink ">
 										<span className="flex flex-row items-center justify-center">
 											<Link
-												href=" https://mydummysite.co.uk/ToddLearning/Services"
+												href=" /Services"
 												className="my-auto px-2 text-base tracking-[0.05rem] text-white hover:text-fadedPink transition-all ease-in-out duration-[0.5s]"
 											>
 												Services
@@ -150,7 +150,7 @@ const HeroSectionFour: FunctionComponent<IProps> = ({
 													<div className="hover:rounded-t-lg hover:bg-fadedPink transition-all ease-in-out duration-[0.5s]">
 														<span className="flex flex-row items-center justify-center px-6 py-3">
 															<Link
-																href="https://mydummysite.co.uk/ToddLearning/LaundryAndDryCleaning/IndividualService"
+																href="/LaundryAndDryCleaning/IndividualService"
 																className="w-full text-white text-base text-left font-[400] tracking-[0.05rem]"
 															>
 																Individual Services
@@ -183,7 +183,7 @@ const HeroSectionFour: FunctionComponent<IProps> = ({
 													<div className="hover:rounded-b-lg hover:bg-fadedPink transition-all ease-in-out duration-[0.5s]">
 														<span className="flex flex-row items-center justify-center px-6 py-3">
 															<Link
-																href="https://mydummysite.co.uk/ToddLearning/LaundryAndDryCleaning/CommercialServices"
+																href="/LaundryAndDryCleaning/CommercialServices"
 																className="w-full text-white text-base text-left font-[400] tracking-[0.05rem]"
 															>
 																Commercial Services
@@ -215,13 +215,13 @@ const HeroSectionFour: FunctionComponent<IProps> = ({
 										) : null}
 									</div>
 									<Link
-										href="https://mydummysite.co.uk/ToddLearning/Prices"
+										href="/Prices"
 										className="my-auto px-2 text-base tracking-[0.05rem] text-white hover:text-fadedPink transition-all ease-in-out duration-[0.5s]"
 									>
 										Prices
 									</Link>
 									<Link
-										href="https://mydummysite.co.uk/ToddLearning/AboutUs"
+										href="/AboutUs"
 										className="my-auto px-2 text-base tracking-[0.05rem] text-white hover:text-fadedPink transition-all ease-in-out duration-[0.5s]"
 									>
 										About us
