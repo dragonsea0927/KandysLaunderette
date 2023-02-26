@@ -2,7 +2,7 @@
 
 This is a [Next.js](https://nextjs.org/) project created with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). I developed this project as an alternative Static-Side Rendering project based on the previous Client-Side Rendering project, seen on my gihub as Kandy's Launderette website.
 
-This projects is developed solely with Next.js 13 - featuring, Typescript, Javascript, React 18, Tailwindcss, Framer-motion animation and a WordPress CMS API for content fetching.
+This projects is developed solely with Next.js 13 - featuring, Typescript, Javascript, React 18, Tailwindcss, Framer-motion animation and a Headless WordPress CMS API for content fetching.
 
 # Cover Screenshot
 
