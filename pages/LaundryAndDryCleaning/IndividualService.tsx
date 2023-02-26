@@ -67,8 +67,8 @@ const IndividualService = ({
 				/>
 
 				{/* // <========== PAGE TITLE ==========> */}
-				<section className="container py-20 mx-auto">
-					<div className={styles.mainContent}>
+				<section className="py-20 px-4 lg:px-0">
+					<div className="container px-0 mx-auto">
 						<div>
 							<div className={styles.previousButton}>
 								<Link href="/LaundryDryCleaning">
@@ -79,7 +79,7 @@ const IndividualService = ({
 								<motion.div variants={fadeIn} className={styles.subtitle}>
 									<h2>All Our Services</h2>
 								</motion.div>
-								<div className="flex flex-row">
+								<div className="flex flex-col items-start justify-between gap-4 lg:flex-row">
 									<div className="flex flex-col items-start justify-between gap-4 text-left w-full lg:w-[20%]">
 										<motion.div variants={stagger} className={styles.List}>
 											<h2>Suits</h2>
@@ -416,7 +416,7 @@ const IndividualService = ({
 										/>
 										<motion.div
 											variants={stagger}
-											className="flex flex-row items-center justify-between gap-4"
+											className="flex flex-col items-start justify-between gap-4 lg:flex-row items-center justify-between gap-4"
 										>
 											<motion.div
 												variants={fadeInUp}
@@ -495,7 +495,7 @@ const IndividualService = ({
 										/>
 										<motion.div
 											variants={stagger}
-											className="flex flex-row items-center justify-between gap-4"
+											className="flex flex-col items-start justify-between gap-4 lg:flex-row items-center justify-between gap-4"
 										>
 											<motion.div
 												variants={fadeInUp}
@@ -574,7 +574,7 @@ const IndividualService = ({
 										/>
 										<motion.div
 											variants={stagger}
-											className="flex flex-row items-center justify-between gap-4"
+											className="flex flex-col items-start justify-between gap-4 lg:flex-row items-center justify-between gap-4"
 										>
 											<motion.div
 												variants={fadeInUp}
@@ -655,7 +655,7 @@ const IndividualService = ({
 										/>
 										<motion.div
 											variants={stagger}
-											className="flex flex-row items-center justify-between gap-4"
+											className="flex flex-col items-start justify-between gap-4 lg:flex-row items-center justify-between gap-4"
 										>
 											<motion.div
 												variants={fadeInUp}

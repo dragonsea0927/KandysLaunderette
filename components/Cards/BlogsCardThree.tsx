@@ -17,7 +17,7 @@ const BlogsCardThree: FunctionComponent<IProps> = ({link, title, image}) => {
 	return (
 		<motion.div
 			variants={fadeIn}
-			className="relative flex-shrink-0 flex items-end w-72 sm:w-100 lg:w-[650px] h-[400px] p-8 mr-8"
+			className="relative flex-shrink-0 flex items-end w-full lg:w-[650px] h-[400px] p-4 lg:p-8 mr-0 lg:mr-8"
 		>
 			<div>
 				<Image
@@ -25,7 +25,7 @@ const BlogsCardThree: FunctionComponent<IProps> = ({link, title, image}) => {
 					height={550}
 					src={`${image?.sourceUrl}`}
 					alt={`${image?.altText} Image`}
-					className="absolute top-0 left-0 block object-cover w-full h-full rounded"
+					className="absolute top-0 left-0 block object-cover w-full h-full rounded-lg"
 				/>
 			</div>
 			<div className="relative">

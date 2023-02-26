@@ -18,11 +18,11 @@ const LogoCard: FunctionComponent<IProps> = ({image}) => {
 			className="w-full mx-auto md:w-1/2 lg:w-1/6 lg:mx-0"
 		>
 			<Image
-				width={400}
-				height={400}
+				width={550}
+				height={550}
 				alt={image?.altText}
 				src={`${image?.sourceUrl}`}
-				className="w-full h-[400] object-contain object center"
+				className="w-full h-[75px] sm:h-[200px] object-contain object center"
 			/>
 		</motion.div>
 	);

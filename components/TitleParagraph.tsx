@@ -3,7 +3,6 @@ import {motion} from "framer-motion";
 import {FunctionComponent} from "react";
 import DOMPurify from "isomorphic-dompurify";
 import fadeInUp from "../animations/animations";
-import styles from "../styles/components/TitleParagraph.module.scss";
 
 interface IProps {
 	title: string;
@@ -32,7 +31,7 @@ const TitleParagraph: FunctionComponent<IProps> = ({title, paragraph}) => {
 	}
 
 	return (
-		<section className={styles.titleParagraph}>
+		<section className="py-20 px-4 lg:px-0">
 			<div className="container p-0 mx-auto">
 				<motion.div variants={fadeInUp}>
 					<h2 className="text-black text-center tracking-normal leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl">

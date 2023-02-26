@@ -53,11 +53,11 @@ const SingleCardTwo: FunctionComponent<IProps> = ({
 				className="flex items-center justify-center w-full"
 			>
 				<Image
-					width={500}
-					height={500}
+					width={550}
+					height={550}
 					src={`${image?.sourceUrl}`}
 					alt={`${image?.altText} Image`}
-					className="w-full h-[500px] rounded-lg object-cover object-center"
+					className="w-full h-[400px] sm:h-[450px] rounded-lg object-cover object-center"
 				/>
 			</motion.div>
 			<motion.div variants={stagger} className="px-4 py-8">

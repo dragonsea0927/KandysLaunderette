@@ -81,23 +81,26 @@ const ImageTextBulletPoints: FunctionComponent<IProps> = ({
 	}
 
 	return (
-		<section style={{backgroundColor: backgroundColorHex}}>
-			<div className="container p-0 mx-auto">
+		<section
+			className="px-4 lg:px-0"
+			style={{backgroundColor: backgroundColorHex}}
+		>
+			<div className="container px-0 mx-auto">
 				<div className="flex flex-col-reverse items-center justify-center gap-20 lg:flex-row">
-					<motion.div variants={fadeIn} className="px-4 lg:px-0">
+					<motion.div variants={fadeIn} className="px-0">
 						<Image
 							width={550}
 							height={850}
 							src={`${image?.sourceUrl}`}
 							alt={`${image?.altText} Image`}
-							className="w-full h-full min-h-full max-h-[650px] lg:min-h-[650px] object-contain object-center"
+							className="w-full lg:w-[650px] h-[400px] sm:h-[500px] object-cover object-center"
 							style={{
 								clipPath:
 									"polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%)",
 							}}
 						/>
 					</motion.div>
-					<motion.div variants={fadeInUp} className="px-4 py-20 lg:px-0">
+					<motion.div variants={fadeInUp} className="px-4 py-20 px-0">
 						<h2
 							className={`py-8 w-full md:max-w-[35rem] mx-auto lg:mx-0 ${textColor} uppercase text-center lg:text-left leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl`}
 						>

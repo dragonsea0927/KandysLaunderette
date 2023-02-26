@@ -81,21 +81,21 @@ const TwoOptions: FunctionComponent<IProps> = ({title, paragraph, content}) => {
 			</motion.div>
 			<motion.div
 				variants={stagger}
-				className="flex flex-col items-center justify-between gap-4 px-4 lg:grid lg:grid-cols-2"
+				className="flex flex-col items-center justify-center lg:justify-between gap-2 lg:gap-4 px-4 lg:grid lg:grid-cols-2"
 			>
-				<div>
+				<div className="h-fit">
 					<Link href={`${content?.buttonLink?.url}`}>
 						<Image
-							width={1000}
-							height={1000}
-							className="w-[1000px] h-[1000px] rounded-lg object-cover object-center"
+							width={550}
+							height={550}
+							className="w-full h-[600px] rounded-lg object-cover object-center"
 							src={content?.image?.sourceUrl}
-							alt={`${content?.image?.altText} Image`}
+							alt={`${content?.image?.altText} image`}
 						/>
 					</Link>
 					<motion.div
 						variants={stagger}
-						className="relative px-4 ml-5 bottom-[140px]"
+						className="relative px-4 ml-0 sm:ml-5 bottom-[120px]"
 					>
 						<motion.h2
 							variants={fadeInUp}
@@ -114,19 +114,19 @@ const TwoOptions: FunctionComponent<IProps> = ({title, paragraph, content}) => {
 						</button>
 					</motion.div>
 				</div>
-				<div>
+				<div className="h-fit">
 					<Link href={`${content?.buttonLinkTwo?.url}`}>
 						<Image
-							width={1000}
-							height={1000}
-							className="w-[1000px] h-[1000px] rounded-lg object-cover object-center"
+							width={550}
+							height={550}
+							className="w-full h-[600px] rounded-lg object-cover object-center"
 							src={content?.imageTwo?.sourceUrl}
-							alt={`${content?.imageTwo?.altText} Image`}
+							alt={`${content?.imageTwo?.altText} image`}
 						/>
 					</Link>
 					<motion.div
 						variants={stagger}
-						className="relative px-4 ml-5 bottom-[140px]"
+						className="relative px-4 ml-0 sm:ml-5 bottom-[120px]"
 					>
 						<motion.h2
 							variants={fadeInUp}

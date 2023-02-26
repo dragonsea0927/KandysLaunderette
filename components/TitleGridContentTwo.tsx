@@ -51,7 +51,7 @@ const TitleGridContentTwo: FunctionComponent<IProps> = ({
 
 	return (
 		<section className={styles.titleGridContentTwo}>
-			<div className="container mx-auto p-0">
+			<div className="container p-0 mx-auto">
 				<div className="flex flex-col px-4">
 					<motion.div variants={fadeInUp} className="py-28">
 						<h2 className="text-white text-center tracking-normal leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl">
@@ -64,7 +64,7 @@ const TitleGridContentTwo: FunctionComponent<IProps> = ({
 					</motion.div>
 					<motion.div
 						variants={stagger}
-						className="mx-auto mb-8 grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4 px-0 gap-4 justify-center items-start"
+						className="grid items-start justify-center grid-cols-2 gap-2 px-4 mb-8 lg:px-0 lg:grid-cols-4 lg:gap-4"
 					>
 						{gridContent.map((keys) => (
 							<SingleCard

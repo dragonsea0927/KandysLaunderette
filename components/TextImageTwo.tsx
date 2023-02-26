@@ -59,11 +59,11 @@ const TextImageTwo: FunctionComponent<IProps> = ({
 						style={{display: leftImageDisplay}}
 					>
 						<Image
-							width={700}
-							height={600}
+							width={550}
+							height={550}
 							src={`${image?.sourceUrl}`}
 							alt={`${image?.altText} Image`}
-							className="w-full h-[600px] rounded-lg object-cover object-center"
+							className="w-full lg:w-[650px] h-[400px] sm:h-[500px] rounded-lg object-cover object-center"
 						/>
 					</motion.div>
 					<motion.div variants={fadeInUp} className="w-full md:w-1/2">
@@ -85,11 +85,11 @@ const TextImageTwo: FunctionComponent<IProps> = ({
 						style={{display: rightImageDisplay}}
 					>
 						<Image
-							width={700}
-							height={600}
+							width={550}
+							height={550}
 							src={`${image?.sourceUrl}`}
 							alt={`${image?.altText} Image`}
-							className="w-full h-[600px] rounded-lg object-cover object-center"
+							className="w-full lg:w-[650px] h-[400px] sm:h-[500px] rounded-lg object-cover object-center"
 						/>
 					</motion.div>
 				</div>

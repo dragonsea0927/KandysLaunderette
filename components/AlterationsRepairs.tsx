@@ -98,7 +98,7 @@ const AlterationsRepairs: FunctionComponent<IProps> = ({
 							height={550}
 							src={imageTwo?.sourceUrl}
 							alt={`${imageTwo?.altText} Image`}
-							className="w-full lg:w-[600px] h-[600px] object-cover rounded-lg transform hover:scale-105 transition ease-in-out duration-1000"
+							className="w-full lg:w-[650px] h-[400px] sm:h-[500px] object-cover object-center rounded-lg transform hover:scale-105 transition ease-in-out duration-1000"
 						/>
 						<motion.div variants={stagger} className="p-4">
 							<motion.h3
@@ -133,7 +133,7 @@ const AlterationsRepairs: FunctionComponent<IProps> = ({
 							height={550}
 							src={imageThree?.sourceUrl}
 							alt={`${imageThree?.altText} Image`}
-							className="w-full lg:w-[600px] h-[600px] object-cover rounded-lg transform hover:scale-105 transition ease-in-out duration-1000"
+							className="w-full lg:w-[650px] h-[400px] sm:h-[500px] object-cover object-center rounded-lg transform hover:scale-105 transition ease-in-out duration-1000"
 						/>
 					</div>
 				</div>

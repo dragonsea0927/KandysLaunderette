@@ -266,9 +266,9 @@ const AboutUs = ({
 							<Image
 								width={550}
 								height={550}
-								className="w-full lg:w-1/2 h-[750px] object-cover object-center rounded-lg md:mt-0 mt-12"
+								className="w-full lg:w-1/2 h-[450px] sm:h-[600px] object-cover object-center rounded-lg md:mt-0 mt-12"
 								alt="step"
-								src="/wp-content/uploads/2023/01/pexels-polina-tankilevitch-7741615-two.jpg"
+								src="https://mydummysite.co.uk/ToddLearning/wp-content/uploads/2023/01/pexels-cottonbro-studio-4880404-min-scaled.jpg"
 							/>
 						</div>
 					</div>

@@ -87,7 +87,7 @@ const TitleGridContent: FunctionComponent<IProps> = ({
 				</div>
 				<motion.div
 					variants={stagger}
-					className="grid items-start justify-center grid-cols-2 gap-2 px-0 mb-8 lg:grid-cols-4 lg:gap-4"
+					className="grid items-start justify-center grid-cols-2 gap-2 px-4 mb-8 lg:px-0 lg:grid-cols-4 lg:gap-4"
 				>
 					{gridContent.map((keys) => (
 						<SingleCard

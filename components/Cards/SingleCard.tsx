@@ -27,7 +27,7 @@ const SingleCard: FunctionComponent<IProps> = ({buttonLink, image, title}) => {
 					height={550}
 					alt={image?.altText}
 					src={`${image?.sourceUrl}`}
-					className="w-full h-[350px] rounded-lg object-cover object-center"
+					className="w-full h-[200px] sm:h-[350px] rounded-lg object-cover object-center"
 				/>
 			</Link>
 			<div className="my-4 text-black text-center text-base font-[400]">

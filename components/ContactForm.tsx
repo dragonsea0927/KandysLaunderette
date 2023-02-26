@@ -148,11 +148,11 @@ const ContactForm: FunctionComponent<IProps> = ({
 						<div className="w-full p-0 lg:w-1/2 lg:p-8">
 							<div className="mx-auto overflow-hidden max-w-max rounded-3xl">
 								<Image
-									width={800}
-									height={800}
+									width={550}
+									height={550}
 									src={`${image?.sourceUrl}`}
 									alt={`${image?.altText} Image`}
-									className="w-full h-[400px] transition duration-1000 ease-in-out transform hover:scale-105"
+									className="w-full h-[400px] object-cover object-contain transition duration-1000 ease-in-out transform hover:scale-105"
 								/>
 							</div>
 						</div>

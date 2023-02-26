@@ -25,14 +25,14 @@ const ProfileCard: FunctionComponent<IProps> = ({
 	jobPosition,
 }) => {
 	return (
-		<div className="w-full px-0 my-3 lg:w-1/4 lg:p-3">
+		<div className="w-full lg:w-1/4">
 			<div className="relative h-full mx-auto overflow-hidden rounded-lg max-w-max">
 				<Image
 					width={550}
 					height={550}
 					src={`${image?.sourceUrl}`}
 					alt={`${image?.altText} Image`}
-					className="object-cover w-full h-full transition duration-1000 ease-in-out transform hover:scale-105"
+					className="w-[650px] h-[500px] object-cover object-center transition duration-1000 ease-in-out transform hover:scale-105"
 				/>
 				<div className="absolute bottom-0 left-0 w-full p-2">
 					<div

@@ -43,7 +43,7 @@ const Logos: FunctionComponent<IProps> = ({
 				<div className="max-w-6xl mx-auto">
 					<motion.div
 						variants={stagger}
-						className="flex flex-col items-center justify-center gap-4 sm:grid sm:grid-cols-2 lg:grid lg:grid-cols-5 lg:justify-between gap-y-8"
+						className="items-center justify-center gap-6 lg:gap-4 grid grid-cols-2 lg:grid-cols-5 lg:justify-between gap-y-8"
 					>
 						{logoGrid.map((keys) => (
 							<LogoCardTwo key={keys?.id} image={keys?.image} />

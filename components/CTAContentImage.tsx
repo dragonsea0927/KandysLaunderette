@@ -154,11 +154,11 @@ const CTAContentImage: FunctionComponent<IProps> = ({
 					<div className="w-full md:w-1/2">
 						<div className="max-w-max mx-auto overflow-hidden">
 							<Image
-								width={500}
-								height={350}
+								width={550}
+								height={550}
 								src={`${image?.sourceUrl}`}
 								alt={`${image?.altText} Image`}
-								className="w-full h-[750px] rounded-lg transform hover:scale-105 transition ease-in-out duration-1000"
+								className="w-full h-[400px] lg:h-[650px] object-cover object-center rounded-lg transform hover:scale-105 transition ease-in-out duration-1000"
 							/>
 						</div>
 					</div>

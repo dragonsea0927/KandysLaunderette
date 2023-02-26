@@ -121,7 +121,7 @@ const BlogBanner: FunctionComponent<IProps> = ({
 					<div className="w-full lg:flex-1 py-8 px-0 lg:p-8">
 						<motion.div
 							variants={stagger}
-							className="flex flex-col lg:flex-row justify-center items-start"
+							className="flex flex-col lg:flex-row justify-center items-start gap-4"
 						>
 							{latestTwoPosts.map((keys) => (
 								<BlogCard

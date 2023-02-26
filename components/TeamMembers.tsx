@@ -51,7 +51,7 @@ const TeamMembers: FunctionComponent<IProps> = ({
 	}
 
 	return (
-		<section className="pt-24 overflow-hidden bg-white pb-36">
+		<section className="pt-24 px-4 lg:px-0 overflow-hidden bg-white pb-36">
 			<div className="container px-0 mx-auto">
 				<h2 className="text-center tracking-normal leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl py-4">
 					{title}
@@ -61,7 +61,7 @@ const TeamMembers: FunctionComponent<IProps> = ({
 					className={isParagraphContent(paragraph)}
 					dangerouslySetInnerHTML={createParagraphMarkup(paragraph)}
 				/>
-				<div className="flex flex-col m-3 mt-8 md:grid md:grid-cols-2 lg:flex lg:flex-row gap-x-8">
+				<div className="flex flex-col mt-8 gap-4 md:grid md:grid-cols-2 lg:flex lg:flex-row">
 					{profileGrid.map((keys) => (
 						<ProfileCard
 							key={keys?.profileCard?.id}

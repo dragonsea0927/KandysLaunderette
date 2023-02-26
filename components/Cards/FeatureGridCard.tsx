@@ -43,9 +43,9 @@ const FeatureGridCard: FunctionComponent<IProps> = ({
 					<Image
 						width={550}
 						height={550}
-						alt={icon?.altText}
-						className="w-[75px] h-[75px]"
 						src={`${icon?.sourceUrl}`}
+						alt={`${icon?.altText} icon`}
+						className="w-[75px] h-[75px] mx-auto object-contain object-center"
 					/>
 				</motion.div>
 				<motion.h3

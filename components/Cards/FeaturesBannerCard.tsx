@@ -12,9 +12,9 @@ interface IProps {
 
 const FeaturesBannerCard: FunctionComponent<IProps> = ({title, icon}) => {
 	return (
-		<div className="w-full lg:w-1/3 py-4">
+		<div className="w-full py-4 lg:w-1/3">
 			<div className={styles.iconsWrap}>
-				<div className="flex flex-row justify-center items-center gap-x-8">
+				<div className="flex flex-row items-center justify-center gap-x-8">
 					<Image
 						width={550}
 						height={550}
