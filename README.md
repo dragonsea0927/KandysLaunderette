@@ -8,7 +8,7 @@ This projects is developed solely with Next.js 13 - featuring, Typescript, Javas
 
 1. All images are in 4K resolution, click to enlarge for better viewing.
 
-<Image src="/public/img/Kandy-s-Launderette-Professional-Dry-Cleaning-Solutions.png" width="100%" height="700px">
+<Image src="/public/img/Kandy-s-Launderette-Professional-Dry-Cleaning-Solutions.png" width="100%" height="1000px">
 
 # Project Context
 
