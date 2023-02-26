@@ -1,7 +1,20 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import {mailOptions, transporter} from "../../config/nodemailer";
 
-const CONTACT_MESSAGE_FIELDS = {
+interface CONTACT_MESSAGE_FIELDS {
+	firstName: string;
+	lastName: string;
+	email: string;
+	subject: string;
+	message: string;
+}
+
+interface generateEmailContent {
+	text: string;
+	html: string;
+}
+
+const CONTACT_MESSAGE_FIELDS: CONTACT_MESSAGE_FIELDS = {
 	firstName: "First Name",
 	lastName: "Last Name",
 	email: "Email",
@@ -9,10 +22,10 @@ const CONTACT_MESSAGE_FIELDS = {
 	message: "Message",
 };
 
-const generateEmailContent = (data) => {
+const generateEmailContent = (data: any): generateEmailContent => {
 	/* Collects all input data 
 	and returns as a long string */
-	const stringData = Object.entries(data).reduce(
+	const stringData: string = Object.entries(data).reduce(
 		(str, [key, val]) =>
 			(str += `${CONTACT_MESSAGE_FIELDS[key]}: \n${val} \n \n`),
 		""
@@ -20,7 +33,7 @@ const generateEmailContent = (data) => {
 
 	/* Collects all input data and 
 	returns as a html rendered string */
-	const htmlData = Object.entries(data).reduce(
+	const htmlData: string = Object.entries(data).reduce(
 		(str, [key, val]) =>
 			(str += `<h class="form-heading" align="left">${CONTACT_MESSAGE_FIELDS[key]}</h> <p class="form-answer" align="left">${val}</p>`),
 		""
@@ -31,22 +44,9 @@ const generateEmailContent = (data) => {
 	};
 };
 
-export default async function handler(req, res) {
+export default async function handler(req: any, res: any) {
 	if (req.method === "POST") {
-		const body = JSON.parse(req.body);
-
-		// if (
-		// 	!body?.firstName ||
-		// 	!body?.lastName ||
-		// 	!body?.email ||
-		// 	!body?.subject ||
-		// 	!body?.message
-		// ) {
-		// 	return res.status(400).json({
-		// 		status: "error",
-		// 		message: "Bad request. Values input are undefined please try again.",
-		// 	});
-		// }
+		const body: any = JSON.parse(req.body);
 
 		try {
 			await transporter.sendMail({

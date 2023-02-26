@@ -3,7 +3,7 @@ import {client} from "./apollo";
 
 // Menu Links Content (Main Menu Links)
 export async function getMainMenuLinksContent() {
-	const content = gql`
+	const content: any = gql`
 		{
 			mainMenuLinks: menuItems(where: {location: PRIMARY}) {
 				edges {
@@ -16,7 +16,7 @@ export async function getMainMenuLinksContent() {
 		}
 	`;
 
-	const response = await client.query({
+	const response: any = await client.query({
 		query: content,
 	});
 
@@ -27,7 +27,7 @@ export async function getMainMenuLinksContent() {
 
 // Individual Services Menu Links
 export async function getIndividualServicesMenu() {
-	const content = gql`
+	const content: any = gql`
 		{
 			IndividualServicesMenuLinks: menuItems(
 				where: {location: INDIVIDUAL_SERVICES}
@@ -42,7 +42,7 @@ export async function getIndividualServicesMenu() {
 		}
 	`;
 
-	const response = await client.query({
+	const response: any = await client.query({
 		query: content,
 	});
 
@@ -54,7 +54,7 @@ export async function getIndividualServicesMenu() {
 
 // Commercial Services Menu Links
 export async function getCommercialServicesMenu() {
-	const content = gql`
+	const content: any = gql`
 		{
 			CommercialServicesMenuLinks: menuItems(
 				where: {location: COMMERCIAL_SERVICES}
@@ -69,7 +69,7 @@ export async function getCommercialServicesMenu() {
 		}
 	`;
 
-	const response = await client.query({
+	const response: any = await client.query({
 		query: content,
 	});
 

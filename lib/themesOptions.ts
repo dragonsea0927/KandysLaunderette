@@ -1,9 +1,13 @@
-import {gql} from "@apollo/client";
+import {DocumentNode, gql} from "@apollo/client";
 import {client} from "../lib/apollo";
+
+interface getThemesOptionsContent {
+	themesOptions: any;
+}
 
 // Themes Options Content
 export async function getThemesOptionsContent() {
-	const content = gql`
+	const content: DocumentNode = gql`
 		{
 			themesOptions(where: {id: 187, status: PUBLISH, name: "Themes Options"}) {
 				edges {
@@ -31,7 +35,7 @@ export async function getThemesOptionsContent() {
 		}
 	`;
 
-	const response = await client.query({
+	const response: any = await client.query({
 		query: content,
 	});
 

@@ -130,8 +130,6 @@ const ContactForm: FunctionComponent<IProps> = ({
 		},
 	});
 
-	console.log(formik);
-
 	return (
 		<section className="relative overflow-hidden">
 			<div className="container px-4 mx-auto lg:px-0">

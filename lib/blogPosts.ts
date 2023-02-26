@@ -3,7 +3,7 @@ import {client} from "./apollo";
 
 // Two Latest Blog Post
 export async function getLatestTwoPosts() {
-	const content = gql`
+	const content: any = gql`
 		{
 			latestTwoPosts: posts(
 				where: {status: PUBLISH, orderby: {field: AUTHOR, order: ASC}}
@@ -31,7 +31,7 @@ export async function getLatestTwoPosts() {
 		}
 	`;
 
-	const response = await client.query({
+	const response: any = await client.query({
 		query: content,
 	});
 
@@ -42,7 +42,7 @@ export async function getLatestTwoPosts() {
 
 // Three Latest Blog Post
 export async function getLatestThreePosts() {
-	const content = gql`
+	const content: any = gql`
 		{
 			latestThreePosts: posts(
 				where: {status: PUBLISH, orderby: {field: AUTHOR, order: ASC}}
@@ -70,7 +70,7 @@ export async function getLatestThreePosts() {
 		}
 	`;
 
-	const response = await client.query({
+	const response: any = await client.query({
 		query: content,
 	});
 
