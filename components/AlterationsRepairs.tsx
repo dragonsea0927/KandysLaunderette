@@ -72,7 +72,7 @@ const AlterationsRepairs: FunctionComponent<IProps> = ({
 		<section className={styles.alterationsRepairs}>
 			<div className="container px-4 py-20 mx-auto">
 				<div className="py-20">
-					<motion.div variants={fadeIn} className="flex flex-col">
+					<div className="flex flex-col">
 						<h2 className="text-center text-white tracking-normal leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl py-8 leading-[2.75rem] w-full">
 							{title}
 						</h2>
@@ -81,7 +81,7 @@ const AlterationsRepairs: FunctionComponent<IProps> = ({
 							className={isParagraphContent(paragraph)}
 							dangerouslySetInnerHTML={createParagraphMarkup(paragraph)}
 						/>
-					</motion.div>
+					</div>
 				</div>
 			</div>
 			<div
