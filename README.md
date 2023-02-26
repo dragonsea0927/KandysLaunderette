@@ -1,8 +1,8 @@
 # Kandy's Launderette
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). I created this project as an updated Server-Side Rendering project based on the previous Client-Side Rendering project, seen on my gihub as Kandy's Launderette website.
+This is a [Next.js](https://nextjs.org/) project created with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). I developed this project as an alternative Static-Side Rendering project based on the previous Client-Side Rendering project, seen on my gihub as Kandy's Launderette website.
 
-This projects is constructed solely with Next.js - featuring, Bootstrap 5, JSON, and a Framer-motion animation API. It also demonstrated my general web development skills, specifically, HTML5, CSS3, SCSS, JavaScript /jQuery, Bootstrap 5, Git/ Github.
+This projects is developed solely with Next.js 13 - featuring, Typescript, Javascript, React 18, Tailwindcss, Framer-motion animation and a WordPress CMS API for content fetching.
 
 # Cover Screenshot
 
@@ -40,16 +40,18 @@ The main objective is to display the updated list of services provided by Kandy'
 
 I really enjoyed the process of creating reusable components such as the Navigation and Footer. Integrating each component across the entire websites, while also styling the entire website elements.
 
-1. I enjoyed utilizing the Next.js React import feature. Importing components, features and scss styling files into a newly created pages or components.
-2. Utilizing npm install to install bootstrap 5 and Sass for example. Learning how to use the difference between npm and npx.
-3. I Enjoyed learning SASS extension for better CSS styling, file structure and creating specific reusable variables for better optimization. Also using Bootstrap 5 framework for better mobile responsiveness really improved my CSS hard-coding file reduction.
+1. I enjoyed utilizing the Next.js 13 & React 18 features. Importing components, features and scss styling files into a newly created pages or components.
+2. Utilizing tailwindcss to style all my components with also the use of Sass or styled components for example. Learning how to use the difference between styled components or sass.
+3. I Enjoyed learning Tailwindcss for better CSS styling, JSX component structure and creating specific reusable variables for better optimization. Also for better mobile responsiveness, it also improved/ resuced CSS file reduction.
 
 # Personal Improvements
 
 Although the website is fairly functional and provides the minimum viable product of displaying the list of services, the current iteration of this project requires a list of improvements.
 
-1. More Team-orientated Git operations specifically branch and merge this will initialize a more realistic team development workflow process.
-2. More JavaScript functions for to make the website more interactive. Specifically HTML DOM element manipulation, displaying or removing items which are available or sold out.
+1. A database intergration for user profiles example Firebase.
+2. A payment processesor such as Stripe Payments.
+3.. More Team-orientated Git operations specifically branch and merge this will initialize a more realistic team development workflow process.
+2. More Sliders and animated visual sections make the website more interactive.
 
 # Mobile View Screenshot
 
