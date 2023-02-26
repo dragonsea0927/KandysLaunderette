@@ -1,5 +1,5 @@
 // Custom reusable Animation Properties/variables
-interface fadeInUp {
+interface fadeInUpTs {
 	initial: {
 		y: number;
 		opacity: number;
@@ -14,7 +14,7 @@ interface fadeInUp {
 	};
 }
 
-interface fadeIn {
+interface fadeInTs {
 	initial: {
 		opacity: number;
 	};
@@ -28,7 +28,7 @@ interface fadeIn {
 	};
 }
 
-interface stagger {
+interface staggerTs {
 	animate: {
 		transition: {
 			staggerChildren: number;
@@ -36,7 +36,7 @@ interface stagger {
 	};
 }
 
-interface fadeInTwo {
+interface fadeInTwoTs {
 	initial: {
 		opacity: number;
 	};
@@ -50,7 +50,7 @@ interface fadeInTwo {
 	};
 }
 
-export const fadeInUp: fadeInUp = {
+export const fadeInUp: fadeInUpTs = {
 	initial: {
 		y: 60,
 		opacity: 0,
@@ -62,7 +62,7 @@ export const fadeInUp: fadeInUp = {
 	},
 };
 
-export const fadeIn: fadeIn = {
+export const fadeIn: fadeInTs = {
 	initial: {
 		opacity: 0,
 	},
@@ -76,7 +76,7 @@ export const fadeIn: fadeIn = {
 	},
 };
 
-export const stagger: stagger = {
+export const stagger: staggerTs = {
 	animate: {
 		transition: {
 			staggerChildren: 0.1,
@@ -84,7 +84,7 @@ export const stagger: stagger = {
 	},
 };
 
-export const fadeInTwo: fadeInTwo = {
+export const fadeInTwo: fadeInTwoTs = {
 	initial: {
 		opacity: 0,
 	},
