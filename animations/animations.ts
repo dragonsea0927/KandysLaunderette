@@ -68,7 +68,11 @@ export const fadeIn: fadeIn = {
 	},
 	animate: {
 		opacity: 1,
-		transition: {duration: 1, delay: 0.5, ease: "easeOut"},
+		transition: {
+			duration: 1,
+			delay: 0.5,
+			ease: "easeOut",
+		},
 	},
 };
 

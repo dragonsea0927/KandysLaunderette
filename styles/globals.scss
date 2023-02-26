@@ -41,7 +41,7 @@ a {
 
 * {
 	box-sizing: border-box;
-	@apply focus:outline-none;
+	@apply outline-none;
 }
 
 p,
@@ -59,7 +59,6 @@ input,
 label,
 button {
 	font-family: $fontStyle_main;
-	@apply focus:outline-none;
 }
 
 li,
