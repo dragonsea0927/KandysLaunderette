@@ -79,12 +79,6 @@ b). https://kandys-launderette-todd-owen-mpeli.vercel.app/
 
 c). https://kandys-launderette-git-main-todd-owen-mpeli.vercel.app/
 
-## Full Mobile View Screenshot
-
-1. All images are in 4K resolution, click to enlarge for better viewing.
-
-<Image src="/public/img/Mobile%20View%20Screenshot.png" width="100%" height="350px">
-
 ## Getting Started
 
 First, run the development server:
