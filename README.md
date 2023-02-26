@@ -30,11 +30,11 @@ The main objective is to display the updated list of services provided by Kandy'
 
 1. All images are in 4K resolution, click to enlarge for better viewing.
 
-<Image src="/public/img/Laptop%20View%20Screenshot%201.png" width="100%" height="625px">
+<Image src="/public/img/How-It-works-Professional-Dry-Cleaning-Solutions.png" width="100%" height="625px">
 
-<Image src="/public/img/Laptop%20View%20Screenshot%202.png" width="100%" height="625px">
+<Image src="/public/img/Kandy-s-Launderette-Professional-Dry-Cleaning-Solutions (1).png" width="100%" height="625px">
 
-<Image src="/public/img/Laptop%20View%20Screenshot%203.png" width="100%" height="625px">
+<Image src="/public/img/Suits-Oxford-Shirts-Professional-Dry-Cleaning-Solutions (2).png" width="100%" height="625px">
 
 # Lessons Learned
 
@@ -53,15 +53,15 @@ Although the website is fairly functional and provides the minimum viable produc
 3.. More Team-orientated Git operations specifically branch and merge this will initialize a more realistic team development workflow process.
 2. More Sliders and animated visual sections make the website more interactive.
 
-# Mobile View Screenshot
+# MacBook Viewport (Screenshot)
 
 1. All images are in 4K resolution, click to enlarge for better viewing.
 
-<Image src="/public/img/Mobile%20View%20Screenshot%201.png" width="100%" height="850px">
+<Image src="/public/img/About-Us-Professional-Dry-Cleaning-Solutions.png" width="100%" height="850px">
 
-<Image src="/public/img/Mobile%20View%20Screenshot%202.png" width="100%" height="850px">
+<Image src="/public/img/Suits-Oxford-Shirts-Professional-Dry-Cleaning-Solutions.png" width="100%" height="850px">
 
-<Image src="/public/img/Mobile%20View%20Screenshot%203.png" width="100%" height="850px">
+<Image src="/public/img/Suits-Oxford-Shirts-Professional-Dry-Cleaning-Solutions (1).png" width="100%" height="850px">
 
 # Potential Future Features
 
