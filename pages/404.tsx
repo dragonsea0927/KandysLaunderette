@@ -42,7 +42,7 @@ const noPageExits = ({
 										rgba(13, 23, 42, 0.45),
 										rgba(13, 23, 42, 0.45)
 									),
-									url("/wp-content/uploads/2023/02/pexels-vlada-karpovich-7365299-scaled.jpg")`,
+									url("https://mydummysite.co.uk/ToddLearning/wp-content/uploads/2023/02/pexels-vlada-karpovich-7365299-scaled.jpg")`,
 					}}
 				>
 					<div className="px-10 my-auto overflow-hidden py-44">
