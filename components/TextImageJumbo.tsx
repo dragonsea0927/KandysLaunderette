@@ -27,7 +27,7 @@ interface IProps {
 
 const TextImageJumbo: FunctionComponent<IProps> = ({gridContent}) => {
 	return (
-		<section className="p-6 px-0 py-9 bg-lightGrey rounded-xl">
+		<section className="p-6 px-0 bg-white py-9 rounded-xl">
 			<div className="container p-0 mx-auto">
 				<div className="flex flex-col justify-center gap-4 item-center">
 					{gridContent.map((keys) => (

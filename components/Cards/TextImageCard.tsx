@@ -76,7 +76,7 @@ const TextImageCard: FunctionComponent<IProps> = ({
 	}
 
 	return (
-		<div className="flex flex-col items-center justify-center gap-16 px-4 py-10 my-4 bg-white lg:flex-row rounded-xl">
+		<div className="flex flex-col items-center justify-center gap-16 px-4 py-10 my-4 lg:flex-row rounded-xl">
 			<motion.div
 				variants={fadeIn}
 				className="w-full px-0 xl:px-10 lg:w-1/2"
