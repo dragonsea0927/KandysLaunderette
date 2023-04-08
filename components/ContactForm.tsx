@@ -1,10 +1,10 @@
-/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import Image from "next/image";
 import {motion} from "framer-motion";
-import React, {useState, FunctionComponent} from "react";
+import React, {useState, FC} from "react";
 import {sendContactForm} from "../lib/api";
 import DOMPurify from "isomorphic-dompurify";
+import ReCAPTCHA from "react-google-recaptcha";
 import {useFormik, Formik, Field, Form} from "formik";
 import {fadeIn, fadeInUp, stagger} from "../animations/animations";
 
@@ -21,7 +21,7 @@ interface IProps {
 	backgroundImage: string;
 }
 
-const ContactForm: FunctionComponent<IProps> = ({
+const ContactForm: FC<IProps> = ({
 	title,
 	email,
 	image,
@@ -101,6 +101,17 @@ const ContactForm: FunctionComponent<IProps> = ({
 		return errors;
 	};
 
+	// Google ReCaptcha Validation
+	const [reCaptchaResult, setReCaptchaResult] = useState(null);
+	const googleReCaptchaValidate = (value: any) => {
+		return value;
+	};
+
+	const handleReCaptchaChange = (response: any) => {
+		const result = googleReCaptchaValidate(response);
+		setReCaptchaResult(result);
+	};
+
 	/* Contact Form Fields
 	And Initial Values */
 	const formik: any = useFormik({
@@ -117,15 +128,21 @@ const ContactForm: FunctionComponent<IProps> = ({
 				...prev,
 				isLoading: true,
 			}));
-			try {
-				await sendContactForm(values);
-				setState(initState);
-			} catch (error) {
-				setState((prev: any) => ({
-					...prev,
-					isLoading: false,
-					error: error.message,
-				}));
+			if (reCaptchaResult !== null || reCaptchaResult !== undefined) {
+				try {
+					await sendContactForm(values);
+					setState(initState);
+				} catch (error) {
+					setState((prev: any) => ({
+						...prev,
+						isLoading: false,
+						// error: error.message,
+					}));
+				}
+			} else {
+				console.log(
+					"Error Message: Something went wrong with your Google Recaptcha validation. Please try again."
+				);
 			}
 		},
 	});
@@ -335,6 +352,12 @@ const ContactForm: FunctionComponent<IProps> = ({
 										className="p-4 w-full h-48 font-[400] text-darkGrey placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-darkGrey active:border-pink focus:border-pink resize-none rounded-lg focus:ring-[1px] focus:ring-pink"
 									></textarea>
 								</motion.div>
+								<motion.div variants={fadeInUp}>
+									<ReCAPTCHA
+										sitekey={`6Lc2EG8lAAAAAMcyohMzubokFz4QCo4oWkpTumhi`}
+										onChange={handleReCaptchaChange}
+									/>
+								</motion.div>
 								<motion.button
 									variants={fadeInUp}
 									// isLoading={isLoading}
@@ -344,7 +367,9 @@ const ContactForm: FunctionComponent<IProps> = ({
 										!formik?.values?.lastName ||
 										!formik?.values?.email ||
 										!formik?.values?.subject ||
-										!formik?.values?.message
+										!formik?.values?.message ||
+										reCaptchaResult === null ||
+										reCaptchaResult === undefined
 									}
 									className="py-4 px-9 w-full text-white text-medium font-[400] rounded-xl shadow-4xl disabled:bg-opacity-50 disabled:cursor-not-allowed bg-pink active:bg-yellow hover:bg-yellow transition-all ease-in-out duration-[0.5s]"
 									type="submit"

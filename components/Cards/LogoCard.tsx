@@ -20,7 +20,7 @@ const LogoCard: FunctionComponent<IProps> = ({image}) => {
 			<Image
 				width={550}
 				height={550}
-				alt={image?.altText}
+				alt={`${image?.altText}`}
 				src={`${image?.sourceUrl}`}
 				className="w-full h-[75px] sm:h-[200px] object-contain object center"
 			/>
