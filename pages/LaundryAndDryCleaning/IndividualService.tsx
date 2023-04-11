@@ -67,7 +67,7 @@ const IndividualService = ({
 				/>
 
 				{/* // <========== PAGE TITLE ==========> */}
-				<section className="py-20 px-4 lg:px-0">
+				<section className="px-4 py-20 bg-white lg:px-0">
 					<div className="container px-0 mx-auto">
 						<div>
 							<div className={styles.previousButton}>
@@ -416,7 +416,7 @@ const IndividualService = ({
 										/>
 										<motion.div
 											variants={stagger}
-											className="flex flex-col items-start justify-between gap-4 lg:flex-row items-center justify-between gap-4"
+											className="flex flex-col items-start items-center justify-between gap-4 lg:flex-row"
 										>
 											<motion.div
 												variants={fadeInUp}
@@ -495,7 +495,7 @@ const IndividualService = ({
 										/>
 										<motion.div
 											variants={stagger}
-											className="flex flex-col items-start justify-between gap-4 lg:flex-row items-center justify-between gap-4"
+											className="flex flex-col items-start items-center justify-between gap-4 lg:flex-row"
 										>
 											<motion.div
 												variants={fadeInUp}
@@ -574,7 +574,7 @@ const IndividualService = ({
 										/>
 										<motion.div
 											variants={stagger}
-											className="flex flex-col items-start justify-between gap-4 lg:flex-row items-center justify-between gap-4"
+											className="flex flex-col items-start items-center justify-between gap-4 lg:flex-row"
 										>
 											<motion.div
 												variants={fadeInUp}
@@ -655,7 +655,7 @@ const IndividualService = ({
 										/>
 										<motion.div
 											variants={stagger}
-											className="flex flex-col items-start justify-between gap-4 lg:flex-row items-center justify-between gap-4"
+											className="flex flex-col items-start items-center justify-between gap-4 lg:flex-row"
 										>
 											<motion.div
 												variants={fadeInUp}

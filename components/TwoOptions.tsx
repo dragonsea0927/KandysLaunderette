@@ -69,83 +69,85 @@ const TwoOptions: FunctionComponent<IProps> = ({title, paragraph, content}) => {
 	}
 
 	return (
-		<section className="container p-0 mx-auto bg-white">
-			<motion.div variants={fadeInUp} className="px-4 py-28">
-				<h2 className="text-black text-center tracking-normal leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl">
-					{title}
-				</h2>
-				<div
-					className={isParagraphContent(paragraph)}
-					dangerouslySetInnerHTML={createParagraphMarkup(paragraph)}
-				/>
-			</motion.div>
-			<motion.div
-				variants={stagger}
-				className="flex flex-col items-center justify-center lg:justify-between gap-2 lg:gap-4 px-4 lg:grid lg:grid-cols-2"
-			>
-				<div className="h-fit">
-					<Link href={`${content?.buttonLink?.url}`}>
-						<Image
-							width={550}
-							height={550}
-							className="w-full h-[600px] rounded-lg object-cover object-center"
-							src={content?.image?.sourceUrl}
-							alt={`${content?.image?.altText} image`}
-						/>
-					</Link>
-					<motion.div
-						variants={stagger}
-						className="relative px-4 ml-0 sm:ml-5 bottom-[120px]"
-					>
-						<motion.h2
-							variants={fadeInUp}
-							className="py-4 text-base text-left text-white"
+		<section className="bg-white">
+			<div className="container p-0 mx-auto">
+				<motion.div variants={fadeInUp} className="px-4 py-28">
+					<h2 className="text-black text-center tracking-normal leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl">
+						{title}
+					</h2>
+					<div
+						className={isParagraphContent(paragraph)}
+						dangerouslySetInnerHTML={createParagraphMarkup(paragraph)}
+					/>
+				</motion.div>
+				<motion.div
+					variants={stagger}
+					className="flex flex-col items-center justify-center gap-2 px-4 lg:justify-between lg:gap-4 lg:grid lg:grid-cols-2"
+				>
+					<div className="h-fit">
+						<Link href={`${content?.buttonLink?.url}`}>
+							<Image
+								width={550}
+								height={550}
+								className="w-full h-[600px] rounded-lg object-cover object-center"
+								src={content?.image?.sourceUrl}
+								alt={`${content?.image?.altText} image`}
+							/>
+						</Link>
+						<motion.div
+							variants={stagger}
+							className="relative px-4 ml-0 sm:ml-5 bottom-[120px]"
 						>
-							{content?.title}
-						</motion.h2>
-						<button className={isButtonLink(content?.buttonLink?.url)}>
-							<Link
-								href={`${content?.buttonLink?.url}`}
-								target={`${content?.buttonLink?.target}`}
-								className="font-[400] text-tiny hover:text-white"
+							<motion.h2
+								variants={fadeInUp}
+								className="py-4 text-base text-left text-white"
 							>
-								{content?.buttonLink?.title}
-							</Link>
-						</button>
-					</motion.div>
-				</div>
-				<div className="h-fit">
-					<Link href={`${content?.buttonLinkTwo?.url}`}>
-						<Image
-							width={550}
-							height={550}
-							className="w-full h-[600px] rounded-lg object-cover object-center"
-							src={content?.imageTwo?.sourceUrl}
-							alt={`${content?.imageTwo?.altText} image`}
-						/>
-					</Link>
-					<motion.div
-						variants={stagger}
-						className="relative px-4 ml-0 sm:ml-5 bottom-[120px]"
-					>
-						<motion.h2
-							variants={fadeInUp}
-							className="py-4 text-base text-left text-white"
+								{content?.title}
+							</motion.h2>
+							<button className={isButtonLink(content?.buttonLink?.url)}>
+								<Link
+									href={`${content?.buttonLink?.url}`}
+									target={`${content?.buttonLink?.target}`}
+									className="font-[400] text-tiny hover:text-white"
+								>
+									{content?.buttonLink?.title}
+								</Link>
+							</button>
+						</motion.div>
+					</div>
+					<div className="h-fit">
+						<Link href={`${content?.buttonLinkTwo?.url}`}>
+							<Image
+								width={550}
+								height={550}
+								className="w-full h-[600px] rounded-lg object-cover object-center"
+								src={content?.imageTwo?.sourceUrl}
+								alt={`${content?.imageTwo?.altText} image`}
+							/>
+						</Link>
+						<motion.div
+							variants={stagger}
+							className="relative px-4 ml-0 sm:ml-5 bottom-[120px]"
 						>
-							{content?.titleTwo}
-						</motion.h2>
-						<button className={isButtonLink(content?.buttonLinkTwo?.url)}>
-							<Link
-								href={`${content?.buttonLinkTwo?.url}`}
-								target={`${content?.buttonLinkTwo?.target}`}
-								className="font-[400] text-tiny hover:text-white"
+							<motion.h2
+								variants={fadeInUp}
+								className="py-4 text-base text-left text-white"
 							>
-								{content?.buttonLinkTwo?.title}
-							</Link>
-						</button>
-					</motion.div>
-				</div>
-			</motion.div>
+								{content?.titleTwo}
+							</motion.h2>
+							<button className={isButtonLink(content?.buttonLinkTwo?.url)}>
+								<Link
+									href={`${content?.buttonLinkTwo?.url}`}
+									target={`${content?.buttonLinkTwo?.target}`}
+									className="font-[400] text-tiny hover:text-white"
+								>
+									{content?.buttonLinkTwo?.title}
+								</Link>
+							</button>
+						</motion.div>
+					</div>
+				</motion.div>
+			</div>
 		</section>
 	);
 };

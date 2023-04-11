@@ -31,7 +31,7 @@ const TitleParagraph: FunctionComponent<IProps> = ({title, paragraph}) => {
 	}
 
 	return (
-		<section className="py-20 px-4 lg:px-0">
+		<section className="px-4 py-20 bg-white lg:px-0">
 			<div className="container p-0 mx-auto">
 				<motion.div variants={fadeInUp}>
 					<h2 className="text-black text-center tracking-normal leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl">

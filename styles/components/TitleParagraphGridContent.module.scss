@@ -1,5 +1,4 @@
 .titleParagraphGridContent,
 .titleParagraphGridContentTwo {
-	padding: 5rem 0;
-	overflow: hidden;
+	@apply bg-white overflow-hidden py-20;
 }

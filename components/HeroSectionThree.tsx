@@ -71,11 +71,11 @@ const HeroSectionThree: FunctionComponent<IProps> = ({
 	}
 
 	return (
-		<section className={styles.heroSectionThree}>
-			<div className="container mx-auto relative">
+		<section className="bg-white">
+			<div className="container relative mx-auto">
 				<div className="pb-10 xl:pb-20">
 					<div className="flex flex-wrap items-stretch px-2 sm:px-4">
-						<div className="w-full lg:w-3/5 px-0 sm:px-1 mb-2 lg:mb-0">
+						<div className="w-full px-0 mb-2 lg:w-3/5 sm:px-1 lg:mb-0">
 							<div
 								className="flex items-end relative h-full px-8 md:px-16 py-16 xl:pb-36 xl:pt-80 rounded-5xl overflow-hidden rounded-lg bg-center bg-cover bg-[no-repeat]"
 								style={{
@@ -93,7 +93,7 @@ const HeroSectionThree: FunctionComponent<IProps> = ({
 									<h1 className="mb-16 text-white text-5xl md:text-6xl xl:text-[3.5rem] leading-[3.5rem]">
 										{title}
 									</h1>
-									<div className="flex flex-col sm:flex-row justify-start items-start gap-4">
+									<div className="flex flex-col items-start justify-start gap-4 sm:flex-row">
 										<div className={isButtonLink(buttonLink?.url)}>
 											<Link
 												href={`${buttonLink?.url}`}
@@ -116,7 +116,7 @@ const HeroSectionThree: FunctionComponent<IProps> = ({
 								</div>
 							</div>
 						</div>
-						<div className="hidden lg:block w-full lg:w-2/5 px-1">
+						<div className="hidden w-full px-1 lg:block lg:w-2/5">
 							<div
 								className="relative flex items-end px-8 md:px-16 py-16 xl:pb-16 mb-2 xl:h-1/2 overflow-hidden rounded-lg bg-center bg-cover bg-[no-repeat]"
 								style={{
@@ -128,7 +128,7 @@ const HeroSectionThree: FunctionComponent<IProps> = ({
 								}}
 							>
 								<div className="relative w-full">
-									<span className="block mb-2 text-sm tracking-widest uppercase text-white">
+									<span className="block mb-2 text-sm tracking-widest text-white uppercase">
 										{subtitleTwo}
 									</span>
 									<h2 className="mb-8 text-white text-4xl leading-[2.25rem]">
@@ -156,7 +156,7 @@ const HeroSectionThree: FunctionComponent<IProps> = ({
 								}}
 							>
 								<div className="relative w-full">
-									<span className="block mb-2 text-sm tracking-widest uppercase text-xs text-white">
+									<span className="block mb-2 text-xs text-sm tracking-widest text-white uppercase">
 										{subtitleThree}
 									</span>
 									<h2 className="mb-8 text-white text-4xl leading-[2.25rem]">

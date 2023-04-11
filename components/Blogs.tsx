@@ -56,9 +56,9 @@ const Blogs: FunctionComponent<IProps> = ({
 	}
 
 	return (
-		<section className="pt-20 pb-32 overflow-hidden">
-			<div className="container mx-auto px-4">
-				<div className="text-center mb-20">
+		<section className="pt-20 pb-32 overflow-hidden bg-white">
+			<div className="container px-4 mx-auto">
+				<div className="mb-20 text-center">
 					<h2 className="text-center mb-5 tracking-normal leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl">
 						{title}
 					</h2>

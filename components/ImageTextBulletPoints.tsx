@@ -82,7 +82,7 @@ const ImageTextBulletPoints: FunctionComponent<IProps> = ({
 
 	return (
 		<section
-			className="px-4 lg:px-0"
+			className="px-4 bg-white lg:px-0"
 			style={{backgroundColor: backgroundColorHex}}
 		>
 			<div className="container px-0 mx-auto">
@@ -100,7 +100,7 @@ const ImageTextBulletPoints: FunctionComponent<IProps> = ({
 							}}
 						/>
 					</motion.div>
-					<motion.div variants={fadeInUp} className="px-4 py-20 px-0">
+					<motion.div variants={fadeInUp} className="px-0 px-4 py-20">
 						<h2
 							className={`py-8 w-full md:max-w-[35rem] mx-auto lg:mx-0 ${textColor} uppercase text-center lg:text-left leading-[2.75rem] font-[600] text-2xl sm:text-3xl lg:text-5xl`}
 						>

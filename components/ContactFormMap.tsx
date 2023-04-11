@@ -1,10 +1,9 @@
-/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import {motion} from "framer-motion";
-import React, {useState} from "react";
-import {FunctionComponent} from "react";
+import React, {useState, FC} from "react";
 import {sendContactForm} from "../lib/api";
 import DOMPurify from "isomorphic-dompurify";
+import ReCAPTCHA from "react-google-recaptcha";
 import {useFormik, Formik, Field, Form} from "formik";
 import {fadeIn, fadeInUp, stagger} from "../animations/animations";
 
@@ -14,11 +13,7 @@ interface IProps {
 	paragraphBottom: string;
 }
 
-const ContactFormMap: FunctionComponent<IProps> = ({
-	title,
-	paragraph,
-	paragraphBottom,
-}) => {
+const ContactFormMap: FC<IProps> = ({title, paragraph, paragraphBottom}) => {
 	/* Check if paragraph content is null
 	 And Displays content if it null */
 	function isParagraphContent(isParagraphContent: string) {
@@ -77,6 +72,17 @@ const ContactFormMap: FunctionComponent<IProps> = ({
 		return errors;
 	};
 
+	// Google ReCaptcha Validation
+	const [reCaptchaResult, setReCaptchaResult] = useState(null);
+	const googleReCaptchaValidate = (value: any) => {
+		return value;
+	};
+
+	const handleReCaptchaChange = (response: any) => {
+		const result = googleReCaptchaValidate(response);
+		setReCaptchaResult(result);
+	};
+
 	/* Contact Form Fields
 	And Initial Values */
 	const formik: any = useFormik({
@@ -91,21 +97,27 @@ const ContactFormMap: FunctionComponent<IProps> = ({
 				...prev,
 				isLoading: true,
 			}));
-			try {
-				await sendContactForm(values);
-				setState(initState);
-			} catch (error) {
-				setState((prev) => ({
-					...prev,
-					isLoading: false,
-					error: error.message,
-				}));
+			if (reCaptchaResult !== null || reCaptchaResult !== undefined) {
+				try {
+					await sendContactForm(values);
+					setState(initState);
+				} catch (error) {
+					setState((prev) => ({
+						...prev,
+						isLoading: false,
+						error: error.message,
+					}));
+				}
+			} else {
+				console.log(
+					"Error Message: Something went wrong with your Google Recaptcha validation. Please try again."
+				);
 			}
 		},
 	});
 
 	return (
-		<section className="relative text-grey body-font">
+		<section className="relative bg-white text-grey body-font">
 			<div className="absolute inset-0 bg-grey">
 				<iframe
 					title="map"
@@ -212,6 +224,12 @@ const ContactFormMap: FunctionComponent<IProps> = ({
 										className="p-4 w-full h-48 font-[400] text-darkGrey placeholder-darkGrey bg-white bg-opacity-50 outline-none border-[1px] border-darkGrey active:border-pink focus:border-pink resize-none rounded-lg focus:ring-[1px] focus:ring-pink"
 									></textarea>
 								</motion.div>
+								<motion.div variants={fadeInUp} className="relative mb-4">
+									<ReCAPTCHA
+										sitekey={`6Lc2EG8lAAAAAMcyohMzubokFz4QCo4oWkpTumhi`}
+										onChange={handleReCaptchaChange}
+									/>
+								</motion.div>
 								<motion.button
 									variants={fadeInUp}
 									// isLoading={isLoading}
@@ -219,9 +237,11 @@ const ContactFormMap: FunctionComponent<IProps> = ({
 									disabled={
 										!formik.values.fullName ||
 										!formik.values.email ||
-										!formik.values.message
+										!formik.values.message ||
+										reCaptchaResult === null ||
+										reCaptchaResult === undefined
 									}
-									className="py-4 px-9 w-full text-white text-medium font-[400] rounded-xl shadow-4xl disabled:bg-opacity-50 disabled:cursor-not-allowed bg-pink hover:border-yellow active:bg-yellow hover:bg-yellow transition-all ease-in-out duration-[0.5s]"
+									className="mt-5 py-4 px-9 w-full text-white text-medium font-[400] rounded-xl shadow-4xl disabled:bg-opacity-50 disabled:cursor-not-allowed bg-pink hover:border-yellow active:bg-yellow hover:bg-yellow transition-all ease-in-out duration-[0.5s]"
 									type="submit"
 								>
 									Send Message

@@ -148,7 +148,7 @@ const ContactForm: FC<IProps> = ({
 	});
 
 	return (
-		<section className="relative overflow-hidden">
+		<section className="relative overflow-hidden bg-white">
 			<div className="container px-4 mx-auto lg:px-0">
 				<div className="overflow-hidden bg-white pt-28 mb-28">
 					<div className="mx-auto mb-20 text-center">

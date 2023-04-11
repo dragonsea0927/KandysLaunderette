@@ -20,9 +20,9 @@ interface IProps {
 const FeaturesBannerTwo: FunctionComponent<IProps> = ({title, gridContent}) => {
 	return (
 		<section className={styles.featuresBannerTwo}>
-			<div className="py-10 bg-pink overflow-hidden">
-				<div className="container mx-auto px-0">
-					<div className="py-16 px-4 md:px-8 sm:p-16">
+			<div className="py-10 overflow-hidden bg-pink">
+				<div className="container px-0 mx-auto">
+					<div className="px-4 py-16 md:px-8 sm:p-16">
 						<h2 className="mb-10 text-white font-[600] text-center lg:text-left text-2xl sm:text-3xl lg:text-5xl">
 							{title}
 						</h2>

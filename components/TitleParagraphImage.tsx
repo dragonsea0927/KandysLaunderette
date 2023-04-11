@@ -42,7 +42,7 @@ const TitleParagraphImage: FunctionComponent<IProps> = ({
 	}
 
 	return (
-		<section className="relative py-20">
+		<section className="relative py-20 bg-white">
 			<div className="container relative px-0 mx-auto">
 				<div className="flex flex-wrap items-center">
 					<div className="w-full px-4 mb-12 lg:w-1/2 lg:mb-0">
