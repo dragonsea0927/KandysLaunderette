@@ -56,28 +56,30 @@ const noPageExits = ({
 							</p>
 							<div className="flex flex-col items-center justify-center mx-auto md:max-w-max">
 								<button type="button">
-									<Link href={`/`} target={``}>
-										<a className="py-4 px-6 lg:py-6 lg:px-20 flex flex-row font-[700] text-white text-base leading-4 bg-pink rounded-lg hover:bg-yellow transition-all ease-in-out duration-[0.5s]">
-											<svg
-												className="mr-2.5 text-white"
-												width="16"
-												height="16"
-												viewBox="0 0 16 16"
-												fill="none"
-												xmlns="http://www.w3.org/2000/svg"
-											>
-												<path
-													d="M6.66667 12.6666L2 7.99998M2 7.99998L6.66667 3.33331M2 7.99998L14 7.99998"
-													stroke="currentColor"
-													strokeWidth="1.5"
-													strokeLinecap="round"
-													strokeLinejoin="round"
-												></path>
-											</svg>
-											<span className="font-normal text-white">
-												Go Back to Homepage
-											</span>
-										</a>
+									<Link
+										href={`/`}
+										target={``}
+										className="py-4 px-6 lg:py-6 lg:px-20 flex flex-row font-[700] text-white text-base leading-4 bg-pink rounded-lg hover:bg-yellow transition-all ease-in-out duration-[0.5s]"
+									>
+										<svg
+											className="mr-2.5 text-white"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M6.66667 12.6666L2 7.99998M2 7.99998L6.66667 3.33331M2 7.99998L14 7.99998"
+												stroke="currentColor"
+												strokeWidth="1.5"
+												strokeLinecap="round"
+												strokeLinejoin="round"
+											></path>
+										</svg>
+										<span className="font-normal text-white">
+											Go Back to Homepage
+										</span>
 									</Link>
 								</button>
 							</div>

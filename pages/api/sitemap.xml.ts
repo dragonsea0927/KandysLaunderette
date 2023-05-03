@@ -4,6 +4,7 @@ import {fetchAllPagesSlugs} from "../../functions/GetAllPagesLinks";
 const {SitemapStream, streamToPromise} = require("sitemap");
 const {Readable} = require("stream");
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default async (req: any, res: any) => {
 	const pagesSlugs = await fetchAllPagesSlugs();
 
