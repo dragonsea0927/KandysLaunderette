@@ -58,7 +58,7 @@ const ContactBannerThree: FunctionComponent<IProps> = ({
 
 	return (
 		<section
-			className="px-4 py-20 bg-white lg:px-0"
+			className="px-4 py-20 lg:px-0"
 			style={{
 				backgroundSize: "cover",
 				backgroundPosition: "center",

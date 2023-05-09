@@ -28,9 +28,9 @@ const BlogsTwo: FunctionComponent<IProps> = ({
 	latestThreePosts,
 }) => {
 	return (
-		<section className="px-4 py-20 overflow-hidden bg-white lg:px-0">
+		<section className="px-4 py-20 overflow-hidden lg:px-0">
 			<div className="container px-0 mx-auto">
-				<div className="flex flex-col items-center justify-center mb-16 lg:flex-row">
+				<div className="flex flex-col lg:flex-row justify-center items-center mb-16">
 					<div className="flex flex-col justify-center w-full px-4 mb-8 lg:w-2/3 xl:mb-0">
 						<span className="text-sm font-semibold text-center uppercase text-pink lg:text-left">
 							{subtitle}
@@ -48,7 +48,7 @@ const BlogsTwo: FunctionComponent<IProps> = ({
 						</Link>
 					</div>
 				</div>
-				<div className="flex flex-col items-center gap-4 lg:flex-row">
+				<div className="flex flex-col lg:flex-row items-center gap-4">
 					{latestThreePosts.map((keys) => (
 						<BlogsCardThree
 							key={keys?.node?.id}

@@ -1,14 +1,13 @@
 // Import
-import {fetchAllPagesSlugs} from "../../functions/GetAllPagesLinks";
+import {fetchAllPagesSlugs} from "../../functions/GetAllPagesSlugs";
 
 const {SitemapStream, streamToPromise} = require("sitemap");
 const {Readable} = require("stream");
 
-// eslint-disable-next-line import/no-anonymous-default-export
 export default async (req: any, res: any) => {
 	const pagesSlugs = await fetchAllPagesSlugs();
 
-	// Pages & Blogs Arrays
+	// Pages & Operational Insights Arrays
 	const pagesLinks: any = [];
 
 	// Pages Dynamic Links
@@ -28,6 +27,8 @@ export default async (req: any, res: any) => {
 
 	// Create a stream to write to
 	const stream = new SitemapStream({hostname: process.env.SITE_URL});
+
+	req;
 
 	res.writeHead(200, {
 		"Content-Type": "application/xml",

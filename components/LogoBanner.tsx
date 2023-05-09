@@ -18,7 +18,7 @@ interface IProps {
 
 const LogoBanner: FunctionComponent<IProps> = ({title, logoBanner}) => {
 	return (
-		<section className="px-4 py-20 bg-white lg:px-0">
+		<section className="px-4 py-20 lg:px-0">
 			<div className="container px-0 mx-auto">
 				<motion.h2
 					variants={fadeIn}

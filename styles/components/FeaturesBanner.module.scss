@@ -1,5 +1,11 @@
+// Imports
+@import "../fonts";
+@import "../colors";
+
 .featuresBanner {
-	@apply py-16 overflow-hidden bg-white;
+	overflow: hidden;
+	padding: 4rem 0;
+	background: $baseColor_white;
 }
 
 /* Large mobile screen (portrait 640px) */

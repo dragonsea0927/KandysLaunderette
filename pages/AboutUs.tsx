@@ -123,7 +123,7 @@ const AboutUs = ({
 					image={aboutUsPageContent?.signUp?.image}
 				/>
 
-				<section className="px-4 px-5 py-24 bg-white lg:px-0">
+				<section className="px-4 px-5 py-24 lg:px-0">
 					<div className="container mx-auto">
 						<div className="flex flex-col w-full lg:flex-row">
 							<div className="w-full py-6 lg:w-1/2 lg:pr-10">
